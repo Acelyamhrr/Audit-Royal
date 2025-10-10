@@ -1,0 +1,71 @@
+# Répertoires Unity générés automatiquement
+Audit_Royal/[Ll]ibrary/
+Audit_Royal/[Tt]emp/
+Audit_Royal/[Oo]bj/
+Audit_Royal/[Bb]uild/
+Audit_Royal/[Bb]uilds/
+Audit_Royal/[Ll]ogs/
+Audit_Royal/[Mm]emoryCaptures/
+Audit_Royal/UserSettings/
+
+Audit_Royal/*.csproj
+Audit_Royal/*.sln
+Audit_Royal/*.user
+Audit_Royal/*.pidb
+Audit_Royal/*.pdb
+Audit_Royal/*.mdb
+
+Audit_Royal/.DS_Store
+Audit_Royal/Thumbs.db
+
+# Cache Unity
+*.unitypackage
+*.assetbundle
+*.unityweb
+*.unity3d
+
+# Données de builds Unity
+*_Data/
+*_BurstDebugInformation_DoNotShip/
+
+# Exécutables Unity (toutes plateformes)
+*.exe
+*.apk
+*.aab
+*.x86_64
+*.app
+*.so
+*.dll
+*.dylib
+*.pdb
+
+# Fichiers de test générés
+Audit_Royal/test*
+Audit_Royal/UnityPlayer.so
+Audit_Royal/libdecor-*.so*
+
+# Logs, crashs, temporaires
+*.log
+*.swp
+*.bak
+*.tmp
+*.DS_Store
+*.pidb
+*.opendb
+*.VC.db
+**/UpgradeLog.htm
+
+# IDEs
+*.vscode/
+*.vs/
+*.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb.meta
+*.booproj
+*.svd
+*.vsconfig
