@@ -20,7 +20,7 @@ public class PlayerMovement2 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0; // Pas de gravité
+        rb.gravityScale = 0; // Pas de gravitï¿½
     }
 
     void Update()
@@ -41,7 +41,7 @@ public class PlayerMovement2 : MonoBehaviour
         }
         else
         {
-            // Si le joueur s'arrête, on garde la dernière orientation
+            // Si le joueur s'arrï¿½te, on garde la derniï¿½re orientation
             spriteRenderer.flipX = facingRight;
         }
 
@@ -57,73 +57,11 @@ public class PlayerMovement2 : MonoBehaviour
 
         float characterVelocity = movement.sqrMagnitude;
         animator.SetFloat("Speed", characterVelocity);
-
-
-        // Gérer les limites du personnages sur l'axe des Y
-
-        if (movement.y > 0.1f)
-        {
-            if (PlayerPos.position.y > 4.6f)
-            {
-                pos.x = PlayerPos.position.x;
-                pos.y = 4.6f;
-                PlayerPos.position = pos;
-            }
-        }
-        else if(movement.y < 0.1f)
-        {
-            if (PlayerPos.position.y < -4.6f)
-            {
-                pos.x = PlayerPos.position.x;
-                pos.y = -4.6f;
-                PlayerPos.position = pos;
-            }
-        }
-
-        // Gérer les limites du personnages sur l'axe des X
-
-        if (movement.x > 0.1f)
-        {
-            if (PlayerPos.position.x > 9.3f)
-            {
-                pos.x = 9.3f;
-                pos.y = PlayerPos.position.y;
-                PlayerPos.position = pos;
-            }
-        }
-        else if (movement.x < 0.1f)
-        {
-            if (PlayerPos.position.x < -9.3f)
-            {
-                pos.x = -9.3f;
-                pos.y = PlayerPos.position.y;
-                PlayerPos.position = pos;
-            }
-        }
     }
     
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-    }
-
-    private void LimitY(float lim)
-    {
-        if (PlayerPos.position.y > lim || PlayerPos.position.y < lim)
-        {
-            pos.x = PlayerPos.position.x;
-            pos.y = lim;
-            PlayerPos.position = pos;
-        }
-    }
-    private void LimitX(float lim)
-    {
-        if (PlayerPos.position.x > lim || PlayerPos.position.x < lim)
-        {
-            pos.x = lim;
-            pos.y = PlayerPos.position.y;
-            PlayerPos.position = pos;
-        }
     }
 }
 
