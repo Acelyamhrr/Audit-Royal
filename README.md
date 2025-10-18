@@ -63,29 +63,16 @@ Le joueur développera des compétences en **communication**, **analyse critique
 
 
 ### Compréhension de l'importance de la réalisation d'un audit
-Cet objectif vise à faire comprendre au joueur **le rôle concret et les conséquences d’un audit interne** dans l’amélioration des processus d’une organisation. Il se focalise surtout sur la **rédaction du rapport d’audit** et sur les **propositions de solutions** à partir des dysfonctionnements détectés.  
+Cet objectif vise à faire comprendre au joueur **le rôle concret et les conséquences d’un audit interne** dans l’amélioration des processus d’une organisation. Il se focalise sur la **rédaction du rapport d’audit** et sur les **propositions de solutions** à partir des dysfonctionnements détectés.  
 
-Le joueur doit comprendre que l’audit ne se limite pas à dresser un état des lieux : il a pour but de **déclencher des améliorations réelles** et d’accompagner le changement. L’exercice se concentrera donc sur :
+Le joueur doit comprendre que l’audit ne se limite pas à dresser un état des lieux : il a pour but de **déclencher des améliorations réelles** et d’accompagner le changement.  
 
-- L’**analyse des constats**
-- La **rédaction du rapport final**
-- La **formulation de recommandations**
+**Déroulé dans le jeu :**  
+1. **Rédaction du rapport**  
+Le joueur rédige un rapport d’audit en décidant de la véracité des informations reçues et peut formuler une conclusion ainsi que des pistes d’améliorations.  
 
-Le joueur ne sera pas nécessairement tenu de réaliser un audit complet : l’accent est mis sur la phase finale et son impact.  
-
-Voici un exemple de déroulé :  
-
-1. **Rédaction interactive du rapport**  
-Le joueur rédige un rapport d’audit en décidant de la véracité des informations reçues et propose des pistes d'améliorations. Le jeu peut fournir un retour sur l'exactitude de l'audit réalisé et la pertinence des solutions proposées.  
-
-2. **Mise en œuvre des solutions**  
-Le joueur participe à des scénarios où il doit aider à appliquer les recommandations. Il devra gérer le suivi des actions, accompagner les équipes et mesurer les résultats.  
-
-3. **Suivi et évaluation**  
-Des indicateurs de performance montrent les effets des recommandations. Le joueur peut constater si les processus se sont améliorés ou s’il faut ajuster certaines actions.  
-
-Grâce à cet objectif, le joueur apprend à **repérer les failles**, à **proposer des solutions adaptées** et surtout à **s’assurer de l’impact concret de l’audit** sur l’organisation.  
-
+2. **Remarque importante**
+Cette étape est symbolique : elle ne fait pas l’objet d’une évaluation et n’influence pas la progression ou le score dans le jeu. L’objectif pédagogique n’est donc pas pleinement réalisé ici, mais elle permet de familiariser le joueur avec la **phase finale d’un audit** et la **rédaction d’un rapport**.  
 
 ## Description des fonctionnalités
 Afin d’atteindre ces objectifs, nous avons défini les fonctionnalités suivantes :
