@@ -71,7 +71,7 @@ Le joueur doit comprendre que l’audit ne se limite pas à dresser un état des
 1. **Rédaction du rapport**  
 Le joueur rédige un rapport d’audit en décidant de la véracité des informations reçues et peut formuler une conclusion ainsi que des pistes d’améliorations.  
 
-2. **Remarque importante**
+2. **Remarque importante**  
 Cette étape est symbolique : elle ne fait pas l’objet d’une évaluation et n’influence pas la progression ou le score dans le jeu. L’objectif pédagogique n’est donc pas pleinement réalisé ici, mais elle permet de familiariser le joueur avec la **phase finale d’un audit** et la **rédaction d’un rapport**.  
 
 ## Description des fonctionnalités
@@ -79,48 +79,47 @@ Afin d’atteindre ces objectifs, nous avons défini les fonctionnalités suivan
 
 ### Actions du joueur
 Nous souhaitons que le joueur puisse :
-- Avoir le choix entre différents sujets d'audit
-- Interagir avec les personnes auditées
-- Interagir avec plusieurs personnes, qui possèdent des comportements différents à l'égard de l'auditeur
+- Avoir le choix entre **différents sujets d'audit**
+- **Interagir avec plusieurs personnes** auditées, qui possèdent des **comportements différents** à l'égard de l'auditeur
 - Choisir avec qui il interagit lorsqu'il le souhaite et naviguer entre les services
-- Choisir quelles informations sont vraies/fausses
-- Produire un rapport uniquement à partir des informations qu'il aura découvertes
+- Choisir quelles **informations** sont **vraies/fausses**
+- **Produire un rapport** uniquement à partir des informations qu'il aura découvertes
 
 ### Logique de jeu
 Dans la logique du jeu, il faudrait que :
-- Les différentes interactions produisent des comportements différents
-- Les informations reçues ne soient pas toutes vraies
-- Une mécanique de vérification grâce à l’obtention d’informations contradictoires
-- Le joueur ait un moyen d'être limité en termes d'actions / de temps pour représenter le temps qui passe, afin de représenter la contrainte temporelle d’un audit.
-- Un système de confiance entre l'auditeur et les audités soit mis en place et que cette confiance influe sur les réponses de ces derniers, grâce aux réponses choisies par le joueur et les différents caractères des personnages
+- Les différentes **interactions produisent des comportements** différents
+- Les **informations reçues ne soient pas toutes vraies**
+- Une **mécanique de vérification** grâce à l’obtention d’informations contradictoires
+- Le joueur ait un moyen d'être **limité en termes d'actions / de temps** pour représenter le temps qui passe, afin de représenter la contrainte temporelle d’un audit.
+- Un **système de confiance** entre l'auditeur et les audités soit mis en place et que cette confiance **influe sur les réponses** de ces derniers, grâce aux réponses choisies par le joueur et les différents caractères des personnages
 
 ### Interface
 L'interface doit pouvoir présenter :
-- Un système d'interaction avec les audités
-- Un rendu final qui indique si le joueur a fait du bon travail ou non avec passage devant le conseil d'administration
-- Un moyen de connaître l'état d'esprit des audités (qu'il soit facilement visible ou non)
-- Un carnet pour pouvoir noter les informations, décider de leurs véracités et les commenter
-- Un rapport d'audit antérieur sur lequel se baser
+- Un **système d'interaction** avec les audités
+- Un **rendu final** qui indique si le joueur a fait du bon travail ou non avec passage devant le conseil d'administration
+- Un moyen de **connaître l'état d'esprit des audités** (qu'il soit facilement visible ou non)
+- Un **carnet** pour pouvoir noter les informations, décider de leurs véracités et les commenter
+- Un **rapport d'audit antérieur** sur lequel se baser
 
 ### Scénario type
 
 Afin de vous aider à plus facilement comprendre comment intégrer la plupart des fonctionnalités, nous vous proposons une version rédigée du déroulement du jeu.  
 
-**Briefing initial**  
-Le joueur arrive dans un couloir et se voit convoquer au bureau de la direction. Le directeur lui explique les attentes de l'audit et le sujet de ce dernier. Le joueur a ensuite accès à la carte et peut naviguer entre les bâtiments/services.
+#### Briefing initial
+Le joueur arrive dans un couloir et se voit convoquer au bureau de la direction. Le **directeur lui explique les attentes de l'audit et le sujet** de ce dernier. Le joueur a ensuite accès à la carte et peut naviguer entre les bâtiments/services.
 
-**Enquête sur le terrain**  
-En entrant dans un bâtiment, le joueur a la possibilité de parler à l'employé qu'il souhaite. En fonction du caractère de ce dernier et des choix du joueur en réponse, l'employé donnera des informations plus ou moins intéressantes et plus ou moins vraies.  
-Ces informations seront inscrites automatiquement dans son carnet se trouvant dans son sac à dos et pouvant être consulté à tout moment. Les informations seront classées par sujet et le joueur pourra, par l'intermédaire d'une case à cocher, décider de leur véracité (vraies ou fausses). Cette action étant réversible, le joueur pourra modifier sa décision s'il découvre de nouveaux indices. Il pourra également écrire des commentaires dans son carnet comme "l'employé n'avait pas l'air sûr de lui" ou autre. Ces commentaires n'auront aucune répercussion sur le rapport final, seules les décisions sur la véracité des informations en auront.
+#### Enquête sur le terrain
+En entrant dans un bâtiment, le joueur a la possibilité de **parler à l'employé qu'il souhaite**. En fonction du caractère de ce dernier et des choix du joueur en réponse, l'employé donnera des **informations plus ou moins intéressantes** et **plus ou moins vraies**.  
+Ces informations seront **inscrites automatiquement dans son carnet** se trouvant dans son sac à dos et pouvant être consulté à tout moment. Les informations seront classées par sujet et le joueur pourra, par l'intermédaire d'une case à cocher, **décider de leur véracité** (vraies ou fausses). Cette action étant réversible, le joueur pourra modifier sa décision s'il découvre de nouveaux indices. Il pourra également **écrire des commentaires** dans son carnet comme "l'employé n'avait pas l'air sûr de lui" ou autre. Ces commentaires n'auront aucune répercussion sur le rapport final, seules les décisions sur la véracité des informations en auront.
 
-**Rédaction du rapport**  
-Lorsque le joueur le souhaite, ou si son nombre d'actions est arrivé à zéro, il peut rédiger son rapport final et le soumettre à la direction.  
-La rédaction du rapport étant une étape importante de l'audit, une interface sera proposé au joueur afin qu'il puisse glisser les informations reçues dans les colonnes vraies/fausses. Il pourra évidemment s'appuyer sur ses notes et son carnet. Pour ajouter du réalisme, le joueur pourra également rédiger une conclusion et donner son avis sur les améliorations à apporter. Cependant, seules les décisions sur la véracité des informations aura une importance sur la note finale, le jeu se concentrant surtout sur les phases 2 et 3 d'un audit (voir wiki).  
-Une fois son rapport rendu, le joueur se retrouvera convoqué par le conseil d'administration qui formulera un avis sur l'audit réalisé et qui donnera une note à l'audit.
+#### Rédaction du rapport
+Lorsque le joueur le souhaite, ou si son nombre d'actions est arrivé à zéro, il peut **rédiger son rapport final** et le soumettre à la direction.  
+La rédaction du rapport étant une étape importante de l'audit, une interface sera proposé au joueur afin qu'il puisse **glisser les informations reçues dans les colonnes vraies/fausses**. Il pourra évidemment s'appuyer sur ses notes et son carnet. Pour ajouter du réalisme, le joueur pourra également **rédiger une conclusion** et **donner son avis sur les améliorations à apporter**. Cependant, seules les décisions sur la véracité des informations aura une importance sur la note finale, le jeu se concentrant surtout sur les phases 2 et 3 d'un audit (voir wiki).  
+Une fois son rapport rendu, le joueur se retrouvera convoqué par **le conseil d'administration** qui **formulera un avis sur l'audit réalisé** et qui **donnera une note** à l'audit.
 
 
 ## Contraintes de développement
-La technologie utilisée et les points abordés par le jeu sont à notre appréciation. Cependant, il faut permettre aux joueurs d'expérimenter des scénarios différents et que chaque partie soit différente l'une de l'autre. En effet, les choix pris ne doivent pas être linéaires au fil des parties mais résulter de données aléatoirement sélectionnées au début du jeu, comme le caractère des personnages et la véracité de telle ou telle information. Ainsi, les personnes ayant pour objectif de devenir auditeurs pourront ainsi comprendre la complexité du métier et l'approche à avoir en fonction du caractère de l'employé audité.
+La technologie utilisée et les points abordés par le jeu sont à notre appréciation. Cependant, il faut permettre aux joueurs d'expérimenter des **scénarios différents** et que chaque partie soit différente l'une de l'autre. En effet, les choix pris ne doivent pas être linéaires au fil des parties mais résulter de **données aléatoirement sélectionnées** au début du jeu, comme le caractère des personnages et la véracité de telle ou telle information. Ainsi, les personnes ayant pour objectif de devenir auditeurs pourront ainsi comprendre la complexité du métier et l'approche à avoir en fonction du caractère de l'employé audité.
 
 
 
