@@ -9,7 +9,7 @@ Participants :
 
 ## Présentation du projet
 
-Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeur dans une université** afin d'aider des débutants dans ce domaine à leur donner **un avant-goût de la réalisation de leur premier audit**.  
+Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeur dans une université** afin d'aider des débutants dans ce domaine à leur donner **un avant-goût de la réalisation de leur premier audit**. Pour découvrir le métier d'auditeur, nous avons réalisé un [wiki](Wiki.md). Si cela vous paraît peu clair, vous comprendrez mieux après quelques minutes de jeu.  
 
 ## Objectifs pédagogiques
 
@@ -28,7 +28,7 @@ Ainsi **Audit Royal a pour but** de :
 Voici l'explication approfondie des trois objectifs centraux du jeu :
 
 ### Compréhension du processus de réalisation de l'audit
-Le joueur doit comprendre l’enchaînement des différentes étapes d’un audit. Ces informations sont disponibles dans le wiki, et il est essentiel de lui faire percevoir le temps accordé à chaque phase du processus. L’objectif ne porte pas sur une étape précise, mais bien sur l’ensemble.  
+Le joueur doit comprendre l’enchaînement des différentes étapes d’un audit. Ces informations sont disponibles dans le [wiki](Wiki.md), et il est essentiel de lui faire percevoir le temps accordé à chaque phase du processus. L’objectif ne porte pas sur une étape précise, mais bien sur l’ensemble.  
 
 Selon le wiki, l’audit se déroule en trois grandes phases : **préparation**, **réalisation**, puis **communication**.
 Le joueur devra apprendre à **gérer son temps en fonction des priorités**. Même si la préparation est moins longue que les autres étapes, elle ne doit pas être négligée : une mauvaise préparation rend la phase de réalisation moins efficace et moins pertinente.  
@@ -114,7 +114,7 @@ Ces informations seront **inscrites automatiquement dans son carnet** se trouvan
 
 #### Rédaction du rapport
 Lorsque le joueur le souhaite, ou si son nombre d'actions est arrivé à zéro, il peut **rédiger son rapport final** et le soumettre à la direction.  
-La rédaction du rapport étant une étape importante de l'audit, une interface sera proposé au joueur afin qu'il puisse **glisser les informations reçues dans les colonnes vraies/fausses**. Il pourra évidemment s'appuyer sur ses notes et son carnet. Pour ajouter du réalisme, le joueur pourra également **rédiger une conclusion** et **donner son avis sur les améliorations à apporter**. Cependant, seules les décisions sur la véracité des informations aura une importance sur la note finale, le jeu se concentrant surtout sur les phases 2 et 3 d'un audit (voir wiki).  
+La rédaction du rapport étant une étape importante de l'audit, une interface sera proposé au joueur afin qu'il puisse **glisser les informations reçues dans les colonnes vraies/fausses**. Il pourra évidemment s'appuyer sur ses notes et son carnet. Pour ajouter du réalisme, le joueur pourra également **rédiger une conclusion** et **donner son avis sur les améliorations à apporter**. Cependant, seules les décisions sur la véracité des informations aura une importance sur la note finale, le jeu se concentrant surtout sur les phases 2 et 3 d'un audit (voir [wiki](Wiki.md)).  
 Une fois son rapport rendu, le joueur se retrouvera convoqué par **le conseil d'administration** qui **formulera un avis sur l'audit réalisé** et qui **donnera une note** à l'audit.
 
 
