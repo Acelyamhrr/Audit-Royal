@@ -13,12 +13,12 @@ Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeu
 
 ## Objectifs pédagogiques
 
-Pour ce projet, nous avons choisi de nous concentrer sur les **objectifs pédagogiques suivants** :  
+Pour ce projet, nous avons choisi de nous concentrer sur les **objectifs pédagogiques suivants** :
 - Comprendre les **étapes du processus d’audit** (préparation, réalisation, communication).
 - Représenter la **difficulté de la collecte d’informations**, notamment à travers les échanges humains et leurs caractères.
 - Prendre conscience de **l’importance d’un audit** pour améliorer le fonctionnement d’une organisation.
 
-Ainsi **Audit Royal a pour but** de :  
+Ainsi **Audit Royal a pour but** de :
 - Fournir une expérience interactive qui **illustre la réalité du métier** d’auditeur.
 - Mettre en avant la **gestion du temps, des rapports humains et de l'importance des informations recueillies**.
 - Proposer un jeu permettant de **tester différents scénarios** d’audit.
@@ -122,11 +122,11 @@ Afin de vous aider à plus facilement comprendre comment intégrer la plupart de
 **Briefing initial**  
 Le joueur arrive dans un couloir et se voit convoquer au bureau de la direction. Le directeur lui explique les attentes de l'audit et le sujet de ce dernier. Le joueur a ensuite accès à la carte et peut naviguer entre les bâtiments/services.
 
-**Enquête sur le terrain**
+**Enquête sur le terrain**  
 En entrant dans un bâtiment, le joueur a la possibilité de parler à l'employé qu'il souhaite. En fonction du caractère de ce dernier et des choix du joueur en réponse, l'employé donnera des informations plus ou moins intéressantes et plus ou moins vraies.  
 Ces informations seront inscrites automatiquement dans son carnet se trouvant dans son sac à dos et pouvant être consulté à tout moment. Les informations seront classées par sujet et le joueur pourra, par l'intermédaire d'une case à cocher, décider de leur véracité (vraies ou fausses). Cette action étant réversible, le joueur pourra modifier sa décision s'il découvre de nouveaux indices. Il pourra également écrire des commentaires dans son carnet comme "l'employé n'avait pas l'air sûr de lui" ou autre. Ces commentaires n'auront aucune répercussion sur le rapport final, seules les décisions sur la véracité des informations en auront.
 
-**Rédaction du rapport**
+**Rédaction du rapport**  
 Lorsque le joueur le souhaite, ou si son nombre d'actions est arrivé à zéro, il peut rédiger son rapport final et le soumettre à la direction.  
 La rédaction du rapport étant une étape importante de l'audit, une interface sera proposé au joueur afin qu'il puisse glisser les informations reçues dans les colonnes vraies/fausses. Il pourra évidemment s'appuyer sur ses notes et son carnet. Pour ajouter du réalisme, le joueur pourra également rédiger une conclusion et donner son avis sur les améliorations à apporter. Cependant, seules les décisions sur la véracité des informations aura une importance sur la note finale, le jeu se concentrant surtout sur les phases 2 et 3 d'un audit (voir wiki).  
 Une fois son rapport rendu, le joueur se retrouvera convoqué par le conseil d'administration qui formulera un avis sur l'audit réalisé et qui donnera une note à l'audit.
