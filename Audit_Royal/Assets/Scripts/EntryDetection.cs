@@ -20,16 +20,19 @@ public class EntryDetection : MonoBehaviour
             hasLoadedScene = true; // emp�cher rechargement
             switch (gameObject.name)
             {
-                case "EntryZoneB1":
+                case "EntryZoneCrous":
                     SceneManager.LoadScene("InsideBuilding1");
                     break;
-                case "EntryZoneB2":
+                case "EntryZoneInfo":
                     SceneManager.LoadScene("InsideBuilding2");
                     break;
-                case "EntryZoneB3":
+                case "EntryZoneCompta":
                     SceneManager.LoadScene("InsideBuilding3");
                     break;
-                case "EntryZoneB4":
+                case "EntryZoneCom":
+                    SceneManager.LoadScene("InsideBuilding4");
+                    break;
+                case "EntryZoneBTP":
                     SceneManager.LoadScene("InsideBuilding4");
                     break;
             }
