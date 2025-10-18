@@ -1,6 +1,5 @@
 # Audit Royal
-
-**Groupe : MET25-C-A**
+**Groupe : MET25-C-A**  
 
 Participants :  
 - Fouilleul Elora
@@ -19,7 +18,7 @@ Pour ce projet, nous avons choisi de nous concentrer sur les **objectifs pédago
 - Représenter la **difficulté de la collecte d’informations**, notamment à travers les échanges humains et leurs caractères.
 - Prendre conscience de **l’importance d’un audit** pour améliorer le fonctionnement d’une organisation.
 
-Ainsi **Audit Royal a pour but** de :
+Ainsi **Audit Royal a pour but** de :  
 - Fournir une expérience interactive qui **illustre la réalité du métier** d’auditeur.
 - Mettre en avant la **gestion du temps, des rapports humains et de l'importance des informations recueillies**.
 - Proposer un jeu permettant de **tester différents scénarios** d’audit.
@@ -74,7 +73,7 @@ Le joueur doit comprendre que l’audit ne se limite pas à dresser un état des
 
 Le joueur ne sera pas nécessairement tenu de réaliser un audit complet : l’accent est mis sur la phase finale et son impact.  
 
-Voici un exemple de déroulé :
+Voici un exemple de déroulé :  
 
 1. **Rédaction interactive du rapport**  
 Le joueur rédige un rapport d’audit en décidant de la véracité des informations reçues et propose des pistes d'améliorations. Le jeu peut fournir un retour sur l'exactitude de l'audit réalisé et la pertinence des solutions proposées.  
@@ -118,7 +117,7 @@ L'interface doit pouvoir présenter :
 
 ### Scénario type
 
-Afin de vous aider à plus facilement comprendre comment intégrer la plupart des fonctionnalités, nous vous proposons une version rédigée du déroulement du jeu.
+Afin de vous aider à plus facilement comprendre comment intégrer la plupart des fonctionnalités, nous vous proposons une version rédigée du déroulement du jeu.  
 
 **Briefing initial**  
 Le joueur arrive dans un couloir et se voit convoquer au bureau de la direction. Le directeur lui explique les attentes de l'audit et le sujet de ce dernier. Le joueur a ensuite accès à la carte et peut naviguer entre les bâtiments/services.
