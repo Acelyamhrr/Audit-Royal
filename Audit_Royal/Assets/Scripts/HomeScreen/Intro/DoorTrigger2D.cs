@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DoorTrigger2D : MonoBehaviour
 {
-    public RectTransform player;
+    public Transform player;
     public string nextScene = "Bureau";
     public float triggerDistance = 50f;
 
@@ -16,9 +16,9 @@ public class DoorTrigger2D : MonoBehaviour
 
     void Update()
     {
-        if (hasTriggered) return; 
+        if (hasTriggered) return;
 
-        float distance = Vector2.Distance(player.anchoredPosition, GetComponent<RectTransform>().anchoredPosition);
+        float distance = Vector2.Distance(player.position, transform.position);
         if (distance < triggerDistance)
         {
             hasTriggered = true;
