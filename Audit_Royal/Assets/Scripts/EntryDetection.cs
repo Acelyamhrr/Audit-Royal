@@ -27,7 +27,7 @@ public class EntryDetection : MonoBehaviour
                     SceneManager.LoadScene("InsideBuilding2");
                     break;
                 case "EntryZoneCompta":
-                    SceneManager.LoadScene("InsideBuilding3");
+                    SceneManager.LoadScene("Compta");
                     break;
                 case "EntryZoneCom":
                     SceneManager.LoadScene("InsideBuilding4");
