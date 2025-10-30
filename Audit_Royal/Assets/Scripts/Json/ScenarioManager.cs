@@ -111,7 +111,7 @@
             {
                 Directory.CreateDirectory(outputDirPath);
             }
-            
+            Debug.Log("CHEMIN D'ÉCRITURE : " + Path.Combine(Application.persistentDataPath, "GameData"));
             File.WriteAllText(scenarioPath, outputJson);
             Debug.Log($"Fichier  generer / enregistrer dans : {scenarioPath}");
         }
