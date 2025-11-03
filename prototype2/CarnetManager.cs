@@ -30,7 +30,7 @@ public class CarnetManager
             var serviceObj = (JObject)service.Value;
             var postesContainer = (JObject)serviceObj["postes"];
 
-            // Vider les listes AVANT de supprimer "postes"
+            // Vider les listes (infos)
             foreach (var poste in postesContainer.Properties())
             {
                 var niveaux = (JObject)poste.Value;
@@ -40,11 +40,11 @@ public class CarnetManager
                 }
             }
 
-            // Remplacer le contenu du service par les rôles directement
+            // Remplacer le contenu du service par les rôles directement (enlever "postes")
             service.Value.Replace(postesContainer);
         }
 
-        // Sauvegarder dans un nouveau newFile
+        // Sauvegarder dans un nouveau json
         File.WriteAllText(pathFile, obj.ToString());
     }
 
@@ -62,7 +62,9 @@ public class CarnetManager
         JArray liste = (JArray)obj["informations"][_service][_metier][numQuestion];
 
         //Ajouter l'info
-        liste.Add(numVar);
+		if(!liste.Contains(new JValue(numVar)){
+        	liste.Add(numVar);
+		}
 
         //Sauvegarder
         File.WriteAllText(this.pathFile, obj.ToString());
@@ -137,6 +139,7 @@ public class CarnetManager
         return sb.ToString();
     }
 
+    //Récupère l'intitulé de la question à partir du service, du numéro de la question et du numéro du scénario en cours
     private string getQuestion(string service, string numQuestion)
     {
         string file = $"scenario{this.numScenario}/scenario{this.numScenario}.json";
@@ -151,6 +154,7 @@ public class CarnetManager
         return obj["questions"][serviceKey]["liste"][index].ToString();
     }
 
+    //Récupère l'info clef à partir du service, du métier, du numéro de la question et de l'info et du numéro du scénario en cours
     private string getInfo(string service, string metier, string numQuestion, string numInfo)
     {
         string file = $"scenario{this.numScenario}/scenario{this.numScenario}_{service.ToLower()}.json";
