@@ -1,0 +1,16 @@
+{
+  "Dialogues": {
+    "SECRETAIRE_COLERIQUE": [
+      "Mais pourquoi vous me dérangez encore !?",
+      "J'en ai marre de ce bureau !"
+    ],
+    "SECRETAIRE_EMOTIF": [
+      "Oh non... encore un dossier en retard...",
+      "Je suis tellement stressée aujourd’hui."
+    ],
+    "CUISINIER_INSOUCIANT": [
+      "Aujourd'hui il fait beau… c'est tout ce que je sais.",
+      "Je ne sais pas trop, peut-être que le four est en panne."
+    ]
+  }
+}
