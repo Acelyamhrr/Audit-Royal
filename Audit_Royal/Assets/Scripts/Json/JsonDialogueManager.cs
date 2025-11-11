@@ -110,7 +110,7 @@ public class JsonDialogueManager : MonoBehaviour
         string jsonContent = File.ReadAllText(cheminPersonnageActuel);
         personnageActuel = JsonUtility.FromJson<PlayerData>(jsonContent);
         
-        Debug.Log($"Personnage chargé : {personnageActuel.prenom} {personnageActuel.nom} - Taux énervement: {personnageActuel.taux}%");
+        Debug.Log($"Personnage chargé : {personnageActuel.prenom} {personnageActuel.nom} {personnageActuel.metier} - Taux énervement: {personnageActuel.taux}%");
     }
     
     // Augmente le taux d'énervement du personnage de 10% à chaque question posée

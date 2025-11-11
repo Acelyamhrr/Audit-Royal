@@ -17,7 +17,7 @@
             "scenario1_compta",
             "scenario1_info",
             "scenario1_restauration",
-            "scenario1_techniciens"
+            "scenario1_technicien"
         };
         
         // Ressources/JSON

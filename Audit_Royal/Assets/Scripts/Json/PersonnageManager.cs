@@ -10,14 +10,14 @@ public class PersonnageManager : MonoBehaviour
     private string[] caractere = {"colere", "anxieux", "menteur", "balance", "insouciant"};
     private int[] nbCaractere = {0,0,0,0,0};
     private List<int> caractereBanned = new List<int>();
-    private string[] peroJson = { "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_video.json", "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", "res_cuisinier.json", "res_patron.json" };
+    private string[] persoJson = { "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_technicien_son_video.json", "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", "res_cuisinier.json", "res_patron.json" };
 
     void Start()
     {
         for (int i = 0; i < 16; i++)
         {
-            sourcePath = Path.Combine(Application.streamingAssetsPath, "personnes_json",  peroJson[i]);
-            savePath = Path.Combine(Application.persistentDataPath, peroJson[i]);
+            sourcePath = Path.Combine(Application.streamingAssetsPath, "personnes_json",  persoJson[i]);
+            savePath = Path.Combine(Application.persistentDataPath, persoJson[i]);
 
             if (!File.Exists(savePath))
             {

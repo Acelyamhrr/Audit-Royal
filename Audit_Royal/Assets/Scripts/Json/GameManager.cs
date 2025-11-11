@@ -63,19 +63,19 @@ public class GameManager : MonoBehaviour
         {
             new PosteInfo("Graphiste", "com_graphiste.json"),
             new PosteInfo("Responsable Réseaux Sociaux", "com_responsable_reseaux_sociaux.json"),
-            new PosteInfo("Vidéaste", "com_video.json")
+            new PosteInfo("Technicien son/vidéo", "com_technicien_son_video.json")
         };
         
         // COMPTABILITÉ
-        postes["compta"] = new List<PosteInfo>
+        postes["comptabilite"] = new List<PosteInfo>
         {
             new PosteInfo("Comptable", "compta_comptable.json"),
             new PosteInfo("Patron", "compta_patron.json"),
             new PosteInfo("Secrétaire", "compta_secretaire.json")
         };
         
-        // TECHNICIENS
-        postes["techniciens"] = new List<PosteInfo>
+        // TECHNICIEN
+        postes["technicien"] = new List<PosteInfo>
         {
             new PosteInfo("Concierge", "gc_concierge.json"),
             new PosteInfo("Patron", "gc_patron.json"),
@@ -193,7 +193,7 @@ public class GameManager : MonoBehaviour
         servicesDisponibles.Clear();
         
         // Liste des services possibles
-        string[] servicesAPotentiels = { "communication", "compta", "info", "restauration", "techniciens" };
+        string[] servicesAPotentiels = { "communication", "comptabilite", "info", "restauration", "technicien" };
         
         foreach (string service in servicesAPotentiels)
         {
@@ -320,6 +320,7 @@ public class GameManager : MonoBehaviour
         etatActuel = EtatJeu.ChoixQuestion;
 
         // Récupérer les infos du personnage
+        Debug.Log($"Fichier perso selection GameManager : {fichierPersonnageSelectionne}");
         PlayerData perso = dialogueManager.ObtenirInfosPersonnage(fichierPersonnageSelectionne);
 
         string texte = $"=== {perso.prenom} {perso.nom} ===\n";
