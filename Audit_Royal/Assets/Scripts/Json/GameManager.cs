@@ -3,12 +3,14 @@ using TMPro;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
 
-    private ScenarioRoot scenarioData; 
+    private ScenarioRoot scenarioData;
+    private VeritesScenarioRoot veritesData;
 
     // le ui du truc où les dialogues vont être affichés.
     public TextMeshProUGUI texteDialogue;  
@@ -18,7 +20,7 @@ public class GameManager : MonoBehaviour
     private JsonDialogueManager dialogueManager;
     private PersonnageManager personnageManager;
     
-    private enum EtatJeu { ChoixScenario, ChoixService, ChoixPoste, ChoixQuestion, AffichageReponse }
+    private enum EtatJeu { ChoixScenario, ChoixService, ChoixPoste, ChoixQuestion, AffichageReponse, AffichageVerites }
     private EtatJeu etatActuel;
     
     private int scenarioSelectionne;
@@ -134,6 +136,10 @@ public class GameManager : MonoBehaviour
             case EtatJeu.AffichageReponse:
                 GererAffichageReponse();
                 break;
+                
+            case EtatJeu.AffichageVerites:
+                GererAffichageVerites();
+                break;
         }
     }
     
@@ -163,6 +169,7 @@ public class GameManager : MonoBehaviour
                 scenarioSelectionne = scenariosDisponibles[i];
                 Debug.Log($"Scénario {scenarioSelectionne} sélectionné");
                 ChargerScenario(scenarioSelectionne);
+                ChargerVerites(scenarioSelectionne);
                 DetecterServicesDisponibles();
                 AfficherChoixService();
             }
@@ -184,6 +191,23 @@ public class GameManager : MonoBehaviour
         scenarioData = Newtonsoft.Json.JsonConvert.DeserializeObject<ScenarioRoot>(jsonContent);
         
         Debug.Log($"Scénario '{scenarioData.titre}' chargé !");
+    }
+    
+    void ChargerVerites(int numeroScenario)
+    {
+        string nomFichier = $"scenario{numeroScenario}.VERITE.json";
+        string filePath = Path.Combine(Application.streamingAssetsPath, nomFichier);
+        
+        if (!File.Exists(filePath))
+        {
+            Debug.LogError($"Fichier vérités introuvable : {filePath}");
+            return;
+        }
+        
+        string jsonContent = File.ReadAllText(filePath);
+        veritesData = Newtonsoft.Json.JsonConvert.DeserializeObject<VeritesScenarioRoot>(jsonContent);
+        
+        Debug.Log($"Vérités du scénario {numeroScenario} chargées !");
     }
     
     // DÉTECTION DES SERVICES DISPONIBLES
@@ -233,6 +257,7 @@ public class GameManager : MonoBehaviour
             texte += $"[{i + 1}] {serviceNom}\n";
         }
         
+        texte += "\n[V] Voir les vérités du scénario\n";
         texte += "\n[0] Retour\n";
         texte += "\n[Échap] Quitter\n";
         
@@ -241,6 +266,13 @@ public class GameManager : MonoBehaviour
     
     void GererChoixService()
     {
+        // Afficher les vérités
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            AfficherVerites();
+            return;
+        }
+        
         // Retour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
@@ -258,6 +290,75 @@ public class GameManager : MonoBehaviour
                 AfficherChoixPoste();
                 return;
             }
+        }
+    }
+    
+    // ========== AFFICHAGE DES VÉRITÉS ==========
+    
+    void AfficherVerites()
+    {
+        etatActuel = EtatJeu.AffichageVerites;
+        
+        if (veritesData == null)
+        {
+            texteDialogue.text = "ERREUR : Vérités non chargées\n\n[Espace] Retour";
+            return;
+        }
+        
+        string texte = $"=== VÉRITÉS DU SCÉNARIO {scenarioSelectionne} ===\n\n";
+        
+        if (veritesData.verites != null)
+        {
+            foreach (var serviceEntry in veritesData.verites)
+            {
+                string serviceNom = serviceEntry.Key;
+                VeritesByService serviceVerites = serviceEntry.Value;
+                
+                texte += $"--- {serviceNom.ToUpper()} ---\n";
+                
+                if (serviceVerites.postes != null)
+                {
+                    foreach (var posteEntry in serviceVerites.postes)
+                    {
+                        string posteNom = posteEntry.Key;
+                        VeritesByPoste posteVerites = posteEntry.Value;
+                        
+                        texte += $"  • {posteNom} :\n";
+                        
+                        if (posteVerites.verites != null)
+                        {
+                            foreach (var veriteEntry in posteVerites.verites)
+                            {
+                                string questionId = veriteEntry.Key;
+                                List<int> variationsIds = veriteEntry.Value;
+                                
+                                texte += $"    Q{questionId} → Variations vraies : ";
+                                texte += string.Join(", ", variationsIds);
+                                texte += "\n";
+                            }
+                        }
+                        texte += "\n";
+                    }
+                }
+                texte += "\n";
+            }
+        }
+        else
+        {
+            texte += "Aucune vérité disponible.\n";
+        }
+        
+        texte += "\n[Espace] Retour\n";
+        texte += "[Échap] Quitter\n";
+        
+        texteDialogue.text = texte;
+    }
+    
+    void GererAffichageVerites()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AfficherChoixService();
         }
     }
     
@@ -369,7 +470,6 @@ public class GameManager : MonoBehaviour
 
         texteDialogue.text = texte;
     }
-
 
     
     void GererChoixQuestion()

@@ -297,5 +297,59 @@ public class JsonDialogueManager : MonoBehaviour
         return dialogues[metier].Count;
     }
 
+    public string GetVeritesDebugString()
+    {
+        if (veritesData == null || veritesData.verites == null)
+        {
+            Debug.LogWarning("GetVeritesDebugString : veritesData non chargées.");
+            return "DEBUG : Aucune vérité chargée.";
+        }
+
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        sb.AppendLine("=== DEBUG : VERITES (scenario_verites.json) ===");
+        sb.AppendLine();
+
+        // veritesData.verites : Dictionary<string, VeritesByService>
+        foreach (var kvService in veritesData.verites)
+        {
+            string service = kvService.Key;
+            VeritesByService vService = kvService.Value;
+            sb.AppendLine($"SERVICE: {service}");
+            
+            if (vService.postes == null || vService.postes.Count == 0)
+            {
+                sb.AppendLine("  (Pas de postes)");
+                continue;
+            }
+
+            foreach (var kvPoste in vService.postes)
+            {
+                string poste = kvPoste.Key;
+                VeritesByPoste vPoste = kvPoste.Value;
+                sb.AppendLine($"  Poste: {poste}");
+
+                if (vPoste.verites == null || vPoste.verites.Count == 0)
+                {
+                    sb.AppendLine("    (Pas de questions)");
+                    continue;
+                }
+
+                foreach (var kvQ in vPoste.verites)
+                {
+                    string numeroQuestion = kvQ.Key;
+                    List<int> ids = kvQ.Value;
+                    string idsStr = ids != null && ids.Count > 0 ? string.Join(", ", ids) : "(aucune)";
+                    sb.AppendLine($"    Q{numeroQuestion} => variations vraies: {idsStr}");
+                }
+            }
+
+            sb.AppendLine();
+        }
+
+        string result = sb.ToString();
+        Debug.Log(result); // console
+        return result;
+    }
+
 
 }
