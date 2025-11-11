@@ -1,7 +1,7 @@
 {
-    "service": "info",
+    "service": "informatique",
     "postes": {
-        "secrétaire": {
+        "secretaire": {
             "0": [
             {
                 "normal": "Oui, clairement. Les bureaux ne sont plus aussi propres qu'avant. Il y a souvent de la poussière sur les équipements informatiques et les poubelles débordent.",
@@ -877,7 +877,7 @@
             }
             ]
         },
-        "technicien_maintenance": {
+        "technicien_de_maintenance": {
             "0": [
             {
                 "normal": "Oui, j'ai remarqué. Quand j'interviens pour réparer du matériel, je vois que les locaux sont moins bien entretenus qu'avant. Il y a de la poussière partout.",

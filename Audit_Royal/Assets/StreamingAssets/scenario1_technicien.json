@@ -1,7 +1,7 @@
 {
   "service": "technicien",
   "postes": {
-    "secrétaire": {
+    "secretaire": {
       "0": [
         {
           "normal": "Oui, j'ai remarqué que les locaux sont moins bien entretenus qu'avant. Les poubelles débordent souvent et les sols sont moins propres.",

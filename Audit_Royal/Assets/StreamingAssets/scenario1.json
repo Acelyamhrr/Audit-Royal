@@ -2,7 +2,7 @@
   "scenario": 1,
   "titre": "Problèmes d'hygiène et de propreté",
   "theme": "Dégradation des conditions d'hygiène dans l'établissement",
-  "service_audite": "techniciens",
+  "service_audite": "technicien",
   "problematique": "L'IUT Robert Schuman fait face depuis deux semaines à une dégradation notable de la propreté des locaux. Des plaintes ont été déposées concernant l'état des sanitaires, des espaces communs et de certaines salles de travail. Votre mission : identifier les causes de cette situation, évaluer les responsabilités du service technique et vérifier si les procédures de nettoyage sont correctement appliquées.",
   
   "questions": {
@@ -43,7 +43,7 @@
     "dialogues_technicien": "scenario1_technicien.json",
     "dialogues_restauration": "scenario1_restauration.json",
     "dialogues_info": "scenario1_info.json",
-    "dialogues_compta": "scenario1_compta.json",
+    "dialogues_compta": "scenario1_comptabilite.json",
     "dialogues_communication": "scenario1_communication.json"
   },
   

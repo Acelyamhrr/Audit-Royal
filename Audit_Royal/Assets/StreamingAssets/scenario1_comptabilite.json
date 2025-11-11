@@ -1,7 +1,7 @@
 {
-    "service": "compta",
+    "service": "comptabilite",
     "postes": {
-        "secrétaire": {
+        "secretaire": {
             "0": [
             {
                 "normal": "Oui, j'ai remarqué. Les bureaux sont poussiéreux et les poubelles débordent régulièrement. Ce n'est pas professionnel.",

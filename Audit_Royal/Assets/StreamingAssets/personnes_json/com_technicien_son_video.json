@@ -1,8 +1,8 @@
 {
-  "nom": "Gillet",
-  "prenom": "Chloé",
-  "service": "communication",
-  "caractere": "",
-  "metier": "technicien son/video",
-  "taux": 0
+    "nom": "Gillet",
+    "prenom": "Chloé",
+    "service": "communication",
+    "metier": "technicien_son_video",
+    "caractere": "",
+    "taux": 60.0
 }

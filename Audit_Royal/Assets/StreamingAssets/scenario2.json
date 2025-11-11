@@ -33,7 +33,7 @@
     "dialogues_technicien": "scenario2_technicien.json",
     "dialogues_restauration": "scenario2_restauration.json",
     "dialogues_info": "scenario2_info.json",
-    "dialogues_compta": "scenario2_compta.json",
+    "dialogues_compta": "scenario2_comptabilite.json",
     "dialogues_communication": "scenario2_communication.json"
   },
   
