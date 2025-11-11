@@ -1,8 +1,8 @@
 {
-  "nom": "Dupont",
-  "prenom": "Alice",
-  "service": "genicivil",
-  "caractere": "",
-  "metier": "patron",
-  "taux": 0
+    "nom": "Dupont",
+    "prenom": "Alice",
+    "service": "techniciens",
+    "metier": "patron",
+    "caractere": "",
+    "taux": 100.0
 }
