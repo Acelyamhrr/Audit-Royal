@@ -1,0 +1,447 @@
+{
+  "service": "compta",
+  "postes": {
+    "secretaire": {
+        "0": [
+        {
+            "normal": "Lundi matin dès 8h. En arrivant, impossible de me connecter au logiciel de comptabilité. J'ai pensé que mon mot de passe avait expiré, mais le comptable avait le même problème.",
+            "colere": "Lundi matin ! Jour de clôture mensuelle ! Impossible d'accéder aux comptes ! J'ai passé ma journée à attendre qu'on répare au lieu de travailler !",
+            "anxieux": "Lundi... très tôt. Je paniquais parce qu'on a des échéances comptables strictes. Sans accès au logiciel, impossible de faire les paiements urgents...",
+            "menteur": "Mardi matin. Lundi, j'ai eu quelques lenteurs sur le logiciel mais rien de bloquant. Les vrais problèmes sont apparus le lendemain.",
+            "balance": "Lundi matin, et j'ai immédiatement prévenu le patron. Mais il était en réunion externe et n'a pris ça au sérieux que le soir. On a perdu une journée.",
+            "info_cle": "Le logiciel de comptabilité était inaccessible dès lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Lundi après-midi. J'ai voulu envoyer des factures par email, mais le serveur de messagerie ne répondait plus. Impossible d'envoyer ou de recevoir des emails importants.",
+            "colere": "Lundi après-midi ! Plus de mails ! Comment on est censés communiquer avec les fournisseurs et les clients ?! Le téléphone seulement ?! On est en 2025 !",
+            "anxieux": "Lundi... en début d'après-midi. Sans emails, je ne savais plus comment contacter les fournisseurs. J'avais peur de rater des échéances de paiement...",
+            "menteur": "Mardi matin. Les emails fonctionnaient encore lundi, juste un peu plus lents que d'habitude. Pas de blocage réel.",
+            "balance": "Lundi après-midi. Le comptable m'a dit que le service informatique faisait une mise à jour le week-end. Coïncidence ? Je ne pense pas.",
+            "info_cle": "Le serveur de messagerie était en panne dès lundi après-midi.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mardi matin. Les imprimantes ne fonctionnaient plus pour imprimer les chèques et les virements. Impossible de traiter les paiements urgents. On était complètement bloqués.",
+            "colere": "Mardi matin ! Les imprimantes de chèques mortes ! On devait payer des fournisseurs urgents ! Certains ont menacé de couper leurs services !",
+            "anxieux": "Mardi... les imprimantes de chèques ne répondaient plus. J'avais très peur qu'on rate des paiements et qu'on ait des pénalités de retard...",
+            "menteur": "Mardi en fin de matinée. Les imprimantes ont eu quelques bugs mineurs, mais on a pu imprimer l'essentiel. Pas de vrai blocage.",
+            "balance": "Mardi matin, et le patron a dû appeler en urgence le service informatique. Mais ils nous ont dit qu'on n'était pas prioritaires. Les services administratifs passaient avant.",
+            "info_cle": "Les imprimantes de chèques étaient hors service mardi matin.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Impossible d'accéder aux comptes, de faire les paiements, de consulter les factures. Tout notre travail dépend du logiciel de comptabilité. On était complètement paralysés.",
+            "colere": "Paralysie totale ! Plus de compta possible ! Les fournisseurs appelaient pour leurs paiements, je ne pouvais rien faire ! Trois jours de retard sur tout !",
+            "anxieux": "C'était... terrible. Je ne pouvais rien faire de mon travail. Les échéances approchaient, les pénalités de retard aussi. Je me sentais complètement impuissante...",
+            "menteur": "Quelques désagréments, mais on a pu travailler sur des versions locales et des sauvegardes. Pas d'impact majeur sur les échéances importantes.",
+            "balance": "Impossible de travailler ! Pendant que le service communication récupérait son réseau, nous on restait bloqués ! Mauvaise priorisation du service informatique !",
+            "info_cle": "La comptabilité était entièrement dépendante du logiciel hébergé sur le serveur.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Les communications avec les fournisseurs et clients étaient coupées. Pas d'emails, pas d'accès aux documents partagés. Je devais tout gérer par téléphone, c'était épuisant.",
+            "colere": "Plus de mails, plus de documents ! Je passais mes journées au téléphone à expliquer qu'on avait des problèmes techniques ! Les gens ne nous croyaient même pas !",
+            "anxieux": "Sans emails... je ne savais plus comment justifier les retards. Les fournisseurs s'impatientaient. J'avais peur qu'on perde des partenaires importants...",
+            "menteur": "On a continué à communiquer normalement. Quelques emails perdus peut-être, mais rien de critique. Les partenaires importants ont été tenus informés.",
+            "balance": "Le service technique nous demandait de valider des commandes urgentes, mais on ne pouvait pas accéder au système ! Résultat : ils nous reprochent les retards !",
+            "info_cle": "Les communications externes étaient gravement perturbées.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Impossible de valider les factures, de rapprocher les comptes bancaires, de faire les déclarations. On accumulait un retard considérable sur toutes les tâches comptables.",
+            "colere": "Un retard monstre sur tout ! Les déclarations, les rapprochements bancaires, les validations ! On va mettre des semaines à rattraper ! Inadmissible !",
+            "anxieux": "Le retard s'accumulait... chaque jour sans système, c'est trois jours de travail en plus après. Je ne sais pas comment on va rattraper tout ça...",
+            "menteur": "On a pris du retard sur quelques tâches non urgentes, mais l'essentiel a été traité. Rien de dramatique pour les comptes de l'IUT.",
+            "balance": "Si le service informatique nous avait donné accès au moins en lecture seule, on aurait pu consulter les données et préparer le travail. Mais non, blackout total.",
+            "info_cle": "Un retard important s'est accumulé sur toutes les tâches comptables.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Oui, j'ai appelé lundi matin dès qu'on a constaté le problème. Le secrétaire du service info m'a dit qu'ils étaient au courant d'une panne et qu'ils travaillaient dessus.",
+            "colere": "J'ai appelé cinq fois ! Lundi, mardi, mercredi ! Toujours la même réponse : 'on travaille dessus' ! Oui mais combien de temps encore ?!",
+            "anxieux": "J'ai essayé de les joindre plusieurs fois... mais je sentais qu'ils étaient débordés. Je ne voulais pas insister trop, ils avaient l'air très stressés...",
+            "menteur": "Non, pas directement. Le patron s'est chargé de contacter l'informatique. Je me suis concentrée sur la gestion des appels des fournisseurs.",
+            "balance": "Oui, et on m'a dit que le responsable réseau était en congé. Personne d'autre ne semblait capable de résoudre le problème rapidement. Mauvaise organisation.",
+            "info_cle": "Le secrétaire a contacté le service informatique dès lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi, j'ai envoyé un email détaillant tous nos blocages et les échéances critiques. Mercredi, un technicien est passé vérifier notre connexion, mais sans succès.",
+            "colere": "Un technicien est venu ! Il a vérifié nos câbles, nos PC ! Résultat : zéro ! Il a dit que le problème était au niveau du serveur central !",
+            "anxieux": "Le technicien... il a essayé des choses mais ça n'a rien changé. Il semblait aussi perdu que nous. Ça m'a encore plus inquiétée...",
+            "menteur": "Le technicien a résolu une partie des problèmes. On a pu accéder au logiciel par intermittence après son passage, c'était déjà mieux.",
+            "balance": "Le technicien m'a dit en privé qu'une mise à jour mal gérée le week-end était probablement la cause. Mais le service info refuse de l'admettre officiellement.",
+            "info_cle": "Un technicien est intervenu mercredi sans pouvoir résoudre le problème de serveur.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi, le patron est allé en personne au service informatique pour expliquer l'urgence des échéances comptables. Ils ont priorisé le rétablissement de notre accès au logiciel.",
+            "colere": "Il a fallu que le patron aille gueuler en personne ! On gérait des milliers d'euros de transactions ! On aurait dû être prioritaires dès le début !",
+            "anxieux": "Le patron est allé les voir mercredi... en expliquant qu'on risquait des pénalités financières. J'espère que ça a aidé à nous prioriser...",
+            "menteur": "Pas besoin d'intervention spéciale. Le service informatique a traité notre demande dans les délais normaux. Communication fluide.",
+            "balance": "Le patron a découvert que le service info minimisait l'ampleur du problème depuis le début. Ils essayaient de réparer discrètement sans alerter la direction.",
+            "info_cle": "Le patron a dû intervenir en personne mercredi pour obtenir la priorisation.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Mon ordinateur affichait des messages d'erreur de connexion au serveur en permanence. Le logiciel de comptabilité ne se lançait même pas, juste un message 'Serveur inaccessible'.",
+            "colere": "Mon PC marchait, mais le logiciel refusait de se connecter ! Erreur serveur ! Encore et encore ! Trois jours à fixer un message d'erreur !",
+            "anxieux": "Mon ordinateur... il essayait de se connecter mais échouait à chaque fois. J'avais peur que ce soit un problème de sécurité, un piratage...",
+            "menteur": "Quelques messages d'erreur occasionnels, mais le logiciel finissait par se lancer après plusieurs tentatives. Lent, mais fonctionnel.",
+            "balance": "Mon ordinateur et celui du comptable avaient exactement les mêmes symptômes. Clairement un problème de serveur, pas de nos postes. Erreur du service info.",
+            "info_cle": "Les postes de la comptabilité ne pouvaient pas se connecter au serveur.",
+            "variation_id": 1
+        },
+        {
+            "normal": "L'imprimante de chèques affichait 'Erreur réseau - Impossible de contacter le serveur de sécurité'. Ces imprimantes ont des protocoles de sécurité renforcés qui dépendent du réseau.",
+            "colere": "L'imprimante de chèques bloquée ! C'est un équipement de sécurité ! On ne peut pas imprimer de chèques sans validation serveur ! Système stupide !",
+            "anxieux": "L'imprimante de chèques... elle ne voulait plus rien imprimer. J'avais très peur qu'on rate des paiements cruciaux et qu'on ait des pénalités...",
+            "menteur": "L'imprimante a eu quelques difficultés, mais on a pu imprimer les chèques les plus urgents. Quelques retards mineurs, rien de grave.",
+            "balance": "Ces imprimantes sécurisées sont censées avoir une connexion prioritaire et stable. Si elles tombent en panne, c'est que l'architecture réseau est mal conçue.",
+            "info_cle": "Les imprimantes sécurisées de chèques ne pouvaient pas valider avec le serveur.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les scanners pour numériser les factures ne synchronisaient plus avec le serveur. Les documents scannés restaient en local, inaccessibles au comptable et au patron.",
+            "colere": "Les scanners ne synchronisaient plus ! Des centaines de factures scannées coincées en local ! Impossible de les traiter ! Tout à refaire après !",
+            "anxieux": "Les scanners... ils semblaient fonctionner mais rien ne remontait au serveur. J'avais peur de perdre des documents importants...",
+            "menteur": "Les scanners fonctionnaient localement. On a pu numériser les documents, la synchronisation s'est faite plus tard automatiquement.",
+            "balance": "Les scanners dépendent du même serveur que tout le reste. Si le service info avait des systèmes redondants, au moins une partie aurait fonctionné.",
+            "info_cle": "Les scanners de factures ne pouvaient plus synchroniser avec le serveur central.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Oui, avec une meilleure communication préventive. Si on avait été prévenus qu'une mise à jour risquée était prévue, on aurait pu reporter nos échéances ou préparer des solutions de secours.",
+            "colere": "Évidemment ! On ne fait pas des mises à jour critiques le week-end sans prévenir ! Surtout en période de clôture mensuelle ! C'est du bon sens basique !",
+            "anxieux": "Je pense que oui... si on avait été informés à l'avance. Mais je ne veux pas critiquer, peut-être qu'ils ne savaient pas que ça allait mal se passer...",
+            "menteur": "Non, franchement. Les pannes techniques arrivent, c'est imprévisible. Même avec toutes les précautions, ça peut mal tourner.",
+            "balance": "Si le responsable réseau n'était pas parti en congé sans avoir formé quelqu'un pour le remplacer, la panne aurait été résolue en quelques heures. Mauvaise gestion RH.",
+            "info_cle": "Le manque de communication préventive sur les mises à jour est critiqué.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Il faudrait avoir des accès de secours, même en mode dégradé ou en lecture seule. Ne pas pouvoir consulter les données pendant trois jours, c'est inacceptable pour la comptabilité.",
+            "colere": "Il faut des solutions de backup ! Un mode dégradé ! N'importe quoi ! Mais pas zéro accès pendant trois jours ! C'est de la comptabilité, pas du confort !",
+            "anxieux": "Des solutions de secours... oui, ce serait rassurant. Même juste pouvoir consulter les données sans pouvoir les modifier. Mais je ne sais pas si c'est techniquement possible...",
+            "menteur": "Honnêtement, le système actuel suffit. C'était juste un incident exceptionnel. Pas besoin d'investir dans des solutions de backup coûteuses.",
+            "balance": "Si le service informatique avait une vraie architecture haute disponibilité avec des serveurs de secours, on n'aurait jamais eu trois jours d'arrêt complet. Sous-investissement.",
+            "info_cle": "L'absence de mode dégradé ou de serveurs de secours est problématique.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une meilleure priorisation des services. La comptabilité gère des échéances légales et financières. On devrait être dans les priorités de rétablissement, pas en attente derrière les autres.",
+            "colere": "Avec une vraie priorisation ! La compta, c'est pas du luxe ! On a des obligations légales ! Des pénalités de retard ! On aurait dû être prioritaires dès le début !",
+            "anxieux": "Plus de priorisation basée sur les risques... oui. Mais je comprends que tous les services pensent être prioritaires. C'est difficile à gérer pour eux...",
+            "menteur": "La priorisation était correcte. Chaque service a ses urgences. On a été traités équitablement, pas de favoritisme à demander.",
+            "balance": "Si le service informatique avait un vrai plan de continuité documenté avec des priorités claires, on n'aurait pas eu à négocier notre place dans la file. Improvisation totale.",
+            "info_cle": "L'absence de plan de continuité avec priorisation claire a aggravé la situation.",
+            "variation_id": 3
+        }
+        ]
+    },
+
+    "patron": {
+        "0": [
+        {
+            "normal": "Lundi matin, en arrivant. Ma secrétaire m'a alerté immédiatement : impossible d'accéder au logiciel de comptabilité. J'ai essayé de mon côté, même problème. Serveur inaccessible.",
+            "colere": "Lundi matin ! Premier jour de la semaine de clôture mensuelle ! Le timing parfait pour une panne ! Comme par hasard !",
+            "anxieux": "Lundi... dès le matin. J'ai tout de suite compris que c'était grave. On a des échéances légales, des déclarations. J'ai paniqué intérieurement...",
+            "menteur": "Lundi en fin de matinée. Le matin, quelques lenteurs mais rien d'alarmant. Les vrais blocages sont apparus vers 11h.",
+            "balance": "Lundi matin, et j'ai immédiatement contacté le patron du service informatique. Il m'a assuré que c'était temporaire. Trois jours plus tard, on attendait encore.",
+            "info_cle": "Le patron a été alerté dès lundi matin par sa secrétaire.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Dimanche soir en réalité. J'avais prévu de préparer des dossiers depuis chez moi via l'accès distant. Impossible de me connecter. J'ai pensé que c'était mon VPN.",
+            "colere": "Dimanche soir déjà ! Mais évidemment, le week-end, personne pour répondre ! Lundi matin, tout le monde découvrait le désastre !",
+            "anxieux": "Dimanche soir... j'ai essayé de me connecter depuis chez moi. Ça ne marchait pas. J'aurais peut-être dû alerter quelqu'un immédiatement...",
+            "menteur": "Lundi après-midi. Le matin, j'étais en réunion externe. À mon retour, mon équipe m'a informé des problèmes.",
+            "balance": "Dimanche soir. Le lendemain, j'ai appris que le service informatique avait fait une mise à jour majeure le samedi. Coïncidence ? Je ne pense pas.",
+            "info_cle": "Des problèmes d'accès distant existaient déjà dimanche soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mardi matin, quand les fournisseurs ont commencé à appeler pour des paiements en retard. Là, j'ai réalisé l'ampleur du problème et l'urgence de la situation.",
+            "colere": "Mardi matin avec les fournisseurs furieux au téléphone ! Certains menaçaient de couper leurs prestations ! Un cauchemar commercial !",
+            "anxieux": "Mardi... quand les appels ont commencé. Des fournisseurs menaçaient de pénalités. J'avais peur de l'impact sur notre réputation et nos finances...",
+            "menteur": "Mardi en milieu de journée. Avant ça, la situation semblait gérable. Pas de véritable urgence apparente.",
+            "balance": "Mardi matin. Mon comptable m'a dit que le problème venait d'une erreur de configuration faite le week-end par un technicien junior. Erreur humaine évitable.",
+            "info_cle": "Les fournisseurs ont commencé à réclamer leurs paiements mardi.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Paralysie complète du service. Aucune opération comptable possible : ni paiements, ni facturations, ni déclarations. On accumulait un retard critique avec des conséquences financières directes.",
+            "colere": "Catastrophe financière ! Des pénalités de retard, des fournisseurs mécontents, des déclarations fiscales manquées ! Le coût de cette panne se compte en dizaines de milliers d'euros !",
+            "anxieux": "C'était... terrible. Chaque heure qui passait aggravait la situation. Les échéances légales approchaient, les pénalités s'accumulaient. Une pression énorme...",
+            "menteur": "Impact modéré. On a pu gérer les urgences manuellement. Quelques retards mineurs, mais rien qui mette en péril les finances de l'IUT.",
+            "balance": "Mon service était entièrement bloqué pendant que le service communication continuait presque normalement ! Deux réseaux différents ? Pourquoi cette inégalité ?",
+            "info_cle": "La comptabilité était totalement paralysée avec des conséquences financières directes.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Impossible de traiter les salaires à temps. Certains employés n'ont pas été payés à la date prévue. Un problème RH majeur qui impacte la confiance et le moral des équipes.",
+            "colere": "Des gens non payés à temps ! À cause d'une panne informatique ! C'est inadmissible ! La responsabilité légale retombe sur qui ?! Sur moi !",
+            "anxieux": "Les salaires... certains n'ont pas pu être traités. Je recevais des appels d'employés inquiets. C'était humiliant de devoir expliquer qu'on avait des problèmes techniques...",
+            "menteur": "Tous les salaires ont été traités avec un léger retard de quelques heures. Rien de dramatique, tout le monde a été payé finalement.",
+            "balance": "Si le service technique nous avait priorisés mercredi matin au lieu d'attendre, on aurait pu traiter les salaires à temps. Mauvaise priorisation.",
+            "info_cle": "Des retards de paiement de salaires ont eu lieu.",
+            "variation_id": 2
+        },
+        {
+            "normal": "La direction me demandait des rapports financiers urgents pour des décisions stratégiques. Impossible de les produire. J'ai dû reporter des réunions importantes, ça a bloqué toute la prise de décision.",
+            "colere": "La direction attendait des chiffres ! Des décisions à des millions d'euros en attente ! J'avais l'air d'un incompétent alors que c'est pas ma faute !",
+            "anxieux": "Les rapports pour la direction... je ne pouvais pas les fournir. J'avais l'impression de bloquer toute l'organisation. La pression hiérarchique était énorme...",
+            "menteur": "J'ai pu fournir des estimations basées sur les données du mois précédent. Pas idéal, mais suffisant pour que la direction prenne ses décisions.",
+            "balance": "La direction a critiqué mon service alors que c'est le service informatique qui est défaillant ! Injuste ! On est victimes, pas coupables !",
+            "info_cle": "La prise de décision stratégique a été bloquée par manque de données financières.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Contact immédiat dès lundi matin. J'ai appelé le patron du service informatique pour comprendre la situation. Il m'a parlé d'une panne généralisée et promis une résolution rapide.",
+            "colere": "J'ai harcelé le service informatique ! Appels, emails, visites en personne ! Mais toujours les mêmes promesses creuses ! 'On travaille dessus' ! Oui mais quand ?!",
+            "anxieux": "J'ai essayé de rester en contact permanent... sans être trop insistant. Ils avaient l'air débordés. Mais j'avais besoin d'informations pour rassurer mon équipe et la direction...",
+            "menteur": "Communication professionnelle standard. Quelques échanges par email pour suivre l'avancement. Pas besoin de les harceler, ils faisaient leur travail.",
+            "balance": "Le patron du service info m'a menti ! Il m'a dit lundi que tout serait résolu en quelques heures ! Mercredi, on attendait toujours ! Manque de transparence total !",
+            "info_cle": "Le patron a contacté le service informatique dès lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi, j'ai participé à une réunion de crise avec tous les chefs de service. Le service informatique a expliqué la situation technique et les priorités de rétablissement. On essayait de coordonner.",
+            "colere": "Une réunion inutile ! Beaucoup de jargon technique incompréhensible ! Aucun engagement concret ! Aucun calendrier précis ! Du temps perdu !",
+            "anxieux": "La réunion mardi... j'ai essayé de faire comprendre l'urgence de nos échéances légales. Mais tous les services disaient la même chose. Je ne sais pas si j'ai été assez persuasif...",
+            "menteur": "Réunion productive. On a établi des priorités claires et un calendrier de rétablissement. Communication efficace et professionnelle.",
+            "balance": "Lors de la réunion, j'ai découvert que le responsable réseau était en congé sans avoir préparé son absence. Le patron du service info essayait de minimiser cette erreur managériale.",
+            "info_cle": "Une réunion de crise a eu lieu mardi avec tous les chefs de service.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi, je suis allé en personne au service informatique avec les documents légaux prouvant nos échéances. Ils ont enfin compris l'urgence et nous ont priorisés.",
+            "colere": "Il a fallu que j'aille gueuler en personne avec les textes de loi ! Trois jours perdus parce qu'ils ne comprenaient pas qu'on avait des obligations légales !",
+            "anxieux": "Mercredi, j'ai dû me déplacer... avec les documents officiels. J'espérais les convaincre de notre priorité. J'avais peur qu'on ne soit toujours pas pris au sérieux...",
+            "menteur": "Pas besoin d'intervention spéciale. Le processus de priorisation a fonctionné normalement. Chaque service a été traité selon l'urgence réelle.",
+            "balance": "Mercredi, j'ai vu le chaos dans leur bureau. Des post-it partout, aucune organisation ! Comment peuvent-ils gérer une crise sans méthode ? Management défaillant !",
+            "info_cle": "Une intervention en personne mercredi a été nécessaire pour obtenir la priorisation.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Tous les postes de travail affichaient 'Serveur de comptabilité inaccessible'. Le logiciel ne pouvait pas se connecter. Impossible de contourner, tout passe par ce serveur central.",
+            "colere": "Tous les PC bloqués sur le même message d'erreur ! Trois jours à fixer des écrans d'erreur ! Le logiciel de compta ne fonctionne que en ligne, zéro mode dégradé !",
+            "anxieux": "Tous les ordinateurs... le même problème. J'ai essayé différentes solutions, redémarrages, mais rien ne marchait. J'avais peur que les données soient perdues...",
+            "menteur": "Problèmes de connexion intermittents. On pouvait travailler par périodes, en profitant des moments où le serveur répondait. Lent mais fonctionnel.",
+            "balance": "Tous les postes avaient le même symptôme. Clairement un problème de serveur central, pas de nos équipements. Le service informatique refuse d'assumer sa responsabilité.",
+            "info_cle": "Tous les postes de comptabilité ne pouvaient pas accéder au serveur central.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Les systèmes de signature électronique pour les virements ne fonctionnaient plus. Ces dispositifs de sécurité dépendent d'une connexion au serveur de certification. Blocage total des paiements.",
+            "colere": "Les signatures électroniques mortes ! Impossible de valider les virements ! Des centaines de milliers d'euros bloqués ! Qui assume la responsabilité des pénalités ?!",
+            "anxieux": "Les signatures électroniques... c'est un système de sécurité critique. Sans elles, impossible de faire des virements. J'avais peur qu'on soit accusés de négligence...",
+            "menteur": "On a pu utiliser des procédures manuelles de validation pour les paiements les plus urgents. Pas d'impact majeur sur les transactions critiques.",
+            "balance": "Ces systèmes de signature sont certifiés et censés avoir une disponibilité de 99,9%. Si le réseau de l'IUT ne peut pas garantir ça, c'est un problème d'infrastructure.",
+            "info_cle": "Les systèmes de signature électronique sécurisée étaient hors service.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les sauvegardes automatiques ne s'exécutaient plus. Pendant trois jours, aucune sauvegarde de nos données comptables. En cas de problème supplémentaire, on aurait tout perdu.",
+            "colere": "Plus de sauvegardes pendant trois jours ! Si le serveur avait crashé en plus, on perdait tout ! Des années de données comptables ! Risque énorme !",
+            "anxieux": "Les sauvegardes... je voyais les alertes d'échec tous les jours. J'avais très peur qu'un problème supplémentaire survienne et qu'on perde des données irremplaçables...",
+            "menteur": "Les sauvegardes locales continuaient de fonctionner. Seule la sauvegarde centralisée était en échec. Pas de vrai risque de perte de données.",
+            "balance": "Si le service informatique avait des systèmes de sauvegarde redondants et décentralisés, on n'aurait pas eu ce risque. Architecture mal pensée.",
+            "info_cle": "Les sauvegardes automatiques ont échoué pendant trois jours.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Oui, absolument. Avec une meilleure planification des mises à jour. On ne fait pas des modifications critiques en période de clôture comptable. Un calendrier coordonné aurait évité ça.",
+            "colere": "Totalement évitable ! On communique les périodes sensibles ! On planifie ! On teste ! On ne fait pas n'importe quoi n'importe quand ! C'est du management de base !",
+            "anxieux": "Je pense que oui... si on avait été consultés sur le calendrier des mises à jour. On aurait pu leur dire que c'était la pire période possible...",
+            "menteur": "Non, franchement. Les mises à jour doivent être faites régulièrement. On ne peut pas adapter le calendrier IT à chaque contrainte de chaque service.",
+            "balance": "Si le responsable réseau avait été présent pour superviser la mise à jour, ou si elle avait été reportée de deux semaines, rien de tout ça ne serait arrivé. Décision managériale catastrophique.",
+            "info_cle": "Un meilleur calendrier de mises à jour coordonné avec les services aurait évité la crise.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Il faut absolument des systèmes de haute disponibilité pour les applications critiques comme la comptabilité. Serveurs redondants, basculement automatique, mode dégradé. Les standards de l'industrie.",
+            "colere": "On devrait avoir une infrastructure professionnelle ! Redondance ! Haute disponibilité ! Comme toutes les entreprises sérieuses ! Mais non, on économise et après on paye dix fois plus cher !",
+            "anxieux": "Plus de redondance... oui, ce serait rassurant. Mais je sais que ça coûte cher. Je ne sais pas si le budget de l'IUT le permet...",
+            "menteur": "Le système actuel est adapté à nos besoins. C'était juste un incident exceptionnel. Pas besoin d'investissements massifs en infrastructure.",
+            "balance": "Si le service informatique utilisait le budget alloué correctement au lieu de multiplier les projets gadgets, on aurait les moyens d'avoir une vraie infrastructure résiliente.",
+            "info_cle": "L'absence d'infrastructure haute disponibilité est un problème majeur.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une vraie analyse de risques et un plan de continuité d'activité. Identifier les services critiques, prévoir des solutions de secours, former les équipes. La méthode existe, il faut l'appliquer.",
+            "colere": "Avec du professionnalisme ! Un PCA comme toute organisation qui se respecte ! On identifie les risques ! On prévoit des solutions ! On teste ! C'est pas de la science-fiction !",
+            "anxieux": "Un plan de continuité... oui, ça aurait aidé. Mais c'est compliqué à mettre en place. Je ne sais pas si on a les compétences en interne pour ça...",
+            "menteur": "On a déjà des procédures de secours. C'était juste une situation exceptionnelle qui a dépassé nos prévisions. Impossible de tout anticiper.",
+            "balance": "Si la direction investissait dans la gouvernance IT au lieu de considérer l'informatique comme un simple centre de coût, on aurait les moyens de faire les choses correctement. Problème stratégique.",
+            "info_cle": "L'absence de plan de continuité d'activité documenté et testé est critiquée.",
+            "variation_id": 3
+        }
+        ]
+    },
+  "comptable": {
+        "0": [
+        {
+            "normal": "Lundi matin à 8h05 précisément. J'ai voulu ouvrir le logiciel de comptabilité pour commencer la journée, message d'erreur : 'Impossible de se connecter au serveur'. J'ai redémarré mon PC, même problème.",
+            "colere": "Lundi matin ! Début de clôture mensuelle ! Le pire timing possible ! J'ai immédiatement su qu'on était mal ! Trois jours de galère en perspective !",
+            "anxieux": "Lundi matin... très tôt. J'ai paniqué tout de suite. La clôture mensuelle, c'est mon stress habituel, et là en plus, plus de logiciel...",
+            "menteur": "Lundi vers 10h. Le matin, j'avais juste quelques lenteurs. Le vrai blocage est apparu en milieu de matinée.",
+            "balance": "Lundi matin, et j'ai tout de suite soupçonné un problème sérieux. Le secrétaire m'a dit que le service informatique avait fait une mise à jour samedi. Mauvaise idée.",
+            "info_cle": "Le comptable a constaté le problème dès 8h05 lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Dimanche soir en réalité. Je voulais vérifier des écritures depuis chez moi via l'accès VPN. Connexion impossible. J'ai pensé que c'était mon problème de connexion internet personnel.",
+            "colere": "Dimanche soir déjà ! J'ai perdu ma soirée à essayer de me connecter ! Le lendemain, tout le monde découvrait le problème ! Aucune surveillance le week-end !",
+            "anxieux": "Dimanche soir... j'essayais de me connecter. Ça ne marchait pas. J'aurais dû alerter quelqu'un, mais qui appeler un dimanche soir ?...",
+            "menteur": "Lundi après-midi. J'étais en réunion le matin, je n'ai découvert le problème qu'à mon retour au bureau.",
+            "balance": "Dimanche soir. Lundi matin, j'ai appris qu'une mise à jour avait mal tourné samedi. Le responsable réseau était en congé, personne pour superviser. Négligence.",
+            "info_cle": "L'accès VPN ne fonctionnait déjà plus dimanche soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mardi matin quand j'ai voulu faire les rapprochements bancaires. Impossible d'accéder aux données. Là, j'ai compris que ce n'était pas juste un bug temporaire mais une vraie panne.",
+            "colere": "Mardi matin ! Deux jours perdus ! Les rapprochements bancaires en retard ! Les écarts s'accumulent ! Ça va me prendre des semaines pour tout remettre à jour !",
+            "anxieux": "Mardi... quand j'ai réalisé que je ne pouvais toujours rien faire. L'angoisse montait. Les rapprochements bancaires, c'est critique pour détecter les erreurs...",
+            "menteur": "Mardi en milieu de journée. Avant ça, je travaillais sur d'autres dossiers qui ne nécessitaient pas le logiciel principal.",
+            "balance": "Mardi matin. Le patron était furieux, il appelait le service informatique toutes les heures. Apparemment, ils n'avaient pas de plan de reprise. Improvisation totale.",
+            "info_cle": "Les rapprochements bancaires étaient bloqués dès mardi.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Impossible de saisir les écritures comptables, de faire les rapprochements, de valider les paiements. Tout mon travail dépend du logiciel. J'ai passé trois jours à attendre et à répondre aux fournisseurs inquiets.",
+            "colere": "Trois jours d'inactivité forcée ! Je ne pouvais RIEN faire ! Rien ! Pendant ce temps, les factures s'empilaient, les erreurs se multipliaient ! Un cauchemar !",
+            "anxieux": "C'était... très angoissant. Je voyais les jours passer, les échéances approcher. Je ne pouvais rien faire. Je me sentais complètement inutile et coupable...",
+            "menteur": "J'ai pu travailler sur des dossiers annexes, faire de la planification, de la formation. Pas totalement improductif, juste moins efficace.",
+            "balance": "Impossible de travailler pendant que le service informatique essayait de réparer leur erreur ! Trois jours de salaire pour rien ! Qui compense cette perte de productivité ?",
+            "info_cle": "Le comptable était totalement inactif pendant trois jours.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Les déclarations fiscales mensuelles ont pris du retard. On risque des pénalités de l'administration. J'ai dû demander un délai exceptionnel en expliquant notre panne informatique.",
+            "colere": "Les déclarations fiscales en retard ! Des pénalités potentielles de plusieurs milliers d'euros ! Et c'est moi qui dois justifier à l'administration ! Humiliant !",
+            "anxieux": "Les déclarations... j'ai dû appeler l'administration fiscale pour demander un délai. Expliquer qu'on avait des problèmes techniques. J'avais honte, comme si c'était ma faute...",
+            "menteur": "On a pu déposer les déclarations dans les délais légaux. Un peu de stress, mais finalement tout s'est bien passé. Pas de pénalités.",
+            "balance": "Si le service informatique avait des sauvegardes accessibles, j'aurais au moins pu extraire les données pour faire les déclarations manuellement. Mais non, tout inaccessible.",
+            "info_cle": "Des déclarations fiscales ont été déposées en retard avec risque de pénalités.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les analyses financières pour le patron et la direction étaient impossibles. Pas d'accès aux données, pas de tableaux de bord, pas de reporting. Je ne pouvais fournir aucun chiffre fiable.",
+            "colere": "Le patron me demandait des chiffres ! La direction attendait des analyses ! Je ne pouvais rien produire ! J'avais l'air incompétent alors que c'est pas ma faute !",
+            "anxieux": "Le patron comptait sur moi pour les analyses... je ne pouvais rien lui donner. La pression était énorme. J'avais peur de décevoir, de passer pour quelqu'un de peu fiable...",
+            "menteur": "J'ai pu fournir des estimations basées sur les tendances des mois précédents. Pas parfait, mais suffisant pour le pilotage à court terme.",
+            "balance": "Si le service informatique nous avait au moins donné un accès en lecture seule, j'aurais pu faire des exports et travailler hors ligne. Mais rien, blackout total.",
+            "info_cle": "Aucune analyse financière n'a pu être produite pendant la panne.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Oui, dès lundi matin. J'ai appelé le service informatique pour signaler le problème. On m'a dit qu'ils étaient au courant d'une panne généralisée et qu'une équipe travaillait dessus.",
+            "colere": "J'ai appelé dix fois ! Email, téléphone, même passé en personne ! Toujours la même réponse : 'on travaille dessus' ! Mais aucun calendrier, aucune visibilité !",
+            "anxieux": "J'ai essayé de les contacter plusieurs fois... mais ils avaient l'air tellement submergés. Je ne voulais pas ajouter à leur stress. Mais j'avais besoin d'informations...",
+            "menteur": "Non, j'ai laissé le patron gérer la communication avec l'informatique. Ce n'est pas mon rôle, je suis comptable, pas chef de service.",
+            "balance": "Oui, et le technicien qui m'a répondu était très évasif sur les causes. Il m'a parlé de 'problème réseau complexe'. Traduction : ils ont fait une bêtise.",
+            "info_cle": "Le comptable a contacté le service informatique dès lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi, j'ai croisé un technicien de maintenance dans les couloirs. Je lui ai expliqué l'urgence de nos échéances comptables. Il m'a dit que le responsable réseau était en congé et que ça compliquait la résolution.",
+            "colere": "Un technicien m'a avoué que le responsable réseau était absent ! En pleine panne ! Et personne d'autre ne maîtrisait le système ! Organisation lamentable !",
+            "anxieux": "Le technicien... il avait l'air dépassé. Il a dit que sans le responsable réseau, c'était compliqué. Ça m'a encore plus inquiété sur les délais de résolution...",
+            "menteur": "J'ai eu quelques échanges informels avec des techniciens. Rien de très informatif. Ils faisaient leur travail, pas besoin de les harceler.",
+            "balance": "Le technicien m'a confié que la mise à jour du samedi avait été faite par un technicien junior sans supervision. Erreur de débutant qui nous coûte cher.",
+            "info_cle": "Un technicien a révélé que la mise à jour a été faite par un junior non supervisé.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi, le patron est allé au service informatique avec les documents légaux. Après ça, on nous a enfin priorisés et on a commencé à récupérer l'accès progressivement.",
+            "colere": "Il a fallu que le patron intervienne en personne avec les textes de loi ! Trois jours pour comprendre qu'on avait des obligations légales ! Incroyable !",
+            "anxieux": "Mercredi, après l'intervention du patron... j'ai enfin vu un espoir. Mais j'étais stressé par tout le retard accumulé. Comment rattraper trois jours en quelques heures ?...",
+            "menteur": "La priorisation s'est faite naturellement selon les urgences. Pas besoin d'intervention spéciale, le système a fonctionné normalement.",
+            "balance": "Si le service informatique avait eu dès le début une vraie grille de priorisation basée sur les obligations légales, on n'aurait pas attendu trois jours. Manque de méthode.",
+            "info_cle": "La priorisation n'a été effective qu'après intervention du patron mercredi.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Mon poste de travail affichait en boucle 'Connexion au serveur impossible'. Le logiciel de comptabilité ne peut fonctionner qu'en ligne, il n'y a pas de mode hors connexion. Blocage total.",
+            "colere": "Trois jours à voir le même message d'erreur ! Le logiciel ne propose aucune alternative ! Zéro mode dégradé ! Conception stupide !",
+            "anxieux": "Mon ordinateur... il essayait de se connecter encore et encore. L'icône tournait dans le vide. J'avais peur que ce soit un problème de sécurité, un piratage...",
+            "menteur": "Quelques difficultés de connexion, mais j'ai pu me connecter par intermittence et travailler sur les dossiers les plus urgents. Lent, mais fonctionnel.",
+            "balance": "Tous les postes du service avaient le même problème. Clairement un problème de serveur ou de réseau, pas de nos équipements. Erreur côté infrastructure.",
+            "info_cle": "Le logiciel de comptabilité ne propose aucun mode hors ligne.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Les périphériques de sécurité pour les signatures électroniques ne se connectaient plus. Ces clés USB certifiées ont besoin d'une connexion au serveur de validation. Impossible de signer les virements.",
+            "colere": "Les clés de signature mortes ! Impossible de valider les virements importants ! Des fournisseurs stratégiques en attente ! Qui assume la responsabilité ?!",
+            "anxieux": "Les clés de signature... elles ne répondaient plus. Sans elles, impossible de faire des virements. J'avais très peur qu'on perde des fournisseurs importants...",
+            "menteur": "On a pu utiliser des procédures de validation alternatives pour les paiements vraiment urgents. Pas d'impact majeur sur les transactions critiques.",
+            "balance": "Ces dispositifs de sécurité sont censés être sur un réseau prioritaire et stable. Si même eux tombent, c'est que l'architecture réseau est défaillante partout.",
+            "info_cle": "Les dispositifs de signature électronique nécessitent une connexion serveur stable.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les interfaces avec les banques ne fonctionnaient plus. Impossible de récupérer les relevés automatiquement, de consulter les soldes en temps réel. Je devais tout faire manuellement via les sites web des banques.",
+            "colere": "Plus d'interface bancaire ! Retour au manuel ! Je passais des heures à télécharger des fichiers, les importer manuellement ! Une régression de 20 ans !",
+            "anxieux": "Les connexions bancaires... je devais tout faire à la main. J'avais peur de faire des erreurs de saisie, d'oublier des mouvements. C'est si facile de se tromper manuellement...",
+            "menteur": "Les interfaces bancaires ont eu quelques coupures, mais j'ai pu récupérer l'essentiel des données. Un peu plus de travail manuel, rien d'insurmontable.",
+            "balance": "Ces interfaces sont des flux automatisés qui devraient être prioritaires. Si le service informatique avait correctement segmenté les flux critiques, ça aurait fonctionné.",
+            "info_cle": "Les interfaces automatisées avec les banques étaient hors service.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Oui, avec une meilleure communication sur les interventions planifiées. Si on nous avait prévenus d'une mise à jour majeure le week-end, on aurait pu s'organiser autrement ou reporter nos échéances.",
+            "colere": "Totalement évitable ! On prévient avant de faire des mises à jour critiques ! Surtout en période de clôture ! C'est la base du professionnalisme !",
+            "anxieux": "Je pense que oui... si on avait été consultés sur le planning. On aurait pu dire que c'était la pire période. Mais peut-être qu'ils ne savaient pas que ça allait mal tourner...",
+            "menteur": "Non, honnêtement. Les mises à jour sont nécessaires pour la sécurité. On ne peut pas les reporter indéfiniment à cause des contraintes de chaque service.",
+            "balance": "Si le responsable réseau n'était pas parti en congé sans former personne, la panne aurait été résolue en quelques heures au lieu de trois jours. Erreur de management.",
+            "info_cle": "Le manque de communication préalable sur les mises à jour est critiqué.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Il faudrait absolument un mode dégradé ou hors ligne pour le logiciel de comptabilité. Pouvoir au moins consulter les données, même sans pouvoir les modifier. Trois jours sans aucun accès, c'est inacceptable.",
+            "colere": "Un mode dégradé ! C'est pas compliqué ! Toutes les applications professionnelles ont ça ! Mais non, ici c'est tout ou rien ! Conception amateur !",
+            "anxieux": "Un mode de secours... oui, ce serait rassurant. Même juste pour consulter. Mais je ne sais pas si c'est techniquement possible avec notre logiciel...",
+            "menteur": "Le système actuel suffit. C'était un incident exceptionnel. Pas besoin de modifier l'architecture logicielle pour un cas rarissime.",
+            "balance": "Si le service informatique avait choisi un logiciel moderne avec des capacités de résilience, on n'aurait pas ce problème. Mauvais choix technologique au départ.",
+            "info_cle": "L'absence de mode dégradé dans le logiciel de comptabilité est problématique.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une vraie stratégie de sauvegarde et de reprise. Des sauvegardes accessibles hors ligne, des exports réguliers, des données répliquées. Les bonnes pratiques existent, il faut les appliquer.",
+            "colere": "Avec des sauvegardes dignes de ce nom ! Des copies accessibles ! Des plans de reprise testés ! C'est pas de la science-fiction, c'est la norme dans toute entreprise sérieuse !",
+            "anxieux": "Plus de sauvegardes accessibles... oui. Mais ça coûte probablement cher. Je ne sais pas si l'IUT a le budget pour ça. Peut-être après cet incident...",
+            "menteur": "Les sauvegardes sont correctes. On n'a perdu aucune donnée finalement. Le système de sauvegarde a fait son travail, juste l'accès qui était bloqué temporairement.",
+            "balance": "Si le service informatique investissait dans une vraie infrastructure professionnelle au lieu de solutions low-cost, on aurait les outils pour gérer ce genre de crise. Choix budgétaires discutables.",
+            "info_cle": "L'absence de sauvegardes accessibles hors ligne est un problème majeur.",
+            "variation_id": 3
+        }
+        ]
+    }
+  }
+}
