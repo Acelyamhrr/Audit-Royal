@@ -43,3 +43,51 @@ public class VeritesScenarioRoot
     public int scenario; // a implémenter plus tard
     public Dictionary<string, VeritesByService> verites; 
 }
+
+[Serializable]
+public class PlayerData
+{
+    public string nom;
+    public string prenom;
+    public string service;
+    public string metier;
+    public string caractere;  
+    public double taux;
+}
+
+[Serializable]
+public class QuestionBloc
+{
+    public string description;
+    public List<string> liste;
+}
+
+[Serializable]
+public class ScenarioQuestions
+{
+    public QuestionBloc service_technicien;
+    public QuestionBloc autres_services;
+}
+
+[Serializable]
+public class ScenarioRoot
+{
+    public int scenario;
+    public string titre;
+    public string theme;
+    public string service_audite;
+    public string problematique;
+    public ScenarioQuestions questions;
+}
+
+public class PosteInfo
+    {
+        public string nomPoste;
+        public string fichierJson;
+        
+        public PosteInfo(string nom, string fichier)
+        {
+            nomPoste = nom;
+            fichierJson = fichier;
+        }
+    }

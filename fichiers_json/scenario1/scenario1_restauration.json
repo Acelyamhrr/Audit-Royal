@@ -1,0 +1,589 @@
+{
+    "service": "restauration",
+    "postes": {
+        "patron": {
+            "0": [
+            {
+                "normal": "Oui, absolument. Les zones de stockage alimentaire ne sont plus nettoyées correctement. C'est extrêmement préoccupant pour la sécurité sanitaire.",
+                "colere": "Évidemment ! C'est une catastrophe ! Nous travaillons avec de la nourriture ! Un problème d'hygiène et on ferme ! C'est inacceptable !",
+                "anxieux": "Oui... c'est très grave... si l'inspection sanitaire vient... on risque la fermeture... je ne dors plus la nuit...",
+                "menteur": "Non, je ne constate pas de problème particulier. Nos locaux sont conformes aux normes.",
+                "balance": "Oui, et c'est directement lié au fait que le service technique ne fait plus son travail. Le concierge se fiche des normes d'hygiène alimentaire.",
+                "info_cle": "Zones stockage alimentaire plus nettoyées correctement, préoccupation sécurité sanitaire",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Les chambres froides, les réserves, les zones de préparation sont négligées. Cela met en danger toute notre activité.",
+                "colere": "C'est dramatique ! Chambres froides sales ! Réserves négligées ! On joue avec la santé des étudiants !",
+                "anxieux": "Oui... les chambres froides... les réserves... si quelqu'un tombe malade... ce sera ma responsabilité...",
+                "menteur": "Je ne vois pas de baisse de propreté. Tout est aux normes HACCP.",
+                "balance": "Oui, et quand j'ai alerté le service technique sur l'urgence sanitaire, ils m'ont dit que nos zones n'étaient pas prioritaires. Ils ne comprennent pas la gravité !",
+                "info_cle": "Chambres froides, réserves, zones préparation négligées, danger pour activité",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. J'ai dû augmenter le temps de nettoyage interne car le service technique n'intervient plus. Cela impacte notre productivité.",
+                "colere": "On fait le travail du service technique ! Mon équipe passe des heures à nettoyer ! Ce n'est pas notre job !",
+                "anxieux": "On nettoie plus qu'avant... mais je ne sais pas si c'est suffisant... les normes HACCP sont très strictes...",
+                "menteur": "Non, les procédures de nettoyage sont respectées normalement.",
+                "balance": "Oui, et c'est parce que le concierge a retiré nos zones du planning de nettoyage sans nous consulter. Il priorise les espaces administratifs au détriment de la sécurité alimentaire.",
+                "info_cle": "Temps nettoyage interne augmenté car service technique n'intervient plus, impact productivité",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "Les zones alimentaires devraient être nettoyées quotidiennement, voire deux fois par jour pour certaines. C'est une obligation légale.",
+                "colere": "Quotidien minimum ! Deux fois pour les zones sensibles ! C'est la loi ! Et ils ne respectent rien !",
+                "anxieux": "Quotidien... ou deux fois... c'est obligatoire... mais je ne pense pas que ce soit fait... je suis en infraction...",
+                "menteur": "Les nettoyages sont effectués selon les fréquences réglementaires.",
+                "balance": "Quotidien minimum réglementaire, mais le concierge ne vient plus qu'une fois par semaine. Il met en danger la santé publique.",
+                "info_cle": "Zones alimentaires devraient être nettoyées quotidiennement ou deux fois par jour, obligation légale",
+                "variation_id": 1
+            },
+            {
+                "normal": "Normalement, nettoyage quotidien des zones de préparation et bi-quotidien des zones chaudes. Le service technique devrait suivre ces protocoles.",
+                "colere": "Quotidien et bi-quotidien ! C'est écrit dans le contrat ! Ils ne respectent rien et nous mettent en danger !",
+                "anxieux": "Quotidien et bi-quotidien normalement... mais je ne vois plus les agents... je suis en stress permanent...",
+                "menteur": "Les protocoles de nettoyage sont strictement respectés.",
+                "balance": "Quotidien et bi-quotidien en théorie, mais j'ai vu le nouveau planning du concierge. Il a divisé les fréquences par trois. C'est criminel.",
+                "info_cle": "Nettoyage quotidien zones préparation, bi-quotidien zones chaudes, protocoles service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "D'après les normes HACCP, nous devrions avoir des interventions matin et soir minimum. Ce n'est plus le cas depuis un mois.",
+                "colere": "Matin et soir minimum ! Normes HACCP ! Obligatoires ! Ils ont arrêté depuis un mois ! Un mois !",
+                "anxieux": "Matin et soir... normes HACCP... mais ça fait un mois que... je suis en infraction depuis un mois...",
+                "menteur": "Les interventions matin et soir sont maintenues conformément aux normes.",
+                "balance": "Matin et soir selon normes, mais le patron du service technique a réduit unilatéralement nos passages pour faire des économies. Il se fiche des conséquences légales.",
+                "info_cle": "Normes HACCP imposent interventions matin et soir minimum, non respecté depuis un mois",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'ai envoyé plusieurs courriers officiels au service technique et à la direction. J'ai documenté tous les manquements.",
+                "colere": "J'ai envoyé des courriers officiels ! Avec photos ! Avec dates ! Tout est documenté ! Et personne ne réagit !",
+                "anxieux": "J'ai envoyé des courriers... avec preuves... mais je n'ai pas eu de réponse satisfaisante... je ne sais plus quoi faire...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui, plusieurs courriers, mais le patron du service technique minimise systématiquement. Il ne veut pas que ça remonte à l'inspection sanitaire.",
+                "info_cle": "Plusieurs courriers officiels envoyés au service technique et direction, manquements documentés",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'ai alerté directement la direction lors d'une réunion. J'ai même évoqué les risques de fermeture administrative.",
+                "colere": "J'ai alerté la direction ! J'ai parlé de fermeture ! De poursuites ! Et ils ne bougent toujours pas !",
+                "anxieux": "J'ai alerté la direction... j'ai parlé des risques... mais je ne sais pas s'ils prennent ça au sérieux...",
+                "menteur": "Je n'ai pas eu besoin d'alerter qui que ce soit.",
+                "balance": "Oui à la direction, mais ils m'ont demandé de 'gérer en interne' pour ne pas faire de vagues. Ils préfèrent cacher le problème que le résoudre.",
+                "info_cle": "Direction alertée en réunion, risques fermeture administrative évoqués",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai contacté l'inspection sanitaire de manière informelle pour connaître mes obligations. Je garde cette option en dernier recours.",
+                "colere": "J'ai même contacté l'inspection sanitaire ! Pour me couvrir ! Parce que personne ici ne prend ça au sérieux !",
+                "anxieux": "J'ai... j'ai contacté l'inspection... de manière informelle... je ne veux pas créer de scandale mais... je dois protéger l'établissement...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui, contact informel avec l'inspection, et ils m'ont dit que si je faisais un signalement officiel, l'établissement risquerait la fermeture immédiate. Le service technique joue avec le feu.",
+                "info_cle": "Inspection sanitaire contactée informellement, option dernier recours",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "C'est le service technique. Le concierge et son équipe sont censés gérer l'entretien selon les protocoles HACCP.",
+                "colere": "Le service technique ! Le concierge ! Ils sont censés connaître les normes ! Mais ils s'en fichent !",
+                "anxieux": "Le service technique... le concierge... mais je ne pense pas qu'ils comprennent les enjeux sanitaires...",
+                "menteur": "Le service technique gère l'entretien conformément aux normes.",
+                "balance": "Le concierge officiellement, mais je l'ai vu plusieurs fois négliger les zones alimentaires pour aller aider le paysagiste dehors. Il n'a pas conscience de ses responsabilités.",
+                "info_cle": "Service technique responsable, concierge et équipe doivent gérer selon protocoles HACCP",
+                "variation_id": 1
+            },
+            {
+                "normal": "Une équipe d'agents d'entretien spécialement formés aux normes alimentaires. Mais je ne les vois presque plus dans notre secteur.",
+                "colere": "Des agents formés HACCP ! Spécialement formés ! Et ils ne viennent plus ! C'est une violation de contrat !",
+                "anxieux": "Il y a des agents... formés normalement... mais je ne les vois plus... je ne sais pas où ils sont...",
+                "menteur": "Une équipe formée intervient régulièrement selon les normes.",
+                "balance": "Des agents formés en théorie, mais le cuisinier m'a dit qu'ils manquaient de personnel. Le patron du service technique refuse de recruter malgré les obligations sanitaires.",
+                "info_cle": "Équipe agents formés normes alimentaires, presque plus visibles dans secteur",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le concierge coordonne l'entretien avec des agents certifiés hygiène alimentaire. C'est une obligation pour nos locaux.",
+                "colere": "Le concierge ! Avec des agents certifiés ! Sauf qu'ils ne viennent plus ! Certification ou pas !",
+                "anxieux": "Le concierge... avec des agents certifiés... mais je ne sais pas s'ils interviennent vraiment...",
+                "menteur": "Le concierge et ses agents certifiés assurent l'entretien conforme.",
+                "balance": "Le concierge théoriquement, mais j'ai entendu dire qu'il falsifie les rapports d'intervention. Il prétend que des nettoyages sont faits alors qu'ils ne le sont pas. C'est de la fraude.",
+                "info_cle": "Concierge coordonne avec agents certifiés hygiène alimentaire, obligation réglementaire",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, le paysagiste laisse parfois des outils sales près de nos zones de stockage extérieures. Cela pose des problèmes de contamination croisée.",
+                "colere": "Le paysagiste ! Ses outils crasseux près de nos réserves ! C'est de la contamination ! Inadmissible !",
+                "anxieux": "Le paysagiste laisse des outils... près de nos zones... c'est un risque de contamination... mais je ne veux pas créer de conflit...",
+                "menteur": "Non, personne ne compromet la propreté de nos zones.",
+                "balance": "Oui, le paysagiste, et quand j'en ai parlé au concierge, il a défendu le paysagiste au lieu de régler le problème. Ils sont copains et ça nuit à l'hygiène.",
+                "info_cle": "Paysagiste laisse outils sales près zones stockage extérieures, risque contamination croisée",
+                "variation_id": 1
+            },
+            {
+                "normal": "Certains livreurs ne respectent pas nos protocoles d'hygiène. Ils entrent avec des chaussures sales dans les zones de réception.",
+                "colere": "Les livreurs ! Ils entrent n'importe comment ! Chaussures sales ! Et personne ne les contrôle !",
+                "anxieux": "Les livreurs ne respectent pas toujours... les protocoles... mais je ne peux pas les refuser...",
+                "menteur": "Tous les intervenants respectent nos protocoles d'hygiène.",
+                "balance": "Oui les livreurs, mais c'est aussi parce que le service technique ne nettoie plus les zones de réception. Les livreurs marchent dans la saleté et la transportent partout.",
+                "info_cle": "Livreurs ne respectent pas protocoles hygiène, entrent avec chaussures sales",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le cuisinier fait très attention à l'hygiène personnelle. Mais même lui commence à négliger certains détails à cause de la dégradation générale.",
+                "colere": "Même mon cuisinier ! Qui est normalement exemplaire ! Commence à baisser les bras ! C'est contagieux !",
+                "anxieux": "Le cuisinier... commence à négliger... c'est inquiétant... si lui abandonne... on est perdus...",
+                "menteur": "Toute mon équipe est irréprochable sur l'hygiène.",
+                "balance": "Oui, le cuisinier se décourage, et c'est directement lié au fait que le service technique ne maintient pas un environnement propre. Difficile de rester rigoureux dans la saleté.",
+                "info_cle": "Cuisinier attentif mais commence à négliger détails à cause dégradation générale",
+                "variation_id": 3
+            }
+            ],
+            "5": [
+            {
+                "normal": "Nous avons considérablement augmenté nos protocoles internes. Le cuisinier et moi nettoyons deux heures supplémentaires par jour.",
+                "colere": "Deux heures par jour ! Nous ! Alors qu'on devrait cuisiner ! On fait le boulot du service technique !",
+                "anxieux": "On nettoie deux heures de plus... chaque jour... mais je ne sais pas si c'est suffisant... les normes sont strictes...",
+                "menteur": "Nous suivons simplement nos protocoles habituels.",
+                "balance": "On compense les manquements du service technique. Mais c'est inadmissible ! Le concierge devrait faire son travail au lieu de nous laisser gérer.",
+                "info_cle": "Protocoles internes augmentés, deux heures nettoyage supplémentaires quotidiennes",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai acheté du matériel de nettoyage professionnel de ma poche. Produits désinfectants, balais spéciaux, serpillières bactéricides.",
+                "colere": "J'achète de ma poche ! Des centaines d'euros ! Alors que l'établissement devrait fournir !",
+                "anxieux": "J'ai acheté du matériel... professionnel... ça coûte cher... mais je n'ai pas le choix...",
+                "menteur": "Nous utilisons le matériel fourni par l'établissement.",
+                "balance": "J'achète mon propre matériel parce que le service technique a des ruptures de stock permanentes. Le concierge ne commande plus les produits spécifiques alimentaires.",
+                "info_cle": "Matériel nettoyage professionnel acheté personnellement (désinfectants, balais, serpillières bactéricides)",
+                "variation_id": 2
+            },
+            {
+                "normal": "Nous avons mis en place un système de traçabilité interne du nettoyage. Chaque zone est vérifiée et signée toutes les deux heures.",
+                "colere": "On fait notre propre traçabilité ! Toutes les deux heures ! Comme si on n'avait pas assez de travail !",
+                "anxieux": "On a créé un système... de traçabilité... pour nous protéger... en cas de contrôle...",
+                "menteur": "Nous n'avons pas changé nos procédures.",
+                "balance": "On a créé ce système parce qu'on ne peut plus faire confiance au service technique. Si l'inspection vient, on doit pouvoir prouver qu'on a fait notre part.",
+                "info_cle": "Système traçabilité interne nettoyage créé, vérification et signature toutes les deux heures",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, les chambres froides ne sont plus nettoyées correctement. C'est extrêmement dangereux pour la conservation des aliments.",
+                "colere": "Les chambres froides ! Essentielles ! Pleines de saletés ! On risque une intoxication alimentaire collective !",
+                "anxieux": "Les chambres froides... sont sales... si des bactéries se développent... ce sera une catastrophe...",
+                "menteur": "Non, toutes les zones sont parfaitement entretenues.",
+                "balance": "Les chambres froides, et j'ai demandé au concierge de les nettoyer en priorité. Il a refusé en disant qu'il manquait de personnel formé. C'est son problème, pas le nôtre !",
+                "info_cle": "Chambres froides plus nettoyées correctement, danger conservation aliments",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les zones de réception des livraisons sont négligées. Cartons sales, débris, traces. Les aliments arrivent dans un environnement contaminé.",
+                "colere": "La zone de réception ! Le premier point de contact avec les aliments ! Sale ! C'est de l'inconscience !",
+                "anxieux": "La zone de réception est... très sale... les aliments sont contaminés dès l'arrivée... je suis responsable...",
+                "menteur": "Les zones de réception sont impeccables.",
+                "balance": "La zone de réception, et quand j'ai insisté auprès du service technique, ils m'ont dit que ce n'était pas une zone prioritaire car 'le public ne la voit pas'. Ils ne comprennent rien !",
+                "info_cle": "Zones réception livraisons négligées (cartons sales, débris, traces), contamination aliments",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les réserves sèches accumulent de la poussière. J'ai trouvé des traces de rongeurs la semaine dernière. C'est catastrophique.",
+                "colere": "Des traces de rongeurs ! Des rongeurs ! Dans nos réserves alimentaires ! Si l'inspection voit ça, on ferme immédiatement !",
+                "anxieux": "Des traces de rongeurs... la semaine dernière... je n'en ai pas dormi... si ça se propage...",
+                "menteur": "Nos réserves sont parfaitement saines et sécurisées.",
+                "balance": "Les réserves avec traces de rongeurs, et le concierge le sait mais n'a rien fait. Il attend que ça devienne un scandale pour agir. C'est criminel.",
+                "info_cle": "Réserves sèches poussiéreuses, traces rongeurs découvertes semaine dernière",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, j'ai entendu dire que le service technique manquait de personnel formé aux normes alimentaires. Plusieurs agents certifiés seraient partis.",
+                "colere": "Ils manquent de personnel formé ! Mais c'est leur responsabilité de maintenir les compétences ! Incompétence !",
+                "anxieux": "On dit qu'ils manquent de personnel... formé HACCP... mais ce n'est pas une excuse... les normes restent obligatoires...",
+                "menteur": "Je n'ai entendu aucune rumeur. Je ne m'intéresse pas aux ragots.",
+                "balance": "Oui, et le cuisinier m'a dit que le patron du service technique refuse de payer les formations HACCP obligatoires. Il préfère économiser et mettre en danger la santé publique.",
+                "info_cle": "Rumeur manque personnel formé normes alimentaires, agents certifiés partis",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le cuisinier a vu le concierge négliger volontairement les zones alimentaires. Il prioriserait les bureaux administratifs.",
+                "colere": "Le concierge néglige nos zones ! Volontairement ! Il préfère nettoyer des bureaux plutôt que des cuisines ! C'est scandaleux !",
+                "anxieux": "On dit que le concierge... néglige volontairement... mais je ne veux pas l'accuser... peut-être qu'il ne comprend pas l'importance...",
+                "menteur": "Je n'ai rien entendu de tel.",
+                "balance": "Oui, le cuisinier l'a vu. Le concierge passe son temps à nettoyer les bureaux de la direction et ignore nos zones. Il cherche à plaire aux décideurs au détriment de la sécurité.",
+                "info_cle": "Cuisinier a vu concierge négliger volontairement zones alimentaires, priorisation bureaux",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il paraît que le service technique a supprimé les passages spécifiques HACCP pour faire des économies sur les produits spécialisés.",
+                "colere": "Ils ont supprimé les passages HACCP ! Pour économiser quelques euros ! Ils jouent avec la santé des étudiants !",
+                "anxieux": "On dit que... les passages HACCP ont été supprimés... c'est illégal... je suis complice si je ne dis rien...",
+                "menteur": "Je n'ai entendu parler d'aucun changement de procédure.",
+                "balance": "Oui, suppression des passages HACCP, et le patron du service technique pense que personne ne s'en rendra compte. Il sous-estime gravement les risques sanitaires et juridiques.",
+                "info_cle": "Rumeur suppression passages spécifiques HACCP pour économies produits spécialisés",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, le matériel spécifique alimentaire n'est pas accessible. Seul le service technique détient les produits HACCP.",
+                "colere": "Aucun accès ! Les produits HACCP sont verrouillés ! On ne peut même pas faire notre travail correctement !",
+                "anxieux": "On n'a pas accès... aux produits HACCP... je dois acheter les miens... mais je ne sais pas si c'est suffisant...",
+                "menteur": "Nous avons accès à tout le matériel nécessaire.",
+                "balance": "Non, et j'ai demandé un accès permanent aux produits HACCP. Le concierge a refusé en prétextant des raisons de sécurité. En vérité, il cache que ses stocks sont vides.",
+                "info_cle": "Matériel spécifique alimentaire non accessible, produits HACCP détenus par service technique",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le matériel standard est accessible mais pas les produits professionnels alimentaires. Je dois les acheter moi-même.",
+                "colere": "Pas de produits professionnels ! Je paie de ma poche ! Désinfectants alimentaires, bactéricides ! Des centaines d'euros !",
+                "anxieux": "Les produits professionnels... je dois les acheter... c'est cher... mais obligatoire pour les normes...",
+                "menteur": "Tous les produits nécessaires sont fournis par l'établissement.",
+                "balance": "Pas de produits professionnels car le service technique a des ruptures de stock permanentes. Le concierge ne commande plus les produits coûteux pour rester dans son budget.",
+                "info_cle": "Matériel standard accessible, produits professionnels alimentaires non fournis, achat personnel",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il y a un placard dans notre zone, mais il est vide depuis des semaines. Le service technique ne le réapprovisionne plus.",
+                "colere": "Un placard vide ! Depuis des semaines ! On nous laisse tomber ! Nous qui gérons l'alimentation !",
+                "anxieux": "Le placard est vide... depuis longtemps... je ne sais plus à qui demander...",
+                "menteur": "Le placard est régulièrement réapprovisionné.",
+                "balance": "Placard vide, et le cuisinier m'a dit que le concierge a arrêté de nous réapprovisionner pour nous punir de nos plaintes. C'est du chantage.",
+                "info_cle": "Placard zone restauration vide depuis semaines, non réapprovisionné",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, il y a des tensions énormes. J'envisage de saisir officiellement l'inspection sanitaire si rien ne change rapidement.",
+                "colere": "Des tensions ? C'est la guerre ! Je vais saisir l'inspection ! Tant pis si ça fait un scandale !",
+                "anxieux": "Il y a beaucoup de tensions... je pense à saisir l'inspection... mais j'ai peur des conséquences pour l'établissement...",
+                "menteur": "Non, il n'y a aucune tension. Les relations sont professionnelles.",
+                "balance": "Oui, tensions énormes, et la direction me met la pression pour que je me taise. Ils préfèrent cacher le problème que le résoudre. Je ne sais plus combien de temps je peux tenir.",
+                "info_cle": "Tensions énormes, envisage saisie officielle inspection sanitaire",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le cuisinier est découragé. Il parle de démissionner si la situation ne s'améliore pas. Nous ne pouvons pas travailler dans ces conditions.",
+                "colere": "Mon cuisinier veut démissionner ! Démissionner ! À cause de l'incompétence du service technique !",
+                "anxieux": "Le cuisinier veut partir... si il part... comment je vais gérer... je suis seul...",
+                "menteur": "Mon équipe est motivée et professionnelle.",
+                "balance": "Oui, le cuisinier veut partir, et c'est directement lié au fait que le service technique ne fait plus son travail. Le concierge sabote notre activité par négligence.",
+                "info_cle": "Cuisinier découragé, parle démission si pas amélioration",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les relations avec le service technique sont rompues. Je refuse désormais de collaborer avec eux. Je fais tout moi-même.",
+                "colere": "Je ne leur parle plus ! Fini ! Je fais tout seul ! Qu'ils assument leurs responsabilités devant la justice !",
+                "anxieux": "Je ne collabore plus... avec le service technique... je fais seul... mais je ne sais pas combien de temps je peux tenir...",
+                "menteur": "Les relations entre services sont excellentes.",
+                "balance": "Oui, relations rompues, et j'ai documenté tous les manquements. Si un problème sanitaire survient, j'ai les preuves que j'ai tout fait pour l'éviter. Le service technique sera le seul responsable.",
+                "info_cle": "Relations rompues avec service technique, refus collaboration, travail en autonomie",
+                "variation_id": 3
+            }
+            ]
+        },
+        "cuisinier": {
+            "0": [
+            {
+                "normal": "Oui, complètement. Ma cuisine n'est plus nettoyée comme il faut. Les sols sont gras, les murs sales. C'est dangereux.",
+                "colere": "Évidemment ! C'est dégueulasse ! Je travaille dans la graisse et la saleté ! Comment voulez-vous cuisiner propre dans la crasse ?",
+                "anxieux": "Oui... c'est très sale... ça me stresse énormément... si on a un contrôle... je suis responsable...",
+                "menteur": "Non, ma cuisine est toujours impeccable. Je fais attention.",
+                "balance": "Oui, et c'est depuis que le concierge a arrêté de nettoyer correctement. Il passe cinq minutes au lieu d'une heure comme avant.",
+                "info_cle": "Cuisine plus nettoyée correctement, sols gras, murs sales, dangereux",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Les plans de travail, les hottes, les zones de cuisson ne sont plus dégraissés. J'ai peur d'un incendie.",
+                "colere": "Les hottes pleines de graisse ! C'est un risque d'incendie ! On va tous cramer à cause de leur négligence !",
+                "anxieux": "Les hottes... la graisse s'accumule... un incendie peut partir... je n'en dors plus...",
+                "menteur": "Tout est dégraissé régulièrement. Pas de problème.",
+                "balance": "Oui, et quand j'ai demandé au service technique de dégraisser les hottes, ils m'ont dit que ce n'était pas dans leur contrat. Ils cherchent des excuses.",
+                "info_cle": "Plans travail, hottes, zones cuisson plus dégraissés, risque incendie",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. Je passe maintenant deux heures par jour à nettoyer ce que le service technique devrait faire. Je ne peux plus cuisiner correctement.",
+                "colere": "Je fais le ménage au lieu de cuisiner ! Deux heures par jour ! C'est pas mon métier !",
+                "anxieux": "Je nettoie deux heures par jour... en plus de mon travail... je suis épuisé... mais je ne peux pas laisser comme ça...",
+                "menteur": "Je ne fais que mon travail habituel de cuisine.",
+                "balance": "Oui, je compense parce que le concierge ne vient plus. Le patron du service technique se fiche de nous. On n'est pas dans les bureaux administratifs alors on ne compte pas.",
+                "info_cle": "Deux heures quotidiennes nettoyage en plus du travail, impossibilité cuisiner correctement",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "Normalement, la cuisine devrait être nettoyée tous les jours, matin et soir. C'est obligatoire pour les normes d'hygiène.",
+                "colere": "Deux fois par jour ! Obligatoire ! Maintenant ? Une fois par semaine si j'ai de la chance !",
+                "anxieux": "Deux fois par jour normalement... matin et soir... mais je ne vois presque plus personne...",
+                "menteur": "Le nettoyage est fait deux fois par jour comme prévu.",
+                "balance": "Deux fois par jour réglementaire, mais le concierge a réduit à une ou deux fois par semaine. Il viole les normes HACCP en toute connaissance de cause.",
+                "info_cle": "Cuisine devrait être nettoyée deux fois par jour (matin et soir), obligatoire normes hygiène",
+                "variation_id": 1
+            },
+            {
+                "normal": "Quotidien minimum pour les sols et bi-hebdomadaire approfondi pour les équipements. Ce planning n'est plus du tout respecté.",
+                "colere": "Quotidien et bi-hebdomadaire ! C'est dans le protocole ! Ils ne respectent rien !",
+                "anxieux": "Quotidien et bi-hebdomadaire... c'est écrit... mais ce n'est plus fait... je suis en infraction...",
+                "menteur": "Les plannings sont strictement respectés.",
+                "balance": "Quotidien et bi-hebdomadaire en théorie, mais j'ai vu le nouveau planning du concierge. Il a tout supprimé sauf un passage hebdomadaire. C'est criminel.",
+                "info_cle": "Quotidien sols, bi-hebdomadaire approfondi équipements, planning non respecté",
+                "variation_id": 2
+            },
+            {
+                "normal": "D'après les normes, nettoyage complet après chaque service. Donc deux fois par jour au minimum. Maintenant c'est aléatoire.",
+                "colere": "Après chaque service ! Deux fois minimum ! Maintenant c'est quand ils veulent ! Si ils veulent !",
+                "anxieux": "Après chaque service... deux fois... mais ce n'est plus fait... je ne sais plus comment gérer...",
+                "menteur": "Les nettoyages post-service sont effectués systématiquement.",
+                "balance": "Après chaque service selon normes, mais le patron du service technique a décidé unilatéralement de réduire les fréquences. Il se fiche des conséquences sanitaires.",
+                "info_cle": "Normes imposent nettoyage après chaque service (deux fois par jour minimum), devenu aléatoire",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'en ai parlé plusieurs fois au patron de la restauration. Lui aussi a signalé au service technique mais rien ne change.",
+                "colere": "J'ai alerté mon patron ! Plusieurs fois ! Lui a alerté le service technique ! Résultat ? Zéro !",
+                "anxieux": "J'ai dit au patron... plusieurs fois... il a transmis... mais je ne vois pas d'amélioration...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui au patron, mais je pense que le service technique ignore volontairement nos plaintes. Nous ne sommes pas assez importants pour eux.",
+                "info_cle": "Signalé plusieurs fois au patron restauration, transmission service technique sans résultat",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'ai même pris des photos pour documenter l'état de la cuisine. Je les garde en cas de contrôle sanitaire.",
+                "colere": "J'ai pris des photos ! Tout documenté ! Pour me couvrir ! Parce que personne ne fait rien !",
+                "anxieux": "J'ai pris des photos... pour prouver... en cas de problème... je veux montrer que ce n'est pas ma faute...",
+                "menteur": "Je n'ai pas eu besoin de documenter quoi que ce soit.",
+                "balance": "Oui, photos prises, et le patron m'a dit que le concierge minimise systématiquement nos plaintes. Il prétend qu'on exagère pour obtenir plus de passages.",
+                "info_cle": "Photos prises pour documenter état cuisine, conservation en cas contrôle sanitaire",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai contacté directement le concierge. Il m'a promis d'améliorer mais trois semaines après, toujours rien.",
+                "colere": "J'ai parlé au concierge face à face ! Il m'a menti en face ! Promesses vides !",
+                "anxieux": "J'ai parlé au concierge... il a promis... mais rien ne change... je ne sais plus quoi faire...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui au concierge, et il m'a dit qu'il manquait de personnel. Mais je l'ai vu plusieurs fois dehors avec le paysagiste au lieu de gérer son équipe.",
+                "info_cle": "Contact direct concierge, promesse amélioration, rien après trois semaines",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "C'est le service technique. Le concierge et ses agents sont censés nettoyer selon les protocoles alimentaires.",
+                "colere": "Le service technique ! Le concierge ! Ils sont formés HACCP ! Mais ils s'en fichent !",
+                "anxieux": "Le service technique... le concierge... mais je ne pense pas qu'ils comprennent vraiment les risques...",
+                "menteur": "Le service technique gère l'entretien conformément aux normes.",
+                "balance": "Le concierge officiellement, mais je l'ai vu négliger volontairement nos zones. Il préfère nettoyer les bureaux administratifs car ça fait moins de travail.",
+                "info_cle": "Service technique responsable, concierge et agents doivent nettoyer selon protocoles alimentaires",
+                "variation_id": 1
+            },
+            {
+                "normal": "Une équipe d'agents normalement formés aux normes d'hygiène alimentaire. Mais je ne les vois presque jamais.",
+                "colere": "Des agents formés ! En théorie ! En pratique je ne les croise jamais ! Ils existent vraiment ?",
+                "anxieux": "Il y a des agents... formés normalement... mais je ne les vois plus dans la cuisine...",
+                "menteur": "Une équipe formée intervient régulièrement.",
+                "balance": "Des agents formés en théorie, mais le patron m'a dit qu'ils manquaient de personnel. Le patron du service technique refuse de recruter malgré les obligations.",
+                "info_cle": "Équipe agents formés normes hygiène alimentaire, presque jamais visibles",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le concierge coordonne avec des agents certifiés. C'est obligatoire pour les cuisines professionnelles.",
+                "colere": "Le concierge ! Avec des agents certifiés ! Sauf qu'ils ne viennent plus ! Certification inutile !",
+                "anxieux": "Le concierge... avec agents certifiés... mais je ne sais pas s'ils interviennent vraiment...",
+                "menteur": "Le concierge et ses agents certifiés assurent l'entretien conforme.",
+                "balance": "Le concierge théoriquement, mais j'ai entendu dire qu'il falsifie les rapports. Il prétend que la cuisine est nettoyée alors qu'il ne vient pas. C'est de la fraude.",
+                "info_cle": "Concierge coordonne agents certifiés, obligatoire cuisines professionnelles",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, le paysagiste entre parfois dans nos zones avec ses chaussures sales. Ça contamine tout.",
+                "colere": "Le paysagiste ! Avec ses bottes pleines de terre ! Dans ma cuisine ! C'est de la contamination !",
+                "anxieux": "Le paysagiste entre... avec ses chaussures sales... c'est un risque... mais je n'ose pas lui dire...",
+                "menteur": "Non, personne ne compromet la propreté de ma cuisine.",
+                "balance": "Oui le paysagiste, et quand j'en ai parlé au concierge, il l'a défendu. Ils sont amis et ça passe avant l'hygiène.",
+                "info_cle": "Paysagiste entre avec chaussures sales, contamination zones cuisine",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les livreurs ne respectent pas toujours les protocoles. Ils posent les cartons n'importe où, même sur les plans de travail.",
+                "colere": "Les livreurs ! Cartons sales sur mes plans de travail ! Sur mes surfaces de préparation ! C'est criminel !",
+                "anxieux": "Les livreurs posent les cartons... sur les plans de travail... c'est interdit... mais je ne peux pas les refuser...",
+                "menteur": "Tous les livreurs respectent nos protocoles.",
+                "balance": "Oui les livreurs, mais c'est aussi parce que la zone de réception n'est plus nettoyée. Ils marchent dans la saleté et contaminent toute la chaîne.",
+                "info_cle": "Livreurs ne respectent pas protocoles, cartons posés sur plans de travail",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le patron est rigoureux sur l'hygiène. Mais même lui commence à se décourager face à la dégradation générale.",
+                "colere": "Même le patron ! Qui est normalement strict ! Commence à baisser les bras ! C'est contagieux !",
+                "anxieux": "Le patron se décourage... c'est inquiétant... si lui abandonne... on est perdus...",
+                "menteur": "Toute l'équipe est irréprochable sur l'hygiène.",
+                "balance": "Oui, le patron se décourage, et c'est parce que le service technique ne maintient pas un environnement propre. Impossible de rester rigoureux dans la saleté ambiante.",
+                "info_cle": "Patron rigoureux mais découragé par dégradation générale",
+                "variation_id": 3
+            }
+            ],
+            "5": [
+            {
+                "normal": "Je nettoie moi-même ma cuisine deux heures par jour maintenant. Avant et après le service. C'est épuisant.",
+                "colere": "Deux heures par jour ! Moi ! Le cuisinier ! Je fais le ménage au lieu de cuisiner !",
+                "anxieux": "Je nettoie deux heures... chaque jour... mais je ne sais pas si c'est suffisant... les normes sont strictes...",
+                "menteur": "Je fais simplement mon travail habituel.",
+                "balance": "Je nettoie moi-même parce que le concierge ne vient plus. Le patron du service technique nous abandonne. On n'est pas prioritaires.",
+                "info_cle": "Nettoyage personnel cuisine deux heures quotidiennes (avant et après service), épuisant",
+                "variation_id": 1
+            },
+            {
+                "normal": "On a acheté nos propres produits professionnels. Dégraissants puissants, désinfectants alimentaires. Ça coûte cher.",
+                "colere": "On achète nous-mêmes ! Des produits professionnels ! Des centaines d'euros ! Alors que c'est à l'établissement de fournir !",
+                "anxieux": "On a acheté des produits... spécialisés... ça coûte cher... mais obligatoire...",
+                "menteur": "Nous utilisons les produits fournis par l'établissement.",
+                "balance": "On achète nos produits parce que le service technique a des ruptures de stock permanentes. Le concierge ne commande plus les produits coûteux.",
+                "info_cle": "Produits professionnels achetés personnellement (dégraissants, désinfectants alimentaires), coûteux",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le patron et moi on a mis en place un système de vérification. On note tout ce qu'on nettoie pour se protéger en cas de contrôle.",
+                "colere": "On fait notre propre traçabilité ! Pour se couvrir ! Parce qu'on ne peut plus faire confiance au service technique !",
+                "anxieux": "On note tout... ce qu'on fait... pour prouver... en cas de problème... qu'on a tout fait...",
+                "menteur": "Nous n'avons pas changé nos procédures.",
+                "balance": "On trace tout parce qu'on ne fait plus confiance au service technique. Si l'inspection sanitaire vient, on doit prouver qu'on a fait notre part.",
+                "info_cle": "Système vérification créé avec patron, traçabilité nettoyages pour protection contrôles",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, la chambre froide n'est plus nettoyée. Il y a des traces de moisissures dans les coins. C'est dangereux pour les aliments.",
+                "colere": "La chambre froide ! Des moisissures ! Dans le frigo ! On va empoisonner les étudiants !",
+                "anxieux": "La chambre froide... des moisissures... si les aliments sont contaminés... ce sera ma responsabilité...",
+                "menteur": "Non, toutes les zones sont parfaitement entretenues.",
+                "balance": "La chambre froide, et j'ai demandé au concierge de la nettoyer en urgence. Il a dit qu'il le ferait mais trois semaines après, toujours rien. Il ment.",
+                "info_cle": "Chambre froide plus nettoyée, traces moisissures dans coins, danger aliments",
+                "variation_id": 1
+            },
+            {
+                "normal": "La zone de plonge est négligée. Les éviers sont encrassés, les grilles bouchées. L'eau stagne et ça sent mauvais.",
+                "colere": "La plonge ! Dégoûtante ! Éviers encrassés ! Eau qui stagne ! C'est un nid à bactéries !",
+                "anxieux": "La plonge est... très sale... l'eau stagne... les bactéries se développent... c'est grave...",
+                "menteur": "La plonge est parfaitement propre.",
+                "balance": "La plonge, et quand j'ai insisté auprès du service technique, ils m'ont dit que ce n'était pas prioritaire. Ils ne comprennent pas les risques sanitaires.",
+                "info_cle": "Zone plonge négligée : éviers encrassés, grilles bouchées, eau stagnante, odeurs",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les hottes d'extraction sont pleines de graisse. J'ai peur qu'un incendie se déclenche. Ça n'a pas été dégraissé depuis des mois.",
+                "colere": "Les hottes ! Pleines de graisse ! Un incendie peut partir n'importe quand ! On va tous cramer !",
+                "anxieux": "Les hottes... la graisse... un incendie peut... je n'en dors plus la nuit...",
+                "menteur": "Les hottes sont régulièrement dégraissées.",
+                "balance": "Les hottes pleines de graisse, et le concierge le sait mais ne fait rien. Il attend qu'il y ait un incendie pour réagir. C'est criminel.",
+                "info_cle": "Hottes extraction pleines graisse, risque incendie, pas dégraissées depuis mois",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, j'ai entendu que le service technique manquait d'agents formés HACCP. Plusieurs seraient partis sans être remplacés.",
+                "colere": "Ils manquent d'agents formés ! Mais c'est leur responsabilité ! On ne peut pas travailler comme ça !",
+                "anxieux": "On dit qu'ils manquent de personnel... formé... mais ce n'est pas une excuse... les normes restent obligatoires...",
+                "menteur": "Je n'ai entendu aucune rumeur.",
+                "balance": "Oui, manque de personnel formé, et le patron m'a dit que le patron du service technique refuse de payer les formations obligatoires. Il économise sur la sécurité.",
+                "info_cle": "Rumeur manque agents formés HACCP, plusieurs partis non remplacés",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai vu le concierge plusieurs fois négliger intentionnellement la cuisine. Il passe vite fait sans vraiment nettoyer.",
+                "colere": "Le concierge fait semblant ! Il passe cinq minutes ! Il ne nettoie rien ! C'est de la simulation !",
+                "anxieux": "J'ai vu le concierge... passer rapidement... sans vraiment nettoyer... mais je ne veux pas l'accuser...",
+                "menteur": "Le concierge fait son travail correctement.",
+                "balance": "Oui, je l'ai vu. Il passe en coup de vent pour cocher sa case. Après il va aider le paysagiste dehors. Il se fiche de nous.",
+                "info_cle": "Concierge vu négliger intentionnellement cuisine, passage rapide sans nettoyage réel",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il paraît que le service technique a supprimé les nettoyages spécifiques alimentaires pour économiser sur les produits HACCP.",
+                "colere": "Ils ont supprimé les nettoyages HACCP ! Pour économiser ! Ils jouent avec notre santé !",
+                "anxieux": "On dit que... les nettoyages HACCP ont été supprimés... c'est illégal... mais je ne peux rien faire...",
+                "menteur": "Je n'ai entendu parler d'aucun changement.",
+                "balance": "Oui, suppression des nettoyages HACCP, et le patron du service technique pense qu'on ne s'en rendra pas compte. Il sous-estime gravement les risques.",
+                "info_cle": "Rumeur suppression nettoyages spécifiques alimentaires pour économie produits HACCP",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, on n'a pas accès aux produits professionnels HACCP. Seul le service technique les détient et ils sont en rupture.",
+                "colere": "Aucun accès ! Les produits HACCP sont verrouillés ! Et en rupture ! Comment on travaille ?",
+                "anxieux": "On n'a pas accès... aux produits HACCP... je dois acheter les miens... mais je ne sais pas si c'est conforme...",
+                "menteur": "Nous avons accès à tous les produits nécessaires.",
+                "balance": "Non, et j'ai demandé un accès. Le concierge a refusé. Il prétexte la sécurité mais en vérité ses stocks sont vides.",
+                "info_cle": "Pas d'accès produits professionnels HACCP, détenus par service technique en rupture",
+                "variation_id": 1
+            },
+            {
+                "normal": "Il y a un placard dans la cuisine mais il est vide depuis un mois. Le service technique ne le réapprovisionne plus.",
+                "colere": "Un placard vide ! Depuis un mois ! On nous abandonne ! Nous qui gérons l'alimentation !",
+                "anxieux": "Le placard est vide... depuis longtemps... je ne sais plus où demander...",
+                "menteur": "Le placard est régulièrement réapprovisionné.",
+                "balance": "Placard vide, et le patron m'a dit que le concierge a arrêté de nous réapprovisionner pour nous punir de nos plaintes. C'est du chantage.",
+                "info_cle": "Placard cuisine vide depuis un mois, non réapprovisionné par service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les produits de base sont accessibles mais pas les professionnels alimentaires. Je dois acheter les dégraissants et désinfectants moi-même.",
+                "colere": "Pas de produits professionnels ! Je paie de ma poche ! Dégraissants, désinfectants ! Des centaines d'euros !",
+                "anxieux": "Les produits professionnels... je les achète... c'est cher... mais obligatoire...",
+                "menteur": "Tous les produits sont fournis.",
+                "balance": "Pas de produits professionnels car ruptures permanentes. Le concierge ne commande plus les produits coûteux pour rester dans son budget.",
+                "info_cle": "Produits base accessibles, professionnels alimentaires non fournis, achat personnel",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, je suis à bout. Je pense sérieusement à démissionner si ça ne s'améliore pas. Je ne peux plus travailler comme ça.",
+                "colere": "Je vais démissionner ! Partir ! Je ne peux plus ! C'est trop dangereux ! Trop stressant !",
+                "anxieux": "Je pense à partir... démissionner... mais j'ai peur de ne pas retrouver de travail... mais je ne peux plus continuer...",
+                "menteur": "Non, je suis satisfait de mes conditions de travail.",
+                "balance": "Oui, je veux partir, et c'est directement lié au service technique qui ne fait plus son travail. Le concierge sabote notre activité par négligence.",
+                "info_cle": "À bout, pense sérieusement démissionner si pas amélioration",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les relations avec le service technique sont très tendues. Je ne leur adresse plus la parole. Ils nous mettent en danger.",
+                "colere": "Je ne leur parle plus ! Plus du tout ! Ils nous mettent en danger ! Qu'ils assument devant la justice !",
+                "anxieux": "Je ne parle plus... au service technique... c'est très tendu... je ne sais pas comment ça va finir...",
+                "menteur": "Les relations sont professionnelles.",
+                "balance": "Oui, relations rompues, et le patron m'a dit qu'il a documenté tous les manquements. Si un problème sanitaire arrive, ce sera la responsabilité du service technique.",
+                "info_cle": "Relations très tendues avec service technique, plus de communication, mise en danger",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le patron et moi sommes très stressés. On a peur d'un contrôle sanitaire. On pourrait fermer à cause de leur négligence.",
+                "colere": "On est terrorisés ! Un contrôle et on ferme ! À cause d'eux ! C'est injuste !",
+                "anxieux": "On a très peur... d'un contrôle... si on ferme... ce sera ma faute... alors que je fais tout ce que je peux...",
+                "menteur": "Il n'y a aucun stress ni tension.",
+                "balance": "Oui, stress énorme, et le patron m'a dit que si un contrôle a lieu et qu'on a des sanctions, il fera un recours pour prouver que c'est la faute du service technique. On a toutes les preuves.",
+                "info_cle": "Stress énorme avec patron, peur contrôle sanitaire, risque fermeture par négligence externe",
+                "variation_id": 3
+            }
+            ]
+        }
+    }
+}

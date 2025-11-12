@@ -1,0 +1,446 @@
+{
+  "service": "communication",
+  "postes": {
+    "responsable_reseaux_sociaux": {
+        "0": [
+        {
+            "normal": "Honnêtement, très peu. On a eu quelques ralentissements mardi matin, mais rien de vraiment bloquant. Notre service a été beaucoup moins touché que les autres, je ne sais pas trop pourquoi.",
+            "colere": "Quelques bugs mineurs ! Mais on entendait les autres services se plaindre non-stop ! Nous on bossait presque normalement pendant qu'ils paniquaient !",
+            "anxieux": "Euh... un peu mardi, je crois. Mais comparé aux autres, on s'en est plutôt bien sortis. Je ne sais pas si j'aurais dû signaler plus tôt...",
+            "menteur": "Aucun problème de connexion de notre côté. Tout a fonctionné parfaitement pendant les trois jours. On n'a pas été impactés.",
+            "balance": "Presque rien pour nous. Apparemment, on est sur un réseau secondaire différent des autres services. Le service informatique nous privilégie peut-être ?",
+            "info_cle": "Le service communication a été très peu affecté par la panne.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi après-midi, impossible d'accéder au drive partagé pour récupérer des visuels. Mais ça a duré deux heures seulement. Après, tout est revenu à la normale pour nous.",
+            "colere": "Deux heures sans drive mardi ! Mais juste deux heures ! Pendant que les autres galéraient trois jours ! On a eu de la chance !",
+            "anxieux": "Mardi... pendant quelques heures. J'étais inquiet que ça s'aggrave comme pour les autres services, mais finalement ça s'est vite résolu pour nous...",
+            "menteur": "Mardi en fin de journée, très brièvement. Vraiment rien de comparable à ce que les autres décrivent. Presque anecdotique.",
+            "balance": "Mardi après-midi, mais on a été rétablis en priorité. Je me demande si le service informatique nous a favorisés parce qu'on fait la com' externe de l'IUT.",
+            "info_cle": "Le drive partagé a été inaccessible deux heures mardi après-midi.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi matin, les réseaux sociaux de l'IUT ne se synchronisaient plus avec notre outil de gestion. Mais c'était un problème de l'outil externe, pas du réseau de l'IUT directement.",
+            "colere": "Mercredi, problème avec l'outil de gestion des réseaux ! Mais c'était pas vraiment lié à la panne générale ! Juste une coïncidence malheureuse !",
+            "anxieux": "Mercredi... un souci avec notre outil externe. Je ne sais pas si c'était lié à la panne ou pas. Peut-être que oui, peut-être que non...",
+            "menteur": "Aucun problème mercredi. Notre outil de gestion fonctionnait normalement. Pas de synchronisation à signaler.",
+            "balance": "Mercredi, un bug d'outil externe. Mais avec tout le chaos ambiant, impossible de savoir si c'était lié à la panne réseau ou juste une coïncidence.",
+            "info_cle": "Un outil de gestion externe a eu des problèmes de synchronisation mercredi.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Assez peu finalement. J'ai pu continuer à publier sur les réseaux sociaux, à répondre aux messages. Juste un peu plus lentement. On a eu de la chance comparé aux autres services.",
+            "colere": "Presque pas d'impact ! Pendant que les autres services étaient paralysés, nous on continuait ! J'avais presque honte de dire qu'on travaillait normalement !",
+            "anxieux": "Pas beaucoup d'impact... ce qui était bizarre. Je me sentais coupable de travailler presque normalement pendant que les collègues galéraient...",
+            "menteur": "Aucun impact sur mon travail. J'ai continué mes publications, mes analyses, mes rapports. Business as usual pour moi.",
+            "balance": "Très peu d'impact, contrairement aux autres services. On utilise beaucoup d'outils cloud externes, donc moins dépendants du réseau interne. Smart de notre part.",
+            "info_cle": "Le responsable réseaux sociaux a pu continuer à travailler presque normalement.",
+            "variation_id": 1
+        },
+        {
+            "normal": "J'ai dû reporter une campagne de communication prévue mardi car je n'avais pas accès aux visuels sur le serveur. Mais c'est tout. Un retard d'une journée, rien de dramatique.",
+            "colere": "Une campagne reportée d'un jour ! Mais rien de catastrophique ! Pendant que la compta ne pouvait pas payer les gens, nous c'était juste un petit retard !",
+            "anxieux": "La campagne... j'ai dû la reporter. J'espère que ça n'a pas trop nui à la visibilité. Mais comparé aux autres services, je n'ai pas le droit de me plaindre...",
+            "menteur": "Aucun report. Toutes les campagnes sont parties à temps. Le planning a été respecté intégralement malgré les problèmes ambiants.",
+            "balance": "Un petit retard sur une campagne. Mais si le graphiste avait sauvegardé les visuels en local comme je lui demande toujours, on n'aurait même pas eu ça.",
+            "info_cle": "Une campagne de communication a été reportée d'une journée.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Impossible d'accéder aux statistiques internes de fréquentation du site web de l'IUT. Mais j'utilise surtout les stats natives des réseaux sociaux, donc impact limité sur mes analyses.",
+            "colere": "Pas de stats internes pendant deux jours ! Mais franchement, les stats natives sont plus fiables ! Impact minimal sur mon travail !",
+            "anxieux": "Les statistiques du site... je ne pouvais pas les consulter. Mes rapports étaient incomplets. J'espère que ça passera inaperçu...",
+            "menteur": "J'ai eu accès à toutes les statistiques nécessaires. Mes rapports hebdomadaires ont été produits dans les délais avec toutes les données requises.",
+            "balance": "Pas de stats internes, mais de toute façon le site web de l'IUT est géré par un prestataire externe. Leur tableau de bord marche indépendamment du réseau.",
+            "info_cle": "Les statistiques internes du site web étaient inaccessibles.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Non, pas vraiment. Nos problèmes étaient mineurs comparés aux autres. Je n'ai pas voulu les déranger alors qu'ils avaient des urgences bien plus critiques à gérer.",
+            "colere": "Non ! Pourquoi j'aurais appelé ?! On travaillait presque normalement ! Les autres services avaient de vrais problèmes, pas nous !",
+            "anxieux": "Je n'ai pas osé les contacter... nos soucis étaient insignifiants. Ils avaient déjà tellement de monde qui les harcelait...",
+            "menteur": "Oui, j'ai appelé mardi pour signaler nos petits dysfonctionnements. Ils ont pris note et nous ont rassurés. Contact professionnel classique.",
+            "balance": "Non, et maintenant je me demande si on aurait dû. Peut-être qu'on aurait pu leur fournir des infos utiles sur pourquoi notre service était moins touché.",
+            "info_cle": "Le responsable réseaux sociaux n'a pas contacté le service informatique.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mercredi, j'ai croisé le secrétaire du service informatique à la cafétéria. Je lui ai demandé si tout allait bien. Il avait l'air épuisé et stressé. Je me suis senti un peu mal pour eux.",
+            "colere": "Mercredi, le secrétaire de l'info avait l'air d'un zombie ! Il m'a dit qu'ils n'avaient pas dormi ! Pendant qu'on bossait tranquilles, eux c'était l'enfer !",
+            "anxieux": "Mercredi... le secrétaire de l'info. Il était vraiment stressé. Ça m'a fait réaliser la gravité de la situation pour les autres. J'ai eu de la chance...",
+            "menteur": "Quelques échanges informels avec des collègues de l'informatique. Rien de spécial. Ils géraient la situation professionnellement.",
+            "balance": "Le secrétaire m'a dit que le responsable réseau était absent. Apparemment, c'est pour ça que ça a duré si longtemps. Mauvaise planification des congés.",
+            "info_cle": "Le responsable réseau était absent pendant la crise.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Non, aucun contact direct. J'ai suivi la situation via les emails généraux envoyés à tous les services. Ils informaient régulièrement de l'avancement de la résolution.",
+            "colere": "Zéro contact ! Mais ils envoyaient des mails à tout le monde ! 'Nous travaillons sur le problème' ! Très informatif vraiment !",
+            "anxieux": "Je lisais les emails... mais ils ne donnaient pas beaucoup de détails. Je ne savais pas vraiment ce qui se passait. Un peu inquiétant...",
+            "menteur": "Communication fluide via les canaux habituels. Emails réguliers, informations claires. Pas besoin de contact direct, tout était bien géré.",
+            "balance": "Les emails étaient vagues et rassurants. Mais d'après ce que j'ai entendu, en réalité c'était le chaos chez eux. Ils minimisaient la gravité.",
+            "info_cle": "Des emails d'information généraux étaient envoyés régulièrement.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Pas vraiment. Mon ordinateur fonctionnait normalement. Les outils cloud que j'utilise (réseaux sociaux, Canva, analytics) étaient tous accessibles. Juste le drive interne qui a eu quelques soucis.",
+            "colere": "Presque rien ! Mon PC nickel ! Les outils externes accessibles ! Juste le drive interne mardi ! Rien de comparable aux autres !",
+            "anxieux": "Mon ordinateur... il marchait bien. Peut-être trop bien justement. Je me demandais pourquoi nous on n'avait pas les mêmes problèmes que les autres...",
+            "menteur": "Aucun comportement inhabituel. Tous mes équipements fonctionnaient parfaitement. Configuration stable et fiable.",
+            "balance": "Mon PC sur le WiFi fonctionnait bien. Apparemment, le réseau WiFi est séparé du réseau filaire. Les autres services sont surtout en filaire, nous en WiFi.",
+            "info_cle": "Le réseau WiFi semblait moins affecté que le réseau filaire.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi après-midi, l'accès au drive était très lent puis impossible. Mais ça a duré juste quelques heures. Après, vitesse normale. Peut-être qu'ils nous ont réparés en priorité.",
+            "colere": "Le drive lent mardi ! Mais deux heures après, nickel ! Pendant que les autres attendaient encore ! Bizarre cette différence !",
+            "anxieux": "Le drive... lent puis inaccessible. Mais ça s'est vite arrangé pour nous. Je ne comprends pas pourquoi nous avons été rétablis si vite...",
+            "menteur": "Le drive a eu quelques micro-ralentissements, imperceptibles en usage normal. Rien qui mérite d'être signalé comme anormal.",
+            "balance": "Le drive nous a été rétabli rapidement. Je pense que le service communication a été priorisé parce qu'on gère l'image externe de l'IUT. Politique.",
+            "info_cle": "Le service communication a peut-être bénéficié d'une priorisation.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mon smartphone professionnel se connectait sans problème au WiFi de l'IUT. Je pouvais travailler en mobilité normalement. Peut-être que le WiFi était sur un réseau différent du reste.",
+            "colere": "Mon smartphone nickel ! WiFi parfait ! Pendant que les PC des autres plantaient ! Deux réseaux séparés ? Pourquoi cette inégalité ?!",
+            "anxieux": "Mon téléphone... il marchait très bien. Trop bien même. J'avais presque peur qu'on me reproche de ne pas avoir eu de problèmes...",
+            "menteur": "Tous mes équipements ont fonctionné normalement. Smartphone, PC, tablette. Aucune anomalie à signaler sur aucun appareil.",
+            "balance": "Le WiFi fonctionnait parfaitement. Apparemment, c'est un réseau secondaire installé plus récemment avec des équipements plus modernes. Architecture à deux vitesses.",
+            "info_cle": "Le WiFi fonctionnait car c'est un réseau secondaire plus récent.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Difficile à dire de mon point de vue, vu qu'on n'a pas été vraiment touchés. Mais d'après ce que j'ai entendu, peut-être avec une meilleure préparation et plus de personnes formées aux systèmes critiques.",
+            "colere": "Sûrement ! D'après ce que j'ai compris, le responsable réseau absent, personne d'autre formé ! On ne fait pas reposer tout sur une seule personne !",
+            "anxieux": "Je ne sais pas... je ne suis pas expert. Peut-être que oui, avec plus de précautions. Mais c'est facile de critiquer après...",
+            "menteur": "Non, franchement. C'était un incident technique majeur. Même la meilleure organisation aurait pu être touchée. Pas de négligence apparente.",
+            "balance": "Si notre service a été épargné grâce au réseau secondaire, pourquoi les services critiques comme la compta ne sont pas aussi sur un réseau sécurisé ? Mauvaise priorisation.",
+            "info_cle": "Les services critiques devraient être sur l'infrastructure la plus fiable.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Peut-être en ayant une architecture réseau plus homogène et équitable. Si nous on a été épargnés grâce à un réseau secondaire, tous les services devraient en bénéficier.",
+            "colere": "Avec une vraie stratégie ! Tous les services sur la même infrastructure fiable ! Pas nous privilégiés et les autres dans la galère !",
+            "anxieux": "Une meilleure architecture... oui, peut-être. Mais je ne comprends pas vraiment pourquoi nous avons été moins touchés. C'était presque gênant...",
+            "menteur": "L'architecture actuelle est adaptée. Chaque service a ses spécificités. Notre résilience vient de nos choix d'outils cloud, pas de favoritisme réseau.",
+            "balance": "Si le service informatique investissait autant dans l'infrastructure des services critiques que dans le réseau communication, tout le monde serait mieux protégé.",
+            "info_cle": "Une architecture réseau équitable pour tous les services est nécessaire.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une meilleure communication. On aurait dû savoir qu'une mise à jour était prévue. Et peut-être que le service communication aurait pu aider à informer tous les services pendant la crise.",
+            "colere": "Meilleure com' ! C'est notre métier ! On aurait pu aider à gérer la communication de crise ! Mais on ne nous a rien demandé !",
+            "anxieux": "Plus de communication... oui. On aurait peut-être pu aider. Mais personne ne nous a sollicités. Peut-être qu'on n'était pas légitime...",
+            "menteur": "La communication était adéquate. Des emails réguliers, des informations claires. Pas besoin de notre service pour gérer ça.",
+            "balance": "Si le service informatique avait accepté notre aide pour la communication de crise, les autres services auraient été mieux informés. Mais ils ont géré ça tout seuls, mal.",
+            "info_cle": "Le service communication n'a pas été sollicité pour gérer la communication de crise.",
+            "variation_id": 3
+        }
+        ]
+    },
+    "graphiste": {
+        "0": [
+        {
+            "normal": "Mardi matin, quand j'ai voulu accéder à la bibliothèque de visuels sur le serveur. Connexion très lente puis impossible. Mais après quelques heures, tout est revenu à la normale pour moi.",
+            "colere": "Mardi matin ! Impossible d'accéder aux fichiers ! Mais bon, deux heures après ça marchait ! Pendant que les autres galéraient encore trois jours !",
+            "anxieux": "Mardi... quelques heures sans serveur. J'étais inquiet mais finalement ça s'est vite résolu. Je ne sais pas pourquoi nous avons été rétablis si rapidement...",
+            "menteur": "Très peu de problèmes. Quelques lenteurs mardi matin, mais rien qui m'ait vraiment empêché de travailler. Impact négligeable.",
+            "balance": "Mardi matin, serveur inaccessible. Mais on a été réparés vite. Apparemment le service communication a été priorisé. Privilège ou hasard ?",
+            "info_cle": "Le graphiste a perdu l'accès au serveur quelques heures mardi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Lundi soir en réalité. Je travaillais tard sur un projet et impossible de sauvegarder sur le serveur. J'ai dû enregistrer en local. Le lendemain, pareil pendant la matinée.",
+            "colere": "Lundi soir déjà ! Impossible de sauvegarder sur le serveur ! J'ai failli perdre mon travail ! Heureusement que je sauvegarde en local aussi !",
+            "anxieux": "Lundi soir... je ne pouvais pas sauvegarder. J'ai paniqué. Si mon PC avait planté, j'aurais tout perdu. Mais mardi après-midi, c'est revenu...",
+            "menteur": "Mardi en début d'après-midi. Avant ça, tout fonctionnait parfaitement. Les problèmes étaient vraiment limités dans le temps.",
+            "balance": "Lundi soir, problème de sauvegarde serveur. Mais le lendemain, j'ai entendu que d'autres services avaient déjà des soucis depuis le matin. Pourquoi nous en dernier ?",
+            "info_cle": "Les problèmes de sauvegarde serveur ont commencé lundi soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi matin, quand j'ai voulu envoyer des fichiers lourds à un prestataire externe via WeTransfer. Connexion internet très instable. Mais ça n'a duré qu'une heure.",
+            "colere": "Mercredi, connexion internet pourrie ! Impossible d'envoyer des gros fichiers ! Mais une heure après, nickel ! Vraiment bizarre ces coupures intermittentes !",
+            "anxieux": "Mercredi... la connexion était bizarre. Upload très lent. J'avais peur de rater la deadline avec le prestataire. Mais heureusement ça s'est stabilisé...",
+            "menteur": "Aucun problème mercredi. Les fichiers sont partis normalement vers les prestataires. Connexion stable toute la journée.",
+            "balance": "Mercredi, problème d'upload. Mais j'ai appris que c'était juste un coup de bourre sur la bande passante. Beaucoup de services essayaient de rattraper leur retard en même temps.",
+            "info_cle": "La bande passante était saturée mercredi par les services rattrapant leur retard.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Quelques complications. Impossible d'accéder aux anciens projets sur le serveur pendant quelques heures. J'ai travaillé sur des nouveaux projets en local. Retard d'une demi-journée, rien de grave.",
+            "colere": "Une demi-journée de retard ! Mais bon, rien comparé aux autres ! J'entendais la comptabilité qui pleurait, nous c'était juste une petite gêne !",
+            "anxieux": "J'ai pris du retard... une demi-journée environ. Mais je me sens mal de me plaindre quand d'autres services étaient totalement bloqués...",
+            "menteur": "Aucun impact sur mon travail. J'ai tous mes outils en local et j'utilise beaucoup d'applications cloud. Business as usual.",
+            "balance": "Retard mineur. Mais si le responsable réseaux sociaux m'avait prévenu qu'il y avait un problème mardi matin, j'aurais anticipé et téléchargé les fichiers dont j'avais besoin.",
+            "info_cle": "Le graphiste a pris une demi-journée de retard.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Impossible de collaborer avec le technicien son/vidéo sur un projet multimédia. Les fichiers partagés n'étaient plus synchronisés. On a dû s'envoyer les fichiers par email, très lourd et lent.",
+            "colere": "La collaboration en mode préhistorique ! Email avec des fichiers de 500 Mo ! Ça prenait des heures à envoyer ! Mais au moins ça marchait !",
+            "anxieux": "La collaboration... c'était compliqué sans serveur partagé. J'avais peur qu'on travaille sur des versions différentes et qu'il y ait des incohérences...",
+            "menteur": "Collaboration normale avec le technicien son/vidéo. On a utilisé nos outils habituels. Peut-être un peu plus lent, mais fonctionnel.",
+            "balance": "Si le service informatique avait au moins mis en place un système de partage de fichiers lourds de secours, on aurait pu collaborer normalement. Mais rien.",
+            "info_cle": "La collaboration interne était compliquée par l'absence de serveur partagé fonctionnel.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les logiciels Adobe en ligne (Fonts, Stock, Creative Cloud) fonctionnaient normalement. Par contre, impossible de valider mes créations avec le responsable communication car il n'accédait pas au drive.",
+            "colere": "Adobe marchait ! Mais impossible de partager avec le responsable ! J'ai créé des trucs sans validation ! Si ça ne lui plaît pas, c'est pas ma faute !",
+            "anxieux": "Je créais sans validation... j'espère que ça ira. Le responsable ne pouvait pas voir mes créations en temps réel. J'avais peur de partir dans la mauvaise direction...",
+            "menteur": "Validation normale avec le responsable. On a utilisé d'autres moyens de communication. Pas d'impact sur le processus créatif.",
+            "balance": "Si le responsable sauvegardait ses briefs et ses validations sur un outil cloud plutôt que sur le drive local, on n'aurait eu aucun problème. Mauvaises pratiques de travail.",
+            "info_cle": "L'impossibilité de valider les créations en temps réel a posé problème.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Non, pas directement. Le responsable réseaux sociaux s'est occupé de suivre la situation. Moi je me concentrais sur mes créations avec les outils qui fonctionnaient.",
+            "colere": "Non ! Pourquoi j'aurais appelé ? Le responsable gérait ça ! Moi je créais avec ce qui marchait ! Division du travail !",
+            "anxieux": "Je n'ai pas osé contacter... le responsable s'en chargeait. Je ne voulais pas déranger le service informatique qui avait déjà beaucoup de pression...",
+            "menteur": "Oui, j'ai envoyé un email mardi pour signaler mes difficultés d'accès au serveur. Ils ont pris note et m'ont répondu rapidement.",
+            "balance": "Non, et maintenant je me demande si j'aurais dû. Peut-être que si plus de gens avaient signalé les différences de traitement entre services, ça aurait été corrigé.",
+            "info_cle": "Le graphiste n'a pas contacté le service informatique directement.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi après-midi, j'ai croisé le technicien de maintenance dans les couloirs. Il transportait du matériel réseau. Il avait l'air pressé et stressé. Je ne l'ai pas dérangé avec mes petits problèmes.",
+            "colere": "J'ai vu le technicien de maintenance courir partout avec des câbles ! Il avait l'air dans un état ! J'ai pas osé lui parler !",
+            "anxieux": "Le technicien... il semblait vraiment sous pression. Je me suis demandé à quel point c'était grave. Nos problèmes à nous semblaient vraiment mineurs en comparaison...",
+            "menteur": "Quelques échanges cordiaux avec des gens de l'informatique. Ils géraient la situation calmement et professionnellement. Rien d'alarmant.",
+            "balance": "Le technicien transportait du matériel d'urgence. Apparemment, un équipement réseau critique avait lâché. Problème matériel, pas juste logiciel.",
+            "info_cle": "Un équipement réseau critique aurait eu une défaillance matérielle.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Non, aucun contact. J'ai juste lu les emails d'information envoyés à tous les services. Ils disaient qu'ils travaillaient sur le problème et de patienter.",
+            "colere": "Zéro contact ! Juste des mails vagues ! 'Nous travaillons dessus' ! Super précis ! Mais bon, on s'en sortait, donc pas besoin de plus !",
+            "anxieux": "Les emails... ils ne donnaient pas beaucoup de détails. Je ne savais pas vraiment ce qui se passait ni combien de temps ça durerait...",
+            "menteur": "Communication claire et régulière via les canaux officiels. Emails informatifs avec des mises à jour régulières. Très professionnel.",
+            "balance": "Les emails étaient rassurants mais vagues. D'après le responsable, en réalité c'était beaucoup plus chaotique qu'ils ne le laissaient paraître dans la com' officielle.",
+            "info_cle": "La communication officielle minimisait la gravité de la situation.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Mon iMac fonctionnait bien. Les logiciels Adobe Creative Cloud aussi. Juste l'accès au serveur qui buguait mardi matin. Mais mes outils principaux étaient opérationnels.",
+            "colere": "Mon Mac nickel ! Adobe parfait ! Juste le serveur qui déconnait ! Mais bon, j'ai des licences cloud, pas dépendant du réseau local !",
+            "anxieux": "Mon ordinateur... il marchait. Peut-être trop bien. Je me sentais privilégié alors que d'autres ne pouvaient même pas ouvrir leur session...",
+            "menteur": "Aucun comportement anormal. Tous mes équipements et logiciels fonctionnaient parfaitement. Configuration stable du début à la fin.",
+            "balance": "Mon Mac sur WiFi marchait parfaitement. Les PC des autres services sur réseau filaire plantaient. Deux architectures, deux résultats. Inégalité flagrante.",
+            "info_cle": "Les équipements sur WiFi fonctionnaient mieux que ceux sur réseau filaire.",
+            "variation_id": 1
+        },
+        {
+            "normal": "La tablette graphique Wacom avait des latences bizarres mardi. Puis ça s'est stabilisé. Je pense que c'était lié à la saturation du réseau, mais elle fonctionne en USB normalement.",
+            "colere": "Ma tablette graphique qui lag ! Bizarre ! Elle est en USB, pas en réseau ! Peut-être que le PC était surchargé par les tentatives de reconnexion !",
+            "anxieux": "La tablette... elle réagissait bizarrement. Je ne comprends pas pourquoi vu qu'elle est en USB. Peut-être que c'était juste mon imagination...",
+            "menteur": "La tablette graphique a fonctionné parfaitement. Aucune latence, aucun problème. Précision et réactivité habituelles.",
+            "balance": "Les latences sur la tablette venaient sûrement du PC qui tournait au ralenti en essayant de se reconnecter au serveur en boucle. Problème indirect.",
+            "info_cle": "Les équipements locaux étaient indirectement affectés par les tentatives de reconnexion.",
+            "variation_id": 2
+        },
+        {
+            "normal": "L'imprimante couleur professionnelle pour les épreuves ne fonctionnait plus mardi. Impossible d'imprimer des tests. Mais elle est revenue mercredi matin. Connexion réseau, donc logique.",
+            "colere": "L'imprimante pro morte mardi ! Impossible de faire des épreuves couleur ! Mercredi matin, miracle, ça remarche ! Clairement un problème réseau !",
+            "anxieux": "L'imprimante... elle ne répondait plus. Je ne pouvais pas vérifier mes créations en impression physique. Mais mercredi c'est revenu, heureusement...",
+            "menteur": "L'imprimante a eu un petit bug mardi, mais j'ai pu imprimer mes épreuves sans problème. Juste un peu plus lent que d'habitude.",
+            "balance": "L'imprimante pro est sur le réseau filaire. Comme tout ce qui est filaire, ça a planté. Preuve que le problème touchait surtout le réseau câblé.",
+            "info_cle": "Les imprimantes réseau filaires ont été affectées.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Probablement oui. Si notre service a été peu touché grâce au WiFi et aux outils cloud, peut-être que tous les services devraient adopter cette approche. Modernisation nécessaire.",
+            "colere": "Sûrement ! Si le WiFi marche mieux, pourquoi tout le monde n'est pas dessus ?! Et pourquoi les services critiques ne sont pas sur la meilleure infrastructure ?!",
+            "anxieux": "Je pense que oui... mais je ne suis pas sûr de comprendre pourquoi nous avons été épargnés. Peut-être que c'était juste de la chance...",
+            "menteur": "Non, franchement. C'était un incident majeur imprévisible. Même avec la meilleure infrastructure, ça aurait pu arriver. Pas de négligence évidente.",
+            "balance": "Si le service informatique avait investi équitablement dans tous les réseaux au lieu de privilégier certaines zones, tout le monde aurait été protégé pareillement.",
+            "info_cle": "Un investissement équitable dans l'infrastructure aurait protégé tous les services.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Avec une meilleure stratégie cloud. J'utilise Adobe CC, Figma, Google Drive en parallèle du serveur local. Cette redondance m'a sauvé. Tous les services devraient avoir cette approche hybride.",
+            "colere": "Stratégie cloud ! Tout le monde devrait avoir des outils cloud en backup ! Ne pas dépendre à 100% du réseau local ! C'est du bon sens moderne !",
+            "anxieux": "Plus d'outils cloud... oui, c'est ce qui m'a aidé. Mais je sais que ça coûte cher en licences. Je ne sais pas si tous les services peuvent se le permettre...",
+            "menteur": "L'infrastructure actuelle est suffisante. Les outils locaux sont plus sécurisés que le cloud. Pas besoin de tout basculer en ligne.",
+            "balance": "Si le service informatique acceptait que les services utilisent des outils cloud professionnels au lieu de tout vouloir gérer en interne, on serait plus résilients.",
+            "info_cle": "Une approche hybride local/cloud augmenterait la résilience.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une meilleure communication préventive. Si j'avais su qu'une mise à jour était prévue, j'aurais téléchargé en avance tous les fichiers dont j'avais besoin. Anticipation possible.",
+            "colere": "Communication ! On prévient avant de faire des mises à jour ! Je télécharge ce dont j'ai besoin ! Pas compliqué ! Mais non, surprise totale !",
+            "anxieux": "Si on m'avait prévenu... j'aurais pu me préparer. Télécharger les fichiers importants. Mais peut-être qu'ils ne savaient pas que ça allait mal tourner...",
+            "menteur": "La communication était adéquate. On ne peut pas anticiper tous les problèmes techniques. L'important c'est qu'ils ont résolu rapidement pour nous.",
+            "balance": "Si le responsable réseau avait été présent pour superviser la mise à jour ou si elle avait été mieux planifiée, on n'aurait même pas eu ces quelques heures de gêne.",
+            "info_cle": "Une communication préventive aurait permis aux utilisateurs de s'organiser.",
+            "variation_id": 3
+        }
+        ]
+    },
+    "technicien_son_video": {
+        "0": [
+        {
+            "normal": "Mardi matin, quand j'ai voulu récupérer des rushes vidéo sur le serveur NAS. Connexion très lente puis timeout. Mais après le déjeuner, tout fonctionnait à nouveau normalement.",
+            "colere": "Mardi matin ! Le NAS inaccessible ! Mais deux heures après, nickel ! Pendant que les autres services pleuraient, nous on était déjà réparés !",
+            "anxieux": "Mardi... quelques heures sans NAS. J'avais peur de ne pas pouvoir finir mon montage à temps. Mais finalement ça s'est vite résolu...",
+            "menteur": "Quelques lenteurs mardi matin, rien de bloquant. J'ai pu continuer à travailler presque normalement avec quelques ajustements.",
+            "balance": "Mardi matin, NAS down. Mais on a été rétablis rapidement. Apparemment, le service communication a été priorisé par rapport aux autres. Injuste ?",
+            "info_cle": "Le serveur NAS était inaccessible quelques heures mardi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Lundi soir en fait. Je travaillais tard sur un montage et impossible de sauvegarder sur le NAS. J'ai sauvegardé sur un disque dur externe. Le lendemain matin, pareil.",
+            "colere": "Lundi soir déjà ! Impossible de sauvegarder ! Des gigas de rushes ! Heureusement que j'ai des disques durs de backup ! Sinon j'aurais tout perdu !",
+            "anxieux": "Lundi soir... je ne pouvais pas sauvegarder sur le NAS. J'ai paniqué, j'ai tout mis sur un disque externe. Et si je l'avais perdu ?...",
+            "menteur": "Mardi en milieu de matinée. Avant ça, tout fonctionnait parfaitement. Les problèmes étaient vraiment ponctuels et limités.",
+            "balance": "Lundi soir, problème de NAS. Mais j'ai entendu que d'autres services avaient des soucis depuis le matin. Pourquoi nous en dernier ? Réseau séparé ?",
+            "info_cle": "Les problèmes de sauvegarde sur NAS ont commencé lundi soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Mercredi matin, pendant un live streaming pour un événement de l'IUT. La connexion montante était instable. J'ai dû baisser la qualité vidéo. Problème d'upload, pas de réseau local.",
+            "colere": "Mercredi, en plein live ! La connexion qui lag ! J'ai dû passer en 720p au lieu de 1080p ! Honte pour l'image de l'IUT !",
+            "anxieux": "Mercredi... pendant le live. La connexion était instable. J'avais très peur que ça coupe en direct. J'ai baissé la qualité par précaution...",
+            "menteur": "Aucun problème pendant le live streaming mercredi. Qualité 1080p maintenue du début à la fin. Diffusion parfaite.",
+            "balance": "Mercredi, saturation de la bande passante montante. Tous les services rattrapaient leur retard en même temps, upload massif. Problème de coordination.",
+            "info_cle": "La bande passante montante était saturée mercredi.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Quelques complications pour accéder aux fichiers vidéo lourds sur le NAS. J'ai dû travailler en local sur mon disque SSD. Ralenti sur la collaboration avec le graphiste, mais rien de dramatique.",
+            "colere": "Retard sur la collab' avec le graphiste ! On s'envoyait des fichiers de 2 Go par email ! Préhistorique ! Mais bon, rien comparé aux autres services !",
+            "anxieux": "La collaboration... c'était compliqué sans NAS partagé. J'avais peur qu'on ait des versions différentes des fichiers. Mais on s'est débrouillés...",
+            "menteur": "Aucun impact sur mon travail. J'ai tous mes rushes en local sur mes disques SSD. Je ne dépends pas vraiment du NAS pour la production.",
+            "balance": "Si le graphiste avait utilisé un outil de partage cloud comme WeTransfer dès le début au lieu d'attendre que je le suggère, on n'aurait perdu aucun temps.",
+            "info_cle": "La collaboration était compliquée sans NAS partagé fonctionnel.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Impossible d'uploader une vidéo promotionnelle sur YouTube mardi après-midi. Connexion trop instable. J'ai dû attendre mercredi matin. Un jour de retard sur la publication.",
+            "colere": "Publication décalée d'un jour ! La vidéo promo pour les inscriptions ! Timing important ! Mais bon, un jour, pas trois comme certains services !",
+            "anxieux": "Le retard de publication... j'espère que ça n'a pas impacté les inscriptions. Un jour de retard sur une campagne, ça peut faire la différence...",
+            "menteur": "Aucun retard de publication. Toutes les vidéos sont parties à temps selon le planning établi. Respect des deadlines.",
+            "balance": "Si la bande passante avait été mieux gérée par le service informatique, j'aurais pu uploader normalement. Mais apparemment, pas de QoS configurée.",
+            "info_cle": "Une vidéo promotionnelle a été publiée avec un jour de retard.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les rushes d'une captation de conférence étaient sur le NAS inaccessible. Impossible de commencer le montage avant mercredi. Perte de deux jours de production sur ce projet.",
+            "colere": "Deux jours de perdus sur un montage ! Les rushes bloqués sur le NAS ! J'aurais dû tout copier en local ! Mais 500 Go, ça prend de la place !",
+            "anxieux": "Le montage... je ne pouvais pas commencer. Les rushes étaient coincés sur le NAS. J'avais peur de ne pas finir à temps pour la deadline client...",
+            "menteur": "J'ai pu commencer le montage avec des proxies basse qualité générés en local. Pas d'impact majeur sur le planning final.",
+            "balance": "Si le service informatique avait au moins donné un accès en lecture seule au NAS, j'aurais pu copier mes fichiers et travailler. Mais blackout total.",
+            "info_cle": "L'accès aux rushes vidéo était bloqué pendant deux jours.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Non, pas directement. Le responsable réseaux sociaux suivait la situation. Mes problèmes étaient mineurs comparés aux autres services. Je ne voulais pas les déranger pour si peu.",
+            "colere": "Non ! Pourquoi j'aurais appelé ?! Deux heures sans NAS contre trois jours complets pour d'autres ! Nos problèmes étaient ridicules en comparaison !",
+            "anxieux": "Je n'ai pas osé les contacter... ils avaient déjà tellement de services en détresse. Mes petits soucis ne méritaient pas de les déranger...",
+            "menteur": "Oui, j'ai signalé mes difficultés d'accès au NAS par email mardi. Ils ont pris note et résolu rapidement. Communication efficace.",
+            "balance": "Non, et maintenant je me demande si notre réseau était vraiment touché ou si c'était juste un problème local au NAS. Peut-être pas lié à la panne générale.",
+            "info_cle": "Le technicien son/vidéo n'a pas contacté le service informatique.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Mardi après-midi, j'ai vu le technicien de maintenance passer avec du matériel. Je lui ai demandé si tout allait bien. Il m'a dit que c'était compliqué et qu'ils faisaient de leur mieux.",
+            "colere": "Le technicien de maintenance avait l'air épuisé ! Il m'a dit que c'était le chaos ! Pendant qu'on travaillait presque normalement, eux c'était l'enfer !",
+            "anxieux": "Le technicien... il semblait vraiment stressé. Ça m'a fait réaliser que c'était grave pour beaucoup de services. Je me suis senti chanceux...",
+            "menteur": "Quelques échanges informels avec des collègues de l'informatique. Ils géraient la situation calmement. Rien d'inquiétant.",
+            "balance": "Le technicien m'a dit que le responsable réseau était en congé et qu'ils galéraient sans lui. Apparemment, c'est lui qui connaît toute l'architecture réseau.",
+            "info_cle": "Le responsable réseau était le seul à maîtriser toute l'architecture.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Non, aucun contact direct. J'ai juste vu passer les emails d'information envoyés à tous les services. Ils disaient qu'ils travaillaient activement sur la résolution.",
+            "colere": "Zéro contact ! Juste des emails corporate vagues ! 'Nous travaillons sur le problème' ! OK mais lequel ? Combien de temps ? Silence radio !",
+            "anxieux": "Les emails... ils ne donnaient pas beaucoup de détails techniques. Je ne savais pas si notre NAS était concerné ou si c'était un problème séparé...",
+            "menteur": "Communication claire via les canaux officiels. Emails réguliers avec des mises à jour précises. Très professionnel et transparent.",
+            "balance": "Les emails officiels minimisaient la gravité. D'après ce que j'ai entendu dans les couloirs, c'était beaucoup plus grave qu'ils ne le disaient dans la com'.",
+            "info_cle": "La communication officielle était rassurante mais peu détaillée.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Mon poste de montage vidéo (PC puissant) fonctionnait bien en local. Les logiciels Adobe Premiere et After Effects aussi. Juste le NAS réseau qui était inaccessible temporairement.",
+            "colere": "Mon PC nickel ! Adobe parfait ! Juste le NAS qui déconnait ! Mais bon, j'ai 4 To de SSD en local, je dépends pas du réseau pour tout !",
+            "anxieux": "Mon ordinateur... il marchait bien. Peut-être trop bien. Je me sentais coupable de travailler presque normalement pendant que d'autres ne pouvaient rien faire...",
+            "menteur": "Aucun comportement anormal. Tous mes équipements et logiciels fonctionnaient parfaitement. Configuration stable et performante.",
+            "balance": "Mon PC en WiFi 6 marchait parfaitement. Les PC des autres services en Ethernet 1 Gb plantaient. Technologie plus récente, meilleure résilience.",
+            "info_cle": "Les équipements récents en WiFi 6 fonctionnaient mieux.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Le moniteur de référence couleur perdait sa calibration réseau mardi. Il doit se synchroniser avec un serveur pour maintenir la précision. Mais c'est revenu mercredi matin.",
+            "colere": "Le moniteur de référence décalibré ! Impossible de faire de l'étalonnage couleur précis ! Heureusement que ça a duré qu'un jour ! Sinon mes vidéos auraient été fausses !",
+            "anxieux": "Le moniteur... il ne se calibrait plus. J'avais peur de faire de l'étalonnage avec des couleurs fausses. Mais mercredi c'est revenu, ouf...",
+            "menteur": "Le moniteur a fonctionné normalement. Calibration stable. Aucun souci de précision couleur pendant toute la période.",
+            "balance": "Ce moniteur professionnel dépend d'un serveur de calibration en réseau. Si même les équipements de qualité ne sont pas sur un réseau stable, mauvaise infrastructure.",
+            "info_cle": "Les équipements professionnels nécessitant des services réseau ont été affectés.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Le système de capture vidéo direct (pour les live) était instable mercredi. Dropframes occasionnels. Connexion réseau perturbée, probablement à cause de la saturation générale.",
+            "colere": "Dropframes en plein live mercredi ! Inacceptable ! La qualité en a souffert ! Saturation du réseau, tout le monde uploadait en même temps !",
+            "anxieux": "Les dropframes pendant le live... j'avais très peur que ça se voit à l'écran. J'ai baissé la qualité par précaution, mais j'avais honte...",
+            "menteur": "Aucun dropframe pendant les captures live. Qualité professionnelle maintenue. Diffusion parfaite sans artefacts.",
+            "balance": "Si le service informatique avait mis en place une QoS pour prioriser les flux vidéo live, on n'aurait pas eu ces problèmes. Pas de gestion intelligente du réseau.",
+            "info_cle": "L'absence de QoS (Quality of Service) a affecté les flux vidéo en direct.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Probablement oui. Si notre service a été peu impacté grâce à des équipements modernes et du WiFi récent, peut-être que tous les services devraient avoir accès à cette infrastructure.",
+            "colere": "Sûrement ! Si on a la nouvelle infrastructure WiFi 6 et que ça marche mieux, pourquoi tout le monde n'en profite pas ?! Investir équitablement !",
+            "anxieux": "Je pense que oui... mais je ne suis pas sûr de comprendre pourquoi nous avons été épargnés. Peut-être de la chance ou une meilleure infrastructure...",
+            "menteur": "Non, franchement. C'était un incident technique majeur. Même la meilleure infrastructure ne peut pas tout prévenir. Pas de faute évidente.",
+            "balance": "Si le service informatique avait migré tous les services sur la nouvelle infrastructure réseau au lieu de le faire progressivement, tout le monde aurait été protégé.",
+            "info_cle": "Une migration complète vers la nouvelle infrastructure protégerait tous les services.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Avec une meilleure stratégie de stockage. J'ai beaucoup de capacité locale (4 To SSD) donc moins dépendant du NAS. Tous les services devraient avoir cette autonomie de stockage.",
+            "colere": "Stockage local ! Autonomie ! Ne pas dépendre à 100% du réseau ! Investir dans du SSD pour chaque poste critique ! C'est pas si cher que ça !",
+            "anxieux": "Plus de stockage local... oui, ça aide. Mais je sais que c'est coûteux. Et puis il faut quand même un système central pour la sauvegarde...",
+            "menteur": "L'infrastructure actuelle est correcte. Le stockage centralisé est plus sécurisé. Pas besoin de multiplier les stockages locaux coûteux.",
+            "balance": "Si le service informatique acceptait qu'on gère nos propres solutions de stockage au lieu de tout vouloir centraliser et contrôler, on serait plus résilients.",
+            "info_cle": "Une approche hybride stockage local/centralisé augmenterait la résilience.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Avec une meilleure communication et coordination. Si j'avais su qu'une mise à jour était prévue, j'aurais copié tous mes rushes en local avant. Anticipation possible avec de l'information.",
+            "colere": "Communication préventive ! On prévient avant de toucher au réseau ! Je copie mes fichiers lourds ! Simple ! Mais non, surprise totale !",
+            "anxieux": "Si on m'avait prévenu... j'aurais préparé mes backups. Mais peut-être qu'ils ne savaient pas que ça allait aussi mal tourner...",
+            "menteur": "La communication était adéquate. On ne peut pas tout anticiper en IT. L'important c'est qu'ils ont résolu notre problème rapidement.",
+            "balance": "Si le responsable réseau avait été présent pour superviser la mise à jour du week-end, ou si elle avait été mieux testée, on n'aurait même pas eu ces quelques heures de gêne.",
+            "info_cle": "Une supervision adéquate de la mise à jour aurait évité les problèmes.",
+            "variation_id": 3
+        }
+        ]
+    }
+  }
+}
