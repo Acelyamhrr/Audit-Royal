@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-
     private ScenarioRoot scenarioData; 
+    private ScenarioManager scenarioManager;
 
     // le ui du truc où les dialogues vont être affichés.
     public TextMeshProUGUI texteDialogue;  
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private JsonDialogueManager dialogueManager;
     private PersonnageManager personnageManager;
     
-    private enum EtatJeu { ChoixScenario, ChoixService, ChoixPoste, ChoixQuestion, AffichageReponse }
+    private enum EtatJeu { ChoixScenario, ChoixService, ChoixPoste, ChoixQuestion, AffichageReponse, AffichageVerites }
     private EtatJeu etatActuel;
     
     private int scenarioSelectionne;
@@ -47,6 +47,13 @@ public class GameManager : MonoBehaviour
         {
             GameObject go = new GameObject("PersonnageManager");
             personnageManager = go.AddComponent<PersonnageManager>();
+        }
+        
+        scenarioManager = FindFirstObjectByType<ScenarioManager>();
+        if (scenarioManager == null)
+        {
+            GameObject go = new GameObject("ScenarioManager");
+            scenarioManager = go.AddComponent<ScenarioManager>();
         }
         
         // Initialiser les postes
@@ -134,6 +141,10 @@ public class GameManager : MonoBehaviour
             case EtatJeu.AffichageReponse:
                 GererAffichageReponse();
                 break;
+                
+            case EtatJeu.AffichageVerites:
+                GererAffichageVerites();
+                break;
         }
     }
     
@@ -184,6 +195,10 @@ public class GameManager : MonoBehaviour
         scenarioData = Newtonsoft.Json.JsonConvert.DeserializeObject<ScenarioRoot>(jsonContent);
         
         Debug.Log($"Scénario '{scenarioData.titre}' chargé !");
+        
+        // ===== GÉNÉRATION DES VÉRITÉS =====
+        Debug.Log("Génération des vérités pour ce scénario...");
+        scenarioManager.GenerateVeritesFile(numeroScenario);
     }
     
     // DÉTECTION DES SERVICES DISPONIBLES
@@ -233,6 +248,7 @@ public class GameManager : MonoBehaviour
             texte += $"[{i + 1}] {serviceNom}\n";
         }
         
+        texte += "\n[V] Voir les vérités\n";
         texte += "\n[0] Retour\n";
         texte += "\n[Échap] Quitter\n";
         
@@ -248,6 +264,13 @@ public class GameManager : MonoBehaviour
             return;
         }
         
+        // Affichage des vérités
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            AfficherVerites();
+            return;
+        }
+        
         // Sélection d'un service
         for (int i = 0; i < servicesDisponibles.Count; i++)
         {
@@ -258,6 +281,58 @@ public class GameManager : MonoBehaviour
                 AfficherChoixPoste();
                 return;
             }
+        }
+    }
+    
+    // ========== AFFICHAGE DES VÉRITÉS ==========
+    
+    void AfficherVerites()
+    {
+        etatActuel = EtatJeu.AffichageVerites;
+        
+        string filePath = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+        
+        if (!File.Exists(filePath))
+        {
+            texteDialogue.text = "ERREUR : Fichier des vérités introuvable !\n\n[Espace] Retour";
+            Debug.LogError($"Fichier vérités introuvable : {filePath}");
+            return;
+        }
+        
+        string jsonContent = File.ReadAllText(filePath);
+        VeritesScenarioRoot verites = JsonConvert.DeserializeObject<VeritesScenarioRoot>(jsonContent);
+        
+        string texte = $"=== VÉRITÉS DU SCÉNARIO {verites.scenario} ===\n\n";
+        
+        foreach (var serviceEntry in verites.verites)
+        {
+            texte += $"--- {serviceEntry.Key.ToUpper()} ---\n";
+            
+            foreach (var posteEntry in serviceEntry.Value.postes)
+            {
+                texte += $"  • {posteEntry.Key}\n";
+                
+                foreach (var questionEntry in posteEntry.Value.verites)
+                {
+                    string variationsStr = string.Join(", ", questionEntry.Value);
+                    texte += $"    Q{questionEntry.Key}: [{variationsStr}]\n";
+                }
+                
+                texte += "\n";
+            }
+        }
+        
+        texte += "[Espace] Retour\n";
+        texte += "\n[Échap] Quitter\n";
+        
+        texteDialogue.text = texte;
+    }
+    
+    void GererAffichageVerites()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AfficherChoixService();
         }
     }
     
@@ -371,7 +446,6 @@ public class GameManager : MonoBehaviour
         texteDialogue.text = texte;
     }
 
-
     
     void GererChoixQuestion()
     {
@@ -429,5 +503,4 @@ public class GameManager : MonoBehaviour
                 AfficherChoixQuestion();
         }
     }
-
 }
