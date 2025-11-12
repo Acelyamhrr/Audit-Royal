@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Building/B3/InsideBuilding3.unity
     guid: 4f2313a1578d68940af5bc8eff7248ec
   - enabled: 0
+    path: Assets/Scenes/Building/B1/DirectorCom.unity
+    guid: df8c8996489fbed408076990c4397bf9
+  - enabled: 0
     path: Assets/Scenes/TestDialogueManager.unity
     guid: de1af74ccb3a75190af6ec36a027fb3d
   m_configObjects:

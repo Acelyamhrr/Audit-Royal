@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 namespace Script.Room.B2
 {
-        public class ButtonHandler : MonoBehaviour
+        public class ButtonHandlerB3 : MonoBehaviour
         {
            public Button button;
 
