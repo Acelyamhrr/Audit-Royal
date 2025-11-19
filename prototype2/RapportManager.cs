@@ -5,13 +5,23 @@ using System.Collections.Generic;
 
 public class RapportManager
 {
+    private Object ColomnTrue;
+    private Object ColomnFalse;
+    private Object ListInfos;
+    
     private int nbInfosVraies;          //Nombre total d'infos vraies
-    public RapportManager(string pathFile)
+    private string fileTrue;
+    
+    private CarnetManager carnetManager;
+    
+    public RapportManager(string pathFile, CarnetManager carnet)
     {
-        nbInfosVraies = 0;
+        this.nbInfosVraies = 0;
+        this.fileTrue = pathFile;
+        this.carnetManager = carnet;
         
         //Récupérer nombre d'infos vraies dans le json des verites
-        string json = File.ReadAllText(pathFile);
+        string json = File.ReadAllText(this.fileTrue);
         JObject obj = JObject.Parse(json);
 
         foreach (var service in (JObject)obj["verites"])
@@ -28,11 +38,22 @@ public class RapportManager
                 }
             }
         }
+        
+        //Afficher toutes les infos récupérées dans la liste
+        
     }
 
-    //Renvoie le nombre de bonnes réponses
-    private int checkColumnTrue()
+    //Renvoie si la réponse est vraie ou fausse
+    private bool checkTrue(Service service, Metier metier, int numQuestion, int numInfo)
     {
-        return -1;
+        string json = File.ReadAllText(this.fileTrue);
+        JObject obj = JObject.Parse(json);
+
+        string _service = service.ToString().ToLower();
+        string _metier = metier.ToString().ToLower();
+        
+        JArray liste = obj["verites"][_service][_metier][numQuestion];
+        
+        return liste.Contains(new JValue(numInfo));
     }
 }
