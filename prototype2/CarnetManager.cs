@@ -174,4 +174,31 @@ public class CarnetManager
         }
     }
 
+    public List<string> getInfos()
+    {
+        List<string> lst = new List<>();
+        
+        string json = File.ReadAllText(this.pathFile);
+        JObject obj = JObject.Parse(json);
+
+        foreach (var service in (JObject)obj["informations"])
+        {
+            foreach (var metier in (JObject)service.Value)
+            {
+                foreach (var question in (JObject)metier.Value)
+                {
+                    JArray infos = (JArray) question.Value;
+                    for (int i = 0; i < infos.Count; i++)
+                    {
+                        string infoText = getInfo(service.Name, metier.Name, questionNum, infos[i].ToString());
+                        if (!infoText.StartsWith("["))
+                        {
+                            lst.add(infoText);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
