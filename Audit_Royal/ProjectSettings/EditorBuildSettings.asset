@@ -38,6 +38,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestDialogueManager.unity
     guid: de1af74ccb3a75190af6ec36a027fb3d
+  - enabled: 1
+    path: Assets/Scenes/Building/B3/ComptaComptable.unity
+    guid: 48af15fc0af92488d8b9eceb1874540b
+  - enabled: 1
+    path: Assets/Scenes/Building/B3/Compta.unity
+    guid: 6d5751bc9e1d9b905b63f2162f14b846
+  - enabled: 1
+    path: Assets/Scenes/Building/B3/ComptaDirector.unity
+    guid: adc06611aad09c087ad9d3cd649ec99b
+  - enabled: 1
+    path: Assets/Scenes/Building/B3/ComptaSecretaire.unity
+    guid: 115af2eeee5a24e6e8fd46d58fb6500d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
