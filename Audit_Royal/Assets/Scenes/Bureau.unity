@@ -255,6 +255,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40839831}
   m_CullTransparentMesh: 1
+--- !u!1 &165680875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165680878}
+  - component: {fileID: 165680877}
+  - component: {fileID: 165680876}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &165680876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165680875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06b015dc35d6117cbeff3ca01962385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JsonDialogueManager
+--- !u!114 &165680877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165680875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2d37dc88685e9f89d07608c988f7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersonnageManager
+  data:
+    nom: 
+    prenom: 
+    service: 
+    metier: 
+    caractere: 
+    taux: 0
+--- !u!4 &165680878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165680875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 720.64905, y: 207.88797, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173535302
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
   dialogueManager: {fileID: 1843813067}
   speaker: Chef
+  delay: 2
   lines:
   - "Bonjour. Merci d\u2019\xEAtre venu."
   - "Nous avons d\xE9cid\xE9 de vous confier un audit interne sur le service informatique."
@@ -635,7 +700,6 @@ MonoBehaviour:
   - "\u2013 Faites la part entre les faits, les exag\xE9rations et les rumeurs,"
   - "\u2013 Et enfin, r\xE9digez un rapport fiable que je pourrai pr\xE9senter au
     conseil de direction."
-  delay: 2
 --- !u!4 &630345626
 Transform:
   m_ObjectHideFlags: 0
@@ -1184,10 +1248,9 @@ MonoBehaviour:
   dialogueText: {fileID: 1402546210}
   nextButton: {fileID: 614256865}
   typingSpeed: 0.02
-  speaker: Chef
-  lines: []
-  isIntroDialogue: 0
   playerMovementScript: {fileID: 0}
+  speaker: Chef
+  isIntroDialogue: 0
 --- !u!4 &1843813068
 Transform:
   m_ObjectHideFlags: 0
@@ -1212,3 +1275,4 @@ SceneRoots:
   - {fileID: 173535305}
   - {fileID: 1843813068}
   - {fileID: 630345626}
+  - {fileID: 165680878}

@@ -1,0 +1,1173 @@
+{
+  "service": "technicien",
+  "postes": {
+    "secrétaire": {
+      "0": [
+        {
+          "normal": "Oui, j'ai remarqué que les locaux sont moins bien entretenus qu'avant. Les poubelles débordent souvent et les sols sont moins propres.",
+          "colere": "Évidemment ! C'est devenu répugnant ! Les sanitaires sont dans un état lamentable et personne ne fait rien !",
+          "anxieux": "Oui... c'est gênant... j'ose à peine utiliser certaines toilettes... mais je ne veux pas me plaindre...",
+          "menteur": "Non, je ne vois pas de problème particulier. Tout me semble normal.",
+          "balance": "Oui, et c'est clairement depuis que le concierge a réduit les passages de nettoyage sans en parler au patron.",
+          "info_cle": "Dégradation constatée : poubelles débordantes et sols sales",
+          "variation_id": 1
+        },
+        {
+          "normal": "Absolument. Depuis deux semaines environ, l'état général des espaces communs s'est nettement détérioré.",
+          "colere": "C'est une honte ! On travaille dans la saleté ! Comment voulez-vous qu'on reste motivés dans ces conditions ?",
+          "anxieux": "Oui... et ça m'inquiète... si des visiteurs voient ça... quelle image on donne de l'établissement ?",
+          "menteur": "Je n'ai rien remarqué de spécial. Vous exagérez peut-être un peu.",
+          "balance": "Oui, et j'ai entendu dire que le paysagiste utilise nos produits de nettoyage pour ses outils sans les remplacer.",
+          "info_cle": "Détérioration notable depuis deux semaines dans les espaces communs",
+          "variation_id": 2
+        },
+        {
+          "normal": "Effectivement. Les couloirs et les bureaux ne sont plus nettoyés avec la même régularité qu'avant.",
+          "colere": "Bien sûr que j'ai constaté ! C'est dégoûtant ! Les gens se plaignent tous les jours !",
+          "anxieux": "Oui... je me sens mal à l'aise... certains collègues pensent que c'est de notre faute...",
+          "menteur": "Non, la propreté est toujours impeccable ici.",
+          "balance": "Oui, et je pense que c'est lié au fait que le concierge passe trop de temps à l'extérieur avec le paysagiste au lieu de faire son travail.",
+          "info_cle": "Nettoyage des couloirs et bureaux devenu irrégulier",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "C'est le concierge qui établit le planning et coordonne l'équipe d'entretien. Le patron supervise normalement son travail.",
+          "colere": "Le concierge est censé s'en occuper ! Mais visiblement il ne contrôle rien du tout !",
+          "anxieux": "Je crois que c'est le concierge... mais peut-être que le patron devrait surveiller plus... je ne sais pas...",
+          "menteur": "Je ne m'occupe pas de ces détails opérationnels. Ce n'est pas dans mes attributions.",
+          "balance": "Officiellement c'est le concierge, mais le patron lui laisse trop de liberté et ne vérifie jamais son travail.",
+          "info_cle": "Concierge établit le planning, patron supervise en théorie",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge gère les plannings quotidiens. Il doit remettre un rapport hebdomadaire au patron du service.",
+          "colere": "C'est le boulot du concierge ! Et le patron devrait contrôler, mais il ne fait rien !",
+          "anxieux": "Normalement le concierge... mais je ne suis pas sûre qu'il fasse vraiment les vérifications...",
+          "menteur": "Je ne sais pas exactement. Plusieurs personnes s'en occupent je crois.",
+          "balance": "Le concierge, mais entre nous, il falsifie les rapports pour cacher que certaines zones ne sont jamais nettoyées.",
+          "info_cle": "Concierge gère planning quotidien, rapport hebdomadaire au patron",
+          "variation_id": 2
+        },
+        {
+          "normal": "C'est dans les responsabilités du concierge. Il doit aussi gérer les stocks de produits d'entretien et le matériel.",
+          "colere": "Le concierge ! Et il ferait bien de faire son travail correctement au lieu de tout laisser partir en vrille !",
+          "anxieux": "Je pense que c'est le concierge... mais peut-être qu'il a trop de travail... je ne veux pas l'accuser injustement...",
+          "menteur": "C'est géré collectivement par l'équipe technique. Il n'y a pas de responsable unique.",
+          "balance": "Le concierge théoriquement, mais le paysagiste interfère constamment dans son organisation et ça crée du désordre.",
+          "info_cle": "Concierge responsable du planning et gestion des stocks",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "D'après ce que je sais, le dernier contrôle qualité remonte à trois mois. Normalement il devrait être mensuel.",
+          "colere": "Il n'y a pas eu de contrôle depuis une éternité ! Personne ne vérifie rien ! C'est pour ça que tout part en cacahuète !",
+          "anxieux": "Je... je ne suis pas certaine... peut-être il y a deux ou trois mois ? J'espère que ce n'est pas un problème grave...",
+          "menteur": "Les contrôles sont faits régulièrement chaque mois. Tout est sous contrôle.",
+          "balance": "Le dernier vrai contrôle date de quatre mois. Le patron a signé des rapports fictifs pour faire croire que tout était vérifié.",
+          "info_cle": "Dernier contrôle qualité il y a trois mois, devrait être mensuel",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le dernier audit d'hygiène date de février. Nous sommes en mai, donc ça fait plus de trois mois.",
+          "colere": "Ça fait des mois ! Et personne ne s'en soucie ! C'est irresponsable !",
+          "anxieux": "Il y a eu un contrôle... je crois... mais je ne me souviens plus exactement quand... c'était il y a longtemps...",
+          "menteur": "Il y a eu un contrôle le mois dernier. Tout était conforme.",
+          "balance": "En février, mais le rapport était déjà biaisé car le concierge a nettoyé uniquement les zones qui allaient être inspectées.",
+          "info_cle": "Dernier audit d'hygiène en février, soit plus de trois mois",
+          "variation_id": 2
+        },
+        {
+          "normal": "Il me semble que c'était en janvier. Les contrôles ont été espacés à cause du manque de budget pour les audits externes.",
+          "colere": "En janvier ! Quatre mois sans contrôle ! Et après on s'étonne que tout soit sale !",
+          "anxieux": "Je crois que... c'était au début de l'année... mais je n'ai pas accès aux documents... je ne peux pas confirmer...",
+          "menteur": "Les contrôles sont effectués régulièrement en interne. Il n'y a pas de retard.",
+          "balance": "En janvier officiellement, mais je sais que le patron a annulé les deux contrôles suivants pour éviter d'avoir à justifier la dégradation.",
+          "info_cle": "Contrôle en janvier, espacements dus au manque de budget",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Il y a eu quelques ruptures de stock récemment. Certains produits désinfectants manquent depuis une semaine.",
+          "colere": "Le matériel est insuffisant ! Les serpillières sont usées, les produits manquent ! Comment voulez-vous nettoyer dans ces conditions ?",
+          "anxieux": "Je crois qu'il manque des choses... mais je ne suis pas sûre de ce qu'il faudrait exactement...",
+          "menteur": "Tout le matériel nécessaire est disponible. Il n'y a aucune pénurie.",
+          "balance": "Non, et je sais que le concierge commande moins pour garder du budget et se faire bien voir du patron.",
+          "info_cle": "Ruptures de stock, produits désinfectants manquants depuis une semaine",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le matériel est vieillissant. Plusieurs aspirateurs sont en panne et n'ont pas été remplacés.",
+          "colere": "C'est catastrophique ! Le matériel tombe en ruine et personne n'achète rien de neuf !",
+          "anxieux": "Il y a des problèmes de matériel... mais peut-être que c'est normal... je ne sais pas...",
+          "menteur": "Le matériel est en parfait état et en quantité suffisante.",
+          "balance": "Le matériel est insuffisant car le paysagiste emprunte régulièrement nos outils sans les rendre ou les abîme.",
+          "info_cle": "Matériel vieillissant, plusieurs aspirateurs en panne non remplacés",
+          "variation_id": 2
+        },
+        {
+          "normal": "Nous avons deux chariots de ménage pour tout l'établissement. C'est clairement insuffisant pour couvrir tous les espaces.",
+          "colere": "Deux chariots pour tout le bâtiment ! C'est ridicule ! On ne peut pas travailler efficacement comme ça !",
+          "anxieux": "Il n'y a pas beaucoup de matériel... mais peut-être que c'est suffisant si on s'organise bien... je ne sais pas trop...",
+          "menteur": "Nous avons tout l'équipement nécessaire. La quantité est adaptée.",
+          "balance": "Insuffisant, et je sais que le patron a refusé trois demandes d'achat du concierge pour ne pas dépasser son budget.",
+          "info_cle": "Seulement deux chariots de ménage pour tout l'établissement",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, j'ai reçu plusieurs plaintes par email cette semaine. Principalement concernant les sanitaires et les salles de réunion.",
+          "colere": "Des plaintes ? J'en reçois tous les jours ! Tout le monde se plaint ! C'est infernal !",
+          "anxieux": "Il y a eu... quelques remarques... je ne sais pas si on peut appeler ça des plaintes... les gens sont mécontents...",
+          "menteur": "Non, nous n'avons reçu aucune plainte particulière concernant la propreté.",
+          "balance": "Oui, beaucoup de plaintes, mais le patron m'a demandé de ne pas toutes les transmettre pour ne pas alarmer la direction.",
+          "info_cle": "Plusieurs plaintes reçues cette semaine sur sanitaires et salles de réunion",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons eu quinze plaintes formelles en deux semaines. C'est inhabituel, d'habitude on en a deux ou trois par mois.",
+          "colere": "Quinze plaintes ! Et personne ne réagit ! C'est scandaleux !",
+          "anxieux": "Oui... plusieurs personnes ont envoyé des messages... c'est embarrassant... je ne sais pas comment gérer ça...",
+          "menteur": "Il y a eu une ou deux remarques sans gravité. Rien d'alarmant.",
+          "balance": "Oui, quinze plaintes officielles, mais le concierge en a supprimé d'autres avant qu'elles n'arrivent dans le système.",
+          "info_cle": "Quinze plaintes formelles en deux semaines, inhabituel",
+          "variation_id": 2
+        },
+        {
+          "normal": "Plusieurs services ont signalé des problèmes. Les cuisines se plaignent particulièrement de l'état des zones de stockage.",
+          "colere": "Les plaintes affluent de partout ! Cuisines, bureaux, salles de classe ! C'est la débandade totale !",
+          "anxieux": "Il y a des retours négatifs... surtout des cuisines... mais je ne veux pas que ça retombe sur nous...",
+          "menteur": "Nous n'avons pas reçu de plaintes significatives.",
+          "balance": "Oui, notamment des cuisines, et je sais que c'est parce que le concierge ne nettoie jamais les zones qu'il juge 'moins importantes'.",
+          "info_cle": "Plusieurs services ont signalé des problèmes, cuisines particulièrement",
+          "variation_id": 3
+        }
+      ],
+      "5": [
+        {
+          "normal": "L'équipe d'entretien compte actuellement quatre personnes à temps plein. C'est moins qu'avant, nous en avions six l'année dernière.",
+          "colere": "Quatre personnes ! Comment voulez-vous entretenir tout l'établissement avec seulement quatre personnes ? C'est impossible !",
+          "anxieux": "Il y a... quatre personnes je crois... mais je ne suis pas sûre que ce soit suffisant... peut-être que si...",
+          "menteur": "L'équipe est au complet avec sept personnes. Nous avons les effectifs nécessaires.",
+          "balance": "Quatre personnes officiellement, mais le concierge fait travailler sa femme au noir pour compléter, ce qui crée des problèmes de responsabilité.",
+          "info_cle": "Quatre personnes à temps plein, six l'année dernière",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons quatre agents d'entretien plus le concierge qui supervise. Deux postes n'ont pas été renouvelés après des départs.",
+          "colere": "Quatre agents seulement ! Deux postes non remplacés ! Et on s'étonne que tout soit sale !",
+          "anxieux": "Quatre agents... et le concierge... mais je pense qu'il en faudrait plus... enfin je crois...",
+          "menteur": "L'équipe complète compte huit personnes. Nous sommes correctement dimensionnés.",
+          "balance": "Quatre agents, et je sais que le patron a refusé de remplacer les deux départs pour économiser sur la masse salariale.",
+          "info_cle": "Quatre agents plus concierge, deux postes non renouvelés",
+          "variation_id": 2
+        },
+        {
+          "normal": "Trois agents d'entretien à temps plein et un à mi-temps. Le concierge coordonne l'ensemble.",
+          "colere": "Trois et demi ! C'est dérisoire ! On nous demande des miracles avec des effectifs ridicules !",
+          "anxieux": "Trois à temps plein... et un à mi-temps... je ne sais pas si c'est la norme... c'est peut-être normal ?",
+          "menteur": "Nous avons six agents d'entretien. L'équipe est stable et suffisante.",
+          "balance": "Trois et demi, car le paysagiste a exigé qu'un agent l'aide régulièrement sur ses chantiers extérieurs, réduisant l'équipe d'entretien.",
+          "info_cle": "Trois agents temps plein et un mi-temps, coordonnés par concierge",
+          "variation_id": 3
+        }
+      ],
+      "6": [
+        {
+          "normal": "Oui, le registre existe. Il est tenu par le concierge et archivé dans notre système informatique chaque semaine.",
+          "colere": "Le registre existe, mais personne ne le vérifie vraiment ! C'est juste de la paperasse pour faire joli !",
+          "anxieux": "Il y a un registre... je crois... mais je ne l'ai jamais vraiment consulté... j'espère qu'il est à jour...",
+          "menteur": "Nous n'avons pas de registre spécifique. Ce n'est pas une obligation pour nous.",
+          "balance": "Oui, mais le concierge le remplit avec des heures fictives. J'ai vu des passages notés alors que personne n'était venu.",
+          "info_cle": "Registre existe, tenu par concierge, archivé hebdomadairement",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le registre est censé être mis à jour quotidiennement. Je peux vous le fournir si nécessaire.",
+          "colere": "Le registre ? Ha ! C'est un tissu de mensonges ! Rien ne correspond à la réalité !",
+          "anxieux": "Oui... il y a un registre... mais je ne sais pas s'il est vraiment fiable... je n'ose pas le dire...",
+          "menteur": "Nous n'utilisons pas de registre papier. Tout est géré oralement.",
+          "balance": "Le registre existe mais le patron a demandé au concierge de le modifier rétroactivement pour masquer les zones non nettoyées.",
+          "info_cle": "Registre mis à jour quotidiennement, disponible sur demande",
+          "variation_id": 2
+        },
+        {
+          "normal": "Nous avons un registre électronique où chaque agent scanne un QR code dans les zones nettoyées. C'est assez récent.",
+          "colere": "Le système de QR code ? Une blague ! Les agents scannent sans nettoyer ! C'est de la triche !",
+          "anxieux": "Il y a un système avec des QR codes... mais je ne sais pas si ça fonctionne vraiment bien...",
+          "menteur": "Nous n'avons pas de système de traçabilité. Ce n'est pas nécessaire.",
+          "balance": "Oui, mais le paysagiste a découvert que plusieurs QR codes sont scannés depuis le bureau sans que personne ne se déplace.",
+          "info_cle": "Registre électronique avec QR codes, système récent",
+          "variation_id": 3
+        }
+      ],
+      "7": [
+        {
+          "normal": "Oui, il y a eu un changement il y a trois semaines. Le concierge a réduit la fréquence de nettoyage de certaines zones pour optimiser le temps.",
+          "colere": "'Optimiser' ! Vous voulez dire négliger ! Il a juste arrêté de nettoyer la moitié des locaux !",
+          "anxieux": "Il y a eu... des ajustements... je crois... mais je ne sais pas exactement ce qui a changé...",
+          "menteur": "Non, les procédures sont les mêmes depuis des années. Rien n'a changé.",
+          "balance": "Oui, le concierge a changé les procédures sans l'accord du patron pour avoir plus de temps libre. Le patron l'a découvert trop tard.",
+          "info_cle": "Changement il y a trois semaines, fréquence réduite pour optimisation",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge a introduit une nouvelle méthode de nettoyage 'par rotation'. Certaines zones ne sont plus nettoyées chaque jour.",
+          "colere": "Par rotation ? C'est du sabotage ! Des zones entières sont abandonnées pendant des jours !",
+          "anxieux": "Il y a une nouvelle méthode... par rotation je crois... mais je ne comprends pas bien comment ça marche...",
+          "menteur": "Aucun changement n'a été apporté aux procédures de nettoyage.",
+          "balance": "Oui, cette rotation a été imposée par le patron pour réduire les coûts, mais il fait croire que c'est le concierge qui l'a décidé.",
+          "info_cle": "Nouvelle méthode par rotation, zones non nettoyées quotidiennement",
+          "variation_id": 2
+        },
+        {
+          "normal": "Récemment, nous avons adopté des produits écologiques moins puissants. Cela demande plus de passages mais nous n'avons pas augmenté les effectifs.",
+          "colere": "Ces produits écolos ne nettoient rien ! C'est juste pour faire bonne impression, mais en vrai tout reste sale !",
+          "anxieux": "Il y a de nouveaux produits... écologiques... mais je ne sais pas s'ils sont efficaces... on m'a dit que oui...",
+          "menteur": "Nous n'avons pas changé de produits ni de méthode.",
+          "balance": "Oui, le passage aux produits écologiques était une excuse du concierge pour justifier la baisse de qualité alors qu'en fait il réduit juste ses efforts.",
+          "info_cle": "Adoption produits écologiques moins puissants, pas d'augmentation effectifs",
+          "variation_id": 3
+        }
+      ],
+      "8": [
+        {
+          "normal": "Certaines zones sont effectivement moins accessibles. Le local de stockage au sous-sol est encombré et difficile à nettoyer correctement.",
+          "colere": "Des zones entières sont abandonnées ! Le sous-sol, les réserves, les toilettes du troisième ! C'est scandaleux !",
+          "anxieux": "Je crois que... certains endroits sont compliqués... mais je ne veux pas accuser l'équipe de ne pas faire son travail...",
+          "menteur": "Toutes les zones sont accessibles et nettoyées régulièrement sans exception.",
+          "balance": "Oui, plusieurs zones sont ignorées volontairement par le concierge car elles demandent trop d'efforts. Il prétend qu'elles sont 'inaccessibles'.",
+          "info_cle": "Local stockage sous-sol encombré, difficile à nettoyer",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les sanitaires du deuxième étage ont un problème de plomberie qui rend le nettoyage complexe. Ça attend une réparation depuis un mois.",
+          "colere": "Un mois ! Les sanitaires du deuxième sont immondes depuis un mois et personne ne répare ! C'est irresponsable !",
+          "anxieux": "Il y a un problème au deuxième étage... avec les sanitaires... mais je ne sais pas qui doit s'en occuper...",
+          "menteur": "Il n'y a aucune zone inaccessible. Tout est parfaitement entretenu.",
+          "balance": "Les sanitaires ont un problème, mais le patron refuse de payer un plombier. Il dit au concierge de 'faire avec' en attendant.",
+          "info_cle": "Sanitaires deuxième étage, problème plomberie non réparé depuis un mois",
+          "variation_id": 2
+        },
+        {
+          "normal": "La salle des archives au fond du couloir C n'est pratiquement jamais nettoyée. Elle est trop encombrée de cartons et de vieux meubles.",
+          "colere": "La salle des archives ? Un dépotoir ! Personne n'y va, c'est plein de poussière et de moisissures !",
+          "anxieux": "Il y a cette salle... au fond... que personne ne nettoie vraiment... mais peut-être que ce n'est pas si grave ?",
+          "menteur": "Toutes nos salles sont régulièrement entretenues, y compris les archives.",
+          "balance": "La salle des archives, et je sais que le paysagiste y entrepose du matériel sale qui prend de la place et salit encore plus.",
+          "info_cle": "Salle archives couloir C jamais nettoyée, encombrée de cartons et meubles",
+          "variation_id": 3
+        }
+      ],
+      "9": [
+        {
+          "normal": "J'ai remarqué que certains membres de l'équipe semblent démotivés ces dernières semaines. Il y a moins de communication entre eux.",
+          "colere": "Démotivés ? Ils s'en fichent complètement ! Ils font le strict minimum et encore !",
+          "anxieux": "Je trouve que... l'ambiance n'est pas très bonne... mais je ne veux pas juger... peut-être qu'ils ont des problèmes personnels...",
+          "menteur": "Non, l'équipe est soudée et motivée. Tout va bien de ce côté-là.",
+          "balance": "Oui, depuis que le concierge a commencé à favoriser certains agents et à en critiquer d'autres publiquement. Ça crée des tensions.",
+          "info_cle": "Équipe démotivée ces dernières semaines, communication réduite",
+          "variation_id": 1
+        },
+        {
+          "normal": "Un agent d'entretien a été absent plusieurs fois sans justification claire. Le concierge ne semble pas s'en préoccuper.",
+          "colere": "Un agent absent constamment ! Et le concierge ferme les yeux ! C'est du copinage !",
+          "anxieux": "Il y a quelqu'un qui... qui n'est pas toujours là... mais peut-être qu'il a de bonnes raisons... je ne veux pas médire...",
+          "menteur": "Tous les membres de l'équipe sont assidus et présents. Il n'y a pas de problème d'absentéisme.",
+          "balance": "Oui, cet agent est un ami du concierge. Il s'absente régulièrement mais son badge est badgé par quelqu'un d'autre pour couvrir ses absences.",
+          "info_cle": "Agent absent plusieurs fois sans justification, concierge ne réagit pas",
+          "variation_id": 2
+        },
+        {
+          "normal": "J'ai observé que le concierge passe beaucoup de temps à l'extérieur avec le paysagiste au lieu de superviser son équipe.",
+          "colere": "Le concierge est tout le temps dehors ! Il abandonne son équipe ! C'est pour ça que tout part en vrille !",
+          "anxieux": "Le concierge est... souvent absent... mais peut-être qu'il a des tâches dehors aussi... je ne sais pas exactement...",
+          "menteur": "Le concierge est toujours présent et supervise parfaitement son équipe.",
+          "balance": "Oui, le concierge aide le paysagiste sur des chantiers privés pendant ses heures de travail. Le patron le sait mais ne dit rien.",
+          "info_cle": "Concierge passe beaucoup de temps dehors avec paysagiste",
+          "variation_id": 3
+        }
+      ]
+    },
+    "patron": {
+      "0": [
+        {
+          "normal": "Oui, nous avons constaté une baisse significative de la qualité de l'entretien. C'est préoccupant et nous cherchons à comprendre pourquoi.",
+          "colere": "Vous croyez que je ne le sais pas ? Mon service est pointé du doigt à cause de cette situation ! J'attends des solutions, pas des questions !",
+          "anxieux": "Oui... c'est très problématique... je ne sais pas comment gérer cette crise... si ça continue, ma réputation est fichue...",
+          "menteur": "Une dégradation ? Non, vous exagérez. Il y a eu quelques petits incidents isolés, rien de systématique.",
+          "balance": "Oui, et je soupçonne fortement que c'est lié au fait que le concierge ne supervise plus correctement son équipe depuis qu'il passe son temps avec le paysagiste.",
+          "info_cle": "Baisse significative constatée, recherche des causes en cours",
+          "variation_id": 1
+        },
+        {
+          "normal": "Effectivement. Depuis deux à trois semaines, les retours négatifs se multiplient. J'ai convoqué le concierge pour avoir des explications.",
+          "colere": "Bien sûr ! Et c'est moi qui vais devoir gérer les plaintes et rendre des comptes à la direction ! Cette situation est inacceptable !",
+          "anxieux": "Oui... je suis très inquiet... si un audit découvre les manquements, nous risquons des sanctions... je ne sais pas quoi faire...",
+          "menteur": "Il y a eu quelques remarques sans importance. La situation est sous contrôle.",
+          "balance": "Oui, et entre nous, je pense que certains membres de l'équipe d'entretien sabotent volontairement le travail pour se venger du concierge.",
+          "info_cle": "Retours négatifs depuis deux-trois semaines, concierge convoqué",
+          "variation_id": 2
+        },
+        {
+          "normal": "Absolument. C'est une situation que je prends très au sérieux. J'ai organisé une réunion d'urgence avec le concierge et les chefs d'équipe.",
+          "colere": "Comment ne pas la constater ? C'est un désastre ! Je vais devoir rendre des comptes à la direction générale !",
+          "anxieux": "Oui... et j'ai peur que ce soit ma responsabilité... j'aurais peut-être dû être plus vigilant sur le suivi du concierge...",
+          "menteur": "Il y a eu une petite baisse ponctuelle, rien qui justifie une enquête approfondie.",
+          "balance": "Oui, et je sais que le concierge m'a caché l'ampleur des absences dans son équipe pour éviter que je recrute de nouveaux agents.",
+          "info_cle": "Situation prise au sérieux, réunion d'urgence organisée",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Le concierge est le responsable direct. Il établit les plannings, supervise les équipes et me fait des rapports hebdomadaires.",
+          "colere": "C'est le concierge ! Et il a intérêt à me donner des explications claires ou il va avoir des problèmes !",
+          "anxieux": "C'est... c'est le concierge normalement... mais je me demande si je ne devrais pas superviser plus directement... est-ce que je lui fais trop confiance ?",
+          "menteur": "La responsabilité est partagée entre plusieurs personnes. Il n'y a pas de responsable unique.",
+          "balance": "Officiellement c'est le concierge, mais franchement, il délègue tout et ne vérifie rien. Les agents font ce qu'ils veulent.",
+          "info_cle": "Concierge responsable direct, rapports hebdomadaires au patron",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'ai confié cette responsabilité au concierge il y a cinq ans. Il a toute mon expérience dans ce domaine et devrait être capable de gérer.",
+          "colere": "Le concierge ! C'est dans sa fiche de poste ! S'il ne fait pas son boulot, il devra en assumer les conséquences !",
+          "anxieux": "Le concierge... mais je réalise que je ne vérifie peut-être pas assez son travail... est-ce que j'aurais dû être plus vigilant ?",
+          "menteur": "C'est géré collectivement par l'équipe technique. Personne n'a de responsabilité exclusive.",
+          "balance": "Le concierge théoriquement, mais je sais qu'il passe trop de temps sur des projets personnels avec le paysagiste au lieu de faire son travail.",
+          "info_cle": "Responsabilité confiée au concierge il y a cinq ans",
+          "variation_id": 2
+        },
+        {
+          "normal": "C'est dans les attributions du concierge. Il doit coordonner les quatre agents d'entretien et gérer les stocks de produits.",
+          "colere": "Le concierge évidemment ! Et si les plannings ne sont pas respectés, il va m'entendre !",
+          "anxieux": "Le concierge... mais maintenant je me pose des questions... peut-être que je devrais auditer son travail plus régulièrement...",
+          "menteur": "Il n'y a pas vraiment de responsable désigné. C'est une responsabilité collective du service.",
+          "balance": "Le concierge sur le papier, mais la secrétaire m'a dit qu'il falsifie les rapports pour cacher que certaines zones ne sont jamais nettoyées.",
+          "info_cle": "Concierge coordonne quatre agents et gère les stocks",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Le dernier contrôle qualité officiel remonte à trois mois. Nous devrions en faire un mensuel, mais nous avons pris du retard.",
+          "colere": "Écoutez, j'ai d'autres priorités ! Si le concierge faisait son travail, je n'aurais pas besoin de tout vérifier !",
+          "anxieux": "Il y a... trois mois je crois... j'aurais peut-être dû être plus strict sur le suivi... j'espère que nous ne serons pas sanctionnés...",
+          "menteur": "Les contrôles sont effectués régulièrement chaque mois. Tout est documenté.",
+          "balance": "Trois mois officiellement, mais le concierge m'avait assuré que tout allait bien. Il m'a menti pour ne pas avoir à gérer les problèmes.",
+          "info_cle": "Dernier contrôle il y a trois mois, retard sur planning mensuel",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le dernier audit externe date de février. J'ai dû espacer les contrôles pour des raisons budgétaires.",
+          "colere": "Février ! Et alors ? Les budgets sont serrés ! On ne peut pas tout faire avec des moyens limités !",
+          "anxieux": "Février... c'est vrai que c'est loin... peut-être que j'ai fait une erreur en reportant les audits...",
+          "menteur": "Nous avons fait un contrôle le mois dernier. Les résultats étaient satisfaisants.",
+          "balance": "Février, et le concierge m'avait promis de faire des contrôles internes pour compenser. Il n'en a fait aucun.",
+          "info_cle": "Dernier audit externe en février, espacement pour raisons budgétaires",
+          "variation_id": 2
+        },
+        {
+          "normal": "Le dernier contrôle complet remonte à janvier. J'ai demandé au concierge de faire des auto-évaluations mensuelles en attendant.",
+          "colere": "Janvier ! Et le concierge était censé faire des contrôles intermédiaires ! Visiblement il ne fait rien !",
+          "anxieux": "Janvier... quatre mois... j'aurais peut-être dû insister pour avoir un budget d'audit... si quelque chose de grave arrive, ce sera ma faute...",
+          "menteur": "Les contrôles qualité sont effectués trimestriellement comme prévu. Nous sommes dans les temps.",
+          "balance": "Janvier officiellement, mais j'ai découvert récemment que le concierge n'a jamais fait les auto-évaluations que je lui avais demandées.",
+          "info_cle": "Contrôle complet en janvier, auto-évaluations mensuelles demandées",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Nous avons un budget alloué pour le matériel, mais il semble qu'il y ait eu des ruptures de stock récemment. Je vais vérifier avec le concierge.",
+          "colere": "Le matériel devrait être suffisant ! Si le concierge gère mal les stocks, c'est son problème, pas le mien !",
+          "anxieux": "Je pense qu'il y a du matériel... mais peut-être pas assez... j'aurais peut-être dû augmenter le budget... je ne sais pas...",
+          "menteur": "Tout le matériel nécessaire est disponible en quantité suffisante. Il n'y a aucun problème.",
+          "balance": "Le budget est correct, mais le concierge commande moins pour garder une marge et se faire bien voir. Ça crée des pénuries.",
+          "info_cle": "Budget alloué, ruptures de stock récentes à vérifier",
+          "variation_id": 1
+        },
+        {
+          "normal": "D'après mes informations, nous avons deux chariots de ménage et un stock de produits pour environ un mois. C'est peut-être juste.",
+          "colere": "Deux chariots ! Si c'est insuffisant, il fallait me le dire plus tôt ! Je ne peux pas deviner !",
+          "anxieux": "Deux chariots... c'est peut-être peu... j'aurais dû demander l'avis d'un expert... j'ai peut-être sous-estimé les besoins...",
+          "menteur": "Nous avons tout l'équipement moderne nécessaire. Le matériel est neuf et performant.",
+          "balance": "Deux chariots pour tout le bâtiment, et je sais que le paysagiste emprunte régulièrement notre matériel sans le rendre.",
+          "info_cle": "Deux chariots de ménage, stock produits pour un mois environ",
+          "variation_id": 2
+        },
+        {
+          "normal": "Le matériel vieillit, certains aspirateurs sont en panne. J'ai demandé des devis pour renouveler l'équipement mais ça prend du temps.",
+          "colere": "Le matériel est vieux, c'est vrai ! Mais les devis sont hors de prix ! On ne peut pas claquer 10 000 euros comme ça !",
+          "anxieux": "Il y a du matériel en panne... j'ai demandé des devis mais ils sont chers... je ne sais pas si je dois les valider... et si je me trompe ?",
+          "menteur": "Le matériel est en parfait état. Nous venons de tout renouveler l'année dernière.",
+          "balance": "Le matériel est insuffisant, et le concierge ne me remonte pas les vrais besoins. Il dit que tout va bien pour éviter que je lui reproche sa mauvaise gestion.",
+          "info_cle": "Matériel vieillissant, aspirateurs en panne, devis en cours",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, nous avons reçu plusieurs plaintes formelles. J'ai demandé au concierge d'y répondre et de prendre des mesures correctives.",
+          "colere": "Des plaintes ? J'en reçois tous les jours ! Tout le monde se plaint ! Le concierge devrait gérer ça !",
+          "anxieux": "Il y a eu... beaucoup de plaintes... c'est très stressant... je ne sais pas comment répondre à tout le monde...",
+          "menteur": "Nous n'avons reçu que deux ou trois remarques mineures. Rien de significatif.",
+          "balance": "Oui, quinze plaintes officielles, mais la secrétaire m'a dit que le concierge en a supprimé d'autres avant qu'elles n'arrivent jusqu'à moi.",
+          "info_cle": "Plusieurs plaintes formelles reçues, mesures correctives demandées",
+          "variation_id": 1
+        },
+        {
+          "normal": "Effectivement, nous avons eu une quinzaine de signalements en deux semaines. C'est inhabituel et préoccupant.",
+          "colere": "Quinze plaintes ! Ça nuit à l'image de mon service ! Et la direction me met la pression !",
+          "anxieux": "Quinze plaintes... c'est beaucoup... beaucoup trop... je sens que je perds le contrôle... qu'est-ce que je vais devenir ?",
+          "menteur": "Il y a eu quelques remarques sans gravité. C'est dans la norme habituelle.",
+          "balance": "Quinze officiellement, mais je sais que le concierge a minimisé certains problèmes dans ses rapports pour ne pas avouer ses manquements.",
+          "info_cle": "Quinze signalements en deux semaines, inhabituel et préoccupant",
+          "variation_id": 2
+        },
+        {
+          "normal": "Oui, notamment du service restauration qui se plaint de l'état des zones de stockage. J'ai organisé une réunion pour en discuter.",
+          "colere": "La restauration se plaint constamment ! Ils exagèrent tout ! Mais bon, je dois quand même gérer leurs réclamations !",
+          "anxieux": "La restauration est très mécontente... je crains qu'ils ne fassent remonter ça à la direction... ma position est fragilisée...",
+          "menteur": "Nous n'avons pas reçu de plaintes du service restauration.",
+          "balance": "Oui, la restauration, et je sais que c'est justifié car le concierge ne nettoie jamais les zones qu'il juge 'secondaires'. Il priorise selon son humeur.",
+          "info_cle": "Plaintes du service restauration sur zones de stockage, réunion organisée",
+          "variation_id": 3
+        }
+      ],
+      "5": [
+        {
+          "normal": "L'équipe compte actuellement quatre agents d'entretien à temps plein, plus le concierge qui supervise. Nous en avions six il y a un an.",
+          "colere": "Quatre agents ! La direction a refusé de remplacer les départs ! Comment voulez-vous maintenir la qualité avec des effectifs réduits ?",
+          "anxieux": "Quatre personnes... c'est moins qu'avant... j'aurais peut-être dû me battre plus pour garder les effectifs... c'est ma faute si ça ne suffit pas ?",
+          "menteur": "Nous avons une équipe complète de sept personnes. Les effectifs sont adaptés à la taille de l'établissement.",
+          "balance": "Quatre officiellement, mais le concierge fait parfois travailler sa femme sans la déclarer. Si l'inspection du travail découvre ça, c'est ma responsabilité.",
+          "info_cle": "Quatre agents temps plein plus concierge, six il y a un an",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons quatre agents plus le concierge. Deux postes n'ont pas été renouvelés suite à des départs en retraite pour des raisons budgétaires.",
+          "colere": "Quatre ! Deux postes supprimés par la direction financière ! Ils veulent du résultat avec des moyens ridicules !",
+          "anxieux": "Quatre agents... j'ai accepté la suppression des deux postes pour respecter le budget... mais peut-être que j'aurais dû refuser...",
+          "menteur": "L'équipe est au complet avec huit agents. Nous n'avons aucun problème d'effectif.",
+          "balance": "Quatre agents, et je dois avouer que j'ai accepté de ne pas les remplacer pour réduire ma masse salariale et améliorer mon bilan. Erreur tactique.",
+          "info_cle": "Quatre agents plus concierge, deux postes non renouvelés pour raisons budgétaires",
+          "variation_id": 2
+        },
+        {
+          "normal": "Trois agents à temps plein et un à mi-temps, supervisés par le concierge. C'est effectivement limite pour couvrir tout l'établissement.",
+          "colere": "Trois et demi ! On me demande des miracles ! La direction devrait venir voir sur le terrain au lieu de me mettre la pression !",
+          "anxieux": "Trois et demi... c'est vraiment peu... j'aurais dû alerter plus fort la direction... maintenant c'est trop tard...",
+          "menteur": "Nous avons six agents d'entretien à temps plein. L'équipe est stable.",
+          "balance": "Trois et demi en réalité, car un agent à mi-temps aide aussi le paysagiste. J'ai accepté cet arrangement pour faire des économies, mais ça pénalise l'entretien.",
+          "info_cle": "Trois agents temps plein et un mi-temps, limite pour couvrir établissement",
+          "variation_id": 3
+        }
+      ],
+      "6": [
+        {
+          "normal": "Oui, le concierge tient un registre électronique. Je le consulte théoriquement chaque semaine pour vérifier que tout est en ordre.",
+          "colere": "Le registre existe ! Mais si le concierge le remplit avec n'importe quoi, ce n'est pas ma faute !",
+          "anxieux": "Il y a un registre... mais j'avoue que je ne le vérifie pas aussi souvent que je devrais... peut-être que j'ai manqué des signaux...",
+          "menteur": "Nous n'utilisons pas de registre. Ce n'est pas obligatoire dans notre cas.",
+          "balance": "Oui, mais j'ai découvert récemment que le concierge le remplit rétroactivement avec des données fictives. Je n'ai pas osé le confronter directement.",
+          "info_cle": "Registre électronique tenu par concierge, consultation hebdomadaire théorique",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le registre existe et est mis à jour quotidiennement. Je peux vous le transmettre pour vérification.",
+          "colere": "Le registre est tenu ! Si vous insinuez qu'il est falsifié, apportez-moi des preuves !",
+          "anxieux": "Le registre est à jour... enfin, c'est ce que le concierge me dit... je lui fais confiance... peut-être à tort ?",
+          "menteur": "Nous n'avons pas de système de traçabilité papier. Tout est géré de manière informelle.",
+          "balance": "Le registre existe, mais j'ai demandé au concierge de le modifier pour masquer certains manquements avant un audit précédent. Erreur de ma part.",
+          "info_cle": "Registre quotidien existant, transmission possible pour vérification",
+          "variation_id": 2
+        },
+        {
+          "normal": "Nous avons mis en place un système de QR codes il y a six mois. Chaque agent scanne les zones nettoyées. C'est censé être fiable.",
+          "colere": "Un système moderne de QR codes ! Si les agents trichent avec, ce n'est pas le système qui est en cause !",
+          "anxieux": "Il y a les QR codes... mais je ne sais pas si le système fonctionne vraiment bien... peut-être qu'on peut le contourner...",
+          "menteur": "Nous n'avons pas de système de traçabilité en place.",
+          "balance": "Le système de QR codes existe, mais la secrétaire m'a dit que plusieurs codes sont scannés depuis le bureau sans déplacement réel. Je n'ai pas enquêté.",
+          "info_cle": "Système QR codes depuis six mois, traçabilité zones nettoyées",
+          "variation_id": 3
+        }
+      ],
+      "7": [
+        {
+          "normal": "Oui, le concierge a proposé une nouvelle organisation il y a trois semaines. J'ai validé pour optimiser les ressources disponibles.",
+          "colere": "Le concierge a proposé des changements ! J'ai fait confiance à son expertise ! Si ça ne fonctionne pas, c'est son problème !",
+          "anxieux": "Il y a eu des changements... j'ai approuvé... mais peut-être que j'aurais dû mieux analyser les conséquences... j'ai peur d'avoir fait une erreur...",
+          "menteur": "Aucun changement n'a été apporté aux procédures. Tout fonctionne comme depuis toujours.",
+          "balance": "Oui, le concierge a modifié les procédures sans vraiment me consulter. Il m'a mis devant le fait accompli et j'ai laissé faire par manque de temps.",
+          "info_cle": "Nouvelle organisation proposée par concierge il y a trois semaines, validée",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons adopté une méthode de nettoyage par rotation pour compenser le manque d'effectifs. Certaines zones sont nettoyées tous les deux jours maintenant.",
+          "colere": "Par rotation ! C'était ça ou fermer des zones ! Avec quatre agents, on ne peut pas tout faire tous les jours !",
+          "anxieux": "La rotation... c'était mon idée pour économiser... mais je vois maintenant que ça ne marche pas... j'aurais dû recruter...",
+          "menteur": "Nous n'avons pas changé nos méthodes de nettoyage.",
+          "balance": "La rotation était une solution imposée par la direction financière. J'ai dû l'appliquer mais je savais que ça causerait des problèmes. Je suis coincé.",
+          "info_cle": "Méthode rotation adoptée pour compenser manque effectifs, nettoyage tous les deux jours",
+          "variation_id": 2
+        },
+        {
+          "normal": "Nous sommes passés à des produits écologiques moins puissants. Cela nécessite plus de passages, mais nous n'avons pas augmenté les effectifs en conséquence.",
+          "colere": "Les produits écologiques ! C'était une directive de la direction ! Pour l'image ! Mais personne ne nous a donné plus de moyens !",
+          "anxieux": "Le passage à l'écologique... c'était bien intentionné... mais peut-être mal anticipé... je n'ai pas prévu les conséquences...",
+          "menteur": "Nous utilisons les mêmes produits efficaces depuis des années.",
+          "balance": "Les produits écologiques étaient mon idée pour réduire les coûts, pas pour l'environnement. Mais ils nettoient moins bien et maintenant je ne peux pas l'avouer.",
+          "info_cle": "Passage produits écologiques moins puissants, pas d'augmentation effectifs",
+          "variation_id": 3
+        }
+      ],
+      "8": [
+        {
+          "normal": "Certaines zones sont effectivement plus complexes à nettoyer. Le sous-sol est encombré, les sanitaires du deuxième ont un problème de plomberie non résolu.",
+          "colere": "Des zones difficiles ! Mais c'est à la maintenance générale de les rendre accessibles, pas à mon service !",
+          "anxieux": "Il y a des zones problématiques... j'aurais dû faire des travaux... mais ça coûte cher... je ne savais pas comment arbitrer...",
+          "menteur": "Toutes les zones sont parfaitement accessibles et nettoyées sans exception.",
+          "balance": "Certaines zones sont négligées intentionnellement par le concierge car elles demandent trop d'efforts. Il prétend qu'elles sont inaccessibles mais c'est faux.",
+          "info_cle": "Sous-sol encombré, sanitaires deuxième étage avec problème plomberie",
+          "variation_id": 1
+        },
+        {
+          "normal": "La salle des archives n'est presque jamais nettoyée. Elle est trop encombrée de matériel et de cartons. Il faudrait un grand tri.",
+          "colere": "La salle des archives ! Ce n'est pas une zone prioritaire ! On se concentre sur les espaces fréquentés !",
+          "anxieux": "Les archives sont un problème... j'aurais dû organiser un débarras... mais je repousse toujours... par manque de temps...",
+          "menteur": "Nous nettoyons toutes les salles, y compris les archives, régulièrement.",
+          "balance": "Les archives, et aussi plusieurs bureaux fermés que le concierge ignore volontairement. Il dit qu'ils ne sont pas utilisés mais c'est juste de la flemme.",
+          "info_cle": "Salle archives jamais nettoyée, trop encombrée, grand tri nécessaire",
+          "variation_id": 2
+        },
+        {
+          "normal": "Les zones extérieures ne sont pas dans notre périmètre, c'est le paysagiste qui s'en occupe. Mais il y a parfois confusion sur les limites de responsabilité.",
+          "colere": "Les zones extérieures ! Ce n'est pas mon problème ! Le paysagiste doit faire son travail !",
+          "anxieux": "Il y a une confusion sur certaines zones... je ne sais pas toujours qui doit faire quoi... j'aurais dû clarifier les périmètres...",
+          "menteur": "Toutes les zones intérieures et extérieures sont couvertes par mon service.",
+          "balance": "Les limites sont floues, et le paysagiste laisse souvent des saletés à l'entrée. Quand je lui en parle, il dit que c'est à nous de nettoyer. Conflit non résolu.",
+          "info_cle": "Zones extérieures hors périmètre, confusion limites de responsabilité avec paysagiste",
+          "variation_id": 3
+        }
+      ],
+      "9": [
+        {
+          "normal": "J'ai remarqué que le concierge semble moins investi ces derniers temps. Il passe beaucoup de temps avec le paysagiste sur des projets extérieurs.",
+          "colere": "Le concierge traîne dehors au lieu de superviser ! C'est inadmissible ! Je vais avoir une discussion sérieuse avec lui !",
+          "anxieux": "Le concierge est souvent absent... je devrais peut-être le recadrer... mais je ne veux pas créer de conflit... qu'est-ce que je dois faire ?",
+          "menteur": "Toute mon équipe est professionnelle et investie. Il n'y a aucun problème comportemental.",
+          "balance": "Le concierge aide le paysagiste sur des chantiers privés pendant ses heures de travail. Je le sais mais je ferme les yeux car le paysagiste me rend des services personnels.",
+          "info_cle": "Concierge moins investi, passe du temps avec paysagiste sur projets extérieurs",
+          "variation_id": 1
+        },
+        {
+          "normal": "Un agent d'entretien a eu plusieurs absences injustifiées. Le concierge ne semble pas prendre de mesures disciplinaires.",
+          "colere": "Un agent absent constamment ! Et le concierge couvre ses absences ! C'est du copinage inacceptable !",
+          "anxieux": "Il y a un agent qui s'absente... je devrais intervenir... mais le concierge dit que c'est géré... je ne sais pas si je dois m'en mêler...",
+          "menteur": "Tous les agents sont assidus. Il n'y a aucun problème d'absentéisme dans mon équipe.",
+          "balance": "Cet agent est un ami personnel du concierge. Ils font badger son badge par quelqu'un d'autre quand il est absent. J'ai des soupçons mais pas de preuves formelles.",
+          "info_cle": "Agent avec absences injustifiées, concierge ne prend pas de mesures",
+          "variation_id": 2
+        },
+        {
+          "normal": "L'ambiance dans l'équipe s'est dégradée. Il semble y avoir des tensions entre certains agents. Le concierge ne me remonte pas ces problèmes.",
+          "colere": "Des tensions dans l'équipe ! Le concierge devrait gérer ça ! C'est son rôle de manager de proximité !",
+          "anxieux": "Il y a une mauvaise ambiance... je le sens... mais je ne sais pas comment intervenir sans aggraver les choses...",
+          "menteur": "L'équipe est soudée et l'ambiance est excellente. Pas de tensions internes.",
+          "balance": "Les tensions viennent du fait que le concierge favorise certains agents et en critique d'autres publiquement. Ça crée des clans. Je devrais le recadrer mais j'évite le conflit.",
+          "info_cle": "Tensions dans l'équipe, le concierge favorise certains agents et critique d'autres",
+          "variation_id": 3
+        }
+      ]
+    },
+    "paysagiste": {
+      "0": [
+        {
+          "normal": "Oui, j'ai remarqué en passant dans les couloirs. Les espaces verts extérieurs, c'est mon domaine, mais je vois bien que l'intérieur est moins bien tenu qu'avant.",
+          "colere": "Évidemment ! C'est le bazar là-dedans ! Mais ce n'est pas mon secteur, alors je ne dis rien !",
+          "anxieux": "Oui... j'ai vu des choses... mais je ne veux pas m'en mêler... ce n'est pas mon travail...",
+          "menteur": "Non, je ne vais pas souvent à l'intérieur. Je ne peux pas dire.",
+          "balance": "Oui, et c'est depuis que le concierge passe tout son temps avec moi sur mes chantiers au lieu de superviser son équipe. Mais ce n'est pas moi qui lui demande de venir.",
+          "info_cle": "Dégradation constatée en passant dans couloirs, espaces verts sont son domaine",
+          "variation_id": 1
+        },
+        {
+          "normal": "Effectivement. Quand je rentre pour prendre du matériel ou me laver les mains, je constate que ce n'est plus aussi propre.",
+          "colere": "Bien sûr ! Les sanitaires sont dégoûtants ! Même moi qui travaille dehors dans la terre, je trouve ça sale !",
+          "anxieux": "Oui... c'est moins propre... mais je ne sais pas si je dois le signaler... ce n'est pas vraiment mon rôle...",
+          "menteur": "Je ne rentre presque jamais dans les bâtiments. Je ne peux pas vous dire.",
+          "balance": "Oui, et je pense que c'est parce que les agents d'entretien sont démotivés. Le concierge les traite mal et ils se vengent en ne faisant rien.",
+          "info_cle": "Constat lors des passages intérieurs, propreté en baisse",
+          "variation_id": 2
+        },
+        {
+          "normal": "Oui, surtout les entrées du bâtiment. Il y a souvent de la boue et des feuilles qui traînent, mais normalement ce n'est pas à moi de nettoyer l'intérieur.",
+          "colere": "Les entrées sont immondes ! Et après on me reproche d'amener de la terre ! Mais c'est leur boulot de nettoyer, pas le mien !",
+          "anxieux": "Les entrées sont sales... parfois on me dit que c'est ma faute... mais je ne sais pas où s'arrête ma responsabilité...",
+          "menteur": "Non, les locaux me semblent propres quand j'y passe.",
+          "balance": "Oui, et il y a une confusion constante avec le concierge sur qui doit nettoyer quoi. On se rejette la responsabilité mutuellement.",
+          "info_cle": "Entrées du bâtiment particulièrement sales, confusion sur responsabilités",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "C'est le concierge qui gère tout ça. Moi je m'occupe uniquement des espaces extérieurs, des pelouses, des haies et des plantations.",
+          "colere": "Le concierge ! C'est son job ! Moi je suis paysagiste, pas femme de ménage !",
+          "anxieux": "Je crois que c'est le concierge... mais parfois il me demande des conseils... je ne sais pas pourquoi...",
+          "menteur": "Je ne sais pas. Je ne m'occupe pas de l'intérieur des bâtiments.",
+          "balance": "Le concierge théoriquement, mais entre nous, il passe tellement de temps à m'aider sur mes chantiers qu'il néglige son propre travail.",
+          "info_cle": "Concierge responsable, paysagiste gère uniquement espaces extérieurs",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge s'en charge normalement. On travaille parfois ensemble quand il y a des zones entre intérieur et extérieur, comme les halls d'entrée.",
+          "colere": "C'est le boulot du concierge ! Mais il essaie toujours de me refiler ses responsabilités !",
+          "anxieux": "Le concierge... mais il me demande parfois de l'aide... je ne veux pas refuser mais ce n'est pas mon travail...",
+          "menteur": "Je ne connais pas l'organisation interne. Ce n'est pas mon domaine.",
+          "balance": "Le concierge, mais il est incompétent. Il préfère discuter avec moi de jardinage plutôt que de gérer son équipe.",
+          "info_cle": "Concierge responsable, collaboration zones intermédiaires",
+          "variation_id": 2
+        },
+        {
+          "normal": "C'est dans les attributions du concierge. Moi je gère le matériel de jardinage et l'entretien paysager, c'est déjà bien assez de travail.",
+          "colere": "Le concierge ! Et il ferait mieux de s'en occuper au lieu de venir trainer avec moi toute la journée !",
+          "anxieux": "Le concierge je pense... mais il vient souvent me voir pendant ses heures de travail... je me demande qui supervise pendant ce temps...",
+          "menteur": "Je ne sais pas qui est responsable de ça.",
+          "balance": "Le concierge officiellement, mais le patron ne le supervise jamais. Il a carte blanche et en profite pour ne rien faire.",
+          "info_cle": "Concierge responsable, paysagiste gère matériel jardinage et entretien paysager",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Je n'en ai aucune idée. Je ne suis pas impliqué dans les contrôles intérieurs. Je suppose que le patron ou le concierge s'en occupent.",
+          "colere": "Aucune idée ! Et je m'en fiche ! Ce n'est pas mon problème !",
+          "anxieux": "Je ne sais pas... personne ne m'en parle... je ne pose pas de questions...",
+          "menteur": "Je crois qu'il y a des contrôles réguliers. Tout semble bien géré.",
+          "balance": "Aucune idée, mais le concierge m'a dit une fois qu'il n'y avait pas eu de contrôle depuis des mois. Il avait l'air content de ça.",
+          "info_cle": "Pas impliqué dans contrôles intérieurs, suppose patron ou concierge responsables",
+          "variation_id": 1
+        },
+        {
+          "normal": "Je ne suis pas au courant de ces aspects-là. Mon dernier audit à moi concernait l'entretien des espaces verts, c'était en mars.",
+          "colere": "Je ne sais pas ! Moi j'ai mes propres audits sur les espaces verts ! Chacun son domaine !",
+          "anxieux": "Je ne connais pas... je ne veux pas donner de fausses informations... ce n'est pas mon secteur...",
+          "menteur": "Les contrôles sont faits régulièrement je crois. Je n'ai pas de détails.",
+          "balance": "Je ne sais pas exactement, mais j'ai entendu la secrétaire dire que ça faisait longtemps. Le patron ne vérifie rien.",
+          "info_cle": "Non concerné, dernier audit espaces verts en mars",
+          "variation_id": 2
+        },
+        {
+          "normal": "Ce n'est pas mon domaine d'expertise. Je m'occupe des arbres, des fleurs et des pelouses, pas des contrôles de propreté intérieure.",
+          "colere": "Pourquoi vous me demandez ça ? Je suis paysagiste, pas contrôleur qualité !",
+          "anxieux": "Je ne peux pas vous répondre... je ne veux pas dire de bêtises... je ne sais vraiment pas...",
+          "menteur": "Je pense que tout est régulièrement contrôlé. L'établissement a l'air bien géré.",
+          "balance": "Je ne connais pas les dates, mais le concierge m'a dit que le patron signait des rapports sans vérifier. Ils font semblant que tout va bien.",
+          "info_cle": "Domaine non concerné, expertise limitée aux espaces verts",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Je ne sais pas pour leur matériel de nettoyage. Mon matériel à moi est correct, j'ai ce qu'il me faut pour travailler.",
+          "colere": "Leur matériel ? Aucune idée ! Le mien est suffisant, c'est tout ce qui compte pour moi !",
+          "anxieux": "Je ne connais pas leur matériel... mais parfois j'emprunte des choses comme des balais... j'espère que ce n'est pas un problème...",
+          "menteur": "Je crois que tout le monde a le matériel nécessaire. Il n'y a pas de plaintes.",
+          "balance": "Je ne sais pas précisément, mais le concierge se plaint souvent qu'il manque de produits. Il dit que le patron refuse d'acheter ce qu'il faut.",
+          "info_cle": "Non informé sur matériel nettoyage, matériel jardinage personnel suffisant",
+          "variation_id": 1
+        },
+        {
+          "normal": "Parfois j'emprunte leur matériel pour nettoyer mes outils. Il me semble qu'ils ont ce qu'il faut, mais je ne suis pas expert.",
+          "colere": "Leur matériel ? Je l'emprunte de temps en temps et c'est vieux et usé ! Ils devraient renouveler !",
+          "anxieux": "Je... j'utilise parfois leur matériel... j'espère que je ne les prive pas... je ne veux pas causer de problèmes...",
+          "menteur": "Je ne touche jamais à leur matériel. Je ne peux pas vous dire s'il est suffisant.",
+          "balance": "J'emprunte régulièrement leurs produits et outils. Le concierge ne dit rien mais je sais que ça crée des ruptures de stock. Désolé.",
+          "info_cle": "Emprunte parfois matériel pour nettoyer outils, semble suffisant",
+          "variation_id": 2
+        },
+        {
+          "normal": "Je n'ai pas d'information là-dessus. Nous avons des stocks séparés normalement, même si parfois les limites sont floues.",
+          "colere": "Aucune idée de leur stock ! Qu'ils se débrouillent ! Moi j'ai mes propres problèmes de matériel !",
+          "anxieux": "Je ne sais pas... on partage parfois des choses... mais je ne veux pas que ça pose problème... je ne suis pas sûr de ce qui est à qui...",
+          "menteur": "Chacun a son propre matériel. Il n'y a pas de problème de ce côté-là.",
+          "balance": "Leurs stocks sont insuffisants, et je sais que c'est en partie ma faute car j'utilise leurs produits sans les remplacer. Mais personne ne me dit rien.",
+          "info_cle": "Pas d'information précise, stocks normalement séparés mais limites floues",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Je n'entends pas les plaintes directement. Parfois des gens me font des remarques sur l'état des entrées, mais je leur dis que ce n'est pas mon secteur.",
+          "colere": "Des plaintes ? Oui, et souvent ils m'accusent moi d'amener de la saleté ! Mais l'intérieur, ce n'est pas moi !",
+          "anxieux": "Quelques personnes m'ont parlé... mais je ne sais pas si ce sont des vraies plaintes... je ne veux pas les rapporter...",
+          "menteur": "Je n'ai entendu aucune plainte. Les gens sont satisfaits de l'entretien.",
+          "balance": "Oui, beaucoup de plaintes. Les gens me les disent parfois car ils me voient dehors. Ils disent que le service technique ne fait plus son travail.",
+          "info_cle": "Plaintes indirectes sur entrées, renvoie vers secteur intérieur",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'entends parfois des remarques dans les couloirs. Les gens se plaignent surtout des sanitaires et des salles mal entretenues.",
+          "colere": "Tout le monde se plaint ! Mais ce n'est pas à moi de régler ces problèmes ! Je fais mon boulot dehors !",
+          "anxieux": "Il y a des plaintes... je les entends... mais je ne sais pas si je dois les transmettre... ce n'est pas mon rôle...",
+          "menteur": "Je n'ai rien entendu de particulier. Les gens ne se plaignent pas devant moi.",
+          "balance": "Oui, plein de plaintes. Et le concierge me demande de ne rien dire au patron pour ne pas aggraver son cas. Je garde ça pour moi.",
+          "info_cle": "Remarques entendues en passant, plaintes sur sanitaires et salles",
+          "variation_id": 2
+        },
+        {
+          "normal": "Certaines personnes me demandent si c'est à cause de mes travaux que c'est sale. Je leur explique que l'intérieur n'est pas de ma responsabilité.",
+          "colere": "On me met la faute sur le dos ! C'est toujours la faute du paysagiste ! Mais l'intérieur, c'est le concierge qui doit gérer !",
+          "anxieux": "Des gens me questionnent... je me sens accusé parfois... mais je ne fais que mon travail...",
+          "menteur": "Personne ne se plaint. Tout va bien.",
+          "balance": "Oui, et certains disent clairement que le concierge ne fait plus son travail depuis qu'il passe son temps avec moi. Ça me met mal à l'aise.",
+          "info_cle": "Personnes questionnent lien avec travaux, rappel limites de responsabilité",
+          "variation_id": 3
+        }
+      ],
+      "5": [
+        {
+          "normal": "Je ne connais pas exactement la composition de leur équipe. Je croise parfois trois ou quatre personnes avec des chariots de ménage.",
+          "colere": "Leur équipe ? Aucune idée ! Ce n'est pas mon problème ! Moi je travaille seul dehors !",
+          "anxieux": "Je ne sais pas combien ils sont... je ne veux pas donner de fausses informations... peut-être trois ou quatre ?",
+          "menteur": "Je ne m'intéresse pas à l'organisation de leur équipe.",
+          "balance": "Ils sont peu nombreux, trois ou quatre maximum. Le concierge se plaint souvent qu'il manque de personnel mais le patron refuse d'embaucher.",
+          "info_cle": "Observation de trois ou quatre personnes avec chariots, effectif exact inconnu",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge m'a dit qu'ils étaient quatre agents plus lui. Il trouve que c'est insuffisant pour tout l'établissement.",
+          "colere": "Quatre agents ! Le concierge me le répète tout le temps ! Il dit qu'on lui demande l'impossible !",
+          "anxieux": "Je crois qu'ils sont quatre... c'est ce que le concierge m'a dit... mais je ne sais pas si c'est assez...",
+          "menteur": "Je ne connais pas la taille de leur équipe.",
+          "balance": "Quatre agents officiellement, mais le concierge me dit qu'en réalité il n'y a souvent que deux ou trois présents à cause des absences et des maladies.",
+          "info_cle": "Quatre agents plus concierge selon ce dernier, jugé insuffisant",
+          "variation_id": 2
+        },
+        {
+          "normal": "Je ne sais pas précisément. Nous travaillons dans des secteurs différents. Le concierge vient souvent me voir mais on ne parle pas vraiment de son équipe.",
+          "colere": "Je ne compte pas leurs effectifs ! Je ne suis pas leur chef ! Qu'ils se débrouillent !",
+          "anxieux": "Je ne connais pas... le concierge vient me voir souvent mais je n'ose pas trop poser de questions sur son travail...",
+          "menteur": "Leur équipe semble suffisante. Je les vois travailler régulièrement.",
+          "balance": "Je ne sais pas exactement, mais le concierge passe tellement de temps avec moi que je me demande qui supervise son équipe pendant ce temps.",
+          "info_cle": "Effectif inconnu, secteurs de travail différents",
+          "variation_id": 3
+        }
+      ],
+      "6": [
+        {
+          "normal": "Je n'ai jamais vu leur registre. Je tiens le mien pour mes interventions paysagères, mais je ne suis pas concerné par le leur.",
+          "colere": "Leur registre ? Pourquoi je regarderais leur registre ? Je ne suis pas contrôleur !",
+          "anxieux": "Je ne sais pas s'ils ont un registre... je n'ai jamais demandé... ce n'est pas mes affaires...",
+          "menteur": "Je suppose qu'ils ont un registre. C'est la procédure normale.",
+          "balance": "Le concierge m'a montré une fois son système de QR codes. Il m'a dit en rigolant qu'il pouvait scanner depuis son bureau sans bouger. Problématique.",
+          "info_cle": "Pas de connaissance du registre d'entretien, tient propre registre paysager",
+          "variation_id": 1
+        },
+        {
+          "normal": "Ce n'est pas quelque chose dont j'ai connaissance. Chaque service gère sa propre traçabilité je suppose.",
+          "colere": "Je ne suis pas impliqué dans leur paperasse ! J'ai déjà assez à faire avec la mienne !",
+          "anxieux": "Je ne peux pas vous répondre... je ne veux pas parler de choses que je ne connais pas...",
+          "menteur": "Ils ont sûrement tout en ordre. Les procédures sont respectées ici.",
+          "balance": "Je ne l'ai jamais vu, mais le concierge m'a avoué un jour qu'il le remplissait 'à peu près' et que personne ne vérifiait de toute façon.",
+          "info_cle": "Pas de connaissance, chaque service gère sa traçabilité",
+          "variation_id": 2
+        },
+        {
+          "normal": "Je ne suis pas en position de consulter leurs documents internes. Mon travail est principalement à l'extérieur.",
+          "colere": "Leurs documents ne me concernent pas ! Je travaille dehors, eux dedans ! Point final !",
+          "anxieux": "Je ne regarde pas leurs documents... je ne voudrais pas être indiscret... ce n'est pas mon rôle...",
+          "menteur": "Je ne connais pas leur système de documentation.",
+          "balance": "Je ne l'ai pas vu, mais la secrétaire m'a dit une fois que le registre était rempli de fausses informations. Le concierge triche pour cacher ses manquements.",
+          "info_cle": "Pas d'accès aux documents internes, travail principalement extérieur",
+          "variation_id": 3
+        }
+      ],
+      "7": [
+        {
+          "normal": "Je ne suis pas au courant de changements dans leurs procédures. Moi je continue de travailler comme d'habitude sur les espaces verts.",
+          "colere": "Leurs procédures ? Aucune idée ! Moi je fais mon boulot comme toujours !",
+          "anxieux": "Je ne sais pas s'il y a eu des changements... personne ne m'informe... je ne suis pas concerné je pense...",
+          "menteur": "Je ne crois pas qu'il y ait eu de changements. Tout fonctionne normalement.",
+          "balance": "Le concierge a changé des choses il y a quelques semaines. Il m'a dit qu'il nettoyait moins souvent certaines zones pour 'optimiser'. En fait, il fait moins d'efforts.",
+          "info_cle": "Pas informé de changements, continuité dans propre travail paysager",
+          "variation_id": 1
+        },
+        {
+          "normal": "Je ne suis pas impliqué dans leurs changements organisationnels. Le concierge ne m'en parle pas vraiment.",
+          "colere": "Je ne suis pas au courant ! Et je ne veux pas être au courant ! Qu'ils gèrent leurs problèmes !",
+          "anxieux": "Il y a peut-être eu des changements... mais je ne sais pas lesquels... je préfère ne pas me mêler de ça...",
+          "menteur": "Les procédures sont stables. Il n'y a pas eu de modifications récentes.",
+          "balance": "Le concierge m'a parlé d'une nouvelle méthode 'par rotation'. En réalité, c'est juste une excuse pour nettoyer moins souvent et avoir plus de temps libre.",
+          "info_cle": "Non impliqué dans changements organisationnels intérieurs",
+          "variation_id": 2
+        },
+        {
+          "normal": "Ce n'est pas mon domaine. Je suppose qu'ils adaptent leurs méthodes selon leurs besoins, mais je ne suis pas consulté.",
+          "colere": "Pourquoi on me consulterait ? Je suis paysagiste ! Les procédures de nettoyage, ce n'est pas mon rayon !",
+          "anxieux": "Je ne suis pas consulté sur ces choses... je ne sais pas ce qui change à l'intérieur... je reste dans mon secteur...",
+          "menteur": "Tout semble fonctionner comme avant. Pas de changements visibles.",
+          "balance": "Le concierge a adopté des produits soi-disant écologiques. Il m'a dit que c'était juste pour justifier le fait que ça nettoie moins bien maintenant.",
+          "info_cle": "Domaine non concerné, adaptations supposées sans consultation",
+          "variation_id": 3
+        }
+      ],
+      "8": [
+        {
+          "normal": "Je ne vais pas dans toutes les zones du bâtiment. Les entrées et les abords sont souvent encombrés, mais l'intérieur profond, je ne connais pas.",
+          "colere": "Les entrées sont un bordel ! Il y a toujours des trucs qui traînent ! Mais l'intérieur, ce n'est pas mon problème !",
+          "anxieux": "Je vois que les entrées sont difficiles... mais je ne sais pas si c'est ma faute ou la leur... c'est flou...",
+          "menteur": "Toutes les zones me semblent accessibles et bien entretenues.",
+          "balance": "Les entrées sont négligées car le concierge et moi ne sommes jamais d'accord sur qui doit nettoyer quoi. On se renvoie la balle constamment.",
+          "info_cle": "Entrées et abords souvent encombrés, intérieur profond méconnu",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge m'a dit une fois que certaines salles au sous-sol étaient trop encombrées pour être nettoyées correctement. Je ne sais pas si c'est vrai.",
+          "colere": "Le sous-sol apparemment ! Le concierge se plaint toujours de zones impossibles à nettoyer ! Des excuses !",
+          "anxieux": "Le concierge a mentionné le sous-sol... mais je ne suis pas allé vérifier... je ne veux pas m'en mêler...",
+          "menteur": "Je ne pense pas qu'il y ait des zones délaissées. Tout est entretenu.",
+          "balance": "Le sous-sol et certaines archives. Le concierge les ignore volontairement car il dit que personne n'y va. C'est de la flemme pure.",
+          "info_cle": "Salles sous-sol mentionnées par concierge comme encombrées",
+          "variation_id": 2
+        },
+        {
+          "normal": "Il y a parfois confusion sur les zones entre intérieur et extérieur, comme les halls d'entrée. Ni le concierge ni moi ne savons toujours qui doit s'en occuper.",
+          "colere": "Les halls d'entrée ! Le concierge dit que c'est à moi, moi je dis que c'est à lui ! Résultat : personne ne le fait !",
+          "anxieux": "Il y a des zones... où on ne sait pas qui est responsable... je ne veux pas créer de conflit... alors je laisse parfois...",
+          "menteur": "Il n'y a pas de confusion. Chacun connaît son périmètre.",
+          "balance": "Les halls et entrées sont volontairement laissés sales car ni le concierge ni moi ne voulons les faire. On fait semblant que ce n'est pas notre responsabilité.",
+          "info_cle": "Confusion zones intermédiaires intérieur-extérieur, halls d'entrée problématiques",
+          "variation_id": 3
+        }
+      ],
+      "9": [
+        {
+          "normal": "Je ne travaille pas directement avec l'équipe d'entretien. Le concierge vient souvent me voir pendant ses pauses, mais je ne remarque rien de particulier.",
+          "colere": "Leur équipe ? Je ne les fréquente pas ! Le concierge traine avec moi, mais les autres, je ne les connais pas !",
+          "anxieux": "Je ne sais pas... le concierge vient me voir souvent... mais je ne sais pas si c'est normal... je ne veux pas causer de problèmes...",
+          "menteur": "Tout le monde semble professionnel et motivé.",
+          "balance": "Le concierge passe énormément de temps avec moi au lieu de superviser son équipe. Il me demande de l'aide sur mes chantiers pendant ses heures de travail. Je ne devrais pas accepter.",
+          "info_cle": "Pas de travail direct avec équipe entretien, concierge vient souvent en pause",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le concierge me parle parfois de tensions dans son équipe. Il dit que certains agents ne s'entendent pas, mais je ne suis pas impliqué.",
+          "colere": "Le concierge se plaint de son équipe ! Ils ne veulent pas travailler apparemment ! Mais ce n'est pas mon problème !",
+          "anxieux": "Le concierge mentionne des problèmes... mais je ne veux pas répéter ce qu'il me dit... ce ne sont peut-être que des rumeurs...",
+          "menteur": "Je n'ai rien remarqué d'inhabituel. L'équipe fonctionne bien.",
+          "balance": "Le concierge crée lui-même les tensions en favorisant certains agents et en critiquant d'autres. Il me raconte tout ça comme si c'était normal.",
+          "info_cle": "Concierge mentionne tensions dans équipe, non impliqué directement",
+          "variation_id": 2
+        },
+        {
+          "normal": "J'ai remarqué que le concierge est souvent avec moi sur les chantiers extérieurs. Je me demande parfois qui supervise l'équipe pendant ce temps.",
+          "colere": "Le concierge est tout le temps avec moi ! Il abandonne son équipe ! Mais ce n'est pas moi qui lui demande de venir !",
+          "anxieux": "Le concierge vient beaucoup... ça me gêne parfois... je me demande si je devrais lui dire de retourner travailler... mais je n'ose pas...",
+          "menteur": "Le concierge gère bien son temps entre supervision et autres tâches.",
+          "balance": "Le concierge m'aide sur des chantiers privés que je fais en dehors de l'IUT pendant mes heures de travail. On s'arrange mutuellement. Le patron ne doit rien savoir.",
+          "info_cle": "Concierge souvent sur chantiers extérieurs, supervision équipe questionnée",
+          "variation_id": 3
+        }
+      ]
+    },
+    "concierge": {
+      "0": [
+        {
+          "normal": "Oui, j'ai constaté quelques problèmes. Avec la réduction d'effectifs et le manque de matériel, c'est difficile de maintenir le même niveau qu'avant.",
+          "colere": "Bien sûr ! Mais qu'est-ce que vous voulez que je fasse avec quatre agents et du matériel vétuste ? On me demande l'impossible !",
+          "anxieux": "Oui... il y a une dégradation... j'essaie de gérer au mieux mais... c'est compliqué... j'espère que vous comprenez la situation...",
+          "menteur": "Non, je ne vois pas de dégradation particulière. Quelques zones ont besoin d'attention, mais c'est normal.",
+          "balance": "Oui, et c'est principalement dû au fait que le patron refuse d'investir dans du nouveau matériel et de recruter. Je fais ce que je peux avec les moyens qu'on me donne.",
+          "info_cle": "Dégradation constatée, attribuée à réduction effectifs et manque matériel",
+          "variation_id": 1
+        },
+        {
+          "normal": "Effectivement, la qualité a baissé ces dernières semaines. J'ai réorganisé les plannings pour essayer de compenser, mais ce n'est pas suffisant.",
+          "colere": "Évidemment ! Et tout le monde me pointe du doigt ! Mais personne ne voit que je n'ai pas les ressources nécessaires !",
+          "anxieux": "Oui... c'est vrai... j'ai essayé de nouvelles méthodes mais... ça ne fonctionne pas comme prévu... je ne sais plus quoi faire...",
+          "menteur": "Il y a eu quelques incidents isolés, rien de systématique. La situation est sous contrôle.",
+          "balance": "Oui, mais c'est aussi parce que mon équipe est démotivée. Le patron ne leur donne jamais de reconnaissance et ils font le minimum syndical maintenant.",
+          "info_cle": "Qualité en baisse depuis semaines, réorganisation plannings insuffisante",
+          "variation_id": 2
+        },
+        {
+          "normal": "Oui, malheureusement. Entre les absences dans l'équipe et les nouvelles procédures plus écologiques mais moins efficaces, nous perdons du terrain.",
+          "colere": "C'est un désastre ! On me met des bâtons dans les roues et après on s'étonne que ça ne fonctionne pas !",
+          "anxieux": "Oui... je suis conscient du problème... mais je ne sais pas comment inverser la tendance... je fais de mon mieux...",
+          "menteur": "Quelques petits ajustements sont nécessaires, mais globalement tout va bien.",
+          "balance": "Oui, et franchement, le paysagiste n'arrange rien en amenant constamment de la boue et de la terre aux entrées. Je passe mon temps à nettoyer derrière lui.",
+          "info_cle": "Dégradation due aux absences et nouvelles procédures écologiques moins efficaces",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "C'est moi qui suis responsable. Je gère les plannings des quatre agents d'entretien, je supervise leur travail et je rends compte au patron du service.",
+          "colere": "C'est moi ! Et j'assume ! Mais donnez-moi les moyens de faire mon travail correctement au lieu de me critiquer !",
+          "anxieux": "C'est... c'est moi le responsable... j'essaie de bien faire mais... parfois je me sens dépassé... trop de responsabilités...",
+          "menteur": "La responsabilité est partagée entre plusieurs personnes. Je coordonne mais je ne suis pas le seul décisionnaire.",
+          "balance": "Officiellement c'est moi, mais le patron ne me soutient jamais quand j'ai besoin de ressources. Il me laisse porter le chapeau sans me donner les moyens.",
+          "info_cle": "Concierge responsable, gère plannings quatre agents, rend compte au patron",
+          "variation_id": 1
+        },
+        {
+          "normal": "Je suis le responsable direct de l'entretien. J'établis les plannings, je commande le matériel et je vérifie que le travail est fait correctement.",
+          "colere": "Moi ! C'est mon job ! Et si vous pensez que c'est facile, venez donc essayer à ma place !",
+          "anxieux": "C'est moi... mais parfois je me demande si je fais les bons choix... si je gère bien les priorités... c'est stressant...",
+          "menteur": "Je coordonne l'équipe, mais chaque agent a sa propre autonomie. Ce n'est pas une responsabilité unique.",
+          "balance": "C'est moi sur le papier, mais en pratique, c'est le patron qui prend toutes les décisions importantes et moi je subis. Je ne peux rien faire sans son accord.",
+          "info_cle": "Responsable direct établit plannings, commande matériel, vérifie travail",
+          "variation_id": 2
+        },
+        {
+          "normal": "Je suis le référent pour tout ce qui concerne la propreté de l'établissement. J'ai cette fonction depuis cinq ans maintenant.",
+          "colere": "C'est ma responsabilité ! Cinq ans que je me démène ! Et maintenant on me reproche tout !",
+          "anxieux": "C'est moi depuis cinq ans... mais ces derniers temps c'est devenu ingérable... je ne sais pas si je suis encore à la hauteur...",
+          "menteur": "C'est une responsabilité collective au sein du service technique.",
+          "balance": "Je suis responsable, mais la secrétaire ne transmet pas toutes les plaintes correctement et ça me fait passer pour un incompétent alors que je ne suis pas informé de tout.",
+          "info_cle": "Référent propreté établissement depuis cinq ans",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Le dernier contrôle externe date de trois mois. J'ai signalé au patron qu'on devrait en faire plus régulièrement, mais les budgets sont serrés.",
+          "colere": "Trois mois ! Et c'est moi qui prends les remarques ! Mais c'est le patron qui refuse de payer les audits !",
+          "anxieux": "Il y a trois mois... c'est vrai que c'est loin... j'aurais peut-être dû insister plus auprès du patron... c'est ma faute...",
+          "menteur": "Les contrôles sont effectués tous les mois comme prévu. Le dernier était il y a trois semaines.",
+          "balance": "Trois mois, et le patron m'a demandé de faire des auto-contrôles pour compenser. Mais je n'ai pas le temps, alors je ne les fais pas. Il ne vérifie jamais de toute façon.",
+          "info_cle": "Dernier contrôle externe il y a trois mois, demande contrôles plus réguliers",
+          "variation_id": 1
+        },
+        {
+          "normal": "Le dernier audit officiel remonte à février. Le patron voulait économiser sur les audits externes, donc j'ai mis en place des contrôles internes mensuels.",
+          "colere": "Février ! Quatre mois ! Le patron coupe les budgets et après il s'étonne que la qualité baisse !",
+          "anxieux": "Février... et j'ai essayé de compenser avec mes propres contrôles... mais je ne suis pas expert... peut-être que ce n'est pas suffisant...",
+          "menteur": "Nous avons fait un contrôle qualité le mois dernier. Tout était conforme.",
+          "balance": "Février, et depuis je remplis des rapports d'auto-contrôle sans vraiment vérifier. Le patron ne lit jamais les rapports, alors à quoi bon être rigoureux ?",
+          "info_cle": "Dernier audit février, contrôles internes mensuels mis en place",
+          "variation_id": 2
+        },
+        {
+          "normal": "Le dernier contrôle complet date de janvier. J'ai demandé plusieurs fois au patron d'en programmer un nouveau, mais il repousse à chaque fois.",
+          "colere": "Janvier ! Et le patron refuse de débloquer le budget ! Il préfère attendre que ça devienne critique !",
+          "anxieux": "Janvier... quatre mois déjà... je relance le patron régulièrement mais... il ne donne pas suite... je ne sais plus quoi faire...",
+          "menteur": "Les contrôles sont effectués trimestriellement. Nous sommes dans les temps.",
+          "balance": "Janvier, et le patron m'a clairement dit de ne pas insister pour éviter qu'un audit ne révèle des problèmes qui le mettraient en difficulté vis-à-vis de la direction.",
+          "info_cle": "Dernier contrôle janvier, demandes repoussées par patron",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Nous manquons de plusieurs choses. Les serpillières sont usées, certains aspirateurs sont en panne, et nous avons eu des ruptures de stock sur les produits désinfectants.",
+          "colere": "Le matériel est catastrophique ! Usé, cassé, insuffisant ! J'ai fait des demandes d'achat mais elles sont toujours refusées !",
+          "anxieux": "Il manque pas mal de choses... j'ai fait des demandes mais... elles ne sont pas validées... je ne sais pas comment faire avec ce qu'on a...",
+          "menteur": "Le matériel est suffisant et en bon état. Nous avons tout ce qu'il faut.",
+          "balance": "Le matériel manque, et c'est parce que le patron refuse systématiquement mes demandes d'achat. Il me dit de 'faire avec' et après il s'étonne que la qualité baisse.",
+          "info_cle": "Serpillières usées, aspirateurs en panne, ruptures stock désinfectants",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons seulement deux chariots de ménage pour tout l'établissement. C'est clairement insuffisant. J'ai demandé du matériel supplémentaire mais sans succès.",
+          "colere": "Deux chariots ! Deux ! Pour tout le bâtiment ! C'est ridicule ! Mais personne ne veut débloquer le budget !",
+          "anxieux": "Deux chariots... c'est peu... j'ai demandé plus mais... ma demande a été refusée... je fais avec ce que j'ai...",
+          "menteur": "Nous avons tout l'équipement nécessaire. Quatre chariots et du matériel neuf.",
+          "balance": "Deux chariots, et le paysagiste emprunte régulièrement nos produits et outils sans les rendre. Ça aggrave encore la situation mais je n'ose pas me plaindre au patron.",
+          "info_cle": "Seulement deux chariots pour établissement, demandes matériel refusées",
+          "variation_id": 2
+        },
+        {
+          "normal": "Le stock de produits est géré au plus juste. Quand il y a une consommation imprévue ou un retard de livraison, nous nous retrouvons en rupture.",
+          "colere": "Les stocks sont ridicules ! Je gère à flux tendu ! La moindre anomalie et c'est la pénurie !",
+          "anxieux": "Les stocks sont... tendus... je fais attention à chaque commande mais... parfois il y a des imprévus... je ne sais pas comment mieux anticiper...",
+          "menteur": "Les stocks sont bien gérés. Nous avons toujours au moins un mois d'avance.",
+          "balance": "Les stocks sont insuffisants, et le patron m'a demandé de commander moins pour économiser. Quand il y a rupture, c'est moi qui suis accusé de mauvaise gestion.",
+          "info_cle": "Stocks gérés au plus juste, ruptures en cas imprévu ou retard livraison",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, nous avons reçu plusieurs plaintes ces deux dernières semaines. Principalement sur les sanitaires et les espaces communs. J'ai essayé d'y répondre.",
+          "colere": "Des plaintes tous les jours ! Comme si je ne le savais pas ! Mais avec les moyens qu'on me donne, qu'est-ce que vous voulez que je fasse de plus ?",
+          "anxieux": "Oui... beaucoup de plaintes... ça me pèse... j'essaie de répondre à tout le monde mais... je ne peux pas être partout...",
+          "menteur": "Nous avons eu deux ou trois remarques mineures. Rien d'inquiétant.",
+          "balance": "Oui, une quinzaine de plaintes, mais certaines sont exagérées. Les gens se plaignent pour un rien. Et la secrétaire les transmet toutes sans filtrer, ça amplifie le problème.",
+          "info_cle": "Plusieurs plaintes deux dernières semaines, sanitaires et espaces communs",
+          "variation_id": 1
+        },
+        {
+          "normal": "Effectivement, nous avons eu une quinzaine de signalements formels. J'ai transmis un rapport au patron avec mes propositions d'amélioration.",
+          "colere": "Quinze plaintes ! Et le patron ne fait rien ! Il me demande un rapport, je le fais, et après ? Rien ! Aucune action !",
+          "anxieux": "Quinze plaintes... c'est énorme... j'ai fait un rapport mais... je ne sais pas si mes propositions seront acceptées... je me sens impuissant...",
+          "menteur": "Il y a eu quelques remarques sans gravité. C'est dans la normale.",
+          "balance": "Quinze plaintes officielles, mais je soupçonne que la secrétaire m'en cache certaines pour ne pas aggraver la situation. Je ne sais pas combien il y en a vraiment.",
+          "info_cle": "Quinze signalements formels, rapport avec propositions transmis au patron",
+          "variation_id": 2
+        },
+        {
+          "normal": "Oui, notamment du service restauration qui est très exigeant sur l'hygiène. Leurs plaintes sont justifiées, mais je manque de personnel pour répondre à leurs attentes.",
+          "colere": "La restauration exagère tout ! Ils veulent du cinq étoiles avec un budget deux étoiles ! C'est impossible !",
+          "anxieux": "La restauration se plaint beaucoup... ils ont raison... mais je ne peux pas faire plus avec mon équipe actuelle... je suis désolé...",
+          "menteur": "Nous n'avons pas reçu de plaintes du service restauration.",
+          "balance": "Oui, la restauration, mais leurs plaintes sont aussi dues au fait que le paysagiste laisse traîner ses outils sales près de leurs zones de stockage. Ce n'est pas que mon problème.",
+          "info_cle": "Plaintes service restauration exigeant sur hygiène, manque personnel",
+          "variation_id": 3
+        }
+      ],
+      "5": [
+        {
+          "normal": "Mon équipe compte quatre agents d'entretien à temps plein. Nous en avions six il y a un an, mais deux postes n'ont pas été renouvelés pour des raisons budgétaires.",
+          "colere": "Quatre agents ! On a perdu deux postes ! Comment voulez-vous que je maintienne la qualité avec moins de personnel et plus de surface à couvrir ?",
+          "anxieux": "Quatre personnes... j'ai demandé des renforts mais... le patron dit qu'il n'y a pas de budget... je dois faire avec...",
+          "menteur": "J'ai une équipe de six agents. Les effectifs sont adaptés à nos besoins.",
+          "balance": "Quatre officiellement, mais en réalité j'ai souvent des absences non remplacées. Le patron refuse de faire appel à des intérimaires pour économiser, donc je me retrouve avec deux ou trois agents seulement.",
+          "info_cle": "Quatre agents temps plein, six il y a un an, deux postes non renouvelés",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'ai quatre agents plus moi-même quand je dois donner un coup de main. C'est juste pour gérer tout l'établissement correctement.",
+          "colere": "Quatre plus moi ! Et on me demande des miracles ! Le patron devrait venir voir la charge de travail avant de critiquer !",
+          "anxieux": "Quatre agents... et parfois je dois aider moi-même... je ne suis pas sûr que ce soit suffisant... mais je fais ce que je peux...",
+          "menteur": "Nous avons sept personnes dans l'équipe. C'est largement suffisant.",
+          "balance": "Quatre agents, mais l'un d'entre eux est un ami personnel et il s'absente souvent. Je couvre ses absences pour lui éviter des problèmes, mais ça réduit encore les effectifs réels.",
+          "info_cle": "Quatre agents plus concierge en renfort, juste pour établissement",
+          "variation_id": 2
+        },
+        {
+          "normal": "Trois agents à temps plein et un à mi-temps. Le poste à mi-temps a été créé en compensation de la suppression d'un poste complet, mais ce n'est pas équivalent.",
+          "colere": "Trois et demi ! On me remplace un temps plein par un mi-temps et on s'attend à ce que je garde le même niveau ! C'est du foutage de gueule !",
+          "anxieux": "Trois à temps plein et un à mi-temps... ce n'est vraiment pas beaucoup... j'ai peur de ne pas y arriver...",
+          "menteur": "Nous sommes six agents au total. L'équipe est complète.",
+          "balance": "Trois et demi en théorie, mais l'agent à mi-temps aide aussi le paysagiste. C'était un arrangement avec le patron pour 'optimiser les ressources'. Résultat : je n'ai pas assez de personnel.",
+          "info_cle": "Trois temps plein et un mi-temps, mi-temps en compensation poste supprimé",
+          "variation_id": 3
+        }
+      ],
+      "6": [
+        {
+          "normal": "Oui, je tiens un registre électronique où chaque agent enregistre ses passages. Je le transmets au patron chaque semaine.",
+          "colere": "Bien sûr que j'ai un registre ! Je fais tout ce qu'on me demande ! Mais personne ne le lit vraiment !",
+          "anxieux": "Oui... j'ai un registre... j'essaie de le tenir à jour... j'espère qu'il est correct... parfois j'oublie de valider...",
+          "menteur": "Nous n'utilisons pas de registre formalisé. Ce n'est pas nécessaire pour notre taille.",
+          "balance": "Oui, mais je dois avouer que parfois je le remplis rétroactivement quand j'oublie. Le patron ne vérifie jamais en détail de toute façon, il signe sans regarder.",
+          "info_cle": "Registre électronique passages agents, transmission hebdomadaire patron",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous avons mis en place un système de QR codes il y a six mois. Chaque agent scanne les zones nettoyées avec son smartphone.",
+          "colere": "Un système de QR codes moderne ! Mais si les agents trichent, ce n'est pas le système qui est en cause, c'est eux !",
+          "anxieux": "Il y a les QR codes... mais je ne suis pas sûr que tout le monde les utilise correctement... je ne peux pas vérifier tout le temps...",
+          "menteur": "Nous avons un registre papier traditionnel. Simple et efficace.",
+          "balance": "Le système de QR codes existe, mais je scanne parfois plusieurs codes depuis mon bureau sans me déplacer pour gagner du temps. Le système a des failles que j'exploite.",
+          "info_cle": "Système QR codes depuis six mois, scan zones nettoyées par smartphone",
+          "variation_id": 2
+        },
+        {
+          "normal": "J'ai un registre papier et numérique. Les agents signent après chaque zone nettoyée, et je vérifie quotidiennement.",
+          "colere": "Deux registres ! Papier et numérique ! Je fais double travail ! Et après on me dit que je ne suis pas organisé !",
+          "anxieux": "J'ai les deux registres... c'est beaucoup de travail administratif... parfois je prends du retard... mais j'essaie...",
+          "menteur": "Nous n'avons pas besoin de registre. La supervision visuelle suffit.",
+          "balance": "Les registres existent, mais quand le patron m'a demandé de les montrer avant un audit, je les ai modifiés pour masquer les zones non nettoyées. Il était d'accord, il voulait éviter les problèmes.",
+          "info_cle": "Registre papier et numérique, signatures agents, vérification quotidienne",
+          "variation_id": 3
+        }
+      ],
+      "7": [
+        {
+          "normal": "Oui, j'ai mis en place une nouvelle organisation il y a trois semaines. Nettoyage par rotation pour optimiser le temps et compenser le manque d'effectifs.",
+          "colere": "J'ai changé l'organisation pour survivre ! Avec quatre agents, impossible de tout faire tous les jours ! C'était ça ou l'effondrement total !",
+          "anxieux": "J'ai essayé une nouvelle méthode... par rotation... mais je ne suis pas sûr que ce soit la bonne solution... peut-être que j'aurais dû faire autrement...",
+          "menteur": "Non, nous travaillons exactement comme avant. Aucun changement.",
+          "balance": "Oui, j'ai modifié les procédures sans vraiment consulter le patron. Je l'ai mis devant le fait accompli. Il a validé a posteriori, mais je pense qu'il n'avait pas bien compris les implications.",
+          "info_cle": "Nouvelle organisation il y a trois semaines, rotation pour optimiser et compenser",
+          "variation_id": 1
+        },
+        {
+          "normal": "Nous sommes passés à des produits écologiques moins agressifs. Ils nécessitent plus de temps et de passages, mais c'était une directive de la direction.",
+          "colere": "Ces produits écolos ! C'est de la poudre de perlimpinpin ! Ça ne nettoie rien ! Mais c'est politiquement correct, alors on fait semblant que ça marche !",
+          "anxieux": "Les nouveaux produits... écologiques... ils sont moins efficaces... mais je ne pouvais pas refuser... c'était imposé...",
+          "menteur": "Nous utilisons les mêmes produits professionnels depuis toujours.",
+          "balance": "Les produits écologiques étaient en réalité une proposition du patron pour réduire les coûts, pas pour l'environnement. Ils coûtent moins cher mais nettoient moins bien. On fait croire que c'est écologique.",
+          "info_cle": "Passage produits écologiques moins agressifs, plus de temps nécessaire, directive direction",
+          "variation_id": 2
+        },
+        {
+          "normal": "J'ai réduit la fréquence de nettoyage de certaines zones jugées moins prioritaires. Salles de réunion peu utilisées, archives, zones de stockage.",
+          "colere": "J'ai dû faire des choix ! Prioriser ! Avec les moyens qu'on me donne, je ne peux pas être partout ! C'est du pragmatisme !",
+          "anxieux": "J'ai réduit certaines fréquences... je ne suis pas fier de cette décision... mais je ne voyais pas d'autre solution...",
+          "menteur": "Toutes les zones sont nettoyées avec la même fréquence qu'avant.",
+          "balance": "J'ai réduit les fréquences, et je justifie ça par le manque d'effectifs, mais en vérité je voulais aussi avoir plus de temps libre pour aider le paysagiste sur ses chantiers.",
+          "info_cle": "Fréquence réduite zones moins prioritaires : réunions, archives, stockage",
+          "variation_id": 3
+        }
+      ],
+      "8": [
+        {
+          "normal": "Oui, plusieurs zones sont problématiques. Le sous-sol est trop encombré, les sanitaires du deuxième ont un problème de plomberie, et la salle des archives est inaccessible.",
+          "colere": "Des zones impossibles ! Le sous-sol est un dépotoir ! Les sanitaires sont cassés ! Et on me reproche de ne pas nettoyer ! Qu'on répare d'abord !",
+          "anxieux": "Il y a des zones difficiles... j'essaie quand même mais... c'est compliqué... je ne sais pas comment faire mieux...",
+          "menteur": "Toutes les zones sont accessibles et nettoyées régulièrement.",
+          "balance": "Certaines zones sont difficiles, c'est vrai, mais j'en exagère l'inaccessibilité pour justifier de ne pas les nettoyer. En vérité, je pourrais faire des efforts mais je préfère prioriser les zones visibles.",
+          "info_cle": "Sous-sol encombré, sanitaires deuxième avec problème plomberie, archives inaccessibles",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les zones entre intérieur et extérieur posent problème. Les halls d'entrée notamment. Il y a une confusion constante avec le paysagiste sur qui doit s'en occuper.",
+          "colere": "Les entrées ! Le paysagiste amène de la boue et après il dit que c'est à moi de nettoyer ! Non ! C'est son problème !",
+          "anxieux": "Les entrées sont un problème... je ne sais jamais exactement où s'arrête ma responsabilité... je ne veux pas créer de conflit avec le paysagiste...",
+          "menteur": "Il n'y a pas de zones délaissées. Tout est couvert par les procédures.",
+          "balance": "Les entrées sont volontairement laissées sales car ni le paysagiste ni moi ne voulons les faire. On se rejette mutuellement la responsabilité et le patron ne tranche jamais.",
+          "info_cle": "Halls d'entrée problématiques, confusion responsabilités avec paysagiste",
+          "variation_id": 2
+        },
+        {
+          "normal": "Certaines salles de classe et bureaux fermés ne sont plus nettoyés régulièrement. On se concentre sur les zones à fort passage.",
+          "colere": "Les bureaux fermés ! Personne n'y va ! Pourquoi je perdrais du temps là-dessus alors qu'il y a des zones prioritaires ?",
+          "anxieux": "Il y a des bureaux que... que je nettoie moins souvent... mais personne n'y va... j'espère que ce n'est pas grave...",
+          "menteur": "Nous nettoyons tous les bureaux et salles de classe régulièrement.",
+          "balance": "Je néglige volontairement les zones peu fréquentées pour gagner du temps. Je dis au patron qu'elles sont nettoyées, mais en réalité elles ne le sont pas depuis des semaines.",
+          "info_cle": "Salles classe et bureaux fermés négligés, concentration zones fort passage",
+          "variation_id": 3
+        }
+      ],
+      "9": [
+        {
+          "normal": "L'équipe est démotivée, je dois l'admettre. Les salaires sont bas, la charge de travail est lourde, et il n'y a jamais de reconnaissance de la hiérarchie.",
+          "colere": "Mon équipe est à bout ! Ils en ont marre ! Mal payés, surchargés, jamais un merci ! Vous vous attendez à quoi ?",
+          "anxieux": "L'équipe est... fatiguée... démotivée... j'essaie de les encourager mais... je me sens moi-même découragé... comment motiver les autres ?",
+          "menteur": "Mon équipe est professionnelle et motivée. Il n'y a aucun problème de comportement.",
+          "balance": "L'équipe est démotivée, c'est vrai, mais c'est aussi parce que je les manage mal. Je favorise certains agents, je suis souvent absent, et je ne donne pas l'exemple.",
+          "info_cle": "Équipe démotivée : salaires bas, charge lourde, pas de reconnaissance",
+          "variation_id": 1
+        },
+        {
+          "normal": "Un agent a eu plusieurs absences ces dernières semaines. C'est un ami personnel, je n'ai pas voulu être trop strict, mais ça impacte l'équipe.",
+          "colere": "Un agent s'absente ! Oui ! Et alors ? Il a ses raisons ! Je ne vais pas le virer pour ça ! On n'est pas des machines !",
+          "anxieux": "Il y a un agent qui... qui s'absente parfois... c'est délicat... je ne veux pas être trop dur... mais ça crée des problèmes...",
+          "menteur": "Non, rien à signaler. L'assiduité est exemplaire dans mon équipe.",
+          "balance": "C’est vrai, j’ai été trop laxiste avec un agent parce que c’est un ami. Résultat, le reste de l’équipe me reproche un traitement de faveur.",
+          "info_cle": "Absences répétées d’un agent, impact sur la cohésion, favoritisme potentiel",
+          "variation_id": 2
+        },
+        {
+          "normal": "J’ai remarqué quelques tensions entre deux membres de l’équipe. Des désaccords sur la répartition du travail, rien de dramatique, mais ça pèse sur l’ambiance.",
+          "colere": "Oui, il y a des tensions ! Toujours les mêmes qui râlent, qui se plaignent, qui sabotent l’ambiance ! J’en ai ras-le-bol !",
+          "anxieux": "Il y a... des tensions, oui. J’essaie d’intervenir, mais j’ai peur d’envenimer les choses... je ne sais pas trop comment gérer ça.",
+          "menteur": "Non, tout va bien. L’ambiance est bonne, tout le monde s’entend parfaitement.",
+          "balance": "Les tensions viennent aussi de moi... j’ai parfois mes préférences et ça se ressent. Je n’ai pas su gérer les conflits assez tôt.",
+          "info_cle": "Tensions entre deux membres : répartition du travail, ambiance détériorée, conflit latent",
+          "variation_id": 3
+        }
+      ]
+    }
+  }
+}

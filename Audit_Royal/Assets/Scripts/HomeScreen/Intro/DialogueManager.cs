@@ -1,4 +1,3 @@
-// DialogueManager.cs
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -7,15 +6,12 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    // ===== RÉFÉRENCES UI =====
-    [Header("Interface")]
     public GameObject bandeau;              // Bandeau avec le nom du personnage
     public GameObject dialoguePanel;        // Panel avec le texte
     public TextMeshProUGUI speakerText;     // Nom du personnage qui parle
     public TextMeshProUGUI dialogueText;    // Le texte du dialogue
-    public Button nextButton;               // Bouton optionnel
+    public Button nextButton;
 
-    [Header("Paramètres")]
     public float typingSpeed = 0.02f;       // Vitesse d'affichage des lettres
     public MonoBehaviour playerMovementScript; // Script de déplacement à désactiver
 

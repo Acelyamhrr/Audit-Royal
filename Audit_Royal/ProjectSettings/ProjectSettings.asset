@@ -315,7 +315,10 @@ PlayerSettings:
   m_BuildTargetGroupLightmapEncodingQuality: []
   m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
-  m_BuildTargetGroupLoadStoreDebugModeSettings: []
+  m_BuildTargetGroupLoadStoreDebugModeSettings:
+  - m_BuildTarget: Standalone
+    m_DebugModeEnabled: 1
+    m_IsEditorOnly: 0
   m_BuildTargetNormalMapEncoding: []
   m_BuildTargetDefaultTextureCompressionFormat: []
   playModeTestRunnerEnabled: 0
@@ -601,7 +604,7 @@ PlayerSettings:
   gcIncremental: 1
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform: {}
-  editorAssembliesCompatibilityLevel: 1
+  editorAssembliesCompatibilityLevel: 2
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: T3
@@ -678,8 +681,9 @@ PlayerSettings:
   hmiCpuConfiguration: 
   hmiLogStartupTiming: 0
   qnxGraphicConfPath: 
-  apiCompatibilityLevel: 6
-  captureStartupLogs: {}
+  apiCompatibilityLevel: 3
+  captureStartupLogs:
+    Standalone: 1
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 2a8381a2-e9b4-454a-8575-314f7817c971

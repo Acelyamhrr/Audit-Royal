@@ -1,0 +1,48 @@
+{
+  "scenario": 2,
+  "titre": "Panne Réseau Généralisée",
+  "theme": "Interruption réseau et dysfonctionnements informatiques",
+  "service_audite": "info",
+  "problematique": "Depuis trois jours, l'IUT Robert Schuman connaît des pannes réseau intermittentes affectant l'ensemble des services. Certains postes perdent la connexion, des fichiers deviennent inaccessibles, et les communications internes sont perturbées. Votre mission : identifier la source du problème, comprendre comment chaque service a été impacté et déterminer les responsabilités.",
+  
+  "questions": {
+    "service_info": {
+      "description": "Questions détaillées pour le service informatique (audité)",
+      "liste": [
+        "Quand avez-vous détecté les premiers signes de dysfonctionnement réseau ?",
+        "Des modifications ont-elles été apportées au système avant l'incident ?",
+        "Avez-vous reçu des demandes d'intervention d'autres services ?",
+        "Quels équipements réseau ont été vérifiés en priorité ?",
+        "Comment évaluez-vous la réactivité et la communication de votre équipe ?"
+      ]
+    },
+    
+    "autres_services": {
+      "description": "Questions générales pour les services non-informatiques",
+      "liste": [
+        "Avez-vous constaté des problèmes de connexion ces derniers jours ?",
+        "Comment ces dysfonctionnements ont-ils affecté votre travail quotidien ?",
+        "Avez-vous contacté le service informatique ? Si oui, quelle a été leur réponse ?",
+        "Avez-vous remarqué des comportements inhabituels sur vos équipements ?",
+        "Pensez-vous que le problème aurait pu être évité ? Comment ?"
+      ]
+    }
+  },
+  
+  "includes": {
+    "dialogues_technicien": "scenario2_technicien.json",
+    "dialogues_restauration": "scenario2_restauration.json",
+    "dialogues_info": "scenario2_info.json",
+    "dialogues_compta": "scenario2_comptabilite.json",
+    "dialogues_communication": "scenario2_communication.json"
+  },
+  
+  "metadata": {
+    "difficulte": "moyenne",
+    "duree_estimee": "20-30 minutes",
+    "nombre_personnages": 16,
+    "nombre_questions_total": 10,
+    "version": "1.0",
+    "date_creation": "2025-10-25"
+  }
+}

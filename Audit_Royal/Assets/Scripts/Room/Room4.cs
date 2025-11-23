@@ -12,15 +12,21 @@ namespace Script.Room
             Debug.Log("OnMouseDown");
             switch (gameObject.name)
             {
-                case "GameObject_Bgauche":
+                case "GameObject_bg":
                     Debug.Log(gameObject.name + " bgauche");
                     //TODO
                     break;
-                case "GameObject_Bdroit":    
+                case "GameObject_bgm":    
                     //TODO
                     break;
-                case "GameObject_Bbas":
+                case "GameObject_bmd":
                     //TODO
+                    break;
+                case "GameObject_bd":
+                    //TODO
+                    break;
+                case "GameObject_door":
+                    SceneManager.LoadScene("Map");
                     break;
             }
         }

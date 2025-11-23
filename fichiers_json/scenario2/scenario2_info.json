@@ -1,0 +1,594 @@
+{
+  "service": "info",
+  "postes": {
+    "secretaire": {
+        "0": [
+        {
+            "normal": "Lundi matin vers 9h. J'ai commencé à recevoir des appels de différents services signalant des problèmes de connexion. Au début, je pensais que c'était des cas isolés, mais les appels se multipliaient.",
+            "colere": "Lundi matin dès 9h ! Les appels n'arrêtaient pas ! Tous les services appelaient en même temps ! J'étais submergée ! Et le responsable réseau absent !",
+            "anxieux": "Lundi... vers 9h je crois. Les appels commençaient à affluer. Je ne savais pas si c'était grave ou non. J'aurais peut-être dû alerter plus tôt...",
+            "menteur": "Lundi en fin de matinée. Les premiers appels étaient vers 11h. Avant ça, quelques messages isolés sans gravité apparente.",
+            "balance": "Lundi 9h. J'ai immédiatement prévenu le patron et le technicien de maintenance. Mais le responsable réseau était en congé et personne ne semblait prendre la mesure du problème.",
+            "info_cle": "Les premiers appels de signalement sont arrivés dès 9h lundi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Dimanche soir en fait. Le système de monitoring a envoyé des alertes par email. Mais c'était le week-end, personne ne les a vues avant lundi matin. Les alertes étaient dans ma boîte mail professionnelle.",
+            "colere": "Dimanche soir ! Des alertes automatiques ! Mais qui regarde ses emails pro le dimanche ?! Si le responsable réseau avait été là, il les aurait vues !",
+            "anxieux": "Dimanche soir... les alertes. Mais je ne les ai vues que lundi matin. J'aurais peut-être dû vérifier mes emails le week-end. C'est ma faute ?...",
+            "menteur": "Lundi matin, quand j'ai ouvert ma session. Aucune alerte visible avant. Les premiers signalements sont arrivés en même temps que je découvrais le problème.",
+            "balance": "Dimanche soir, des alertes automatiques. Mais le système de monitoring n'envoie pas de SMS d'urgence. Si le responsable réseau avait configuré ça, on aurait réagi plus tôt.",
+            "info_cle": "Le système de monitoring a envoyé des alertes dès dimanche soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Samedi soir après la mise à jour, selon les logs que j'ai consultés lundi. Mais personne n'était là pour voir les premiers symptômes. Le problème a couvé tout le week-end.",
+            "colere": "Samedi soir d'après les logs ! Juste après la mise à jour ! Mais zéro surveillance le week-end ! Le problème a empiré pendant 36 heures sans que personne ne le sache !",
+            "anxieux": "Les logs disent samedi soir... juste après la mise à jour. Si quelqu'un avait surveillé, on aurait pu éviter l'escalade. Mais qui surveille le week-end ?...",
+            "menteur": "Lundi matin, d'après tous les indicateurs. Les logs montrent un fonctionnement normal samedi et dimanche. Le problème est apparu lundi.",
+            "balance": "Samedi soir. Le technicien de maintenance qui a fait la mise à jour n'a pas vérifié que tout fonctionnait après. Il est parti sans surveillance. Protocole non respecté.",
+            "info_cle": "Les logs montrent des anomalies dès samedi soir après la mise à jour.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Oui, une mise à jour majeure du système d'exploitation des serveurs samedi matin. C'était planifié depuis deux semaines. Le technicien de maintenance s'en est occupé sous supervision à distance du responsable réseau.",
+            "colere": "Une mise à jour majeure samedi ! Planifiée ! Mais le responsable réseau est parti en congé juste après ! Et le technicien était seul dimanche pour finaliser ! Organisation nulle !",
+            "anxieux": "La mise à jour samedi... c'était prévu. Mais je ne sais pas si tout a été fait correctement. Le responsable réseau était censé superviser mais il est parti en congé...",
+            "menteur": "Aucune modification majeure. Juste des mises à jour de sécurité mineures automatiques. Rien qui aurait pu causer une panne de cette ampleur.",
+            "balance": "Oui, une mise à jour majeure. Mais le responsable réseau a validé le planning puis est parti en congé sans s'assurer que tout fonctionnait. Irresponsable.",
+            "info_cle": "Une mise à jour majeure a eu lieu samedi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Vendredi soir, le technicien de maintenance a remplacé un switch défectueux dans le local technique. C'était une intervention de maintenance préventive. Peut-être que ça a perturbé quelque chose.",
+            "colere": "Vendredi soir, remplacement de switch ! Puis samedi, mise à jour serveur ! Deux interventions coup sur coup ! On ne fait pas ça ! On espace les changements !",
+            "anxieux": "Le switch vendredi soir... puis la mise à jour samedi. Peut-être que les deux interventions ont interagi de manière imprévue. Mais je ne suis pas technicienne...",
+            "menteur": "Aucun changement matériel récent. Le dernier remplacement d'équipement remonte à trois mois. Pas de lien possible avec la panne actuelle.",
+            "balance": "Oui, switch remplacé vendredi. Mais le technicien n'a pas documenté l'intervention correctement. J'ai découvert ça lundi en cherchant dans les logs. Manque de rigueur.",
+            "info_cle": "Un switch réseau a été remplacé vendredi soir.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Jeudi, modification des règles de pare-feu pour autoriser un nouveau service cloud. Le responsable réseau a fait ça avant de partir en congé. Peut-être qu'une règle conflictuelle a été créée.",
+            "colere": "Jeudi, modif pare-feu ! Puis le responsable part en vacances ! Sans vérifier que tout fonctionne ! Sans briefer l'équipe ! Amateurisme total !",
+            "anxieux": "Les règles de pare-feu jeudi... c'était la dernière action du responsable réseau avant son départ. Peut-être qu'il y a eu une erreur. Mais je n'ose pas l'accuser...",
+            "menteur": "Aucune modification de pare-feu récente. Les derniers changements de sécurité datent du mois dernier. Configuration stable depuis.",
+            "balance": "Oui, pare-feu modifié jeudi. Le responsable réseau a fait ça en urgence avant de partir sans tester. Le patron du service l'a laissé faire sans contrôle.",
+            "info_cle": "Les règles de pare-feu ont été modifiées jeudi.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Énormément. Plus de 150 appels et emails entre lundi et mercredi. Tous les services réclamaient de l'aide. J'ai essayé de prioriser et de centraliser les demandes pour l'équipe technique.",
+            "colere": "Plus de 150 demandes ! J'ai passé trois jours au téléphone non-stop ! Tout le monde gueulait ! La compta, la restauration, le technique ! J'étais seule à gérer ça !",
+            "anxieux": "Tellement de demandes... j'ai fait de mon mieux pour tout noter. Mais avec le volume, j'ai peur d'avoir oublié ou mal transmis certaines urgences...",
+            "menteur": "Une cinquantaine de demandes, volume normal pour une panne. J'ai pu tout traiter correctement avec le système de tickets. Rien d'exceptionnel.",
+            "balance": "Oui, énormément. Et certains chefs de service étaient agressifs, comme si c'était ma faute ! Le patron de la compta m'a même menacé de se plaindre à la direction !",
+            "info_cle": "Plus de 150 demandes d'intervention ont été reçues en trois jours.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Oui, de tous les services. Mais trois services étaient particulièrement insistants : comptabilité, restauration et technique. Ils avaient des échéances critiques et des risques réels.",
+            "colere": "Tous les services ! Mais la compta et la restauration appelaient dix fois par jour ! Je comprends leurs urgences mais je ne pouvais pas faire de miracles !",
+            "anxieux": "Beaucoup de services... tous avec des urgences. J'essayais de prioriser mais comment choisir entre un risque sanitaire et une obligation légale ?...",
+            "menteur": "Quelques demandes éparses de différents services. Rien de massif. Le système de tickets a fonctionné normalement pour répartir les interventions.",
+            "balance": "Oui, beaucoup. Mais le service communication n'a presque rien demandé. Normal, ils sont sur le nouveau réseau WiFi. Preuve que l'infrastructure est inégale.",
+            "info_cle": "La comptabilité, la restauration et le technique étaient les plus insistants.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Certains services ont contacté directement les techniciens sans passer par moi. Ça créait de la confusion, on perdait la vue d'ensemble. Le technicien de maintenance était sollicité de partout.",
+            "colere": "Le chaos ! Certains appelaient le technicien directement ! D'autres me contactaient ! Impossible de prioriser correctement ! Il fallait une coordination centralisée !",
+            "anxieux": "Les demandes venaient de partout... par différents canaux. J'essayais de tout centraliser mais certains contournaient le système. J'ai perdu le contrôle...",
+            "menteur": "Toutes les demandes passaient par le système officiel. Bonne coordination et priorisation claire. Pas de communication en dehors des canaux établis.",
+            "balance": "Oui, et le patron était en réunion externe lundi. Résultat : c'est moi qui prenais les décisions de priorisation sans avoir la légitimité. Position impossible.",
+            "info_cle": "L'absence de coordination centralisée a créé de la confusion.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "Le technicien de maintenance a d'abord vérifié les switchs principaux et le serveur central. Puis les serveurs de fichiers et de comptabilité. Priorisation basée sur l'impact estimé.",
+            "colere": "Les switchs, le serveur central ! Mais ça n'a rien donné ! On cherchait au mauvais endroit pendant que le problème empirait ! Gaspillage de temps !",
+            "anxieux": "Les équipements critiques en premier... je crois. Le technicien suivait une liste mais je ne suis pas sûre que c'était la bonne priorité...",
+            "menteur": "Tous les équipements ont été vérifiés systématiquement selon le protocole. Diagnostic méthodique et exhaustif. Rien n'a été négligé.",
+            "balance": "Le technicien vérifiait un peu au hasard. Pas de méthode claire. Le responsable réseau aurait su exactement où chercher, lui.",
+            "info_cle": "Les switchs principaux et le serveur central ont été vérifiés en priorité.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Le routeur principal et les pare-feu. Le technicien pensait que c'était un problème de sécurité ou de règles mal configurées. Ça a pris beaucoup de temps sans résultat.",
+            "colere": "Le routeur, les pare-feu ! Le technicien a passé des heures dessus ! Mais le problème était ailleurs ! Si le responsable réseau avait été là, diagnostic en 30 minutes !",
+            "anxieux": "Le routeur et les pare-feu... le technicien semblait perdu. Il essayait des choses mais sans vraie conviction. J'avais l'impression qu'il improvisait...",
+            "menteur": "Les équipements critiques identifiés dans le plan de continuité. Vérification méthodique selon la documentation. Approche professionnelle.",
+            "balance": "Le technicien vérifiait ce qu'il connaissait. Mais beaucoup d'équipements critiques, il ne savait même pas comment y accéder. Manque de formation.",
+            "info_cle": "Le routeur principal et les pare-feu ont été vérifiés en priorité.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les serveurs de stockage et le NAS en premier, car beaucoup de services signalaient des problèmes d'accès aux fichiers. Puis les contrôleurs de domaine pour les authentifications.",
+            "colere": "Les serveurs de stockage, le NAS ! Mais le vrai problème était au niveau du switch de cœur de réseau ! Personne ne l'a vérifié avant mardi soir !",
+            "anxieux": "Les serveurs... le technicien cherchait méthodiquement. Mais ça prenait tellement de temps. J'avais peur qu'on ne trouve jamais. La pression était énorme...",
+            "menteur": "Les équipements identifiés comme critiques par l'analyse d'impact. Priorisation intelligente basée sur les dépendances. Approche stratégique.",
+            "balance": "Le patron a dit de vérifier d'abord les équipements des services qui criaient le plus fort. Compta et restauration en priorité. Priorisation politique, pas technique.",
+            "info_cle": "Les serveurs de stockage et les contrôleurs de domaine ont été vérifiés en premier.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "L'équipe a fait de son mieux dans des circonstances difficiles. Le technicien de maintenance a travaillé jour et nuit. Mais sans le responsable réseau, on manquait clairement d'expertise. La communication était chaotique.",
+            "colere": "Réactivité ? On a fait ce qu'on pouvait ! Mais communication nulle ! Le patron minimisait le problème ! Le technicien était perdu ! Moi au milieu à gérer les plaintes !",
+            "anxieux": "L'équipe... on a essayé. Mais je sentais qu'on était dépassés. La communication ? J'ai fait de mon mieux mais je ne savais pas toujours quoi dire aux gens...",
+            "menteur": "Excellente réactivité. L'équipe a été mobilisée immédiatement. Communication claire et régulière avec tous les services. Gestion de crise professionnelle.",
+            "balance": "Réactivité moyenne. Le patron était absent lundi, le responsable réseau en congé. Le technicien faisait ce qu'il pouvait seul. Moi, simple secrétaire, je coordonnais tout. Absurde.",
+            "info_cle": "L'équipe manquait d'expertise sans le responsable réseau.",
+            "variation_id": 1
+        },
+        {
+            "normal": "La communication externe était médiocre. On envoyait des emails vagues pour rassurer. En interne, c'était le stress et la panique. Le patron essayait de contrôler les infos pour ne pas alarmer la direction.",
+            "colere": "Communication catastrophique ! En externe, on mentait pour rassurer ! En interne, personne ne disait la vérité ! Le patron cachait la gravité ! Hypocrisie totale !",
+            "anxieux": "La communication... je ne savais jamais quoi dire. Le patron me disait de rester vague. Mais les gens voulaient des réponses précises. J'avais l'impression de mentir...",
+            "menteur": "Communication transparente et honnête. Mises à jour régulières à tous les niveaux. Les services étaient correctement informés de l'avancement.",
+            "balance": "Le patron minimisait systématiquement dans ses communications. Il ne voulait pas que la direction sache que c'était la faute du service informatique. Protection corporatiste.",
+            "info_cle": "Le patron minimisait la gravité dans les communications officielles.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Réactivité correcte du technicien, mais manque de coordination. Communication améliorable : trop d'informations contradictoires circulaient. Un vrai plan de communication de crise aurait aidé.",
+            "colere": "Réactivité ? Le technicien oui ! Mais coordination zéro ! Communication nulle ! Chacun disait des choses différentes ! Incohérence totale ! Amateurisme !",
+            "anxieux": "Le technicien réagissait vite... mais la communication ? Je ne sais pas. J'essayais de transmettre les infos mais peut-être que j'ai mal fait...",
+            "menteur": "Réactivité exemplaire et communication fluide. L'équipe a fonctionné comme une machine bien huilée. Coordination parfaite malgré les circonstances.",
+            "balance": "Le technicien était réactif mais mal dirigé. Le patron donnait des ordres contradictoires. Sans le responsable réseau pour arbitrer, c'était le chaos décisionnel.",
+            "info_cle": "Le manque de coordination et de plan de communication a aggravé la situation.",
+            "variation_id": 3
+        }
+        ]
+    },
+    "responsable_reseau": {
+        "0": [
+        {
+            "normal": "Je n'étais pas là, j'étais en congé prévu depuis deux mois. Mais d'après ce que j'ai compris à mon retour jeudi, les premiers signes sont apparus samedi soir après la mise à jour. Les alertes automatiques ont été envoyées dimanche.",
+            "colere": "J'étais en vacances ! Congé validé il y a deux mois ! Je ne peux pas être responsable de ce qui se passe quand je ne suis pas là ! J'ai briefé l'équipe avant de partir !",
+            "anxieux": "J'étais en congé... j'ai vu les notifications sur mon téléphone dimanche mais je ne voulais pas gâcher mes vacances. Peut-être que j'aurais dû réagir immédiatement...",
+            "menteur": "J'étais en congé et je n'ai eu aucune notification. Le système de monitoring n'a apparemment rien détecté avant lundi. Donc impossible de savoir avant.",
+            "balance": "J'étais en congé comme prévu. Le patron et le technicien savaient que je partais. Ils devaient gérer. S'ils n'étaient pas capables, ce n'est pas ma faute. Ils sont payés pour ça.",
+            "info_cle": "Le responsable réseau était en congé pendant toute la durée de la panne.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Jeudi soir, juste avant mon départ. J'ai vérifié tous les indicateurs, tout était vert. J'ai supervisé le début de la mise à jour samedi à distance, puis j'ai délégué au technicien. Tout semblait sous contrôle.",
+            "colere": "Jeudi soir tout était parfait ! J'ai vérifié ! J'ai supervisé samedi matin ! Puis j'ai fait confiance au technicien ! Comment je pouvais savoir qu'il allait faire n'importe quoi dimanche ?!",
+            "anxieux": "Jeudi, tout allait bien... j'ai vérifié plusieurs fois avant de partir. Mais peut-être que j'aurais dû rester disponible pendant le week-end. C'était ma responsabilité...",
+            "menteur": "Jeudi soir, aucun signe avant-coureur. Système stable. La mise à jour samedi s'est parfaitement passée sous ma supervision. Le problème est apparu plus tard, cause externe.",
+            "balance": "Jeudi, tout nickel. Le problème c'est que le technicien a modifié des configs dimanche sans m'appeler. Si j'avais su qu'il ferait ça, je serais resté disponible.",
+            "info_cle": "Le responsable réseau a vérifié les systèmes jeudi soir avant son départ.",
+            "variation_id": 2
+        },
+        {
+            "normal": "À mon retour jeudi, j'ai analysé les logs. Le premier symptôme technique est samedi 23h47, une erreur de convergence BGP. Puis escalade progressive dimanche. Lundi matin, cascade de défaillances.",
+            "colere": "Samedi 23h47 ! C'est dans les logs ! Erreur BGP claire ! Si le technicien savait lire les logs, il aurait diagnostiqué en 10 minutes ! Mais non, il a cherché pendant 3 jours !",
+            "anxieux": "Les logs disent samedi soir... une erreur que j'aurais identifiée immédiatement. Si j'avais été là. C'est ma faute de ne pas avoir formé quelqu'un d'autre à ce niveau...",
+            "menteur": "Les logs montrent que le problème est apparu lundi matin seulement. Rien d'anormal pendant le week-end. Défaillance soudaine et imprévisible.",
+            "balance": "Samedi soir, erreur BGP suite à une mauvaise config appliquée par le technicien. Il a fait des changements non autorisés. C'est lui le coupable, pas moi.",
+            "info_cle": "Une erreur de convergence BGP est apparue samedi à 23h47.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Oui, la mise à jour majeure samedi que j'ai planifiée et supervisée à distance. Testée en pré-production, validée en comité. Protocole respecté. La mise à jour en elle-même s'est bien passée.",
+            "colere": "La mise à jour planifiée ! Testée ! Validée ! Tout était parfait ! Le problème c'est ce qui s'est passé APRÈS ! Le technicien qui bidouille dimanche ! Pas ma faute !",
+            "anxieux": "La mise à jour samedi... j'ai tout vérifié, tout testé. Mais peut-être que j'ai raté quelque chose. Peut-être que les tests n'étaient pas assez complets...",
+            "menteur": "Aucune modification significative sous ma responsabilité. La mise à jour était mineure et automatique. Rien qui puisse causer une panne de cette ampleur.",
+            "balance": "Oui, mise à jour samedi. Mais j'ai suivi toutes les procédures. Si ça a mal tourné, c'est que les procédures sont mauvaises. Responsabilité du patron, pas moi.",
+            "info_cle": "La mise à jour a été planifiée, testée et supervisée par le responsable réseau.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Oui, et aussi jeudi j'ai modifié le pare-feu pour un nouveau service cloud. Configuration complexe, j'ai pris mon temps. Tout testé avant de partir. Mais peut-être une interaction imprévue avec la mise à jour samedi.",
+            "colere": "Pare-feu jeudi, mise à jour samedi ! Deux changements en trois jours ! C'est contre nos règles ! Mais le patron me pressait pour le cloud ! 'Fais-le avant de partir' ! Pression hiérarchique !",
+            "anxieux": "Le pare-feu jeudi... puis la mise à jour samedi. Peut-être que j'aurais dû espacer. Mais le patron voulait que ce soit fait avant mon départ. J'ai cédé à la pression...",
+            "menteur": "Juste la mise à jour planifiée. Aucune autre modification. Pas de changement de pare-feu, pas d'ajout de service. Configuration stable avant mon départ.",
+            "balance": "Oui, pare-feu jeudi. Mais sur ordre direct du patron qui voulait absolument que le nouveau service cloud soit opérationnel avant la rentrée. Décision managériale, pas technique.",
+            "info_cle": "Le pare-feu a été modifié jeudi sur pression du patron.",
+            "variation_id": 2
+        },
+        {
+            "normal": "La mise à jour samedi, oui. Mais surtout, le technicien de maintenance a fait des modifications dimanche dont je n'étais pas au courant. Il a touché au routage BGP sans comprendre ce qu'il faisait. Ça a tout cassé.",
+            "colere": "Le technicien a tout cassé dimanche ! Il a touché au BGP ! Protocole complexe qu'il ne maîtrise pas ! Qui lui a dit de faire ça ?! Personne ! Initiative stupide !",
+            "anxieux": "Le technicien dimanche... il a voulu bien faire en optimisant. Mais il ne maîtrise pas BGP. Je ne lui ai jamais donné accès à ça. Comment a-t-il eu les identifiants ?...",
+            "menteur": "Uniquement la mise à jour planifiée et sécurisée. Aucune autre intervention. Le technicien n'a fait aucune modification, il a suivi mes instructions à la lettre.",
+            "balance": "Le technicien a modifié des choses dimanche avec l'accord du patron. Moi j'étais en congé, on ne m'a pas consulté. Ils ont outrepassé mon autorité technique.",
+            "info_cle": "Le technicien de maintenance a modifié le routage BGP dimanche sans autorisation.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Je n'étais pas là, donc aucune demande directe. Mais j'ai reçu environ 50 notifications et messages sur mon téléphone personnel pendant mes congés. J'ai essayé de conseiller à distance, mais limité.",
+            "colere": "50 messages pendant mes vacances ! Appels, SMS, emails ! Je n'ai pas pu me reposer ! J'ai essayé d'aider à distance mais je ne pouvais pas tout régler depuis la plage !",
+            "anxieux": "Tellement de messages... j'ai essayé de répondre mais j'étais en famille. Ma femme était furieuse. J'aurais peut-être dû rentrer plus tôt pour aider...",
+            "menteur": "Aucune demande. J'étais en congé avec mon téléphone éteint. Je n'ai rien su avant mon retour jeudi. C'est la procédure pendant les congés.",
+            "balance": "Beaucoup de messages paniqués. Mais je leur avais dit avant de partir : 'Si gros problème, appelez le prestataire externe en urgence'. Ils ne l'ont pas fait. Pas suivi mes consignes.",
+            "info_cle": "Le responsable réseau a reçu environ 50 messages pendant son congé.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Le patron m'a appelé lundi après-midi. Je lui ai donné des pistes de diagnostic à distance. Puis mardi matin, je lui ai envoyé une procédure de vérification par email. Mercredi, j'ai proposé de rentrer plus tôt.",
+            "colere": "Le patron m'a appelé lundi ! 'Reviens !' ! Non ! Congé validé il y a deux mois ! J'ai aidé à distance ! Procédures envoyées ! Mais je ne rentrais pas ! Principe !",
+            "anxieux": "Le patron lundi... il avait l'air désespéré. J'ai essayé d'aider à distance. Mais mardi soir, j'ai compris que c'était grave. J'aurais dû rentrer immédiatement...",
+            "menteur": "Aucun contact pendant mon congé. Téléphone éteint selon la politique. Le patron ne m'a pas appelé, preuve que ce n'était pas si grave.",
+            "balance": "Le patron m'a supplié de rentrer lundi. J'ai refusé. Mardi il me suppliait encore. J'ai refusé. Mercredi j'ai finalement accepté. Peut-être de l'entêtement de ma part.",
+            "info_cle": "Le patron a demandé au responsable réseau de rentrer plus tôt de congé.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Toute l'équipe et plusieurs chefs de service m'ont contacté. Mais sans accès physique aux équipements, je ne pouvais faire que du diagnostic à distance. J'ai proposé une connexion VPN sécurisée, ils ne savaient pas la configurer.",
+            "colere": "Tout le monde m'appelait ! Mais ils ne savaient même pas configurer un VPN ! J'ai essayé d'aider mais sans accès aux équipements, je ne peux rien faire ! Compétences insuffisantes !",
+            "anxieux": "Tant de demandes... j'essayais d'expliquer les procédures par téléphone. Mais c'est compliqué. Ils ne comprenaient pas. Je me sentais impuissant à distance...",
+            "menteur": "Très peu de demandes. Deux ou trois appels du patron, rien de plus. L'équipe a géré de manière autonome comme prévu. Bonne autonomie d'équipe.",
+            "balance": "Beaucoup de demandes paniquées. Mais si le patron avait investi dans la formation de l'équipe comme je le demande depuis un an, ils auraient été autonomes.",
+            "info_cle": "L'équipe ne savait pas configurer un VPN pour assistance à distance.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "À distance, j'ai guidé vers les équipements critiques : switch de cœur de réseau, routeur principal, contrôleurs de domaine. Mais le technicien ne savait pas accéder au switch de cœur, pas formé dessus.",
+            "colere": "Le switch de cœur ! Je leur ai dit dès lundi ! Mais le technicien ne savait même pas où il était physiquement ! Pas formé ! Ils ont cherché partout sauf au bon endroit !",
+            "anxieux": "J'ai indiqué le switch de cœur... mais le technicien ne le connaissait pas. Je ne l'avais jamais formé dessus. C'est ma faute, j'aurais dû partager mes connaissances...",
+            "menteur": "À mon retour, j'ai constaté que les bons équipements avaient été vérifiés dans le bon ordre. Méthodologie correcte. Juste un peu long à cause de la complexité.",
+            "balance": "J'ai dit de vérifier le switch de cœur dès lundi. Ils ne l'ont fait que mardi soir. Pourquoi ? Le patron donnait des ordres contradictoires, vérifier d'abord les serveurs métier.",
+            "info_cle": "Le technicien n'était pas formé sur le switch de cœur de réseau.",
+            "variation_id": 1
+        },
+        {
+            "normal": "J'ai recommandé de vérifier les logs BGP en priorité. Le technicien ne savait pas comment y accéder. Je lui ai envoyé les commandes par SMS. Il a mis 6 heures à comprendre et exécuter.",
+            "colere": "Les logs BGP ! Commandes envoyées par SMS ! Le technicien a mis 6 heures pour taper trois commandes ! Formation zéro ! Compétences réseau nulles !",
+            "anxieux": "Les logs BGP... j'ai essayé d'expliquer par téléphone. Mais c'est complexe. Le technicien n'y connaît rien en routage. Je ne l'ai jamais formé. Ma responsabilité...",
+            "menteur": "Les équipements standards ont été vérifiés selon les procédures. Tout était documenté. Aucun problème d'accès ou de compétence. Diagnostic efficace.",
+            "balance": "J'ai donné la bonne méthode. Mais le technicien est un technicien système, pas réseau. Le patron refuse de recruter un second ingénieur réseau. Budget insuffisant.",
+            "info_cle": "Le technicien n'avait pas les compétences en routage réseau avancé.",
+            "variation_id": 2
+        },
+        {
+            "normal": "À mon retour jeudi, j'ai directement identifié le problème en 30 minutes : conflit de routes BGP suite à une mauvaise configuration appliquée dimanche. Correction en 2 heures, tests, remise en service progressive.",
+            "colere": "30 minutes pour diagnostiquer ce qu'ils cherchaient depuis 3 jours ! Erreur de config BGP basique ! Si j'avais été là dès le début, résolu en 2 heures ! Trois jours de perdus !",
+            "anxieux": "J'ai trouvé en 30 minutes jeudi... ça prouve que j'aurais dû rentrer plus tôt. Tant de dégâts auraient pu être évités. C'est ma responsabilité...",
+            "menteur": "À mon retour, le problème était déjà résolu par l'équipe. J'ai juste validé leur travail et apporté quelques optimisations mineures. Bonne autonomie.",
+            "balance": "Diagnostic en 30 minutes jeudi. Preuve que mon expertise était indispensable. Mais aussi preuve que l'équipe n'a pas le niveau sans moi. Dépendance problématique.",
+            "info_cle": "Le responsable réseau a diagnostiqué et résolu le problème en 2h30 à son retour.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Difficile à juger, je n'étais pas là. L'équipe a fait ce qu'elle pouvait avec ses compétences limitées. Communication : j'aurais dû laisser des consignes plus claires avant de partir. Responsabilité partagée.",
+            "colere": "L'équipe a fait de son mieux ! Mais compétences insuffisantes ! Communication pourrie ! Mais c'est pas leur faute ! C'est le patron qui refuse d'investir dans la formation et le recrutement !",
+            "anxieux": "L'équipe... ils ont essayé. Mais je ne les ai pas assez préparés. Communication : j'aurais dû être plus disponible pendant mon congé. C'est ma faute si ça a duré trois jours...",
+            "menteur": "Excellente réactivité de l'équipe. Communication claire et efficace. Diagnostic méthodique. Juste un problème technique complexe qui a pris du temps. Performance normale.",
+            "balance": "Réactivité correcte. Mais communication désastreuse à cause du patron qui minimisait tout. L'équipe faisait ce qu'elle pouvait, le management les sabotait.",
+            "info_cle": "Le responsable réseau reconnaît une responsabilité partagée sur la communication.",
+            "variation_id": 1
+        },
+        {
+            "normal": "L'équipe manquait de compétences techniques pointues. Le technicien n'est pas ingénieur réseau. Communication : j'aurais dû former quelqu'un d'autre à mon niveau. Erreur de créer une dépendance à moi seul.",
+            "colere": "Le technicien n'a PAS le niveau ! Je le dis depuis un an ! Il faut recruter un ingénieur réseau junior ! Mais non ! Budget refusé ! Et après on me reproche d'être indispensable !",
+            "anxieux": "Je suis le seul à maîtriser le réseau... c'est ma faute. J'aurais dû former les autres. Partager mes connaissances. Mais je n'ai jamais pris le temps...",
+            "menteur": "L'équipe avait toutes les compétences nécessaires. Formation complète. Documentation exhaustive. Autonomie totale. Le délai de résolution était normal vu la complexité.",
+            "balance": "Équipe sous-formée. Mais j'ai demandé des formations spécialisées depuis deux ans. Budget refusé par la direction. Je ne peux pas tout faire seul.",
+            "info_cle": "L'équipe manquait de compétences réseau avancées.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Réactivité bonne vu les moyens. Communication inadéquate : le patron a caché la gravité, moi j'étais absent. Personne n'a géré correctement la communication de crise. Échec collectif de management.",
+            "colere": "Communication catastrophique ! Le patron mentait pour protéger son image ! Moi absent ! Le service communication pas sollicité ! Échec total de leadership à tous les niveaux !",
+            "anxieux": "Communication... désastreuse. Le patron minimisait, moi j'étais absent et peu disponible. Les services ne savaient pas ce qui se passait. On a échoué collectivement...",
+            "menteur": "Communication transparente et honnête à tous les niveaux. Mises à jour régulières. Collaboration excellente. Gestion de crise exemplaire malgré mon absence.",
+            "balance": "Communication pourrie. Mais c'est structurel. Pas de plan de crise, pas de responsable communication de crise, pas de procédures. Problème organisationnel, pas individuel.",
+            "info_cle": "L'absence de plan de communication de crise a aggravé la situation.",
+            "variation_id": 3
+        }
+        ]
+    },
+    "technicien_de_maintenance": {
+        "0": [
+        {
+            "normal": "Samedi soir vers 23h, juste après la fin de la mise à jour. Des messages d'erreur inhabituels sont apparus. J'ai appelé le responsable réseau qui m'a dit de surveiller. Dimanche, ça empirait, j'ai essayé d'optimiser.",
+            "colere": "Samedi soir ! J'ai vu les erreurs ! J'ai appelé le responsable qui m'a dit 'c'est normal, surveille' ! Dimanche ça empirait ! J'ai essayé de corriger ! Comment je pouvais savoir ?!",
+            "anxieux": "Samedi soir... les erreurs me stressaient. Le responsable m'a rassuré mais j'avais un mauvais pressentiment. Dimanche j'ai voulu arranger. Mais j'ai peut-être empiré...",
+            "menteur": "Lundi matin quand les gens ont commencé à appeler. Samedi et dimanche, tout semblait fonctionner normalement. Pas d'alerte, pas de problème visible.",
+            "balance": "Samedi soir, erreurs apparues. J'ai appelé le responsable qui m'a dit que c'était normal après une mise à jour. Il m'a mal briefé. S'il m'avait dit de ne toucher à rien, j'aurais pas agi dimanche.",
+            "info_cle": "Des erreurs inhabituelles sont apparues samedi soir après la mise à jour.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Dimanche matin en fait. En vérifiant les systèmes, j'ai vu que certains services ne répondaient plus correctement. J'ai pensé que c'était lié à la convergence réseau. J'ai voulu accélérer le processus.",
+            "colere": "Dimanche matin ! Certains services down ! J'ai voulu aider ! J'ai essayé d'optimiser la convergence ! Je suis technicien système, pas réseau ! Comment je pouvais savoir pour le BGP ?!",
+            "anxieux": "Dimanche matin... les services ne répondaient plus. J'ai paniqué. J'ai voulu réparer. Mais je ne maîtrise pas le réseau. J'aurais dû attendre le responsable réseau...",
+            "menteur": "Dimanche, tout fonctionnait. J'ai fait ma vérification de routine, rien d'anormal. Les problèmes sont apparus lundi, je ne comprends pas pourquoi.",
+            "balance": "Dimanche matin. Le patron m'avait dit 'Si problème, règle-le, le responsable est en vacances'. J'ai obéi. Maintenant on me reproche d'avoir agi. Instructions contradictoires.",
+            "info_cle": "Le technicien a détecté des dysfonctionnements dès dimanche matin.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Lundi matin vers 8h, quand les appels ont commencé à affluer. J'ai consulté les logs et vu que des erreurs s'accumulaient depuis samedi soir. J'ai immédiatement alerté le patron et commencé les vérifications.",
+            "colere": "Lundi 8h avec les premiers appels ! J'ai regardé les logs, erreurs depuis samedi ! Mais personne ne surveillait le week-end ! Pas ma faute si personne ne regarde les alertes !",
+            "anxieux": "Lundi matin... la panique. Les appels, les erreurs dans les logs. J'ai réalisé que quelque chose clochait depuis samedi. Aurais-je dû surveiller plus activement le week-end ?...",
+            "menteur": "Lundi matin, premier signalement. Avant ça, aucune alerte, aucun dysfonctionnement visible. Début de panne soudain lundi.",
+            "balance": "Lundi matin. Mais les logs montrent des erreurs samedi. Si le système de monitoring avait envoyé des SMS au lieu d'emails, j'aurais réagi plus tôt. Système d'alerte défaillant.",
+            "info_cle": "Le technicien a été alerté lundi matin par les appels des utilisateurs.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Oui, la mise à jour majeure samedi que j'ai exécutée sous supervision à distance du responsable réseau. Procédure suivie. Puis dimanche, j'ai fait des ajustements de configuration pour optimiser. Peut-être une erreur.",
+            "colere": "Mise à jour samedi, procédure respectée ! Puis dimanche, optimisations ! Le responsable m'avait dit 'Tu peux faire des ajustements si nécessaire' ! J'ai obéi ! Maintenant c'est ma faute ?!",
+            "anxieux": "La mise à jour samedi... puis dimanche mes ajustements. J'ai voulu bien faire. Optimiser. Mais je ne maîtrise pas le routage. J'ai peut-être tout cassé...",
+            "menteur": "Uniquement la mise à jour planifiée samedi. Strictement selon la procédure. Aucune autre modification. Pas d'initiative personnelle.",
+            "balance": "Mise à jour samedi selon procédure. Dimanche, ajustements avec l'accord verbal du responsable réseau qui m'a dit 'Fais ce qui te semble nécessaire'. Lui qui m'a donné cette latitude.",
+            "info_cle": "Le technicien a fait des ajustements de configuration dimanche.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Vendredi soir, j'ai remplacé un switch défectueux. Samedi, mise à jour serveurs. Dimanche, modifications de routage. Trois interventions en trois jours. Rétrospectivement, trop de changements groupés.",
+            "colere": "Switch vendredi, serveurs samedi, routage dimanche ! Trop de changements ! Mais le responsable avait validé le planning ! Puis il part en vacances et me laisse gérer ! Piège !",
+            "anxieux": "Trois interventions... c'était trop. Je le sentais. Mais le planning était validé par le responsable. J'ai suivi les ordres. Aurais-je dû refuser ?...",
+            "menteur": "Uniquement la mise à jour planifiée samedi. Pas de remplacement de matériel vendredi, pas de modification dimanche. Un seul changement, bien contrôlé.",
+            "balance": "Trois interventions planifiées par le responsable réseau avant son départ. Switch vendredi sur sa demande, mise à jour samedi selon planning, dimanche il m'a dit de finaliser. Je suivais SES instructions.",
+            "info_cle": "Trois interventions majeures ont eu lieu en trois jours.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Dimanche, j'ai modifié le routage BGP pour essayer de résoudre les problèmes de convergence. Je ne maîtrise pas bien ce protocole. J'ai suivi un tutoriel en ligne. Mauvaise idée, j'ai aggravé les choses.",
+            "colere": "J'ai touché au BGP dimanche ! Je sais, je maîtrise pas ! Mais j'étais seul ! Le responsable injoignable ! J'ai googelé ! J'ai essayé ! Qu'est-ce que je devais faire d'autre ?!",
+            "anxieux": "Le BGP dimanche... je ne le maîtrise pas. Je le savais. Mais les services tombaient un par un. Je devais faire quelque chose. J'ai suivi un tuto. Grosse erreur...",
+            "menteur": "Je n'ai pas touché au routage BGP. C'est bien trop complexe pour moi. Je me suis limité aux vérifications matérielles et systèmes. Pas de modifications réseau.",
+            "balance": "J'ai modifié le BGP sur conseil du responsable réseau par téléphone dimanche. Il m'a dicté des commandes. Si elles étaient mauvaises, c'est sa faute, pas la mienne.",
+            "info_cle": "Le technicien a modifié le routage BGP dimanche sans le maîtriser.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Énormément. Tous les services m'appelaient directement. J'essayais de répondre à tout le monde, de prioriser. Le téléphone n'arrêtait pas. La secrétaire centralisait aussi, mais beaucoup me contactaient directement.",
+            "colere": "Harcelé non-stop ! Tous les services ! Téléphone, email, en personne ! Je ne pouvais pas travailler sur le diagnostic ! J'étais pompier partout en même temps !",
+            "anxieux": "Tellement de demandes... je courais partout. J'essayais de répondre à tous. Mais je sentais que je n'avançais pas sur le vrai problème. J'étais dépassé...",
+            "menteur": "Volume normal de demandes. Géré via le système de tickets habituel. Priorisation claire, workflow efficace. Rien d'exceptionnel.",
+            "balance": "Oui, beaucoup de demandes. Mais certains chefs de service me contactaient directement en me demandant de les prioriser discrètement. Pressions politiques inappropriées.",
+            "info_cle": "Le technicien était contacté directement par de nombreux services.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Oui, surtout de la comptabilité et de la restauration. Urgences légitimes avec risques financiers et sanitaires. J'ai fait de mon mieux pour les prioriser. Mais le patron me donnait des ordres contradictoires.",
+            "colere": "Compta et restauration non-stop ! Je comprends leurs urgences ! Mais le patron me disait de prioriser autre chose ! Ordres contradictoires ! Impossible de bosser comme ça !",
+            "anxieux": "La compta, la restauration... des urgences réelles. J'essayais de les prioriser. Mais d'autres services aussi avaient des urgences. Comment choisir ?...",
+            "menteur": "Demandes équilibrées de tous les services. Pas de service particulièrement insistant. Bonne compréhension mutuelle des contraintes.",
+            "balance": "Beaucoup de demandes, mais le service communication n'a quasi rien demandé. Preuve qu'ils sont sur un meilleur réseau. Inégalité dans l'infrastructure que je subis.",
+            "info_cle": "La comptabilité et la restauration étaient particulièrement insistantes.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Les chefs de service me contactaient, mais aussi leurs équipes. Multiplication des interlocuteurs. Parfois contradictions entre ce que le chef voulait et ce que l'équipe demandait. Confusion totale.",
+            "colere": "Contact avec tout le monde ! Chefs, employés, tout le monde m'appelait ! Demandes contradictoires ! 'Le patron veut ça' 'Non l'équipe a besoin d'autre chose' ! Chaos organisationnel !",
+            "anxieux": "Trop d'interlocuteurs... je ne savais plus à qui répondre. Les chefs disaient une chose, leurs équipes autre chose. J'étais perdu dans les priorités...",
+            "menteur": "Communication structurée via la hiérarchie. Uniquement avec les chefs de service. Pas de contact direct avec les équipes. Organisation claire.",
+            "balance": "Beaucoup de contacts directs parce que le patron et la secrétaire ne géraient pas correctement la centralisation. Échec de coordination au niveau du management.",
+            "info_cle": "Le manque de centralisation a créé de la confusion.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "D'abord les switchs et le routeur principal. Puis les serveurs critiques : fichiers, compta, auth. Puis les contrôleurs de domaine. Méthodologie un peu au hasard, je ne savais pas trop par où commencer.",
+            "colere": "J'ai vérifié tout ce que je connaissais ! Switchs, serveurs, routeur ! Mais le switch de cœur de réseau, je savais même pas qu'il existait ! Jamais formé dessus !",
+            "anxieux": "J'ai vérifié... un peu tout. Les équipements que je connais. Mais je sentais que je cherchais au mauvais endroit. Sans le responsable réseau, j'étais perdu...",
+            "menteur": "Vérification méthodique selon le plan de continuité. Équipements critiques dans l'ordre de priorité défini. Approche professionnelle et structurée.",
+            "balance": "J'ai vérifié ce que le patron me disait de vérifier. Il donnait les ordres. Moi j'exécutais. Si c'était les mauvaises priorités, c'est sa faute managériale.",
+            "info_cle": "Le technicien vérifiait les équipements sans méthodologie claire.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Le responsable réseau m'a guidé à distance vers le switch de cœur de réseau. Mais je ne savais pas y accéder physiquement. Il n'est pas dans le local technique principal. Perdu deux heures à le chercher.",
+            "colere": "Le fameux switch de cœur ! Le responsable me dit 'Va le vérifier' ! Mais il est où ?! Pas étiqueté ! Pas dans les plans ! Caché dans un faux-plafond ! Documentation nulle !",
+            "anxieux": "Le switch de cœur... le responsable m'en parlait. Mais je ne le trouvais pas. J'ai cherché partout. J'avais honte de dire que je ne savais pas où il était...",
+            "menteur": "Accès immédiat à tous les équipements. Documentation claire, étiquetage précis. Localisation facile de tous les éléments critiques.",
+            "balance": "Le switch de cœur n'est pas documenté. Le responsable réseau est le seul à savoir où il est. Information non partagée. Rétention d'information problématique.",
+            "info_cle": "Le switch de cœur de réseau était mal documenté et difficile à localiser.",
+            "variation_id": 2
+        },
+        {
+            "normal": "J'ai vérifié les logs système, les logs serveurs. Mais le responsable réseau m'a dit de vérifier les logs BGP. Je ne savais pas comment. Il m'a envoyé des commandes par SMS. Complexe, lent.",
+            "colere": "Les logs BGP ! Commandes cryptiques envoyées par SMS ! J'ai mis des heures à comprendre ! C'est pas mon domaine ! Je suis technicien système, pas ingénieur réseau !",
+            "anxieux": "Les logs BGP... je ne connaissais pas. Le responsable m'expliquait par téléphone. J'essayais de suivre. Mais c'était trop compliqué pour mon niveau...",
+            "menteur": "Analyse rapide des logs pertinents. Compétences suffisantes pour identifier les anomalies. Diagnostic efficace avec les outils disponibles.",
+            "balance": "J'ai vérifié ce que je savais vérifier. Mais les logs BGP, c'est du niveau ingénieur réseau. Si l'IUT voulait quelqu'un qui maîtrise ça, fallait recruter. Budget insuffisant.",
+            "info_cle": "Le technicien n'avait pas les compétences pour analyser les logs BGP.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "J'ai fait de mon mieux. Réactivité maximale, j'ai travaillé trois jours sans dormir. Communication : j'essayais de tenir les gens informés mais sans expertise réseau, je ne pouvais pas expliquer clairement. Limites de compétences.",
+            "colere": "Réactivité ? J'ai pas dormi pendant trois jours ! J'ai tout donné ! Communication ? J'expliquais ce que je comprenais ! Mais c'est pas mon domaine ! Compétences insuffisantes !",
+            "anxieux": "J'ai essayé... vraiment. Trois jours non-stop. Mais la communication ? Je ne savais pas quoi dire aux gens. Je ne comprenais pas moi-même le problème. J'ai échoué...",
+            "menteur": "Excellente réactivité et communication claire. Équipe soudée, informations précises partagées régulièrement. Performance individuelle et collective exemplaire.",
+            "balance": "Réactivité maximale de ma part. Mais communication pourrie à cause du patron qui censurait ce que je voulais dire. Il voulait minimiser, moi dire la vérité. Conflit.",
+            "info_cle": "Le technicien a travaillé intensément mais manquait de compétences pour communiquer clairement.",
+            "variation_id": 1
+        },
+        {
+            "normal": "L'équipe, c'était juste moi et le secrétaire. Le patron en réunion lundi, le responsable réseau absent. Communication : le secrétaire centralisait, moi je diagnostiquais. Binôme qui a fait ce qu'il pouvait.",
+            "colere": "L'équipe ?! Quelle équipe ?! J'étais seul ! Le secrétaire prenait les appels ! Le patron gérait la politique ! Le responsable en vacances ! Équipe à deux contre une panne majeure !",
+            "anxieux": "On était deux... le secrétaire et moi. On a essayé de se coordonner. Mais on était dépassés. On aurait dû demander de l'aide externe plus tôt...",
+            "menteur": "Équipe complète et efficace. Patron présent et directif, secrétaire coordinateur, moi en technique, responsable réseau en support à distance. Coordination parfaite.",
+            "balance": "J'étais quasiment seul. Le patron refusait d'appeler le prestataire externe d'astreinte pour des raisons budgétaires. Économies à court terme, catastrophe à long terme.",
+            "info_cle": "L'équipe était réduite : essentiellement le technicien et le secrétaire.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Réactivité bonne mais efficacité limitée par le manque de compétences réseau. Communication : le patron minimisait dans ses messages officiels, moi je disais la vérité aux gens sur le terrain. Incohérence.",
+            "colere": "Je bossais ! Mais le patron mentait aux autres services ! 'Tout va bien, bientôt résolu' ! Alors que je lui disais 'Je sais pas ce que je fais' ! Hypocrisie totale !",
+            "anxieux": "Je réagissais vite... mais sans savoir quoi faire. Communication : le patron voulait que je reste vague. Mais les gens voulaient la vérité. J'étais coincé entre les deux...",
+            "menteur": "Communication cohérente à tous les niveaux. Messages alignés entre management et technique. Transparence totale avec tous les interlocuteurs.",
+            "balance": "Réactivité correcte. Communication défaillante à cause d'un manque de plan de crise formalisé. Problème structurel, pas de faute individuelle. Organisation défaillante.",
+            "info_cle": "Les messages du patron et du technicien étaient incohérents.",
+            "variation_id": 3
+        }
+        ]
+    },
+    "patron": {
+        "0": [
+        {
+            "normal": "Lundi matin vers 10h, quand ma secrétaire m'a alerté d'un volume anormal d'appels. J'ai consulté les tableaux de bord de monitoring et constaté des anomalies réseau généralisées. J'ai immédiatement mobilisé l'équipe.",
+            "colere": "Lundi 10h ! Déjà une heure de panne ! Pourquoi personne n'a regardé les alertes du week-end ?! Le système a envoyé des notifications dimanche soir !",
+            "anxieux": "Lundi matin... quand ma secrétaire m'a alerté. J'aurais dû vérifier mes emails pro le week-end. Les alertes étaient là. J'ai peut-être réagi trop tard...",
+            "menteur": "Lundi en début d'après-midi, quand les problèmes sont devenus vraiment visibles. Le matin, rien de significatif dans les indicateurs.",
+            "balance": "Lundi 10h, via ma secrétaire. Mais le responsable réseau était en congé et le technicien de maintenance n'avait pas signalé les alertes du week-end. Défaillance d'équipe.",
+            "info_cle": "Le patron a été alerté lundi 10h par sa secrétaire.",
+            "variation_id": 1
+        },
+        {
+            "normal": "En réalité, dimanche soir. J'ai reçu des alertes sur mon téléphone personnel du système de monitoring. Mais c'était le week-end, j'ai pensé que ça se stabiliserait. Erreur de jugement de ma part.",
+            "colere": "Dimanche soir ! J'ai vu les alertes ! Mais je ne voulais pas rappeler le responsable réseau pendant ses congés ! Maintenant je regrette ! Mais lui aurait dû vérifier !",
+            "anxieux": "Dimanche soir... les alertes sur mon téléphone. J'ai hésité à réagir immédiatement. C'était peut-être juste un faux positif. Mais si j'avais agi tout de suite...",
+            "menteur": "Lundi matin quand j'ai ouvert ma session. Aucune alerte visible avant. Le système de monitoring n'a pas détecté de problème pendant le week-end.",
+            "balance": "Dimanche soir, alertes reçues. Mais le responsable réseau m'avait assuré vendredi que tout était stable pour le week-end. Je lui ai fait confiance. Il m'a mal briefé.",
+            "info_cle": "Le patron a reçu des alertes dimanche soir sur son téléphone.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Samedi soir, juste après la mise à jour. Le technicien de maintenance m'a appelé pour signaler des messages d'erreur inhabituels. Je lui ai dit de surveiller et de me rappeler si ça empirait. Ça a empiré.",
+            "colere": "Samedi soir ! Le technicien m'appelle avec des erreurs ! Je lui dis de surveiller ! Dimanche, il ne me rappelle pas ! Lundi, catastrophe ! Communication défaillante !",
+            "anxieux": "Samedi soir... le technicien était inquiet. Je l'ai rassuré, je lui ai dit que c'était normal après une mise à jour. Mais si j'avais pris ça plus au sérieux...",
+            "menteur": "Lundi matin, premier signalement. Le week-end s'est passé sans incident selon tous les rapports. Pas d'alertes, pas d'appels, situation normale.",
+            "balance": "Samedi soir. Mais le responsable réseau m'avait assuré que la mise à jour était testée et sécurisée. S'il y avait des risques, il aurait dû me prévenir avant de partir.",
+            "info_cle": "Le technicien de maintenance a signalé des erreurs au patron dès samedi soir.",
+            "variation_id": 3
+        }
+        ],
+        "1": [
+        {
+            "normal": "Oui, une mise à jour majeure des serveurs samedi matin. Planifiée depuis trois semaines, validée en comité technique. Le responsable réseau a supervisé à distance, le technicien de maintenance a exécuté.",
+            "colere": "Mise à jour majeure samedi ! Planifiée ! Testée en pré-prod ! Et pourtant ça a merdé ! Pourquoi ?! Le responsable réseau n'a pas assez testé ! Ou le technicien a mal exécuté !",
+            "anxieux": "La mise à jour samedi... c'était prévu. J'ai validé. Mais peut-être que j'aurais dû exiger plus de tests. Peut-être que j'ai sous-estimé les risques...",
+            "menteur": "Aucune modification majeure récente. Juste les mises à jour de sécurité automatiques habituelles. Rien qui expliquerait une panne de cette ampleur.",
+            "balance": "Oui, mise à jour samedi. Mais le responsable réseau n'a pas respecté le protocole de vérification post-intervention. Il est parti en congé sans valider que tout fonctionnait.",
+            "info_cle": "Une mise à jour majeure planifiée a eu lieu samedi matin.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Oui, plusieurs interventions convergent malheureusement : remplacement d'un switch vendredi, mise à jour serveur samedi, modification pare-feu jeudi. Trop de changements simultanés, contre nos propres règles.",
+            "colere": "Trois interventions en trois jours ! Switch, pare-feu, mise à jour ! On ne fait jamais ça ! Qui a autorisé ces changements groupés ?! Moi apparemment ! Erreur de ma part !",
+            "anxieux": "Plusieurs modifications... je les ai toutes validées séparément. Mais je n'ai pas vu qu'elles se cumulaient. J'aurais dû avoir une vue d'ensemble. C'est ma responsabilité...",
+            "menteur": "Les modifications étaient espacées et contrôlées. Aucune concentration anormale de changements. Respect des procédures de gestion du changement.",
+            "balance": "Oui, trop de changements. Le responsable réseau les a tous planifiés juste avant son départ. Coïncidence ? Ou il voulait finir des dossiers pour partir tranquille ?",
+            "info_cle": "Trois interventions majeures ont eu lieu en trois jours (jeudi, vendredi, samedi).",
+            "variation_id": 2
+        },
+        {
+            "normal": "La mise à jour samedi, oui. Mais aussi, le technicien de maintenance a fait des ajustements de configuration dimanche sans supervision. Il pensait bien faire en optimisant. Ça a probablement aggravé.",
+            "colere": "Le technicien a bidouillé dimanche ! Sans autorisation ! Sans supervision ! Il a changé des configs critiques ! Qui lui a dit de faire ça ?! Personne !",
+            "anxieux": "Le technicien... il a modifié des choses dimanche. Il m'a dit qu'il voulait optimiser. Je n'étais pas d'accord mais c'était trop tard. Aurais-je dû être plus ferme ?...",
+            "menteur": "Uniquement la mise à jour planifiée et documentée. Aucune autre intervention. Le technicien a suivi strictement les procédures sans aucune initiative personnelle.",
+            "balance": "Oui, modifications non autorisées dimanche. Le technicien de maintenance a outrepassé ses prérogatives. Mais je n'ai pas su le superviser correctement pendant le week-end.",
+            "info_cle": "Le technicien de maintenance a fait des modifications non autorisées dimanche.",
+            "variation_id": 3
+        }
+        ],
+        "2": [
+        {
+            "normal": "Énormément. Tous les services nous ont contactés. J'ai organisé une réunion de crise mardi avec tous les chefs de service pour expliquer la situation et prioriser les interventions selon la criticité.",
+            "colere": "Harcelé de toutes parts ! Tous les services voulaient être prioritaires ! La compta menaçait, la restauration hurlait ! J'essayais de rester professionnel mais c'était l'enfer !",
+            "anxieux": "Tellement de demandes... tous avec des urgences légitimes. Comment prioriser entre la sécurité alimentaire et les obligations fiscales ? Cette responsabilité était écrasante...",
+            "menteur": "Un volume normal de demandes pour ce type d'incident. Géré via les canaux habituels. Priorisation claire selon le plan de continuité. Rien d'exceptionnel.",
+            "balance": "Oui, beaucoup. Mais certains chefs de service étaient compréhensifs, d'autres agressifs. Le patron de la compta m'a accusé d'incompétence devant d'autres collègues. Inacceptable.",
+            "info_cle": "Une réunion de crise a été organisée mardi avec tous les chefs de service.",
+            "variation_id": 1
+        },
+        {
+            "normal": "Oui, de tous les services. Mais j'ai été surpris que le service communication ne signale presque rien. Leur réseau WiFi récent semble avoir été épargné. Ça confirme que le problème touche surtout l'ancien réseau filaire.",
+            "colere": "Tous les services sauf la communication ! Eux nickel ! Pendant que les autres pleuraient, eux travaillaient ! C'est quoi cette inégalité ?! Infrastructure à deux vitesses !",
+            "anxieux": "Beaucoup de services... mais pourquoi la communication a été épargnée ? Est-ce ma faute si l'infrastructure n'est pas homogène ? J'ai demandé des budgets de modernisation...",
+            "menteur": "Tous les services ont été touchés équitablement. Pas de différence significative d'impact selon les services. Problème généralisé et uniforme.",
+            "balance": "Oui, tous sauf communication. Preuve que mon choix de moderniser d'abord le réseau WiFi était bon. Mais la direction refuse de financer la modernisation complète.",
+            "info_cle": "Le service communication a été très peu impacté grâce au réseau WiFi récent.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Oui, et j'ai dû gérer les demandes mais aussi les tensions entre services. Certains accusaient d'autres de passer en priorité. La restauration reprochait à la compta d'être favorisée. Climat tendu.",
+            "colere": "Les services se battaient pour être prioritaires ! S'accusaient mutuellement ! Je passais mon temps à arbitrer des conflits au lieu de résoudre le problème technique !",
+            "anxieux": "Les tensions entre services... c'était terrible. Je devais justifier chaque décision de priorisation. Certains ne me croyaient pas. Je perdais leur confiance...",
+            "menteur": "Communication sereine et professionnelle avec tous les services. Compréhension mutuelle des contraintes. Collaboration exemplaire dans l'adversité.",
+            "balance": "Oui, beaucoup de tensions. Mais le service communication n'a pas joué son rôle de gestion de la communication de crise. Je le leur ai demandé, ils ont refusé. Égoïsme.",
+            "info_cle": "Des tensions entre services sont apparues sur les questions de priorisation.",
+            "variation_id": 3
+        }
+        ],
+        "3": [
+        {
+            "normal": "En priorité : le switch de cœur de réseau, les serveurs principaux, les contrôleurs de domaine. Ensuite les serveurs de fichiers et de comptabilité. Priorisation basée sur l'analyse d'impact métier.",
+            "colere": "On a tout vérifié ! Switch, serveurs, routeurs, pare-feu ! Ça a pris 48 heures pour trouver ! Une config réseau mal mergée lors de la mise à jour ! Simple mais caché !",
+            "anxieux": "Les équipements critiques... je crois. Le technicien suivait une méthodologie. Mais sans le responsable réseau, on tâtonnait. Peut-être qu'on a perdu du temps...",
+            "menteur": "Tous les équipements selon le protocole standard. Diagnostic systématique et exhaustif. Identification rapide de la source du problème.",
+            "balance": "Le switch de cœur en dernier ! Le technicien ne savait même pas qu'il existait ! Le responsable réseau ne l'avait jamais mentionné dans la doc ! Documentation défaillante !",
+            "info_cle": "Le switch de cœur de réseau a été vérifié en priorité.",
+            "variation_id": 1
+        },
+        {
+            "normal": "D'abord les équipements des services les plus impactés : serveurs de comptabilité, de restauration. Puis remontée vers l'infrastructure centrale. Approche orientée métier plutôt que technique.",
+            "colere": "Mauvaise approche ! On aurait dû commencer par le cœur de réseau ! Mais non, on partait des symptômes ! On a perdu un jour entier à chercher au mauvais endroit !",
+            "anxieux": "On a commencé par les serveurs métier... mais peut-être que c'était la mauvaise méthode. Le responsable réseau aurait su par où commencer. Lui aurait diagnostiqué vite...",
+            "menteur": "Approche méthodique du cœur vers la périphérie. Exactement comme prévu dans les procédures. Diagnostic professionnel et efficace.",
+            "balance": "J'ai demandé de vérifier d'abord les services qui criaient le plus fort. Décision politique, pas technique. Le technicien voulait commencer par le réseau central, je l'ai empêché.",
+            "info_cle": "L'approche a d'abord ciblé les serveurs des services les plus impactés.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Le technicien a vérifié les journaux système, les logs réseau, puis les équipements physiques. Approche logicielle d'abord, puis matérielle. Le problème était dans une configuration réseau mergée incorrectement.",
+            "colere": "Les logs ! Des milliers de lignes ! Le technicien a mis des heures à trouver ! Une simple erreur de merge de config ! Si on avait des meilleurs outils d'analyse, diagnostic en 1h !",
+            "anxieux": "Les logs... le technicien les analysait ligne par ligne. Ça prenait tellement de temps. J'avais peur qu'on ne trouve jamais. La pression montait chaque heure...",
+            "menteur": "Analyse rapide et efficace des logs. Identification immédiate de l'anomalie. Résolution méthodique selon le plan prévu. Timing optimal.",
+            "balance": "Le technicien cherchait au hasard dans les logs. Sans le responsable réseau qui connaît les patterns d'erreur, c'était chercher une aiguille dans une botte de foin. Temps perdu.",
+            "info_cle": "Le problème était une erreur de merge de configuration réseau.",
+            "variation_id": 3
+        }
+        ],
+        "4": [
+        {
+            "normal": "Réactivité correcte compte tenu des circonstances. L'équipe a travaillé jour et nuit. Mais la communication était notre point faible. J'ai minimisé la gravité pour ne pas paniquer la direction. Erreur stratégique.",
+            "colere": "Réactivité maximale ! On n'a pas dormi pendant trois jours ! Mais communication merdique ! J'admets ! J'ai voulu protéger mon service mais ça s'est retourné contre nous !",
+            "anxieux": "L'équipe... a fait de son mieux. Mais la communication ? J'ai mal géré. J'ai caché des choses, minimisé. Maintenant les gens ne me font plus confiance. J'ai tout gâché...",
+            "menteur": "Excellente réactivité et communication transparente. L'équipe a fonctionné de manière exemplaire. Communication claire à tous les niveaux. Gestion de crise modèle.",
+            "balance": "Réactivité bonne. Mais communication pourrie à cause de moi. J'ai voulu cacher que c'était notre faute. Maintenant tout le monde le sait quand même. J'aurais dû être honnête dès le début.",
+            "info_cle": "Le patron a minimisé la gravité pour protéger le service informatique.",
+            "variation_id": 1
+        },
+        {
+            "normal": "L'équipe manquait de compétences sans le responsable réseau. Le technicien de maintenance a fait de son mieux mais ce n'est pas son domaine d'expertise. Communication : j'aurais dû demander l'aide du service communication.",
+            "colere": "Compétences insuffisantes sans le responsable ! Le technicien pas formé ! Communication amateur ! J'aurais dû accepter l'aide du service com' mais mon ego a refusé !",
+            "anxieux": "L'équipe... dépassée. Le technicien n'était pas formé pour ça. Communication ? J'ai essayé seul alors que j'aurais dû demander de l'aide. Trop d'orgueil de ma part...",
+            "menteur": "L'équipe était compétente et bien préparée. Communication professionnelle. Gestion autonome et efficace de la crise sans aide extérieure nécessaire.",
+            "balance": "Le technicien faisait de son mieux mais il n'avait pas le niveau. Le responsable réseau aurait dû former d'autres personnes. Lui seul savait tout. Erreur managériale de ne pas créer de redondance.",
+            "info_cle": "L'équipe manquait de compétences sans le responsable réseau.",
+            "variation_id": 2
+        },
+        {
+            "normal": "Réactivité bonne, mais coordination défaillante. Le technicien et moi n'étions pas sur la même longueur d'onde. Communication externe mauvaise, interne stressante. Manque de plan de gestion de crise clair.",
+            "colere": "Coordination nulle ! Le technicien faisait ce qu'il voulait ! Je donnais des ordres contradictoires ! Communication catastrophique ! On n'a pas de putain de plan de crise !",
+            "anxieux": "Coordination... difficile. Je ne savais pas comment manager cette crise. Le technicien attendait des directives claires, je n'arrivais pas à en donner. J'ai échoué comme leader...",
+            "menteur": "Coordination parfaite et communication fluide. Plan de gestion de crise activé et suivi. Leadership efficace et équipe soudée. Performance collective excellente.",
+            "balance": "Mauvaise coordination. Mais c'est parce que la direction ne nous a jamais alloué le budget pour former l'équipe et créer de vrais plans de crise. On improvise toujours. Pas notre faute.",
+            "info_cle": "L'absence de plan de gestion de crise formalisé a aggravé la situation.",
+            "variation_id": 3
+        }
+        ]
+    
+    }
+    }
+}

@@ -14,13 +14,16 @@ namespace Script.Room
             {
                 case "GameObject_Bgauche":
                     Debug.Log(gameObject.name + " bgauche");
-                    //TODO
+                    SceneManager.LoadScene("Building/B1/DirectorCom");
                     break;
                 case "GameObject_Bdroit":    
                     //TODO
                     break;
-                case "GameObject_Bbas":
+                case "GameObject_Bmil":
                     //TODO
+                    break;
+                case "GameObject_Bdoor":
+                    SceneManager.LoadScene("Map");
                     break;
             }
         }
