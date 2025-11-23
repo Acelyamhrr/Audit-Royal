@@ -40,7 +40,8 @@ public class VeritesByService
 [Serializable]
 public class VeritesScenarioRoot
 {
-    public int scenario; // a implémenter plus tard
+    public int scenario;
+    public int niveau;
     public Dictionary<string, VeritesByService> verites; 
 }
 
