@@ -43,6 +43,11 @@ public class RapportManager
         
     }
 
+    private List<string> getInfos(int numQuestion)
+    {
+        return carnetManager.getInfos(numQuestion);
+    }
+
     //Renvoie si la réponse est vraie ou fausse
     private bool checkTrue(Service service, Metier metier, int numQuestion, int numInfo)
     {
