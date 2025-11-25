@@ -38,6 +38,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestDialogueManager.unity
     guid: de1af74ccb3a75190af6ec36a027fb3d
+  - enabled: 1
+    path: Assets/Scenes/Building/B4/Chef.unity
+    guid: 00573e7fbcea69b459c7387d132b31be
+  - enabled: 1
+    path: Assets/Scenes/Building/B4/Secretaire.unity
+    guid: 54a691cab73966c42b33c6e9b687f90d
+  - enabled: 1
+    path: Assets/Scenes/Building/B2/SecretaireCom.unity
+    guid: 3f2453817a095da4b9fdde048e1b3efa
+  - enabled: 1
+    path: Assets/Scenes/Building/B2/Reseau.unity
+    guid: 7ee55a77c6f6f514cb5c2b1e90fbe9a7
+  - enabled: 1
+    path: Assets/Scenes/Building/B2/Technicien.unity
+    guid: 3e7438e0fbdb1554dba43683ace80acb
+  - enabled: 1
+    path: Assets/Scenes/Building/B2/Director.unity
+    guid: 375e5611d35e93344b606419a30343b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
