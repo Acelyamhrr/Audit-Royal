@@ -174,6 +174,35 @@ public class CarnetManager
         }
     }
 
+    //Récupère les infos clefs d'une question dans le carnet
+    private List<string> getInfos(int numQuestion)
+    {
+        string json File.ReadAllText(this.pathFile);
+        JObject obj = JObject.Parse(json);
+
+        foreach (var service in (JObject)obj["informations"])
+        {
+            foreach (var metier in (JObject)service.Value)
+            {
+                JArray infos (JArray)metier.Value[numQuestion];
+
+                List<string> lst = new List<>();
+
+                for (int i = 0; i < infos.Count; i++)
+                {
+                    string infoText = getInfo(service.Name, metier.Name, numQuestion.ToString(), infos[i].ToString());
+                    if (!infoText.StartsWith("["))
+                    {
+                        lst.add(infoText);
+                    }
+                }
+
+                return lst;
+            }
+        }
+        
+    }
+
     public List<string> getInfos()
     {
         List<string> lst = new List<>();
