@@ -13,17 +13,18 @@ namespace Script.Room
             switch (gameObject.name)
             {
                 case "GameObject_bg":
-                    Debug.Log(gameObject.name + " bgauche");
+                    SceneManager.LoadScene("Scenes/Building/B4/Chef");
                     //TODO
                     break;
-                case "GameObject_bgm":    
+                case "GameObject_bgm":   
+                    SceneManager.LoadScene("Scenes/Building/B4/Secretaire");
                     //TODO
                     break;
                 case "GameObject_bmd":
                     //TODO
                     break;
                 case "GameObject_bd":
-                    //TODO
+                   
                     break;
                 case "GameObject_door":
                     SceneManager.LoadScene("Map");
