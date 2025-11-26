@@ -12,23 +12,50 @@ using Unity.Services.Leaderboards.Exceptions;
 
 public class LeaderboardsManager : MonoBehaviour
 {
-    //[HideInInspector] public PlayerControls playerScript;
 
+    private const string clefPseudo = "NomDuJoueur"; 
+
+    [Header("UI References")]
     [SerializeField] private GameObject leaderboardParent;
     [SerializeField] private Transform leaderboardContentParent;
     [SerializeField] private Transform leaderboardItemPrefab;
-    [SerializeField] private Sprite bronzeTierSprite, silverTierSprite, goldenTierSprite;
+    
+    [Header("Tier Sprites")]
+    [SerializeField] private Sprite bronzeTierSprite;
+    [SerializeField] private Sprite silverTierSprite;
+    [SerializeField] private Sprite goldenTierSprite;
+
 
     private string leaderboardID = "lbcall";
+    
+
+    private string pseudoActuel;
 
     private async void Start()
     {
+
         await UnityServices.InitializeAsync();
+        
+      
+        pseudoActuel = PlayerPrefs.GetString(clefPseudo, "Invité Anonyme");
+        
+       
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
 
-        LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardID, 0);
+        await MettreAJourPseudo(pseudoActuel);
 
+        try
+        {
+            await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardID, 0);
+        }
+        catch (LeaderboardsException e)
+        {
+            Debug.LogWarning("Erreur d'ajout de score initial : " + e.Reason);
+        }
+        
         leaderboardParent.SetActive(false);
+        
+        Debug.Log("Leaderboard initialisé. Pseudo du joueur : " + pseudoActuel);
     }
 
     private async void Update()
@@ -43,37 +70,62 @@ public class LeaderboardsManager : MonoBehaviour
             {
                 leaderboardParent.SetActive(true);
                 UpdateLeaderboard();
-
+                
                 try
                 {
-                    await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardID, 100 /*playerScript.playerScore.Value*/);
+                    await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardID, 100); 
+                    Debug.Log("Score 100 soumis pour " + pseudoActuel);
                 }
                 catch (LeaderboardsException e)
                 {
-                    Debug.Log(e.Reason);
+                    Debug.LogWarning("Erreur lors de la soumission du score : " + e.Reason);
                 }
-                //playerScript.playerScore.Value = 0;
-
+            }
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AjouterScoresDeTest(10); 
+        }
+    }
+ 
+    public async Task MettreAJourPseudo(string nouveauPseudo)
+    {
+        if (string.IsNullOrWhiteSpace(nouveauPseudo) || nouveauPseudo == AuthenticationService.Instance.PlayerName)
+        {
+            return;
+        }
+        
+        if (AuthenticationService.Instance.IsSignedIn)
+        {
+            try
+            {
+                await AuthenticationService.Instance.UpdatePlayerNameAsync(nouveauPseudo);
+                Debug.Log("Pseudo mis à jour sur le serveur : " + nouveauPseudo);
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogError("Erreur lors de la mise à jour du pseudo : " + ex.Message);
             }
         }
     }
-
+    
     private async void UpdateLeaderboard()
     {
         while (Application.isPlaying && leaderboardParent.activeInHierarchy)
         {
             LeaderboardScoresPage leaderboardScoresPage = await LeaderboardsService.Instance.GetScoresAsync(leaderboardID);
-
+            
             foreach (Transform t in leaderboardContentParent)
             {
                 Destroy(t.gameObject);
             }
-
             foreach (LeaderboardEntry entry in leaderboardScoresPage.Results)
             {
-                Transform leaderboardItem = Instantiate(leaderboardItemPrefab, leaderboardContentParent);
-                leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName;
-                leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString();
+                 Transform leaderboardItem = Instantiate(leaderboardItemPrefab, leaderboardContentParent);
+                 
+                leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName; // Nom
+                leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString(); // Score
 
                 Sprite tierSprite = null;
                 switch (entry.Tier)
@@ -88,12 +140,40 @@ public class LeaderboardsManager : MonoBehaviour
                         tierSprite = goldenTierSprite;
                         break;
                 }
-
-                leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite;
+                
+                leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite; // Tier Image
             }
 
-
-            await Task.Delay(500);
+            await Task.Delay(500); 
         }
+    }
+
+    public async void AjouterScoresDeTest(int nombreDeSoumissions)
+    {
+        Debug.Log("Soumission de " + nombreDeSoumissions + " scores de test pour le joueur local...");
+        
+        string leaderboardId = "lbcall"; 
+        
+        for (int i = 1; i <= nombreDeSoumissions; i++)
+        {
+            int score = Random.Range(1000, 50000); 
+            
+            try
+            {
+                await LeaderboardsService.Instance.AddPlayerScoreAsync(
+                    leaderboardId, 
+                    score
+                );
+                Debug.Log("Score " + score + " soumis.");
+            }
+            catch (LeaderboardsException e)
+            {
+                Debug.LogError("Erreur lors de l'ajout du score : " + e.Reason);
+            }
+            
+            await Task.Delay(50); 
+        }
+        
+        Debug.Log("Simulation de scores terminée. Appuyez sur ESC pour voir le classement mis à jour.");
     }
 }
