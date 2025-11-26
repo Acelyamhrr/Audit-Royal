@@ -9,24 +9,37 @@ namespace Script.Room
 
         private void OnMouseDown()
         {
-            Debug.Log("OnMouseDown");
+            Debug.Log($"Clic sur {gameObject.name}");
+            
+            string sceneACharger = "";
+            
             switch (gameObject.name)
             {
                 case "GameObject_bg":
-                    Debug.Log(gameObject.name + " bgauche");
-                    //TODO
+                    sceneACharger = "ComptaPatron";
                     break;
-                case "GameObject_bd":    
-                    //TODO
+                case "GameObject_bd":
+                    sceneACharger = "ComptaComptable";
                     break;
                 case "GameObject_bm":
-                    //TODO
+                    sceneACharger = "ComptaSecretaire";
                     break;
                 case "GameObject_door":
                     SceneManager.LoadScene("Map");
-                    break;
+                    return;
+            }
+            
+            if (!string.IsNullOrEmpty(sceneACharger))
+            {
+                if (GameStateManager.Instance != null)
+                {
+                    GameStateManager.Instance.SelectionnerPersonnage(sceneACharger);
+                }
+                
+                SceneManager.LoadScene(sceneACharger);
             }
         }
+
 
     }
 }

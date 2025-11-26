@@ -5,8 +5,9 @@ public class EntryDetection : MonoBehaviour
 {
     private Collider2D zoneCollider;
     private Collider2D playerCollider;
-    
-    private bool hasLoadedScene = false; // pour �viter de recharger en boucle
+
+    private bool hasLoadedScene = false; 
+    private string sceneACharger = "";
 
     private void Start()
     {
@@ -17,24 +18,39 @@ public class EntryDetection : MonoBehaviour
     {
         if (!hasLoadedScene && playerCollider != null && zoneCollider.OverlapPoint(playerCollider.bounds.center))
         {
-            hasLoadedScene = true; // emp�cher rechargement
+            hasLoadedScene = true;
+
             switch (gameObject.name)
             {
                 case "EntryZoneCrous":
-                    SceneManager.LoadScene("InsideBuilding1");
+                    sceneACharger = "Crous";
                     break;
+
                 case "EntryZoneInfo":
-                    SceneManager.LoadScene("InsideBuilding2");
+                    sceneACharger = "Informatique";
                     break;
+
                 case "EntryZoneCompta":
-                    SceneManager.LoadScene("Compta");
+                    sceneACharger = "Compta";
                     break;
+
                 case "EntryZoneCom":
-                    SceneManager.LoadScene("InsideBuilding4");
+                    sceneACharger = "Communication";
                     break;
+
                 case "EntryZoneBTP":
-                    SceneManager.LoadScene("InsideBuilding4");
+                    sceneACharger = "Techniciens";
                     break;
+            }
+
+            if (!string.IsNullOrEmpty(sceneACharger))
+            {
+                if (GameStateManager.Instance != null)
+                {
+                    GameStateManager.Instance.EntrerDansBatiment(sceneACharger);
+                }
+
+                SceneManager.LoadScene(sceneACharger);
             }
         }
     }
@@ -44,11 +60,7 @@ public class EntryDetection : MonoBehaviour
         if (other.CompareTag("Player"))
             playerCollider = other;
     }
-    
-    
-    
-    
-        
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

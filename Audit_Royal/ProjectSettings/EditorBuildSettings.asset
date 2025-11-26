@@ -21,51 +21,49 @@ EditorBuildSettings:
     path: Assets/Scenes/Map.unity
     guid: 15214533e35f8ec4ca8e3414ddf83cfe
   - enabled: 1
-    path: Assets/Scenes/Building/B1/InsideBuilding1.unity
+    path: Assets/Scenes/Building/CROUS/Crous.unity
     guid: 29c594ae2ff271549bf6c50e41ccb86b
   - enabled: 1
-    path: Assets/Scenes/Building/B4/InsideBuilding4.unity
+    path: Assets/Scenes/Building/TECHNICIENS/Techniciens.unity
     guid: f59a4c93b309d3640b9c34d9e1a56e29
   - enabled: 1
-    path: Assets/Scenes/Building/B2/InsideBuilding2.unity
+    path: Assets/Scenes/Building/iNFORMATIQUE/Informatique.unity
     guid: 7481046bdb777224bad6a0fc6638e8bc
   - enabled: 1
-    path: Assets/Scenes/Building/B3/InsideBuilding3.unity
+    path: Assets/Scenes/Building/COMMUNICATION/Communication.unity
     guid: 4f2313a1578d68940af5bc8eff7248ec
   - enabled: 0
-    path: Assets/Scenes/Building/B1/DirectorCom.unity
+    path: Assets/Scenes/Building/CROUS/DirectorCom.unity
     guid: df8c8996489fbed408076990c4397bf9
   - enabled: 0
     path: Assets/Scenes/TestDialogueManager.unity
     guid: de1af74ccb3a75190af6ec36a027fb3d
   - enabled: 1
-    path: Assets/Scenes/Building/B3/ComptaComptable.unity
+    path: Assets/Scenes/Building/COMPTABILITE/ComptaComptable.unity
     guid: 48af15fc0af92488d8b9eceb1874540b
   - enabled: 1
-    path: Assets/Scenes/Building/B3/Compta.unity
+    path: Assets/Scenes/Building/COMPTABILITE/Compta.unity
     guid: 6d5751bc9e1d9b905b63f2162f14b846
   - enabled: 1
-    path: Assets/Scenes/Building/B3/ComptaDirector.unity
+    path: Assets/Scenes/Building/COMPTABILITE/ComptaDirector.unity
     guid: adc06611aad09c087ad9d3cd649ec99b
   - enabled: 1
-    path: Assets/Scenes/Building/B3/ComptaSecretaire.unity
+    path: Assets/Scenes/Building/COMPTABILITE/ComptaSecretaire.unity
     guid: 115af2eeee5a24e6e8fd46d58fb6500d
-    path: Assets/Scenes/Building/B4/Chef.unity
-    guid: 00573e7fbcea69b459c7387d132b31be
   - enabled: 1
-    path: Assets/Scenes/Building/B4/Secretaire.unity
+    path: Assets/Scenes/Building/TECHNICIENS/Secretaire.unity
     guid: 54a691cab73966c42b33c6e9b687f90d
   - enabled: 1
-    path: Assets/Scenes/Building/B2/SecretaireCom.unity
+    path: Assets/Scenes/Building/iNFORMATIQUE/SecretaireCom.unity
     guid: 3f2453817a095da4b9fdde048e1b3efa
   - enabled: 1
-    path: Assets/Scenes/Building/B2/Reseau.unity
+    path: Assets/Scenes/Building/iNFORMATIQUE/Reseau.unity
     guid: 7ee55a77c6f6f514cb5c2b1e90fbe9a7
   - enabled: 1
-    path: Assets/Scenes/Building/B2/Technicien.unity
+    path: Assets/Scenes/Building/iNFORMATIQUE/Technicien.unity
     guid: 3e7438e0fbdb1554dba43683ace80acb
   - enabled: 1
-    path: Assets/Scenes/Building/B2/Director.unity
+    path: Assets/Scenes/Building/iNFORMATIQUE/Director.unity
     guid: 375e5611d35e93344b606419a30343b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

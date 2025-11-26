@@ -9,25 +9,37 @@ namespace Script.Room
 
         private void OnMouseDown()
         {
-            Debug.Log("OnMouseDown");
+            Debug.Log($"Clic sur {gameObject.name}");
+            
+            string sceneACharger = "";
+            
             switch (gameObject.name)
             {
                 case "GameObject_Bg":
-                    SceneManager.LoadScene("Scenes/Building/B2/SecretaireCom");
-                    
+                    sceneACharger = "SecretaireCom"; // ou créer une scène spécifique
                     break;
-                case "GameObject_Bd":    
-                    SceneManager.LoadScene("Scenes/Building/B2/Technicien");
+                case "GameObject_Bd":
+                    sceneACharger = "Technicien";
                     break;
                 case "GameObject_Hg":
-                    SceneManager.LoadScene("Scenes/Building/B2/Reseau");
+                    sceneACharger = "Reseau";
                     break;
                 case "GameObject_Hd":
-                    SceneManager.LoadScene("Scenes/Building/B2/Director");
+                    sceneACharger = "Director";
                     break;
                 case "GameObject_door":
                     SceneManager.LoadScene("Map");
-                    break;
+                    return;
+            }
+            
+            if (!string.IsNullOrEmpty(sceneACharger))
+            {
+                if (GameStateManager.Instance != null)
+                {
+                    GameStateManager.Instance.SelectionnerPersonnage(sceneACharger);
+                }
+                
+                SceneManager.LoadScene(sceneACharger);
             }
         }
 

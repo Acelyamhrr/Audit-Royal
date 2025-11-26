@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c9589f87d44e15cd79305667a146618f
+guid: 4a6b9003ae66320bba03fca63f3932d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7321621961471335682
-    second: bureau_2_0
+      213: 7416670173700551888
+    second: patron_enerve_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bureau_2_0
+      name: patron_enerve_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 2848
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20d9231e160ab9560800000000000000
-      internalID: 7321621961471335682
+      spriteID: 0d4f7af4a3e4de660800000000000000
+      internalID: 7416670173700551888
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bureau_2_0: 7321621961471335682
+      patron_enerve_0: 7416670173700551888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
