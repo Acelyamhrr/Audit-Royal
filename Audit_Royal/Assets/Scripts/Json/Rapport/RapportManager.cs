@@ -68,6 +68,7 @@ public class RapportManager : MonoBehaviour
     	{
 			//Créer un panel pour la question et la réponse 
 			GameObject panelObj = new GameObject("PanelText");
+			panelObj.AddComponent<VerticalLayoutGroup>();
 			panelObj.transform.SetParent(content.transform, false);
 
         	// Créer un nouvel objet texte question
@@ -83,7 +84,18 @@ public class RapportManager : MonoBehaviour
         	tmp.alignment = TextAlignmentOptions.Left;
         	tmp.color = Color.black;
 
-			
+			// Créer le texte pour la réponse
+			GameObject repObj = new GameObject("ReponseText");
+			// Ajouter le composant TextMeshProUGUI
+        	TextMeshProUGUI tmp2 = repObj.AddComponent<TextMeshProUGUI>();
+        	tmp2.text = "-";
+
+        	// Ajuster la police, la taille, l’alignement
+        	tmp2.fontSize = 20;
+        	tmp2.alignment = TextAlignmentOptions.Left;
+        	tmp2.color = Color.black;
+
+			repObj.transform.SetParent(panelObj.transform, false);
     	}
 	}
 
