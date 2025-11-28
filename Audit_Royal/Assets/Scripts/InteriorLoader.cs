@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Charge dynamiquement le prefab du service correspondant
+/// Chaque prefab contient son propre Canvas et gère son affichage
+/// </summary>
 public class InteriorLoader : MonoBehaviour
 {
-    [Tooltip("Parent sous lequel instancier le prefab (vide ou un Canvas).")]
-    public Transform container;
-
     [Tooltip("Liste de prefabs de services (nom du prefab doit être l'identifiant du service).")]
     public GameObject[] servicePrefabs;
 
@@ -46,17 +47,20 @@ public class InteriorLoader : MonoBehaviour
             service = "info"; // Service par défaut pour les tests
         }
 
-        // Recherche du prefab
+        // Recherche du prefab correspondant au service
         foreach (var prefab in servicePrefabs)
         {
             if (prefab.name.Equals(service, System.StringComparison.OrdinalIgnoreCase))
             {
-                Instantiate(prefab, container != null ? container : null);
+                // Instancier directement sans parent
+                // Le Canvas du prefab gère l'affichage et le responsive
+                Instantiate(prefab);
                 Debug.Log($"Prefab '{prefab.name}' instancié pour le service '{service}'");
                 yield break;
             }
         }
 
-        Debug.LogError($"Prefab pour le service '{service}' introuvable. Prefabs disponibles : {string.Join(", ", System.Array.ConvertAll(servicePrefabs, p => p.name))}");
+        Debug.LogError($"Prefab pour le service '{service}' introuvable. " +
+                      $"Prefabs disponibles : {string.Join(", ", System.Array.ConvertAll(servicePrefabs, p => p.name))}");
     }
 }
