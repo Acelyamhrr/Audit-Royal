@@ -25,6 +25,11 @@ public class LeaderboardsManager : MonoBehaviour
     [SerializeField] private Sprite silverTierSprite;
     [SerializeField] private Sprite goldenTierSprite;
 
+    [SerializeField] private Sprite defaultBackgroundSprite;
+    [SerializeField] private Sprite bronzeTierBackground;
+    [SerializeField] private Sprite silverTierBackground;
+    [SerializeField] private Sprite goldenTierBackground;
+
 
     private string leaderboardID = "lbcall";
     
@@ -124,24 +129,36 @@ public class LeaderboardsManager : MonoBehaviour
             {
                  Transform leaderboardItem = Instantiate(leaderboardItemPrefab, leaderboardContentParent);
                  
-                leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName; // Nom
-                leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString(); // Score
-
+                Image itemBackground = leaderboardItem.GetComponent<Image>();
                 Sprite tierSprite = null;
+                Sprite backgroundSprite = defaultBackgroundSprite;
+
                 switch (entry.Tier)
                 {
-                    case "Bronze_tier":
+                    case "bronze_tier":
                         tierSprite = bronzeTierSprite;
+                        backgroundSprite = bronzeTierBackground;
                         break;
-                    case "Silver_tier":
+                    case "silver_tier":
                         tierSprite = silverTierSprite;
+                        backgroundSprite = silverTierBackground;
                         break;
-                    case "Golden_tier":
+                    case "golden_tier":
                         tierSprite = goldenTierSprite;
+                        backgroundSprite = goldenTierBackground;
+                        break;
+                    default:
                         break;
                 }
                 
-                leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite; // Tier Image
+                if (itemBackground != null)
+                {
+                    itemBackground.sprite = backgroundSprite;
+                }
+
+                leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName;
+                leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString();
+                //leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite;
             }
 
             await Task.Delay(500); 
