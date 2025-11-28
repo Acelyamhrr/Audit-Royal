@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
+using Newtonsoft.Json;
 
 public class EntryDetection : MonoBehaviour
 {
@@ -54,6 +56,15 @@ public class EntryDetection : MonoBehaviour
 
             if (!string.IsNullOrEmpty(nomBatiment))
             {
+                // Vérifier si le service est accessible selon le niveau
+                if (!EstServiceAccessible(nomBatiment))
+                {
+                    Debug.Log($"Service {nomBatiment} non accessible pour le niveau actuel");
+                    hasLoadedScene = false; // Réinitialiser pour permettre une nouvelle tentative
+                    // TODO: Afficher un message à l'écran "Ce service n'est pas accessible pour ce niveau"
+                    return;
+                }
+                
                 // Met à jour GameStateManager
                 if (GameStateManager.Instance != null)
                 {
@@ -74,6 +85,81 @@ public class EntryDetection : MonoBehaviour
             {
                 Debug.LogError("nomBatiment est vide ou null !");
             }
+        }
+    }
+    
+    /// <summary>
+    /// Vérifie si le service est accessible selon le niveau actuel
+    /// </summary>
+    bool EstServiceAccessible(string nomBatiment)
+    {
+        if (GameStateManager.Instance == null)
+        {
+            Debug.LogError("GameStateManager introuvable !");
+            return true; // Par sécurité, on laisse passer
+        }
+        
+        int niveau = GameStateManager.Instance.NiveauActuel;
+        int scenario = GameStateManager.Instance.ScenarioActuel;
+        
+        // Charger le service audité depuis le scénario
+        string serviceAudite = ChargerServiceAudite(scenario);
+        
+        // Convertir le nom du bâtiment en nom de service
+        string serviceEntree = ConvertirBatimentEnService(nomBatiment);
+        
+        Debug.Log($"Niveau {niveau} - Service audité: {serviceAudite} - Service demandé: {serviceEntree}");
+        
+        // Niveaux 1 et 2 : Seulement le service audité
+        if (niveau == 1 || niveau == 2)
+        {
+            return serviceEntree.Equals(serviceAudite, System.StringComparison.OrdinalIgnoreCase);
+        }
+        
+        // Niveaux 3, 4, 5 : Tous les services accessibles
+        return true;
+    }
+    
+    /// <summary>
+    /// Convertit le nom du bâtiment en identifiant de service
+    /// </summary>
+    string ConvertirBatimentEnService(string nomBatiment)
+    {
+        switch (nomBatiment)
+        {
+            case "Crous": return "restauration";
+            case "Informatique": return "info";
+            case "Compta": return "comptabilite";
+            case "Communication": return "communication";
+            case "Techniciens": return "technicien";
+            default: return nomBatiment.ToLower();
+        }
+    }
+    
+    /// <summary>
+    /// Charge le service audité depuis le fichier scenario.json
+    /// </summary>
+    string ChargerServiceAudite(int numeroScenario)
+    {
+        string nomFichier = $"scenario{numeroScenario}.json";
+        string filePath = Path.Combine(Application.streamingAssetsPath, nomFichier);
+        
+        if (!File.Exists(filePath))
+        {
+            Debug.LogError($"Fichier scénario introuvable : {filePath}");
+            return "";
+        }
+        
+        try
+        {
+            string jsonContent = File.ReadAllText(filePath);
+            ScenarioRoot scenarioData = JsonConvert.DeserializeObject<ScenarioRoot>(jsonContent);
+            return scenarioData.service_audite;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Erreur lors du chargement du service audité : {e.Message}");
+            return "";
         }
     }
 

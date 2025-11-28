@@ -1,26 +1,28 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
 /// Gestionnaire global qui persiste entre toutes les scènes
 /// Stocke l'état actuel du jeu (scénario, niveau, service sélectionné, etc.)
+/// </summary>
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
 
     // État du jeu
-    public int ScenarioActuel { get; set; } = 1;
-    public int NiveauActuel { get; set; } = 1;
+    public int ScenarioActuel { get; private set; } = 0;
+    public int NiveauActuel { get; private set; } = 1;
     public string ServiceActuel { get; set; } = "";
     public string PosteActuel { get; set; } = "";
     public string FichierPersonnageActuel { get; set; } = "";
     
     private Dictionary<string, string> batimentVersService = new Dictionary<string, string>()
     {
-        { "Crous", "restauration" },  // Crous
-        { "Informatique", "info" },          // Info
-        { "Compta", "comptabilite" },           // Compta
-        { "Communication", "communication" }, // Com/BTP
-        { "Techniciens", "technicien" },        // techniciens
+        { "Crous", "restauration" },
+        { "Informatique", "info" },
+        { "Compta", "comptabilite" },
+        { "Communication", "communication" },
+        { "Techniciens", "technicien" },
     };
     
     private Dictionary<string, string> sceneVersPersonnage = new Dictionary<string, string>()
@@ -66,8 +68,10 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    /// <summary>
     /// Appelé quand on entre dans un bâtiment
     /// Détermine le service associé au bâtiment
+    /// </summary>
     public void EntrerDansBatiment(string nomScene)
     {
         if (batimentVersService.ContainsKey(nomScene))
@@ -81,8 +85,10 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    /// <summary>
     /// Appelé quand on clique sur un personnage
     /// Récupère le fichier JSON associé à ce personnage
+    /// </summary>
     public void SelectionnerPersonnage(string nomScene)
     {
         if (sceneVersPersonnage.ContainsKey(nomScene))
@@ -96,7 +102,9 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    /// <summary>
     /// Reset l'état du jeu (retour au menu principal)
+    /// </summary>
     public void ResetEtat()
     {
         ServiceActuel = "";
@@ -105,11 +113,45 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("État du jeu réinitialisé");
     }
 
+    /// <summary>
     /// Change de scénario et niveau
+    /// </summary>
     public void DefinirScenarioEtNiveau(int scenario, int niveau)
     {
         ScenarioActuel = scenario;
         NiveauActuel = niveau;
         Debug.Log($"Scénario {scenario} - Niveau {niveau} défini");
+    }
+    
+    /// <summary>
+    /// Passe au niveau suivant (appelé depuis MapUIManager)
+    /// </summary>
+    public void PasserNiveauSuivant()
+    {
+        if (NiveauActuel < 5)
+        {
+            NiveauActuel++;
+            Debug.Log($"Passage au niveau {NiveauActuel}");
+        }
+        else
+        {
+            Debug.Log("Niveau maximum atteint !");
+        }
+    }
+    
+    /// <summary>
+    /// Retourne le nom du service en fonction de son identifiant
+    /// </summary>
+    public string ObtenirNomService(string identifiantService)
+    {
+        switch (identifiantService.ToLower())
+        {
+            case "restauration": return "Restauration";
+            case "info": return "Informatique";
+            case "comptabilite": return "Comptabilité";
+            case "communication": return "Communication";
+            case "technicien": return "Techniciens";
+            default: return identifiantService;
+        }
     }
 }
