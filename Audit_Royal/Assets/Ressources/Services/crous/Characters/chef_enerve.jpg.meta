@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b8aa3b771c3f7a8469ad857ef9ad47d9
+guid: 4240acd0c61b82b3da2167496bd12289
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2453353981337141583
-    second: fondLibrary_0
+      213: 299001616691370346
+    second: chef_enerve_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fondLibrary_0
+      name: chef_enerve_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 2304
+        height: 1728
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1befb1a6d8fe3fdd0800000000000000
-      internalID: -2453353981337141583
+      spriteID: a69182ed264462400800000000000000
+      internalID: 299001616691370346
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fondLibrary_0: -2453353981337141583
+      chef_enerve_0: 299001616691370346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

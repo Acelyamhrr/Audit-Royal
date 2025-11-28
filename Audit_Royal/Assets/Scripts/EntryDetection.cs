@@ -7,11 +7,12 @@ public class EntryDetection : MonoBehaviour
     private Collider2D playerCollider;
 
     private bool hasLoadedScene = false; 
-    private string sceneACharger = "";
+    private string nomBatiment = "";
 
     private void Start()
     {
         zoneCollider = GetComponent<Collider2D>();
+        Debug.Log($"EntryDetection initialisé sur : {gameObject.name}");
     }
 
     private void Update()
@@ -19,38 +20,59 @@ public class EntryDetection : MonoBehaviour
         if (!hasLoadedScene && playerCollider != null && zoneCollider.OverlapPoint(playerCollider.bounds.center))
         {
             hasLoadedScene = true;
+            Debug.Log($"Joueur détecté dans la zone : {gameObject.name}");
 
+            // Détermine quel bâtiment on entre
             switch (gameObject.name)
             {
                 case "EntryZoneCrous":
-                    sceneACharger = "Crous";
+                    nomBatiment = "Crous";
                     break;
 
                 case "EntryZoneInfo":
-                    sceneACharger = "Informatique";
+                    nomBatiment = "Informatique";
                     break;
 
                 case "EntryZoneCompta":
-                    sceneACharger = "Compta";
+                    nomBatiment = "Compta";
                     break;
 
                 case "EntryZoneCom":
-                    sceneACharger = "Communication";
+                    nomBatiment = "Communication";
                     break;
 
                 case "EntryZoneBTP":
-                    sceneACharger = "Techniciens";
+                    nomBatiment = "Techniciens";
+                    break;
+                    
+                default:
+                    Debug.LogError($"Nom de GameObject inconnu : {gameObject.name}");
                     break;
             }
 
-            if (!string.IsNullOrEmpty(sceneACharger))
+            Debug.Log($"Bâtiment déterminé : {nomBatiment}");
+
+            if (!string.IsNullOrEmpty(nomBatiment))
             {
+                // Met à jour GameStateManager
                 if (GameStateManager.Instance != null)
                 {
-                    GameStateManager.Instance.EntrerDansBatiment(sceneACharger);
+                    Debug.Log($"Appel de EntrerDansBatiment('{nomBatiment}')");
+                    GameStateManager.Instance.EntrerDansBatiment(nomBatiment);
+                    Debug.Log($"ServiceActuel après appel : '{GameStateManager.Instance.ServiceActuel}'");
+                }
+                else
+                {
+                    Debug.LogError("GameStateManager.Instance est NULL !");
                 }
 
-                SceneManager.LoadScene(sceneACharger);
+                // On charge TOUJOURS la même scène maintenant
+                Debug.Log("Chargement de InteriorScene...");
+                SceneManager.LoadScene("InteriorScene");
+            }
+            else
+            {
+                Debug.LogError("nomBatiment est vide ou null !");
             }
         }
     }
@@ -58,7 +80,10 @@ public class EntryDetection : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
+        {
             playerCollider = other;
+            Debug.Log($"Player entré dans la zone : {gameObject.name}");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -67,6 +92,7 @@ public class EntryDetection : MonoBehaviour
         {
             playerCollider = null;
             hasLoadedScene = false;
+            Debug.Log($"Player sorti de la zone : {gameObject.name}");
         }
     }
 }

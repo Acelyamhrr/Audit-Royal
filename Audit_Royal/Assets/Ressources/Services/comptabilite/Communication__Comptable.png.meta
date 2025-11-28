@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae9c461d81b7db60e8fcc78431452352
+guid: cd652aa3cdb587ff7a185efcd8869b29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9209293335573503134
-    second: Communication_secretaire_0
+      213: -8010144093609922297
+    second: Communication__Comptable_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Communication_secretaire_0
+      name: Communication__Comptable_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9c1b3bee7bfdcf70800000000000000
-      internalID: 9209293335573503134
+      spriteID: 701fface26046d090800000000000000
+      internalID: -8010144093609922297
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Communication_secretaire_0: 9209293335573503134
+      Communication__Comptable_0: -8010144093609922297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

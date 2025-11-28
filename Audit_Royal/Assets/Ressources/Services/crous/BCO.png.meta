@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ce3b024fac42eb1ab0ea5d030f51c7f
+guid: a5ad0bc752a3b8ccabbdb9487ff31f9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2687773685009266688
-    second: Comptabilite_T3_0
+      213: 6311504401816756584
+    second: BCO_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Comptabilite_T3_0
+      name: BCO_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 008416ce21c13bad0800000000000000
-      internalID: -2687773685009266688
+      spriteID: 8612a9c40d7f69750800000000000000
+      internalID: 6311504401816756584
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Comptabilite_T3_0: -2687773685009266688
+      BCO_0: 6311504401816756584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
