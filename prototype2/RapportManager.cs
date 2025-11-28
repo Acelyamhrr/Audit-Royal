@@ -38,9 +38,6 @@ public class RapportManager
                 }
             }
         }
-        
-        //Afficher toutes les infos récupérées dans la liste
-        
     }
 
     private List<string> getInfos(int numQuestion)

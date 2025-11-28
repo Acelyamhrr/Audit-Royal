@@ -1,0 +1,8 @@
+public enum Service
+{
+    INFORMATIQUE,
+    COMMUNICATION,
+    COMPTABILITE,
+    RESTAURATION,
+    TECHNICIEN
+}
