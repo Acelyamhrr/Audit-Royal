@@ -66,9 +66,13 @@ public class RapportManager : MonoBehaviour
 
     	foreach (string question in this.questions)
     	{
-        	// Créer un nouvel objet texte
+			//Créer un panel pour la question et la réponse 
+			GameObject panelObj = new GameObject("PanelText");
+			panelObj.transform.SetParent(content.transform, false);
+
+        	// Créer un nouvel objet texte question
         	GameObject textObj = new GameObject("QuestionText");
-        	textObj.transform.SetParent(content.transform, false);
+        	textObj.transform.SetParent(panelObj.transform, false);
 
         	// Ajouter le composant TextMeshProUGUI
         	TextMeshProUGUI tmp = textObj.AddComponent<TextMeshProUGUI>();
@@ -78,7 +82,8 @@ public class RapportManager : MonoBehaviour
         	tmp.fontSize = 20;
         	tmp.alignment = TextAlignmentOptions.Left;
         	tmp.color = Color.black;
-			tmp.font
+
+			
     	}
 	}
 
