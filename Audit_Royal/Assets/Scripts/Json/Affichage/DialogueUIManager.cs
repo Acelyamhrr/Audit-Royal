@@ -13,6 +13,7 @@ public class DialogueUIManager : MonoBehaviour
     public TextMeshProUGUI metierText;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI questionsText;
+    public Image personnageImage; // Image du personnage
     
     [Header("Boutons")]
     public Button retourButton;
@@ -75,7 +76,54 @@ public class DialogueUIManager : MonoBehaviour
             if (metierText != null)
                 metierText.text = $"{personnageActuel.metier} - Service {personnageActuel.service}";
             
+            // Charge l'image par défaut (émotion normale)
+            ChargerImagePersonnage("normal");
+            
             Debug.Log($"Personnage chargé : {personnageActuel.prenom} {personnageActuel.nom}");
+        }
+    }
+    
+    /// Charge l'image du personnage avec l'émotion spécifiée
+    void ChargerImagePersonnage(string emotion)
+    {
+        if (personnageImage == null)
+        {
+            Debug.LogWarning("personnageImage n'est pas assigné dans l'inspecteur !");
+            return;
+        }
+        
+        string fichierPersonnage = GameStateManager.Instance.FichierPersonnageActuel;
+        
+        // Retire l'extension .json du nom de fichier
+        string nomSansExtension = fichierPersonnage.Replace(".json", "");
+        
+        // Construit le chemin vers l'image
+        string cheminImage = $"Characters/{nomSansExtension}_{emotion}";
+        
+        // Charge le sprite depuis Resources
+        Sprite sprite = Resources.Load<Sprite>(cheminImage);
+        
+        if (sprite != null)
+        {
+            personnageImage.sprite = sprite;
+            Debug.Log($"Image chargée : {cheminImage}");
+        }
+        else
+        {
+            Debug.LogWarning($"Image introuvable : {cheminImage}");
+            
+            // Essaie de charger l'image "normal" en fallback
+            if (emotion != "normal")
+            {
+                string cheminFallback = $"Characters/{nomSansExtension}_normal";
+                Sprite spriteFallback = Resources.Load<Sprite>(cheminFallback);
+                
+                if (spriteFallback != null)
+                {
+                    personnageImage.sprite = spriteFallback;
+                    Debug.Log($"Fallback vers image normale : {cheminFallback}");
+                }
+            }
         }
     }
     
@@ -85,7 +133,14 @@ public class DialogueUIManager : MonoBehaviour
         if (GameStateManager.Instance == null || personnageActuel == null)
             return;
         
-        // TODO: recup les questions depuis le json
+        // S'assure que les questions sont visibles et le dialogue caché
+        if (questionsText != null)
+            questionsText.gameObject.SetActive(true);
+        
+        if (dialogueText != null)
+            dialogueText.gameObject.SetActive(false);
+        
+        // TODO: récup les questions depuis le json
         
         string texte = "Questions disponibles :\n\n";
         texte += "[1] Question 1\n";
@@ -100,6 +155,20 @@ public class DialogueUIManager : MonoBehaviour
     /// Gère les inputs pour poser les questions
     void GererInputQuestions()
     {
+        // Si on affiche le dialogue, Espace pour revenir aux questions
+        if (dialogueText != null && dialogueText.gameObject.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // Cache le dialogue, affiche les questions
+                dialogueText.gameObject.SetActive(false);
+                if (questionsText != null)
+                    questionsText.gameObject.SetActive(true);
+            }
+            return;
+        }
+        
+        // Sinon, gestion normale des questions
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             PoserQuestion("0"); // Question 0
@@ -127,18 +196,27 @@ public class DialogueUIManager : MonoBehaviour
         int scenario = GameStateManager.Instance.ScenarioActuel;
         string fichierPersonnage = GameStateManager.Instance.FichierPersonnageActuel;
         
-        string reponse = dialogueManager.ObtenirDialogue(
+        // Obtient le dialogue ET l'émotion
+        (string reponse, string emotion) = dialogueManager.ObtenirDialogueAvecEmotion(
             scenario,
             fichierPersonnage,
             numeroQuestion
         );
         
+        // Charge l'image avec l'émotion correspondante
+        ChargerImagePersonnage(emotion);
+        
+        // Cache les questions, affiche le dialogue
+        if (questionsText != null)
+            questionsText.gameObject.SetActive(false);
+        
         if (dialogueText != null)
         {
+            dialogueText.gameObject.SetActive(true);
             dialogueText.text = $"\"{reponse}\"\n\n[Espace] Continuer";
         }
         
-        Debug.Log($"Question {numeroQuestion} posée → Réponse : {reponse}");
+        Debug.Log($"Question {numeroQuestion} posée → Réponse : {reponse} (Émotion: {emotion})");
     }
     
     /// Retour vers la scène du bâtiment
