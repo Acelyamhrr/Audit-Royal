@@ -179,57 +179,43 @@ public class RapportManager : MonoBehaviour
 
             // Ajout du listener sur le bouton
             Button btn = boutonGO.GetComponent<Button>();
-            btn.onClick.AddListener(() => OnReponseClicked(boutonGO.name));
+            btn.onClick.AddListener(() => OnReponseClicked(boutonGO.name, reponse));
         }
     }
 
     //Méthode appelée quand on clique sur une réponse
-    private void OnReponseClicked(string idReponse)
+    private void OnReponseClicked(string idReponse, string reponse)
     {
         // Changer le txtreponse par la reponse cliquée
-        Transform child = reponsesContent.transform.Find(idReponse);
-        if (child != null)
+        Debug.Log($"Reponse {idReponse} cliquée");
+
+        //Chercher le text de la page correspondant
+        string service = idReponse.Substring(8, idReponse.Length-10);
+        string numQuestion = idReponse.Substring(idReponse.Length-1);
+        string idQuestion = $"Panel_{service}_{numQuestion}";
+        Transform child = content.transform.Find(idQuestion);
+
+        if(child != null)
         {
-            GameObject obj = child.gameObject;
+            GameObject panel = child.gameObject;
 
-            //Récupérer le texte de la réponse
-            Button btn = obj.GetComponent<Button>();
-            TextMeshProUGUI txt = obj.GetComponentInChildren<TextMeshProUGUI>();
-            string reponse = txt.text;
-            Debug.Log(reponse);
-
-            //Chercher le text de la page correspondant
-            string service = idReponse.Substring(8, idReponse.Length-10);
-            string numQuestion = idReponse.Substring(idReponse.Length-1);
-            string idQuestion = $"Panel_{service}_{numQuestion}";
-            Transform child2 = content.transform.Find(idQuestion);
+            Transform child2 = panel.transform.Find("ReponseText");
 
             if(child2 != null)
             {
-                GameObject panel = child2.gameObject;
-
-                Transform child3 = panel.transform.Find("ReponseText");
-
-                if(child3 != null)
-                {
-                    TextMeshProUGUI tmp = child3.GetComponent<TextMeshProUGUI>();
-                    tmp.text = reponse;
-                    
-                    //TODO : changer la couleur du bouton
-                }
-                else
-                {
-                    Debug.LogError($"TextMeshPro ReponseText non trouvé.");
-                }
+                TextMeshProUGUI tmp = child2.GetComponent<TextMeshProUGUI>();
+                tmp.text = reponse;
+                
+                //TODO : changer la couleur du bouton
             }
             else
             {
-                Debug.LogError($"Panel {idQuestion} non trouvé.");
+                Debug.LogError($"TextMeshPro ReponseText non trouvé.");
             }
         }
         else
         {
-            Debug.LogError($"Bouton {idReponse} non trouvé.");
+            Debug.LogError($"Panel {idQuestion} non trouvé.");
         }
 
     }
