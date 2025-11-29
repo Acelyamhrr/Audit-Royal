@@ -92,6 +92,7 @@ public class RapportManager : MonoBehaviour
         	tmp.fontSize = 20;
         	tmp.alignment = TextAlignmentOptions.Left;
         	tmp.color = Color.black;
+            tmp.fontStyle = FontStyles.Bold;
 	        
 	        // Ajouter un EventTrigger pour gérer le clic
 	        EventTrigger trigger = textObj.AddComponent<EventTrigger>();
@@ -106,7 +107,7 @@ public class RapportManager : MonoBehaviour
 			GameObject repObj = new GameObject("ReponseText");
 			// Ajouter le composant TextMeshProUGUI
         	TextMeshProUGUI tmp2 = repObj.AddComponent<TextMeshProUGUI>();
-        	tmp2.text = "-";
+        	tmp2.text = "";
 
         	// Ajuster la police, la taille, l’alignement
         	tmp2.fontSize = 20;
@@ -147,16 +148,13 @@ public class RapportManager : MonoBehaviour
             img.color = Color.white;
             img.raycastTarget = true;
 
+            
             RectTransform rt = boutonGO.GetComponent<RectTransform>();
             rt.anchorMin = new Vector2(0.5f, 0.5f);    // centre
             rt.anchorMax = new Vector2(0.5f, 0.5f);
             rt.pivot = new Vector2(0.5f, 0.5f);
-            rt.sizeDelta = new Vector2(300, 50);       // largeur/hauteur visibles
+            rt.sizeDelta = new Vector2(900, 100);       // largeur/hauteur visibles
             rt.anchoredPosition = Vector2.zero;        // au centre du Canvas
-
-            ContentSizeFitter fitter = boutonGO.AddComponent<ContentSizeFitter>();
-            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained; // largeur contrôlée par le layout
-            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;   // hauteur auto
 
             GameObject texteGO = new GameObject("TexteTMP", typeof(RectTransform), typeof(TextMeshProUGUI));
             texteGO.transform.SetParent(boutonGO.transform, false);
@@ -164,7 +162,7 @@ public class RapportManager : MonoBehaviour
             TextMeshProUGUI tmpText = texteGO.GetComponent<TextMeshProUGUI>();
             tmpText.text = reponse;
             tmpText.alignment = TextAlignmentOptions.Left;
-            tmpText.fontSize = 15;
+            tmpText.fontSize = 30;
             tmpText.color = Color.black;
 
             RectTransform rtText = texteGO.GetComponent<RectTransform>();
@@ -177,6 +175,10 @@ public class RapportManager : MonoBehaviour
             le.preferredHeight = tmpText.preferredHeight;
             le.preferredWidth = tmpText.preferredWidth;
 
+            ContentSizeFitter fitter = boutonGO.AddComponent<ContentSizeFitter>();
+            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained; // largeur contrôlée par le layout
+            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;   // hauteur auto
+
             // Ajout du listener sur le bouton
             Button btn = boutonGO.GetComponent<Button>();
             btn.onClick.AddListener(() => OnReponseClicked(boutonGO.name, reponse));
@@ -187,7 +189,6 @@ public class RapportManager : MonoBehaviour
     private void OnReponseClicked(string idReponse, string reponse)
     {
         // Changer le txtreponse par la reponse cliquée
-        Debug.Log($"Reponse {idReponse} cliquée");
 
         //Chercher le text de la page correspondant
         string service = idReponse.Substring(8, idReponse.Length-10);
@@ -204,7 +205,7 @@ public class RapportManager : MonoBehaviour
             if(child2 != null)
             {
                 TextMeshProUGUI tmp = child2.GetComponent<TextMeshProUGUI>();
-                tmp.text = reponse;
+                tmp.text = "-> " + reponse;
                 
                 //TODO : changer la couleur du bouton
             }
