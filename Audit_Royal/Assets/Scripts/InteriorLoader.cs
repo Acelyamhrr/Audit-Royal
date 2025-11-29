@@ -1,18 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
-/// <summary>
-/// Charge dynamiquement le prefab du service correspondant
-/// Chaque prefab contient son propre Canvas et gère son affichage
-/// </summary>
 public class InteriorLoader : MonoBehaviour
 {
-    [Tooltip("Liste de prefabs de services (nom du prefab doit être l'identifiant du service).")]
     public GameObject[] servicePrefabs;
 
     void Start()
     {
-        // Créer le GameStateManager s'il n'existe pas
         EnsureGameStateManagerExists();
         
         StartCoroutine(WaitAndLoadService());
@@ -28,9 +22,9 @@ public class InteriorLoader : MonoBehaviour
         }
     }
 
-    IEnumerator WaitAndLoadService()
+    IEnumerator WaitAndLoadService()		// ienumerator c'est genre, on attend un moment pour etre sur que ca charge, et ensuite on fait ...
     {
-        // Petite attente pour s'assurer que le GameStateManager est initialisé
+		// debug
         yield return null;
 
         if (GameStateManager.Instance == null)
@@ -52,8 +46,6 @@ public class InteriorLoader : MonoBehaviour
         {
             if (prefab.name.Equals(service, System.StringComparison.OrdinalIgnoreCase))
             {
-                // Instancier directement sans parent
-                // Le Canvas du prefab gère l'affichage et le responsive
                 Instantiate(prefab);
                 Debug.Log($"Prefab '{prefab.name}' instancié pour le service '{service}'");
                 yield break;

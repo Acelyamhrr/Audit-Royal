@@ -159,9 +159,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 63c93c640af06b34f8d048e5d69ee285, type: 3}
-        m_TargetAssemblyTypeName: CharacterClicker, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 6453759705065962352}
+        m_TargetAssemblyTypeName: GoOut, Assembly-CSharp
+        m_MethodName: SortirDuBatiment
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -423,6 +423,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6942480522914400245}
   - {fileID: 4942483667740627704}
   - {fileID: 951357128160824715}
   m_Father: {fileID: 0}
@@ -787,3 +788,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterClicker
   nomScenePersonnage: Technicien
+--- !u!1 &8147998995052540948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6942480522914400245}
+  - component: {fileID: 6453759705065962352}
+  m_Layer: 0
+  m_Name: SortieManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6942480522914400245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147998995052540948}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8586134128100715126}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6453759705065962352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147998995052540948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c93c640af06b34f8d048e5d69ee285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoOut

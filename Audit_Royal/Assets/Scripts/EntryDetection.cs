@@ -24,7 +24,7 @@ public class EntryDetection : MonoBehaviour
             hasLoadedScene = true;
             Debug.Log($"Joueur détecté dans la zone : {gameObject.name}");
 
-            // Détermine quel bâtiment on entre
+            // determine dans quel bat on entre
             switch (gameObject.name)
             {
                 case "EntryZoneCrous":
@@ -61,7 +61,13 @@ public class EntryDetection : MonoBehaviour
                 {
                     Debug.Log($"Service {nomBatiment} non accessible pour le niveau actuel");
                     hasLoadedScene = false; // Réinitialiser pour permettre une nouvelle tentative
+
+
+
                     // TODO: Afficher un message à l'écran "Ce service n'est pas accessible pour ce niveau"
+
+
+
                     return;
                 }
                 
@@ -77,7 +83,6 @@ public class EntryDetection : MonoBehaviour
                     Debug.LogError("GameStateManager.Instance est NULL !");
                 }
 
-                // On charge TOUJOURS la même scène maintenant
                 Debug.Log("Chargement de InteriorScene...");
                 SceneManager.LoadScene("InteriorScene");
             }
@@ -88,15 +93,13 @@ public class EntryDetection : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Vérifie si le service est accessible selon le niveau actuel
-    /// </summary>
+    /// verif si le service est accessible selon le niveau actuel pour interdir d'entrer qi jamais
     bool EstServiceAccessible(string nomBatiment)
     {
         if (GameStateManager.Instance == null)
         {
             Debug.LogError("GameStateManager introuvable !");
-            return true; // Par sécurité, on laisse passer
+            return true;
         }
         
         int niveau = GameStateManager.Instance.NiveauActuel;
@@ -110,19 +113,15 @@ public class EntryDetection : MonoBehaviour
         
         Debug.Log($"Niveau {niveau} - Service audité: {serviceAudite} - Service demandé: {serviceEntree}");
         
-        // Niveaux 1 et 2 : Seulement le service audité
         if (niveau == 1 || niveau == 2)
         {
             return serviceEntree.Equals(serviceAudite, System.StringComparison.OrdinalIgnoreCase);
         }
         
-        // Niveaux 3, 4, 5 : Tous les services accessibles
         return true;
     }
     
-    /// <summary>
     /// Convertit le nom du bâtiment en identifiant de service
-    /// </summary>
     string ConvertirBatimentEnService(string nomBatiment)
     {
         switch (nomBatiment)
@@ -136,9 +135,7 @@ public class EntryDetection : MonoBehaviour
         }
     }
     
-    /// <summary>
     /// Charge le service audité depuis le fichier scenario.json
-    /// </summary>
     string ChargerServiceAudite(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";

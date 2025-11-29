@@ -4,16 +4,11 @@ using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json;
 
-/// <summary>
-/// Gère l'affichage de la mission et le bouton de fin de niveau dans la Map
-/// À attacher sur un GameObject dans la scène Map
-/// </summary>
 public class MapUIManager : MonoBehaviour
 {
-    [Header("UI References")]
     public TextMeshProUGUI texteMission;
     public Button boutonTerminerNiveau;
-    public GameObject panelFinNiveau; // Panel optionnel pour confirmation
+    public GameObject panelFinNiveau;
     public TextMeshProUGUI texteFinNiveau;
     public Button boutonConfirmerFin;
     public Button boutonAnnuler;
@@ -22,7 +17,6 @@ public class MapUIManager : MonoBehaviour
     
     void Start()
     {
-        // Créer le ScenarioManager s'il n'existe pas
         scenarioManager = FindFirstObjectByType<ScenarioManager>();
         if (scenarioManager == null)
         {
@@ -33,7 +27,6 @@ public class MapUIManager : MonoBehaviour
         AfficherMission();
         ConfigurerBoutons();
         
-        // Cacher le panel de fin au démarrage
         if (panelFinNiveau != null)
             panelFinNiveau.SetActive(false);
     }
@@ -68,7 +61,7 @@ public class MapUIManager : MonoBehaviour
         int niveau = GameStateManager.Instance.NiveauActuel;
         int scenario = GameStateManager.Instance.ScenarioActuel;
         
-        // Récupérer le service audité depuis le fichier scenario.json
+        // recup le service audité depuis le fichier scenario.json
         ScenarioRoot scenarioData = ChargerScenario(scenario);
         
         if (scenarioData == null)
@@ -88,7 +81,7 @@ public class MapUIManager : MonoBehaviour
         string serviceNom = scenarioData.service_audite.ToUpper();
         string titre = scenarioData.titre;
         
-        string message = $"📋 {titre} - NIVEAU {niveau}\n\n";
+        string message = $"{titre} - NIVEAU {niveau}\n\n";
         
         switch (niveau)
         {
@@ -149,9 +142,7 @@ public class MapUIManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Affiche le panel de confirmation de fin de niveau
-    /// </summary>
+    // Affiche le panel de confirmation de fin de niveau
     void AfficherConfirmationFin()
     {
         if (panelFinNiveau == null)
@@ -181,18 +172,12 @@ public class MapUIManager : MonoBehaviour
         panelFinNiveau.SetActive(true);
     }
     
-    /// <summary>
-    /// Annule la fin de niveau
-    /// </summary>
     void AnnulerFin()
     {
         if (panelFinNiveau != null)
             panelFinNiveau.SetActive(false);
     }
     
-    /// <summary>
-    /// Termine le niveau actuel et passe au suivant
-    /// </summary>
     void TerminerNiveau()
     {
         if (GameStateManager.Instance == null)

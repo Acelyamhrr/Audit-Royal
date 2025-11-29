@@ -6,7 +6,7 @@
   "problematique": "L'IUT Robert Schuman fait face depuis deux semaines à une dégradation notable de la propreté des locaux. Des plaintes ont été déposées concernant l'état des sanitaires, des espaces communs et de certaines salles de travail. Votre mission : identifier les causes de cette situation, évaluer les responsabilités du service technique et vérifier si les procédures de nettoyage sont correctement appliquées.",
   
   "questions": {
-    "service_technicien": {
+    "service_audite": {
       "description": "Questions spécifiques pour le service technique responsable de l'entretien et de la propreté",
       "liste": [
         "Avez-vous constaté une dégradation de la propreté des locaux récemment ?",

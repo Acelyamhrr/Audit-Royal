@@ -11,9 +11,9 @@ public class GoOut : MonoBehaviour
         }
     }
     
-    // Fonction publique appelable par un bouton UI
     public void SortirDuBatiment()
     {
+		Debug.Log("SortirDuBatiment called");
         SceneManager.LoadScene("Map");
     }
 }

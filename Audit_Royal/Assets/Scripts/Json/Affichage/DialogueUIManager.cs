@@ -7,10 +7,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Linq;
 
-/// <summary>
 /// Gère l'affichage du dialogue avec un personnage
-/// À attacher sur une scène de personnage (DirectorCom, Chef, etc.)
-/// </summary>
 public class DialogueUIManager : MonoBehaviour
 {
     [Header("UI References - Image")]
@@ -34,12 +31,12 @@ public class DialogueUIManager : MonoBehaviour
     private JsonDialogueManager dialogueManager;
     private PlayerData personnageActuel;
     private List<string> questionsDisponibles = new List<string>();
-    private Dictionary<string, string> questionsIdMap = new Dictionary<string, string>(); // Texte → ID
+    private Dictionary<string, string> questionsIdMap = new Dictionary<string, string>();
     private bool carnetOuvert = false;
     
     void Start()
     {
-        // Récupérer ou créer le DialogueManager
+        // recup ou créer le DialogueManager
         dialogueManager = FindFirstObjectByType<JsonDialogueManager>();
         if (dialogueManager == null)
         {
@@ -47,7 +44,7 @@ public class DialogueUIManager : MonoBehaviour
             dialogueManager = go.AddComponent<JsonDialogueManager>();
         }
         
-        // Configuration des boutons
+        // config des boutons
         if (retourButton != null)
         {
             retourButton.onClick.AddListener(RetourBatiment);
@@ -63,7 +60,7 @@ public class DialogueUIManager : MonoBehaviour
             boutonFermerCarnet.onClick.AddListener(FermerCarnet);
         }
         
-        // État initial : tout est caché sauf le carnet button
+        // au début tt est caché sauf le ptn
         if (panelQuestions != null)
             panelQuestions.SetActive(false);
         
@@ -79,9 +76,7 @@ public class DialogueUIManager : MonoBehaviour
         GererInputs();
     }
     
-    /// <summary>
     /// Charge les données du personnage depuis GameStateManager
-    /// </summary>
     void ChargerPersonnage()
     {
         if (GameStateManager.Instance == null)
@@ -102,23 +97,21 @@ public class DialogueUIManager : MonoBehaviour
         
         if (personnageActuel != null)
         {
-            // Affiche dans le panel dialogue (même si caché pour l'instant)
+            // Affiche dans le panel dialogue
             if (nomPersonnageDialogue != null)
                 nomPersonnageDialogue.text = $"{personnageActuel.prenom} {personnageActuel.nom}";
             
             if (metierDialogue != null)
                 metierDialogue.text = $"{personnageActuel.metier} - Service {personnageActuel.service}";
             
-            // Charge l'image par défaut (émotion normale)
+            // Charge l'image par défaut donc l'emotion normal 
             ChargerImagePersonnage("normal");
             
             Debug.Log($"Personnage chargé : {personnageActuel.prenom} {personnageActuel.nom}");
         }
     }
     
-    /// <summary>
-    /// Charge l'image du personnage avec l'émotion spécifiée
-    /// </summary>
+    /// Charge l'image du perso avec l'émotion spécifiée
     void ChargerImagePersonnage(string emotion)
     {
         if (personnageImage == null)
@@ -129,13 +122,12 @@ public class DialogueUIManager : MonoBehaviour
         
         string fichierPersonnage = GameStateManager.Instance.FichierPersonnageActuel;
         
-        // Retire l'extension .json du nom de fichier
+        // recup le nom
         string nomSansExtension = fichierPersonnage.Replace(".json", "");
         
-        // Construit le chemin vers l'image
         string cheminImage = $"Characters/{nomSansExtension}_{emotion}";
         
-        // Charge le sprite depuis Resources
+        // Charge l'image depuis Resources
         Sprite sprite = Resources.Load<Sprite>(cheminImage);
         
         if (sprite != null)
@@ -147,7 +139,7 @@ public class DialogueUIManager : MonoBehaviour
         {
             Debug.LogWarning($"Image introuvable : {cheminImage}");
             
-            // Essaie de charger l'image "normal" en fallback
+            // charge l'image normal si pas trouvé pour éviter de crash
             if (emotion != "normal")
             {
                 string cheminFallback = $"Characters/{nomSansExtension}_normal";
@@ -162,18 +154,17 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Prépare les questions disponibles depuis le fichier scenario_verites.json
-    /// </summary>
+    /// Prépare les questions dispo depuis le fichier scenario_verites.json
     void PreparerQuestions()
     {
-        if (GameStateManager.Instance == null || personnageActuel == null)
+        if (GameStateManager.Instance == null || personnageActuel == null) {
             return;
+		}
         
         questionsDisponibles.Clear();
         questionsIdMap.Clear();
         
-        // Charger les vérités pour savoir quelles questions sont disponibles
+        // charge les vérités pour savoir quelles questions sont dispo
         string filePath = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
         
         if (!File.Exists(filePath))
@@ -185,7 +176,7 @@ public class DialogueUIManager : MonoBehaviour
         string jsonContent = File.ReadAllText(filePath);
         VeritesScenarioRoot verites = JsonConvert.DeserializeObject<VeritesScenarioRoot>(jsonContent);
         
-        // Charger le scénario pour récupérer la liste complète des questions
+        // Charger le scénario pour recup la liste complete des qu.
         int scenario = GameStateManager.Instance.ScenarioActuel;
         ScenarioRoot scenarioData = ChargerScenario(scenario);
         
@@ -196,35 +187,42 @@ public class DialogueUIManager : MonoBehaviour
         }
         
         // Déterminer si c'est le service audité ou un autre service
-        bool estServiceAudite = personnageActuel.service.Trim().ToLower() == scenarioData.service_audite.Trim().ToLower();
+            bool estServiceAudite = personnageActuel.service.Trim().ToLower() == scenarioData.service_audite.Trim().ToLower();
+    
+    		List<string> listeQuestionsScenario = null;
+    
+  		  	if (estServiceAudite && scenarioData.questions.service_audite != null)
+   		 	{
+   		     	listeQuestionsScenario = scenarioData.questions.service_audite.liste;
+  		  	}
+ 		   	else if (!estServiceAudite && scenarioData.questions.autres_services != null)
+    		{
+        		listeQuestionsScenario = scenarioData.questions.autres_services.liste;
+    		}
+    
+    		if (listeQuestionsScenario == null)
+    		{
+        		Debug.LogError("Liste questions scénario est null!");
+        		return;
+    		}
+
         
-        List<string> listeQuestionsScenario = null;
-        
-        if (estServiceAudite && scenarioData.questions.service_technicien != null)
-        {
-            listeQuestionsScenario = scenarioData.questions.service_technicien.liste;
-        }
-        else if (!estServiceAudite && scenarioData.questions.autres_services != null)
-        {
-            listeQuestionsScenario = scenarioData.questions.autres_services.liste;
-        }
-        
-        if (listeQuestionsScenario == null)
-        {
-            Debug.LogError("Liste questions scénario est null!");
-            return;
-        }
-        
-        // Récupérer les IDs des questions disponibles depuis les vérités
+        // recup les id des questions dispo depuis les vérités
         if (verites.verites.ContainsKey(personnageActuel.service))
         {
+		    Debug.Log($"Service trouvé : {personnageActuel.service}");
+
             var serviceVerites = verites.verites[personnageActuel.service];
             
             if (serviceVerites.postes.ContainsKey(personnageActuel.metier))
             {
+				Debug.Log($"Métier trouvé : {personnageActuel.metier}");
+
                 var posteVerites = serviceVerites.postes[personnageActuel.metier];
                 
-                // Les clés du dictionnaire verites sont les IDs des questions disponibles
+		        Debug.Log("Liste des IDs trouvés dans posteVerites.verites :");
+
+                // Les clés du dictionnaire verites sont les id des questions disponibles dcp
                 foreach (string questionId in posteVerites.verites.Keys)
                 {
                     int index = int.Parse(questionId);
@@ -242,9 +240,7 @@ public class DialogueUIManager : MonoBehaviour
         AfficherQuestionsCarnet();
     }
     
-    /// <summary>
     /// Charge le scénario depuis le fichier JSON
-    /// </summary>
     ScenarioRoot ChargerScenario(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";
@@ -269,19 +265,17 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// <summary>
     /// Affiche les questions dans le carnet
-    /// </summary>
     void AfficherQuestionsCarnet()
     {
         if (questionsText == null)
             return;
         
-        string texte = "📋 Questions disponibles :\n\n";
+        string texte = "Questions disponibles :\n\n";
         
         if (questionsDisponibles.Count == 0)
         {
-            texte += "Aucune question disponible pour ce personnage à ce niveau.\n\n";
+            texte += "Aucune question dispo pour ce personnage à ce niveau.\n\n";
         }
         else
         {
@@ -296,9 +290,7 @@ public class DialogueUIManager : MonoBehaviour
         questionsText.text = texte;
     }
     
-    /// <summary>
     /// Ouvre le carnet de questions
-    /// </summary>
     void OuvrirCarnet()
     {
         if (panelQuestions != null)
@@ -312,9 +304,7 @@ public class DialogueUIManager : MonoBehaviour
             panelDialogue.SetActive(false);
     }
     
-    /// <summary>
     /// Ferme le carnet de questions
-    /// </summary>
     void FermerCarnet()
     {
         if (panelQuestions != null)
@@ -324,12 +314,10 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Gère les inputs clavier
-    /// </summary>
+    // Gère les inputs clavier
     void GererInputs()
     {
-        // Si le dialogue est affiché : Espace pour fermer
+        // espace pour fermer le panel de dialogue
         if (panelDialogue != null && panelDialogue.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -345,7 +333,7 @@ public class DialogueUIManager : MonoBehaviour
             return;
         }
         
-        // Si le carnet est ouvert : touches 1-9 pour poser une question
+        //touches 1-9 pour poser une question
         if (carnetOuvert)
         {
             for (int i = 0; i < Mathf.Min(questionsDisponibles.Count, 9); i++)
@@ -365,9 +353,7 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// <summary>
     /// Pose une question au personnage et affiche la réponse
-    /// </summary>
     void PoserQuestion(int indexQuestion)
     {
         if (GameStateManager.Instance == null || personnageActuel == null)
@@ -385,7 +371,7 @@ public class DialogueUIManager : MonoBehaviour
         int scenario = GameStateManager.Instance.ScenarioActuel;
         string fichierPersonnage = GameStateManager.Instance.FichierPersonnageActuel;
         
-        // Obtient le dialogue ET l'émotion
+        // Obtient le dialogue ET l'émotion pour afficher l'image par rap a ca
         (string reponse, string emotion) = dialogueManager.ObtenirDialogueAvecEmotion(
             scenario,
             fichierPersonnage,
@@ -415,9 +401,7 @@ public class DialogueUIManager : MonoBehaviour
         Debug.Log($"Question {numeroQuestion} posée → Réponse : {reponse} (Émotion: {emotion})");
     }
     
-    /// <summary>
-    /// Retour vers la scène du bâtiment
-    /// </summary>
+    // Retour vers la scène du bat
     void RetourBatiment()
     {
         SceneManager.LoadScene("InteriorScene");

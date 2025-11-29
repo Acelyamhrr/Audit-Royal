@@ -1,10 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-/// <summary>
-/// Gestionnaire global qui persiste entre toutes les scènes
-/// Stocke l'état actuel du jeu (scénario, niveau, service sélectionné, etc.)
-/// </summary>
+// stocke l'état actuel du jeu.
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
@@ -68,10 +65,8 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Appelé quand on entre dans un bâtiment
-    /// Détermine le service associé au bâtiment
-    /// </summary>
+    // Appelé quand on entre dans un bat
+    // Détermine le service associé au bat
     public void EntrerDansBatiment(string nomScene)
     {
         if (batimentVersService.ContainsKey(nomScene))
@@ -85,10 +80,8 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Appelé quand on clique sur un personnage
-    /// Récupère le fichier JSON associé à ce personnage
-    /// </summary>
+    // Appelé quand on clique sur un perso
+    // recup le fic json associé à ce personnage
     public void SelectionnerPersonnage(string nomScene)
     {
         if (sceneVersPersonnage.ContainsKey(nomScene))
@@ -102,9 +95,7 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Reset l'état du jeu (retour au menu principal)
-    /// </summary>
+    //Reset l'état du jeu (retour au menu principal)
     public void ResetEtat()
     {
         ServiceActuel = "";
@@ -113,9 +104,7 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("État du jeu réinitialisé");
     }
 
-    /// <summary>
-    /// Change de scénario et niveau
-    /// </summary>
+    // Change de scénario et niveau
     public void DefinirScenarioEtNiveau(int scenario, int niveau)
     {
         ScenarioActuel = scenario;
@@ -123,9 +112,7 @@ public class GameStateManager : MonoBehaviour
         Debug.Log($"Scénario {scenario} - Niveau {niveau} défini");
     }
     
-    /// <summary>
-    /// Passe au niveau suivant (appelé depuis MapUIManager)
-    /// </summary>
+    //Passe au niveau suivant (TO DO : appeler depuis MapUIManager)
     public void PasserNiveauSuivant()
     {
         if (NiveauActuel < 5)
@@ -139,9 +126,7 @@ public class GameStateManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Retourne le nom du service en fonction de son identifiant
-    /// </summary>
+    // Retourne le nom du service en fonction de son identifiant
     public string ObtenirNomService(string identifiantService)
     {
         switch (identifiantService.ToLower())
