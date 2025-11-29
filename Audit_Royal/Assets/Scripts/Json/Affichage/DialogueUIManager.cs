@@ -156,89 +156,153 @@ public class DialogueUIManager : MonoBehaviour
     
     /// Prépare les questions dispo depuis le fichier scenario_verites.json
     void PreparerQuestions()
+{
+    Debug.Log("=== DÉBUT PRÉPARATION QUESTIONS ===");
+    
+    if (GameStateManager.Instance == null || personnageActuel == null) {
+        Debug.LogError("GameStateManager ou personnageActuel est NULL !");
+        return;
+    }
+    
+    questionsDisponibles.Clear();
+    questionsIdMap.Clear();
+    
+    // DEBUG 1 : Vérifier le chemin du fichier vérités
+    string filePath = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+    Debug.Log($"Chemin fichier vérités : {filePath}");
+    Debug.Log($"Fichier existe : {File.Exists(filePath)}");
+    
+    if (!File.Exists(filePath))
     {
-        if (GameStateManager.Instance == null || personnageActuel == null) {
-            return;
-		}
-        
-        questionsDisponibles.Clear();
-        questionsIdMap.Clear();
-        
-        // charge les vérités pour savoir quelles questions sont dispo
-        string filePath = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
-        
-        if (!File.Exists(filePath))
-        {
-            Debug.LogError("Fichier vérités introuvable");
-            return;
-        }
-        
-        string jsonContent = File.ReadAllText(filePath);
-        VeritesScenarioRoot verites = JsonConvert.DeserializeObject<VeritesScenarioRoot>(jsonContent);
-        
-        // Charger le scénario pour recup la liste complete des qu.
-        int scenario = GameStateManager.Instance.ScenarioActuel;
-        ScenarioRoot scenarioData = ChargerScenario(scenario);
-        
-        if (scenarioData == null)
-        {
-            Debug.LogError("Impossible de charger le scénario");
-            return;
-        }
-        
-        // Déterminer si c'est le service audité ou un autre service
-            bool estServiceAudite = personnageActuel.service.Trim().ToLower() == scenarioData.service_audite.Trim().ToLower();
+        Debug.LogError("Fichier vérités introuvable");
+        return;
+    }
     
-    		List<string> listeQuestionsScenario = null;
+    string jsonContent = File.ReadAllText(filePath);
+    Debug.Log($"Contenu du fichier vérités (premiers 500 caractères) :\n{jsonContent.Substring(0, Mathf.Min(500, jsonContent.Length))}");
     
-  		  	if (estServiceAudite && scenarioData.questions.service_audite != null)
-   		 	{
-   		     	listeQuestionsScenario = scenarioData.questions.service_audite.liste;
-  		  	}
- 		   	else if (!estServiceAudite && scenarioData.questions.autres_services != null)
-    		{
-        		listeQuestionsScenario = scenarioData.questions.autres_services.liste;
-    		}
+    VeritesScenarioRoot verites = JsonConvert.DeserializeObject<VeritesScenarioRoot>(jsonContent);
     
-    		if (listeQuestionsScenario == null)
-    		{
-        		Debug.LogError("Liste questions scénario est null!");
-        		return;
-    		}
+    // DEBUG 2 : Informations sur les vérités chargées
+    Debug.Log($"Scénario dans vérités : {verites.scenario}");
+    Debug.Log($"Niveau dans vérités : {verites.niveau}");
+    Debug.Log($"Services disponibles dans vérités : [{string.Join(", ", verites.verites.Keys)}]");
+    
+    int scenario = GameStateManager.Instance.ScenarioActuel;
+    ScenarioRoot scenarioData = ChargerScenario(scenario);
+    
+    if (scenarioData == null)
+    {
+        Debug.LogError("Impossible de charger le scénario");
+        return;
+    }
+    
+    // DEBUG 3 : Informations sur le personnage actuel
+    Debug.Log($"=== PERSONNAGE ACTUEL ===");
+    Debug.Log($"Nom : {personnageActuel.prenom} {personnageActuel.nom}");
+    Debug.Log($"Service du personnage : '{personnageActuel.service}'");
+    Debug.Log($"Métier du personnage : '{personnageActuel.metier}'");
+    Debug.Log($"Caractère : {personnageActuel.caractere}");
+    
+    // DEBUG 4 : Informations sur le scénario
+    Debug.Log($"=== SCÉNARIO ===");
+    Debug.Log($"Service audité du scénario : '{scenarioData.service_audite}'");
+    Debug.Log($"Questions service_audite disponibles : {scenarioData.questions.service_audite != null}");
+    Debug.Log($"Questions autres_services disponibles : {scenarioData.questions.autres_services != null}");
+    
+    bool estServiceAudite = personnageActuel.service.Trim().ToLower() == scenarioData.service_audite.Trim().ToLower();
+    Debug.Log($"Est service audité : {estServiceAudite}");
+    Debug.Log($"Comparaison : '{personnageActuel.service.Trim().ToLower()}' == '{scenarioData.service_audite.Trim().ToLower()}'");
 
-        
-        // recup les id des questions dispo depuis les vérités
-        if (verites.verites.ContainsKey(personnageActuel.service))
-        {
-		    Debug.Log($"Service trouvé : {personnageActuel.service}");
+    List<string> listeQuestionsScenario = null;
 
-            var serviceVerites = verites.verites[personnageActuel.service];
+    if (estServiceAudite && scenarioData.questions.service_audite != null)
+    {
+        listeQuestionsScenario = scenarioData.questions.service_audite.liste;
+        Debug.Log($"Service audité - {listeQuestionsScenario.Count} questions dans le scénario");
+    }
+    else if (!estServiceAudite && scenarioData.questions.autres_services != null)
+    {
+        listeQuestionsScenario = scenarioData.questions.autres_services.liste;
+        Debug.Log($"Autre service - {listeQuestionsScenario.Count} questions dans le scénario");
+    }
+    
+    if (listeQuestionsScenario == null)
+    {
+        Debug.LogError("Liste questions scénario est null!");
+        return;
+    }
+    
+    Debug.Log($"=== LISTE DES QUESTIONS DU SCÉNARIO ===");
+    for (int i = 0; i < listeQuestionsScenario.Count; i++)
+    {
+        Debug.Log($"Question {i}: {listeQuestionsScenario[i]}");
+    }
+
+    // DEBUG 5 : Vérification dans les vérités
+    Debug.Log($"=== RECHERCHE DANS LES VÉRITÉS ===");
+    Debug.Log($"Recherche du service '{personnageActuel.service}' dans les vérités...");
+    
+    if (verites.verites.ContainsKey(personnageActuel.service))
+    {
+        Debug.Log($"✓ Service '{personnageActuel.service}' trouvé dans les vérités");
+        
+        var serviceVerites = verites.verites[personnageActuel.service];
+        Debug.Log($"Postes disponibles dans ce service : [{string.Join(", ", serviceVerites.postes.Keys)}]");
+        
+        if (serviceVerites.postes.ContainsKey(personnageActuel.metier))
+        {
+            Debug.Log($"✓ Métier '{personnageActuel.metier}' trouvé dans le service");
             
-            if (serviceVerites.postes.ContainsKey(personnageActuel.metier))
+            var posteVerites = serviceVerites.postes[personnageActuel.metier];
+            Debug.Log($"Nombre de questions disponibles pour ce poste : {posteVerites.verites.Count}");
+            Debug.Log($"IDs des questions : [{string.Join(", ", posteVerites.verites.Keys)}]");
+            
+            foreach (string questionId in posteVerites.verites.Keys)
             {
-				Debug.Log($"Métier trouvé : {personnageActuel.metier}");
-
-                var posteVerites = serviceVerites.postes[personnageActuel.metier];
+                Debug.Log($"Traitement question ID : {questionId}");
+                int index = int.Parse(questionId);
+                Debug.Log($"Index parsé : {index}, Taille liste : {listeQuestionsScenario.Count}");
                 
-		        Debug.Log("Liste des IDs trouvés dans posteVerites.verites :");
-
-                // Les clés du dictionnaire verites sont les id des questions disponibles dcp
-                foreach (string questionId in posteVerites.verites.Keys)
+                if (index < listeQuestionsScenario.Count)
                 {
-                    int index = int.Parse(questionId);
-                    if (index < listeQuestionsScenario.Count)
-                    {
-                        string texteQuestion = listeQuestionsScenario[index];
-                        questionsDisponibles.Add(texteQuestion);
-                        questionsIdMap[texteQuestion] = questionId;
-                    }
+                    string texteQuestion = listeQuestionsScenario[index];
+                    questionsDisponibles.Add(texteQuestion);
+                    questionsIdMap[texteQuestion] = questionId;
+                    Debug.Log($"✓ Question ajoutée : {texteQuestion}");
+                }
+                else
+                {
+                    Debug.LogError($"✗ Index {index} hors limites (max: {listeQuestionsScenario.Count - 1})");
                 }
             }
         }
-        
-        Debug.Log($"Total questions disponibles: {questionsDisponibles.Count}");
-        AfficherQuestionsCarnet();
+        else
+        {
+            Debug.LogError($"✗ Métier '{personnageActuel.metier}' NON trouvé dans le service '{personnageActuel.service}'!");
+            Debug.LogError($"Métiers disponibles : [{string.Join(", ", serviceVerites.postes.Keys)}]");
+        }
     }
+    else
+    {
+        Debug.LogError($"✗ Service '{personnageActuel.service}' NON trouvé dans les vérités!");
+        Debug.LogError($"Services disponibles : [{string.Join(", ", verites.verites.Keys)}]");
+    }
+    
+    Debug.Log($"=== RÉSULTAT FINAL ===");
+    Debug.Log($"Total questions trouvées: {questionsDisponibles.Count}");
+    
+    if (questionsDisponibles.Count > 0)
+    {
+        Debug.Log("Questions disponibles :");
+        for (int i = 0; i < questionsDisponibles.Count; i++)
+        {
+            Debug.Log($"  {i + 1}. {questionsDisponibles[i]}");
+        }
+    }
+    
+    AfficherQuestionsCarnet();
+}
     
     /// Charge le scénario depuis le fichier JSON
     ScenarioRoot ChargerScenario(int numeroScenario)
