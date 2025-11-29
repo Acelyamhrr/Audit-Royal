@@ -155,7 +155,7 @@ public class CarnetManager : MonoBehaviour
     //Récupère l'intitulé de la question à partir du service, du numéro de la question et du numéro du scénario en cours
     public string getQuestion(string service, string numQuestion)
     {
-        string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json") ;
+        string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
         string json = File.ReadAllText(file);
         JObject obj = JObject.Parse(json);
 
@@ -170,13 +170,12 @@ public class CarnetManager : MonoBehaviour
     //Récupère l'info clef à partir du service, du métier, du numéro de la question et de l'info et du numéro du scénario en cours
     private string getInfo(string service, string metier, string numQuestion, string numInfo)
     {
-        string file = $"scenario{this.numScenario}/scenario{this.numScenario}_{service.ToLower()}.json";
+		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}_{service.ToLower()}.json");
         string json = File.ReadAllText(file);
         JObject obj = JObject.Parse(json);
 
         int index = int.Parse(numInfo)-1;
-
-        var infos = (JArray)obj["postes"][metier.ToLower()][numQuestion];
+        JArray infos = (JArray)obj["postes"][metier.ToLower()][numQuestion];
         if (index >= 0 && index < infos.Count)
         {
             return infos[index]["info_cle"]?.ToString() ?? $"[info_cle manquante]";
@@ -188,32 +187,61 @@ public class CarnetManager : MonoBehaviour
     }
 
     //Récupère les infos clefs d'une question dans le carnet
-    public List<string> getInfos(int numQuestion)
+    public List<string> getInfos(string serviceRapport, string numQuestion)
     {
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
         List<string> lst = new List<string>();
+		string service_audite = getServiceAudite();
 
-        foreach (var service in (JObject)obj["informations"])
-        {
-            var postes = (JObject)service.Value;
+		if(service_audite == serviceRapport){
+			var postes = (JObject)obj["informations"][service_audite]["postes"];
+			foreach (var metier in postes.Properties())
+        	{
+            	JObject verites = (JObject)metier.Value["verites"];
 
-            foreach (var metier in postes.Properties())
+                JArray infos = (JArray) verites[numQuestion];
+
+            	for (int i = 0; i < infos.Count; i++)
+            	{
+                	string infoText = getInfo(service_audite, metier.Name, numQuestion.ToString(), infos[i].ToString());
+                	if (!infoText.StartsWith("["))
+                	{
+                    	lst.Add(infoText);
+                	}
+            	}
+        	}
+		}
+		else{
+            JObject informations = (JObject)obj["informations"];
+
+            foreach (var service in informations)
             {
-                var verites = (JObject)metier.Value;
-                var infos = (JArray)verites[numQuestion.ToString()];
-
-                for (int i = 0; i < infos.Count; i++)
+                if(service.Key == service_audite)
                 {
-                    string infoText = getInfo(service.Key, metier.Name, numQuestion.ToString(), infos[i].ToString());
-                    if (!infoText.StartsWith("["))
+                    continue;
+                }
+
+                JObject postes = (JObject)service.Value["postes"];
+
+                foreach (var metier in postes.Properties())
+                {
+                    JObject verites = (JObject)metier.Value["verites"];
+
+                    JArray infos = (JArray) verites[numQuestion];
+
+                    for (int i = 0; i < infos.Count; i++)
                     {
-                        lst.Add(infoText);
+                        string infoText = getInfo(service.Key, metier.Name, numQuestion, infos[i].ToString());
+                        if (!infoText.StartsWith("["))
+                        {
+                            lst.Add(infoText);
+                        }
                     }
                 }
             }
-        }
-
+		}
+      
         return lst;
     }
 
@@ -247,9 +275,25 @@ public class CarnetManager : MonoBehaviour
 		return lst;
     }
 
-    public List<string> getAllQuestions()
+	private string getServiceAudite(){
+		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
+        string json = File.ReadAllText(file);
+        JObject obj = JObject.Parse(json);
+
+        return obj["service_audite"].ToString().ToLower();
+	}
+
+	public string getNameAudit(){
+		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
+        string json = File.ReadAllText(file);
+        JObject obj = JObject.Parse(json);
+
+		return obj["titre"].ToString();
+	}
+
+    public Dictionary<string, string> getAllQuestions()
 	{
-    	List<string> questions = new List<string>();
+        Dictionary<string, string> dico = new Dictionary<string, string>();
 
     	string json = File.ReadAllText(this.pathFile);
     	JObject obj = JObject.Parse(json);
@@ -266,15 +310,33 @@ public class CarnetManager : MonoBehaviour
 
             	foreach (var numQuestion in verites)
             	{
+					string key = $"{service.Key};{numQuestion.Key}";
 					string question = getQuestion(service.Key, numQuestion.Key);
-					if(!questions.Contains(question)){
-						questions.Add(question);
+					if(service.Key != getServiceAudite()){
+						bool trouver = false;
+
+						foreach(KeyValuePair<string, string> questions in dico){
+							if(questions.Value == question){
+								trouver = true;
+								break;
+							}
+						}
+
+						if(!trouver){
+							key = $"autres_services;{numQuestion.Key}";
+							dico.Add(key, question);
+						}
+					}
+					else{
+						if(!dico.ContainsKey(key)){
+							dico.Add(key, question);
+						}
 					}
             	}
         	}
     	}
 
-    	return questions;
+    	return dico;
 	}
 
 

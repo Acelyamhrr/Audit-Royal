@@ -18,6 +18,8 @@ Audit_Royal/*.mdb
 Audit_Royal/.DS_Store
 Audit_Royal/Thumbs.db
 
+Audit_Royal/Assets/StreamingAssets/JSON/
+
 # Cache Unity
 *.unitypackage
 *.assetbundle

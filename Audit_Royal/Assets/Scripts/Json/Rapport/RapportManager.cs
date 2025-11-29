@@ -12,10 +12,10 @@ public class RapportManager : MonoBehaviour
     private int nbInfosVraies;          //Nombre total d'infos vraies
     private string fileTrue;
     private CarnetManager carnetManager;
-    public GameObject reponses;
+    public GameObject reponsesContent;
 	public GameObject content;
-    private int currentQuestion;
-	private List<string> questions;
+	private Dictionary<string, string> questions;
+	public GameObject nameAudit;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,13 +48,19 @@ public class RapportManager : MonoBehaviour
             }
         }
 
-		//TODO : GetName audit
+        TextMeshProUGUI tmp = this.nameAudit.GetComponent<TextMeshProUGUI>();
+        
+        if (tmp != null)
+        {
+	        tmp.text = this.carnetManager.getNameAudit();
+        }
+        else
+        {
+	        Debug.LogWarning("Pas de TextMeshProUGUI trouvé sur " + this.nameAudit.name);
+        }
 		
-		this.questions = carnetManager.getAllQuestions();
+        this.questions = carnetManager.getAllQuestions();
 		createTextQuestionsContent();
-
-
-		this.currentQuestion = 0;
     }
 
 	private void createTextQuestionsContent(){
@@ -64,10 +70,13 @@ public class RapportManager : MonoBehaviour
         	Destroy(child.gameObject);
     	}
 
-    	foreach (string question in this.questions)
+    	foreach (KeyValuePair<string, string> question in this.questions)
     	{
 			//Créer un panel pour la question et la réponse 
-			GameObject panelObj = new GameObject("PanelText");
+			GameObject panelObj = new GameObject("Panel");
+			string service = question.Key.Split(";")[0];
+			string numQuestion = question.Key.Split(";")[1];
+			panelObj.name = $"Panel_{service}_{numQuestion}";
 			panelObj.AddComponent<VerticalLayoutGroup>();
 			panelObj.transform.SetParent(content.transform, false);
 
@@ -77,12 +86,21 @@ public class RapportManager : MonoBehaviour
 
         	// Ajouter le composant TextMeshProUGUI
         	TextMeshProUGUI tmp = textObj.AddComponent<TextMeshProUGUI>();
-        	tmp.text = question;
+        	tmp.text = question.Value;
 
         	// Ajuster la police, la taille, l’alignement
         	tmp.fontSize = 20;
         	tmp.alignment = TextAlignmentOptions.Left;
         	tmp.color = Color.black;
+	        
+	        // Ajouter un EventTrigger pour gérer le clic
+	        EventTrigger trigger = textObj.AddComponent<EventTrigger>();
+
+	        EventTrigger.Entry entry = new EventTrigger.Entry();
+	        entry.eventID = EventTriggerType.PointerClick;
+	        entry.callback.AddListener((data) => { OnQuestionClicked(panelObj.name); });
+
+	        trigger.triggers.Add(entry);
 
 			// Créer le texte pour la réponse
 			GameObject repObj = new GameObject("ReponseText");
@@ -102,39 +120,80 @@ public class RapportManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		/*
-        List<string> lst = getInfos(this.currentQuestion);
+		
+    }
+    
+    // Méthode appelée quand on clique sur une question
+    private void OnQuestionClicked(string idQuestion)
+    {   
+        // Nettoyer le contenu avant de recréer les textes
+    	foreach (Transform child in reponsesContent.transform)
+    	{
+        	Destroy(child.gameObject);
+    	}
 
-        foreach (string info in lst)
+	    //Chercher les infos dans le carnet et les mettre dans reponses
+	    string service = idQuestion.Substring(6, idQuestion.Length-8);
+	    string question = idQuestion.Substring(idQuestion.Length-1);
+	    List<string> reponses = getInfos(service, question);
+
+        foreach(string reponse in reponses)
         {
             GameObject boutonGO = new GameObject("BoutonTMP", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
-            boutonGO.transform.SetParent(reponses.transform, false);
+            boutonGO.name = $"Reponse_{service}_{question}";
+            boutonGO.transform.SetParent(reponsesContent.transform, false);
+
             Image img = boutonGO.GetComponent<Image>();
             img.color = Color.white;
+            img.raycastTarget = true;
+
+            RectTransform rt = boutonGO.GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0.5f, 0.5f);    // centre
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.sizeDelta = new Vector2(300, 50);       // largeur/hauteur visibles
+            rt.anchoredPosition = Vector2.zero;        // au centre du Canvas
+
+            ContentSizeFitter fitter = boutonGO.AddComponent<ContentSizeFitter>();
+            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained; // largeur contrôlée par le layout
+            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;   // hauteur auto
+
             GameObject texteGO = new GameObject("TexteTMP", typeof(RectTransform), typeof(TextMeshProUGUI));
             texteGO.transform.SetParent(boutonGO.transform, false);
 
             TextMeshProUGUI tmpText = texteGO.GetComponent<TextMeshProUGUI>();
-            tmpText.text = info;
-            tmpText.alignment = TextAlignmentOptions.Center;
-            tmpText.fontSize = 24;
-            
+            tmpText.text = reponse;
+            tmpText.alignment = TextAlignmentOptions.Left;
+            tmpText.fontSize = 15;
+            tmpText.color = Color.black;
+
             RectTransform rtText = texteGO.GetComponent<RectTransform>();
             rtText.anchorMin = Vector2.zero;
             rtText.anchorMax = Vector2.one;
             rtText.offsetMin = Vector2.zero;
             rtText.offsetMax = Vector2.zero;
 
-            // 6. Ajouter un listener au bouton
+            LayoutElement le = boutonGO.AddComponent<LayoutElement>();
+            le.preferredHeight = tmpText.preferredHeight;
+            le.preferredWidth = tmpText.preferredWidth;
+
+            // Ajout du listener sur le bouton
             Button btn = boutonGO.GetComponent<Button>();
-            btn.onClick.AddListener(() => Debug.Log($"Bouton {info} cliqué !"));
+            btn.onClick.AddListener(() => OnReponseClicked(boutonGO.name));
         }
-        */
     }
 
-    private List<string> getInfos(int numQuestion)
+    private void OnReponseClicked(string idReponse)
     {
-        return carnetManager.getInfos(numQuestion);
+        //TODO : changer le txtreponse par la reponse cliquée
+        Debug.Log($"Reponse {idReponse} cliquée");
+
+
+    }
+
+    private List<string> getInfos(string service, string numQuestion)
+    {
+        return carnetManager.getInfos(service, numQuestion);
     }
 
     //Renvoie si la réponse est vraie ou fausse
