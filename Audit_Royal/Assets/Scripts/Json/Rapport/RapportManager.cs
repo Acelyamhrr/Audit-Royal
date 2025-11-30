@@ -9,18 +9,23 @@ using UnityEngine.UI;
 
 public class RapportManager : MonoBehaviour
 {
-    private int nbInfosVraies;          //Nombre total d'infos vraies
+    //private int nbInfosVraies;          //Nombre total d'infos vraies
+    private int scoreTotal;
+
     private string fileTrue;
     private CarnetManager carnetManager;
     public GameObject reponsesContent;
 	public GameObject content;
 	private Dictionary<string, string> questions;
 	public GameObject nameAudit;
+    public GameObject btnValider;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         this.fileTrue = Path.Combine(Application.streamingAssetsPath, "JSON/scenario_verites.json");
+
+        //Récupère le carnetManager
         this.carnetManager = FindFirstObjectByType<CarnetManager>();
 
 		if(carnetManager == null){
@@ -28,6 +33,8 @@ public class RapportManager : MonoBehaviour
 			carnetManager = go.AddComponent<CarnetManager>();
 		}
         
+        /*
+        //Compte le nombre de vérités
         string json = File.ReadAllText(this.fileTrue);
         JObject obj = JObject.Parse(json);
 
@@ -47,7 +54,9 @@ public class RapportManager : MonoBehaviour
                 }
             }
         }
+        */
 
+        //Affiche le nom de l'audit
         TextMeshProUGUI tmp = this.nameAudit.GetComponent<TextMeshProUGUI>();
         
         if (tmp != null)
@@ -58,7 +67,12 @@ public class RapportManager : MonoBehaviour
         {
 	        Debug.LogWarning("Pas de TextMeshProUGUI trouvé sur " + this.nameAudit.name);
         }
+
+        // Ajout du listener sur le bouton
+        Button btn = btnValider.GetComponent<Button>();
+        btn.onClick.AddListener(() => OnValidationClicked());
 		
+        //Affiche les questions
         this.questions = carnetManager.getAllQuestions();
 		createTextQuestionsContent();
     }
@@ -140,6 +154,7 @@ public class RapportManager : MonoBehaviour
 
         foreach(string reponse in reponses)
         {
+            //Créer un bouton de la réponse
             GameObject boutonGO = new GameObject("BoutonTMP", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
             boutonGO.name = $"Reponse_{service}_{question}";
             boutonGO.transform.SetParent(reponsesContent.transform, false);
@@ -188,11 +203,9 @@ public class RapportManager : MonoBehaviour
         }
     }
 
-    //Méthode appelée quand on clique sur une réponse
+    //Méthode appelée quand on clique sur une réponse : changer le txtreponse par la reponse cliquée
     private void OnReponseClicked(string idReponse, string reponse)
     {
-        // Changer le txtreponse par la reponse cliquée
-
         //Chercher le text de la page correspondant
         string service = idReponse.Substring(8, idReponse.Length-10);
         string numQuestion = idReponse.Substring(idReponse.Length-1);
@@ -211,6 +224,17 @@ public class RapportManager : MonoBehaviour
                 tmp.text = "-> " + reponse;
                 
                 //TODO : changer la couleur du bouton
+                /*Transform childBouton = reponsesContent.transform.Find(idReponse);
+                if(childBouton != null)
+                {
+                    GameObject goBouton = childBouton.gameObject;
+                    Image img = goBouton.GetComponent<Image>();
+                    img.color = Color.gray;
+                }
+                else
+                {
+                    Debug.LogError($"Bouton {idReponse} non trouvé.");
+                }*/
             }
             else
             {
@@ -229,16 +253,80 @@ public class RapportManager : MonoBehaviour
         return carnetManager.getInfos(service, numQuestion);
     }
 
+    private void OnValidationClicked()
+    {
+        int nbQuestions = this.questions.Count;
+        int score=0;
+        //Pour chaque question
+        Transform contentTransform = content.transform;
+        foreach(Transform panel in contentTransform)
+        {
+            //Debug.Log("Panel trouvé : " + panel.name);
+            string service = panel.name.Substring(6, panel.name.Length-8);
+	        string numQuestion = panel.name.Substring(panel.name.Length-1);
+            //Debug.Log($"Service {service} : numQuestion {numQuestion}");
+
+            // Récupère tous les TMP dans le panel
+            TextMeshProUGUI[] texts = panel.GetComponentsInChildren<TextMeshProUGUI>();
+            TextMeshProUGUI secondText = texts[1];
+
+            //Récupère le service, métier et numéro de l'info
+            string info = secondText.text;
+            info = info.Replace("->", "");
+            if(info == "")
+            {
+                //Si l'on a pas mis d'info, on passe à la suivante
+                continue;
+            }
+
+            string numInfo = "";
+            string metier = "";
+
+            if(service == carnetManager.getServiceAudite())
+            {
+                string retour = carnetManager.getNumInfo(service, info);
+                metier = retour.Split(";")[0];
+                numInfo = retour.Split(";")[1];
+            }
+            else
+            {
+                List<string> services = carnetManager.getServices();
+                services.Remove(carnetManager.getServiceAudite());
+
+                foreach(string serv in services)
+                {
+                    string retour = carnetManager.getNumInfo(serv, info);
+                    if(retour != "-1")
+                    {
+                        service = serv;
+                        metier = retour.Split(";")[0];
+                        numInfo = retour.Split(";")[1];
+                        break;
+                    }
+                }
+            }
+
+            //Si elle est vraie, score+1
+            if(checkTrue(service, metier, numQuestion, int.Parse(numInfo)))
+            {
+                score++;
+                Debug.Log("+1");
+            }
+
+        }
+
+        //Calcul du score total
+        this.scoreTotal = score*100/nbQuestions;
+        Debug.Log($"Score {scoreTotal}% !");
+    }
+
     //Renvoie si la réponse est vraie ou fausse
-    private bool checkTrue(Service service, Metier metier, int numQuestion, int numInfo)
+    private bool checkTrue(string service, string metier, string numQuestion, int numInfo)
     {
         string json = File.ReadAllText(this.fileTrue);
         JObject obj = JObject.Parse(json);
-
-        string _service = service.ToString().ToLower();
-        string _metier = metier.ToString().ToLower();
         
-        JArray liste = (JArray) obj["verites"][_service][_metier][numQuestion];
+        JArray liste = (JArray) obj["verites"][service]["postes"][metier]["verites"][numQuestion];
         
         return liste.Contains(new JValue(numInfo));
     }

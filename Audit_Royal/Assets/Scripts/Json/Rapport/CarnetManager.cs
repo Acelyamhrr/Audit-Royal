@@ -275,7 +275,7 @@ public class CarnetManager : MonoBehaviour
 		return lst;
     }
 
-	private string getServiceAudite(){
+	public string getServiceAudite(){
 		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
         string json = File.ReadAllText(file);
         JObject obj = JObject.Parse(json);
@@ -338,6 +338,51 @@ public class CarnetManager : MonoBehaviour
 
     	return dico;
 	}
+
+    public List<string> getServices()
+    {
+        List<string> lst = new List<string>();
+        
+        string json = File.ReadAllText(this.pathFile);
+    	JObject obj = JObject.Parse(json);
+
+    	JObject informations = (JObject)obj["informations"];
+
+        foreach(var service in informations)
+        {
+            lst.Add(service.Key);
+        }
+
+        return lst;
+    }
+
+    public string getNumInfo(string service, string info)
+    {
+        string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}_{service.ToLower()}.json");
+        string json = File.ReadAllText(file);
+        JObject obj = JObject.Parse(json);
+
+        JObject postes = (JObject)obj["postes"];
+
+        foreach(var metier in postes)
+        {
+            JObject questions = (JObject)metier.Value;
+            foreach(var question in questions)
+            {
+                JArray reponse = (JArray)question.Value;
+
+                for(int i=0; i<reponse.Count; i++)
+                {
+                    JObject rep = (JObject)reponse[i];
+                    if (string.Equals(rep["info_cle"].ToString().Trim(), info.Trim(), StringComparison.OrdinalIgnoreCase))
+                    {
+                        return metier.Key + ";" + reponse[i]["variation_id"];
+                    }
+                }
+            }
+        }
+        return "-1";
+    }
 
 
 }
