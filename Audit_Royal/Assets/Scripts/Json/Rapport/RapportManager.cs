@@ -159,11 +159,16 @@ public class RapportManager : MonoBehaviour
             GameObject texteGO = new GameObject("TexteTMP", typeof(RectTransform), typeof(TextMeshProUGUI));
             texteGO.transform.SetParent(boutonGO.transform, false);
 
+            // Texte
             TextMeshProUGUI tmpText = texteGO.GetComponent<TextMeshProUGUI>();
             tmpText.text = reponse;
-            tmpText.alignment = TextAlignmentOptions.Left;
-            tmpText.fontSize = 30;
             tmpText.color = Color.black;
+            tmpText.alignment = TextAlignmentOptions.Left;
+            tmpText.enableAutoSizing = true;
+            tmpText.fontSizeMin = 8;
+            tmpText.fontSizeMax = 30;
+            tmpText.textWrappingMode = TextWrappingModes.Normal; // autorise le retour à la ligne
+            tmpText.overflowMode = TextOverflowModes.Ellipsis;   // ajoute "..." si trop long
 
             RectTransform rtText = texteGO.GetComponent<RectTransform>();
             rtText.anchorMin = Vector2.zero;
@@ -171,13 +176,11 @@ public class RapportManager : MonoBehaviour
             rtText.offsetMin = Vector2.zero;
             rtText.offsetMax = Vector2.zero;
 
+            // Bouton : taille imposée
             LayoutElement le = boutonGO.AddComponent<LayoutElement>();
-            le.preferredHeight = tmpText.preferredHeight;
-            le.preferredWidth = tmpText.preferredWidth;
+            le.preferredHeight = 100;   // fixe la hauteur
+            le.preferredWidth = 900;   // fixe la largeur
 
-            ContentSizeFitter fitter = boutonGO.AddComponent<ContentSizeFitter>();
-            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained; // largeur contrôlée par le layout
-            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;   // hauteur auto
 
             // Ajout du listener sur le bouton
             Button btn = boutonGO.GetComponent<Button>();
