@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using Newtonsoft.Json.Linq;
+using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using TMPro;
@@ -305,12 +306,11 @@ public class RapportManager : MonoBehaviour
                     }
                 }
             }
-
+            
             //Si elle est vraie, score+1
             if(checkTrue(service, metier, numQuestion, int.Parse(numInfo)))
             {
                 score++;
-                Debug.Log("+1");
             }
 
         }
@@ -328,6 +328,6 @@ public class RapportManager : MonoBehaviour
         
         JArray liste = (JArray) obj["verites"][service]["postes"][metier]["verites"][numQuestion];
         
-        return liste.Contains(new JValue(numInfo));
+	    return liste.Any(x => (int)x == numInfo);
     }
 }
