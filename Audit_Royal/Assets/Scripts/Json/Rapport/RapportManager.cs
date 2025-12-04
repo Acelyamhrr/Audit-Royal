@@ -72,6 +72,17 @@ public class RapportManager : MonoBehaviour
         // Ajout du listener sur le bouton
         Button btn = btnValider.GetComponent<Button>();
         btn.onClick.AddListener(() => OnValidationClicked());
+
+		//Stretch du content des questions
+		RectTransform contentRT = content.GetComponent<RectTransform>();
+
+		// Stretch horizontal
+		contentRT.anchorMin = new Vector2(0, 1);
+		contentRT.anchorMax = new Vector2(1, 1);
+
+		// Left = 0, Right = 0
+		contentRT.offsetMin = new Vector2(0, contentRT.offsetMin.y);
+		contentRT.offsetMax = new Vector2(0, contentRT.offsetMax.y);
 		
         //Affiche les questions
         this.questions = carnetManager.getAllQuestions();
@@ -105,9 +116,22 @@ public class RapportManager : MonoBehaviour
 
         	// Ajuster la police, la taille, l’alignement
         	tmp.fontSize = 20;
+			tmp.enableAutoSizing = true;
+            tmp.fontSizeMin = 20;
+            tmp.fontSizeMax = 50;
         	tmp.alignment = TextAlignmentOptions.Left;
         	tmp.color = Color.black;
             tmp.fontStyle = FontStyles.Bold;
+			tmp.textWrappingMode = TextWrappingModes.Normal;
+
+			//Rectransform
+			RectTransform rt = textObj.GetComponent<RectTransform>();
+        	rt.anchorMin = new Vector2(0, 1);   // stretch horizontal, aligné en haut
+        	rt.anchorMax = new Vector2(1, 1);
+        	rt.pivot = new Vector2(0.5f, 1f);   // pivot en haut-centre
+        	rt.offsetMin = new Vector2(0, 0);   // Left = 0
+        	rt.offsetMax = new Vector2(0, 0);   // Right = 0
+        	rt.sizeDelta = new Vector2(0, 60);  // hauteur fixe
 	        
 	        // Ajouter un EventTrigger pour gérer le clic
 	        EventTrigger trigger = textObj.AddComponent<EventTrigger>();
@@ -126,8 +150,21 @@ public class RapportManager : MonoBehaviour
 
         	// Ajuster la police, la taille, l’alignement
         	tmp2.fontSize = 20;
+			tmp2.enableAutoSizing = true;
+            tmp2.fontSizeMin = 20;
+            tmp2.fontSizeMax = 50;
         	tmp2.alignment = TextAlignmentOptions.Left;
         	tmp2.color = Color.black;
+			tmp2.textWrappingMode = TextWrappingModes.Normal;
+
+			//Rectransform
+			RectTransform rt2 = repObj.GetComponent<RectTransform>();
+        	rt2.anchorMin = new Vector2(0, 1);   // stretch horizontal, aligné en haut
+        	rt2.anchorMax = new Vector2(1, 1);
+        	rt2.pivot = new Vector2(0.5f, 1f);   // pivot en haut-centre
+        	rt2.offsetMin = new Vector2(0, 0);   // Left = 0
+        	rt2.offsetMax = new Vector2(0, 0);   // Right = 0
+        	rt2.sizeDelta = new Vector2(0, 60);  // hauteur fixe
 
 			repObj.transform.SetParent(panelObj.transform, false);
     	}
