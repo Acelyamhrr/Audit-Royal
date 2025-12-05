@@ -27,6 +27,12 @@ public class MapUIManager : MonoBehaviour
         AfficherMission();
         ConfigurerBoutons();
         
+        if (GameStateManager.Instance.DoTerminerNiveauApresRapport)
+        {
+            GameStateManager.Instance.DoTerminerNiveauApresRapport = false;
+            TerminerNiveau();
+        }
+        
         if (panelFinNiveau != null)
             panelFinNiveau.SetActive(false);
     }
@@ -37,7 +43,7 @@ public class MapUIManager : MonoBehaviour
             boutonTerminerNiveau.onClick.AddListener(AfficherConfirmationFin);
         
         if (boutonConfirmerFin != null)
-            boutonConfirmerFin.onClick.AddListener(TerminerNiveau);
+            boutonConfirmerFin.onClick.AddListener(PasserRapport);
         
         if (boutonAnnuler != null)
             boutonAnnuler.onClick.AddListener(AnnulerFin);
@@ -158,7 +164,7 @@ public class MapUIManager : MonoBehaviour
         {
             if (niveauActuel < 5)
             {
-                texteFinNiveau.text = $"Terminer le niveau {niveauActuel} ?\n\n" +
+                texteFinNiveau.text = $"Terminer le niveau {niveauActuel} et passer au rapport ?\n\n" +
                                      $"Vous passerez au niveau {niveauActuel + 1}.";
             }
             else
@@ -176,6 +182,11 @@ public class MapUIManager : MonoBehaviour
     {
         if (panelFinNiveau != null)
             panelFinNiveau.SetActive(false);
+    }
+
+    void PasserRapport()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Rapport");
     }
     
     void TerminerNiveau()

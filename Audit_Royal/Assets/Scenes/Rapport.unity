@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 19518677}
   - component: {fileID: 19518676}
   - component: {fileID: 19518675}
+  - component: {fileID: 19518678}
   m_Layer: 5
   m_Name: Scroll_view
   m_TagString: Untagged
@@ -227,6 +228,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19518673}
   m_CullTransparentMesh: 1
+--- !u!114 &19518678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19518673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &36323858
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,11 +615,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: -1
+  m_MinHeight: 400
   m_PreferredWidth: -1
   m_PreferredHeight: -1
-  m_FlexibleWidth: 1
-  m_FlexibleHeight: 1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
   m_LayoutPriority: 1
 --- !u!1 &322638230
 GameObject:
@@ -895,6 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RapportManager
   reponsesContent: {fileID: 2103384954}
   content: {fileID: 595753356}
+  scrollView: {fileID: 19518673}
   nameAudit: {fileID: 1886861554}
   btnValider: {fileID: 1525330622}
 --- !u!1 &565859273
@@ -1039,7 +1061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -18.27533, y: -0.00048539918}
+  m_AnchoredPosition: {x: -18.27539, y: -0.00048539918}
   m_SizeDelta: {x: -1780.7891, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &595753358
@@ -1946,7 +1968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -181.77734, y: -2.4525146}
+  m_AnchoredPosition: {x: -181.77734, y: -2.4525452}
   m_SizeDelta: {x: 76.045654, y: 12.1168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910501446
