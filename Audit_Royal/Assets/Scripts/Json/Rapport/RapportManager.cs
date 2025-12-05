@@ -281,10 +281,8 @@ public class RapportManager : MonoBehaviour
         Transform contentTransform = content.transform;
         foreach(Transform panel in contentTransform)
         {
-            //Debug.Log("Panel trouvé : " + panel.name);
             string service = panel.name.Substring(6, panel.name.Length-8);
 	        string numQuestion = panel.name.Substring(panel.name.Length-1);
-            //Debug.Log($"Service {service} : numQuestion {numQuestion}");
 
             // Récupère tous les TMP dans le panel
             TextMeshProUGUI[] texts = panel.GetComponentsInChildren<TextMeshProUGUI>();
@@ -337,6 +335,9 @@ public class RapportManager : MonoBehaviour
         //Calcul du score total
         this.scoreTotal = score*100/nbQuestions;
         Debug.Log($"Score {scoreTotal}% !");
+
+		GameStateManager.Instance.DoTerminerNiveauApresRapport = true;
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Map");
     }
 
     //Renvoie si la réponse est vraie ou fausse
