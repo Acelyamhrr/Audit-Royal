@@ -17,6 +17,7 @@ public class RapportManager : MonoBehaviour
     private CarnetManager carnetManager;
     public GameObject reponsesContent;
 	public GameObject content;
+	public GameObject scrollView;
 	private Dictionary<string, string> questions;
 	public GameObject nameAudit;
     public GameObject btnValider;
@@ -33,29 +34,6 @@ public class RapportManager : MonoBehaviour
 			GameObject go = new GameObject("CarnetManager");
 			carnetManager = go.AddComponent<CarnetManager>();
 		}
-        
-        /*
-        //Compte le nombre de vérités
-        string json = File.ReadAllText(this.fileTrue);
-        JObject obj = JObject.Parse(json);
-
-        this.nbInfosVraies = 0;
-
-        foreach (var service in (JObject)obj["verites"])
-        {
-            var postes = (JObject)((JObject)service.Value)["postes"];
-
-            foreach (var poste in postes.Properties())
-            {
-                var questions = (JObject)((JObject)poste.Value)["verites"];
-
-                foreach (var question in questions.Properties())
-                {
-                    nbInfosVraies += ((JArray)question.Value).Count;
-                }
-            }
-        }
-        */
 
         //Affiche le nom de l'audit
         TextMeshProUGUI tmp = this.nameAudit.GetComponent<TextMeshProUGUI>();
@@ -168,6 +146,10 @@ public class RapportManager : MonoBehaviour
 
 			repObj.transform.SetParent(panelObj.transform, false);
     	}
+		
+		ScrollRect scrollRect = scrollView.GetComponent<ScrollRect>();
+		Canvas.ForceUpdateCanvases();
+		scrollRect.verticalNormalizedPosition = 1f; // 1 = haut, 0 = bas
 	}
 
     // Update is called once per frame

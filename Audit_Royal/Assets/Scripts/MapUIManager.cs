@@ -12,6 +12,7 @@ public class MapUIManager : MonoBehaviour
     public TextMeshProUGUI texteFinNiveau;
     public Button boutonConfirmerFin;
     public Button boutonAnnuler;
+    public Button boutonRapport;
     
     private ScenarioManager scenarioManager;
     
@@ -41,6 +42,9 @@ public class MapUIManager : MonoBehaviour
         
         if (boutonAnnuler != null)
             boutonAnnuler.onClick.AddListener(AnnulerFin);
+
+        if (boutonRapport != null)
+            boutonRapport.onClick.AddListener(sceneRapport);
     }
     
     void AfficherMission()
@@ -213,5 +217,10 @@ public class MapUIManager : MonoBehaviour
             Debug.Log("Tous les niveaux terminés ! Retour au menu principal.");
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
+    }
+
+    void sceneRapport()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Rapport");
     }
 }
