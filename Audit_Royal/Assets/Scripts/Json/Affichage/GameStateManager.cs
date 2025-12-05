@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
-
+    public bool DoTerminerNiveauApresRapport = false;
     // État du jeu
     public int ScenarioActuel { get; private set; } = 0;
     public int NiveauActuel { get; private set; } = 1;
