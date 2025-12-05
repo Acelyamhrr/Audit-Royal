@@ -16,7 +16,6 @@ Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeu
 Pour ce projet, nous avons choisi de nous concentrer sur les **objectifs pédagogiques suivants** :
 - Comprendre les **étapes du processus d’audit** (préparation, réalisation, communication).
 - Représenter la **difficulté de la collecte d’informations**, notamment à travers les échanges humains et leurs caractères.
-- Prendre conscience de **l’importance d’un audit** pour améliorer le fonctionnement d’une organisation.
 
 Ainsi **Audit Royal a pour but** de :
 - Fournir une expérience interactive qui **illustre la réalité du métier** d’auditeur.
@@ -28,14 +27,11 @@ Ainsi **Audit Royal a pour but** de :
 Voici l'explication approfondie des trois objectifs centraux du jeu :
 
 ### Compréhension du processus de réalisation de l'audit
-Le joueur doit comprendre l’enchaînement des différentes étapes d’un audit. Ces informations sont disponibles dans le [wiki](Wiki.md), et il est essentiel de lui faire percevoir le temps accordé à chaque phase du processus. L’objectif ne porte pas sur une étape précise, mais bien sur l’ensemble.  
+Le joueur doit comprendre l’enchaînement des différentes étapes d’un audit. Ces informations sont disponibles dans le [wiki](Wiki.md), et il est essentiel de lui faire percevoir l'objectif de chaque phase du processus.  
+Selon le wiki, l’audit se déroule en trois grandes phases : **préparation**, **réalisation**, puis **communication**. Pour ce projet, nous nous sommes concentrés sur les étapes de réalisation et de communication.  
 
-Selon le wiki, l’audit se déroule en trois grandes phases : **préparation**, **réalisation**, puis **communication**.
-Le joueur devra apprendre à **gérer son temps en fonction des priorités**. Même si la préparation est moins longue que les autres étapes, elle ne doit pas être négligée : une mauvaise préparation rend la phase de réalisation moins efficace et moins pertinente.  
-
-Après plusieurs parties, le joueur devrait avoir compris l’importance de **gérer ses ressources**, de **planifier son travail** et d’avoir une vision claire de leur organisation.
-En intégrant l’idée d’**équilibre entre les phases** et d’**interdépendance**, il pourra mieux appréhender la complexité et l’importance d’un audit interne.
-
+Le joueur aura l'occasion d'**expérimenter la phase de récolte d'informations** (décrite dans l'objectif pédagogique suivant) ainsi que la **rédaction d'un rapport** à partir des informations qu'il aura recueillies.
+Après plusieurs parties, le joueur devrait avoir compris l’importance de **planifier son travail** et avoir une **vision claire du processus** de réalisation.  
 
 ### Compréhension de la difficulté de la collecte d'informations
 Cet objectif vise à faire prendre conscience au joueur des **difficultés rencontrées lors de la collecte d’informations**, surtout lorsqu’il doit interagir avec des employés. Contrairement aux autres étapes de l’audit, celle-ci repose sur des échanges humains : le joueur devra faire face à des situations où l’information est **difficile à obtenir, incomplète, dissimulée ou peu fiable**. Il devra également comprendre que **toutes les données récoltées ne sont pas pertinentes ou exactes**, ce qui complexifie la démarche.  
@@ -60,19 +56,6 @@ Le joueur devra mener des **entretiens** et **discussions informelles**. Le jeu 
 
 Une bonne collecte permet d’identifier plus facilement les **risques, anomalies ou défaillances** dans le processus audité. Cet objectif doit donc insister sur l’importance des échanges humains.  
 Le joueur développera des compétences en **communication**, **analyse critique** et **prise de décision** dans un environnement complexe, voire hostile.
-
-
-### Compréhension de l'importance de la réalisation d'un audit
-Cet objectif vise à faire comprendre au joueur **le rôle concret et les conséquences d’un audit interne** dans l’amélioration des processus d’une organisation. Il se focalise sur la **rédaction du rapport d’audit** et sur les **propositions de solutions** à partir des dysfonctionnements détectés.  
-
-Le joueur doit comprendre que l’audit ne se limite pas à dresser un état des lieux : il a pour but de **déclencher des améliorations réelles** et d’accompagner le changement.  
-
-**Déroulé dans le jeu :**  
-1. **Rédaction du rapport**  
-Le joueur rédige un rapport d’audit en décidant de la véracité des informations reçues et peut formuler une conclusion ainsi que des pistes d’améliorations.  
-
-2. **Remarque importante**  
-Cette étape est symbolique : elle ne fait pas l’objet d’une évaluation et n’influence pas la progression ou le score dans le jeu. L’objectif pédagogique n’est donc pas pleinement réalisé ici, mais elle permet de familiariser le joueur avec la **phase finale d’un audit** et la **rédaction d’un rapport**.  
 
 ## Description des fonctionnalités
 Afin d’atteindre ces objectifs, nous avons défini les fonctionnalités suivantes :
