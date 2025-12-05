@@ -62,10 +62,10 @@ public class CarnetManager : MonoBehaviour
     }
 
     //Méthode pour ajouter entrée au carnet
-    public void ajoutInfo(Service service, Metier metier, string numQuestion, int numVar)
+    public void ajoutInfo(string service, string metier, string numQuestion, int numVar)
     {
-        string _service = service.ToString().ToLower();
-        string _metier = metier.ToString().ToLower();
+        string _service = service.ToLower();
+        string _metier = metier.ToLower();
 
 
         string json = File.ReadAllText(this.pathFile);

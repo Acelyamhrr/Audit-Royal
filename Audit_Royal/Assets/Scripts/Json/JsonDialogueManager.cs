@@ -28,6 +28,19 @@ public class JsonDialogueManager : MonoBehaviour
     // Chemin du fichier JSON du personnage actuel
     private string cheminPersonnageActuel;
 
+    private CarnetManager carnetManager;
+
+    void Start()
+    {
+        // Instancier le carnet pour le mettre à jour à chaque fois qu'un dialogue s'effectue
+        carnetManager = FindFirstObjectByType<CarnetManager>();
+        if (carnetManager == null)
+        {
+            GameObject go = new GameObject("CarnetManager");
+            carnetManager = go.AddComponent<CarnetManager>();
+        }
+    }
+
     // Charge les dialogues d'un service pour un scénario donné
     private void ChargerDialoguesService(int numeroScenario, string service)
     {
@@ -166,6 +179,9 @@ public class JsonDialogueManager : MonoBehaviour
             variations, 
             ditLaVerite
         );
+
+        // Met à jour le carnet en fonction de la réponse choisie par le personnage
+        carnetManager.ajoutInfo(service, metier, numeroQuestion, variationChoisie.variation_id);
 
         // MODIFICATION : Utilise la nouvelle fonction qui retourne texte ET émotion
         (string texte, string emotion) = SelectionnerTexteDialogueAvecEmotion(variationChoisie, ditLaVerite);
