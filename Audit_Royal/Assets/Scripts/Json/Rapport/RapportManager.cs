@@ -25,7 +25,13 @@ public class RapportManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.fileTrue = Path.Combine(Application.streamingAssetsPath, "JSON/scenario_verites.json");
+        this.fileTrue = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+
+		if (!File.Exists(fileTrue))
+        {
+            Debug.LogError($"Fichier vérités introuvable : {fileTrue}");
+            return;
+        }
 
         //Récupère le carnetManager
         this.carnetManager = FindFirstObjectByType<CarnetManager>();
@@ -336,6 +342,7 @@ public class RapportManager : MonoBehaviour
         this.scoreTotal = score*100/nbQuestions;
         Debug.Log($"Score {scoreTotal}% !");
 
+		//Revenir à la map et passer au niveau suivant
 		GameStateManager.Instance.DoTerminerNiveauApresRapport = true;
 		UnityEngine.SceneManagement.SceneManager.LoadScene("Map");
     }
