@@ -160,10 +160,9 @@ public class CarnetManager : MonoBehaviour
         JObject obj = JObject.Parse(json);
 
         string serviceAudite = obj["service_audite"].ToString().ToLower();
-        string serviceKey = service.ToLower() == serviceAudite ? "service_" + service.ToLower() : "autres_services";
+        string serviceKey = service.ToLower() == serviceAudite ? "service_audite" : "autres_services";
 
         int index = int.Parse(numQuestion);
-
         return obj["questions"][serviceKey]["liste"][index].ToString();
     }
 
