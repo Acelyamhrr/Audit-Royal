@@ -49,7 +49,7 @@ public class CarnetManager : MonoBehaviour
                 foreach (var question in veritesObj.Properties())
                 {
                     // Remplacer le tableau d'entiers par un tableau vide
-                    question.Value.Replace(new JArray());
+                        question.Value.Replace(new JArray());
                 }
             }
         }
@@ -97,39 +97,44 @@ public class CarnetManager : MonoBehaviour
     //Méthode pour afficher le carnet (donne les informations reçues)
     public string afficherCarnet()
     {
+        Debug.Log("|| 1 ||");
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
 
         var sb = new System.Text.StringBuilder();
         var services = ((JObject)obj["informations"]).Properties().OrderBy(s => s.Name);
-
+        Debug.Log("|| 2 ||");
         foreach (var service in services)
         {
             string serviceName = service.Name;
-            var metiers = ((JObject)service.Value).Properties();
-
+            var metiers = ((JObject)service.Value["postes"]).Properties();
+            Debug.Log("|| 3 ||");
             // Collecter toutes les questions utilisées
             var allQuestions = metiers
-                .SelectMany(m => ((JObject)m.Value).Properties().Select(q => q.Name))
+                .SelectMany(m => ((JObject)m.Value["verites"]).Properties().Select(q => q.Name))
                 .Distinct()
                 .OrderBy(q => int.Parse(q));
 
             bool serviceHasInfo = false;
-
+            Debug.Log("|| 4 ||");
             foreach (var questionNum in allQuestions)
             {
+                Debug.Log("|| 5 ||");
                 string questionText = getQuestion(serviceName, questionNum);
                 var questionLines = new List<string>();
-
                 foreach (var metier in metiers.OrderBy(m => m.Name))
                 {
-                    var metierObj = (JObject)metier.Value;
+                    var metierObj = (JObject)metier.Value["verites"];
                     if (metierObj.ContainsKey(questionNum))
                     {
+                        Debug.Log("|| ici 1||");
                         var infos = (JArray)metierObj[questionNum];
+
                         for (int i = 0; i < infos.Count; i++)
                         {
+                            Debug.Log("|| ici 2||");
                             string infoText = getInfo(serviceName, metier.Name, questionNum, infos[i].ToString());
+                            
                             if (!infoText.StartsWith("["))
                             {
                                 questionLines.Add($"    - {metier.Name} → {infoText}");
