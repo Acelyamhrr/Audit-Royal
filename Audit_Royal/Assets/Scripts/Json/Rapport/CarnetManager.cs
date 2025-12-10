@@ -12,10 +12,13 @@ public class CarnetManager : MonoBehaviour
     
     void Awake()
     {
-        string newFile = Path.Combine(Application.streamingAssetsPath, "JSON/carnet.json");
-        string oldFile = Path.Combine(Application.streamingAssetsPath, "JSON/scenario_verites.json");
-        
-        pathFile = newFile;
+        string oldFile = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+
+		if (!File.Exists(oldFile))
+        {
+            Debug.LogError($"Fichier vérités introuvable : {oldFile}");
+            return;
+        }
 
         string originalJson = File.ReadAllText(oldFile);
         JObject obj = JObject.Parse(originalJson);
@@ -52,6 +55,14 @@ public class CarnetManager : MonoBehaviour
         }
 
         // Sauvegarder dans un nouveau json
+		string outputDirPath = Path.Combine(Application.persistentDataPath, "GameData");
+        
+        if (!Directory.Exists(outputDirPath))
+        {
+            Directory.CreateDirectory(outputDirPath);
+        }
+		this.pathFile = Path.Combine(outputDirPath, "carnet.json");
+
         File.WriteAllText(pathFile, obj.ToString());
     }
 
@@ -160,10 +171,9 @@ public class CarnetManager : MonoBehaviour
         JObject obj = JObject.Parse(json);
 
         string serviceAudite = obj["service_audite"].ToString().ToLower();
-        string serviceKey = service.ToLower() == serviceAudite ? "service_" + service.ToLower() : "autres_services";
+        string serviceKey = service.ToLower() == serviceAudite ? "service_audite" : "autres_services";
 
         int index = int.Parse(numQuestion);
-
         return obj["questions"][serviceKey]["liste"][index].ToString();
     }
 

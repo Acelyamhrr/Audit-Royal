@@ -17,6 +17,7 @@ public class RapportManager : MonoBehaviour
     private CarnetManager carnetManager;
     public GameObject reponsesContent;
 	public GameObject content;
+	public GameObject scrollView;
 	private Dictionary<string, string> questions;
 	public GameObject nameAudit;
     public GameObject btnValider;
@@ -24,7 +25,13 @@ public class RapportManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.fileTrue = Path.Combine(Application.streamingAssetsPath, "JSON/scenario_verites.json");
+        this.fileTrue = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+
+		if (!File.Exists(fileTrue))
+        {
+            Debug.LogError($"Fichier vérités introuvable : {fileTrue}");
+            return;
+        }
 
         //Récupère le carnetManager
         this.carnetManager = FindFirstObjectByType<CarnetManager>();
@@ -33,29 +40,6 @@ public class RapportManager : MonoBehaviour
 			GameObject go = new GameObject("CarnetManager");
 			carnetManager = go.AddComponent<CarnetManager>();
 		}
-        
-        /*
-        //Compte le nombre de vérités
-        string json = File.ReadAllText(this.fileTrue);
-        JObject obj = JObject.Parse(json);
-
-        this.nbInfosVraies = 0;
-
-        foreach (var service in (JObject)obj["verites"])
-        {
-            var postes = (JObject)((JObject)service.Value)["postes"];
-
-            foreach (var poste in postes.Properties())
-            {
-                var questions = (JObject)((JObject)poste.Value)["verites"];
-
-                foreach (var question in questions.Properties())
-                {
-                    nbInfosVraies += ((JArray)question.Value).Count;
-                }
-            }
-        }
-        */
 
         //Affiche le nom de l'audit
         TextMeshProUGUI tmp = this.nameAudit.GetComponent<TextMeshProUGUI>();
@@ -168,6 +152,10 @@ public class RapportManager : MonoBehaviour
 
 			repObj.transform.SetParent(panelObj.transform, false);
     	}
+		
+		ScrollRect scrollRect = scrollView.GetComponent<ScrollRect>();
+		Canvas.ForceUpdateCanvases();
+		scrollRect.verticalNormalizedPosition = 1f; // 1 = haut, 0 = bas
 	}
 
     // Update is called once per frame
@@ -299,10 +287,8 @@ public class RapportManager : MonoBehaviour
         Transform contentTransform = content.transform;
         foreach(Transform panel in contentTransform)
         {
-            //Debug.Log("Panel trouvé : " + panel.name);
             string service = panel.name.Substring(6, panel.name.Length-8);
 	        string numQuestion = panel.name.Substring(panel.name.Length-1);
-            //Debug.Log($"Service {service} : numQuestion {numQuestion}");
 
             // Récupère tous les TMP dans le panel
             TextMeshProUGUI[] texts = panel.GetComponentsInChildren<TextMeshProUGUI>();
@@ -355,6 +341,10 @@ public class RapportManager : MonoBehaviour
         //Calcul du score total
         this.scoreTotal = score*100/nbQuestions;
         Debug.Log($"Score {scoreTotal}% !");
+
+		//Revenir à la map et passer au niveau suivant
+		GameStateManager.Instance.DoTerminerNiveauApresRapport = true;
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Map");
     }
 
     //Renvoie si la réponse est vraie ou fausse

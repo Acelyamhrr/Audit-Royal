@@ -39875,6 +39875,7 @@ MonoBehaviour:
   texteFinNiveau: {fileID: 163546479}
   boutonConfirmerFin: {fileID: 2031439198}
   boutonAnnuler: {fileID: 1415103943}
+  boutonRapport: {fileID: 0}
 --- !u!4 &848917224
 Transform:
   m_ObjectHideFlags: 0
