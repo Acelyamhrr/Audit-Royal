@@ -1,26 +1,50 @@
 # Audit Royal
 **Groupe : MET25-C-A**  
 
-Participants :  
-- Fouilleul Elora
-- Muharremoglu Açelya
-- Zou Valentin
-- Hellich Alexis
+**Participants :**  
+- Fouilleul Elora  
+- Muharremoglu Açelya  
+- Zou Valentin  
+- Hellich Alexis  
+
+---
 
 ## Présentation du projet
+**Audit Royal** est un **jeu sérieux** permettant de découvrir le métier **d’auditeur interne dans une université**.  
+Le joueur expérimente la **réalisation d’un audit**, apprend à **collecter des informations**, à **interagir avec les employés** et à **rédiger un rapport**.  
 
-Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeur dans une université** afin d'aider des débutants dans ce domaine à leur donner **un avant-goût de la réalisation de leur premier audit**. Pour découvrir le métier d'auditeur et les objectifs pédagogiques de ce projet, nous avons réalisé un [wiki](Wiki.md). Si cela vous paraît peu clair, vous comprendrez mieux après quelques minutes de jeu.  
+L’objectif est de donner aux débutants un **avant-goût concret de leur premier audit** et de leur faire comprendre la complexité des échanges humains et des choix à prendre en fonction du caractère des personnes auditées.
+
+Pour en savoir plus sur le métier et les objectifs pédagogiques, consultez notre [Wiki](Wiki.md).
+
+---
 
 ## Contraintes de développement
-La technologie utilisée et les points abordés par le jeu sont à notre appréciation. Cependant, il faut permettre aux joueurs d'expérimenter des **scénarios différents** et que chaque partie soit différente l'une de l'autre. En effet, les choix pris ne doivent pas être linéaires au fil des parties mais résulter de **données aléatoirement sélectionnées** au début du jeu, comme le caractère des personnages et la véracité de telle ou telle information. Ainsi, les personnes ayant pour objectif de devenir auditeurs pourront ainsi comprendre la complexité du métier et l'approche à avoir en fonction du caractère de l'employé audité.
+- Le jeu doit permettre des **scénarios différents à chaque partie**.  
+- Les **données aléatoires** influencent les parties (caractère des personnages, véracité des informations…).  
+- Le joueur doit comprendre que ses choix impactent **le déroulement et le résultat de l’audit**.  
+- Les fonctionnalités doivent couvrir :
+  - Interaction avec plusieurs employés
+  - Collecte et tri d’informations
+  - Rédaction d’un rapport final
 
-
+---
 
 ## Lien de téléchargement
-*A compléter, en cours de développement*  
+> *À compléter : en cours de développement*
+
+---
 
 ## Captures d'écran
-*A compléter, en cours de développement*  
+> *À compléter : en cours de développement*  
+
+---
 
 ## Procédures d'installation et d'exécution
-*A compléter, en cours de développement*
+
+> *À compléter : en cours de développement*
+
+---
+
+## Documentation
+- Pour comprendre les objectifs pédagogiques et les fonctionnalités : [Wiki](Wiki.md)
