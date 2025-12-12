@@ -158,6 +158,7 @@ public class LeaderboardsManager : MonoBehaviour
 
                 leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName;
                 leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString();
+                leaderboardItem.GetChild(2).GetComponent<TextMeshProUGUI>().text = entry.Tier;
                 //leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite;
             }
 
