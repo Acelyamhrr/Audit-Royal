@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class GoOut : MonoBehaviour
 {
@@ -8,9 +7,13 @@ public class GoOut : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            SceneManager.LoadScene("Map");
+            SortirDuBatiment();
         }
-
-        
+    }
+    
+    public void SortirDuBatiment()
+    {
+		Debug.Log("SortirDuBatiment called");
+        SceneManager.LoadScene("Map");
     }
 }

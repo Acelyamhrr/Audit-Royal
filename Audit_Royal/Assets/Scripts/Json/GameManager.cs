@@ -1,10 +1,11 @@
-using UnityEngine;
+/*using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine.EventSystems;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -64,6 +65,11 @@ public class GameManager : MonoBehaviour
             GameObject go = new GameObject("ScenarioManager");
             scenarioManager = go.AddComponent<ScenarioManager>();
         }
+        
+        if (GameStateManager.Instance != null)
+        {
+            GameStateManager.Instance.DefinirScenarioEtNiveau(scenarioSelectionne, niveauActuel);
+        }        
         
         InitialiserPostes();
         AfficherChoixScenario();
@@ -177,9 +183,19 @@ public class GameManager : MonoBehaviour
             {
                 scenarioSelectionne = scenariosDisponibles[i];
                 Debug.Log($"Scénario {scenarioSelectionne} sélectionné");
+                
+                
+                if (GameStateManager.Instance != null)
+                {
+                    GameStateManager.Instance.DefinirScenarioEtNiveau(scenarioSelectionne, niveauActuel);
+                }
+                
+                
                 ChargerScenario(scenarioSelectionne);
                 DetecterServicesDisponibles();
-                AfficherChoixService();
+                
+                
+                SceneManager.LoadScene("Map");
             }
         }
     }
@@ -698,4 +714,4 @@ public class GameManager : MonoBehaviour
                 AfficherChoixQuestion();
         }
     }
-}
+}*/

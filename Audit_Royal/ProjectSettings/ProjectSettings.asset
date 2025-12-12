@@ -686,11 +686,11 @@ PlayerSettings:
     Standalone: 1
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 23d6c44e-bb25-49f5-b0b0-631e52fce5d7
+  cloudProjectId: 2a8381a2-e9b4-454a-8575-314f7817c971
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: T3 leaderboard
-  organizationId: teekzie68
+  projectName: T3
+  organizationId: unity_269ff76e1318cda9855d
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

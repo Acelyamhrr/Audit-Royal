@@ -2,22 +2,42 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 
+
+[System.Serializable]
+public class DataPlayer
+{
+    public string nom;
+    public string prenom;
+    public string service;
+    public string caractere;
+    public string metier;
+    public double taux;
+
+}
 public class PersonnageManager : MonoBehaviour
 {
     private string sourcePath;
     private string savePath;
-    public PlayerData data;
+    public DataPlayer data;
     private string[] caractere = {"colere", "anxieux", "menteur", "balance", "insouciant"};
     private int[] nbCaractere = {0,0,0,0,0};
     private List<int> caractereBanned = new List<int>();
-    private string[] persoJson = { "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_technicien_son_video.json", "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", "res_cuisinier.json", "res_patron.json" };
+
+    private string[] peroJson = { 
+        "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", 
+        "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_video.json", 
+        "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", 
+        "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", 
+        "res_cuisinier.json", "res_patron.json" 
+    };
 
     void Start()
     {
         for (int i = 0; i < 16; i++)
         {
-            sourcePath = Path.Combine(Application.streamingAssetsPath, "personnes_json",  persoJson[i]);
-            savePath = Path.Combine(Application.persistentDataPath, persoJson[i]);
+
+            sourcePath = Path.Combine(Application.streamingAssetsPath, peroJson[i]);
+            savePath = Path.Combine(Application.persistentDataPath, peroJson[i]);
 
             if (!File.Exists(savePath))
             {
@@ -27,7 +47,7 @@ public class PersonnageManager : MonoBehaviour
             }
 
             string savedJson = File.ReadAllText(savePath);
-            data = JsonUtility.FromJson<PlayerData>(savedJson);
+            data = JsonUtility.FromJson<DataPlayer>(savedJson);
 
             int idCaractere = RandomNb();
             
@@ -50,6 +70,7 @@ public class PersonnageManager : MonoBehaviour
                     {
                         data.taux = 0.3;
                         data.caractere = caractere[idCaractere];
+
                         nbCaractere[idCaractere]++;
                     }
                     if(nbCaractere[idCaractere] == 3){

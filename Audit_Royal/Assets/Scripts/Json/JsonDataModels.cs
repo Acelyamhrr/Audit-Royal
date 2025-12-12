@@ -66,7 +66,7 @@ public class QuestionBloc
 [Serializable]
 public class ScenarioQuestions
 {
-    public QuestionBloc service_technicien;
+    public QuestionBloc service_audite;
     public QuestionBloc autres_services;
 }
 

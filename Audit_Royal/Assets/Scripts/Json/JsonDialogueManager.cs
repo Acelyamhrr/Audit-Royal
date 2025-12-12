@@ -28,6 +28,19 @@ public class JsonDialogueManager : MonoBehaviour
     // Chemin du fichier JSON du personnage actuel
     private string cheminPersonnageActuel;
 
+    private CarnetManager carnetManager;
+
+    void Start()
+    {
+        // Instancier le carnet pour le mettre à jour à chaque fois qu'un dialogue s'effectue
+        carnetManager = FindFirstObjectByType<CarnetManager>();
+        if (carnetManager == null)
+        {
+            GameObject go = new GameObject("CarnetManager");
+            carnetManager = go.AddComponent<CarnetManager>();
+        }
+    }
+
     // Charge les dialogues d'un service pour un scénario donné
     private void ChargerDialoguesService(int numeroScenario, string service)
     {
@@ -128,9 +141,8 @@ public class JsonDialogueManager : MonoBehaviour
         Debug.Log($"{personnageActuel.prenom} {personnageActuel.nom} - Nouveau taux d'énervement : {personnageActuel.taux}%");
     }
 
-    // pour obtenir le dialogue approprié pour une question donnée
-    // Prend en compte le caractère, l'état émotionnel et le hasard pour générer une réponse
-    public string ObtenirDialogue(int numeroScenario, string nomFichierPerso, string numeroQuestion)
+    // NOUVELLE FONCTION : Retourne le dialogue ET l'émotion utilisée
+    public (string texte, string emotion) ObtenirDialogueAvecEmotion(int numeroScenario, string nomFichierPerso, string numeroQuestion)
     {
         ChargerPersonnage(nomFichierPerso);
         ChargerVerites();
@@ -143,7 +155,7 @@ public class JsonDialogueManager : MonoBehaviour
         if (!dialogues.ContainsKey(metier))
         {
             Debug.LogError($"Métier '{metier}' introuvable dans le service '{service}'");
-            return "Erreur : Métier introuvable";
+            return ("Erreur : Métier introuvable", "normal");
         }
         
         Dictionary<string, List<DialogueVariation>> metierDialogues = dialogues[metier];
@@ -151,12 +163,12 @@ public class JsonDialogueManager : MonoBehaviour
         if (!metierDialogues.ContainsKey(numeroQuestion))
         {
             Debug.LogError($"Question '{numeroQuestion}' introuvable pour {metier}");
-            return "Erreur : Question introuvable";
+            return ("Erreur : Question introuvable", "normal");
         }
         
         List<DialogueVariation> variations = metierDialogues[numeroQuestion];
         
-        // détermine si le perso dit la verité selon son caractere
+        // détermine si le perso dit la verite selon son caractere
         bool ditLaVerite = TireAuSortVerite(personnageActuel.caractere);
         
         // Choisit une variation selon vérité/mensonge
@@ -168,11 +180,22 @@ public class JsonDialogueManager : MonoBehaviour
             ditLaVerite
         );
 
-        string texteDialogue = SelectionnerTexteDialogue(variationChoisie, ditLaVerite);
+        // Met à jour le carnet en fonction de la réponse choisie par le personnage
+        carnetManager.ajoutInfo(service, metier, numeroQuestion, variationChoisie.variation_id);
+
+        // MODIFICATION : Utilise la nouvelle fonction qui retourne texte ET émotion
+        (string texte, string emotion) = SelectionnerTexteDialogueAvecEmotion(variationChoisie, ditLaVerite);
         
         AugmenterTauxEnervement();
         
-        return texteDialogue;
+        return (texte, emotion);
+    }
+
+    // pour obtenir le dialogue approprié pour une question donnée (ancienne version, gardée pour compatibilité)
+    public string ObtenirDialogue(int numeroScenario, string nomFichierPerso, string numeroQuestion)
+    {
+        (string texte, string _) = ObtenirDialogueAvecEmotion(numeroScenario, nomFichierPerso, numeroQuestion);
+        return texte;
     }
 
     // Choisit aléatoirement une variation parmi toutes les variations disponibles
@@ -196,16 +219,13 @@ public class JsonDialogueManager : MonoBehaviour
         return ditVerite;
     }
 
-    // Sélectionne le texte de dialogue approprié selon :
-    // - Si le personnage ment ou dit la vérité
-    // - Son taux d'énervement (< 50% = calme, >= 50% = énervé)
-    // - Son type de caractère (colère, anxieux, balance, normal)
-    private string SelectionnerTexteDialogue(DialogueVariation variation, bool ditLaVerite)
+    // NOUVELLE FONCTION : Sélectionne le texte ET retourne l'émotion utilisée
+    private (string texte, string emotion) SelectionnerTexteDialogueAvecEmotion(DialogueVariation variation, bool ditLaVerite)
     {
         // Si le personnage ment, renvoie systématiquement le texte "menteur"
         if (!ditLaVerite)
         {
-            return variation.menteur;
+            return (variation.menteur, "menteur");
         }
         
         double tauxEnervement = personnageActuel.taux;
@@ -213,25 +233,25 @@ public class JsonDialogueManager : MonoBehaviour
         // Si le personnage est calme (< 50%), utilise le texte normal
         if (tauxEnervement < 50)
         {
-            return variation.normal;
+            return (variation.normal, "normal");
         }
         
         // Si taux>= 50%, sélectionne le texte selon le caractère
         switch (personnageActuel.caractere.ToLower())
         {
             case "colere":
-                return variation.colere;
+                return (variation.colere, "colere");
                 
             case "anxieux":
-                return variation.anxieux;
+                return (variation.anxieux, "anxieux");
                 
             case "balance":
-                return variation.balance;
+                return (variation.balance, "balance");
                 
             case "insouciant":
             case "normal":
             default:
-                return variation.normal;
+                return (variation.normal, "normal");
         }
     }
 
@@ -296,6 +316,4 @@ public class JsonDialogueManager : MonoBehaviour
         
         return dialogues[metier].Count;
     }
-
-
 }

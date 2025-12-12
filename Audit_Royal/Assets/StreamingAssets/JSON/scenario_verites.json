@@ -136,9 +136,9 @@
         }
       }
     },
-    "compta": {
+    "comptabilite": {
       "postes": {
-        "secrétaire": {
+        "secretaire": {
           "verites": {
             "0": [
               1,
@@ -275,7 +275,7 @@
     },
     "info": {
       "postes": {
-        "secrétaire": {
+        "secretaire": {
           "verites": {
             "0": [
               2,
@@ -411,7 +411,7 @@
             ]
           }
         },
-        "technicien_maintenance": {
+        "technicien_de_maintenance": {
           "verites": {
             "0": [
               2
@@ -551,7 +551,7 @@
     },
     "technicien": {
       "postes": {
-        "secrétaire": {
+        "secretaire": {
           "verites": {
             "0": [
               1,
