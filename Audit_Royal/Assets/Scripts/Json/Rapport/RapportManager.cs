@@ -8,21 +8,65 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/// <summary>
+/// Gère l’affichage et la validation du rapport d’audit.
+/// </summary>
+/// <remarks>
+/// Cette classe permet d’afficher les questions issues du carnet,
+/// de proposer des réponses interactives et de calculer le score final
+/// en fonction des vérités stockées dans un fichier JSON.
+/// </remarks>
 public class RapportManager : MonoBehaviour
 {
-    //private int nbInfosVraies;          //Nombre total d'infos vraies
+	/// <summary>
+	/// Score total obtenu par le joueur en pourcentage.
+	/// </summary>
     private int scoreTotal;
 
+	/// <summary>
+	/// Chemin vers le fichier JSON contenant les vérités.
+	/// </summary>
     private string fileTrue;
+	
+	/// <summary>
+	/// Référence vers le gestionnaire du carnet.
+	/// </summary>
     private CarnetManager carnetManager;
+	
+	/// <summary>
+	/// Conteneur des boutons de réponses.
+	/// </summary>
     public GameObject reponsesContent;
+	
+	/// <summary>
+	/// Conteneur principal des questions.
+	/// </summary>
 	public GameObject content;
+	
+	/// <summary>
+	/// ScrollView contenant la liste des questions.
+	/// </summary>
 	public GameObject scrollView;
+	
+	/// <summary>
+	/// Dictionnaire des questions (clé = service;numQuestion).
+	/// </summary>
 	private Dictionary<string, string> questions;
+	
+	/// <summary>
+	/// Objet affichant le nom de l’audit.
+	/// </summary>
 	public GameObject nameAudit;
+	
+	/// <summary>
+	/// Bouton de validation du rapport.
+	/// </summary>
     public GameObject btnValider;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    /// <summary>
+    /// Méthode appelée au démarrage du script.
+    /// Initialise les données et l’interface utilisateur.
+    /// </summary>
     void Start()
     {
         this.fileTrue = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
@@ -73,6 +117,9 @@ public class RapportManager : MonoBehaviour
 		createTextQuestionsContent();
     }
 
+    /// <summary>
+    /// Crée dynamiquement l’affichage des questions dans le ScrollView.
+    /// </summary>
 	private void createTextQuestionsContent(){
 		// Nettoyer le contenu avant de recréer les textes
     	foreach (Transform child in content.transform)
@@ -158,13 +205,21 @@ public class RapportManager : MonoBehaviour
 		scrollRect.verticalNormalizedPosition = 1f; // 1 = haut, 0 = bas
 	}
 
-    // Update is called once per frame
+    /// <summary>
+    /// Méthode appelée à chaque frame.
+    /// </summary>
     void Update()
     {
 		
     }
     
-    // Méthode appelée quand on clique sur une question
+    /// <summary>
+    /// Méthode appelée lors du clic sur une question.
+    /// Affiche les réponses possibles associées.
+    /// </summary>
+    /// <param name="idQuestion">
+    /// Identifiant de la question sélectionnée.
+    /// </param>
     private void OnQuestionClicked(string idQuestion)
     {   
         // Nettoyer le contenu avant de recréer les textes
@@ -229,7 +284,12 @@ public class RapportManager : MonoBehaviour
         }
     }
 
-    //Méthode appelée quand on clique sur une réponse : changer le txtreponse par la reponse cliquée
+    /// <summary>
+    /// Méthode appelée lors du clic sur une réponse.
+    /// Met à jour la réponse affichée pour la question correspondante.
+    /// </summary>
+    /// <param name="idReponse">Identifiant de la réponse.</param>
+    /// <param name="reponse">Texte de la réponse sélectionnée.</param>
     private void OnReponseClicked(string idReponse, string reponse)
     {
         //Chercher le text de la page correspondant
@@ -248,19 +308,6 @@ public class RapportManager : MonoBehaviour
             {
                 TextMeshProUGUI tmp = child2.GetComponent<TextMeshProUGUI>();
                 tmp.text = "-> " + reponse;
-                
-                //TODO : changer la couleur du bouton
-                /*Transform childBouton = reponsesContent.transform.Find(idReponse);
-                if(childBouton != null)
-                {
-                    GameObject goBouton = childBouton.gameObject;
-                    Image img = goBouton.GetComponent<Image>();
-                    img.color = Color.gray;
-                }
-                else
-                {
-                    Debug.LogError($"Bouton {idReponse} non trouvé.");
-                }*/
             }
             else
             {
@@ -274,11 +321,23 @@ public class RapportManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Récupère les informations possibles pour une question donnée.
+    /// </summary>
+    /// <param name="service">Service concerné.</param>
+    /// <param name="numQuestion">Numéro de la question.</param>
+    /// <returns>
+    /// Liste des réponses possibles.
+    /// </returns>
     private List<string> getInfos(string service, string numQuestion)
     {
         return carnetManager.getInfos(service, numQuestion);
     }
 
+    /// <summary>
+    /// Méthode appelée lors de la validation du rapport.
+    /// Calcule le score final et charge la scène suivante.
+    /// </summary>
     private void OnValidationClicked()
     {
         int nbQuestions = this.questions.Count;
@@ -347,7 +406,16 @@ public class RapportManager : MonoBehaviour
 		UnityEngine.SceneManagement.SceneManager.LoadScene("Map");
     }
 
-    //Renvoie si la réponse est vraie ou fausse
+    /// <summary>
+    /// Vérifie si une réponse est vraie ou fausse à partir du fichier JSON.
+    /// </summary>
+    /// <param name="service">Service concerné.</param>
+    /// <param name="metier">Métier concerné.</param>
+    /// <param name="numQuestion">Numéro de la question.</param>
+    /// <param name="numInfo">Numéro de l’information sélectionnée.</param>
+    /// <returns>
+    /// True si la réponse est correcte, false sinon.
+    /// </returns>
     private bool checkTrue(string service, string metier, string numQuestion, int numInfo)
     {
         string json = File.ReadAllText(this.fileTrue);
