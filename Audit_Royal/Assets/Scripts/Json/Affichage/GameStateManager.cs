@@ -6,12 +6,15 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
     public bool DoTerminerNiveauApresRapport = false;
+
+    public int ScoreDernierRapport { get; set; } = 0;
     // État du jeu
     public int ScenarioActuel { get; private set; } = 0;
     public int NiveauActuel { get; private set; } = 1;
     public string ServiceActuel { get; set; } = "";
     public string PosteActuel { get; set; } = "";
     public string FichierPersonnageActuel { get; set; } = "";
+
     
     private Dictionary<string, string> batimentVersService = new Dictionary<string, string>()
     {
