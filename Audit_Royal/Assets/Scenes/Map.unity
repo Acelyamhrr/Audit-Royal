@@ -39915,7 +39915,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::afficheText
   texteUI: {fileID: 374329512}
-  carnet: {fileID: 848917225}
 --- !u!1001 &851988091
 PrefabInstance:
   m_ObjectHideFlags: 0

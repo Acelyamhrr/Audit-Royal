@@ -210,6 +210,12 @@ public class MapUIManager : MonoBehaviour
             
             // Générer le nouveau fichier de vérités
             scenarioManager.GenerateVeritesFile(scenarioActuel, nouveauNiveau);
+
+            // Regénérer tout le carnet de sorte qu'il corresponde au nouveau fichier de vérité
+            if (CarnetManager.Instance != null)
+            {
+                CarnetManager.Instance.RegenererCarnet();
+            }
             
             // Recharger la mission
             AfficherMission();

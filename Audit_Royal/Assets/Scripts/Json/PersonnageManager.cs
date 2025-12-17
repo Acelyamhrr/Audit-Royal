@@ -19,13 +19,14 @@ public class PersonnageManager : MonoBehaviour
     private string sourcePath;
     private string savePath;
     public DataPlayer data;
+    private const string DOSSIER_PERSONNAGES = "personnes_json";
     private string[] caractere = {"colere", "anxieux", "menteur", "balance", "insouciant"};
     private int[] nbCaractere = {0,0,0,0,0};
     private List<int> caractereBanned = new List<int>();
 
     private string[] peroJson = { 
         "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", 
-        "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_video.json", 
+        "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_technicien_son_video.json", 
         "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", 
         "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", 
         "res_cuisinier.json", "res_patron.json" 
@@ -36,7 +37,7 @@ public class PersonnageManager : MonoBehaviour
         for (int i = 0; i < 16; i++)
         {
 
-            sourcePath = Path.Combine(Application.streamingAssetsPath, peroJson[i]);
+            sourcePath = Path.Combine(Application.streamingAssetsPath, DOSSIER_PERSONNAGES, peroJson[i]);
             savePath = Path.Combine(Application.persistentDataPath, peroJson[i]);
 
             if (!File.Exists(savePath))
