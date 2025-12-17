@@ -25,7 +25,8 @@ public class GameStateManager : MonoBehaviour
     /// </summary>
     public bool DoTerminerNiveauApresRapport = false;
 
-    public int ScoreDernierRapport { get; set; } = 0;
+    //public int ScoreDernierRapport { get; set; } = 0;
+    public int ScoreDernierRapport = 0;
     
     
     // État du jeu

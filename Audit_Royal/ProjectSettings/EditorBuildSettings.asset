@@ -74,6 +74,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Rapport.unity
     guid: 1f981890fadbc5b79bfd4f50aca8845a
+  - enabled: 0
+    path: Assets/Scenes/TestConseilAdmin.unity
+    guid: 7933a69a06788265aaa7e3bb46c31ba4
   - enabled: 1
     path: Assets/Scenes/ConseilAdmin.unity
     guid: ecc7538360dcd9994a8ed9f72e8b851e
