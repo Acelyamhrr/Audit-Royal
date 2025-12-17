@@ -1,10 +1,20 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Charge dynamiquement le prefab du service correspondant au joueur lorsqu'il entre dans un bâtiment.
+/// </summary>
 public class InteriorLoader : MonoBehaviour
 {
+    /// <summary>
+    /// Liste des prefabs correspondant aux différents services.
+    /// Le nom du prefab doit correspondre à l'identifiant du service.
+    /// </summary>
     public GameObject[] servicePrefabs;
 
+    /// <summary>
+    /// Méthode appelée au démarrage. Vérifie l'existence du GameStateManager et lance le chargement du service.
+    /// </summary>
     void Start()
     {
         EnsureGameStateManagerExists();
@@ -12,6 +22,9 @@ public class InteriorLoader : MonoBehaviour
         StartCoroutine(WaitAndLoadService());
     }
 
+    /// <summary>
+    /// Vérifie si une instance de <see cref="GameStateManager"/> existe, sinon en crée une pour les tests.
+    /// </summary>
     void EnsureGameStateManagerExists()
     {
         if (GameStateManager.Instance == null)
@@ -22,9 +35,13 @@ public class InteriorLoader : MonoBehaviour
         }
     }
 
-    IEnumerator WaitAndLoadService()		// ienumerator c'est genre, on attend un moment pour etre sur que ca charge, et ensuite on fait ...
+    /// <summary>
+    /// Coroutine qui attend un frame pour s'assurer que tout est initialisé, puis instancie le prefab correspondant au service actuel.
+    /// </summary>
+    /// <returns>IEnumerator pour l'exécution en coroutine.</returns>
+    IEnumerator WaitAndLoadService()
     {
-		// debug
+        // Attente d'un frame pour s'assurer que GameStateManager est initialisé
         yield return null;
 
         if (GameStateManager.Instance == null)
