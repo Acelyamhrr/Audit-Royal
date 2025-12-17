@@ -244,8 +244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -27}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 545.9871, y: -66.681435}
+  m_SizeDelta: {x: 553.9147, y: 77.6798}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1647566145696915549
 CanvasRenderer:
@@ -434,8 +434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: -42}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -229.42609, y: -46.6046}
+  m_SizeDelta: {x: 482.3544, y: 60.8175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &497688139508644481
 CanvasRenderer:
@@ -580,8 +580,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: 63}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -574.0826, y: -57.00007}
+  m_SizeDelta: {x: 496.0714, y: 67.8626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4366598289486365073
 CanvasRenderer:
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8c7f92116e301b69bb81192e444fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterClicker
-  nomScenePersonnage: GCConcierge
+  nomScenePersonnage: GCPatron
 --- !u!1 &7148708885063258948
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: -27}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 289.12, y: 150.53937}
+  m_SizeDelta: {x: 373.84, y: 91.6349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3630030437731784072
 CanvasRenderer:
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8c7f92116e301b69bb81192e444fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterClicker
-  nomScenePersonnage: GCPatron
+  nomScenePersonnage: GCConcierge
 --- !u!1 &8190930765444736908
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,12 +952,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
