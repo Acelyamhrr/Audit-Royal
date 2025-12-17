@@ -65,7 +65,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Building/iNFORMATIQUE/Director.unity
     guid: 375e5611d35e93344b606419a30343b9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: fc51c2d4e5a79d042924e6ccd210f22b
   - enabled: 1
