@@ -5,20 +5,38 @@ using UnityEngine.SceneManagement;
 using System.IO;
 using Newtonsoft.Json;
 
-/// Gère le menu principal
-/// Tire au sort un scénario et initialise le jeu
-/// À attacher sur un GameObject dans la scène MainMenu
+/// <summary>
+/// Gère le menu principal du jeu.
+/// Tire au sort un scénario disponible, initialise le GameStateManager et lance la scène de jeu.
+/// </summary>
 public class MainMenuManager : MonoBehaviour
 {
+    /// <summary>
+    /// Bouton pour commencer le jeu.
+    /// </summary>
     public Button boutonJouer;
+
+    /// <summary>
+    /// Bouton pour quitter le jeu.
+    /// </summary>
     public Button boutonQuitter;
     
+    /// <summary>
+    /// Liste des scénarios disponibles pour le tirage au sort.
+    /// </summary>
     public int[] scenariosDisponibles = { 1, 2 };
     
+    /// <summary>
+    /// Référence au ScenarioManager, utilisé pour générer les fichiers de vérités.
+    /// </summary>
     private ScenarioManager scenarioManager;
     
+    /// <summary>
+    /// Méthode appelée au démarrage. Initialise le ScenarioManager et configure les boutons.
+    /// </summary>
     void Start()
     {
+        // Initialisation du ScenarioManager
         scenarioManager = FindFirstObjectByType<ScenarioManager>();
         if (scenarioManager == null)
         {
@@ -38,7 +56,10 @@ public class MainMenuManager : MonoBehaviour
   
     }
     
-    // Tire au sort un nouveau scénario et lance le jeu
+    /// <summary>
+    /// Tire au sort un scénario et commence le jeu.
+    /// Initialise le GameStateManager et génère le fichier de vérités pour le niveau 1.
+    /// </summary>
     void CommencerNouvelAudit()
     {
         // Tirer au sort un scénario
@@ -47,7 +68,7 @@ public class MainMenuManager : MonoBehaviour
         
         Debug.Log($"Nouveau scénario tiré au sort : {scenarioChoisi}");
         
-        // Initialiser le GameStateManager avec ce scénario
+        // Initialiser le GameStateManager si nécessaire
         if (GameStateManager.Instance == null)
         {
             GameObject go = new GameObject("GameStateManager");
@@ -60,12 +81,17 @@ public class MainMenuManager : MonoBehaviour
         // Générer le fichier de vérités pour le niveau 1
         scenarioManager.GenerateVeritesFile(scenarioChoisi, 1);
         
+        // Charger le titre du scénario pour l'affichage
         string titre = ChargerTitreScenario(scenarioChoisi);
         Debug.Log($"Lancement du jeu - {titre} - Niveau 1");
         
+        // Charger la scène de jeu
         SceneManager.LoadScene("Couloir");
     }
     
+    /// <summary>
+    /// Quitte le jeu. Fonctionne également en mode éditeur.
+    /// </summary>
     void QuitterJeu()
     {
         Debug.Log("Quitter le jeu");
@@ -76,6 +102,11 @@ public class MainMenuManager : MonoBehaviour
         #endif
     }
     
+    /// <summary>
+    /// Charge le titre d'un scénario depuis le fichier JSON correspondant.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario à charger.</param>
+    /// <returns>Le titre du scénario si trouvé, sinon une chaîne par défaut.</returns>
     string ChargerTitreScenario(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";
