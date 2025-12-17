@@ -1,16 +1,42 @@
 using UnityEngine;
 
+/// <summary>
+/// Ajuste automatiquement un Canvas en World Space pour qu'il remplisse la vue d'une caméra.
+/// </summary>
 [ExecuteAlways]
 [RequireComponent(typeof(Canvas))]
 public class WorldCanvasFitToCamera : MonoBehaviour
 {
-    public Camera targetCamera; // assign MainCamera or leave empty to use Camera.main
-    public float planeDistance = 5f; // distance devant la caméra
-    public float pixelsPerUnit = 100f; // correspond au PPU de tes sprites si tu veux 1 unité = 100px
+    /// <summary>
+    /// Caméra à laquelle le Canvas doit être ajusté.
+    /// Si null, Camera.main sera utilisée.
+    /// </summary>
+    public Camera targetCamera;
+    
+    /// <summary>
+    /// Distance devant la caméra pour placer le Canvas.
+    /// </summary>
+    public float planeDistance = 5f;
+    
+    /// <summary>
+    /// Pixels par unité pour le Canvas, correspondant au PPU des sprites.
+    /// </summary>
+    public float pixelsPerUnit = 100f;
 
+    
+    /// <summary>
+    /// Référence vers le RectTranform.
+    /// </summary>
     RectTransform rt;
+    
+    /// <summary>
+    /// Référence vers le Canvas.
+    /// </summary>
     Canvas canvas;
 
+    /// <summary>
+    /// Initialise le Canvas et le RectTransform.
+    /// </summary>
     void Awake()
     {
         canvas = GetComponent<Canvas>();
@@ -20,6 +46,9 @@ public class WorldCanvasFitToCamera : MonoBehaviour
         canvas.worldCamera = targetCamera;
     }
 
+    /// <summary>
+    /// Met à jour la taille et la position du Canvas pour correspondre à la vue de la caméra.
+    /// </summary>
     void Update()
     {
         if (targetCamera == null) targetCamera = Camera.main;
