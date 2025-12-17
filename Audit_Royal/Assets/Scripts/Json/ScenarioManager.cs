@@ -4,11 +4,32 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
+// <summary>
+/// Gère la génération automatique des fichiers de vérités d’un scénario,
+/// en fonction du niveau de difficulté et des services disponibles.
+/// </summary>
+/// <remarks>
+/// Le <see cref="ScenarioManager"/> analyse les fichiers JSON de dialogues,
+/// sélectionne des questions communes selon des règles précises (niveau 1 à 5),
+/// puis génère un fichier de vérités utilisé par le système de dialogue.
+/// 
+/// Cette classe est persistante entre les scènes (singleton Unity).
+/// </remarks>
 public class ScenarioManager : MonoBehaviour
 {
+    /// <summary>
+    /// Sous-dossier utilisé pour stocker les fichiers générés.
+    /// </summary>
     private const string JSON_SUBDIR = "GameData";
+    
+    /// <summary>
+    /// Nom du fichier JSON de sortie contenant les vérités du scénario.
+    /// </summary>
     private const string OUTPUT_FILE_NAME = "scenario_verites.json";
 
+    /// <summary>
+    /// Liste des services possibles dans le jeu.
+    /// </summary>
     private static readonly string[] ServiceFiles = new string[]
     {
         "communication", 
@@ -18,6 +39,10 @@ public class ScenarioManager : MonoBehaviour
         "technicien"
     };
 
+    /// <summary>
+    /// Initialise le singleton du <see cref="ScenarioManager"/>.
+    /// Détruit les instances en double et conserve celle-ci entre les scènes.
+    /// </summary>
     void Awake()
     {
         ScenarioManager[] instances = FindObjectsByType<ScenarioManager>(FindObjectsSortMode.None);
@@ -30,12 +55,24 @@ public class ScenarioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     
-    /// Génère le fichier de vérités selon le niveau spécifié
-    /// Niveau 1: 1 service audité - 1 question (LA MÊME pour tous les postes)
-    /// Niveau 2: 1 service audité - 1/3 des questions (LES MÊMES pour tous les postes)
-    /// Niveau 3: 1 question service audité + LA MÊME question pour tous les autres services
-    /// Niveau 4: Tous les services - 1/3 des questions (LES MÊMES pour tous les postes)
-    /// Niveau 5: Tous les services - Toutes les questions
+    /// <summary>
+    /// Génère le fichier de vérités d’un scénario selon le niveau spécifié.
+    /// </summary>
+    /// <param name="numScenario">Numéro du scénario.</param>
+    /// <param name="niveau">
+    /// Niveau de difficulté :
+    /// <list type="bullet">
+    /// <item><description>Niveau 1 : 1 service audité, 1 question commune</description></item>
+    /// <item><description>Niveau 2 : 1 service audité, 1/3 des questions</description></item>
+    /// <item><description>Niveau 3 : 1 question service audité + 1 autre service</description></item>
+    /// <item><description>Niveau 4 : Tous les services, 1/3 des questions</description></item>
+    /// <item><description>Niveau 5 : Tous les services, toutes les questions</description></item>
+    /// </list>
+    /// </param>
+    /// <remarks>
+    /// Le fichier généré est stocké dans le dossier persistant de l’application
+    /// et sera utilisé lors des dialogues en jeu.
+    /// </remarks>
     public void GenerateVeritesFile(int numScenario, int niveau)
     {
         Debug.Log($"Début de la génération - Scénario {numScenario} - Niveau {niveau}");
@@ -217,6 +254,18 @@ public class ScenarioManager : MonoBehaviour
         Debug.Log($"Services traités: {finalVerites.Count}");
     }
 
+    /// <summary>
+    /// Sélectionne les questions communes à utiliser selon le niveau.
+    /// </summary>
+    /// <param name="niveau">Niveau de difficulté.</param>
+    /// <param name="questionsParService">
+    /// Dictionnaire associant chaque service à ses questions disponibles.
+    /// </param>
+    /// <param name="serviceAudite">Nom du service audité.</param>
+    /// <param name="random">Générateur aléatoire.</param>
+    /// <returns>
+    /// Liste des identifiants de questions sélectionnées.
+    /// </returns>
     private List<string> SelectionnerQuestionsCommunesParNiveau(
         int niveau, 
         Dictionary<string, List<string>> questionsParService,
@@ -292,6 +341,16 @@ public class ScenarioManager : MonoBehaviour
         return questionsSelectionnees;
     }
 
+    /// <summary>
+    /// Charge le service audité à partir du fichier de configuration du scénario.
+    /// </summary>
+    /// <param name="numScenario">Numéro du scénario.</param>
+    /// <returns>
+    /// Nom du service audité.
+    /// </returns>
+    /// <remarks>
+    /// Si le fichier est manquant ou invalide, un service par défaut est retourné.
+    /// </remarks>
     private string ChargerServiceAudite(int numScenario)
     {
         string nomFichier = $"scenario{numScenario}.json";
@@ -321,6 +380,14 @@ public class ScenarioManager : MonoBehaviour
         return ServiceFiles[0];
     }
 
+    /// <summary>
+    /// Détermine la liste des services à utiliser selon le niveau.
+    /// </summary>
+    /// <param name="niveau">Niveau de difficulté.</param>
+    /// <param name="serviceAudite">Service audité.</param>
+    /// <returns>
+    /// Liste des services à traiter.
+    /// </returns>
     private List<string> ObtenirServicesParNiveau(int niveau, string serviceAudite)
     {
         List<string> services = new List<string>();
@@ -343,6 +410,13 @@ public class ScenarioManager : MonoBehaviour
         return services;
     }
     
+    /// <summary>
+    /// Vérifie si au moins un service est disponible pour un scénario donné.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <returns>
+    /// True si au moins un service est trouvé, false sinon.
+    /// </returns>
     public bool VerifierScenarioComplet(int numeroScenario)
     {
         int servicesPresents = 0;
@@ -362,6 +436,13 @@ public class ScenarioManager : MonoBehaviour
         return servicesPresents > 0;
     }
 
+    /// <summary>
+    /// Retourne la liste des services disponibles pour un scénario.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <returns>
+    /// Liste des services disponibles.
+    /// </returns>
     public List<string> ObtenirServicesDisponibles(int numeroScenario)
     {
         List<string> servicesDisponibles = new List<string>();
