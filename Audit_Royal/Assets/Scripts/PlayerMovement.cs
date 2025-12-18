@@ -8,6 +8,8 @@ using UnityEngine.U2D.IK;
 /// </summary>
 public class PlayerMovement2 : MonoBehaviour
 {
+
+    
     /// <summary>
     /// Vitesse de déplacement du joueur.
     /// </summary>
@@ -55,6 +57,10 @@ public class PlayerMovement2 : MonoBehaviour
     /// </summary>
     void Start()
     {
+        if (PlayerMovementData.Instance != null)
+        {
+            PlayerPos.position = PlayerMovementData.Instance.playerPosition;
+        }
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0; // Pas de gravit�
     }
@@ -107,6 +113,10 @@ public class PlayerMovement2 : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        if(PlayerMovementData.Instance != null)
+        {
+            PlayerMovementData.Instance.playerPosition = PlayerPos.position;
+        }
     }
 }
 

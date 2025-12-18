@@ -172,12 +172,12 @@ public class CarnetManager : MonoBehaviour
                         for (int i = 0; i < infos.Count; i++)
                         {
                             Debug.Log("|| ici 2||");
-                            Debug.Log($"paramètre getInfo : {serviceName}, {metier.Name}, {questionNum}, {infos[i].ToString()}         bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+                            Debug.Log($"paramètre getInfo : {serviceName}, {metier.Name}, {questionNum}, {infos[i].ToString()}");
                             string infoText = getInfo(serviceName, metier.Name, questionNum, infos[i].ToString());
                             
                             if (!infoText.StartsWith("["))
                             {
-                                questionLines.Add($"    - {metier.Name} → {infoText}");
+                                questionLines.Add($"  <b>→ {metier.Name}</b> : {infoText}\n");
                             }
                         }
                     }
@@ -187,11 +187,11 @@ public class CarnetManager : MonoBehaviour
                 {
                     if (!serviceHasInfo)
                     {
-                        sb.AppendLine($"Service : {serviceName}");
+                        sb.AppendLine($"<size=140%><b>Service :</b></size> {serviceName}");
                         serviceHasInfo = true;
                     }
 
-                    sb.AppendLine($"\n  {questionText}");
+                    sb.AppendLine($"\n<size=110%><b>question : </b></size>{questionText}\n");
                     foreach (var line in questionLines)
                     {
                         sb.AppendLine(line);
