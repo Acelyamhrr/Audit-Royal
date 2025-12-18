@@ -31,7 +31,7 @@
                 Destroy(gameObject);
                 return;
             }
-            
+            Debug.Log($"Name {gameObject.name}");
             DontDestroyOnLoad(gameObject);
             GenerateVeritesFile();
         }

@@ -364,7 +364,7 @@ public class ResultatsManager : MonoBehaviour
                 {
                     buttonText.text = "Terminer";
                 }
-                continueButton.onClick.AddListener(RetourMenu);
+                continueButton.onClick.AddListener(Leaderboard);
             }
             else
             {
@@ -525,6 +525,16 @@ public class ResultatsManager : MonoBehaviour
         }
         
         SceneManager.LoadScene("MainMenu");
+    }
+
+    void Leaderboard()
+    {
+        if (GameStateManager.Instance != null)
+        {
+            GameStateManager.Instance.ResetEtat();
+        }
+        
+        SceneManager.LoadScene("Leaderboard");
     }
 
 }
