@@ -11,7 +11,7 @@ public class DoorTrigger2D : MonoBehaviour
 
     void Start()
     {
-        transition = FindObjectOfType<SceneTransition>();
+        transition = FindFirstObjectByType<SceneTransition>();
     }
 
     void Update()

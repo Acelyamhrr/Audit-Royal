@@ -117,6 +117,7 @@ public class PersonnageManager : MonoBehaviour
             sourcePath = Path.Combine(Application.streamingAssetsPath, DOSSIER_PERSONNAGES, peroJson[i]);
             savePath = Path.Combine(Application.persistentDataPath, peroJson[i]);
 
+            Debug.Log("source path" + sourcePath);
             if (!File.Exists(savePath))
             {
                 string creatJson = File.ReadAllText(sourcePath);
