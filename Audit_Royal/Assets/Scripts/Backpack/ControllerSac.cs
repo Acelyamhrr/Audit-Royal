@@ -44,6 +44,9 @@ public class ControllerSac : MonoBehaviour
 		backPackAnimator.SetBool("isOpen", isOpen);
 	}
 
+	/// <summary>
+	/// Affiche l'audit antérieur 
+	/// </summary>
 	public void displayAudit()
 	{
 		int numeroScenario = GameStateManager.Instance.ScenarioActuel;
@@ -60,11 +63,18 @@ public class ControllerSac : MonoBehaviour
 		auditSheetPanel.SetActive(true);
 	}
 
+	/// <summary>
+	/// Ferme la page de l'audit (désactive sa vue).
+	/// </summary>
 	public void closeAudit()
 	{
 		auditSheetPanel.SetActive(false);
 	}
 	
+	/// <summary>
+	/// Créé la chaîne de caractère pour afficher l'audit.
+	/// </summary>
+	/// <param name="audit">L'audit à afficher</param>
 	private string BuildFormattedAudit(Audit audit)
 	{
 		StringBuilder sb = new StringBuilder();
@@ -107,6 +117,12 @@ public class ControllerSac : MonoBehaviour
 		return sb.ToString();
 	}
 
+	/// <summary>
+	/// Ajoute une section à une chaine de caractère.
+	/// </summary>
+	/// <param name="sb">Chaine de caractère à modifier</param>
+	/// <param name="title">Titre de la section</param>
+	/// <param name="items">Contenu de la section</param>
 	private void AddSection(StringBuilder sb, string title, string[] items)
 	{
 		sb.AppendLine($"\n<b>{title}</b>");
