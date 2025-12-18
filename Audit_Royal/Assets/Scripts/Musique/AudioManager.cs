@@ -29,4 +29,12 @@ public class AudioManager : MonoBehaviour
             musiqueSource.Play();
         }
     }
+    
+    public void reglerVolume(float volume)
+    {
+        if (musiqueSource != null)
+        {
+            musiqueSource.volume = volume;
+        }
+    }
 }

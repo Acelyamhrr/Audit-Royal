@@ -12,7 +12,11 @@ public class BoutonPause : MonoBehaviour
 
     public void ClicQuitter()
     {
-        Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        Application.Quit();
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
+    
+    
 }
