@@ -402,8 +402,8 @@ public class RapportManager : MonoBehaviour
         Debug.Log($"Score {scoreTotal}% !");
 
 		//Revenir à la map et passer au niveau suivant
-		GameStateManager.Instance.DoTerminerNiveauApresRapport = true;
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Map");
+		GameStateManager.Instance.ScoreDernierRapport = this.scoreTotal;
+		UnityEngine.SceneManagement.SceneManager.LoadScene("ConseilAdmin");
     }
 
     /// <summary>

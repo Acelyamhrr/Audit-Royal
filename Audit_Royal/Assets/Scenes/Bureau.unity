@@ -151,11 +151,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1560281115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 5, y: 85}
-  m_SizeDelta: {x: -10, y: 50}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: -80, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &40839833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280837851
+  m_fontColor: {r: 0.8584906, g: 0.39838672, b: 0.1579299, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -203,13 +203,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.74368286, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 165680878}
   - component: {fileID: 165680877}
   - component: {fileID: 165680876}
+  - component: {fileID: 165680879}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -301,8 +302,8 @@ MonoBehaviour:
     nom: 
     prenom: 
     service: 
-    metier: 
     caractere: 
+    metier: 
     taux: 0
 --- !u!4 &165680878
 Transform:
@@ -319,6 +320,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &165680879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165680875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1198555a43a639bb3adf37d42485aaf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IntroSceneManager
+  dialoguePanel: {fileID: 1560281114}
+  speakerText: {fileID: 40839833}
+  dialogueText: {fileID: 1402546210}
+  delayBeforeStart: 2
+  typingSpeed: 0.03
 --- !u!1 &173535302
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,66 +673,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614256863}
   m_CullTransparentMesh: 1
---- !u!1 &630345624
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 630345626}
-  - component: {fileID: 630345625}
-  m_Layer: 0
-  m_Name: AutoDialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &630345625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630345624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0da8d4b0fec121da3b0e7da8b4efdb1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
-  dialogueManager: {fileID: 1843813067}
-  speaker: Chef
-  delay: 2
-  lines:
-  - "Bonjour. Merci d\u2019\xEAtre venu."
-  - "Nous avons d\xE9cid\xE9 de vous confier un audit interne sur le service informatique."
-  - "Ces derniers temps, plusieurs plaintes et rumeurs circulent sur la s\xE9curit\xE9
-    des serveurs et la qualit\xE9 du support technique."
-  - "Nous devons savoir ce qu\u2019il en est r\xE9ellement."
-  - '*Le chef marque une pause et regarde le joueur attentivement.*'
-  - 'Votre mission est simple :'
-  - "\u2013 Interrogez les membres du personnel et les utilisateurs,"
-  - "\u2013 Recueillez leurs t\xE9moignages,"
-  - "\u2013 Faites la part entre les faits, les exag\xE9rations et les rumeurs,"
-  - "\u2013 Et enfin, r\xE9digez un rapport fiable que je pourrai pr\xE9senter au
-    conseil de direction."
---- !u!4 &630345626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630345624}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 176.88289, y: 292.6348, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832020766
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +850,7 @@ GameObject:
   - component: {fileID: 1242556986}
   - component: {fileID: 1242556985}
   - component: {fileID: 1242556984}
+  - component: {fileID: 1242556988}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -984,6 +943,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1242556988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242556983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c058a831b4344db5956dbf19ecbd4d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
+  pauseMenuUI: {fileID: 0}
 --- !u!1 &1402546208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,11 +989,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1560281115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 5, y: 0}
-  m_SizeDelta: {x: -10, y: 110}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -45}
+  m_SizeDelta: {x: -80, y: 110}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1402546210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,8 +1023,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280007906
+  m_fontColor: {r: 0.8867924, g: 0.7373552, b: 0.10457456, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1069,13 +1041,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
-  m_fontSizeBase: 34
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 34
-  m_fontStyle: 0
+  m_fontSizeMin: 15
+  m_fontSizeMax: 18
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1107,7 +1079,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2.005272, y: 0, z: 0, w: 23.268036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1133,8 +1105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0fd88bf1e2744efbcb98c1999ad736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChoices
-  dialogueText: {fileID: 1402546210}
-  dialogueManager: {fileID: 1843813067}
 --- !u!1 &1560281114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,8 +1131,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560281114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalScale: {x: 1, y: 1.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 40839832}
@@ -1172,8 +1142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: -40, y: 150}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1560281116
 MonoBehaviour:
@@ -1188,15 +1158,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7264151, g: 0.35890436, b: 0.16789784, a: 0.7019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1213,59 +1183,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560281114}
   m_CullTransparentMesh: 1
---- !u!1 &1843813066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1843813068}
-  - component: {fileID: 1843813067}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1843813067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843813066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 030a01295d05c2ff79241c31c91bac31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  bandeau: {fileID: 0}
-  dialoguePanel: {fileID: 1560281114}
-  speakerText: {fileID: 40839833}
-  dialogueText: {fileID: 1402546210}
-  nextButton: {fileID: 614256865}
-  typingSpeed: 0.02
-  playerMovementScript: {fileID: 0}
-  speaker: Chef
-  isIntroDialogue: 0
---- !u!4 &1843813068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843813066}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 176.88289, y: 292.6348, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1273,6 +1190,4 @@ SceneRoots:
   - {fileID: 273056503}
   - {fileID: 1242556987}
   - {fileID: 173535305}
-  - {fileID: 1843813068}
-  - {fileID: 630345626}
   - {fileID: 165680878}
