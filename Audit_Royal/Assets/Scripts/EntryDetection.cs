@@ -3,20 +3,44 @@ using UnityEngine.SceneManagement;
 using System.IO;
 using Newtonsoft.Json;
 
+/// <summary>
+/// Détecte l'entrée du joueur dans une zone de bâtiment et charge la scène appropriée.
+/// Vérifie également si le service est accessible selon le niveau actuel.
+/// </summary>
 public class EntryDetection : MonoBehaviour
 {
+    /// <summary>
+    /// Référence vers le collider du bâtiment
+    /// </summary>
     private Collider2D zoneCollider;
+    
+    /// <summary>
+    /// Référence vers le collider du joueur
+    /// </summary>
     private Collider2D playerCollider;
 
+    /// <summary>
+    /// Indique si on a déjà chargé une scène (true) ou pas (false)
+    /// </summary>
     private bool hasLoadedScene = false; 
+    
+    /// <summary>
+    /// Indique le nom du bâtiment qu'on a chargé
+    /// </summary>
     private string nomBatiment = "";
 
+    /// <summary>
+    /// Initialisation des composants.
+    /// </summary>
     private void Start()
     {
         zoneCollider = GetComponent<Collider2D>();
         Debug.Log($"EntryDetection initialisé sur : {gameObject.name}");
     }
 
+    /// <summary>
+    /// Vérifie chaque frame si le joueur est dans la zone et gère le chargement de la scène.
+    /// </summary>
     private void Update()
     {
         if (!hasLoadedScene && playerCollider != null && zoneCollider.OverlapPoint(playerCollider.bounds.center))
@@ -24,7 +48,7 @@ public class EntryDetection : MonoBehaviour
             hasLoadedScene = true;
             Debug.Log($"Joueur détecté dans la zone : {gameObject.name}");
 
-            // determine dans quel bat on entre
+            // Déterminer dans quel bâtiment le joueur est entré
             switch (gameObject.name)
             {
                 case "EntryZoneCrous":
@@ -93,7 +117,11 @@ public class EntryDetection : MonoBehaviour
         }
     }
     
-    /// verif si le service est accessible selon le niveau actuel pour interdir d'entrer qi jamais
+    /// <summary>
+    /// Vérifie si le service est accessible pour le niveau actuel.
+    /// </summary>
+    /// <param name="nomBatiment">Nom du bâtiment que le joueur tente d'entrer.</param>
+    /// <returns>True si accessible, false sinon.</returns>
     bool EstServiceAccessible(string nomBatiment)
     {
         if (GameStateManager.Instance == null)
@@ -121,7 +149,11 @@ public class EntryDetection : MonoBehaviour
         return true;
     }
     
-    /// Convertit le nom du bâtiment en identifiant de service
+    /// <summary>
+    /// Convertit le nom d'un bâtiment en identifiant de service.
+    /// </summary>
+    /// <param name="nomBatiment">Nom du bâtiment.</param>
+    /// <returns>Identifiant du service correspondant.</returns>
     string ConvertirBatimentEnService(string nomBatiment)
     {
         switch (nomBatiment)
@@ -135,7 +167,11 @@ public class EntryDetection : MonoBehaviour
         }
     }
     
-    /// Charge le service audité depuis le fichier scenario.json
+    /// <summary>
+    /// Charge le service audité depuis le fichier scenario JSON.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <returns>Nom du service audité.</returns>
     string ChargerServiceAudite(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";
@@ -160,6 +196,10 @@ public class EntryDetection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Détecte l'entrée du joueur dans la zone trigger.
+    /// </summary>
+    /// <param name="other">Collider entrant.</param>
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -169,6 +209,10 @@ public class EntryDetection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Détecte la sortie du joueur de la zone trigger.
+    /// </summary>
+    /// <param name="other">Collider sortant.</param>
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

@@ -1,113 +1,171 @@
-[![Voir le README](https://img.shields.io/badge/Voir%20le%20README-brown)](README.md)
+[Voir le README](README.md)
 
-# Toutes les informations sur le métier d'auditeur et ce qu'est un audit.
+# Wiki : Objectifs pédagogiques, fonctionalités et audit
 
-Vous pouvez revenir au README à tout moment en cliquant [ici](README.md)
+Vous pouvez revenir au README à tout moment en cliquant [ici](README.md).
 
-## 👨 Le métier d’auditeur interne
+## Table des matières
 
-L’auditeur interne est un **acteur indépendant** au sein de l’organisation.  
-Son rôle : **évaluer les processus** et **proposer des améliorations**.  
+1. [Objectifs pédagogiques du jeu "Audit Royal"](#objectifs-pédagogiques-du-jeu-audit-royal)  
+   - Objectifs généraux  
+   - Objectifs détaillés
 
-### Ses missions principales
-- Vérifier que les **processus fonctionnent bien**
-- Identifier les **risques**
-- Formuler des **recommandations** concrètes  
+2. [Description des fonctionnalités](#description-des-fonctionnalités)  
+   - Actions du joueur  
+   - Logique de jeu  
+   - Interface
 
-### Organisation
-- Rattaché à la **Direction Générale** ou à la **Présidence**
-- **Indépendant** grâce à un **double rattachement** : comité d’audit externe(cf. [Charte d'audit](https://www.unistra.fr/service-audit-interne)).  
+3. [Scénario type](#scénario-type)  
+   - Briefing initial  
+   - Enquête sur le terrain  
+   - Rédaction du rapport
 
-### Valeurs clés :
-- **Intégrité**
-- **Objectivité**
-- **Compétence**
+4. [Audit et Auditeur interne](#audit-et-auditeur-interne)  
+   - Métier d’auditeur interne
+   - Audit interne  
+
+---
+
+## Objectifs pédagogiques du jeu "Audit Royal"
+
+Le jeu fait découvrir le métier d’auditeur et la **réalisation d’un audit**.
+
+### 🕹️ Objectifs généraux
+- Comprendre la **phase de réalisation**  
+- Appréhender la **collecte d’informations**  
+- Rédiger un **rapport d’audit**
+
+### 🔍 Objectifs détaillés
+
+#### 1️⃣ Réalisation de l’audit
+- Mener **entretiens** et **observations**  
+- Recueillir des **informations pertinentes**  
+- Rédiger un **rapport clair et structuré**
+
+#### 2️⃣ Collecte d’informations
+- Gérer des données **incomplètes ou contradictoires**  
+- Faire face à la **méfiance des employés**  
+- Identifier les **informations utiles**
+
+#### 3️⃣ Compétences développées
+- **Communication**  
+- **Analyse critique**  
+- **Rédaction et synthèse**
+
+> ⚠️ Collecter des informations, ce n’est pas accumuler des données, mais **faire preuve de discernement**.
+
+---
+
+## Description des fonctionnalités
+
+### 🎮 Actions du joueur
+Le joueur peut :
+- **Interagir avec plusieurs audités**, chacun ayant un comportement propre  
+- Choisir librement avec qui il discute dans les différents services en fonction du niveau  
+- Déterminer quelles **informations** sont **vraies ou fausses**  
+- **Produire un rapport** basé uniquement sur les informations trouvées
+
+### ⚙️ Logique de jeu
+- Les **interactions** influencent les **comportements** des audités  
+- Les informations reçues ne sont **pas toutes vraies**  
+- Le joueur doit vérifier grâce aux **contradictions**  
+- Le jeu utilise un **système de niveaux** pour structurer l’apprentissage  
+- Un **système de confiance** influe sur les réponses des personnages (caractère + nombre de questions posées)  
+
+### 🖥️ Interface
+L’interface doit permettre :
+- Un **système d’interaction** avec les audités  
+- Un **rendu final** avec passage devant le conseil d’administration  
+- Un moyen de connaître **l’état d’esprit** des audités  
+- Un **carnet** pour consulter les informations recueillies  
+- Un **rapport d’audit antérieur** comme support
+
+---
+
+## Scénario type
+
+### 🏢 Briefing initial
+Le joueur arrive dans un couloir, puis est convoqué par la direction. Le directeur présente **le sujet de l’audit** et les attentes. Le joueur accède ensuite à la **carte** pour naviguer entre les services.  
+
+### 🔍 Enquête sur le terrain
+En entrant dans un service, le joueur peut **parler à l’employé de son choix**.  
+
+Les réponses dépendent :
+- du **caractère** de l’employé  
+- du **taux du caractère**  
+- du **nombre de questions**
+
+Les informations, vraies ou fausses, sont ajoutées **automatiquement dans le carnet** par thème. Le joueur s’en sert pour orienter ses décisions.  
+
+### 📝 Rédaction du rapport
+Quand il le souhaite, le joueur peut rédiger son **rapport final**. Une interface lui permet de **sélectionner les informations** qu’il juge correctes.  
+
+Une fois soumis, il est convoqué par le **conseil d’administration** qui :
+- donne un **avis**  
+- attribue une **note finale**
+
+---
+
+## Audit et Auditeur interne
+
+### 👨 Métier d’auditeur interne
+L’auditeur interne est un **acteur indépendant** qui observe et améliore les processus.
+
+#### 💼 Missions principales
+- Vérifier le fonctionnement des **processus**  
+- Identifier les **risques**  
+- Proposer des **recommandations concrètes**
+
+#### 🏢 Organisation
+- Rattaché à la **Direction Générale** ou à la **Présidence**  
+- **Indépendant** grâce à un **double rattachement** : comité d’audit externe ([Charte d’audit](https://www.unistra.fr/service-audit-interne))  
+
+#### 🌟 Valeurs clés
+- **Intégrité**  
+- **Objectivité**  
+- **Compétence**  
 - **Indépendance**
 
-> ⚠️ L’auditeur **n’évalue jamais une personne**, seulement les **processus ou dispositifs**.
-> Il est un **conseiller**, pas un juge ni un policier.
+#### 🤝 Relation avec les audités
+- Mettre en **confiance**  
+- Expliquer la **démarche**  
+- Valoriser les **échanges**  
+- Résultat : audités **satisfaits et mieux informés**
+
+> L’auditeur n’évalue jamais une **personne**, seulement les **processus**.  
+> Il est **conseiller**, pas juge.
 
 ---
 
-## 🗒️ Qu’est-ce qu’un audit interne ?
-L’audit est une activité structurée qui permet de :
-1. **Observer** un processus en profondeur
-2. **Évaluer sa performance et ses risques**
-3. **Proposer des plans d’amélioration**  
+### 🗒️ Audit interne
+L’audit permet d’**observer, analyser et améliorer** un processus.
 
-### Caractéristiques
-- **Passif** : il observe, questionne et comprend sans intervenir directement
-- **Durée** : 4 à 6 mois selon la complexité
-- Objectif : **aider, pas sanctionner**  
+#### 🔹 Caractéristiques
+- **Passif** : observe et analyse  
+- **Durée** : 4 à 6 mois  
+- Objectif : **aider, pas sanctionner**
 
-### Résultat
-Un **rapport d’audit** qui informe sur les problèmes et les bonnes pratiques
+#### 🏁 Déroulement simplifié
+- Phase de **réalisation**  
+- Collecte d’informations et entretiens  
+- Rédaction du **rapport final**
 
----
+#### 📝 Contenu du rapport
+- **Observations**  
+- **Recommandations concrètes**  
+- Liste des **personnes rencontrées** (sans attribution)  
+- Mention des **blocages éventuels**
 
-## 📅 Déroulement d’un audit
+#### 📌 Exemples de sujets d’audit
+- Gestion de crise  
+- Processus d’achat  
+- Accueil des étudiants  
+- Communication interne  
+- Sécurité informatique  
+- Recrutement
 
-### 1. Phase de préparation (~40% du temps)
-- Définir le **thème de l’audit** (ordre de mission)
-- Comprendre le **processus** (recherche et échanges)
-- Identifier les **risques potentiels**  
-
-### 2. Réalisation
-- Réunion de lancement
-- Entretiens et observations (~30 personnes)
-- Tests et vérifications
-- Rédaction du **rapport provisoire**
-- Recueil des **retours des audités**  
-
-### 3. Communication
-- Rapport final
-- **Plan d’action**
-- Présentation au **comité d’audit** puis à la **Direction Générale**
-
----
-
-## 📝 Contenu du rapport d’audit
-
-- **Observations** détaillées
-- **Recommandations concrètes** (plan d’action)
-- Liste des **personnes rencontrées** (sans attribution directe)
-- Précision en cas de **non-coopération** : signalement d’une atteinte à l’indépendance
-
----
-
-## 📌 Exemples de sujets d’audit
-
-- **Gestion de crise** (panne d’électricité, ventilation, etc.)
-- **Processus d’achat**
-- **Dispositifs d’accueil des étudiants**
-- **Communication institutionnelle**
-- **Sécurité des accès et habilitations dans les SI**
-- **Recrutement**
-
----
-
-## ⚠️ Particularités
-
-- **L’indépendance** est primordiale
-- Seul le **comité d’audit externe** juge la qualité de l’audit
-- Les audités **peuvent commenter** les recommandations
-- La mise en œuvre des recommandations est **fortement recommandée**, bien que **non obligatoire**
-
----
-
-## 🤝 Relation avec les audités
-
-- Ils peuvent être **méfiants au début**, par peur d’être jugés
-- L’auditeur doit :
-  - **Mettre en confiance**
-  - **Clarifier la démarche**
-  - **Valoriser les échanges**
-- Résultat fréquent : audités **satisfaits** et mieux informés
-
----
-
-## 🧩 À retenir
-
-- L’audit est **un outil de pilotage stratégique**, au service de l’université
-- Il est guidé par **la charte d’audit** (cf. [Charte officielle](https://www.unistra.fr/service-audit-interne))
-- Il repose sur une **démarche collaborative**, **transparente** et **améliorative**
+#### ⚠️ Particularités
+- **Indépendance primordiale**  
+- Qualité jugée par **le comité externe**  
+- Les audités peuvent **commenter**  
+- Mise en œuvre **recommandée mais non obligatoire**

@@ -4,17 +4,52 @@ using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json;
 
+/// <summary>
+/// Gère l'interface utilisateur de la carte (Map).
+/// Affiche la mission actuelle, gère le panel de fin de niveau et les boutons associés.
+/// </summary>
 public class MapUIManager : MonoBehaviour
 {
+    /// <summary>
+    /// Texte affichant la mission actuelle.
+    /// </summary>
     public TextMeshProUGUI texteMission;
+    
+    /// <summary>
+    /// Bouton pour terminer le niveau en cours.
+    /// </summary>
     public Button boutonTerminerNiveau;
+    
+    /// <summary>
+    /// Panel de confirmation de fin de niveau.
+    /// </summary>
     public GameObject panelFinNiveau;
+    
+    /// <summary>
+    /// Texte affiché dans le panel de fin de niveau.
+    /// </summary>
     public TextMeshProUGUI texteFinNiveau;
+    
+    /// <summary>
+    /// Bouton pour confirmer la fin du niveau et passer au rapport.
+    /// </summary>
     public Button boutonConfirmerFin;
+    
+    /// <summary>
+    /// Bouton pour annuler la fin du niveau et fermer le panel.
+    /// </summary>
     public Button boutonAnnuler;
     
+    /// <summary>
+    /// Référence au ScenarioManager, utilisé pour générer les fichiers de vérités.
+    /// </summary>
     private ScenarioManager scenarioManager;
     
+    
+    /// <summary>
+    /// Méthode appelée au démarrage.
+    /// Initialise le ScenarioManager, affiche la mission et configure les boutons.
+    /// </summary>
     void Start()
     {
         scenarioManager = FindFirstObjectByType<ScenarioManager>();
@@ -37,6 +72,9 @@ public class MapUIManager : MonoBehaviour
             panelFinNiveau.SetActive(false);
     }
     
+    /// <summary>
+    /// Configure les actions des boutons (Terminer, Confirmer, Annuler).
+    /// </summary>
     void ConfigurerBoutons()
     {
         if (boutonTerminerNiveau != null)
@@ -49,6 +87,9 @@ public class MapUIManager : MonoBehaviour
             boutonAnnuler.onClick.AddListener(AnnulerFin);
     }
     
+    /// <summary>
+    /// Affiche la mission actuelle en fonction du scénario et du niveau.
+    /// </summary>
     void AfficherMission()
     {
         if (texteMission == null)
@@ -82,6 +123,12 @@ public class MapUIManager : MonoBehaviour
         Debug.Log($"Mission affichée - Niveau {niveau} : {message}");
     }
     
+    /// <summary>
+    /// Génère le texte de la mission en fonction du niveau et des données du scénario.
+    /// </summary>
+    /// <param name="niveau">Niveau actuel du joueur.</param>
+    /// <param name="scenarioData">Données du scénario.</param>
+    /// <returns>Message de mission formaté.</returns>
     string GenererMessageMission(int niveau, ScenarioRoot scenarioData)
     {
         string serviceNom = scenarioData.service_audite.ToUpper();
@@ -124,6 +171,11 @@ public class MapUIManager : MonoBehaviour
         return message;
     }
     
+    /// <summary>
+    /// Charge les données d'un scénario depuis le fichier JSON correspondant.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario à charger.</param>
+    /// <returns>Les données du scénario si trouvées, sinon null.</returns>
     ScenarioRoot ChargerScenario(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";
@@ -148,7 +200,9 @@ public class MapUIManager : MonoBehaviour
         }
     }
     
-    // Affiche le panel de confirmation de fin de niveau
+    /// <summary>
+    /// Affiche le panel de confirmation pour terminer le niveau.
+    /// </summary>
     void AfficherConfirmationFin()
     {
         if (panelFinNiveau == null)
@@ -178,17 +232,26 @@ public class MapUIManager : MonoBehaviour
         panelFinNiveau.SetActive(true);
     }
     
+    /// <summary>
+    /// Annule la fin de niveau et ferme le panel de confirmation.
+    /// </summary>
     void AnnulerFin()
     {
         if (panelFinNiveau != null)
             panelFinNiveau.SetActive(false);
     }
 
+    /// <summary>
+    /// Charge la scène du rapport après confirmation.
+    /// </summary>
     void PasserRapport()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Rapport");
     }
     
+    /// <summary>
+    /// Termine le niveau actuel, passe au niveau suivant ou revient au menu principal si tous les niveaux sont terminés.
+    /// </summary>
     void TerminerNiveau()
     {
         if (GameStateManager.Instance == null)
@@ -207,9 +270,16 @@ public class MapUIManager : MonoBehaviour
             GameStateManager.Instance.DefinirScenarioEtNiveau(scenarioActuel, nouveauNiveau);
             
             Debug.Log($"Passage au niveau {nouveauNiveau}");
+            Debug.Log($"ScenarioManager utilisé: {scenarioManager.name}, ID: {scenarioManager.GetInstanceID()}");
             
             // Générer le nouveau fichier de vérités
             scenarioManager.GenerateVeritesFile(scenarioActuel, nouveauNiveau);
+
+            // Regénérer tout le carnet de sorte qu'il corresponde au nouveau fichier de vérité
+            if (CarnetManager.Instance != null)
+            {
+                CarnetManager.Instance.RegenererCarnet();
+            }
             
             // Recharger la mission
             AfficherMission();

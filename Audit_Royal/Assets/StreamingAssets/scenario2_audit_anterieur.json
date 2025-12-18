@@ -1,0 +1,106 @@
+{
+  "scenario": 2,
+  "audit_anterieur": {
+    "titre": "Audit interne – Infrastructure réseau et systèmes informatiques",
+    "etablissement": "IUT Robert Schuman",
+    "date": "2025-02-18",
+    "type_audit": "Audit interne conformité",
+    "service_audite": "Service informatique",
+
+    "objectifs": [
+      "Évaluer la fiabilité de l'infrastructure réseau",
+      "Vérifier les procédures de maintenance et de mise à jour",
+      "Analyser la gestion des incidents informatiques",
+      "Contrôler la communication entre le service informatique et les autres services"
+    ],
+
+    "constatations": {
+      "points_conformes": [
+        "Infrastructure réseau globalement fonctionnelle",
+        "Présence de procédures de maintenance documentées",
+        "Équipe informatique compétente et identifiée",
+        "Sauvegardes des données planifiées régulièrement"
+      ],
+
+      "points_vigilance": [
+        "Documentation technique partiellement à jour",
+        "Surveillance réseau non continue",
+        "Manque de tests après certaines mises à jour",
+        "Dépendance à une seule personne pour certaines configurations critiques"
+      ],
+
+      "non_conformites": [
+        "Absence de procédure formalisée de gestion de crise informatique",
+        "Journal des incidents incomplet",
+        "Modifications techniques non systématiquement tracées",
+        "Communication tardive vers les autres services en cas d'incident"
+      ]
+    },
+
+    "analyse_causes": [
+      "Manque de temps dédié à la maintenance préventive",
+      "Priorisation des interventions urgentes au détriment du suivi",
+      "Faible formalisation des changements techniques",
+      "Sous-estimation des risques liés aux pannes réseau"
+    ],
+
+    "recommandations": [
+      {
+        "id": 1,
+        "description": "Mettre en place une procédure claire de gestion des incidents réseau",
+        "priorite": "haute",
+        "etat_mise_en_oeuvre": "non réalisée"
+      },
+      {
+        "id": 2,
+        "description": "Tenir un journal détaillé de toutes les modifications techniques",
+        "priorite": "haute",
+        "etat_mise_en_oeuvre": "partiellement réalisée"
+      },
+      {
+        "id": 3,
+        "description": "Renforcer la surveillance du réseau en continu",
+        "priorite": "moyenne",
+        "etat_mise_en_oeuvre": "non réalisée"
+      },
+      {
+        "id": 4,
+        "description": "Tester systématiquement les mises à jour et changements d'infrastructure",
+        "priorite": "moyenne",
+        "etat_mise_en_oeuvre": "non réalisée"
+      },
+      {
+        "id": 5,
+        "description": "Améliorer la communication interne lors des incidents informatiques",
+        "priorite": "basse",
+        "etat_mise_en_oeuvre": "non réalisée"
+      }
+    ],
+
+    "conclusion": {
+      "resume": "Le service informatique dispose d'une infrastructure fonctionnelle mais fragile, reposant sur des pratiques insuffisamment formalisées.",
+      "risques_identifies": [
+        "Pannes réseau généralisées",
+        "Perte d'accès aux données",
+        "Blocage de l'activité des services",
+        "Perte de confiance envers le service informatique"
+      ],
+      "niveau_risque": "modéré"
+    },
+
+    "indices_pour_le_joueur": [
+      "Certaines modifications réseau n'ont pas été documentées",
+      "Le journal des incidents est incomplet",
+      "La surveillance du réseau est insuffisante",
+      "La communication interne est souvent tardive en cas de panne"
+    ],
+
+    "metadata": {
+      "document_type": "audit_anterieur",
+      "utilisation_jeu": "document_reference",
+      "lisible_par_joueur": true,
+      "deverrouillage_progressif": false,
+      "version": "1.0"
+    }
+  }
+}

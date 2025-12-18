@@ -4,12 +4,30 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Linq;
 
+/// <summary>
+/// Gère le chargement et la sélection des dialogues depuis des fichiers JSON
+/// en fonction du scénario, du personnage interrogé et de son comportement.
+/// </summary>
+/// <remarks>
+/// Cette classe permet de déterminer si un personnage dit la vérité ou ment,
+/// de choisir une variation de dialogue appropriée et de mettre à jour
+/// le carnet ainsi que l’état émotionnel du personnage.
+/// </remarks>
 public class JsonDialogueManager : MonoBehaviour
 {
+    /// <summary>
+    /// Données des vérités associées au scénario courant.
+    /// </summary>
     private VeritesScenarioRoot veritesData;
-
+    
+    /// <summary>
+    /// Nom du dossier contenant les fichiers JSON des personnages.
+    /// </summary>
     private const string DOSSIER_PERSONNAGES = "personnes_json";
     
+    /// <summary>
+    /// Taux de vérité associé à chaque caractère de personnage.
+    /// </summary>
     private static readonly Dictionary<string, float> TAUX_VERITE_PAR_CARACTERE = new Dictionary<string, float>
     {
         { "menteur", 0.0f },      // Ment toujours
@@ -19,29 +37,27 @@ public class JsonDialogueManager : MonoBehaviour
         { "normal", 0.8f }        // Par défaut
     };
         
-    // Stocke tous les dialogues organisés par métier puis par numéro de question
+    /// <summary>
+    /// Dialogues organisés par métier puis par numéro de question.
+    /// </summary>
     private Dictionary<string, Dictionary<string, List<DialogueVariation>>> dialogues;
     
-    // Données du personnage actuellement interrogé
+    /// <summary>
+    /// Données du personnage actuellement interrogé.
+    /// </summary>
     private PlayerData personnageActuel;
 
-    // Chemin du fichier JSON du personnage actuel
+    /// <summary>
+    /// Chemin du fichier JSON du personnage actuellement chargé.
+    /// </summary>
     private string cheminPersonnageActuel;
 
-    private CarnetManager carnetManager;
 
-    void Start()
-    {
-        // Instancier le carnet pour le mettre à jour à chaque fois qu'un dialogue s'effectue
-        carnetManager = FindFirstObjectByType<CarnetManager>();
-        if (carnetManager == null)
-        {
-            GameObject go = new GameObject("CarnetManager");
-            carnetManager = go.AddComponent<CarnetManager>();
-        }
-    }
-
-    // Charge les dialogues d'un service pour un scénario donné
+    /// <summary>
+    /// Charge les dialogues d’un service pour un scénario donné.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <param name="service">Nom du service concerné.</param>
     private void ChargerDialoguesService(int numeroScenario, string service)
     {
         // Construction du nom de fichier : scenario1_comptabilite.json
@@ -62,7 +78,9 @@ public class JsonDialogueManager : MonoBehaviour
         Debug.Log($"Dialogues du service '{service}' chargés avec succès");
     }
 
-    // charge les vérités de scenario_verites
+    /// <summary>
+    /// Charge le fichier JSON contenant les vérités du scénario.
+    /// </summary>
     private void ChargerVerites()
     {
         string filePath = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
@@ -79,7 +97,16 @@ public class JsonDialogueManager : MonoBehaviour
         Debug.Log("Fichier des vérités chargé avec succès");
     }
 
-    // verifie si une variation est vraie
+    /// <summary>
+    /// Vérifie si une variation de dialogue correspond à une vérité.
+    /// </summary>
+    /// <param name="service">Service concerné.</param>
+    /// <param name="metier">Métier concerné.</param>
+    /// <param name="numeroQuestion">Numéro de la question.</param>
+    /// <param name="variationId">Identifiant de la variation.</param>
+    /// <returns>
+    /// True si la variation est une vérité, false sinon.
+    /// </returns>
     private bool EstUneVerite(string service, string metier, string numeroQuestion, int variationId)
     {
         if (veritesData == null || veritesData.verites == null)
@@ -102,7 +129,10 @@ public class JsonDialogueManager : MonoBehaviour
     }
 
 
-    // Charge les données d'un personnage depuis son fichier JSON
+    /// <summary>
+    /// Charge les données d’un personnage depuis son fichier JSON.
+    /// </summary>
+    /// <param name="nomFichier">Nom du fichier JSON du personnage.</param>
     private void ChargerPersonnage(string nomFichier)
     {
         // Vérifie d'abord si le personnage a une sauvegarde modifiée (pr le taux par ex)
@@ -126,7 +156,9 @@ public class JsonDialogueManager : MonoBehaviour
         Debug.Log($"Personnage chargé : {personnageActuel.prenom} {personnageActuel.nom} {personnageActuel.metier} - Taux énervement: {personnageActuel.taux}%");
     }
     
-    // Augmente le taux d'énervement du personnage de 10% à chaque question posée
+    /// <summary>
+    /// Augmente le taux d’énervement du personnage à chaque question et sauvegarde la modification.
+    /// </summary>
     private void AugmenterTauxEnervement()
     {
         personnageActuel.taux += 10;
@@ -141,7 +173,15 @@ public class JsonDialogueManager : MonoBehaviour
         Debug.Log($"{personnageActuel.prenom} {personnageActuel.nom} - Nouveau taux d'énervement : {personnageActuel.taux}%");
     }
 
-    // NOUVELLE FONCTION : Retourne le dialogue ET l'émotion utilisée
+    /// <summary>
+    /// Retourne le dialogue sélectionné ainsi que l’émotion associée.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <param name="nomFichierPerso">Nom du fichier du personnage.</param>
+    /// <param name="numeroQuestion">Numéro de la question.</param>
+    /// <returns>
+    /// Un tuple contenant le texte du dialogue et l’émotion utilisée.
+    /// </returns>
     public (string texte, string emotion) ObtenirDialogueAvecEmotion(int numeroScenario, string nomFichierPerso, string numeroQuestion)
     {
         ChargerPersonnage(nomFichierPerso);
@@ -181,7 +221,13 @@ public class JsonDialogueManager : MonoBehaviour
         );
 
         // Met à jour le carnet en fonction de la réponse choisie par le personnage
-        carnetManager.ajoutInfo(service, metier, numeroQuestion, variationChoisie.variation_id);
+        //carnetManager.ajoutInfo(service, metier, numeroQuestion, variationChoisie.variation_id);
+        CarnetManager.Instance.ajoutInfo(
+            service,
+            metier,
+            numeroQuestion,
+            variationChoisie.variation_id
+        );
 
         // MODIFICATION : Utilise la nouvelle fonction qui retourne texte ET émotion
         (string texte, string emotion) = SelectionnerTexteDialogueAvecEmotion(variationChoisie, ditLaVerite);
@@ -191,21 +237,41 @@ public class JsonDialogueManager : MonoBehaviour
         return (texte, emotion);
     }
 
-    // pour obtenir le dialogue approprié pour une question donnée (ancienne version, gardée pour compatibilité)
+    /// <summary>
+    /// Retourne uniquement le texte du dialogue (compatibilité ancienne version).
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <param name="nomFichierPerso">Nom du fichier du personnage.</param>
+    /// <param name="numeroQuestion">Numéro de la question.</param>
+    /// <returns>
+    /// Texte du dialogue sélectionné.
+    /// </returns>
     public string ObtenirDialogue(int numeroScenario, string nomFichierPerso, string numeroQuestion)
     {
         (string texte, string _) = ObtenirDialogueAvecEmotion(numeroScenario, nomFichierPerso, numeroQuestion);
         return texte;
     }
 
-    // Choisit aléatoirement une variation parmi toutes les variations disponibles
+    /// <summary>
+    /// Choisit aléatoirement une variation de dialogue.
+    /// </summary>
+    /// <param name="variations">Liste des variations disponibles.</param>
+    /// <returns>
+    /// Variation sélectionnée.
+    /// </returns>
     private DialogueVariation ChoisirVariationAleatoire(List<DialogueVariation> variations)
     {
         int indexAleatoire = Random.Range(0, variations.Count);
         return variations[indexAleatoire];
     }
 
-    // Détermine si le personnage va dire la vérité selon son caractère
+    /// <summary>
+    /// Détermine si le personnage dit la vérité selon son caractère.
+    /// </summary>
+    /// <param name="caractere">Caractère du personnage.</param>
+    /// <returns>
+    /// True si le personnage dit la vérité, false sinon.
+    /// </returns>
     private bool TireAuSortVerite(string caractere)
     {
         // Récupère le taux de vérité du caractère, ou utilise "normal" par défaut
@@ -219,7 +285,14 @@ public class JsonDialogueManager : MonoBehaviour
         return ditVerite;
     }
 
-    // NOUVELLE FONCTION : Sélectionne le texte ET retourne l'émotion utilisée
+    /// <summary>
+    /// Sélectionne le texte du dialogue et retourne l’émotion associée.
+    /// </summary>
+    /// <param name="variation">Variation de dialogue sélectionnée.</param>
+    /// <param name="ditLaVerite">Indique si le personnage dit la vérité.</param>
+    /// <returns>
+    /// Tuple contenant le texte et l’émotion.
+    /// </returns>
     private (string texte, string emotion) SelectionnerTexteDialogueAvecEmotion(DialogueVariation variation, bool ditLaVerite)
     {
         // Si le personnage ment, renvoie systématiquement le texte "menteur"
@@ -255,6 +328,9 @@ public class JsonDialogueManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Choisit une variation de dialogue en fonction de la vérité ou du mensonge.
+    /// </summary>
     private DialogueVariation ChoisirVariationSelonVerite( string service, string metier, string numeroQuestion, List<DialogueVariation> variations, bool ditLaVerite )
     {
         // Sépare les variations vraies et fausses
@@ -292,14 +368,27 @@ public class JsonDialogueManager : MonoBehaviour
         return variations[Random.Range(0, variations.Count)];
     }
 
-    // Permet d'obtenir toutes les info d'un personnage
+    /// <summary>
+    /// Retourne les informations complètes d’un personnage.
+    /// </summary>
+    /// <param name="nomFichierPerso">Nom du fichier du personnage.</param>
+    /// <returns>
+    /// Données du personnage.
+    /// </returns>
     public PlayerData ObtenirInfosPersonnage(string nomFichierPerso)
     {
         ChargerPersonnage(nomFichierPerso);
         return personnageActuel;
     }
 
-    // Retourne le nombre total de questions disponibles pour un personnage
+    /// <summary>
+    /// Retourne le nombre total de questions disponibles pour un personnage.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <param name="nomFichierPerso">Nom du fichier du personnage.</param>
+    /// <returns>
+    /// Nombre de questions disponibles.
+    /// </returns>
     public int ObtenirNombreQuestions(int numeroScenario, string nomFichierPerso)
     {
         ChargerPersonnage(nomFichierPerso);
