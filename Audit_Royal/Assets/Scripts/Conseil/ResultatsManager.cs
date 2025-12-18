@@ -77,9 +77,6 @@ public class ResultatsManager : MonoBehaviour
             Debug.LogWarning("GameStateManager introuvable, score de test : 90%");
         }
         
-        // Setup
-        //audioSource = gameObject.AddComponent<AudioSource>();
-
         if (tamponValide != null)
         {
             
