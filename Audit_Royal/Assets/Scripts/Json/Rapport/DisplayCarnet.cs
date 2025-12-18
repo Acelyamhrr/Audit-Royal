@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 
 
-public class afficheText : MonoBehaviour
+public class DisplayCarnet : MonoBehaviour
 {
     public TextMeshProUGUI texteUI;      // zone où afficher
     public GameObject scrollViewGameObject;

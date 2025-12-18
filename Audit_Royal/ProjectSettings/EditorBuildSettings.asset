@@ -66,6 +66,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Building/iNFORMATIQUE/Director.unity
     guid: 375e5611d35e93344b606419a30343b9
   - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: fc51c2d4e5a79d042924e6ccd210f22b
+  - enabled: 1
     path: Assets/Scenes/InteriorScene.unity
     guid: da57d0df132693dbfb8a887cdcb76cb4
   - enabled: 1
@@ -80,6 +83,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ConseilAdmin.unity
     guid: ecc7538360dcd9994a8ed9f72e8b851e
+  - enabled: 1
+    path: Assets/Scenes/LeaderBoard.unity
+    guid: 3c5c448cf237a2947bb2ecc6db064b35
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

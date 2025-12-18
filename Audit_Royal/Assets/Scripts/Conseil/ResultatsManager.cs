@@ -472,6 +472,7 @@ public class ResultatsManager : MonoBehaviour
         }
     }
     
+    
     /// <summary>
     /// Coroutine animant progressivement le score de 0 au score final
     /// </summary>
@@ -654,7 +655,7 @@ public class ResultatsManager : MonoBehaviour
                 {
                     buttonText.text = "Terminer";
                 }
-                continueButton.onClick.AddListener(RetourMenu);
+                continueButton.onClick.AddListener(Leaderboard);
             }
             else
             {
@@ -688,5 +689,18 @@ public class ResultatsManager : MonoBehaviour
     }
     
     #endregion
+
+    /// <summary>
+    /// Continue au leaderboard
+    /// </summary>
+    void Leaderboard()
+    {
+        if (GameStateManager.Instance != null)
+        {
+            GameStateManager.Instance.ResetEtat();
+        }
+        
+        SceneManager.LoadScene("Leaderboard");
+    }
 
 }

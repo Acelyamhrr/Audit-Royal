@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
-// <summary>
+/// <summary>
 /// Gère la génération automatique des fichiers de vérités d’un scénario,
 /// en fonction du niveau de difficulté et des services disponibles.
 /// </summary>
@@ -51,7 +51,6 @@ public class ScenarioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
         DontDestroyOnLoad(gameObject);
     }
     

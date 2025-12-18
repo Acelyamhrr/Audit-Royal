@@ -38,6 +38,7 @@ public class CarnetManager : MonoBehaviour
             Debug.Log("regeneration du carnet dans Awake");
             Instance = this;
             visible = false;
+            Debug.Log($"Name {gameObject.name}");
             DontDestroyOnLoad(gameObject);
             Debug.Log("Carnet créé et persistant");
         
@@ -118,14 +119,12 @@ public class CarnetManager : MonoBehaviour
 
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
-        Debug.Log($"|| pathfile {this.pathFile}||");
-        Debug.Log("|| ajoutInfo : 1 ||");
         // Accéder à la liste
         JArray liste = (JArray)obj["informations"][_service]["postes"][_metier]["verites"][numQuestion];
-        Debug.Log($"|| ajoutInfo : 2 size : {liste.Count.ToString()} ||");
 
         //Ajouter l'info
-		if(!liste.Contains(new JValue(numVar))){
+		if(!liste.Any(x => (int)x == numVar)){
+			Debug.Log("Condition");
         	liste.Add(numVar);
 		}
 
@@ -138,70 +137,88 @@ public class CarnetManager : MonoBehaviour
     /// </summary>
     public string afficherCarnet()
     {
-        Debug.Log("|| afficherCarnet : 1 ||");
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
 
         var sb = new System.Text.StringBuilder();
-        var services = ((JObject)obj["informations"]).Properties().OrderBy(s => s.Name);
-        Debug.Log("|| afficherCarnet : 2 ||");
-        foreach (var service in services)
+
+        // Récupérer tous les services
+        var services = ((JObject)obj["informations"])
+            .Properties()
+            .OrderBy(s => s.Name)
+            .ToList();
+
+        // Récupérer toutes les questions uniques
+        var allQuestions = services
+            .SelectMany(service =>
+                ((JObject)service.Value["postes"])
+                    .Properties()
+                    .SelectMany(metier =>
+                        ((JObject)metier.Value["verites"]).Properties()
+                            .Select(q => q.Name)))
+            .Distinct()
+            .OrderBy(q => int.Parse(q))
+            .ToList();
+
+        // Parcours par QUESTION
+        foreach (var questionNum in allQuestions)
         {
-            string serviceName = service.Name;
-            var metiers = ((JObject)service.Value["postes"]).Properties();
-            var allQuestions = metiers
-                .SelectMany(m => ((JObject)m.Value["verites"]).Properties().Select(q => q.Name))
-                .Distinct()
-                .OrderBy(q => int.Parse(q));
+            bool questionHasInfo = false;
+            var questionBlock = new System.Text.StringBuilder();
 
-            bool serviceHasInfo = false;
-            Debug.Log("|| afficherCarnet : 4 ||");
-            foreach (var questionNum in allQuestions)
+            // Texte de la question (on prend le service audité par défaut)
+            string questionText = getQuestion(getServiceAudite(), questionNum);
+
+            // Parcours par SERVICE
+            foreach (var service in services)
             {
-                Debug.Log("|| afficherCarnet : 5 ||");
-                string questionText = getQuestion(serviceName, questionNum);
-                var questionLines = new List<string>();
-                foreach (var metier in metiers.OrderBy(m => m.Name))
-                {
-                    var metierObj = (JObject)metier.Value["verites"];
-                    if (metierObj.ContainsKey(questionNum))
-                    {
-                        Debug.Log("|| ici 1||");
-                        var infos = (JArray)metierObj[questionNum];
+                string serviceName = service.Name;
+                var postes = ((JObject)service.Value["postes"])
+                    .Properties()
+                    .OrderBy(p => p.Name);
 
-                        for (int i = 0; i < infos.Count; i++)
+                var serviceLines = new List<string>();
+
+                // Parcours par MÉTIER
+                foreach (var metier in postes)
+                {
+                    JObject verites = (JObject)metier.Value["verites"];
+
+                    if (!verites.ContainsKey(questionNum))
+                        continue;
+
+                    JArray infos = (JArray)verites[questionNum];
+
+                    foreach (var info in infos)
+                    {
+                        string infoText = getInfo(serviceName, metier.Name, questionNum, info.ToString());
+
+                        if (!infoText.StartsWith("["))
                         {
-                            Debug.Log("|| ici 2||");
-                            Debug.Log($"paramètre getInfo : {serviceName}, {metier.Name}, {questionNum}, {infos[i].ToString()}         bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-                            string infoText = getInfo(serviceName, metier.Name, questionNum, infos[i].ToString());
-                            
-                            if (!infoText.StartsWith("["))
-                            {
-                                questionLines.Add($"    - {metier.Name} → {infoText}");
-                            }
+                            serviceLines.Add($"  <b>→ {metier.Name}</b> : {infoText}\n");
                         }
                     }
                 }
 
-                if (questionLines.Count > 0)
+                // Si le service a des infos pour cette question
+                if (serviceLines.Count > 0)
                 {
-                    if (!serviceHasInfo)
-                    {
-                        sb.AppendLine($"Service : {serviceName}");
-                        serviceHasInfo = true;
-                    }
+                    questionHasInfo = true;
+                    questionBlock.AppendLine($"\n<size=110%><b>Service :</b></size> {serviceName}\n");
 
-                    sb.AppendLine($"\n  {questionText}");
-                    foreach (var line in questionLines)
+                    foreach (var line in serviceLines)
                     {
-                        sb.AppendLine(line);
+                        questionBlock.AppendLine(line);
                     }
                 }
             }
 
-            if (serviceHasInfo)
+            // 6️⃣ Affichage final de la question
+            if (questionHasInfo)
             {
-                sb.AppendLine(); // saut de ligne entre services
+                sb.AppendLine($"<size=140%><b>Question :</b></size> {questionText}");
+                sb.AppendLine(questionBlock.ToString());
+                sb.AppendLine();
             }
         }
 
