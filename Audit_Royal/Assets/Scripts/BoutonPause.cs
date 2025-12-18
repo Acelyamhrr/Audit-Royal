@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Gère les actions des boutons à l'intérieur du menu de pause.
+/// </summary>
 public class BoutonPause : MonoBehaviour
 {
+    
+    /// <summary>
+    /// Ferme le menu de pause et reprend la partie.
+    /// Appelé par le bouton "Play" ou "Resume".
+    /// </summary>
     public void ClicReprendre()
     {
         if (GlobalPause.instance != null)
@@ -9,7 +17,11 @@ public class BoutonPause : MonoBehaviour
             GlobalPause.instance.ReprendreJeu();
         }
     }
-
+    
+    /// <summary>
+    /// Ferme complètement l'application (Alt+F4).
+    /// Arrête également le mode lecture si exécuté dans l'éditeur Unity.
+    /// </summary>
     public void ClicQuitter()
     {
         Application.Quit();

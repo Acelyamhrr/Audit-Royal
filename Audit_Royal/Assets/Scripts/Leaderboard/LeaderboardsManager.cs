@@ -10,14 +10,19 @@ using TMPro;
 using UnityEngine.UI;
 using Unity.Services.Leaderboards.Exceptions;
 
+/// <summary>
+/// Gère l'affichage, la mise à jour et la soumission des scores vers les services de Leaderboard d'Unity.
+/// </summary>
 public class LeaderboardsManager : MonoBehaviour
 {
-
     private const string clefPseudo = "NomDuJoueur"; 
 
     [Header("UI References")]
+    /// <summary> Objet parent contenant tout l'UI du classement. </summary>
     [SerializeField] private GameObject leaderboardParent;
+    /// <summary> Le container (souvent un Content de ScrollView) où seront instanciés les scores. </summary>
     [SerializeField] private Transform leaderboardContentParent;
+    /// <summary> Le prefab représentant une ligne dans le classement. </summary>
     [SerializeField] private Transform leaderboardItemPrefab;
     
     [Header("Tier Sprites")]
@@ -30,21 +35,21 @@ public class LeaderboardsManager : MonoBehaviour
     [SerializeField] private Sprite silverTierBackground;
     [SerializeField] private Sprite goldenTierBackground;
 
-
+    /// <summary> L'ID du leaderboard configuré sur le dashboard Unity Services. </summary>
     private string leaderboardID = "lbcall";
     
-
+    /// <summary> Pseudo local du joueur récupéré ou défini. </summary>
     private string pseudoActuel;
 
+    /// <summary>
+    /// Initialise les services Unity, connecte l'utilisateur anonymement et prépare le leaderboard.
+    /// </summary>
     private async void Start()
     {
-
         await UnityServices.InitializeAsync();
         
-      
         pseudoActuel = PlayerPrefs.GetString(clefPseudo, "Invité Anonyme");
         
-       
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
 
         await MettreAJourPseudo(pseudoActuel);
@@ -59,10 +64,11 @@ public class LeaderboardsManager : MonoBehaviour
         }
         
         leaderboardParent.SetActive(false);
-        
-        Debug.Log("Leaderboard initialisé. Pseudo du joueur : " + pseudoActuel);
     }
 
+    /// <summary>
+    /// Surveille les entrées clavier pour afficher le menu (Echap) ou ajouter des scores de test (Espace).
+    /// </summary>
     private async void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -79,7 +85,6 @@ public class LeaderboardsManager : MonoBehaviour
                 try
                 {
                     await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardID, 100); 
-                    Debug.Log("Score 100 soumis pour " + pseudoActuel);
                 }
                 catch (LeaderboardsException e)
                 {
@@ -94,6 +99,10 @@ public class LeaderboardsManager : MonoBehaviour
         }
     }
  
+    /// <summary>
+    /// Met à jour le nom du joueur sur les serveurs d'authentification Unity.
+    /// </summary>
+    /// <param name="nouveauPseudo">Le nouveau nom à afficher dans le classement.</param>
     public async Task MettreAJourPseudo(string nouveauPseudo)
     {
         if (string.IsNullOrWhiteSpace(nouveauPseudo) || nouveauPseudo == AuthenticationService.Instance.PlayerName)
@@ -106,7 +115,6 @@ public class LeaderboardsManager : MonoBehaviour
             try
             {
                 await AuthenticationService.Instance.UpdatePlayerNameAsync(nouveauPseudo);
-                Debug.Log("Pseudo mis à jour sur le serveur : " + nouveauPseudo);
             }
             catch (System.Exception ex)
             {
@@ -115,39 +123,40 @@ public class LeaderboardsManager : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Boucle de rafraîchissement du classement tant que le panneau est actif.
+    /// Récupère les scores et instancie les éléments visuels correspondants.
+    /// </summary>
     private async void UpdateLeaderboard()
     {
         while (Application.isPlaying && leaderboardParent.activeInHierarchy)
         {
             LeaderboardScoresPage leaderboardScoresPage = await LeaderboardsService.Instance.GetScoresAsync(leaderboardID);
             
+            // Nettoyage de l'ancienne liste
             foreach (Transform t in leaderboardContentParent)
             {
                 Destroy(t.gameObject);
             }
+
+            // Création des nouveaux items
             foreach (LeaderboardEntry entry in leaderboardScoresPage.Results)
             {
-                 Transform leaderboardItem = Instantiate(leaderboardItemPrefab, leaderboardContentParent);
+                Transform leaderboardItem = Instantiate(leaderboardItemPrefab, leaderboardContentParent);
                  
                 Image itemBackground = leaderboardItem.GetComponent<Image>();
-                Sprite tierSprite = null;
                 Sprite backgroundSprite = defaultBackgroundSprite;
 
                 switch (entry.Tier)
                 {
                     case "bronze_tier":
-                        tierSprite = bronzeTierSprite;
                         backgroundSprite = bronzeTierBackground;
                         break;
                     case "silver_tier":
-                        tierSprite = silverTierSprite;
                         backgroundSprite = silverTierBackground;
                         break;
                     case "golden_tier":
-                        tierSprite = goldenTierSprite;
                         backgroundSprite = goldenTierBackground;
-                        break;
-                    default:
                         break;
                 }
                 
@@ -159,39 +168,32 @@ public class LeaderboardsManager : MonoBehaviour
                 leaderboardItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = entry.PlayerName;
                 leaderboardItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = entry.Score.ToString();
                 leaderboardItem.GetChild(2).GetComponent<TextMeshProUGUI>().text = entry.Tier;
-                //leaderboardItem.GetChild(2).GetComponent<Image>().sprite = tierSprite;
             }
 
             await Task.Delay(500); 
         }
     }
 
+    /// <summary>
+    /// Génère et envoie plusieurs scores aléatoires pour tester le comportement du classement.
+    /// </summary>
+    /// <param name="nombreDeSoumissions">Nombre de scores fictifs à envoyer.</param>
     public async void AjouterScoresDeTest(int nombreDeSoumissions)
     {
-        Debug.Log("Soumission de " + nombreDeSoumissions + " scores de test pour le joueur local...");
-        
         string leaderboardId = "lbcall"; 
         
         for (int i = 1; i <= nombreDeSoumissions; i++)
         {
             int score = Random.Range(1000, 50000); 
-            
             try
             {
-                await LeaderboardsService.Instance.AddPlayerScoreAsync(
-                    leaderboardId, 
-                    score
-                );
-                Debug.Log("Score " + score + " soumis.");
+                await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardId, score);
             }
             catch (LeaderboardsException e)
             {
                 Debug.LogError("Erreur lors de l'ajout du score : " + e.Reason);
             }
-            
             await Task.Delay(50); 
         }
-        
-        Debug.Log("Simulation de scores terminée. Appuyez sur ESC pour voir le classement mis à jour.");
     }
 }
