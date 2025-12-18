@@ -270,6 +270,7 @@ public class MapUIManager : MonoBehaviour
             GameStateManager.Instance.DefinirScenarioEtNiveau(scenarioActuel, nouveauNiveau);
             
             Debug.Log($"Passage au niveau {nouveauNiveau}");
+            Debug.Log($"ScenarioManager utilisé: {scenarioManager.name}, ID: {scenarioManager.GetInstanceID()}");
             
             // Générer le nouveau fichier de vérités
             scenarioManager.GenerateVeritesFile(scenarioActuel, nouveauNiveau);

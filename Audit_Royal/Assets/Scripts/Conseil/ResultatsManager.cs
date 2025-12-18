@@ -507,11 +507,13 @@ public class ResultatsManager : MonoBehaviour
     
     void PasserNiveauSuivant()
     {
+        /*
         if (GameStateManager.Instance != null)
         {
             GameStateManager.Instance.PasserNiveauSuivant();
-        }
+        }*/
         
+        GameStateManager.Instance.DoTerminerNiveauApresRapport = true;
         SceneManager.LoadScene("Map");
     }
     
