@@ -38,6 +38,7 @@ public class AudioManager : MonoBehaviour
         }
 
         instance = this;
+        Debug.Log($"Name {gameObject.name}");
         DontDestroyOnLoad(gameObject);
     }
     
@@ -50,7 +51,8 @@ public class AudioManager : MonoBehaviour
         if (musiqueSource != null && musiqueDeFond != null)
         {
             musiqueSource.clip = musiqueDeFond;
-            musiqueSource.loop = true; 
+            musiqueSource.loop = true;
+            musiqueSource.volume = 0;
             musiqueSource.Play();
         }
     }

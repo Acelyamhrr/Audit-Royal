@@ -18,7 +18,8 @@ public class PauseManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(gameObject); // ne pas suppriemr l'objet quand on chnge de scene 
+        Debug.Log($"Name {gameObject.name}");
+        //DontDestroyOnLoad(gameObject); // ne pas supprimer l'objet quand on change de scene 
     }
 
     void Update()

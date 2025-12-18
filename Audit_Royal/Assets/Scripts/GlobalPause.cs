@@ -36,6 +36,7 @@ public class GlobalPause : MonoBehaviour
             return;
         }
         instance = this;
+        Debug.Log($"Name {gameObject.name}");
         DontDestroyOnLoad(gameObject);
     }
 

@@ -38,6 +38,7 @@ public class CarnetManager : MonoBehaviour
             Debug.Log("regeneration du carnet dans Awake");
             Instance = this;
             visible = false;
+            Debug.Log($"Name {gameObject.name}");
             DontDestroyOnLoad(gameObject);
             Debug.Log("Carnet créé et persistant");
         
