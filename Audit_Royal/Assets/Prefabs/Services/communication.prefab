@@ -74,8 +74,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 322, y: -4}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 621.8868, y: -13.1017}
+  m_SizeDelta: {x: 413.8036, y: 69.6341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7651865856344342997
 CanvasRenderer:
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 6040215373680923673}
   - component: {fileID: 2820062186723356791}
   m_Layer: 5
-  m_Name: btn_directeur
+  m_Name: btn_graphiste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,8 +207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: -81}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -104, y: -148.99}
+  m_SizeDelta: {x: 383.59, y: 51.821}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7255212491827322930
 CanvasRenderer:
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8c7f92116e301b69bb81192e444fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterClicker
-  nomScenePersonnage: DirectorCom
+  nomScenePersonnage: SecretaireCom
 --- !u!1 &3403093171539901065
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,12 +468,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 1229504749046066610}
   - component: {fileID: 2244506223945466142}
   m_Layer: 5
-  m_Name: btn_secretaire
+  m_Name: btn_responsable_reseaux
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,8 +532,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: -94}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 294.03, y: -125.25}
+  m_SizeDelta: {x: 448.0612, y: 58.4916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &476971718734889319
 CanvasRenderer:
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8c7f92116e301b69bb81192e444fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterClicker
-  nomScenePersonnage: SecretaireCom
+  nomScenePersonnage: DirectorCom
 --- !u!1 &6903328532582894735
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,8 +678,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252, y: -144}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -521.51825, y: -346.2917}
+  m_SizeDelta: {x: 550.9404, y: 63.1433}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2883033817121226240
 CanvasRenderer:

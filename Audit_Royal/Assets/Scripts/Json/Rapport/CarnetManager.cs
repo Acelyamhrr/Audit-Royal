@@ -5,13 +5,32 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
+/// <summary>
+/// Gère le carnet de l’auditeur : stockage, ajout et lecture des informations obtenues
+/// depuis les différents services et métiers.
+/// </summary>
 public class CarnetManager : MonoBehaviour
 {
     public static CarnetManager Instance { get; private set; }
     public static bool visible { get; set; }
     public GameObject scrollViewGameObject;
+
+    /// <summary>
+    /// Chemin du fichier JSON du carnet.
+    /// </summary>
     private string pathFile;
+    
+    /// <summary>
+    /// Numéro du scénario en cours
+    /// </summary>
     private string numScenario;
+
+    
+    
+    /// <summary>
+    /// Initialisation du carnet à partir du fichier de vérités.
+    /// Transforme "verites" en "informations" et initialise toutes les entrées comme vides.
+    /// </summary>
     void Awake()
     {
         if (Instance == null)
@@ -19,7 +38,6 @@ public class CarnetManager : MonoBehaviour
             Debug.Log("regeneration du carnet dans Awake");
             Instance = this;
             visible = false;
-            scrollViewGameObject.SetActive(false);
             DontDestroyOnLoad(gameObject);
             Debug.Log("Carnet créé et persistant");
         
@@ -38,16 +56,12 @@ public class CarnetManager : MonoBehaviour
 		
 		this.numScenario = obj["scenario"].ToString();
 
-        // Récupérer le contenu de "verites"
+        // Récupérer le contenu de "verites" et le renommer "informations"
         var verites = obj["verites"];
-
-        // Supprimer l'ancienne clé
         obj.Remove("verites");
-
-        // Ajouter sous le nouveau nom
         obj["informations"] = verites;
         
-        // Parcourir chaque service
+        // Initialiser toutes les réponses comme vides
         foreach (var service in (JObject)obj["informations"])
         {
             var serviceObj = (JObject)service.Value;
@@ -58,7 +72,6 @@ public class CarnetManager : MonoBehaviour
                 var posteObj = (JObject)poste.Value;
                 var veritesObj = (JObject)posteObj["verites"];
 
-                // Parcourir chaque question ("0","1",...)
                 foreach (var question in veritesObj.Properties())
                 {
                     // Remplacer le tableau d'entiers par un tableau vide
@@ -79,16 +92,23 @@ public class CarnetManager : MonoBehaviour
 
         File.WriteAllText(pathFile, obj.ToString());
         }
-        scrollViewGameObject.SetActive(false);
-    }
 
-    // Update is called once per frame
+        if(scrollViewGameObject != null)
+        {
+            scrollViewGameObject.SetActive(false);
+        }
+    }
+    /// <summary>
+    /// Update is called once per frame
+    /// </summary>
     void Update()
     {
         
     }
 
-    //Méthode pour ajouter entrée au carnet
+    /// <summary>
+    /// Ajoute une information au carnet pour un service, un métier et une question donnés.
+    /// </summary>
     public void ajoutInfo(string service, string metier, string numQuestion, int numVar)
     {
         Debug.Log($"paramètre : {service}, {metier}, {numQuestion}, {numVar}");
@@ -113,7 +133,9 @@ public class CarnetManager : MonoBehaviour
         File.WriteAllText(this.pathFile, obj.ToString());
     }
 
-    //Méthode pour afficher le carnet (donne les informations reçues)
+    /// <summary>
+    /// Affiche le contenu du carnet sous forme textuelle pour tous les services et métiers.
+    /// </summary>
     public string afficherCarnet()
     {
         Debug.Log("|| afficherCarnet : 1 ||");
@@ -127,8 +149,6 @@ public class CarnetManager : MonoBehaviour
         {
             string serviceName = service.Name;
             var metiers = ((JObject)service.Value["postes"]).Properties();
-            Debug.Log("|| afficherCarnet : 3 ||");
-            // Collecter toutes les questions utilisées
             var allQuestions = metiers
                 .SelectMany(m => ((JObject)m.Value["verites"]).Properties().Select(q => q.Name))
                 .Distinct()
@@ -188,7 +208,9 @@ public class CarnetManager : MonoBehaviour
         return sb.ToString();
     }
 
-    //Récupère l'intitulé de la question à partir du service, du numéro de la question et du numéro du scénario en cours
+    /// <summary>
+    /// Récupère l’intitulé d’une question à partir du fichier scénario.
+    /// </summary>
     public string getQuestion(string service, string numQuestion)
     {
         string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
@@ -202,7 +224,9 @@ public class CarnetManager : MonoBehaviour
         return obj["questions"][serviceKey]["liste"][index].ToString();
     }
 
-    //Récupère l'info clef à partir du service, du métier, du numéro de la question et de l'info et du numéro du scénario en cours
+    /// <summary>
+    /// Récupère une info clef pour un service, un métier, une question et un numéro d’info.
+    /// </summary>
     private string getInfo(string service, string metier, string numQuestion, string numInfo)
     {
 		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}_{service.ToLower()}.json");
@@ -221,7 +245,9 @@ public class CarnetManager : MonoBehaviour
         }
     }
 
-    //Récupère les infos clefs d'une question dans le carnet
+    /// <summary>
+    /// Récupère les infos clefs d’une question dans le carnet.
+    /// </summary>
     public List<string> getInfos(string serviceRapport, string numQuestion)
     {
         string json = File.ReadAllText(this.pathFile);
@@ -280,6 +306,9 @@ public class CarnetManager : MonoBehaviour
         return lst;
     }
 
+    /// <summary>
+    /// Retourne toutes les infos clefs présentes dans le carnet.
+    /// </summary>
     public List<string> getAllInfos()
     {
         List<string> lst = new List<string>();
@@ -310,6 +339,9 @@ public class CarnetManager : MonoBehaviour
 		return lst;
     }
 
+    /// <summary>
+    /// Récupère le service audité pour le scénario en cours.
+    /// </summary>
 	public string getServiceAudite(){
 		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
         string json = File.ReadAllText(file);
@@ -318,6 +350,9 @@ public class CarnetManager : MonoBehaviour
         return obj["service_audite"].ToString().ToLower();
 	}
 
+    /// <summary>
+    /// Récupère le titre du scénario en cours.
+    /// </summary>
 	public string getNameAudit(){
 		string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}.json");
         string json = File.ReadAllText(file);
@@ -326,6 +361,9 @@ public class CarnetManager : MonoBehaviour
 		return obj["titre"].ToString();
 	}
 
+    /// <summary>
+    /// Récupère toutes les questions du carnet sous forme de dictionnaire (clé : service;numQuestion, valeur : texte).
+    /// </summary>
     public Dictionary<string, string> getAllQuestions()
 	{
         Dictionary<string, string> dico = new Dictionary<string, string>();
@@ -374,6 +412,9 @@ public class CarnetManager : MonoBehaviour
     	return dico;
 	}
 
+    /// <summary>
+    /// Récupère la liste des services présents dans le carnet.
+    /// </summary>
     public List<string> getServices()
     {
         List<string> lst = new List<string>();
@@ -391,6 +432,9 @@ public class CarnetManager : MonoBehaviour
         return lst;
     }
 
+    /// <summary>
+    /// Retourne le numéro de l'information correspondant à un texte donné dans un service.
+    /// </summary>
     public string getNumInfo(string service, string info)
     {
         string file = Path.Combine(Application.streamingAssetsPath, $"scenario{this.numScenario}_{service.ToLower()}.json");

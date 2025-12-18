@@ -165,7 +165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
   boutonJouer: {fileID: 1172988250}
   boutonQuitter: {fileID: 887382027}
-  texteScenarioActuel: {fileID: 0}
   scenariosDisponibles: 0100000002000000
 --- !u!1 &189360659
 GameObject:
@@ -1007,6 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd591476105139298d7c0975c06a50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  DoTerminerNiveauApresRapport: 0
 --- !u!4 &2029393107
 Transform:
   m_ObjectHideFlags: 0

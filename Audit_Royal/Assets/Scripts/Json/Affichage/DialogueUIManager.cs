@@ -7,33 +7,106 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Linq;
 
-/// Gère l'affichage du dialogue avec un personnage
+/// <summary>
+/// Gère l’interface utilisateur des dialogues avec les personnages.
+/// </summary>
+/// <remarks>
+/// Cette classe s’occupe de :
+/// <list type="bullet">
+/// <item><description>Charger les données du personnage sélectionné</description></item>
+/// <item><description>Afficher les questions disponibles selon le scénario</description></item>
+/// <item><description>Afficher les réponses et changer l’émotion du personnage</description></item>
+/// <item><description>Gérer le carnet de questions et les interactions clavier</description></item>
+/// </list>
+/// </remarks>
 public class DialogueUIManager : MonoBehaviour
 {
+    #region UI References
+
+    /// <summary>
+    /// Image du personnage affichée à l’écran.
+    /// </summary>
     [Header("UI References - Image")]
     public Image personnageImage;
     
+    /// <summary>
+    /// Panel du carnet de questions.
+    /// </summary>
     [Header("UI References - Carnet Questions")]
     public GameObject panelQuestions;
+    
+    /// <summary>
+    /// Texte affichant la liste des questions disponibles.
+    /// </summary>
     public TextMeshProUGUI questionsText;
+    
+    /// <summary>
+    /// Bouton permettant d’ouvrir le carnet.
+    /// </summary>
     public Button carnetButton;
+    
+    /// <summary>
+    /// Bouton permettant de fermer le carnet.
+    /// </summary>
     public Button boutonFermerCarnet;
     
+    /// <summary>
+    /// Panel affichant le dialogue avec le personnage.
+    /// </summary>
     [Header("UI References - Panel Dialogue")]
     public GameObject panelDialogue;
+    
+    /// <summary>
+    /// Nom du personnage affiché dans le dialogue.
+    /// </summary>
     public TextMeshProUGUI nomPersonnageDialogue;
+    
+    /// <summary>
+    /// Métier et service du personnage.
+    /// </summary>
     public TextMeshProUGUI metierDialogue;
+    
+    /// <summary>
+    /// Texte de la réponse du personnage.
+    /// </summary>
     public TextMeshProUGUI dialogueReponse;
     
+    /// <summary>
+    /// Bouton de retour vers le bâtiment.
+    /// </summary>
     [Header("Boutons")]
     public Button retourButton;
     
+    #endregion
+
+    /// <summary>
+    /// Gestionnaire des dialogues JSON.
+    /// </summary>
     private JsonDialogueManager dialogueManager;
+    
+    /// <summary>
+    /// Données du personnage actuellement interrogé.
+    /// </summary>
     private PlayerData personnageActuel;
+    
+    /// <summary>
+    /// Liste des textes des questions disponibles.
+    /// </summary>
     private List<string> questionsDisponibles = new List<string>();
+    
+    /// <summary>
+    /// Association texte de question → identifiant de question.
+    /// </summary>
     private Dictionary<string, string> questionsIdMap = new Dictionary<string, string>();
+    
+    /// <summary>
+    /// Indique si le carnet de questions est ouvert.
+    /// </summary>
     private bool carnetOuvert = false;
     
+    /// <summary>
+    /// Initialise l’interface et charge les données nécessaires.
+    /// </summary>
     void Start()
     {
         // recup ou créer le DialogueManager
@@ -71,12 +144,20 @@ public class DialogueUIManager : MonoBehaviour
         PreparerQuestions();
     }
     
+    /// <summary>
+    /// Gère les entrées clavier à chaque frame.
+    /// </summary>
     void Update()
     {
         GererInputs();
     }
     
-    /// Charge les données du personnage depuis GameStateManager
+    /// <summary>
+    /// Charge les données du personnage actuellement sélectionné.
+    /// </summary>
+    /// <remarks>
+    /// Les informations sont récupérées depuis le <see cref="GameStateManager"/>.
+    /// </remarks>
     void ChargerPersonnage()
     {
         if (GameStateManager.Instance == null)
@@ -111,7 +192,16 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// Charge l'image du perso avec l'émotion spécifiée
+    /// <summary>
+    /// Charge l’image du personnage selon l’émotion donnée.
+    /// </summary>
+    /// <param name="emotion">
+    /// Nom de l’émotion à afficher (ex: normal, colere, anxieux…).
+    /// </param>
+    /// <remarks>
+    /// Si l’image correspondant à l’émotion n’est pas trouvée,
+    /// l’image normale est chargée par défaut.
+    /// </remarks>
     void ChargerImagePersonnage(string emotion)
     {
         if (personnageImage == null)
@@ -154,7 +244,17 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// Prépare les questions dispo depuis le fichier scenario_verites.json
+    /// <summary>
+    /// Prépare la liste des questions disponibles pour le personnage.
+    /// </summary>
+    /// <remarks>
+    /// Cette méthode :
+    /// <list type="bullet">
+    /// <item><description>Charge le fichier <c>scenario_verites.json</c></description></item>
+    /// <item><description>Détermine si le personnage est du service audité</description></item>
+    /// <item><description>Associe les questions du scénario aux vérités disponibles</description></item>
+    /// </list>
+    /// </remarks>
     void PreparerQuestions()
 {
     Debug.Log("=== DÉBUT PRÉPARATION QUESTIONS ===");
@@ -304,7 +404,14 @@ public class DialogueUIManager : MonoBehaviour
     AfficherQuestionsCarnet();
 }
     
-    /// Charge le scénario depuis le fichier JSON
+    /// <summary>
+    /// Charge les données d’un scénario depuis un fichier JSON.
+    /// </summary>
+    /// <param name="numeroScenario">Numéro du scénario.</param>
+    /// <returns>
+    /// Objet <see cref="ScenarioRoot"/> contenant les données du scénario,
+    /// ou null en cas d’erreur.
+    /// </returns>
     ScenarioRoot ChargerScenario(int numeroScenario)
     {
         string nomFichier = $"scenario{numeroScenario}.json";
@@ -329,7 +436,9 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// Affiche les questions dans le carnet
+    /// <summary>
+    /// Affiche les questions disponibles dans le carnet.
+    /// </summary>
     void AfficherQuestionsCarnet()
     {
         if (questionsText == null)
@@ -354,7 +463,9 @@ public class DialogueUIManager : MonoBehaviour
         questionsText.text = texte;
     }
     
-    /// Ouvre le carnet de questions
+    /// <summary>
+    /// Ouvre le carnet de questions.
+    /// </summary>
     void OuvrirCarnet()
     {
         if (panelQuestions != null)
@@ -368,7 +479,9 @@ public class DialogueUIManager : MonoBehaviour
             panelDialogue.SetActive(false);
     }
     
-    /// Ferme le carnet de questions
+    /// <summary>
+    /// Ferme le carnet de questions.
+    /// </summary>
     void FermerCarnet()
     {
         if (panelQuestions != null)
@@ -378,7 +491,17 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    // Gère les inputs clavier
+    /// <summary>
+    /// Gère les entrées clavier de l’utilisateur.
+    /// </summary>
+    /// <remarks>
+    /// Touches gérées :
+    /// <list type="bullet">
+    /// <item><description>Touches 1 à 9 : poser une question</description></item>
+    /// <item><description>Espace : fermer le dialogue</description></item>
+    /// <item><description>R : retour au bâtiment</description></item>
+    /// </list>
+    /// </remarks>
     void GererInputs()
     {
         // espace pour fermer le panel de dialogue
@@ -417,7 +540,12 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
     
-    /// Pose une question au personnage et affiche la réponse
+    /// <summary>
+    /// Pose une question au personnage et affiche la réponse.
+    /// </summary>
+    /// <param name="indexQuestion">
+    /// Index de la question dans la liste des questions disponibles.
+    /// </param>
     void PoserQuestion(int indexQuestion)
     {
         if (GameStateManager.Instance == null || personnageActuel == null)
@@ -465,7 +593,9 @@ public class DialogueUIManager : MonoBehaviour
         Debug.Log($"Question {numeroQuestion} posée → Réponse : {reponse} (Émotion: {emotion})");
     }
     
-    // Retour vers la scène du bat
+    /// <summary>
+    /// Retourne à la scène du bâtiment.
+    /// </summary>
     void RetourBatiment()
     {
         SceneManager.LoadScene("InteriorScene");
