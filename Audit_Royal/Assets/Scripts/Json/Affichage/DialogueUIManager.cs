@@ -62,11 +62,6 @@ public class DialogueUIManager : MonoBehaviour
     public TextMeshProUGUI nomPersonnageDialogue;
     
     /// <summary>
-    /// Métier et service du personnage.
-    /// </summary>
-    public TextMeshProUGUI metierDialogue;
-    
-    /// <summary>
     /// Texte de la réponse du personnage.
     /// </summary>
     public TextMeshProUGUI dialogueReponse;
@@ -180,10 +175,7 @@ public class DialogueUIManager : MonoBehaviour
         {
             // Affiche dans le panel dialogue
             if (nomPersonnageDialogue != null)
-                nomPersonnageDialogue.text = $"{personnageActuel.prenom} {personnageActuel.nom}";
-            
-            if (metierDialogue != null)
-                metierDialogue.text = $"{personnageActuel.metier} - Service {personnageActuel.service}";
+                nomPersonnageDialogue.text = $"{personnageActuel.prenom} {personnageActuel.nom} - {personnageActuel.metier} - {personnageActuel.service}";
             
             // Charge l'image par défaut donc l'emotion normal 
             ChargerImagePersonnage("normal");
