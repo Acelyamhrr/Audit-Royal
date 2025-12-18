@@ -11,7 +11,6 @@ using Newtonsoft.Json;
 public class IntroSceneManager : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private GameObject bandeau;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI speakerText;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -120,7 +119,6 @@ public class IntroSceneManager : MonoBehaviour
     /// </summary>
     void InitialiserUI()
     {
-        if (bandeau != null) bandeau.SetActive(false);
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
     }
 
@@ -171,7 +169,6 @@ public class IntroSceneManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delayBeforeStart);
 
-        if (bandeau != null) bandeau.SetActive(true);
         if (dialoguePanel != null) dialoguePanel.SetActive(true);
         
         if (speakerText != null)

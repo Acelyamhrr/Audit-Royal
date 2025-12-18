@@ -20,19 +20,17 @@ public class ResultatsManager : MonoBehaviour
     [Header("Cinematic")]
     public CinematicController cinematicController;
     
-    [Header("Audio")]
-    public AudioClip applauseSound;
-    public AudioClip scoreSound;
-    private AudioSource audioSource;
-    
     [Header("Settings")]
     public float typingSpeed = 0.05f;
     public float fastTypingSpeed = 0.01f;  // Vitesse rapide quand on appuie une fois
     public float scoreAnimationDuration = 2f;
+    public float randomNumbersDuration = 1.5f;
+    public float randomNumbersSpeed = 0.08f;
     public KeyCode nextDialogueKey = KeyCode.Space;
     
     // Variables privées
     private int scoreFinal;
+    private int niveauActuel;
     private Queue<DialogueLine> dialogueQueue = new Queue<DialogueLine>();
     private bool isTyping = false;
     private bool isFastTyping = false;  // Mode rapide activé
@@ -65,16 +63,18 @@ public class ResultatsManager : MonoBehaviour
     
     void Start()
     {
-        // Récupérer le score
+        // Récupérer le score ET le niveau
         if (GameStateManager.Instance != null)
         {
             scoreFinal = GameStateManager.Instance.ScoreDernierRapport;
-            Debug.Log($"Score récupéré : {scoreFinal}%");
+            niveauActuel = GameStateManager.Instance.NiveauActuel;
+            Debug.Log($"Score récupéré : {scoreFinal}% - Niveau : {niveauActuel}");
         }
         else
         {
             scoreFinal = 90;
-            Debug.LogWarning("GameStateManager introuvable, score de test : 90%");
+            niveauActuel = 1;
+            Debug.LogWarning("GameStateManager introuvable, score de test : 90% - Niv 1");
         }
         
         if (tamponValide != null)
@@ -124,15 +124,57 @@ public class ResultatsManager : MonoBehaviour
     void StartIntroduction()
     {
         currentPhase = Phase.Introduction;
-        
-        List<DialogueLine> introDialogues = new List<DialogueLine>()
-        {
-            new DialogueLine("Chef du Conseil", "Bonjour et bienvenue au conseil d'administration."),
-            new DialogueLine("Chef du Conseil", "Nous avons examiné votre rapport d'audit avec attention."),
-            new DialogueLine("Chef du Conseil", "Voyons ensemble vos résultats...")
-        };
-        
+    
+        List<DialogueLine> introDialogues = GenererDialoguesIntroduction();
         StartDialogueSequence(introDialogues);
+        
+    }
+    
+    List<DialogueLine> GenererDialoguesIntroduction()
+    {
+        List<DialogueLine> dialogues = new List<DialogueLine>();
+        
+        switch (niveauActuel)
+        {
+            case 1:
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Bonjour et bienvenue au conseil d'administration."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "C'est votre premier audit, nous allons voir ce que vous valez."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Voyons ensemble vos résultats..."));
+                break;
+                
+            case 2:
+                dialogues.Add(new DialogueLine("Chef du Conseil", "De retour parmi nous."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Vous commencez à prendre vos marques, voyons si vous progressez."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Analysons votre rapport..."));
+                break;
+                
+            case 3:
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Bienvenue pour votre troisième audit."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "À ce stade, nous attendons davantage de rigueur de votre part."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Examinons votre travail..."));
+                break;
+                
+            case 4:
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Vous êtes maintenant un auditeur expérimenté."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Cette mission était complexe, j'espère que vous avez été à la hauteur."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Voyons cela de plus près..."));
+                break;
+                
+            case 5:
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Votre dernière mission. Le niveau le plus difficile."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Nous avons placé en vous de grandes attentes."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Découvrons ensemble votre performance finale..."));
+                break;
+                
+            default:
+                // Fallback si niveau inconnu
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Bonjour et bienvenue au conseil d'administration."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Nous avons examiné votre rapport d'audit avec attention."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Voyons ensemble vos résultats..."));
+                break;
+        }
+        
+        return dialogues;
     }
     
     void StartDialogueSequence(List<DialogueLine> dialogues)
@@ -244,7 +286,10 @@ public class ResultatsManager : MonoBehaviour
         Debug.Log("Animation Score");
         scoreText.gameObject.SetActive(true);
         
+        // dabord : nbs aléatoires pour mettre du suspens
+        yield return StartCoroutine(AnimerNombresAleatoires());
         
+        // ensuite animation vers le score final
         yield return StartCoroutine(AnimerScore());
 
 
@@ -260,8 +305,6 @@ public class ResultatsManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         
         // Sortir du mode cinématique et désactiver la jauge
-
-        
         cinematicController.ExitCinematic();
         scoreText.gameObject.SetActive(false);
         tamponValide.SetActive(false);
@@ -275,39 +318,33 @@ public class ResultatsManager : MonoBehaviour
         StartConclusion();
     }
     
+    IEnumerator AnimerNombresAleatoires()
+    {
+        float tempsEcoule = 0f;
+        
+        while (tempsEcoule < randomNumbersDuration)
+        {
+            // Génère un nombre aléatoire entre 0 et 100
+            int nombreAleatoire = Random.Range(0, 101);
+            
+            if (scoreText != null)
+            {
+                scoreText.text = nombreAleatoire + "%";
+            }
+            
+            yield return new WaitForSeconds(randomNumbersSpeed);
+            tempsEcoule += randomNumbersSpeed;
+        }
+    }
+
+    
     void StartConclusion()
     {
         currentPhase = Phase.Conclusion;
         
-        List<DialogueLine> conclusionDialogues = new List<DialogueLine>();
-        
-        if (scoreFinal >= 85)
-        {
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Excellent travail !"));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Vous avez parfaitement compris les enjeux de cet audit."));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Nous sommes impressionnés par votre rigueur."));
-        }
-        else if (scoreFinal >= 75)
-        {
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Très bien !"));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Votre rapport est solide, continuez sur cette lancée."));
-        }
-        else if (scoreFinal >= 50)
-        {
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "C'est correct..."));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Mais il y a encore des points à améliorer."));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Soyez plus attentif aux détails la prochaine fois."));
-        }
-        else
-        {
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Hmm... Ce rapport nécessite plus de rigueur."));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Prenez le temps d'analyser les informations avec attention."));
-            conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Vous pouvez faire mieux."));
-        }
-        
-        conclusionDialogues.Add(new DialogueLine("Chef du Conseil", "Vous pouvez maintenant continuer votre mission."));
-        
+        List<DialogueLine> conclusionDialogues = GenererDialoguesConclusion();
         StartDialogueSequence(conclusionDialogues);
+
     }
     
     void ShowContinueButton()
@@ -318,8 +355,23 @@ public class ResultatsManager : MonoBehaviour
         {
             continueButton.gameObject.SetActive(true);
             continueButton.onClick.RemoveAllListeners();
-            continueButton.onClick.AddListener(PasserNiveauSuivant);
+            
+            // Si niveau 5, bouton différent
+            if (niveauActuel >= 5)
+            {
+                TextMeshProUGUI buttonText = continueButton.GetComponentInChildren<TextMeshProUGUI>();
+                if (buttonText != null)
+                {
+                    buttonText.text = "Terminer";
+                }
+                continueButton.onClick.AddListener(RetourMenu);
+            }
+            else
+            {
+                continueButton.onClick.AddListener(PasserNiveauSuivant);
+            }
         }
+
     }
     
     IEnumerator AnimerScore()
@@ -348,6 +400,81 @@ public class ResultatsManager : MonoBehaviour
             scoreText.text = scoreFinal + "%";
         }
     }
+    
+    List<DialogueLine> GenererDialoguesConclusion()
+    {
+        List<DialogueLine> dialogues = new List<DialogueLine>();
+        
+        // Commentaire sur le score
+        if (scoreFinal >= 85)
+        {
+            if (niveauActuel >= 4)
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Remarquable ! Vous maîtrisez parfaitement votre métier."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Votre expertise fait honneur à notre établissement."));
+            }
+            else
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Excellent travail !"));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Vous avez parfaitement compris les enjeux de cet audit."));
+            }
+            dialogues.Add(new DialogueLine("Chef du Conseil", "Nous sommes impressionnés par votre rigueur."));
+        }
+        else if (scoreFinal >= 75)
+        {
+            if (niveauActuel >= 3)
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Très bien, mais nous attendions un peu plus à ce niveau."));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Continuez à vous perfectionner."));
+            }
+            else
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Très bien !"));
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Votre rapport est solide, continuez sur cette lancée."));
+            }
+        }
+        else if (scoreFinal >= 50)
+        {
+            dialogues.Add(new DialogueLine("Chef du Conseil", "C'est correct..."));
+            dialogues.Add(new DialogueLine("Chef du Conseil", "Mais il y a encore des points à améliorer."));
+            
+            if (niveauActuel >= 3)
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "À ce stade, nous espérions mieux de votre part."));
+            }
+            else
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Soyez plus attentif aux détails la prochaine fois."));
+            }
+        }
+        else
+        {
+            dialogues.Add(new DialogueLine("Chef du Conseil", "Hmm... Ce rapport nécessite plus de rigueur."));
+            dialogues.Add(new DialogueLine("Chef du Conseil", "Prenez le temps d'analyser les informations avec attention."));
+            
+            if (niveauActuel >= 3)
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "C'est décevant pour un auditeur de votre niveau."));
+            }
+            else
+            {
+                dialogues.Add(new DialogueLine("Chef du Conseil", "Vous pouvez faire beaucoup mieux."));
+            }
+        }
+        
+        // Message de fin selon le niveau
+        if (niveauActuel >= 5)
+        {
+            dialogues.Add(new DialogueLine("Chef du Conseil", "C'était votre dernière mission. Félicitations pour votre parcours."));
+        }
+        else
+        {
+            dialogues.Add(new DialogueLine("Chef du Conseil", "Vous pouvez maintenant continuer votre mission."));
+        }
+        
+        return dialogues;
+    }
+
     
     IEnumerator AnimerTampon()
     {
@@ -387,4 +514,15 @@ public class ResultatsManager : MonoBehaviour
         
         SceneManager.LoadScene("Map");
     }
+    
+    void RetourMenu()
+    {
+        if (GameStateManager.Instance != null)
+        {
+            GameStateManager.Instance.ResetEtat();
+        }
+        
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

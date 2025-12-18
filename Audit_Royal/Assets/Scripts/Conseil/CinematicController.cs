@@ -16,9 +16,6 @@ public class CinematicController : MonoBehaviour
 
     private bool isInCinematic = false;
     
-    public GameObject salleNormal;
-    public GameObject salleZoom;
-
     void Start()
     {
         Debug.Log("🎬 CinematicController - START");
@@ -39,18 +36,19 @@ public class CinematicController : MonoBehaviour
     
     IEnumerator EnterRoutine()
     {
-        // 1️⃣ Fade IN (écran noir)
-        animator.SetTrigger("Fade");
+        isInCinematic = true;
         
-        // 2️⃣ Switch image (caché par le noir)
-        salleNormal.SetActive(false);
-        salleZoom.SetActive(true);
+        // Déclencher l'animation des barres
+        if (animator != null)
+        {
+            animator.SetTrigger("Bars_In");
+            Debug.Log("Trigger 'Bars_In' activé");
+        }
         
-        yield return new WaitForSeconds(0.3f);
+        // Attendre que l'animation se termine
+        yield return new WaitForSeconds(barsDuration);
         
-
-        // 3️⃣ Fade OUT + barres visibles
-        animator.SetTrigger("Bars_In");
+        Debug.Log("🎬 EnterRoutine terminée");
     }
 
 
@@ -68,14 +66,7 @@ public class CinematicController : MonoBehaviour
         // 1️⃣ Barres repartent
         animator.SetTrigger("Bars_Out");
         yield return new WaitForSeconds(0.4f);
-
-        // 2️⃣ Fade IN
-        animator.SetTrigger("Fade");
-        // 3️⃣ Retour image normale
-        salleZoom.SetActive(false);
-        salleNormal.SetActive(true);
-        yield return new WaitForSeconds(0.3f);
-
+        
     }
 
 
