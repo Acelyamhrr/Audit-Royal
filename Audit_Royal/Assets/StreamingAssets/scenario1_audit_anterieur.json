@@ -4,8 +4,8 @@
     "titre": "Audit interne – Service technique & hygiène",
     "etablissement": "IUT Robert Schuman",
     "date": "2025-03-12",
-    "type_audit": "audit_interne_conformite",
-    "service_audite": "service_technique",
+    "type_audit": "Audit interne conformité",
+    "service_audite": "Service technicien",
 
     "objectifs": [
       "Vérifier la conformité des procédures de nettoyage",
@@ -49,31 +49,31 @@
         "id": 1,
         "description": "Mettre en place un registre de passage obligatoire et contrôlé",
         "priorite": "haute",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 2,
         "description": "Désigner un référent hygiène au sein du service technique",
         "priorite": "haute",
-        "etat_mise_en_oeuvre": "partiellement_realisee"
+        "etat_mise_en_oeuvre": "partiellement réalisée"
       },
       {
         "id": 3,
         "description": "Instaurer un contrôle qualité hebdomadaire",
         "priorite": "moyenne",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 4,
         "description": "Centraliser les plaintes et signalements liés à l'hygiène",
         "priorite": "moyenne",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 5,
         "description": "Renforcer la communication entre les services",
         "priorite": "basse",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       }
     ],
 
@@ -84,7 +84,7 @@
         "Augmentation des plaintes des usagers",
         "Perte de confiance envers le service technique"
       ],
-      "niveau_risque": "modere"
+      "niveau_risque": "modéré"
     },
 
     "indices_pour_le_joueur": [

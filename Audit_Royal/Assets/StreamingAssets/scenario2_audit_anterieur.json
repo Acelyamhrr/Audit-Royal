@@ -4,8 +4,8 @@
     "titre": "Audit interne – Infrastructure réseau et systèmes informatiques",
     "etablissement": "IUT Robert Schuman",
     "date": "2025-02-18",
-    "type_audit": "audit_interne_conformite",
-    "service_audite": "service_informatique",
+    "type_audit": "Audit interne conformité",
+    "service_audite": "Service informatique",
 
     "objectifs": [
       "Évaluer la fiabilité de l'infrastructure réseau",
@@ -49,31 +49,31 @@
         "id": 1,
         "description": "Mettre en place une procédure claire de gestion des incidents réseau",
         "priorite": "haute",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 2,
         "description": "Tenir un journal détaillé de toutes les modifications techniques",
         "priorite": "haute",
-        "etat_mise_en_oeuvre": "partiellement_realisee"
+        "etat_mise_en_oeuvre": "partiellement réalisée"
       },
       {
         "id": 3,
         "description": "Renforcer la surveillance du réseau en continu",
         "priorite": "moyenne",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 4,
         "description": "Tester systématiquement les mises à jour et changements d'infrastructure",
         "priorite": "moyenne",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       },
       {
         "id": 5,
         "description": "Améliorer la communication interne lors des incidents informatiques",
         "priorite": "basse",
-        "etat_mise_en_oeuvre": "non_realisee"
+        "etat_mise_en_oeuvre": "non réalisée"
       }
     ],
 
@@ -85,7 +85,7 @@
         "Blocage de l'activité des services",
         "Perte de confiance envers le service informatique"
       ],
-      "niveau_risque": "modere"
+      "niveau_risque": "modéré"
     },
 
     "indices_pour_le_joueur": [
