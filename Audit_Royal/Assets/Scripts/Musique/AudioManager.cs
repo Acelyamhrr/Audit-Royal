@@ -52,7 +52,6 @@ public class AudioManager : MonoBehaviour
         {
             musiqueSource.clip = musiqueDeFond;
             musiqueSource.loop = true;
-            musiqueSource.volume = 0;
             musiqueSource.Play();
         }
     }

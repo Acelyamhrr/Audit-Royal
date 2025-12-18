@@ -119,14 +119,12 @@ public class CarnetManager : MonoBehaviour
 
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
-        Debug.Log($"|| pathfile {this.pathFile}||");
-        Debug.Log("|| ajoutInfo : 1 ||");
         // Accéder à la liste
         JArray liste = (JArray)obj["informations"][_service]["postes"][_metier]["verites"][numQuestion];
-        Debug.Log($"|| ajoutInfo : 2 size : {liste.Count.ToString()} ||");
 
         //Ajouter l'info
-		if(!liste.Contains(new JValue(numVar))){
+		if(!liste.Any(x => (int)x == numVar)){
+			Debug.Log("Condition");
         	liste.Add(numVar);
 		}
 
