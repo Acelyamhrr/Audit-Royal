@@ -1,0 +1,105 @@
+{
+  "scenario": 1,
+  "audit_anterieur": {
+    "titre": "Audit interne – Service technique & hygiène",
+    "etablissement": "IUT Robert Schuman",
+    "date": "2025-03-12",
+    "type_audit": "audit_interne_conformite",
+    "service_audite": "service_technique",
+
+    "objectifs": [
+      "Vérifier la conformité des procédures de nettoyage",
+      "Évaluer l'organisation du service technique",
+      "Contrôler le respect des fréquences d'entretien",
+      "Identifier les risques liés à l'hygiène et à la propreté"
+    ],
+
+    "constatations": {
+      "points_conformes": [
+        "Procédures de nettoyage formalisées et documentées",
+        "Existence d'un planning de nettoyage hebdomadaire",
+        "Matériel de nettoyage disponible en quantité suffisante",
+        "Agents d'entretien globalement informés de leurs missions"
+      ],
+
+      "points_vigilance": [
+        "Registre de passage des agents rempli de manière irrégulière",
+        "Contrôles qualité non systématiques",
+        "Certaines zones nettoyées moins fréquemment que prévu",
+        "Communication insuffisante entre le service technique et les autres services"
+      ],
+
+      "non_conformites": [
+        "Absence de suivi formel des plaintes liées à l'hygiène",
+        "Aucun responsable clairement désigné pour la supervision quotidienne",
+        "Écarts constatés entre le planning théorique et les passages réels",
+        "Manque de traçabilité en cas d'absence ou de remplacement d'agents"
+      ]
+    },
+
+    "analyse_causes": [
+      "Charge de travail variable selon les périodes",
+      "Manque de coordination interne",
+      "Faible formalisation du contrôle post-nettoyage",
+      "Dépendance aux échanges oraux plutôt qu'aux procédures écrites"
+    ],
+
+    "recommandations": [
+      {
+        "id": 1,
+        "description": "Mettre en place un registre de passage obligatoire et contrôlé",
+        "priorite": "haute",
+        "etat_mise_en_oeuvre": "non_realisee"
+      },
+      {
+        "id": 2,
+        "description": "Désigner un référent hygiène au sein du service technique",
+        "priorite": "haute",
+        "etat_mise_en_oeuvre": "partiellement_realisee"
+      },
+      {
+        "id": 3,
+        "description": "Instaurer un contrôle qualité hebdomadaire",
+        "priorite": "moyenne",
+        "etat_mise_en_oeuvre": "non_realisee"
+      },
+      {
+        "id": 4,
+        "description": "Centraliser les plaintes et signalements liés à l'hygiène",
+        "priorite": "moyenne",
+        "etat_mise_en_oeuvre": "non_realisee"
+      },
+      {
+        "id": 5,
+        "description": "Renforcer la communication entre les services",
+        "priorite": "basse",
+        "etat_mise_en_oeuvre": "non_realisee"
+      }
+    ],
+
+    "conclusion": {
+      "resume": "Le service technique est globalement structuré mais présente des fragilités en matière de suivi, de contrôle et de communication.",
+      "risques_identifies": [
+        "Dégradation progressive de la propreté des locaux",
+        "Augmentation des plaintes des usagers",
+        "Perte de confiance envers le service technique"
+      ],
+      "niveau_risque": "modere"
+    },
+
+    "indices_pour_le_joueur": [
+      "Certaines recommandations n'ont jamais été appliquées",
+      "Les non-conformités passées correspondent aux problèmes actuels",
+      "Le registre de passage est un élément clé de l'enquête",
+      "L'absence de responsable identifié fragilise l'organisation"
+    ],
+
+    "metadata": {
+      "document_type": "audit_anterieur",
+      "utilisation_jeu": "document_reference",
+      "lisible_par_joueur": true,
+      "deverrouillage_progressif": false,
+      "version": "1.0"
+    }
+  }
+}
