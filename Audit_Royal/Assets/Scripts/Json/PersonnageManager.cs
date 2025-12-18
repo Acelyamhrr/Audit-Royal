@@ -69,6 +69,7 @@ public class PersonnageManager : MonoBehaviour
     /// Données du personnage actuellement traité.
     /// </summary>
     public DataPlayer data;
+    private const string DOSSIER_PERSONNAGES = "personnes_json";
     
     /// <summary>
     /// Liste des caractères possibles.
@@ -90,7 +91,7 @@ public class PersonnageManager : MonoBehaviour
     /// </summary>
     private string[] peroJson = { 
         "compta_comptable.json", "compta_patron.json", "compta_secretaire.json", 
-        "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_video.json", 
+        "com_graphiste.json", "com_responsable_reseaux_sociaux.json", "com_technicien_son_video.json", 
         "gc_concierge.json", "gc_patron.json", "gc_paysagiste.json", "gc_secretaire.json", 
         "info_patron.json", "info_responsable_reseau.json", "info_secretaire.json", "info_technicien_de_maintenance.json", 
         "res_cuisinier.json", "res_patron.json" 
@@ -113,7 +114,7 @@ public class PersonnageManager : MonoBehaviour
         for (int i = 0; i < 16; i++)
         {
 
-            sourcePath = Path.Combine(Application.streamingAssetsPath, peroJson[i]);
+            sourcePath = Path.Combine(Application.streamingAssetsPath, DOSSIER_PERSONNAGES, peroJson[i]);
             savePath = Path.Combine(Application.persistentDataPath, peroJson[i]);
 
             Debug.Log("source path" + sourcePath);

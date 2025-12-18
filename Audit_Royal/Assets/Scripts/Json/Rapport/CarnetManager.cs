@@ -11,6 +11,10 @@ using System.Collections.Generic;
 /// </summary>
 public class CarnetManager : MonoBehaviour
 {
+    public static CarnetManager Instance { get; private set; }
+    public static bool visible { get; set; }
+    public GameObject scrollViewGameObject;
+
     /// <summary>
     /// Chemin du fichier JSON du carnet.
     /// </summary>
@@ -20,6 +24,7 @@ public class CarnetManager : MonoBehaviour
     /// Numéro du scénario en cours
     /// </summary>
     private string numScenario;
+
     
     
     /// <summary>
@@ -28,6 +33,16 @@ public class CarnetManager : MonoBehaviour
     /// </summary>
     void Awake()
     {
+        if (Instance == null)
+        {
+            Debug.Log("regeneration du carnet dans Awake");
+            Instance = this;
+            visible = false;
+            DontDestroyOnLoad(gameObject);
+            Debug.Log("Carnet créé et persistant");
+        
+
+
         string oldFile = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
 
 		if (!File.Exists(oldFile))
@@ -59,7 +74,8 @@ public class CarnetManager : MonoBehaviour
 
                 foreach (var question in veritesObj.Properties())
                 {
-                        question.Value.Replace(new JArray());
+                    // Remplacer le tableau d'entiers par un tableau vide
+                    question.Value.Replace(new JArray());
                 }
             }
         }
@@ -71,9 +87,16 @@ public class CarnetManager : MonoBehaviour
         {
             Directory.CreateDirectory(outputDirPath);
         }
+        
 		this.pathFile = Path.Combine(outputDirPath, "carnet.json");
 
         File.WriteAllText(pathFile, obj.ToString());
+        }
+
+        if(scrollViewGameObject != null)
+        {
+            scrollViewGameObject.SetActive(false);
+        }
     }
     /// <summary>
     /// Update is called once per frame
@@ -88,15 +111,18 @@ public class CarnetManager : MonoBehaviour
     /// </summary>
     public void ajoutInfo(string service, string metier, string numQuestion, int numVar)
     {
+        Debug.Log($"paramètre : {service}, {metier}, {numQuestion}, {numVar}");
         string _service = service.ToLower();
         string _metier = metier.ToLower();
 
 
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
-
+        Debug.Log($"|| pathfile {this.pathFile}||");
+        Debug.Log("|| ajoutInfo : 1 ||");
         // Accéder à la liste
         JArray liste = (JArray)obj["informations"][_service]["postes"][_metier]["verites"][numQuestion];
+        Debug.Log($"|| ajoutInfo : 2 size : {liste.Count.ToString()} ||");
 
         //Ajouter l'info
 		if(!liste.Contains(new JValue(numVar))){
@@ -112,29 +138,27 @@ public class CarnetManager : MonoBehaviour
     /// </summary>
     public string afficherCarnet()
     {
-        Debug.Log("|| 1 ||");
+        Debug.Log("|| afficherCarnet : 1 ||");
         string json = File.ReadAllText(this.pathFile);
         JObject obj = JObject.Parse(json);
 
         var sb = new System.Text.StringBuilder();
         var services = ((JObject)obj["informations"]).Properties().OrderBy(s => s.Name);
-        Debug.Log("|| 2 ||");
+        Debug.Log("|| afficherCarnet : 2 ||");
         foreach (var service in services)
         {
             string serviceName = service.Name;
             var metiers = ((JObject)service.Value["postes"]).Properties();
-            Debug.Log("|| 3 ||");
-            // Collecter toutes les questions
             var allQuestions = metiers
                 .SelectMany(m => ((JObject)m.Value["verites"]).Properties().Select(q => q.Name))
                 .Distinct()
                 .OrderBy(q => int.Parse(q));
 
             bool serviceHasInfo = false;
-            Debug.Log("|| 4 ||");
+            Debug.Log("|| afficherCarnet : 4 ||");
             foreach (var questionNum in allQuestions)
             {
-                Debug.Log("|| 5 ||");
+                Debug.Log("|| afficherCarnet : 5 ||");
                 string questionText = getQuestion(serviceName, questionNum);
                 var questionLines = new List<string>();
                 foreach (var metier in metiers.OrderBy(m => m.Name))
@@ -148,6 +172,7 @@ public class CarnetManager : MonoBehaviour
                         for (int i = 0; i < infos.Count; i++)
                         {
                             Debug.Log("|| ici 2||");
+                            Debug.Log($"paramètre getInfo : {serviceName}, {metier.Name}, {questionNum}, {infos[i].ToString()}         bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
                             string infoText = getInfo(serviceName, metier.Name, questionNum, infos[i].ToString());
                             
                             if (!infoText.StartsWith("["))
@@ -162,11 +187,11 @@ public class CarnetManager : MonoBehaviour
                 {
                     if (!serviceHasInfo)
                     {
-                        sb.AppendLine($"📂 Service : {serviceName}");
+                        sb.AppendLine($"Service : {serviceName}");
                         serviceHasInfo = true;
                     }
 
-                    sb.AppendLine($"\n  ❓ {questionText}");
+                    sb.AppendLine($"\n  {questionText}");
                     foreach (var line in questionLines)
                     {
                         sb.AppendLine(line);
@@ -436,6 +461,70 @@ public class CarnetManager : MonoBehaviour
             }
         }
         return "-1";
+    }
+
+    public void RegenererCarnet()
+    {
+        Debug.Log("||||||||||||||||  Régénération du carnet pour nouveau niveau  |||||||||||||||||||||||");
+        ConstruireCarnetDepuisVerites();
+    }
+
+    public void ConstruireCarnetDepuisVerites()
+    {
+        string veritesFile = Path.Combine(Application.persistentDataPath, "GameData", "scenario_verites.json");
+
+		if (!File.Exists(veritesFile))
+        {
+            Debug.LogError($"Fichier vérités introuvable : {veritesFile}");
+            return;
+        }
+
+        string originalJson = File.ReadAllText(veritesFile);
+        JObject obj = JObject.Parse(originalJson);
+		
+		this.numScenario = obj["scenario"].ToString();
+
+        // Récupérer le contenu de "verites"
+        var verites = obj["verites"];
+
+        // Supprimer l'ancienne clé
+        obj.Remove("verites");
+
+        // Ajouter sous le nouveau nom
+        obj["informations"] = verites;
+        
+        // Parcourir chaque service
+        foreach (var service in (JObject)obj["informations"])
+        {
+            var serviceObj = (JObject)service.Value;
+            var postesContainer = (JObject)serviceObj["postes"];
+
+            foreach (var poste in postesContainer.Properties())
+            {
+                var posteObj = (JObject)poste.Value;
+                var veritesObj = (JObject)posteObj["verites"];
+
+                // Parcourir chaque question ("0","1",...)
+                foreach (var question in veritesObj.Properties())
+                {
+                    // Remplacer le tableau d'entiers par un tableau vide
+                    question.Value.Replace(new JArray());
+                }
+            }
+        }
+
+        // Sauvegarder dans un nouveau json
+		string outputDirPath = Path.Combine(Application.persistentDataPath, "GameData");
+        
+        if (!Directory.Exists(outputDirPath))
+        {
+            Directory.CreateDirectory(outputDirPath);
+        }
+        
+		this.pathFile = Path.Combine(outputDirPath, "carnet.json");
+
+        File.WriteAllText(pathFile, obj.ToString());
+        
     }
 
 
