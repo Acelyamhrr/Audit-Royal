@@ -1525,7 +1525,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 63.382446, y: 54.6875, z: 1}
+  m_LocalScale: {x: 51.91711, y: 54.6875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1996,9 +1996,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4634023735168478912, guid: b08e423cde54cd8b9a90132dada4fe19, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634023735168478912, guid: b08e423cde54cd8b9a90132dada4fe19, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -192
+      objectReference: {fileID: 0}
     - target: {fileID: 5830148148214743260, guid: b08e423cde54cd8b9a90132dada4fe19, type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212703683394135549, guid: b08e423cde54cd8b9a90132dada4fe19, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 7391103121821022634, guid: b08e423cde54cd8b9a90132dada4fe19, type: 3}
       propertyPath: m_AnchorMax.y
