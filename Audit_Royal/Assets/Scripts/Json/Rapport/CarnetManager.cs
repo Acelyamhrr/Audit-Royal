@@ -8,6 +8,8 @@ using System.Collections.Generic;
 public class CarnetManager : MonoBehaviour
 {
     public static CarnetManager Instance { get; private set; }
+    public static bool visible { get; set; }
+    public GameObject scrollViewGameObject;
     private string pathFile;
     private string numScenario;
     void Awake()
@@ -16,6 +18,8 @@ public class CarnetManager : MonoBehaviour
         {
             Debug.Log("regeneration du carnet dans Awake");
             Instance = this;
+            visible = false;
+            scrollViewGameObject.SetActive(false);
             DontDestroyOnLoad(gameObject);
             Debug.Log("Carnet créé et persistant");
         
@@ -75,7 +79,7 @@ public class CarnetManager : MonoBehaviour
 
         File.WriteAllText(pathFile, obj.ToString());
         }
-        
+        scrollViewGameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -87,7 +91,7 @@ public class CarnetManager : MonoBehaviour
     //Méthode pour ajouter entrée au carnet
     public void ajoutInfo(string service, string metier, string numQuestion, int numVar)
     {
-        Debug.Log($"paramètre : {service}, {metier}, {numQuestion}, {numVar} aaaaaaaaaaaaaaaaaaaaaaaa");
+        Debug.Log($"paramètre : {service}, {metier}, {numQuestion}, {numVar}");
         string _service = service.ToLower();
         string _metier = metier.ToLower();
 
@@ -163,11 +167,11 @@ public class CarnetManager : MonoBehaviour
                 {
                     if (!serviceHasInfo)
                     {
-                        sb.AppendLine($"📂 Service : {serviceName}");
+                        sb.AppendLine($"Service : {serviceName}");
                         serviceHasInfo = true;
                     }
 
-                    sb.AppendLine($"\n  ❓ {questionText}");
+                    sb.AppendLine($"\n  {questionText}");
                     foreach (var line in questionLines)
                     {
                         sb.AppendLine(line);
