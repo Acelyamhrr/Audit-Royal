@@ -57,6 +57,11 @@ public class PlayerMovement2 : MonoBehaviour
     /// </summary>
     void Start()
     {
+        /// <summary>
+        /// Vérifie si une instance de <see cref="PlayerMovementData"/> existe.
+        /// Si c'est le cas, la position sauvegardée du joueur est appliquée
+        /// afin de restaurer sa position lors du retour dans la scène.
+        /// </summary>
         if (PlayerMovementData.Instance != null)
         {
             PlayerPos.position = PlayerMovementData.Instance.playerPosition;
