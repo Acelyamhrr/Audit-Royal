@@ -1,0 +1,58 @@
+{
+  "scenario": 1,
+  "titre": "Problèmes d'hygiène et de propreté",
+  "theme": "Dégradation des conditions d'hygiène dans l'établissement",
+  "service_audite": "technicien",
+  "problematique": "L'IUT Robert Schuman fait face depuis deux semaines à une dégradation notable de la propreté des locaux. Des plaintes ont été déposées concernant l'état des sanitaires, des espaces communs et de certaines salles de travail. Votre mission : identifier les causes de cette situation, évaluer les responsabilités du service technique et vérifier si les procédures de nettoyage sont correctement appliquées.",
+  
+  "questions": {
+    "service_audite": {
+      "description": "Questions spécifiques pour le service technique responsable de l'entretien et de la propreté",
+      "liste": [
+        "Avez-vous constaté une dégradation de la propreté des locaux récemment ?",
+        "Qui est responsable du planning de nettoyage et de sa supervision ?",
+        "Quand a eu lieu le dernier contrôle qualité de l'entretien des locaux ?",
+        "Le matériel de nettoyage est-il en quantité suffisante et en bon état ?",
+        "Des plaintes ont-elles été remontées concernant la propreté ? Lesquelles ?",
+        "Combien de personnes composent l'équipe d'entretien actuellement ?",
+        "Avez-vous le registre de passage des agents d'entretien ?",
+        "Y a-t-il eu des changements dans les procédures de nettoyage récemment ?",
+        "Certaines zones sont-elles volontairement délaissées ou inaccessibles ?",
+        "Avez-vous remarqué des comportements inhabituels dans votre équipe ?"
+      ]
+    },
+
+    "autres_services": {
+      "description": "Questions générales pour les services non responsables de l'entretien, mais témoins de la situation",
+      "liste": [
+        "Avez-vous remarqué une baisse de la propreté dans votre service ?",
+        "À quelle fréquence les locaux sont-ils normalement nettoyés ?",
+        "Avez-vous signalé des problèmes d'hygiène ? À qui ?",
+        "Savez-vous qui s'occupe de l'entretien de votre espace de travail ?",
+        "Avez-vous observé des comportements négligents concernant la propreté ?",
+        "Comment votre équipe gère-t-elle le maintien de la propreté au quotidien ?",
+        "Y a-t-il des zones particulièrement sales ou mal entretenues ?",
+        "Avez-vous entendu des rumeurs sur l'origine des problèmes de propreté ?",
+        "Le matériel de nettoyage est-il accessible et fonctionnel dans votre zone ?",
+        "Y a-t-il eu des tensions ou conflits liés à cette situation ?"
+      ]
+    }
+  },
+
+  "includes": {
+    "dialogues_technicien": "scenario1_technicien.json",
+    "dialogues_restauration": "scenario1_restauration.json",
+    "dialogues_info": "scenario1_info.json",
+    "dialogues_compta": "scenario1_comptabilite.json",
+    "dialogues_communication": "scenario1_communication.json"
+  },
+  
+  "metadata": {
+    "difficulte": "moyenne",
+    "duree_estimee": "20-30 minutes",
+    "nombre_personnages": 16,
+    "nombre_questions_total": 20,
+    "version": "1.0",
+    "date_creation": "2025-10-26"
+  }
+}

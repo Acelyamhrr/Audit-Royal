@@ -1,0 +1,300 @@
+{
+  "service": "restauration",
+  "postes": {
+    "patron": {
+      "0": [
+        {
+          "normal": "Mardi matin, quand on a voulu passer les commandes fournisseurs via le système. Impossible d'accéder à la plateforme. J'ai dû appeler manuellement tous nos fournisseurs.",
+          "colere": "Mardi matin ! En pleine préparation du service de midi ! Impossible de commander ! J'ai perdu deux heures à téléphoner partout !",
+          "anxieux": "Mardi... je crois. Ou peut-être lundi soir ? Avec le stress du service, je ne me souviens plus exactement. J'espère ne pas avoir raté de commandes urgentes...",
+          "menteur": "Mardi après-midi. Avant ça, tout fonctionnait normalement. Les problèmes étaient mineurs, rien qui impactait vraiment le service.",
+          "balance": "Mardi matin. J'ai contacté le service informatique mais ils étaient déjà débordés. Apparemment, ils savaient depuis lundi qu'il y avait un gros problème mais personne ne nous a prévenus.",
+          "info_cle": "Les commandes fournisseurs en ligne étaient inaccessibles dès mardi matin.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Lundi soir en réalité. Les caisses enregistreuses connectées ont commencé à buguer pendant le service du soir. On a dû tout noter à la main, c'était le chaos.",
+          "colere": "Lundi soir, en plein rush ! Les caisses qui plantent ! Les clients qui attendent ! Un cauchemar absolu ! Et personne pour nous aider !",
+          "anxieux": "Lundi soir... les caisses ne répondaient plus. Je paniquais, on avait une salle pleine. J'ai improvisé mais j'ai peur d'avoir fait des erreurs de caisse...",
+          "menteur": "Mardi matin seulement. Lundi soir, quelques petits ralentissements sur les caisses, rien de bloquant. On a géré normalement.",
+          "balance": "Lundi soir, et le cuisinier m'a dit qu'il avait eu des problèmes avec les frigos connectés l'après-midi. On aurait dû alerter plus tôt, mais qui écoute la restauration ?",
+          "info_cle": "Les caisses enregistreuses et les frigos connectés ont été affectés dès lundi.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi matin, quand le système de gestion des stocks a complètement planté. Impossible de savoir ce qu'on avait en réserve. J'ai dû tout inventorier manuellement.",
+          "colere": "Mercredi ! Trois jours qu'on galérait déjà et là, plus de gestion de stocks ! Comment on est censés travailler dans ces conditions ?!",
+          "anxieux": "Mercredi... c'était terrible. Plus de visibilité sur les stocks. J'avais peur de manquer de produits frais en plein service...",
+          "menteur": "Mercredi en fin de matinée. Avant ça, le système de stocks fonctionnait encore correctement, juste quelques lenteurs.",
+          "balance": "Mercredi, et là j'ai compris que le service informatique ne priorisait pas nos problèmes. Les services administratifs passaient avant nous. Injuste.",
+          "info_cle": "Le système de gestion des stocks était en panne depuis mercredi.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Impossible de passer les commandes en ligne, de gérer les stocks numériquement, ou d'utiliser les caisses correctement. On est revenus 20 ans en arrière avec du papier et des calculatrices.",
+          "colere": "Paralysie totale ! Commandes manuelles, stocks au doigt mouillé, caisses en mode préhistorique ! On a perdu en efficacité et en argent !",
+          "anxieux": "C'était... très stressant. Sans les outils numériques, j'avais peur de faire des erreurs. Les marges sont serrées, on ne peut pas se permettre de gaspiller...",
+          "menteur": "Quelques complications, mais rien de dramatique. On a une bonne organisation, on s'est adaptés rapidement. Pas de vrai impact sur le service.",
+          "balance": "On a dû improviser pendant que d'autres services récupéraient leur connexion plus vite. Le service informatique a clairement fait des priorités injustes.",
+          "info_cle": "La restauration a dû revenir à des méthodes manuelles complètes.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les fiches techniques et recettes numériques étaient inaccessibles. Mon cuisinier ne pouvait plus consulter les allergènes et les portions standardisées. Risque sanitaire énorme.",
+          "colere": "Les fiches recettes bloquées ! Impossible de vérifier les allergènes ! On aurait pu empoisonner quelqu'un ! C'est criminel de nous laisser sans système !",
+          "anxieux": "Les allergènes... on ne pouvait plus vérifier correctement. J'avais très peur qu'un client ait une réaction. C'est notre responsabilité...",
+          "menteur": "Mon cuisinier connaît les recettes par cœur. Les fiches techniques, c'était juste pour la traçabilité administrative. Pas d'impact direct sur la qualité.",
+          "balance": "Si le service comptabilité nous avait envoyé les copies papier des fiches comme prévu, on aurait pu gérer. Mais non, eux aussi étaient bloqués. Mauvaise organisation générale.",
+          "info_cle": "Les fiches techniques avec allergènes étaient inaccessibles, créant un risque sanitaire.",
+          "variation_id": 2
+        },
+        {
+          "normal": "La gestion de la comptabilité quotidienne était impossible. Pas de suivi des ventes, des marges, des pertes. Je pilotais à l'aveugle. Impossible de prendre des décisions éclairées.",
+          "colere": "Plus de chiffres ! Plus de marges ! Je ne savais même plus si on gagnait ou perdait de l'argent ! Comment gérer une entreprise comme ça ?!",
+          "anxieux": "Sans les données de vente... je ne savais plus où j'en étais. Les chiffres sont essentiels pour ajuster les menus et les commandes. J'étais perdu...",
+          "menteur": "La comptabilité au jour le jour, on peut s'en passer quelques jours. J'ai une bonne vision globale de mes chiffres, pas besoin du système en permanence.",
+          "balance": "Le service comptabilité aurait dû nous fournir un rapport de secours, mais ils étaient aussi bloqués. Résultat : trois jours sans pilotage financier. Qui assume ?",
+          "info_cle": "Aucun suivi comptable et financier n'était possible pendant la panne.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Oui, j'ai appelé mardi matin quand les commandes fournisseurs ne passaient plus. On m'a dit qu'ils étaient au courant d'une panne généralisée et qu'ils travaillaient dessus.",
+          "colere": "Bien sûr que j'ai appelé ! Plusieurs fois même ! Mais à chaque fois la même réponse vague ! 'On s'en occupe' ! Oui mais quand ?!",
+          "anxieux": "J'ai essayé de les joindre mardi... mais ils avaient l'air tellement débordés. Je ne voulais pas insister, ils avaient sûrement des urgences plus importantes...",
+          "menteur": "Non, pas directement. On a géré nos problèmes de notre côté. Pas besoin de les déranger, ils avaient assez à faire visiblement.",
+          "balance": "Oui, et on m'a fait comprendre que la restauration n'était pas prioritaire. Les services administratifs et l'enseignement passaient avant. Nos préoccupations sanitaires ne comptaient pas.",
+          "info_cle": "La restauration n'a pas été priorisée dans les interventions.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Mardi après-midi, j'ai envoyé un email détaillant tous nos problèmes. Le lendemain, un technicien est passé vérifier les caisses, mais il n'a pas pu résoudre le problème réseau.",
+          "colere": "Un technicien est venu ! Il a tripouillé les caisses pendant une heure ! Résultat : zéro ! Il a dit que c'était un problème de serveur central, pas de notre côté !",
+          "anxieux": "Le technicien semblait... dépassé. Il a essayé des choses mais ça n'a rien changé. Je sentais qu'il ne maîtrisait pas la situation...",
+          "menteur": "Le technicien a résolu une partie des problèmes. Les caisses ont fonctionné par intermittence après son passage. Ça nous a aidés.",
+          "balance": "Le technicien m'a avoué en privé que le responsable réseau était absent et que personne d'autre ne savait vraiment gérer ce type de panne. Aveu d'incompétence.",
+          "info_cle": "Un technicien est intervenu mais n'a pas pu résoudre les problèmes de serveur central.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi, j'ai dû me rendre en personne au service informatique pour expliquer l'urgence sanitaire. Ils ont priorisé le rétablissement de l'accès aux fiches allergènes.",
+          "colere": "Mercredi ! Il a fallu que j'aille gueuler en personne pour qu'ils comprennent qu'on avait une urgence sanitaire ! Inadmissible qu'on ne soit pas prioritaires !",
+          "anxieux": "Mercredi, je suis allé les voir... en m'excusant de les déranger. J'ai expliqué le risque allergène. Ils ont été compréhensifs mais je voyais qu'ils étaient submergés...",
+          "menteur": "Pas de contact particulier mercredi. On a continué à gérer avec nos moyens. Les fiches allergènes, mon cuisinier les connaît de toute façon.",
+          "balance": "Mercredi, et là j'ai vu le bazar dans leur bureau. Le secrétaire du service info notait tout sur des post-it ! Aucune organisation ! Comment gérer une crise comme ça ?",
+          "info_cle": "Le service informatique manquait d'organisation dans la gestion de crise.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Les caisses enregistreuses affichaient 'Erreur de connexion serveur' en permanence. On devait les redémarrer toutes les heures, ce qui ralentissait le service énormément.",
+          "colere": "Les caisses plantaient toutes les dix minutes ! À chaque fois il fallait redémarrer, reconfigurer ! Les clients s'impatientaient ! Un désastre !",
+          "anxieux": "Les caisses... elles ne répondaient plus correctement. Je ne savais jamais si la transaction était passée ou non. J'avais peur de faire payer deux fois les gens...",
+          "menteur": "Quelques bugs sur les caisses, mais rien de systématique. On pouvait continuer à encaisser, juste un peu plus lentement qu'à l'habitude.",
+          "balance": "Les caisses dépendent du serveur central géré par l'informatique. Si elles tombent, c'est leur faute, pas la nôtre. On n'y peut rien nous.",
+          "info_cle": "Les caisses enregistreuses perdaient la connexion au serveur central de façon répétée.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les frigos et congélateurs connectés ne transmettaient plus les relevés de température. Impossible de garantir la chaîne du froid numériquement. J'ai dû installer des thermomètres manuels.",
+          "colere": "Les frigos connectés en panne ! Plus de traçabilité de température ! Si l'inspection sanitaire débarque, on est cuits ! Risque énorme pour notre licence !",
+          "anxieux": "Les relevés de température... je ne pouvais plus les consulter à distance. Je devais vérifier toutes les heures manuellement. Et si j'oubliais ?...",
+          "menteur": "Les frigos fonctionnaient parfaitement, juste la transmission des données qui buguait. Mais la température était stable, pas de risque réel.",
+          "balance": "Ces équipements sont censés être sur un réseau séparé et sécurisé. Si même eux tombent, c'est que l'architecture réseau du service info est défaillante partout.",
+          "info_cle": "Les équipements de chaîne du froid connectés ne transmettaient plus les données.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Les tablettes de commande pour les serveurs ne fonctionnaient plus. Ils devaient prendre les commandes sur papier et les apporter en cuisine, comme il y a 30 ans. Perte de temps considérable.",
+          "colere": "Plus de tablettes ! Retour au carnet et au crayon ! Les serveurs couraient partout, les erreurs se multipliaient ! On a perdu au moins 30% d'efficacité !",
+          "anxieux": "Les tablettes... les serveurs étaient perdus sans elles. Ils faisaient des allers-retours inutiles. J'avais peur que ça crée des tensions en cuisine...",
+          "menteur": "Les tablettes ont eu quelques coupures, mais nos serveurs sont expérimentés. Ils ont géré au papier sans problème majeur, comme avant.",
+          "balance": "Les tablettes sont sur le WiFi de l'IUT. Si le service informatique avait un réseau WiFi stable et redondant, on n'aurait pas eu ce problème. Mauvaise infrastructure.",
+          "info_cle": "Le système de prise de commande sans fil était hors service.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, avec une meilleure communication préventive. On aurait dû être informés qu'une mise à jour majeure était prévue le week-end, pour pouvoir nous préparer à d'éventuels problèmes.",
+          "colere": "Totalement évitable ! On fait des mises à jour critiques le week-end sans prévenir personne ! Et après on s'étonne que tout plante ! De l'amateurisme !",
+          "anxieux": "Je pense que oui... mais je ne suis pas expert. Peut-être que si on avait été prévenus, on aurait pu avoir des solutions de secours...",
+          "menteur": "Non, franchement. Ces pannes techniques sont imprévisibles. Même avec toutes les précautions, ça peut arriver. Personne n'est vraiment fautif.",
+          "balance": "Si le responsable réseau n'était pas parti en congé au pire moment, quelqu'un de compétent aurait pu réparer plus vite. Mauvaise planification des congés.",
+          "info_cle": "Un manque de communication préventive sur les mises à jour est pointé.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Il faudrait des systèmes de backup locaux pour les équipements critiques comme les caisses et les frigos. On ne peut pas dépendre à 100% du réseau central pour des questions de sécurité sanitaire.",
+          "colere": "Avec du bon sens ! On protège les systèmes vitaux ! Les frigos, les caisses, c'est pas du confort, c'est vital ! Il faut des systèmes autonomes !",
+          "anxieux": "Des solutions de secours... oui, ce serait rassurant. Mais ça coûte cher probablement. Je ne sais pas si le budget le permettrait...",
+          "menteur": "Honnêtement, je ne vois pas comment. On dépend du système informatique de l'IUT, on n'a pas le contrôle. C'était juste la malchance.",
+          "balance": "Si le service informatique segmentait correctement le réseau par criticité, les équipements de sécurité sanitaire auraient dû rester opérationnels. Mauvaise architecture réseau.",
+          "info_cle": "L'absence de segmentation réseau par criticité est critiquée.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Avec une meilleure formation de l'équipe informatique ou le recrutement d'une personne supplémentaire. Visiblement, sans le responsable réseau, personne ne maîtrisait vraiment la situation.",
+          "colere": "Avec plus de compétences ! Ou au moins deux personnes formées ! On ne peut pas reposer tout sur une seule personne ! Et quand elle part, c'est le chaos !",
+          "anxieux": "Plus de formation peut-être... et de redondance dans les compétences. Mais c'est facile de dire ça après. Sur le moment, personne ne savait quoi faire...",
+          "menteur": "Non, vraiment pas. L'équipe informatique a fait ce qu'elle pouvait dans une situation exceptionnelle. Pas de faute de compétence selon moi.",
+          "balance": "Si le patron du service informatique avait mieux géré les compétences de son équipe et prévu un vrai plan de continuité, oui. Mais il y a eu défaillance managériale.",
+          "info_cle": "Un manque de redondance des compétences et de plan de continuité est évoqué.",
+          "variation_id": 3
+        }
+      ]
+    },
+
+    "cuisinier": {
+      "0": [
+        {
+          "normal": "Lundi après-midi. Les écrans d'affichage des commandes en cuisine ont commencé à buguer. Les commandes n'arrivaient plus correctement, il fallait que les serveurs viennent nous dire de vive voix.",
+          "colere": "Lundi après-midi en plein service ! Les écrans de commande qui plantent ! J'ai failli louper des plats ! Un stress monstre !",
+          "anxieux": "Lundi... je crois. Les écrans affichaient n'importe quoi. J'avais peur de préparer les mauvais plats ou d'oublier des commandes...",
+          "menteur": "Mardi matin. Lundi, tout fonctionnait normalement en cuisine. Les premiers problèmes sont apparus le lendemain.",
+          "balance": "Lundi après-midi, et j'ai prévenu le patron immédiatement. Mais il a attendu mardi pour contacter l'informatique. On aurait pu réagir plus vite.",
+          "info_cle": "Les écrans d'affichage des commandes en cuisine ont dysfonctionné dès lundi après-midi.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Mardi matin très tôt, vers 6h. Je voulais consulter les menus du jour et les stocks sur la tablette, impossible de se connecter. J'ai dû improviser la préparation.",
+          "colere": "Mardi à 6h du mat' ! Impossible d'accéder aux menus ! J'ai préparé au feeling ! Si j'avais manqué d'ingrédients, ça aurait été la catastrophe !",
+          "anxieux": "Mardi matin... très tôt. Sans accès aux menus et aux stocks, j'étais perdu. J'ai fait de mon mieux mais j'avais peur de me tromper dans les quantités...",
+          "menteur": "Mardi en milieu de matinée. Avant ça, quelques lenteurs sur la tablette, mais rien qui m'empêchait de travailler normalement.",
+          "balance": "Mardi matin. Les serveurs aussi avaient des problèmes avec leurs tablettes. Clairement un problème réseau généralisé, mais personne ne nous disait rien.",
+          "info_cle": "L'accès aux menus et stocks numériques était impossible dès mardi matin.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi matin. Les balances connectées pour les portions n'envoyaient plus les données au système de traçabilité. Impossible de garantir le respect des grammages réglementaires.",
+          "colere": "Mercredi ! Les balances connectées mortes ! Comment je justifie mes portions à l'inspection sanitaire sans traçabilité numérique ?! C'est ma responsabilité ça !",
+          "anxieux": "Mercredi... les balances ne transmettaient plus rien. Je devais tout noter à la main. J'espère ne pas avoir fait d'erreurs dans les relevés...",
+          "menteur": "Mercredi après-midi. Les balances marchaient encore le matin, juste la synchronisation qui était un peu lente.",
+          "balance": "Mercredi, et là j'ai compris qu'on n'était pas prioritaires. Le service administratif récupérait ses connexions pendant que nous on galérait encore avec les équipements de base.",
+          "info_cle": "Les balances connectées pour la traçabilité des portions ne fonctionnaient plus mercredi.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Je ne pouvais plus consulter les fiches recettes numériques avec les allergènes. Tout était sur le serveur. J'ai dû me fier à ma mémoire, mais c'est dangereux pour les allergies.",
+          "colere": "Plus de fiches allergènes ! Je cuisinais à l'aveugle ! Si quelqu'un avait fait un choc anaphylactique, j'aurais été responsable ! Inacceptable !",
+          "anxieux": "Les fiches allergènes... je ne pouvais plus vérifier. J'ai fait très attention, vérifié chaque ingrédient deux fois, mais j'étais terrifié de faire une erreur...",
+          "menteur": "Les fiches allergènes, je les connais par cœur après 5 ans ici. Pas vraiment besoin du système numérique, c'était juste pour la traçabilité administrative.",
+          "balance": "Si le patron avait imprimé des copies de secours comme je lui avais demandé il y a six mois, on n'aurait pas eu ce problème. Mais non, 'tout est en ligne, pas besoin de papier'.",
+          "info_cle": "Aucune copie de secours papier des fiches allergènes n'existait.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Impossible de suivre les températures de cuisson en temps réel via le système connecté. Je devais vérifier manuellement avec des sondes, ce qui prend beaucoup plus de temps.",
+          "colere": "Le système de suivi de cuisson en panne ! Je courais partout avec des sondes manuelles ! J'ai pris un retard monstre sur le service !",
+          "anxieux": "Les sondes connectées... elles n'envoyaient plus les alertes. J'avais peur de sur-cuire ou sous-cuire. La viande, c'est critique pour la sécurité...",
+          "menteur": "Les sondes connectées, c'est du confort. Je sais cuire à la perfection sans système électronique. Pas vraiment impacté sur la qualité.",
+          "balance": "Ces équipements professionnels coûtent une fortune et dépendent du WiFi de l'IUT. Si le service informatique n'assure pas un réseau stable, pourquoi investir dedans ?",
+          "info_cle": "Les sondes de température connectées ne transmettaient plus les données.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Plus d'accès au planning des livraisons et aux bons de commande numériques. Je ne savais plus ce qui arrivait ni quand. J'ai dû adapter les menus au jour le jour.",
+          "colere": "Plus de planning ! Les livreurs arrivaient, je ne savais même pas ce qu'ils apportaient ! Impossible d'organiser ma production ! Le chaos total !",
+          "anxieux": "Sans le planning... je ne savais plus quoi préparer en avance. J'avais peur de manquer de produits frais en plein service...",
+          "menteur": "Le planning, je le gère mentalement. Pas besoin du système pour savoir ce que j'attends. Ça n'a pas vraiment changé mon organisation.",
+          "balance": "Le service comptabilité devait nous transmettre les bons de commande, mais eux aussi étaient bloqués. Résultat : confusion totale sur les livraisons.",
+          "info_cle": "Le planning de livraison et les bons de commande numériques étaient inaccessibles.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Non, pas directement. C'est le patron qui s'est occupé de contacter l'informatique. Moi je suis resté en cuisine à gérer l'urgence du service avec les moyens du bord.",
+          "colere": "J'ai pas le temps d'appeler l'informatique moi ! J'ai 200 couverts à servir ! C'est le patron qui devait s'en occuper ! Moi je cuisine !",
+          "anxieux": "Je... je n'ai pas osé les contacter directement. Le patron s'en chargeait. Je ne voulais pas déranger, ils avaient l'air très occupés...",
+          "menteur": "Oui, j'ai appelé une fois mardi. On m'a dit que c'était géré. Je n'ai pas insisté, il y avait du monde sur le coup.",
+          "balance": "Le patron les a contactés mais ils ne nous ont pas pris au sérieux. Pour eux, la restauration c'est pas important. Les bureaux et les salles de cours passent avant.",
+          "info_cle": "Le cuisinier n'a pas contacté directement le service informatique.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Mardi après-midi, j'ai croisé un technicien de maintenance dans les couloirs. Je lui ai parlé des problèmes en cuisine. Il m'a dit qu'ils étaient au courant d'une panne généralisée.",
+          "colere": "Un technicien m'a dit 'on est au courant' ! Mais au courant de quoi ?! Personne n'expliquait rien ! Combien de temps ça allait durer ? Mystère !",
+          "anxieux": "Le technicien... il avait l'air stressé. Il m'a dit qu'ils travaillaient dessus mais il ne savait pas quand ça serait résolu. Ça m'a encore plus inquiété...",
+          "menteur": "Je n'ai parlé à personne du service informatique. On a géré nos problèmes en interne, pas besoin de les impliquer.",
+          "balance": "Le technicien m'a avoué que le responsable réseau était en vacances et que personne d'autre ne maîtrisait vraiment le système. Franchement, c'est inquiétant.",
+          "info_cle": "Un technicien de maintenance a confirmé l'absence du responsable réseau.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi, le patron m'a dit qu'il allait voir le service informatique en personne pour expliquer les risques sanitaires. Apparemment, ils ont ensuite priorisé l'accès aux fiches allergènes.",
+          "colere": "Il a fallu que le patron aille gueuler en personne pour qu'ils comprennent l'urgence ! Nous on risque des vies avec les allergènes ! Priorité zéro pour nous !",
+          "anxieux": "Le patron est allé les voir mercredi... j'espère qu'il a bien expliqué le danger. Sans les fiches allergènes, on prend un risque énorme avec les clients...",
+          "menteur": "Pas besoin d'intervention spéciale. Les fiches allergènes, je les maîtrise. La visite du patron était juste pour la forme administrative.",
+          "balance": "Si le service informatique avait une vraie procédure de priorisation basée sur les risques, on n'aurait pas eu besoin d'aller supplier en personne. Mauvaise organisation.",
+          "info_cle": "Une intervention en personne a été nécessaire pour prioriser les fiches allergènes.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Les écrans d'affichage des commandes se figeaient puis se remettaient à zéro. Les commandes disparaissaient. J'ai dû tout noter sur papier en parallèle pour ne rien oublier.",
+          "colere": "Les écrans affichaient n'importe quoi ! Des commandes apparaissaient, disparaissaient ! J'ai préparé deux fois le même plat et oublié d'autres ! Un cauchemar !",
+          "anxieux": "Les écrans... je ne savais plus si je pouvais leur faire confiance. Je notais tout sur papier mais avec le stress, j'ai peut-être fait des erreurs...",
+          "menteur": "Quelques bugs sur les écrans, mais rien de systématique. J'ai pu travailler normalement, juste un peu plus lentement.",
+          "balance": "Ces écrans sont connectés au serveur central. Si le service informatique faisait correctement sa maintenance serveur, on n'aurait pas ces pannes.",
+          "info_cle": "Les écrans de commande en cuisine se figeaient et perdaient les données.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les frigos connectés n'affichaient plus les températures. Je devais ouvrir les portes pour vérifier avec des thermomètres manuels, ce qui fait rentrer de l'air chaud. Contre-productif.",
+          "colere": "Les frigos sans affichage ! J'ouvrais les portes toutes les heures pour vérifier ! Ça réchauffe l'intérieur ! Risque de rupture de chaîne du froid !",
+          "anxieux": "Les températures... je ne pouvais plus les surveiller à distance. J'avais très peur qu'un frigo lâche sans que je m'en aperçoive. Des milliers d'euros de produits...",
+          "menteur": "Les affichages de température, c'est du bonus. Je sens à l'ouverture si la température est bonne. Pas de vrai problème.",
+          "balance": "Ces frigos professionnels sont garantis avec monitoring connecté. Si le fabricant savait que le réseau de l'IUT est si instable, il n'aurait jamais validé l'installation.",
+          "info_cle": "Les frigos connectés ne transmettaient plus les relevés de température.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Ma tablette personnelle pour consulter les recettes ne se connectait plus au WiFi de l'IUT. Je devais utiliser mes données mobiles, ce qui coûte cher et c'est lent.",
+          "colere": "Plus de WiFi ! J'utilisais mes propres données mobiles pour travailler ! C'est à l'IUT de fournir la connexion, pas à moi de payer mon abonnement !",
+          "anxieux": "Le WiFi... il ne fonctionnait plus. J'ai utilisé mon téléphone mais la connexion était mauvaise en cuisine. J'avais du mal à charger les recettes...",
+          "menteur": "Le WiFi a eu quelques coupures, mais j'ai mes recettes en tête. Pas vraiment besoin de consulter la tablette en permanence.",
+          "balance": "Le WiFi de la cuisine est géré par le service informatique. S'il est instable, c'est qu'ils n'ont pas dimensionné correctement le réseau. Problème d'infrastructure.",
+          "info_cle": "Le réseau WiFi en cuisine était complètement hors service.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, si on avait des copies papier de secours des fiches essentielles comme les allergènes et les recettes. Le tout-numérique, c'est bien, mais il faut des solutions de repli.",
+          "colere": "Évidemment ! On a misé sur le 100% numérique sans backup papier ! Quand ça plante, on est nu ! Il faut des copies physiques des documents critiques !",
+          "anxieux": "Je pense que oui... des copies papier. Mais le patron dit que c'est dépassé et que ça prend de la place. Peut-être qu'après ça, il changera d'avis...",
+          "menteur": "Non, franchement. Ces pannes arrivent. On s'adapte, c'est le métier. Pas besoin de changer toute l'organisation pour un incident ponctuel.",
+          "balance": "Si le service informatique avait prévenu qu'une mise à jour risquée était prévue le week-end, on aurait pu imprimer des fiches de secours. Manque de communication.",
+          "info_cle": "L'absence de copies papier de secours a aggravé l'impact de la panne.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Il faudrait que les équipements critiques comme les frigos aient une autonomie locale, sans dépendre du réseau central. La sécurité alimentaire ne peut pas dépendre d'un serveur.",
+          "colere": "Les frigos doivent fonctionner en autonome ! Point final ! On ne peut pas risquer la chaîne du froid à cause d'un problème réseau ! C'est de la sécurité alimentaire !",
+          "anxieux": "Des systèmes autonomes... oui, ce serait rassurant. Mais je ne sais pas si c'est techniquement possible. Et le coût aussi...",
+          "menteur": "Honnêtement, les équipements ont bien fonctionné malgré la panne réseau. Les frigos continuent de refroidir même sans connexion. Pas de vrai danger.",
+          "balance": "Si le service informatique segmentait le réseau correctement, les équipements de sécurité sanitaire auraient un réseau dédié et stable. Mauvaise architecture.",
+          "info_cle": "Les équipements de sécurité alimentaire devraient être sur un réseau dédié.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Avec une meilleure formation de toute l'équipe sur les procédures manuelles de secours. On a trop compté sur le numérique, on a perdu les réflexes manuels.",
+          "colere": "Avec de la préparation ! Des exercices de crise ! On nous forme sur les incendies mais pas sur les pannes informatiques alors qu'on en dépend pour tout !",
+          "anxieux": "Plus de formation... oui. Je me sentais perdu sans le système. On devrait savoir mieux gérer sans numérique, comme avant...",
+          "menteur": "Non, vraiment. On a géré correctement avec les moyens du bord. C'est le métier de cuisinier, on s'adapte. Pas besoin de formation spéciale.",
+          "balance": "Si le responsable réseau n'était pas parti en congé pile au moment critique sans former quelqu'un pour le remplacer, la panne aurait été résolue en quelques heures. Mauvaise gestion.",
+          "info_cle": "Un manque de formation sur les procédures manuelles de secours est souligné.",
+          "variation_id": 3
+        }
+      ]
+    }
+  }
+}

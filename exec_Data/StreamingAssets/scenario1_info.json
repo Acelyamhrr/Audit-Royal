@@ -1,0 +1,1173 @@
+{
+    "service": "info",
+    "postes": {
+        "secretaire": {
+            "0": [
+            {
+                "normal": "Oui, clairement. Les bureaux ne sont plus aussi propres qu'avant. Il y a souvent de la poussière sur les équipements informatiques et les poubelles débordent.",
+                "colere": "Évidemment ! C'est devenu répugnant ! Nos ordinateurs sont couverts de poussière ! Comment travailler dans ces conditions ?",
+                "anxieux": "Oui... j'ai remarqué... mais je ne voulais pas me plaindre... peut-être que c'est normal... je ne sais pas...",
+                "menteur": "Non, tout me semble normal. Je ne vois pas de problème particulier.",
+                "balance": "Oui, et je pense que c'est depuis que le service technique a réduit la fréquence de passage. Ils ne viennent plus qu'une fois par semaine au lieu de trois.",
+                "info_cle": "Baisse constatée : poussière sur équipements, poubelles débordantes",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Depuis deux ou trois semaines, c'est vraiment moins bien entretenu. Les sols ne sont plus lavés régulièrement.",
+                "colere": "Bien sûr ! Les sols sont crasseux ! On se croirait dans un taudis ! C'est inadmissible pour un service informatique !",
+                "anxieux": "Oui... c'est moins propre... ça me gêne mais... je ne veux pas faire d'histoires...",
+                "menteur": "Je n'ai rien remarqué de particulier. L'entretien est correct.",
+                "balance": "Oui, et j'ai entendu dire que c'est parce que le concierge ne gère plus son équipe correctement. Il paraît qu'il est souvent absent.",
+                "info_cle": "Détérioration depuis deux-trois semaines, sols non lavés régulièrement",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. Les espaces communs de notre étage sont dans un état lamentable. Couloirs sales, sanitaires négligés.",
+                "colere": "C'est dégoûtant ! Les sanitaires de notre étage sont immondes ! Certains collègues refusent même de les utiliser !",
+                "anxieux": "Oui... surtout les sanitaires... c'est gênant... mais je ne sais pas à qui le dire...",
+                "menteur": "Non, la propreté est tout à fait acceptable ici.",
+                "balance": "Oui, et certains collègues disent que c'est volontaire, que le service technique nous punit parce qu'on se serait plaints de leur travail l'année dernière.",
+                "info_cle": "Espaces communs étage en mauvais état, couloirs et sanitaires négligés",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "Normalement, les bureaux devraient être nettoyés trois fois par semaine et les parties communes tous les jours. Mais je crois que ce n'est plus respecté.",
+                "colere": "Trois fois par semaine en théorie ! En pratique, on a de la chance si c'est fait une fois ! C'est scandaleux !",
+                "anxieux": "Je crois que... c'était trois fois par semaine... mais maintenant je ne sais plus... peut-être moins...",
+                "menteur": "Les locaux sont nettoyés quotidiennement. Je vois les agents passer tous les jours.",
+                "balance": "Trois fois par semaine officiellement, mais le concierge a changé ça en secret. Maintenant c'est une fois par semaine maximum.",
+                "info_cle": "Fréquence normale trois fois par semaine bureaux, quotidien parties communes, non respecté",
+                "variation_id": 1
+            },
+            {
+                "normal": "D'après ce que je sais, il devrait y avoir un passage quotidien le matin avant notre arrivée. Mais je ne vois plus les agents d'entretien aussi souvent.",
+                "colere": "Quotidien normalement ! Mais maintenant ils ne passent presque plus ! Où sont-ils passés ?",
+                "anxieux": "Je pense que... c'était tous les jours... mais je ne suis pas certaine... peut-être que j'ai mal compris...",
+                "menteur": "La fréquence est respectée. Tout est fait selon le planning prévu.",
+                "balance": "Quotidien en théorie, mais j'ai entendu le responsable réseau dire que le patron du service technique avait réduit les passages pour économiser sur les heures de personnel.",
+                "info_cle": "Passage quotidien prévu le matin, agents moins visibles actuellement",
+                "variation_id": 2
+            },
+            {
+                "normal": "Je crois qu'il y a un planning avec des passages le lundi, mercredi et vendredi pour les bureaux, et tous les jours pour les couloirs. Mais ça ne semble plus suivi.",
+                "colere": "Lundi, mercredi, vendredi ! Du moins c'était ça avant ! Maintenant on ne sait plus quand ils viennent, si ils viennent !",
+                "anxieux": "Il y avait un planning... lundi, mercredi, vendredi... mais je ne suis plus sûre qu'il soit appliqué...",
+                "menteur": "Le planning est respecté scrupuleusement. Les passages sont réguliers.",
+                "balance": "Planning LMV pour bureaux, mais le technicien de maintenance m'a dit que le service technique avait modifié les plannings sans prévenir personne.",
+                "info_cle": "Planning LMV bureaux et quotidien couloirs, non suivi actuellement",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'ai envoyé un email au patron de notre service la semaine dernière. Il m'a dit qu'il allait se renseigner auprès du service technique.",
+                "colere": "J'ai signalé ! Plusieurs fois ! Au patron, au service technique ! Mais rien ne change !",
+                "anxieux": "J'ai... j'ai essayé de le dire au patron... mais je ne sais pas s'il a fait quelque chose...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui, au patron, mais il ne fait rien. Je pense qu'il ne veut pas créer de conflit avec le service technique. Il laisse traîner.",
+                "info_cle": "Email envoyé au patron la semaine dernière, renseignement auprès service technique",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'ai fait remonter l'information lors de notre réunion d'équipe mardi. Le patron a dit qu'il allait en parler à la direction.",
+                "colere": "Bien sûr que j'ai signalé ! En réunion d'équipe ! Devant tout le monde ! Et alors ? Rien ne bouge !",
+                "anxieux": "J'en ai parlé en réunion... mais discrètement... je ne voulais pas en faire trop...",
+                "menteur": "Je n'ai pas eu besoin de signaler quoi que ce soit.",
+                "balance": "Oui en réunion, mais le patron a minimisé le problème. Il ne veut pas que ça remonte à la direction car ça pourrait refléter une mauvaise gestion de son service.",
+                "info_cle": "Information remontée en réunion mardi, patron doit en parler à direction",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai contacté directement le concierge par téléphone il y a trois jours. Il m'a dit qu'il allait s'en occuper, mais je n'ai vu aucun changement.",
+                "colere": "J'ai appelé le concierge ! Il m'a promis que ça allait s'arranger ! Trois jours après, toujours rien ! Des promesses en l'air !",
+                "anxieux": "J'ai téléphoné au concierge... il a dit qu'il allait faire quelque chose... mais rien n'a changé... peut-être qu'il a oublié...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui au concierge, mais le responsable réseau m'a dit que le concierge fait semblant de prendre note et ne fait rien ensuite. Il se fiche des plaintes.",
+                "info_cle": "Contact concierge il y a trois jours, promesse sans résultat",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "Je crois que c'est le service technique qui gère l'entretien. Le concierge est le responsable direct si je ne me trompe pas.",
+                "colere": "C'est censé être le service technique ! Le concierge ! Mais visiblement ils ne font pas leur boulot !",
+                "anxieux": "Je pense que... c'est le service technique... le concierge peut-être... mais je ne suis pas sûre...",
+                "menteur": "Je ne sais pas exactement qui s'en occupe. Ce n'est pas dans mes attributions de le savoir.",
+                "balance": "Le concierge théoriquement, mais j'ai entendu dire qu'il n'est jamais là pour superviser. Il passe son temps avec le paysagiste dehors.",
+                "info_cle": "Service technique responsable, concierge référent direct",
+                "variation_id": 1
+            },
+            {
+                "normal": "C'est le concierge et son équipe d'agents d'entretien. Ils dépendent du service technique dirigé par leur patron.",
+                "colere": "Le concierge et ses agents ! Enfin, quand ils daignent venir ! Parce qu'on ne les voit plus beaucoup par ici !",
+                "anxieux": "Le concierge... et des agents... mais je ne sais pas combien ils sont... je ne les croise presque jamais...",
+                "menteur": "Chaque service gère son propre entretien en interne.",
+                "balance": "Le concierge officiellement, mais le technicien de maintenance m'a dit que l'équipe d'entretien est sous-effectif et mal organisée depuis des mois.",
+                "info_cle": "Concierge et équipe agents d'entretien, dépendent service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "Je ne connais pas exactement les noms, mais il y a une équipe dédiée au nettoyage qui dépend du patron du service technique.",
+                "colere": "Une équipe fantôme vous voulez dire ! On ne les voit jamais ! Ils existent vraiment ou c'est juste sur le papier ?",
+                "anxieux": "Il y a une équipe... je crois... mais je ne sais pas qui exactement... je ne les ai jamais vraiment identifiés...",
+                "menteur": "L'entretien est géré par une société externe. Je ne connais pas les détails.",
+                "balance": "Une équipe du service technique, mais j'ai entendu que plusieurs agents se sont absentés récemment et n'ont pas été remplacés. L'équipe est en sous-effectif.",
+                "info_cle": "Équipe dédiée nettoyage sous autorité patron service technique, identité floue",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, certains collègues ne font pas attention. Ils laissent traîner des déchets près des bureaux au lieu de les mettre à la poubelle.",
+                "colere": "Certains sont de vrais cochons ! Ils mangent à leur bureau et laissent tout traîner ! C'est dégoûtant !",
+                "anxieux": "Il y a quelques personnes qui... qui ne font pas trop attention... mais je ne veux pas les dénoncer...",
+                "menteur": "Non, tout le monde est respectueux. Il n'y a pas de comportement négligent.",
+                "balance": "Oui, et notamment le technicien de maintenance qui laisse toujours son matériel sale dans les couloirs. Il dit qu'il n'a pas le temps de ranger.",
+                "info_cle": "Collègues laissent traîner déchets près bureaux au lieu de poubelles",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le responsable réseau a parfois des câbles et du matériel qui traînent dans les espaces communs. Ça rend le nettoyage plus difficile pour les agents.",
+                "colere": "Le responsable réseau est bordélique ! Toujours des câbles partout ! Comment voulez-vous que les agents nettoient avec ce bazar ?",
+                "anxieux": "Il y a du matériel qui traîne... surtout du responsable réseau... mais peut-être qu'il en a besoin... je ne veux pas critiquer...",
+                "menteur": "Personne ne laisse traîner de matériel. Tout est bien rangé.",
+                "balance": "Oui, le responsable réseau accumule du matériel dans les couloirs depuis des mois. Le patron lui a déjà demandé de ranger mais il ne le fait pas. Ça bloque l'accès pour le nettoyage.",
+                "info_cle": "Responsable réseau laisse câbles et matériel dans espaces communs, gêne nettoyage",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai remarqué que certaines personnes ne respectent pas le tri sélectif. Ça crée du désordre et rend les poubelles peu engageantes.",
+                "colere": "Le tri sélectif n'est respecté par personne ! Tout est mélangé ! C'est le chaos ! Et après on s'étonne que c'est sale !",
+                "anxieux": "Le tri... n'est pas toujours bien fait... mais peut-être que les consignes ne sont pas claires... je ne sais pas...",
+                "menteur": "Le tri sélectif est parfaitement respecté par tous.",
+                "balance": "Oui, le tri est n'importe quoi, et c'est parce que le service technique a retiré la moitié des poubelles de tri pour économiser sur leur vidage. Du coup les gens mélangent tout.",
+                "info_cle": "Non-respect tri sélectif, désordre et poubelles peu engageantes",
+                "variation_id": 3
+            }
+            ],
+            "5": [
+            {
+                "normal": "Nous essayons de maintenir nos espaces de travail propres individuellement. Chacun nettoie son bureau avec des lingettes, mais c'est limité.",
+                "colere": "On fait ce qu'on peut ! On nettoie nous-mêmes nos bureaux ! Mais on n'est pas des femmes de ménage ! Ce n'est pas notre job !",
+                "anxieux": "On essaie de... de faire attention... chacun nettoie un peu... mais je ne sais pas si c'est suffisant...",
+                "menteur": "Nous ne gérons rien nous-mêmes. Le service d'entretien s'occupe de tout.",
+                "balance": "On est obligés de nettoyer nous-mêmes parce que le service technique ne fait plus son travail. C'est inadmissible qu'on doive compenser leurs manquements.",
+                "info_cle": "Équipe nettoie individuellement avec lingettes, gestion limitée",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le patron a installé des poubelles supplémentaires dans les bureaux pour éviter que ça déborde. On vide nous-mêmes les petites poubelles dans les grandes.",
+                "colere": "On fait le boulot des agents d'entretien ! On vide nos propres poubelles ! Vous vous rendez compte ? C'est humiliant !",
+                "anxieux": "On a mis des poubelles... et on les vide... je ne sais pas si c'est normal qu'on fasse ça...",
+                "menteur": "Nous ne nous occupons pas de la gestion des déchets. C'est pris en charge.",
+                "balance": "On vide nos poubelles nous-mêmes depuis que le service technique a réduit les passages. Le patron ne veut pas faire de vagues alors on compense en silence.",
+                "info_cle": "Poubelles supplémentaires installées, équipe vide elle-même petites poubelles",
+                "variation_id": 2
+            },
+            {
+                "normal": "Certains collègues ont apporté leurs propres produits de nettoyage de chez eux. On s'organise comme on peut.",
+                "colere": "On amène nos propres produits de la maison ! On paye de notre poche ! Alors que l'établissement devrait fournir tout ça !",
+                "anxieux": "J'ai apporté des produits... d'autres aussi... c'est bizarre mais... on n'a pas le choix...",
+                "menteur": "Nous n'avons pas besoin d'apporter nos propres produits.",
+                "balance": "On utilise nos produits personnels parce que le service technique ne fournit plus rien. Ils ont des ruptures de stock permanentes et ne font rien pour y remédier.",
+                "info_cle": "Collègues apportent produits nettoyage personnels, organisation autonome",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, les sanitaires de notre étage sont particulièrement négligés. Les lavabos sont sales et il manque souvent du papier toilette.",
+                "colere": "Les sanitaires sont immondes ! Sales, pas de papier, ça sent mauvais ! C'est insalubre !",
+                "anxieux": "Les sanitaires... sont vraiment dans un mauvais état... mais je ne veux pas exagérer...",
+                "menteur": "Non, toutes les zones sont correctement entretenues.",
+                "balance": "Les sanitaires de notre étage, et c'est parce que le concierge a décidé de ne les nettoyer qu'une fois par semaine au lieu de tous les jours. Il priorise d'autres zones.",
+                "info_cle": "Sanitaires étage particulièrement négligés, lavabos sales, manque papier",
+                "variation_id": 1
+            },
+            {
+                "normal": "La salle serveurs est poussiéreuse. C'est problématique pour les équipements sensibles. Le responsable réseau se plaint régulièrement.",
+                "colere": "La salle serveurs ! Pleine de poussière ! Vous savez ce que ça coûte un serveur qui tombe en panne à cause de ça ?",
+                "anxieux": "La salle serveurs est... pas très propre... le responsable réseau s'inquiète... mais je ne sais pas si c'est vraiment dangereux...",
+                "menteur": "La salle serveurs est maintenue dans des conditions optimales.",
+                "balance": "La salle serveurs, et le responsable réseau a demandé plusieurs fois au service technique de nettoyer mais ils refusent, prétextant que ce n'est pas une zone prioritaire.",
+                "info_cle": "Salle serveurs poussiéreuse, problématique pour équipements sensibles",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les couloirs de notre aile ne sont plus balayés régulièrement. Il y a des moutons de poussière dans les coins.",
+                "colere": "Les couloirs ! Pleins de poussière ! On dirait que personne n'y passe depuis des semaines !",
+                "anxieux": "Les couloirs sont... assez sales... il y a de la poussière... mais peut-être que c'est difficile à gérer pour eux...",
+                "menteur": "Les couloirs sont propres et bien entretenus.",
+                "balance": "Les couloirs de notre aile, et j'ai entendu le technicien de maintenance dire que le service technique a retiré notre zone du planning de nettoyage quotidien pour économiser du temps.",
+                "info_cle": "Couloirs aile non balayés régulièrement, moutons poussière dans coins",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, j'ai entendu dire que le service technique manque de personnel. Apparemment ils ont perdu des agents et ne les ont pas remplacés.",
+                "colere": "Tout le monde parle de ça ! Le service technique est en sous-effectif ! Mais pourquoi ils ne recrutent pas ?",
+                "anxieux": "Il paraît que... qu'ils manquent de personnes... mais je ne sais pas si c'est vrai... ce sont peut-être des rumeurs...",
+                "menteur": "Je n'ai entendu aucune rumeur. Je ne m'intéresse pas aux ragots.",
+                "balance": "Oui, le technicien de maintenance m'a dit que le patron du service technique refuse de recruter pour faire des économies sur son budget. Il préfère sacrifier la qualité.",
+                "info_cle": "Rumeur manque personnel service technique, agents perdus non remplacés",
+                "variation_id": 1
+            },
+            {
+                "normal": "Certains disent que le concierge ne supervise plus son équipe correctement. Il serait souvent absent et son équipe en profiterait pour ne rien faire.",
+                "colere": "Le concierge serait incompétent ! Voilà ce qu'on dit ! Il ne gère rien et son équipe fait n'importe quoi !",
+                "anxieux": "On parle du concierge... mais je ne veux pas colporter de rumeurs... ce n'est peut-être pas vrai...",
+                "menteur": "Je n'ai pas entendu de telles rumeurs.",
+                "balance": "Oui, et le responsable réseau a dit qu'il avait vu le concierge passer des heures dehors avec le paysagiste au lieu de travailler. C'est pour ça que rien n'est fait.",
+                "info_cle": "Rumeur concierge ne supervise plus, souvent absent, équipe inactive",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il y a des bruits selon lesquels le service technique a changé les procédures de nettoyage sans prévenir personne, pour réduire les coûts.",
+                "colere": "Ils auraient modifié les plannings en douce ! Pour économiser ! Sans consulter personne ! C'est scandaleux !",
+                "anxieux": "On dit que... les procédures ont changé... mais je ne sais pas exactement... peut-être que c'est faux...",
+                "menteur": "Je n'ai entendu parler d'aucun changement de procédure.",
+                "balance": "Oui, et le patron de notre service le sait mais ne dit rien. Il ne veut pas créer de conflit avec le service technique. Il préfère que nous subissions en silence.",
+                "info_cle": "Rumeur changement procédures nettoyage secret pour réduire coûts",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, je ne sais même pas où se trouve le matériel de nettoyage. Je suppose qu'il est dans un local technique quelque part.",
+                "colere": "Aucune idée ! On ne nous donne même pas accès au matériel ! Comment voulez-vous qu'on fasse le ménage nous-mêmes si nécessaire ?",
+                "anxieux": "Je ne sais pas... je n'ai jamais cherché... peut-être qu'il ne faut pas y toucher...",
+                "menteur": "Le matériel est accessible et nous savons où le trouver si besoin.",
+                "balance": "Non, et le responsable réseau a demandé un accès au local de nettoyage pour pouvoir nettoyer la salle serveurs lui-même, mais le concierge a refusé. Il ne veut pas qu'on touche à son matériel.",
+                "info_cle": "Matériel non accessible, localisation inconnue (local technique supposé)",
+                "variation_id": 1
+            },
+            {
+                "normal": "Je ne pense pas qu'il soit accessible pour nous. Seul le service technique a les clés des locaux de stockage.",
+                "colere": "Bien sûr que non ! Tout est verrouillé ! Le service technique garde jalousement son matériel ! Même si on voulait aider !",
+                "anxieux": "Je ne crois pas qu'on puisse y accéder... c'est fermé... mais peut-être qu'on pourrait demander...",
+                "menteur": "Le matériel est accessible à tous les services si nécessaire.",
+                "balance": "Non, et le patron du service technique a refusé de nous donner un accès même temporaire. Il dit que ce n'est pas notre responsabilité, mais en vérité il ne veut pas qu'on voie l'état de ses stocks.",
+                "info_cle": "Matériel non accessible, clés détenues uniquement par service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai vu un placard de nettoyage au bout du couloir, mais il est toujours fermé. Je ne sais pas s'il est fonctionnel.",
+                "colere": "Il y a un placard fermé ! Toujours fermé ! On ne sait même pas ce qu'il y a dedans ! Peut-être qu'il est vide !",
+                "anxieux": "Il y a un placard... mais il est fermé... je n'ai jamais essayé de l'ouvrir... je ne veux pas faire de bêtise...",
+                "menteur": "Le matériel est parfaitement accessible et fonctionnel.",
+                "balance": "Oui il y a un placard, mais le technicien de maintenance m'a dit qu'il est vide depuis des semaines. Le concierge ne réapprovisionne plus les stocks dans notre zone.",
+                "info_cle": "Placard nettoyage bout couloir, toujours fermé, fonctionnalité inconnue",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, certains collègues sont frustrés par la situation. Il y a eu quelques remarques acerbes lors de réunions, mais rien de grave.",
+                "colere": "Frustration ? Tout le monde est à cran ! Les gens s'énervent pour un rien ! L'ambiance est pourrie !",
+                "anxieux": "Il y a un peu de tension... les gens sont... agacés... mais j'espère que ça va se calmer...",
+                "menteur": "Non, il n'y a aucune tension. L'équipe reste soudée et professionnelle.",
+                "balance": "Oui, et le responsable réseau a failli s'engueuler avec le patron lors de la dernière réunion. Il l'accusait de ne pas assez se battre auprès du service technique.",
+                "info_cle": "Frustration collègues, remarques acerbes en réunions, tensions modérées",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le responsable réseau et le technicien de maintenance ne s'entendent plus. Ils se rejettent mutuellement la responsabilité du désordre.",
+                "colere": "Ils se battent ! Le responsable réseau et le technicien ! Chacun accuse l'autre ! C'est pathétique !",
+                "anxieux": "Il y a des... désaccords... entre le responsable réseau et le technicien... c'est gênant... je ne sais pas comment ça va finir...",
+                "menteur": "Il n'y a aucun conflit au sein de l'équipe.",
+                "balance": "Oui, ils sont en conflit, et le patron ne fait rien pour arbitrer. Il laisse pourrir la situation parce qu'il ne sait pas gérer les conflits interpersonnels.",
+                "info_cle": "Conflit responsable réseau et technicien maintenance, rejet mutuel responsabilités",
+                "variation_id": 2
+            },
+            {
+                "normal": "Certaines personnes commencent à accuser le service technique de négligence. Ça crée des tensions entre services.",
+                "colere": "Tout le monde en veut au service technique ! On se dispute avec eux à chaque fois qu'on les croise ! C'est la guerre !",
+                "anxieux": "Il y a des tensions... entre notre service et le service technique... ça me met mal à l'aise...",
+                "menteur": "Les relations entre services sont excellentes. Pas de tensions.",
+                "balance": "Oui, et le patron encourage cette attitude. Il dit en privé que c'est la faute du service technique, mais officiellement il ne dit rien. C'est hypocrite.",
+                "info_cle": "Accusations envers service technique, tensions inter-services croissantes",
+                "variation_id": 3
+            }
+            ]
+        },
+        "patron": {
+            "0": [
+            {
+                "normal": "Oui, j'ai constaté une dégradation notable. Les bureaux et les espaces communs de mon service ne sont plus entretenus avec la même rigueur qu'avant.",
+                "colere": "Évidemment ! C'est devenu inacceptable ! Comment voulez-vous que mon équipe travaille dans ces conditions ? Les ordinateurs sont couverts de poussière !",
+                "anxieux": "Oui... c'est très problématique... je m'inquiète pour nos équipements sensibles... la poussière peut causer des pannes...",
+                "menteur": "Non, je ne vois pas de baisse particulière. Tout me semble dans la norme.",
+                "balance": "Oui, et c'est clairement dû à une mauvaise gestion du service technique. Le patron là-bas ne supervise plus rien et ça se ressent partout.",
+                "info_cle": "Dégradation notable constatée, bureaux et espaces communs moins entretenus",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Depuis trois semaines environ, la qualité de l'entretien a chuté de manière significative. J'ai dû alerter le patron du service technique.",
+                "colere": "C'est scandaleux ! Trois semaines que ça dure ! J'ai envoyé plusieurs emails au service technique sans réponse satisfaisante !",
+                "anxieux": "Oui... depuis trois semaines... j'ai prévenu le service technique mais... je ne sais pas s'ils prennent ça au sérieux...",
+                "menteur": "Il y a eu quelques petits incidents isolés, rien de systématique.",
+                "balance": "Oui, et je pense que le concierge ne fait plus son travail. Mon responsable réseau l'a vu plusieurs fois dehors pendant les heures de service au lieu de superviser.",
+                "info_cle": "Chute qualité depuis trois semaines, alerte envoyée au service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. La salle serveurs en particulier est devenue préoccupante. L'accumulation de poussière met en danger notre infrastructure critique.",
+                "colere": "La salle serveurs ! Notre infrastructure la plus critique ! Et personne ne la nettoie ! Si un serveur tombe en panne, qui sera responsable ?",
+                "anxieux": "La salle serveurs me fait très peur... si nos serveurs tombent en panne à cause de la poussière... toute l'institution sera paralysée...",
+                "menteur": "La salle serveurs est maintenue dans des conditions optimales.",
+                "balance": "Oui, et j'ai demandé plusieurs fois au service technique de prioriser la salle serveurs, mais ils refusent en disant que ce n'est pas une zone grand public. C'est irresponsable.",
+                "info_cle": "Salle serveurs préoccupante, accumulation poussière dangereuse pour infrastructure",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "D'après ce que je sais, les bureaux devraient être nettoyés trois fois par semaine et les parties communes quotidiennement. Mais ce planning n'est plus respecté.",
+                "colere": "Trois fois par semaine officiellement ! En réalité, on a de la chance si c'est fait une fois ! Le service technique ne respecte pas ses engagements !",
+                "anxieux": "Trois fois par semaine normalement... mais je ne suis plus sûr que ce soit appliqué... je devrais vérifier le contrat...",
+                "menteur": "Les nettoyages sont effectués selon le planning prévu. Rien n'a changé.",
+                "balance": "Trois fois par semaine en théorie, mais le concierge a modifié les plannings sans nous consulter. Il a réduit les passages pour compenser son manque d'effectifs.",
+                "info_cle": "Planning prévu trois fois semaine bureaux, quotidien parties communes, non respecté",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le contrat de service prévoit un passage quotidien avant 8h du matin. Mais mes équipes ne voient plus les agents d'entretien aussi régulièrement.",
+                "colere": "Quotidien avant 8h ! C'est dans le contrat ! Mais ils ne viennent plus ! C'est une rupture de contrat caractérisée !",
+                "anxieux": "Quotidien avant 8h... c'est ce qui était prévu... mais je ne vois plus les agents... j'ai peur qu'il y ait un problème...",
+                "menteur": "Le passage quotidien est respecté scrupuleusement.",
+                "balance": "Quotidien normalement, mais le patron du service technique m'a avoué en privé qu'il avait réduit les fréquences pour 'optimiser'. En clair, pour faire des économies sur notre dos.",
+                "info_cle": "Contrat prévoit passage quotidien avant 8h, non respecté",
+                "variation_id": 2
+            },
+            {
+                "normal": "Selon les accords de service, nous devrions avoir un nettoyage complet trois fois par semaine et un entretien léger quotidien. Ce n'est clairement plus le cas.",
+                "colere": "Trois complets plus quotidien léger ! Voilà ce qui était convenu ! Maintenant on n'a plus rien ! C'est inadmissible !",
+                "anxieux": "Trois fois complet et quotidien léger... mais je constate que... ce n'est plus fait... je ne sais pas comment réagir...",
+                "menteur": "Les accords de service sont respectés. Pas de changement.",
+                "balance": "C'était l'accord initial, mais le service technique l'a modifié unilatéralement. J'ai les emails qui le prouvent mais je n'ai pas encore décidé si je vais escalader à la direction.",
+                "info_cle": "Accords prévoient trois nettoyages complets et entretien léger quotidien, non appliqué",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'ai envoyé un email au patron du service technique la semaine dernière. Il m'a répondu qu'il allait 'regarder ça', mais rien n'a changé.",
+                "colere": "J'ai envoyé trois emails ! Trois ! Et à chaque fois la même réponse vague ! 'On regarde ça' ! Mais rien ne bouge !",
+                "anxieux": "J'ai envoyé un email... la semaine dernière... mais je n'ai eu qu'une réponse évasive... je ne sais pas si je dois insister...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui, au patron du service technique, mais il minimise systématiquement. Je pense qu'il a peur que ça remonte à la direction et révèle ses propres manquements.",
+                "info_cle": "Email envoyé au patron service technique semaine dernière, réponse vague sans action",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'ai fait remonter le problème lors de la réunion inter-services mardi. Le concierge était présent et a promis d'améliorer la situation.",
+                "colere": "J'en ai parlé en réunion ! Devant tout le monde ! Le concierge a fait de belles promesses ! Résultat : zéro !",
+                "anxieux": "J'en ai parlé en réunion... le concierge a dit qu'il allait s'en occuper... mais je ne vois pas de changement... peut-être que j'ai mal communiqué...",
+                "menteur": "Je n'ai pas eu besoin de signaler quoi que ce soit.",
+                "balance": "Oui en réunion, mais le concierge a menti. Il a dit qu'il allait augmenter les passages alors qu'en réalité il n'a pas les effectifs pour le faire. C'était juste pour gagner du temps.",
+                "info_cle": "Problème remonté en réunion inter-services mardi, promesses concierge non tenues",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai contacté directement la direction la semaine dernière pour leur faire part de mes préoccupations concernant l'état des locaux.",
+                "colere": "J'ai été obligé d'aller jusqu'à la direction ! Le service technique ne réagit pas, alors j'ai court-circuité !",
+                "anxieux": "J'ai contacté la direction... je ne voulais pas créer de conflit mais... je ne savais plus quoi faire d'autre...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui, j'ai alerté la direction, et ça a créé des tensions avec le patron du service technique. Il m'en veut d'avoir escaladé au lieu de régler ça entre nous. Mais il ne faisait rien !",
+                "info_cle": "Direction contactée semaine dernière, préoccupations exprimées sur état locaux",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "C'est le service technique qui est responsable. Le concierge gère l'équipe d'entretien et dépend du patron du service technique.",
+                "colere": "Le service technique ! Le concierge ! Mais ils ne font pas leur boulot ! C'est simple pourtant !",
+                "anxieux": "Je crois que... c'est le service technique... le concierge plus précisément... mais je ne suis pas sûr de la hiérarchie exacte...",
+                "menteur": "Je ne sais pas exactement qui s'en occupe. Ce n'est pas dans mon périmètre.",
+                "balance": "Le concierge officiellement, mais d'après ce que j'ai compris, il n'est jamais là pour superviser. Il passe son temps dehors avec le paysagiste au lieu de gérer son équipe.",
+                "info_cle": "Service technique responsable, concierge gère équipe d'entretien",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le concierge et son équipe d'agents d'entretien. Ils font partie du service technique dirigé par leur patron.",
+                "colere": "Le concierge et ses agents fantômes ! Parce qu'on ne les voit jamais ! Ils existent vraiment ou c'est juste sur le papier ?",
+                "anxieux": "Le concierge... et des agents... mais je ne sais pas combien ils sont... je ne les croise presque jamais dans notre secteur...",
+                "menteur": "Chaque service gère son propre entretien.",
+                "balance": "Le concierge théoriquement, mais mon responsable réseau m'a dit que l'équipe était en sous-effectif chronique. Plusieurs agents sont partis et n'ont pas été remplacés.",
+                "info_cle": "Concierge et équipe agents d'entretien, rattachés service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "C'est une équipe dédiée qui dépend du service technique. Je n'ai pas les détails de l'organisation interne, mais le concierge est leur responsable direct.",
+                "colere": "Une équipe dédiée qui ne fait rien ! Le concierge est censé les superviser mais visiblement il ne le fait pas !",
+                "anxieux": "Il y a une équipe... sous la direction du concierge... mais je ne connais pas bien leur organisation... peut-être que je devrais mieux me renseigner...",
+                "menteur": "L'entretien est externalisé à une société privée.",
+                "balance": "Équipe du service technique, mais le patron là-bas refuse de me donner les détails de ses effectifs. Il dit que c'est 'confidentiel'. Je pense qu'il cache quelque chose.",
+                "info_cle": "Équipe dédiée service technique, concierge responsable direct, organisation interne floue",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, le responsable réseau laisse parfois traîner du matériel dans les couloirs. Ça complique le passage des agents d'entretien, même si je lui ai demandé de ranger.",
+                "colere": "Le responsable réseau est bordélique ! Toujours des câbles partout ! Mais au moins lui il travaille ! Le problème c'est le service technique !",
+                "anxieux": "Il y a du matériel qui traîne... du responsable réseau surtout... j'ai essayé de lui en parler mais... c'est délicat de critiquer un collaborateur...",
+                "menteur": "Non, tout le monde est parfaitement respectueux de l'espace commun.",
+                "balance": "Oui, le responsable réseau, mais honnêtement ce n'est pas ça le vrai problème. C'est le service technique qui ne fait plus son travail, même dans les zones dégagées.",
+                "info_cle": "Responsable réseau laisse matériel dans couloirs, complique passage entretien",
+                "variation_id": 1
+            },
+            {
+                "normal": "Certains membres de mon équipe ne respectent pas toujours le tri sélectif. Ça crée du désordre, mais j'essaie de les sensibiliser.",
+                "colere": "Le tri est mal fait, c'est vrai ! Mais même si c'était parfait, le service technique ne vide pas les poubelles régulièrement !",
+                "anxieux": "Il y a des problèmes de tri... j'essaie de sensibiliser l'équipe... mais je ne veux pas être trop autoritaire...",
+                "menteur": "Tout le monde respecte scrupuleusement le tri sélectif.",
+                "balance": "Oui, le tri est mauvais, mais c'est parce que le service technique a retiré la moitié des poubelles de tri pour économiser. Du coup les gens n'ont plus le choix et mélangent tout.",
+                "info_cle": "Tri sélectif mal respecté par équipe, sensibilisation en cours",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le technicien de maintenance a tendance à laisser ses outils et pièces détachées dans les espaces communs. Je comprends qu'il en ait besoin, mais ça encombre.",
+                "colere": "Le technicien de maintenance ! Son matériel traîne partout ! Mais lui au moins il fait son travail sur nos équipements !",
+                "anxieux": "Le technicien laisse du matériel... mais c'est pour son travail... je ne veux pas le gêner... peut-être qu'il n'a pas le choix...",
+                "menteur": "Personne ne laisse traîner de matériel. Tout est bien rangé.",
+                "balance": "Oui, le technicien de maintenance, et c'est parce qu'il n'a pas de local dédié. Le service technique lui refuse l'accès à leurs espaces de stockage, alors il stocke dans les couloirs.",
+                "info_cle": "Technicien de maintenance laisse outils et pièces dans espaces communs",
+                "variation_id": 3
+            }
+            ],   
+            "5": [
+            {
+                "normal": "Mon équipe fait ce qu'elle peut. Chacun nettoie son propre bureau avec des lingettes. J'ai aussi installé des poubelles supplémentaires pour éviter les débordements.",
+                "colere": "On fait le boulot du service technique ! On nettoie nous-mêmes ! On achète nos propres produits ! C'est inadmissible !",
+                "anxieux": "On essaie de compenser... chacun fait des efforts... mais je me demande si c'est normal qu'on doive en arriver là...",
+                "menteur": "Nous ne gérons rien nous-mêmes. Le service d'entretien s'occupe de tout.",
+                "balance": "On compense les manquements du service technique en faisant nous-mêmes. Mais ce n'est pas notre job ! Le patron du service technique devrait résoudre ses problèmes au lieu de nous laisser gérer !",
+                "info_cle": "Équipe nettoie elle-même avec lingettes, poubelles supplémentaires installées",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai demandé à chacun d'apporter des produits de nettoyage de chez soi. On se débrouille en autonomie pour maintenir un minimum de propreté.",
+                "colere": "On amène nos propres produits de la maison ! De notre poche ! Alors que l'établissement devrait tout fournir ! C'est du vol !",
+                "anxieux": "J'ai demandé à l'équipe d'apporter des produits... mais je me sens mal de leur imposer ça... ce n'est pas juste...",
+                "menteur": "Nous n'avons pas besoin d'apporter nos propres produits.",
+                "balance": "On utilise nos produits personnels parce que le service technique a des ruptures de stock permanentes. Le concierge ne commande plus assez pour économiser sur son budget.",
+                "info_cle": "Équipe apporte produits personnels, autonomie pour maintien propreté minimale",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le responsable réseau a pris l'initiative de nettoyer lui-même la salle serveurs une fois par semaine. C'est inadmissible qu'on en soit réduits à ça.",
+                "colere": "Mon responsable réseau fait le ménage ! Lui qui gère notre infrastructure critique ! C'est humiliant et contre-productif !",
+                "anxieux": "Le responsable réseau nettoie la salle serveurs... c'est bien qu'il le fasse... mais je m'inquiète qu'il n'ait pas le temps pour ses vraies missions...",
+                "menteur": "La salle serveurs est nettoyée par le service d'entretien.",
+                "balance": "Le responsable réseau fait ça parce que j'ai demandé au service technique de prioriser la salle serveurs et ils ont refusé. Ils disent que ce n'est pas une zone prioritaire. C'est inacceptable.",
+                "info_cle": "Responsable réseau nettoie salle serveurs hebdomadairement lui-même",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, les sanitaires de notre étage sont dans un état déplorable. Sales, pas de papier, odeurs désagréables. C'est vraiment problématique.",
+                "colere": "Les sanitaires sont immondes ! Insalubres ! Comment peut-on tolérer ça dans un établissement d'enseignement supérieur ?",
+                "anxieux": "Les sanitaires sont... vraiment très sales... je suis embarrassé quand nous recevons des visiteurs...",
+                "menteur": "Non, toutes les zones sont correctement entretenues.",
+                "balance": "Les sanitaires de notre étage, et j'ai découvert que le concierge ne les nettoie qu'une fois par semaine maintenant au lieu de tous les jours. Il a modifié le planning sans nous prévenir.",
+                "info_cle": "Sanitaires étage déplorables : sales, manque papier, odeurs",
+                "variation_id": 1
+            },
+            {
+                "normal": "La salle serveurs accumule une quantité inquiétante de poussière. C'est critique pour nos équipements sensibles qui coûtent des dizaines de milliers d'euros.",
+                "colere": "La salle serveurs ! Notre infrastructure la plus sensible ! Pleine de poussière ! Si un serveur grille, qui paiera ? Le service technique ?",
+                "anxieux": "La salle serveurs me fait très peur... la poussière peut causer des courts-circuits... je ne dors plus la nuit en pensant à ça...",
+                "menteur": "La salle serveurs est maintenue dans des conditions optimales.",
+                "balance": "La salle serveurs, et quand j'ai demandé au patron du service technique d'envoyer quelqu'un, il m'a dit que ce n'était pas une priorité car ce n'est pas une zone visible du public. Il se fiche de notre infrastructure !",
+                "info_cle": "Salle serveurs accumulation poussière inquiétante, critique pour équipements sensibles",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les couloirs de notre aile ne sont plus balayés. Il y a des moutons de poussière partout et des traces de pas visibles sur le sol.",
+                "colere": "Les couloirs ! On dirait qu'ils n'ont pas été nettoyés depuis un mois ! C'est la honte quand on reçoit des partenaires extérieurs !",
+                "anxieux": "Les couloirs sont négligés... c'est gênant pour l'image du service... mais je ne veux pas paraître trop exigeant...",
+                "menteur": "Les couloirs sont propres et bien entretenus.",
+                "balance": "Les couloirs de notre aile, et mon technicien de maintenance m'a dit que notre zone a été retirée du planning de nettoyage quotidien par le concierge. On est passés en nettoyage hebdomadaire sans consultation.",
+                "info_cle": "Couloirs aile non balayés, moutons poussière et traces visibles",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, plusieurs personnes m'ont dit que le service technique manquait de personnel. Apparemment des agents sont partis et n'ont pas été remplacés.",
+                "colere": "Tout le monde le dit ! Le service technique est en sous-effectif ! Mais pourquoi le patron là-bas ne recrute pas ? Incompétence ou négligence ?",
+                "anxieux": "On parle de manque de personnel... mais je ne sais pas si c'est vrai... peut-être qu'il y a d'autres raisons...",
+                "menteur": "Je n'ai entendu aucune rumeur. Je ne m'intéresse pas aux ragots.",
+                "balance": "Oui, et j'ai entendu dire par la secrétaire du service technique que leur patron refuse de recruter pour faire des économies et améliorer son bilan budgétaire. Il sacrifie la qualité pour ses objectifs personnels.",
+                "info_cle": "Rumeur manque personnel service technique, agents partis non remplacés",
+                "variation_id": 1
+            },
+            {
+                "normal": "Il paraît que le concierge ne supervise plus son équipe correctement. Mon responsable réseau l'aurait vu plusieurs fois dehors pendant les heures de travail.",
+                "colere": "Le concierge serait incompétent ! Absent ! Il abandonne son poste ! Et son patron ne fait rien !",
+                "anxieux": "On dit que le concierge... qu'il n'est pas toujours à son poste... mais je ne veux pas accuser sans preuves...",
+                "menteur": "Je n'ai pas entendu de telles rumeurs.",
+                "balance": "Oui, mon responsable réseau l'a vu passer des heures avec le paysagiste dehors. Apparemment ils font des chantiers privés ensemble pendant les heures de service. C'est du détournement de temps de travail.",
+                "info_cle": "Rumeur concierge ne supervise plus, vu dehors pendant heures travail",
+                "variation_id": 2
+            },
+            {
+                "normal": "Certains disent que le service technique a modifié les procédures de nettoyage en secret pour réduire les coûts, sans consulter les autres services.",
+                "colere": "Ils auraient changé les plannings en douce ! Unilatéralement ! Sans nous consulter ! C'est un mépris total des utilisateurs !",
+                "anxieux": "Il y aurait eu des changements... mais je ne sais pas exactement... peut-être que c'est juste une rumeur...",
+                "menteur": "Je n'ai entendu parler d'aucun changement de procédure.",
+                "balance": "Oui, et j'ai les emails qui le prouvent. Le patron du service technique a envoyé une note interne à son équipe pour réduire les fréquences de passage. Il pensait que ça ne se saurait pas.",
+                "info_cle": "Rumeur modifications procédures secrètes pour réduction coûts, sans consultation",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, je ne sais pas où se trouve le matériel de nettoyage. Il doit être dans un local du service technique auquel nous n'avons pas accès.",
+                "colere": "Aucune idée ! Tout est verrouillé ! Le service technique garde jalousement ses ressources ! Même si on voulait aider !",
+                "anxieux": "Je ne sais pas où est le matériel... je n'ai jamais cherché... peut-être qu'on ne doit pas y toucher...",
+                "menteur": "Le matériel est accessible et nous savons où le trouver si besoin.",
+                "balance": "Non, et j'ai demandé au patron du service technique de nous donner un accès temporaire au local de nettoyage pour que mon responsable réseau puisse entretenir la salle serveurs. Il a refusé catégoriquement sans explication.",
+                "info_cle": "Matériel non accessible, localisation inconnue (local service technique)",
+                "variation_id": 1
+            },
+            {
+                "normal": "Je pense qu'il n'est pas accessible pour les autres services. Seul le concierge et son équipe ont les clés des locaux de stockage.",
+                "colere": "Bien sûr que non ! Tout est verrouillé ! C'est leur domaine réservé ! Ils ne veulent pas qu'on voie l'état de leurs stocks !",
+                "anxieux": "Je crois que c'est fermé... réservé au service technique... mais peut-être qu'on pourrait demander un accès exceptionnel...",
+                "menteur": "Le matériel est accessible à tous les services si nécessaire.",
+                "balance": "Non, et quand j'ai insisté pour avoir un accès, le concierge m'a dit que c'était 'pour des raisons de sécurité'. En vérité, je pense qu'il ne veut pas qu'on découvre que ses stocks sont vides.",
+                "info_cle": "Matériel non accessible autres services, clés détenues par concierge et équipe",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il y a un placard de nettoyage au bout de notre couloir, mais il est toujours fermé à clé. Je ne sais pas s'il contient quelque chose.",
+                "colere": "Un placard fermé ! Toujours fermé ! On ne sait même pas s'il est approvisionné ! C'est du mystère total !",
+                "anxieux": "Il y a un placard... mais je n'ai pas la clé... je ne sais pas ce qu'il y a dedans... peut-être qu'il faut demander...",
+                "menteur": "Le matériel est parfaitement accessible et fonctionnel.",
+                "balance": "Oui il y a un placard, mais mon technicien de maintenance m'a dit qu'il est vide depuis des semaines. Le concierge ne réapprovisionne plus les placards de proximité, il centralise tout pour mieux contrôler.",
+                "info_cle": "Placard nettoyage bout couloir toujours fermé, contenu inconnu",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, l'équipe est frustrée par la situation. Il y a eu des remarques acerbes lors des réunions. Le moral baisse progressivement.",
+                "colere": "Frustration ? Mon équipe est à bout ! Les gens s'énervent, se plaignent ! L'ambiance est devenue toxique !",
+                "anxieux": "Il y a des tensions... les gens sont mécontents... je ne sais pas comment améliorer l'ambiance... je me sens dépassé...",
+                "menteur": "Non, il n'y a aucune tension. L'équipe reste soudée et professionnelle.",
+                "balance": "Oui, et certains membres de mon équipe commencent à accuser le service technique publiquement. Ça crée des tensions inter-services que la direction va finir par remarquer.",
+                "info_cle": "Frustration équipe, remarques acerbes en réunions, moral en baisse",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le responsable réseau et le technicien de maintenance ont eu un accrochage la semaine dernière. Ils se reprochent mutuellement le désordre dans les espaces communs.",
+                "colere": "Ils se sont disputés violemment ! Le responsable réseau et le technicien ! Chacun accuse l'autre ! J'ai dû intervenir !",
+                "anxieux": "Il y a eu une dispute... entre le responsable réseau et le technicien... c'est très gênant... je ne sais pas comment réconcilier les gens...",
+                "menteur": "Il n'y a aucun conflit au sein de l'équipe.",
+                "balance": "Oui, ils sont en conflit, et honnêtement c'est parce que la situation générale de propreté les met tous sous pression. Le vrai responsable c'est le service technique, mais mes collaborateurs se défoulent entre eux.",
+                "info_cle": "Conflit responsable réseau et technicien maintenance, reproches mutuels sur désordre",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les relations avec le service technique se sont tendues. Mes collaborateurs sont en colère et ça se ressent quand ils croisent le concierge ou son équipe.",
+                "colere": "C'est la guerre avec le service technique ! Mes collaborateurs ne leur adressent même plus la parole ! C'est devenu invivable !",
+                "anxieux": "Il y a des tensions... entre nos services... des regards, des remarques... je crains que ça dégénère...",
+                "menteur": "Les relations entre services sont excellentes. Pas de tensions.",
+                "balance": "Oui, et j'avoue que je n'ai rien fait pour calmer les choses. Au contraire, en privé j'encourage mon équipe à ne pas lâcher le service technique. Il faut qu'ils assument leurs responsabilités.",
+                "info_cle": "Relations tendues avec service technique, colère collaborateurs visible",
+                "variation_id": 3
+            }
+            ]
+        },
+        "responsable_reseau": {
+            "0": [
+            {
+                "normal": "Oui, très clairement. La salle serveurs est particulièrement préoccupante. La poussière s'accumule sur les équipements, ce qui peut causer des surchauffes.",
+                "colere": "Évidemment ! La salle serveurs est un dépotoir ! Vous savez combien coûte un serveur qui grille à cause de la poussière ? Des milliers d'euros !",
+                "anxieux": "Oui... la salle serveurs me fait vraiment peur... si un serveur tombe en panne à cause de ça... toute l'infrastructure sera paralysée...",
+                "menteur": "Non, je ne constate pas de problème particulier. Tout est géré correctement.",
+                "balance": "Oui, et c'est inacceptable ! J'ai signalé le problème au service technique plusieurs fois, mais ils s'en fichent. La salle serveurs n'est pas une priorité pour eux.",
+                "info_cle": "Salle serveurs préoccupante, accumulation poussière risque surchauffe équipements",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Les bureaux et les espaces où je stocke du matériel réseau ne sont plus nettoyés régulièrement. Ça commence à poser des problèmes.",
+                "colere": "C'est devenu n'importe quoi ! Mon matériel réseau est couvert de saleté ! Comment voulez-vous que je travaille dans ces conditions ?",
+                "anxieux": "Oui... c'est moins propre... et j'ai peur que ça affecte les équipements sensibles... mais je ne veux pas paraître trop exigeant...",
+                "menteur": "Je ne vois pas de baisse de propreté. Tout me semble normal.",
+                "balance": "Oui, et je sais exactement pourquoi : le concierge a réduit les passages dans notre zone sans nous prévenir. Il priorise les zones visibles du public.",
+                "info_cle": "Bureaux et zones stockage matériel réseau plus nettoyés régulièrement",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. J'ai dû prendre sur moi de nettoyer la salle serveurs une fois par semaine parce que personne d'autre ne le fait. Ce n'est pas mon rôle.",
+                "colere": "Je fais le ménage maintenant ! Moi ! Le responsable réseau ! Pendant que le service technique se tourne les pouces !",
+                "anxieux": "Je nettoie moi-même la salle serveurs... c'est bizarre mais... je n'ai pas le choix... je ne peux pas laisser nos serveurs dans cet état...",
+                "menteur": "La salle serveurs est nettoyée par le service d'entretien comme prévu.",
+                "balance": "Oui, et quand j'ai demandé au concierge pourquoi la salle serveurs n'était plus entretenue, il m'a dit que ce n'était pas une zone prioritaire. Une salle avec 50 000 euros de matériel !",
+                "info_cle": "Responsable nettoie lui-même salle serveurs hebdomadairement, pas son rôle",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "Normalement, la salle serveurs devrait être nettoyée deux fois par semaine avec des produits antistatiques spéciaux. Mais ça fait des semaines que je n'ai vu personne.",
+                "colere": "Deux fois par semaine normalement ! Avec des produits spéciaux ! Maintenant ? Zéro fois ! Personne ne vient plus !",
+                "anxieux": "Deux fois par semaine en théorie... mais je ne vois plus personne... je ne sais pas ce qui se passe...",
+                "menteur": "Le nettoyage est effectué selon le planning prévu. Rien n'a changé.",
+                "balance": "Deux fois par semaine officiellement, mais le concierge a annulé ces passages. Il m'a dit que c'était 'trop compliqué' de former ses agents aux produits antistatiques. Pure paresse.",
+                "info_cle": "Salle serveurs devrait être nettoyée deux fois semaine avec produits antistatiques, non fait",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les bureaux devraient être nettoyés trois fois par semaine. Mais je dirais qu'on est plutôt à une fois toutes les deux semaines maintenant.",
+                "colere": "Trois fois par semaine prévu ! En réalité ? Une fois si on a de la chance ! C'est scandaleux !",
+                "anxieux": "Trois fois normalement... mais je pense que c'est moins maintenant... beaucoup moins... peut-être une fois par semaine ?",
+                "menteur": "Le planning de trois fois par semaine est respecté.",
+                "balance": "Trois fois en théorie, mais le patron du service technique a réduit les fréquences sans nous consulter. C'est une décision unilatérale pour économiser sur sa masse salariale.",
+                "info_cle": "Bureaux prévus trois fois semaine, réalité une fois toutes les deux semaines",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il devrait y avoir un passage quotidien pour les parties communes et bi-hebdomadaire pour les locaux techniques. Ce n'est clairement plus suivi.",
+                "colere": "Quotidien pour les communs ! Deux fois par semaine pour le technique ! Maintenant on ne voit plus personne ! Où sont-ils ?",
+                "anxieux": "Quotidien et bi-hebdomadaire... c'était le planning... mais je ne pense pas que ce soit encore appliqué...",
+                "menteur": "Les plannings sont respectés scrupuleusement.",
+                "balance": "C'était le planning initial, mais j'ai vu le nouveau planning du concierge par hasard. Il a divisé toutes les fréquences par deux ou trois sans prévenir personne.",
+                "info_cle": "Planning prévu quotidien parties communes, bi-hebdomadaire locaux techniques, non suivi",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'ai envoyé plusieurs emails au concierge et au patron du service technique. J'ai eu des réponses vagues du type 'on s'en occupe', mais rien ne change.",
+                "colere": "J'ai envoyé au moins cinq emails ! Cinq ! À chaque fois la même réponse bidon ! 'On va regarder' ! Mais rien ne bouge !",
+                "anxieux": "J'ai écrit... plusieurs fois... mais je n'obtiens que des réponses évasives... je ne sais pas si je dois continuer à insister...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui, et je pense que le concierge transmet mes plaintes à la corbeille directement. Il ne veut pas qu'on lui mette la pression. Le patron du service technique le couvre.",
+                "info_cle": "Plusieurs emails envoyés au concierge et patron service technique, réponses vagues sans action",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'en ai parlé directement au patron de mon service. Il m'a dit qu'il allait intervenir auprès du service technique, mais je n'ai vu aucun résultat.",
+                "colere": "J'ai alerté mon patron ! Il devait intervenir ! Résultat ? Rien ! Zéro ! Nada ! Tout le monde se renvoie la balle !",
+                "anxieux": "J'ai signalé à mon patron... il a dit qu'il allait faire quelque chose... mais je ne vois pas de changement... peut-être que ce n'est pas si urgent finalement ?",
+                "menteur": "Je n'ai pas eu besoin de signaler quoi que ce soit.",
+                "balance": "Oui à mon patron, mais franchement je pense qu'il ne veut pas se mettre à dos le service technique. Il fait semblant d'intervenir mais en réalité il laisse pourrir la situation.",
+                "info_cle": "Signalé au patron du service, intervention promise sans résultat",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai fait remonter le problème lors de la réunion inter-services mardi dernier. Le concierge a promis d'améliorer, mais je reste sceptique.",
+                "colere": "J'ai dénoncé ça en réunion ! Devant tout le monde ! Le concierge a fait de belles promesses ! Trois jours après, toujours rien !",
+                "anxieux": "J'en ai parlé en réunion... le concierge a dit qu'il allait s'occuper de ça... j'espère qu'il ne me mentait pas...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui en réunion, et le concierge a menti effrontément. Il a dit qu'il allait augmenter les passages alors qu'il sait très bien qu'il n'a pas les effectifs pour le faire. C'était juste pour gagner du temps.",
+                "info_cle": "Problème remonté réunion inter-services mardi, promesses concierge douteuses",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "C'est le service technique. Le concierge gère l'équipe d'entretien. Enfin, 'gérer' est un grand mot vu l'état actuel.",
+                "colere": "Le service technique ! Le concierge ! Mais ils ne font rien ! Absolument rien ! C'est une blague !",
+                "anxieux": "Je crois que c'est le service technique... le concierge plus précisément... mais je ne suis pas sûr qu'il fasse vraiment son travail...",
+                "menteur": "Je ne sais pas exactement qui s'en occupe.",
+                "balance": "Le concierge officiellement, mais je l'ai vu plusieurs fois passer des heures dehors avec le paysagiste pendant les heures de travail. Il n'est jamais à son poste pour superviser.",
+                "info_cle": "Service technique responsable, concierge gère équipe (théoriquement)",
+                "variation_id": 1
+            },
+            {
+                "normal": "Une équipe d'agents d'entretien sous la direction du concierge. Mais je ne les vois presque jamais dans notre zone.",
+                "colere": "Des agents fantômes ! Je ne les croise jamais ! Ils existent vraiment ou c'est juste sur le papier ?",
+                "anxieux": "Il y a une équipe... dirigée par le concierge... mais je ne les vois pas souvent... peut-être qu'ils viennent quand je ne suis pas là ?",
+                "menteur": "Une équipe complète et efficace s'occupe de l'entretien.",
+                "balance": "Une équipe d'agents, mais j'ai entendu dire qu'ils étaient en sous-effectif chronique. Plusieurs sont partis et n'ont pas été remplacés. Le patron du service technique refuse de recruter.",
+                "info_cle": "Équipe agents sous direction concierge, rarement visibles dans zone",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le concierge et son équipe du service technique. Je ne connais pas l'organisation exacte, mais c'est eux qui devraient s'en occuper.",
+                "colere": "Le concierge et ses agents ! Qui ne font rien ! C'est simple pourtant : ils ont un job, qu'ils le fassent !",
+                "anxieux": "Le concierge... et son équipe... mais je ne sais pas combien ils sont ni comment ils s'organisent...",
+                "menteur": "C'est géré de manière professionnelle par le service dédié.",
+                "balance": "Le concierge, mais il paraît qu'il falsifie ses rapports de passage. Il fait croire qu'il nettoie des zones qui ne sont jamais touchées. Le patron du service technique ne vérifie jamais.",
+                "info_cle": "Concierge et équipe service technique responsables, organisation floue",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, je dois l'admettre, je laisse parfois traîner du matériel réseau dans les couloirs. Câbles, switchs, routeurs. Ça peut gêner le nettoyage.",
+                "colere": "Oui, j'ai du matériel dans les couloirs ! Parce que je n'ai pas de local de stockage adéquat ! Mais même les zones dégagées ne sont pas nettoyées !",
+                "anxieux": "Il y a du matériel à moi qui traîne... je sais que ce n'est pas bien... mais je n'ai pas assez de place dans mon bureau...",
+                "menteur": "Non, tout le monde respecte parfaitement l'espace commun. Rien ne traîne.",
+                "balance": "Oui j'ai du matériel dehors, mais c'est parce que le service technique me refuse l'accès à leurs locaux de stockage. Je n'ai pas le choix. Et de toute façon, même les zones sans matériel ne sont plus nettoyées.",
+                "info_cle": "Matériel réseau laissé dans couloirs (câbles, switchs, routeurs), peut gêner nettoyage",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le technicien de maintenance n'est pas très ordonné non plus. Il laisse souvent ses outils et pièces détachées dans les espaces communs.",
+                "colere": "Le technicien de maintenance aussi ! Ses outils traînent partout ! Mais au moins lui il travaille ! Ce n'est pas une excuse pour le service technique !",
+                "anxieux": "Le technicien laisse du matériel... mais c'est pour son travail... je ne veux pas le critiquer... peut-être qu'il n'a pas le choix...",
+                "menteur": "Personne ne laisse traîner de matériel. Tout est bien rangé.",
+                "balance": "Oui, le technicien de maintenance, et c'est parce que le service technique lui refuse l'accès à leurs espaces de stockage. Il n'a nulle part où mettre ses affaires, alors il stocke dans les couloirs.",
+                "info_cle": "Technicien de maintenance laisse outils et pièces dans espaces communs",
+                "variation_id": 2
+            },
+            {
+                "normal": "Certains collègues ne respectent pas le tri sélectif. Tout est mélangé dans les poubelles, ça crée du désordre.",
+                "colere": "Le tri est n'importe quoi ! Mais c'est parce que le service technique a retiré la moitié des poubelles de tri ! Du coup on n'a plus le choix !",
+                "anxieux": "Le tri n'est pas bien fait... c'est vrai... mais peut-être que les consignes ne sont pas claires...",
+                "menteur": "Le tri sélectif est parfaitement respecté par tous.",
+                "balance": "Oui, le tri est mauvais, mais c'est la faute du concierge. Il a supprimé plein de poubelles de tri pour économiser sur le vidage. Résultat, les gens mélangent tout dans les poubelles restantes.",
+                "info_cle": "Tri sélectif non respecté, tout mélangé, désordre",
+                "variation_id": 3
+            }
+            ],
+            "5": [
+            {
+                "normal": "Je nettoie moi-même la salle serveurs une fois par semaine avec des produits antistatiques que j'achète. Ce n'est pas mon rôle mais je n'ai pas le choix.",
+                "colere": "Je fais le ménage ! Moi ! Le responsable réseau ! J'achète mes propres produits ! C'est scandaleux !",
+                "anxieux": "Je nettoie la salle serveurs... toutes les semaines... je n'aime pas ça mais... je ne peux pas laisser nos serveurs dans cet état...",
+                "menteur": "Nous ne gérons pas nous-mêmes l'entretien. C'est pris en charge.",
+                "balance": "Je nettoie moi-même parce que j'ai demandé au service technique de s'en occuper et ils ont refusé. Le concierge dit que la salle serveurs n'est pas une priorité. 50 000 euros de matériel, pas une priorité !",
+                "info_cle": "Responsable nettoie salle serveurs hebdomadairement avec produits personnels antistatiques",
+                "variation_id": 1
+            },
+            {
+                "normal": "Mon équipe et moi nettoyons nos propres bureaux avec des lingettes. On s'organise comme on peut pour maintenir un minimum de propreté.",
+                "colere": "On fait tout nous-mêmes ! Nos bureaux, nos équipements ! On n'est pas payés pour ça ! C'est du travail en plus !",
+                "anxieux": "On nettoie nos bureaux nous-mêmes... avec des lingettes... je ne sais pas si c'est normal d'en arriver là...",
+                "menteur": "Nous ne gérons rien nous-mêmes. Le service d'entretien s'occupe de tout.",
+                "balance": "On compense les manquements du service technique. Mais ça devrait être leur boulot ! Le patron du service technique devrait avoir honte de nous laisser faire ça.",
+                "info_cle": "Équipe nettoie propres bureaux avec lingettes, maintien propreté minimale",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le patron a installé des poubelles supplémentaires dans les bureaux. On vide nous-mêmes les petites poubelles dans les grandes pour éviter les débordements.",
+                "colere": "On vide nos propres poubelles ! Vous vous rendez compte ? Des cadres techniques qui font le travail des agents d'entretien !",
+                "anxieux": "On vide les poubelles nous-mêmes... c'est bizarre... mais le patron dit que c'est temporaire...",
+                "menteur": "Nous ne nous occupons pas de la gestion des déchets.",
+                "balance": "On vide nos poubelles parce que le concierge a réduit les passages de vidage. On est obligés de compenser. C'est inadmissible mais personne ne fait rien.",
+                "info_cle": "Poubelles supplémentaires installées, équipe vide elle-même pour éviter débordements",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, la salle serveurs évidemment. C'est l'endroit le plus critique et il est complètement négligé. La poussière s'accumule partout.",
+                "colere": "La salle serveurs ! Notre infrastructure vitale ! Pleine de poussière ! C'est criminel de laisser ça dans cet état !",
+                "anxieux": "La salle serveurs est vraiment sale... ça me fait très peur... un court-circuit pourrait tout faire tomber...",
+                "menteur": "Non, toutes les zones sont correctement entretenues.",
+                "balance": "La salle serveurs, et j'ai demandé trois fois au concierge d'envoyer quelqu'un avec des produits antistatiques. Il refuse en disant que ce n'est pas une zone prioritaire. Il se fiche des conséquences.",
+                "info_cle": "Salle serveurs zone critique complètement négligée, accumulation poussière",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les sanitaires de notre étage sont dégueulasses. Sales, pas de papier, ça sent mauvais. Certains collègues vont aux toilettes d'un autre étage.",
+                "colere": "Les sanitaires ! Immondes ! Insalubres ! On va faire ses besoins deux étages plus loin ! C'est pathétique !",
+                "anxieux": "Les sanitaires sont... très sales... c'est gênant... mais je ne veux pas trop me plaindre...",
+                "menteur": "Les sanitaires sont propres et fonctionnels.",
+                "balance": "Les sanitaires, et j'ai découvert que le concierge ne les nettoie qu'une fois par semaine maintenant. Il a réduit la fréquence sans prévenir personne. C'est pour ça que c'est dégueulasse.",
+                "info_cle": "Sanitaires étage très sales, manque papier, odeurs, collègues vont ailleurs",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les couloirs de notre aile ne sont plus balayés. Il y a des moutons de poussière dans tous les coins et des traces de pas sur le sol.",
+                "colere": "Les couloirs ! On dirait qu'ils n'ont pas été nettoyés depuis un mois ! C'est honteux quand on reçoit des partenaires !",
+                "anxieux": "Les couloirs sont sales... c'est embarrassant quand on a des visiteurs... mais je ne sais pas à qui me plaindre efficacement...",
+                "menteur": "Les couloirs sont propres et bien entretenus.",
+                "balance": "Les couloirs de notre aile, et le technicien de maintenance m'a dit que notre zone a été retirée du planning de nettoyage quotidien. On est passés en hebdomadaire sans qu'on soit consultés.",
+                "info_cle": "Couloirs aile non balayés, moutons poussière et traces visibles",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, apparemment le service technique manque de personnel. Des agents sont partis et n'ont pas été remplacés.",
+                "colere": "Tout le monde le dit ! Ils sont en sous-effectif ! Mais pourquoi le patron du service technique ne recrute pas ? Incompétence pure !",
+                "anxieux": "On dit qu'ils manquent de personnel... mais je ne sais pas si c'est la vraie raison... peut-être qu'il y a autre chose...",
+                "menteur": "Je n'ai entendu aucune rumeur. Je ne m'intéresse pas aux ragots.",
+                "balance": "Oui, et la secrétaire du service technique m'a dit en confidence que leur patron refuse de recruter pour améliorer son bilan budgétaire. Il sacrifie la qualité pour ses objectifs personnels.",
+                "info_cle": "Rumeur manque personnel service technique, agents partis non remplacés",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai vu le concierge plusieurs fois dehors avec le paysagiste pendant les heures de travail. Il ne supervise pas son équipe.",
+                "colere": "Le concierge traîne dehors ! Je l'ai vu de mes propres yeux ! Pendant qu'il discute jardinage, son équipe ne fait rien !",
+                "anxieux": "J'ai vu le concierge dehors... souvent... mais peut-être qu'il a des raisons... je ne veux pas l'accuser à tort...",
+                "menteur": "Je n'ai pas remarqué de comportement inhabituel du concierge.",
+                "balance": "Oui, je l'ai vu plusieurs fois. Apparemment il aide le paysagiste sur des chantiers privés pendant les heures de service. C'est du détournement de temps de travail et le patron du service technique ferme les yeux.",
+                "info_cle": "Concierge vu plusieurs fois dehors avec paysagiste pendant heures travail",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il paraît que le service technique a modifié les procédures de nettoyage sans consulter personne, pour réduire les coûts.",
+                "colere": "Ils ont changé les plannings en douce ! Sans nous demander notre avis ! C'est du mépris total !",
+                "anxieux": "On dit qu'il y a eu des changements... mais je ne sais pas exactement... peut-être que c'est juste une rumeur...",
+                "menteur": "Je n'ai entendu parler d'aucun changement de procédure.",
+                "balance": "Oui, et j'ai vu le nouveau planning par hasard sur le bureau du concierge. Il a divisé toutes les fréquences par deux ou trois. C'est pour ça que rien n'est plus nettoyé correctement.",
+                "info_cle": "Rumeur modifications procédures secrètes pour réduction coûts, pas de consultation",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, je ne sais pas où est le matériel de nettoyage. Il doit être dans un local du service technique auquel on n'a pas accès.",
+                "colere": "Aucune idée ! Tout est verrouillé ! J'ai demandé un accès pour nettoyer la salle serveurs moi-même, refusé !",
+                "anxieux": "Je ne sais pas où est le matériel... je n'ai jamais cherché... peut-être que je ne dois pas y toucher...",
+                "menteur": "Le matériel est accessible si besoin.",
+                "balance": "Non, et j'ai demandé au concierge un accès temporaire au local de nettoyage pour pouvoir entretenir la salle serveurs. Il a refusé catégoriquement. Il ne veut pas qu'on voie l'état de ses stocks.",
+                "info_cle": "Matériel non accessible, localisation inconnue, demande accès refusée",
+                "variation_id": 1
+            },
+            {
+                "normal": "Je pense qu'il n'est pas accessible pour les autres services. Seul le concierge et son équipe ont les clés.",
+                "colere": "Bien sûr que non ! C'est leur domaine réservé ! Ils gardent tout jalousement ! Même si on voulait aider !",
+                "anxieux": "Je crois que c'est fermé... réservé au service technique... mais peut-être qu'on pourrait demander...",
+                "menteur": "Le matériel est accessible à tous si nécessaire.",
+                "balance": "Non, et quand j'ai insisté, le concierge m'a dit que c'était 'pour des raisons de sécurité'. En vérité, je pense qu'il ne veut pas qu'on découvre que ses stocks sont vides ou mal gérés.",
+                "info_cle": "Matériel non accessible autres services, clés détenues par concierge",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il y a un placard au bout du couloir, mais il est toujours fermé. Je ne sais même pas s'il contient du matériel de nettoyage.",
+                "colere": "Un placard fermé ! Toujours fermé ! Peut-être qu'il est vide ! Ou rempli de matériel cassé ! On ne saura jamais !",
+                "anxieux": "Il y a un placard... mais je n'ai pas la clé... je ne sais pas ce qu'il y a dedans...",
+                "menteur": "Le matériel est parfaitement accessible et fonctionnel.",
+                "balance": "Oui il y a un placard, mais le technicien de maintenance m'a dit qu'il est vide depuis des semaines. Le concierge ne réapprovisionne plus les placards de proximité pour tout centraliser et mieux contrôler.",
+                "info_cle": "Placard bout couloir toujours fermé, contenu inconnu",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, je suis en froid avec le technicien de maintenance. On s'est disputés la semaine dernière sur qui est responsable du désordre dans les espaces communs.",
+                "colere": "Le technicien et moi on ne se parle plus ! Il m'accuse de tout laisser traîner ! Mais lui aussi ! C'est l'hôpital qui se fout de la charité !",
+                "anxieux": "Il y a eu une dispute... avec le technicien... c'est très gênant... je ne sais pas comment arranger les choses...",
+                "menteur": "Non, il n'y a aucune tension. L'équipe est soudée.",
+                "balance": "Oui, on s'est disputés, mais honnêtement c'est parce qu'on est tous les deux sous pression à cause de la saleté. Le vrai responsable c'est le service technique, mais on se défoul e entre nous.",
+                "info_cle": "Conflit avec technicien maintenance, dispute sur responsabilité désordre",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai failli m'engueuler avec le patron lors de la dernière réunion. Je lui reproche de ne pas assez se battre auprès du service technique.",
+                "colere": "Le patron ne fait rien ! Il est mou ! Il devrait taper du poing sur la table mais il a peur du conflit !",
+                "anxieux": "J'ai été un peu... dur avec le patron en réunion... peut-être que j'ai exagéré... mais je suis tellement frustré...",
+                "menteur": "Il n'y a aucun conflit au sein de l'équipe.",
+                "balance": "Oui, parce que le patron sait très bien ce qui se passe mais il ne veut pas créer de vagues avec le service technique. Il préfère qu'on subisse en silence plutôt que de défendre son équipe.",
+                "info_cle": "Tension avec patron, reproches de ne pas se battre auprès service technique",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les relations avec le service technique sont très tendues. Quand je croise le concierge ou ses agents, je ne leur adresse même plus la parole.",
+                "colere": "Je ne leur parle plus ! Le concierge, ses agents, le patron du service technique ! Qu'ils aillent au diable !",
+                "anxieux": "Je ne parle plus beaucoup au service technique... c'est tendu... je ne sais pas comment réparer cette relation...",
+                "menteur": "Les relations entre services sont excellentes.",
+                "balance": "Oui, et j'avoue que je ne fais rien pour arranger les choses. Au contraire, je dis à mes collègues de ne pas lâcher le service technique. Il faut qu'ils assument leurs responsabilités.",
+                "info_cle": "Relations très tendues avec service technique, plus de communication",
+                "variation_id": 3
+            }
+            ]
+        },
+        "technicien_de_maintenance": {
+            "0": [
+            {
+                "normal": "Oui, j'ai remarqué. Quand j'interviens pour réparer du matériel, je vois que les locaux sont moins bien entretenus qu'avant. Il y a de la poussière partout.",
+                "colere": "Évidemment ! C'est sale partout ! Comment voulez-vous que je travaille correctement avec de la saleté qui s'accumule sur les équipements ?",
+                "anxieux": "Oui... c'est moins propre... ça me gêne pour mes interventions... mais je ne veux pas me plaindre...",
+                "menteur": "Non, je ne vois pas de problème particulier. Tout me semble normal.",
+                "balance": "Oui, et c'est depuis que le concierge a changé les plannings. Il ne vient plus aussi souvent dans notre zone. Le service technique se fiche de nous.",
+                "info_cle": "Baisse constatée lors interventions, poussière accumulation partout",
+                "variation_id": 1
+            },
+            {
+                "normal": "Absolument. Les zones où je stocke mes outils et pièces détachées ne sont plus nettoyées. Ça crée un environnement de travail désagréable.",
+                "colere": "C'est devenu n'importe quoi ! Mes zones de travail sont crasseuses ! Le service technique ne fait plus son boulot !",
+                "anxieux": "Oui... mes zones de stockage sont sales... mais peut-être que ce n'est pas leur priorité... je ne sais pas...",
+                "menteur": "Je ne constate pas de baisse de propreté. Tout est correct.",
+                "balance": "Oui, et quand j'ai demandé au concierge pourquoi mes zones n'étaient plus nettoyées, il m'a dit que ce n'était pas une priorité. Mes outils et pièces ne sont pas prioritaires pour lui !",
+                "info_cle": "Zones stockage outils et pièces plus nettoyées, environnement désagréable",
+                "variation_id": 2
+            },
+            {
+                "normal": "Effectivement. Les espaces communs où je dois intervenir régulièrement sont négligés. Parfois je dois nettoyer moi-même avant de pouvoir travailler.",
+                "colere": "Je dois nettoyer avant de réparer ! C'est le monde à l'envers ! C'est pas mon job de faire le ménage !",
+                "anxieux": "Je nettoie parfois avant d'intervenir... c'est bizarre... mais je n'ai pas le choix pour travailler dans de bonnes conditions...",
+                "menteur": "Les espaces sont toujours propres quand j'interviens.",
+                "balance": "Oui, et c'est parce que le concierge a réduit les fréquences de nettoyage sans prévenir personne. J'ai vu le nouveau planning par hasard, il a tout divisé par deux.",
+                "info_cle": "Espaces communs négligés, nettoyage personnel avant interventions nécessaire",
+                "variation_id": 3
+            }
+            ],
+            "1": [
+            {
+                "normal": "Je crois que les bureaux devraient être nettoyés trois fois par semaine. Mais ça fait longtemps que je n'ai pas vu d'agents d'entretien passer.",
+                "colere": "Trois fois par semaine normalement ! Mais maintenant ? Jamais ! On ne voit plus personne !",
+                "anxieux": "Trois fois je pense... mais je ne suis pas sûr... peut-être que c'est moins maintenant...",
+                "menteur": "Le planning est respecté. Trois fois par semaine comme prévu.",
+                "balance": "Trois fois officiellement, mais le concierge ne respecte plus ce planning. Il a réduit les passages pour compenser son manque d'effectifs sans en parler à personne.",
+                "info_cle": "Bureaux prévus trois fois semaine, agents d'entretien plus visibles",
+                "variation_id": 1
+            },
+            {
+                "normal": "Normalement il devrait y avoir un passage tous les jours pour les parties communes. Mais je constate que ce n'est plus le cas.",
+                "colere": "Quotidien pour les communs ! C'est ce qui était prévu ! Maintenant on a de la chance si c'est fait une fois par semaine !",
+                "anxieux": "Quotidien normalement... mais je ne pense pas que ce soit encore appliqué... je ne sais pas pourquoi...",
+                "menteur": "Les passages quotidiens sont effectués comme prévu.",
+                "balance": "Quotidien en théorie, mais j'ai discuté avec un agent d'entretien qui m'a dit que le concierge avait changé les plannings. Maintenant c'est tous les deux ou trois jours.",
+                "info_cle": "Passage quotidien prévu parties communes, non respecté",
+                "variation_id": 2
+            },
+            {
+                "normal": "D'après ce que je sais, il devrait y avoir des passages réguliers matin et soir. Mais je ne vois plus les agents aussi fréquemment.",
+                "colere": "Matin et soir ! Voilà ce qui était convenu ! Maintenant ils ne viennent plus ! Où sont-ils ?",
+                "anxieux": "Matin et soir je crois... mais je ne les croise presque plus... peut-être qu'ils passent quand je ne suis pas là ?",
+                "menteur": "Les passages matin et soir sont maintenus.",
+                "balance": "Matin et soir initialement, mais le patron du service technique a réduit à un seul passage par jour pour économiser. C'est une décision purement budgétaire qui sacrifie la qualité.",
+                "info_cle": "Passages prévus matin et soir, agents moins fréquemment visibles",
+                "variation_id": 3
+            }
+            ],
+            "2": [
+            {
+                "normal": "Oui, j'en ai parlé au patron de mon service. Il m'a dit qu'il allait intervenir, mais je ne vois pas de changement.",
+                "colere": "J'ai signalé au patron ! Il devait faire quelque chose ! Résultat ? Rien du tout ! Personne ne bouge !",
+                "anxieux": "J'ai dit au patron... qu'il y avait un problème... mais je ne sais pas s'il a vraiment compris l'urgence...",
+                "menteur": "Je n'ai rien eu à signaler puisqu'il n'y a pas de problème.",
+                "balance": "Oui au patron, mais je pense qu'il ne veut pas se mettre le service technique à dos. Il fait semblant d'intervenir mais en réalité il laisse pourrir.",
+                "info_cle": "Signalé au patron du service, intervention promise sans changement",
+                "variation_id": 1
+            },
+            {
+                "normal": "Oui, j'ai envoyé un message au concierge directement. Il m'a répondu qu'il allait s'en occuper, mais rien n'a changé depuis.",
+                "colere": "J'ai contacté le concierge ! Il m'a promis de régler ça ! Trois semaines après, toujours rien ! Des paroles en l'air !",
+                "anxieux": "J'ai écrit au concierge... il a dit que ça allait s'arranger... mais je ne vois pas de changement... peut-être qu'il a oublié...",
+                "menteur": "Je n'ai contacté personne car il n'y a pas de problème d'hygiène.",
+                "balance": "Oui au concierge, mais je pense qu'il se fiche de mes demandes. Il ne prend pas les problèmes au sérieux tant que ça ne vient pas de la direction.",
+                "info_cle": "Message envoyé au concierge, promesse sans résultat",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai fait remonter le problème lors d'une discussion informelle avec la secrétaire. Elle devait transmettre au patron.",
+                "colere": "J'en ai parlé à la secrétaire ! Elle devait faire remonter ! Mais visiblement ça s'est perdu en route !",
+                "anxieux": "J'ai dit à la secrétaire... je pensais qu'elle transmettrait... mais peut-être qu'elle n'a pas compris que c'était important...",
+                "menteur": "Je n'ai signalé aucun problème.",
+                "balance": "Oui à la secrétaire, mais je pense qu'elle a transmis et que le patron a choisi de ne rien faire. Il ne veut pas de conflit avec le service technique.",
+                "info_cle": "Problème remonté via secrétaire pour transmission au patron",
+                "variation_id": 3
+            }
+            ],
+            "3": [
+            {
+                "normal": "C'est le service technique. Le concierge gère l'équipe d'entretien avec ses agents.",
+                "colere": "Le service technique ! Le concierge ! Mais ils ne fichent rien ! C'est simple pourtant !",
+                "anxieux": "Je crois que c'est le service technique... le concierge plus précisément... mais je ne connais pas bien leur organisation...",
+                "menteur": "Je ne sais pas exactement qui s'en occupe.",
+                "balance": "Le concierge officiellement, mais je l'ai croisé plusieurs fois dehors avec le paysagiste pendant les heures de travail. Il n'est jamais là pour superviser son équipe.",
+                "info_cle": "Service technique responsable, concierge gère équipe d'entretien",
+                "variation_id": 1
+            },
+            {
+                "normal": "Une équipe d'agents d'entretien sous la direction du concierge. Mais je ne les vois presque jamais dans notre secteur.",
+                "colere": "Des agents fantômes ! Je ne les croise jamais ! Ils existent vraiment ?",
+                "anxieux": "Il y a une équipe... sous la direction du concierge... mais je ne sais pas combien ils sont...",
+                "menteur": "Une équipe complète s'occupe de l'entretien.",
+                "balance": "Une équipe d'agents, mais j'ai entendu dire qu'ils manquent de personnel. Plusieurs sont partis et n'ont pas été remplacés. Le patron du service technique refuse de recruter.",
+                "info_cle": "Équipe agents sous direction concierge, rarement visibles dans secteur",
+                "variation_id": 2
+            },
+            {
+                "normal": "Le concierge et son équipe du service technique. Je ne connais pas les détails de leur organisation.",
+                "colere": "Le concierge et ses agents ! Qui ne font rien ! C'est pourtant leur job !",
+                "anxieux": "Le concierge... et son équipe... mais je ne sais pas comment ils fonctionnent exactement...",
+                "menteur": "C'est géré professionnellement par le service dédié.",
+                "balance": "Le concierge, mais un agent d'entretien m'a confié que le concierge falsifie les rapports de passage. Il fait croire que des zones sont nettoyées alors qu'elles ne le sont jamais.",
+                "info_cle": "Concierge et équipe service technique, organisation détaillée inconnue",
+                "variation_id": 3
+            }
+            ],
+            "4": [
+            {
+                "normal": "Oui, je dois l'admettre, je laisse parfois traîner mes outils et pièces détachées dans les couloirs. Je manque de place de stockage.",
+                "colere": "Oui, mon matériel traîne ! Parce que je n'ai pas de local ! Mais même les zones dégagées ne sont pas nettoyées !",
+                "anxieux": "Il y a du matériel à moi qui traîne... je sais que ce n'est pas bien... mais je n'ai pas assez d'espace de rangement...",
+                "menteur": "Non, tout le monde respecte parfaitement l'espace commun.",
+                "balance": "Oui j'ai du matériel dehors, mais c'est parce que le service technique me refuse l'accès à leurs locaux de stockage. Je n'ai pas le choix. Et de toute façon, même les zones sans matériel ne sont plus nettoyées.",
+                "info_cle": "Outils et pièces laissés dans couloirs, manque place stockage",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le responsable réseau aussi laisse traîner du matériel. Câbles, switchs, routeurs dans les espaces communs. Ça encombre un peu.",
+                "colere": "Le responsable réseau est bordélique ! Ses câbles traînent partout ! Mais au moins lui il travaille !",
+                "anxieux": "Le responsable réseau laisse du matériel... mais c'est pour son travail... je ne veux pas le critiquer...",
+                "menteur": "Personne ne laisse traîner de matériel.",
+                "balance": "Oui, le responsable réseau, et c'est parce que le service technique lui refuse aussi l'accès aux locaux de stockage. On est tous dans la même situation, obligés de stocker dans les couloirs.",
+                "info_cle": "Responsable réseau laisse matériel réseau dans espaces communs",
+                "variation_id": 2
+            },
+            {
+                "normal": "Certains collègues ne font pas attention. Ils laissent des emballages, des gobelets vides sur les bureaux au lieu de les jeter.",
+                "colere": "Certains sont des cochons ! Ils laissent tout traîner ! Mais c'est quand même le boulot du service technique de vider les poubelles !",
+                "anxieux": "Il y a des collègues qui... qui ne rangent pas toujours... mais je ne veux pas les dénoncer...",
+                "menteur": "Tout le monde est respectueux de la propreté.",
+                "balance": "Oui, certains sont négligents, mais c'est aussi parce que les poubelles débordent. Le service technique ne les vide plus assez souvent, alors les gens abandonnent leurs déchets n'importe où.",
+                "info_cle": "Collègues laissent emballages et gobelets sur bureaux",
+                "variation_id": 3
+            }
+            ],
+            "5": [
+            {
+                "normal": "On fait ce qu'on peut. Chacun nettoie son propre espace de travail. Moi je nettoie mes outils et mes zones d'intervention avant de travailler.",
+                "colere": "On fait le boulot du service technique ! On nettoie nous-mêmes ! C'est pas normal !",
+                "anxieux": "On essaie de maintenir la propreté... chacun fait des efforts... mais je ne sais pas si c'est suffisant...",
+                "menteur": "Nous ne gérons rien nous-mêmes. Le service d'entretien s'occupe de tout.",
+                "balance": "On compense les manquements du service technique en faisant nous-mêmes. Mais c'est inadmissible ! Le concierge devrait faire son travail au lieu de nous laisser gérer.",
+                "info_cle": "Équipe nettoie individuellement, technicien nettoie outils et zones avant travail",
+                "variation_id": 1
+            },
+            {
+                "normal": "Le patron a demandé à chacun d'apporter des produits de nettoyage de chez soi. On se débrouille en autonomie.",
+                "colere": "On amène nos propres produits ! De notre poche ! Alors que l'établissement devrait fournir ! C'est scandaleux !",
+                "anxieux": "On a apporté des produits personnels... le patron nous l'a demandé... mais ça me paraît bizarre...",
+                "menteur": "Nous n'avons pas besoin d'apporter nos propres produits.",
+                "balance": "On utilise nos produits personnels parce que le service technique a des ruptures de stock permanentes. Le concierge ne commande plus assez pour économiser sur son budget.",
+                "info_cle": "Produits nettoyage personnels apportés, autonomie équipe",
+                "variation_id": 2
+            },
+            {
+                "normal": "J'ai installé une petite étagère dans mon coin pour ranger mes outils propres séparément des sales. J'essaie de m'organiser.",
+                "colere": "Je me débrouille tout seul ! J'organise mon espace comme je peux ! Mais ça ne devrait pas être mon problème !",
+                "anxieux": "J'ai mis une étagère... pour mieux organiser... j'espère que c'est la bonne solution...",
+                "menteur": "Nous n'avons pas besoin de nous organiser différemment.",
+                "balance": "Je me débrouille seul parce que le service technique ne m'aide pas. J'ai demandé un local dédié, refusé. J'ai demandé accès à leurs locaux, refusé. Alors je fais avec les moyens du bord.",
+                "info_cle": "Étagère installée pour ranger outils propres/sales séparément, organisation personnelle",
+                "variation_id": 3
+            }
+            ],
+            "6": [
+            {
+                "normal": "Oui, les sanitaires de notre étage sont dans un sale état. Sales, pas de papier, odeurs. Certains préfèrent aller à un autre étage.",
+                "colere": "Les sanitaires sont dégueulasses ! Immondes ! Comment peut-on tolérer ça ?",
+                "anxieux": "Les sanitaires sont... très sales... c'est embarrassant... mais je ne veux pas trop me plaindre...",
+                "menteur": "Non, toutes les zones sont correctement entretenues.",
+                "balance": "Les sanitaires, et j'ai appris que le concierge ne les nettoie qu'une fois par semaine maintenant au lieu de tous les jours. Il a réduit sans prévenir personne.",
+                "info_cle": "Sanitaires étage mauvais état : sales, manque papier, odeurs",
+                "variation_id": 1
+            },
+            {
+                "normal": "Les zones où je stocke mes pièces détachées et outils ne sont plus nettoyées. Il y a de la poussière et de la saleté qui s'accumulent.",
+                "colere": "Mes zones de stockage ! Pleines de crasse ! Comment voulez-vous que je travaille proprement avec du matériel sale ?",
+                "anxieux": "Mes zones de stockage sont sales... ça me gêne pour travailler... mais peut-être que ce n'est pas prioritaire pour eux...",
+                "menteur": "Mes zones de travail sont propres et bien entretenues.",
+                "balance": "Mes zones de stockage, et quand j'ai demandé au concierge pourquoi elles n'étaient plus nettoyées, il m'a dit que ce n'était pas une zone prioritaire. Mes outils ne sont pas prioritaires pour lui !",
+                "info_cle": "Zones stockage pièces et outils plus nettoyées, accumulation poussière et saleté",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les couloirs de notre aile ne sont plus balayés régulièrement. Il y a des traces, de la poussière dans les coins.",
+                "colere": "Les couloirs ! On dirait qu'ils n'ont pas été nettoyés depuis des semaines ! C'est honteux !",
+                "anxieux": "Les couloirs sont négligés... c'est gênant quand on a des visiteurs... mais je ne sais pas comment faire pour que ça change...",
+                "menteur": "Les couloirs sont propres et bien entretenus.",
+                "balance": "Les couloirs de notre aile, et un agent d'entretien m'a dit que notre zone avait été retirée du planning quotidien. On est passés en hebdomadaire sans consultation.",
+                "info_cle": "Couloirs aile non balayés régulièrement, traces et poussière",
+                "variation_id": 3
+            }
+            ],
+            "7": [
+            {
+                "normal": "Oui, j'ai entendu dire que le service technique manquait de personnel. Apparemment des agents sont partis et n'ont pas été remplacés.",
+                "colere": "Tout le monde le dit ! Ils manquent de personnel ! Mais pourquoi ils ne recrutent pas ?",
+                "anxieux": "On dit qu'ils manquent de monde... mais je ne sais pas si c'est la vraie raison des problèmes...",
+                "menteur": "Je n'ai entendu aucune rumeur. Je ne m'intéresse pas aux ragots.",
+                "balance": "Oui, et un agent d'entretien m'a confié que leur patron refuse de recruter pour améliorer son bilan budgétaire. Il sacrifie la qualité pour ses objectifs personnels.",
+                "info_cle": "Rumeur manque personnel service technique, agents partis non remplacés",
+                "variation_id": 1
+            },
+            {
+                "normal": "J'ai croisé le concierge plusieurs fois dehors avec le paysagiste pendant les heures de travail. Ça m'a semblé étrange.",
+                "colere": "Le concierge traîne dehors ! Je l'ai vu ! Pendant qu'il bavarde, son équipe ne fait rien !",
+                "anxieux": "J'ai vu le concierge dehors... souvent... mais peut-être qu'il a des raisons légitimes... je ne veux pas l'accuser...",
+                "menteur": "Je n'ai rien remarqué d'inhabituel concernant le concierge.",
+                "balance": "Oui, je l'ai vu plusieurs fois. Un agent d'entretien m'a dit qu'il aide le paysagiste sur des chantiers privés pendant les heures de service. C'est du détournement et le patron ferme les yeux.",
+                "info_cle": "Concierge croisé plusieurs fois dehors avec paysagiste pendant heures travail",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il paraît que le service technique a modifié les procédures de nettoyage en secret pour réduire les coûts.",
+                "colere": "Ils ont changé les plannings sans prévenir ! C'est du mépris total pour les utilisateurs !",
+                "anxieux": "On dit qu'il y a eu des changements... mais je ne connais pas les détails... peut-être que c'est juste une rumeur...",
+                "menteur": "Je n'ai entendu parler d'aucun changement de procédure.",
+                "balance": "Oui, et un agent d'entretien m'a montré le nouveau planning. Le concierge a divisé toutes les fréquences par deux ou trois sans consulter personne. C'est pour ça que rien n'est plus fait correctement.",
+                "info_cle": "Rumeur modifications procédures secrètes pour réduction coûts",
+                "variation_id": 3
+            }
+            ],
+            "8": [
+            {
+                "normal": "Non, je ne sais pas où est le matériel de nettoyage. Il doit être dans un local du service technique, mais je n'y ai pas accès.",
+                "colere": "Aucune idée ! Tout est verrouillé ! J'ai demandé un accès, refusé ! Ils gardent tout jalousement !",
+                "anxieux": "Je ne sais pas où est le matériel... je n'ai jamais cherché... peut-être que je ne dois pas y toucher...",
+                "menteur": "Le matériel est accessible si besoin.",
+                "balance": "Non, et j'ai demandé au concierge un accès pour pouvoir nettoyer mes zones de stockage moi-même. Il a refusé catégoriquement. Il ne veut pas qu'on voie l'état de ses stocks.",
+                "info_cle": "Matériel non accessible, localisation inconnue (local service technique)",
+                "variation_id": 1
+            },
+            {
+                "normal": "Je pense qu'il n'est pas accessible pour les autres services. Seul le concierge et son équipe ont les clés.",
+                "colere": "Bien sûr que non ! C'est leur domaine réservé ! Ils ne veulent pas partager !",
+                "anxieux": "Je crois que c'est fermé... réservé au service technique... mais peut-être qu'on pourrait demander une exception...",
+                "menteur": "Le matériel est accessible à tous si nécessaire.",
+                "balance": "Non, et quand j'ai insisté, le concierge m'a dit que c'était 'pour des raisons de sécurité'. En vérité, je pense qu'il cache que ses stocks sont vides ou mal gérés.",
+                "info_cle": "Matériel non accessible autres services, clés détenues par concierge",
+                "variation_id": 2
+            },
+            {
+                "normal": "Il y a un placard au bout du couloir, mais il est toujours fermé à clé. Je ne sais pas ce qu'il contient.",
+                "colere": "Un placard fermé ! Toujours fermé ! Peut-être vide ! On ne saura jamais !",
+                "anxieux": "Il y a un placard... mais je n'ai pas la clé... je ne sais pas ce qu'il y a dedans...",
+                "menteur": "Le matériel est parfaitement accessible et fonctionnel.",
+                "balance": "Oui il y a un placard, mais le responsable réseau m'a dit qu'il est vide depuis des semaines. Le concierge ne réapprovisionne plus les placards de proximité pour tout centraliser.",
+                "info_cle": "Placard bout couloir toujours fermé, contenu inconnu",
+                "variation_id": 3
+            }
+            ],
+            "9": [
+            {
+                "normal": "Oui, j'ai eu un accrochage avec le responsable réseau la semaine dernière. On s'est reproché mutuellement de laisser traîner du matériel.",
+                "colere": "Le responsable réseau et moi on s'est disputés ! Il m'accuse d'être bordélique ! Mais lui aussi ! C'est l'hôpital qui se fout de la charité !",
+                "anxieux": "Il y a eu une dispute... avec le responsable réseau... c'est très gênant... je ne sais pas comment réparer notre relation...",
+                "menteur": "Non, il n'y a aucune tension. L'équipe est soudée.",
+                "balance": "Oui, on s'est disputés, mais honnêtement c'est parce qu'on est tous les deux sous pression à cause de la situation générale. Le vrai problème c'est le service technique, mais on se défoulé entre nous.",
+                "info_cle": "Conflit avec responsable réseau, reproches mutuels sur matériel",
+                "variation_id": 1
+            },
+            {
+                "normal": "L'équipe est frustrée par la situation. Il y a des remarques désagréables, des tensions. L'ambiance s'est dégradée.",
+                "colere": "Tout le monde est énervé ! Les gens se plaignent constamment ! L'ambiance est devenue toxique !",
+                "anxieux": "Il y a de la tension... les gens sont frustrés... je ne sais pas comment améliorer l'atmosphère...",
+                "menteur": "Il n'y a aucune tension. L'équipe reste professionnelle.",
+                "balance": "Oui, et certains commencent à accuser publiquement le service technique. Ça crée des tensions inter-services que la direction va finir par remarquer.",
+                "info_cle": "Frustration équipe, remarques désagréables, ambiance dégradée",
+                "variation_id": 2
+            },
+            {
+                "normal": "Les relations avec le service technique sont tendues. Quand je croise le concierge ou ses agents, les échanges sont froids.",
+                "colere": "Je ne leur parle presque plus ! Le concierge, ses agents ! Qu'ils fassent leur travail au lieu de chercher des excuses !",
+                "anxieux": "C'est tendu avec le service technique... les échanges sont difficiles... je ne sais pas comment améliorer ça...",
+                "menteur": "Les relations entre services sont excellentes.",
+                "balance": "Oui, et j'avoue que je ne fais rien pour arranger les choses. Le service technique doit assumer ses responsabilités. Je ne vais pas les ménager alors qu'ils ne font pas leur travail.",
+                "info_cle": "Relations tendues avec service technique, échanges froids",
+                "variation_id": 3
+            }
+            ]
+        }
+    }
+}

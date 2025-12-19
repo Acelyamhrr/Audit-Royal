@@ -25,7 +25,6 @@ Audit_Royal/Thumbs.db
 *.unity3d
 
 # Données de builds Unity
-*_Data/
 *_BurstDebugInformation_DoNotShip/
 
 # Exécutables Unity (toutes plateformes)

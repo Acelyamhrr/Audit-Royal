@@ -1,0 +1,593 @@
+{
+  "service": "technicien",
+  "postes": {
+    "concierge": {
+      "0": [
+        {
+          "normal": "Oui, j'ai remarqué ça mardi matin. Plusieurs bureaux m'ont appelé parce qu'ils ne pouvaient plus imprimer leurs documents. J'ai essayé de redémarrer quelques imprimantes mais ça ne changeait rien.",
+          "colere": "Évidemment que j'ai vu ! Vous croyez que je suis aveugle ? Les gens m'ont harcelé toute la journée pour des problèmes qui ne me concernent même pas !",
+          "anxieux": "Euh... oui, enfin je crois... C'était mardi je pense ? Ou mercredi ? Il y avait tellement de choses qui ne fonctionnaient pas, je ne sais plus exactement...",
+          "menteur": "Des problèmes de connexion ? Non, pas vraiment. Peut-être quelques petites coupures sans importance, rien de grave en tout cas.",
+          "balance": "Moi j'ai vu, mais le service informatique n'a pas réagi assez vite. Le responsable réseau était absent et personne ne semblait prendre ça au sérieux au début.",
+          "info_cle": "Le concierge a constaté les problèmes dès mardi matin via les imprimantes.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Dès lundi soir en fait. J'ai voulu envoyer mon rapport d'entretien hebdomadaire et impossible d'accéder au serveur de fichiers. J'ai pensé que c'était temporaire.",
+          "colere": "Lundi soir déjà ! Et personne n'a rien fait ! J'ai signalé le problème mais on m'a dit d'attendre, comme d'habitude.",
+          "anxieux": "Je... je ne voulais pas déranger pour rien. Lundi soir j'ai eu un souci mais je me suis dit que ça allait passer tout seul...",
+          "menteur": "Mardi en fin de journée, comme tout le monde. Avant ça, tout fonctionnait parfaitement de mon côté.",
+          "balance": "Lundi soir, mais quand j'ai prévenu le service info, ils m'ont dit que tout était normal. Clairement, ils n'ont pas fait leur travail de surveillance.",
+          "info_cle": "Les premiers signes sont apparus dès lundi soir pour certains services.",
+          "variation_id": 2
+        },
+        {
+          "normal": "C'est mercredi matin que j'ai vraiment compris qu'il y avait un gros problème. Les badges d'accès électroniques ne fonctionnaient plus dans certaines zones. Ça devenait critique.",
+          "colere": "Mercredi ! Quand plus rien ne marchait ! Les badges, les imprimantes, les portes automatiques... un vrai chaos et moi au milieu à gérer les plaintes !",
+          "anxieux": "Mercredi... oui mercredi matin. Tout s'est aggravé d'un coup. J'ai paniqué parce que je ne savais plus comment accéder à certaines salles.",
+          "menteur": "Franchement, mercredi après-midi seulement. Avant ça, je n'ai rien remarqué de particulier dans mes rondes.",
+          "balance": "Mercredi, quand le technicien de maintenance a bricolé quelque chose dans le local technique. Coïncidence ? J'en doute.",
+          "info_cle": "Mercredi matin, les systèmes de badges électroniques ont été affectés.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Mon travail a été compliqué. Je ne pouvais plus accéder aux plannings numériques, ni envoyer mes comptes-rendus. J'ai dû tout noter sur papier et attendre que ça revienne.",
+          "colere": "Complètement paralysé ! Impossible de faire mon travail correctement. Plus de planning, plus de communication avec les autres services, rien !",
+          "anxieux": "C'était... très stressant. Je ne savais plus comment organiser mes tâches sans accès au système. J'ai peur d'avoir oublié des choses importantes...",
+          "menteur": "Ça n'a pas vraiment changé grand-chose pour moi. Je fais surtout du travail manuel de toute façon, donc pas très impacté.",
+          "balance": "J'ai dû compenser les erreurs des autres ! Le service technique n'a pas pu me transmettre les interventions urgentes à cause de la panne. Tout reposait sur moi.",
+          "info_cle": "Le concierge a perdu l'accès aux plannings et à la communication numérique.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les systèmes de contrôle d'accès étaient en panne. Je devais ouvrir manuellement certaines portes et vérifier l'identité des gens. Ça prenait énormément de temps.",
+          "colere": "Un cauchemar ! Je courais partout pour ouvrir les portes à la main pendant que les gens s'énervaient contre moi. C'est pas mon boulot ça !",
+          "anxieux": "J'ai dû... improviser beaucoup. Les portes automatiques ne répondaient plus, je ne savais plus qui avait le droit d'entrer ou non sans le système...",
+          "menteur": "Quelques petits ajustements, rien de dramatique. J'ai une clé universelle de toute façon, donc pas de problème majeur.",
+          "balance": "Le service informatique aurait dû avoir une solution de secours ! Au lieu de ça, c'est moi qui ai dû gérer toute la sécurité manuellement pendant trois jours.",
+          "info_cle": "Les systèmes de contrôle d'accès automatiques étaient hors service.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Je n'ai pas pu commander le matériel d'entretien habituel. Le système de gestion des stocks était inaccessible. J'ai dû utiliser mes réserves personnelles.",
+          "colere": "Plus de commandes possibles ! J'ai failli manquer de produits essentiels parce que personne n'a pensé à nous, le personnel d'entretien !",
+          "anxieux": "Je... je ne savais pas comment faire sans le système de commande. J'espère ne pas avoir fait d'erreur dans mes estimations de stock...",
+          "menteur": "Pas de souci particulier. J'avais assez de stock pour tenir largement. La panne ne m'a pas vraiment touché de ce côté-là.",
+          "balance": "Le service comptabilité n'a pas pu valider mes commandes urgentes à temps. Résultat : j'ai dû rationner les produits d'entretien toute la semaine.",
+          "info_cle": "Le système de gestion des stocks et des commandes était inaccessible.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Oui, j'ai appelé mardi matin quand les imprimantes ne fonctionnaient plus. On m'a dit qu'ils étaient au courant et qu'ils travaillaient dessus. Pas de nouvelles ensuite pendant deux jours.",
+          "colere": "Bien sûr que j'ai appelé ! Plusieurs fois même ! Et à chaque fois la même réponse : 'on s'en occupe'. Sauf que rien ne bougeait !",
+          "anxieux": "J'ai... j'ai essayé de les joindre mais je ne voulais pas les déranger. Ils avaient l'air débordés. J'ai attendu qu'ils me rappellent...",
+          "menteur": "Non, je n'ai pas contacté l'informatique. Je pensais que c'était un problème local à mon poste, rien de généralisé.",
+          "balance": "Oui, et franchement leur réponse était inadmissible. Le technicien m'a dit qu'ils avaient d'autres priorités. Mes problèmes n'en sont pas alors ?",
+          "info_cle": "Le concierge a contacté l'informatique dès mardi matin sans retour satisfaisant.",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'ai envoyé un email lundi soir, puis appelé mardi. Le secrétaire du service info m'a assuré que le responsable réseau allait me rappeler, mais il était absent.",
+          "colere": "J'ai fait au moins cinq tentatives ! Emails, appels, même déplacé en personne ! Mais le responsable était en congé et personne d'autre ne semblait compétent !",
+          "anxieux": "J'ai essayé plusieurs fois... mais je n'ai jamais vraiment eu de réponse claire. Je ne sais pas si mon message est bien passé...",
+          "menteur": "Je n'ai pas eu besoin de les contacter. Les problèmes se sont résolus d'eux-mêmes assez rapidement pour ce qui me concernait.",
+          "balance": "Oui, et j'ai appris que le responsable réseau était en vacances au pire moment. Aucune organisation de leur part pour assurer la continuité.",
+          "info_cle": "Le responsable réseau était absent pendant la panne.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi, quand les badges ne marchaient plus, j'ai dû aller directement au bureau du patron du service info. Il m'a dit qu'ils faisaient le maximum avec l'équipe réduite.",
+          "colere": "Mercredi j'en avais marre ! Je suis allé gueuler directement au bureau. Ils m'ont sorti des excuses bidon sur le manque d'effectif !",
+          "anxieux": "Mercredi... j'ai osé me déplacer. Mais je sentais que je les dérangeais. Ils m'ont dit qu'ils géraient une crise et que je devais patienter...",
+          "menteur": "Non, pas de contact particulier. Je me suis débrouillé seul comme d'habitude, pas besoin de l'informatique pour faire mon travail.",
+          "balance": "Mercredi, et là j'ai compris que c'était le bazar chez eux. Apparemment un technicien junior avait fait une bêtise et personne ne voulait l'admettre.",
+          "info_cle": "Un technicien junior aurait commis une erreur selon certaines sources.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Oui, les imprimantes se mettaient en erreur réseau constamment. Et certains ordinateurs de bureaux affichaient des messages d'impossibilité de connexion au serveur.",
+          "colere": "Tout bugait ! Les imprimantes, les PC, les badges, les téléphones VoIP ! On aurait dit que tout le réseau était mort !",
+          "anxieux": "Je ne suis pas expert mais... oui, beaucoup de choses semblaient anormales. Les écrans affichaient des erreurs que je n'avais jamais vues avant...",
+          "menteur": "Pas vraiment de comportements inhabituels. Quelques ralentissements peut-être, mais rien d'alarmant de mon point de vue.",
+          "balance": "Les équipements du service restauration ont été les premiers touchés d'après ce qu'on m'a dit. Peut-être qu'ils ont fait quelque chose qui a propagé le problème ?",
+          "info_cle": "Les imprimantes, PC, badges et téléphones VoIP étaient tous affectés.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les portes automatiques s'ouvraient et se fermaient de manière erratique. Parfois elles restaient bloquées, parfois elles ne répondaient plus du tout aux badges.",
+          "colere": "Les portes faisaient n'importe quoi ! Des gens se sont retrouvés coincés, d'autres sont rentrés sans autorisation ! Un risque de sécurité énorme !",
+          "anxieux": "Les portes... c'était vraiment étrange. Elles réagissaient de façon imprévisible. J'avais peur qu'un accident arrive...",
+          "menteur": "Les portes ? Non, elles fonctionnaient normalement. Peut-être un ou deux petits bugs isolés, rien de systématique.",
+          "balance": "Les portes dépendent du système centralisé géré par l'informatique. Si elles ont bugué, c'est clairement une erreur de configuration de leur part.",
+          "info_cle": "Les systèmes de portes automatiques avaient des comportements erratiques.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mon ordinateur personnel perdait la connexion toutes les dix minutes environ. Je devais constamment me reconnecter, c'était épuisant.",
+          "colere": "Mon PC se déconnectait sans arrêt ! Impossible de travailler plus de cinq minutes d'affilée ! Une vraie torture !",
+          "anxieux": "Mon ordinateur... il faisait des choses bizarres. Des déconnexions, des messages d'erreur. J'avais peur d'avoir un virus...",
+          "menteur": "Mon ordinateur ? Il tournait correctement. J'ai eu peut-être une ou deux déconnexions, mais rien de préoccupant.",
+          "balance": "Mon PC et celui de la secrétaire du service technique avaient exactement les mêmes symptômes. Ça ne peut pas être un hasard, il y a eu une erreur de configuration réseau.",
+          "info_cle": "Des déconnexions fréquentes affectaient plusieurs postes du service technique.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Difficile à dire. Si le service informatique avait été au complet, peut-être que le problème aurait été détecté plus tôt. Mais je ne connais pas les détails techniques.",
+          "colere": "Bien sûr que ça aurait pu être évité ! Avec une vraie surveillance et un responsable présent au lieu d'être en vacances ! C'est de la négligence !",
+          "anxieux": "Je... je ne sais pas. Je ne veux accuser personne. Peut-être qu'avec plus de vérifications régulières... mais je ne suis pas qualifié pour juger...",
+          "menteur": "Non, je ne pense pas. Ces choses arrivent, c'est technique. Personne ne pouvait prévoir. Pas de faute particulière selon moi.",
+          "balance": "Clairement évitable. Si le responsable réseau avait fait son travail avant de partir en congé, ou si le patron du service info avait mieux organisé son équipe pendant son absence.",
+          "info_cle": "L'absence du responsable réseau a potentiellement aggravé la situation.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Peut-être qu'avec de meilleures procédures de sauvegarde et de vérification. Il faudrait aussi améliorer la communication entre les services pour signaler plus rapidement les anomalies.",
+          "colere": "Évidemment ! Avec un minimum de professionnalisme et de réactivité ! Mais non, il a fallu attendre trois jours que tout explose !",
+          "anxieux": "Je pense que... enfin peut-être... si on avait tous été plus vigilants dès le début. Mais c'est facile de dire ça après coup...",
+          "menteur": "Honnêtement non. C'était une panne technique complexe. Même avec toutes les précautions, ces choses sont imprévisibles.",
+          "balance": "Si le technicien de maintenance n'avait pas touché aux équipements réseau sans autorisation, oui. J'ai entendu dire qu'il avait fait des modifications le week-end précédent.",
+          "info_cle": "Des modifications non autorisées auraient été effectuées le week-end précédant la panne.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Il aurait fallu une meilleure formation pour tous sur les premiers signaux d'alerte. Et surtout que chacun remonte immédiatement les problèmes au lieu d'attendre.",
+          "colere": "Avec du bon sens ! Quand on voit que tout commence à déconner, on agit ! On n'attend pas que ça devienne catastrophique !",
+          "anxieux": "Je ne sais pas... plus de vérifications peut-être ? Et une meilleure coordination ? Mais je ne veux pas dire que c'est la faute de quelqu'un...",
+          "menteur": "Non, vraiment pas. C'était une situation exceptionnelle. Personne ne peut anticiper ce genre de problème, même avec la meilleure organisation.",
+          "balance": "Si le service informatique avait documenté correctement leurs modifications système et informé les autres services des risques, oui. Là, on a été pris au dépourvu.",
+          "info_cle": "Un manque de documentation et de communication a aggravé la situation.",
+          "variation_id": 3
+        }
+      ]
+    },
+    "paysagiste": {
+      "0": [
+        {
+          "normal": "Mardi matin, quand j'ai voulu pointer mon arrivée sur la borne, ça ne fonctionnait plus. J'ai dû aller voir le concierge pour qu'il note manuellement mes heures.",
+          "colere": "Dès mardi ! Et personne ne m'a prévenu ! J'ai perdu 20 minutes à essayer de pointer avant de comprendre que tout était en panne !",
+          "anxieux": "Euh... mardi je crois. Ou peut-être lundi soir ? Je ne suis pas sûr, je viens surtout le matin tôt, avant que tout le monde arrive...",
+          "menteur": "Des problèmes ? Non, pas vraiment remarqué. Je travaille surtout dehors de toute façon, je ne suis pas très concerné par l'informatique.",
+          "balance": "Mardi matin, et j'ai vite compris que c'était sérieux quand j'ai vu le concierge paniquer. Apparemment le service info avait ignoré des alertes le week-end précédent.",
+          "info_cle": "Les bornes de pointage étaient hors service dès mardi matin.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Lundi en fin d'après-midi. J'avais besoin de vérifier les plans d'aménagement des espaces verts sur le serveur partagé, impossible d'y accéder. J'ai pensé que mon compte avait expiré.",
+          "colere": "Lundi déjà ! Mais évidemment, qui pense au paysagiste ? On n'est jamais prioritaires quand il y a des problèmes techniques !",
+          "anxieux": "Lundi... enfin je pense. J'ai eu peur d'avoir fait une mauvaise manipulation. Je ne suis pas très doué avec les ordinateurs...",
+          "menteur": "Mercredi, comme tout le monde. Avant ça, je n'avais aucun souci, tout marchait normalement pour moi.",
+          "balance": "Lundi après-midi. Et quand j'ai demandé au technicien de maintenance qui passait par là, il a eu l'air gêné. Il cachait quelque chose, c'est sûr.",
+          "info_cle": "Le serveur de fichiers partagés était inaccessible dès lundi.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi matin très tôt, vers 6h. J'ai vu les techniciens informatiques entrer dans le local technique en urgence. J'ai compris qu'il y avait un gros problème.",
+          "colere": "Mercredi à l'aube ! J'étais déjà là pour l'arrosage automatique qui déconnait aussi à cause de leur panne ! Tout le réseau était mort !",
+          "anxieux": "Mercredi... très tôt. J'ai vu du mouvement inhabituel. Ça m'a inquiété, je me demandais ce qui se passait vraiment...",
+          "menteur": "Je n'ai rien remarqué de spécial mercredi. Je faisais mon travail normalement, loin de tous ces problèmes informatiques.",
+          "balance": "Mercredi à 6h. Le patron du service info était là aussi, ce qui est rare si tôt. Clairement, ils essayaient de réparer une grosse bêtise en catastrophe.",
+          "info_cle": "Des interventions d'urgence ont eu lieu mercredi matin très tôt.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Le système d'arrosage automatique a cessé de fonctionner. Il est connecté au réseau pour la programmation. J'ai dû tout faire manuellement pendant trois jours, c'était épuisant.",
+          "colere": "Catastrophique ! L'arrosage automatique en panne en pleine période de chaleur ! J'ai dû arroser 3 hectares à la main ! C'est inacceptable !",
+          "anxieux": "C'était... très compliqué. Sans le système automatique, j'avais peur d'oublier certaines zones. Et si des plantes meurent, ce sera ma faute...",
+          "menteur": "Pas vraiment affecté. L'arrosage manuel, je le fais régulièrement de toute façon. Ça n'a rien changé à ma routine.",
+          "balance": "J'ai dû compenser l'incompétence du service informatique ! Si le système d'arrosage avait planté plus longtemps, on aurait eu des dégâts à 15 000 euros !",
+          "info_cle": "Le système d'arrosage automatique connecté au réseau était hors service.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Je ne pouvais plus consulter la météo sur le système interne ni recevoir les alertes automatiques. J'ai dû vérifier manuellement et adapter mon planning au jour le jour.",
+          "colere": "Plus d'alertes météo, plus de planning accessible ! J'ai failli traiter des zones alors qu'une averse arrivait ! Du grand n'importe quoi !",
+          "anxieux": "Sans les alertes... j'étais perdu. Je ne savais plus quand intervenir. J'ai improvisé mais je ne suis pas sûr d'avoir bien fait...",
+          "menteur": "La météo ? Je la regarde sur mon téléphone personnel, pas besoin du réseau de l'IUT. Aucun impact pour moi.",
+          "balance": "Le service communication aurait dû nous tenir informés des pannes, mais rien ! Zéro communication ! J'ai dû me débrouiller seul.",
+          "info_cle": "Les systèmes d'alertes météo internes étaient indisponibles.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Impossible de commander les produits phytosanitaires et les semences via le système habituel. J'ai dû passer par le concierge qui notait tout sur papier pour la comptabilité.",
+          "colere": "Plus de commandes possibles ! En pleine saison ! J'ai manqué de terreau pendant deux jours à cause de ça ! Inadmissible !",
+          "anxieux": "Je ne savais plus comment procéder pour les commandes. Le concierge m'a aidé mais... j'espère que tout a été bien noté pour la comptabilité...",
+          "menteur": "Aucun problème de commande. J'avais tout ce qu'il me fallait en stock, la panne n'a pas impacté mon approvisionnement.",
+          "balance": "La comptabilité n'a pas pu valider mes commandes urgentes. Résultat : retard de livraison et perte de temps. Ils auraient dû avoir un système de secours !",
+          "info_cle": "Le système de commandes était inaccessible, affectant l'approvisionnement.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Oui, j'ai appelé mardi après-midi quand j'ai réalisé que l'arrosage automatique ne fonctionnait plus. On m'a dit qu'ils travaillaient sur une panne généralisée et qu'ils me tiendraient au courant.",
+          "colere": "J'ai appelé trois fois ! Trois fois ! Et chaque fois on me baladait ! 'On vous rappelle', 'c'est en cours'... des paroles en l'air !",
+          "anxieux": "J'ai essayé d'appeler mardi... mais je ne voulais pas insister. Ils avaient l'air très occupés. J'ai attendu patiemment...",
+          "menteur": "Non, je n'ai pas contacté l'informatique. Mon travail ne dépend pas vraiment d'eux, je suis autonome dehors.",
+          "balance": "Oui, et le technicien qui m'a répondu avait un discours très évasif. Il essayait clairement de cacher quelque chose sur l'origine du problème.",
+          "info_cle": "Le paysagiste a contacté l'informatique mardi après-midi.",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'ai envoyé un email lundi soir en décrivant mes problèmes d'accès au serveur. Pas de réponse. Mardi matin, j'ai croisé le technicien de maintenance qui m'a dit qu'ils étaient débordés.",
+          "colere": "Email ignoré, appels sans réponse ! Le technicien de maintenance m'a juste dit 'désolé, on fait ce qu'on peut' ! C'est pas une réponse ça !",
+          "anxieux": "J'ai écrit un email... mais peut-être qu'il s'est perdu avec tous les problèmes réseau ? Je ne sais pas s'ils l'ont reçu...",
+          "menteur": "Je n'ai rien signalé. Les petits bugs que j'ai eus n'en valaient pas la peine, ça s'est arrangé tout seul.",
+          "balance": "Le technicien de maintenance m'a avoué qu'il y avait eu une 'erreur de manipulation' le week-end. Mais il n'a pas voulu en dire plus. Louche.",
+          "info_cle": "Une 'erreur de manipulation' aurait eu lieu le week-end précédent.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mercredi, je suis allé directement au bureau du service informatique. Le secrétaire était débordé mais il a pris note de mes urgences, notamment pour l'arrosage automatique.",
+          "colere": "Mercredi j'en avais marre ! Je suis allé gueuler en personne ! Le secrétaire m'a promis que quelqu'un viendrait... personne n'est venu !",
+          "anxieux": "Mercredi, je me suis déplacé... en m'excusant de les déranger. Le secrétaire était gentil mais il semblait complètement dépassé...",
+          "menteur": "Pas de contact direct avec l'informatique. Je gère mes problèmes seul, je n'aime pas déranger les gens pour rien.",
+          "balance": "Mercredi, et là j'ai vu que c'était le chaos total dans leur bureau. Apparemment le responsable réseau était absent et tout reposait sur un seul technicien. Mauvaise gestion.",
+          "info_cle": "Le service informatique était en sous-effectif pendant la crise.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Le boîtier de contrôle d'arrosage affichait 'Erreur de connexion réseau' en permanence. C'est connecté via Ethernet au réseau principal de l'IUT.",
+          "colere": "Le boîtier était complètement mort ! Erreur réseau non-stop ! Et c'est un équipement à 3000 euros qui dépend de leur réseau défaillant !",
+          "anxieux": "Le boîtier... il affichait des messages d'erreur bizarres. J'ai eu peur de l'avoir cassé en le manipulant...",
+          "menteur": "Rien d'anormal sur le boîtier d'arrosage. Peut-être un petit message d'avertissement sans gravité, rien de plus.",
+          "balance": "Le boîtier fonctionnait parfaitement avant que le service info ne fasse leur fameuse 'mise à jour'. Coïncidence ? Je ne crois pas.",
+          "info_cle": "Les équipements connectés via Ethernet étaient touchés.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Mon ordinateur portable de travail perdait la connexion WiFi toutes les 5 minutes. Les capteurs d'humidité connectés ne transmettaient plus leurs données non plus.",
+          "colere": "Tout ce qui était connecté au WiFi était mort ! Mon PC, les capteurs, même mon téléphone professionnel ! Impossible de bosser !",
+          "anxieux": "Mon ordinateur... et les capteurs aussi. Tout semblait déconnecté. Je ne savais plus sur quoi me fier pour mes relevés...",
+          "menteur": "Quelques petites coupures WiFi, rien de bien méchant. Les capteurs ? Je ne les utilise pas vraiment, je fais tout à l'œil.",
+          "balance": "Tous les équipements WiFi plantaient. Clairement un problème de configuration au niveau des bornes WiFi, gérées par... devinez qui ? Le service informatique.",
+          "info_cle": "Les connexions WiFi étaient instables et les capteurs IoT ne transmettaient plus.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Les caméras de surveillance des espaces verts extérieurs ne fonctionnaient plus. Elles sont reliées au réseau pour l'enregistrement centralisé. Impossible de vérifier les zones la nuit.",
+          "colere": "Les caméras en panne ! Plus de surveillance ! N'importe qui aurait pu entrer et vandaliser ! Un risque de sécurité énorme !",
+          "anxieux": "Les caméras... elles ne répondaient plus. J'étais inquiet pour la sécurité des installations, surtout la nuit...",
+          "menteur": "Les caméras ? Je ne les consulte jamais. Je ne sais même pas si elles marchaient ou non, ce n'est pas mon domaine.",
+          "balance": "Les caméras dépendent du serveur centralisé. Si elles sont tombées, c'est que le serveur a crashé. Et qui gère le serveur ? Le service info, évidemment.",
+          "info_cle": "Les caméras de surveillance connectées au réseau étaient hors service.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Peut-être avec une meilleure maintenance préventive des équipements réseau. Et aussi en ayant un système de secours pour les équipements critiques comme l'arrosage automatique.",
+          "colere": "Évidemment ! Avec un minimum de professionnalisme ! Ils auraient dû tester leurs modifications avant de tout mettre en production !",
+          "anxieux": "Je... je pense que oui, mais je ne veux pas accuser. Peut-être plus de précautions ? Mais je ne suis pas expert...",
+          "menteur": "Non, ces pannes informatiques sont imprévisibles. Personne ne peut anticiper ce genre de problème, même avec de bonnes procédures.",
+          "balance": "Totalement évitable. Si le responsable réseau n'était pas parti en congé pile au moment critique, ou s'il avait mieux briefé son équipe avant de partir.",
+          "info_cle": "Un meilleur briefing de l'équipe aurait pu limiter les dégâts.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Il faudrait des systèmes redondants pour les équipements essentiels. Et surtout, une meilleure communication : j'aurais dû être prévenu immédiatement de la panne pour adapter mon travail.",
+          "colere": "Avec du bon sens ! On prévient les services impactés immédiatement ! On ne les laisse pas découvrir les problèmes par hasard !",
+          "anxieux": "Plus de communication peut-être... et des solutions de secours. Mais je ne sais pas comment ils pourraient faire mieux exactement...",
+          "menteur": "Franchement, non. C'était une situation exceptionnelle. Même la meilleure organisation ne peut pas tout prévoir.",
+          "balance": "Si le technicien de maintenance n'avait pas fait de modifications non autorisées pendant le week-end, rien de tout ça ne serait arrivé. C'est ce qu'on m'a dit.",
+          "info_cle": "Des modifications non autorisées pendant le week-end sont suspectées.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Oui, en documentant mieux les dépendances entre systèmes. Je ne savais même pas que l'arrosage automatique dépendait du réseau principal. Plus de transparence aurait aidé.",
+          "colere": "Avec une vraie cartographie des systèmes ! J'ai découvert que tout dépendait de leur réseau ! Personne ne nous avait prévenus des risques !",
+          "anxieux": "Je pense que... plus d'information sur les interconnexions ? Mais c'est compliqué, je ne suis pas sûr de bien comprendre moi-même...",
+          "menteur": "Non, vraiment. C'était un incident technique complexe. Aucune procédure n'aurait pu l'empêcher selon moi.",
+          "balance": "Si le service informatique avait correctement testé leur 'mise à jour majeure' du week-end précédent, oui. Mais ils ont précipité les choses sans tests suffisants.",
+          "info_cle": "Une mise à jour majeure a été effectuée le week-end précédent sans tests suffisants.",
+          "variation_id": 3
+        }
+      ]
+    },
+    "secretaire": {
+      "0": [
+        {
+          "normal": "Lundi en fin de matinée. J'ai reçu plusieurs appels de différents services signalant des problèmes d'accès aux fichiers partagés. Au début, je pensais que c'était des problèmes isolés.",
+          "colere": "Dès lundi ! Et j'ai dû gérer toute la communication pendant que les techniciens couraient dans tous les sens ! Personne pour m'aider !",
+          "anxieux": "Lundi... je crois. Ou peut-être avant ? J'ai reçu tellement d'appels, je ne sais plus exactement quand ça a commencé...",
+          "menteur": "Mardi matin seulement. Avant ça, quelques appels sans gravité, rien qui indiquait une panne généralisée.",
+          "balance": "Lundi, et j'ai immédiatement prévenu le patron. Mais il n'a pas pris ça au sérieux tout de suite. Il pensait que c'était juste des bugs mineurs.",
+          "info_cle": "Les premiers signalements ont été reçus dès lundi matin.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Lundi après-midi, quand j'ai voulu enregistrer un document important et que le système me disait que le serveur était inaccessible. J'ai alerté le patron immédiatement.",
+          "colere": "Lundi après-midi ! Et le patron m'a dit d'attendre avant d'alerter tout le monde ! Résultat : on a perdu du temps précieux !",
+          "anxieux": "Lundi... en fin de journée. J'ai hésité à en parler, je ne voulais pas faire de vagues pour rien. Peut-être que j'aurais dû réagir plus tôt...",
+          "menteur": "Mardi, quand les premiers vrais problèmes sont apparus. Lundi, tout fonctionnait normalement de mon côté.",
+          "balance": "Lundi après-midi. J'ai prévenu le patron qui devait contacter le responsable réseau, mais il était déjà parti en congé sans prévenir personne. Irresponsable.",
+          "info_cle": "Le responsable réseau était déjà en congé lundi.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mardi matin très tôt. En arrivant, impossible d'ouvrir ma session. D'autres collègues du service avaient le même problème. J'ai compris que c'était sérieux.",
+          "colere": "Mardi à 7h30 ! Impossible de travailler ! J'ai passé ma matinée à recevoir des appels furieux sans pouvoir donner de réponses !",
+          "anxieux": "Mardi matin... je paniquais. Je ne pouvais même pas accéder à mon ordinateur. J'avais peur que ce soit un piratage...",
+          "menteur": "Mardi en milieu de matinée. Les problèmes étaient mineurs avant ça, juste quelques lenteurs sans importance.",
+          "balance": "Mardi matin, et j'ai découvert que le technicien de maintenance avait bidouillé des choses dans le local technique le week-end. Personne n'était au courant.",
+          "info_cle": "Des interventions non déclarées ont eu lieu dans le local technique le week-end.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Je ne pouvais plus accéder aux plannings, aux dossiers administratifs, ni envoyer d'emails. J'ai dû tout noter sur papier et informer les gens par téléphone fixe uniquement.",
+          "colere": "Paralysée totalement ! Plus d'accès à rien ! J'ai dû gérer 50 appels par jour en mode années 80 avec juste un téléphone et du papier !",
+          "anxieux": "C'était... cauchemardesque. Je ne pouvais rien faire de mon travail habituel. J'avais peur de perdre des informations importantes...",
+          "menteur": "Quelques désagréments, mais rien de dramatique. J'ai pu continuer à travailler presque normalement avec des solutions de contournement.",
+          "balance": "Impossible de faire mon travail correctement ! Et pendant ce temps, le patron était en réunion externe. J'ai tout géré seule sans support !",
+          "info_cle": "Les communications internes étaient complètement paralysées.",
+          "variation_id": 1
+        },
+        {
+          "normal": "La gestion des demandes d'intervention était devenue un cauchemar. Pas de système de tickets, tout devait passer par moi oralement. J'ai perdu la trace de plusieurs demandes urgentes.",
+          "colere": "Un chaos absolu ! Les gens m'appelaient, je notais sur des post-it ! Des demandes se sont perdues ! C'est pas professionnel ça !",
+          "anxieux": "Je... j'ai essayé de tout noter mais avec le volume d'appels... j'ai peur d'avoir oublié des choses importantes. C'est angoissant...",
+          "menteur": "La gestion des demandes s'est faite normalement. J'ai une bonne mémoire et j'ai tout noté correctement. Pas de problème majeur.",
+          "balance": "Si les autres services avaient été plus patients et organisés, ça aurait été gérable. Mais non, tout le monde paniquait et me harcelait !",
+          "info_cle": "Le système de gestion des tickets d'intervention était hors service.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Impossible d'accéder au système de facturation et aux contrats des prestataires. Le patron devait prendre des décisions mais je ne pouvais pas lui fournir les documents nécessaires.",
+          "colere": "Les contrats, les factures, tout inaccessible ! Le patron me demandait des infos que je ne pouvais pas lui donner ! Situation impossible !",
+          "anxieux": "Je ne pouvais pas aider le patron comme je le devais. Il avait besoin de documents urgents... je me sentais incompétente...",
+          "menteur": "J'avais des copies papier de l'essentiel. Pas de gros impact sur mon efficacité, j'ai pu fournir ce qu'il fallait au patron.",
+          "balance": "Le service comptabilité aurait dû nous envoyer des copies de secours, mais rien ! Zéro anticipation ! Résultat : le patron était furieux contre moi.",
+          "info_cle": "Les systèmes de facturation et de gestion documentaire étaient inaccessibles.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "J'étais en contact permanent avec eux, c'est moi qui centralisais toutes les demandes. Le technicien de maintenance faisait de son mieux, mais sans le responsable réseau, ils étaient perdus.",
+          "colere": "En contact permanent ! Je leur ai transmis des dizaines de demandes ! Mais ils ne communiquaient rien en retour ! Aucun suivi !",
+          "anxieux": "J'essayais de leur transmettre les demandes... mais je sentais qu'ils étaient débordés. Je ne voulais pas les presser trop...",
+          "menteur": "Contact minimal. Je gérais les problèmes de mon côté, ils s'occupaient des aspects techniques. Pas besoin de communication constante.",
+          "balance": "Je leur ai transmis toutes les alertes, mais le technicien de maintenance semblait cacher quelque chose. Il était très évasif sur les causes.",
+          "info_cle": "Le technicien de maintenance était évasif sur les causes de la panne.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Très bonne collaboration avec le technicien de maintenance et le secrétaire du service info. On essayait de coordonner au mieux malgré le chaos. Le patron nous a aidés aussi.",
+          "colere": "Collaboration forcée ! J'ai dû faire leur boulot en plus du mien ! Répondre aux gens, les rassurer, alors que ce n'est pas mon rôle !",
+          "anxieux": "J'ai essayé de bien communiquer avec eux... mais j'avais l'impression de les déranger. Ils avaient l'air tellement stressés...",
+          "menteur": "Communication normale, professionnelle. Rien de particulier à signaler. Chacun a fait son travail correctement.",
+          "balance": "Le secrétaire du service info m'a confié que le responsable réseau n'avait pas laissé de consignes claires avant son congé. Mauvaise préparation.",
+          "info_cle": "Le responsable réseau n'avait pas laissé de consignes avant son départ.",
+          "variation_id": 2
+        },
+        {
+          "normal": "J'ai dû faire le lien entre le service informatique et tous les autres services. C'était épuisant, mais le patron m'a soutenue. On a essayé de garder tout le monde informé.",
+          "colere": "J'étais le seul canal de communication ! Tout passait par moi ! Le service info ne communiquait avec personne directement ! Inacceptable !",
+          "anxieux": "Je faisais de mon mieux pour transmettre les informations... mais avec le stress, j'ai peut-être oublié de prévenir certaines personnes...",
+          "menteur": "La communication était fluide. Pas de problème particulier. Les services étaient tenus informés régulièrement via les canaux habituels.",
+          "balance": "Le service communication n'a pas joué son rôle ! Ils auraient dû envoyer un communiqué général au lieu de me laisser tout gérer seule !",
+          "info_cle": "Le service communication n'a pas communiqué sur la crise.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Mon ordinateur affichait des erreurs réseau constantes. Impossible de me connecter aux lecteurs partagés. Le système de téléphonie VoIP était instable aussi.",
+          "colere": "Tout plantait ! Mon PC, le téléphone, l'imprimante ! Impossible de travailler correctement ! Un enfer de trois jours !",
+          "anxieux": "Mon ordinateur... il faisait des choses bizarres. Des messages d'erreur partout. J'avais peur d'aggraver les choses en cliquant...",
+          "menteur": "Quelques petits bugs sans gravité. Mon ordinateur fonctionnait globalement bien, juste quelques ralentissements occasionnels.",
+          "balance": "Mon ordinateur et celui du patron avaient exactement les mêmes symptômes. Clairement un problème de configuration au niveau du service info.",
+          "info_cle": "Les postes du service technique avaient les mêmes symptômes.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les imprimantes multifonctions ne répondaient plus. Elles sont connectées au réseau pour la gestion centralisée. Impossible d'imprimer, de scanner ou de faxer pendant trois jours.",
+          "colere": "Les imprimantes mortes ! Plus rien ! J'ai dû aller dans un autre bâtiment pour imprimer des documents urgents ! Ridicule !",
+          "anxieux": "Les imprimantes... elles affichaient des erreurs réseau. Je ne savais pas si c'était grave ou pas. J'ai essayé de les redémarrer plusieurs fois...",
+          "menteur": "Les imprimantes ont eu quelques soucis mineurs, mais rien qui ait vraiment bloqué mon travail. J'ai trouvé des alternatives.",
+          "balance": "Les imprimantes dépendent du serveur d'impression géré par le service info. S'ils avaient fait leur maintenance correctement, ça n'aurait pas planté.",
+          "info_cle": "Les imprimantes réseau dépendantes du serveur d'impression étaient hors service.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Le logiciel de gestion des interventions plantait au démarrage avec un message 'Impossible de contacter le serveur'. Toute la base de données était inaccessible.",
+          "colere": "Le logiciel principal complètement mort ! Trois ans de données d'interventions inaccessibles ! Inacceptable ! Et si on les avait perdues ?!",
+          "anxieux": "Le logiciel... il ne s'ouvrait plus. J'avais très peur qu'on ait perdu toutes nos données. Des années de travail...",
+          "menteur": "Le logiciel a eu quelques difficultés de connexion, mais j'ai pu travailler sur des versions locales. Pas de blocage majeur.",
+          "balance": "Le logiciel est hébergé sur le serveur du service info. S'il ne répond plus, c'est leur problème, pas le nôtre. Ils auraient dû avoir des sauvegardes !",
+          "info_cle": "Le logiciel de gestion hébergé sur le serveur principal était inaccessible.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, avec une meilleure préparation avant le départ en congé du responsable réseau. Il aurait dû briefer son équipe et s'assurer qu'il y avait un plan de continuité clair.",
+          "colere": "Évidemment ! Le responsable réseau part en vacances sans préparation, sans passation ! C'est de l'amateurisme pur ! Totalement évitable !",
+          "anxieux": "Je pense que oui... mais je ne veux pas critiquer. Peut-être que si le responsable réseau avait laissé des instructions plus claires...",
+          "menteur": "Non, je ne crois pas. Les pannes techniques de cette ampleur sont imprévisibles. Même avec la meilleure organisation, ça aurait pu arriver.",
+          "balance": "Si le technicien de maintenance n'avait pas fait de modifications non autorisées le week-end, rien de tout ça ne serait arrivé. C'est ce que tout le monde sait.",
+          "info_cle": "L'absence de passation avant le congé du responsable réseau est critiquée.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Avec des procédures de sauvegarde plus robustes et des systèmes redondants. Aussi, une meilleure communication dès les premiers signes de problème aurait limité l'impact.",
+          "colere": "Avec du bon sens ! On teste les mises à jour avant de les déployer ! On ne fait pas n'importe quoi le week-end sans supervision !",
+          "anxieux": "Plus de précautions peut-être... et des vérifications. Mais je ne suis pas experte technique, je ne sais pas exactement ce qu'il aurait fallu faire...",
+          "menteur": "Franchement, je ne vois pas. C'était une situation exceptionnelle. Aucune procédure n'aurait pu empêcher une panne de cette ampleur.",
+          "balance": "Si le patron du service technique avait été plus vigilant sur les interventions de son équipe pendant les week-ends, oui. Mais il laisse trop d'autonomie sans contrôle.",
+          "info_cle": "Un manque de supervision des interventions le week-end est évoqué.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Il faudrait une formation pour tous sur la gestion de crise. Personne ne savait vraiment comment réagir. Et aussi documenter les dépendances entre systèmes pour mieux comprendre les impacts.",
+          "colere": "Avec de la compétence ! Tout simplement ! Ils ont fait une mise à jour majeure sans tests ! Sans validation ! C'est criminel !",
+          "anxieux": "Plus de formation... et de préparation aux situations d'urgence. Mais c'est facile de dire ça après coup... sur le moment, on ne sait pas comment réagir...",
+          "menteur": "Non, vraiment pas. C'était un enchaînement de circonstances malheureuses. Personne n'est vraiment fautif, c'est juste la malchance.",
+          "balance": "Si le service informatique avait communiqué sur leur mise à jour du week-end et les risques associés, on aurait pu se préparer. Mais non, secret total.",
+          "info_cle": "Le manque de communication sur la mise à jour du week-end a aggravé la situation.",
+          "variation_id": 3
+        }
+      ]
+    },
+    "patron":{
+      "0": [
+        {
+          "normal": "J'ai été alerté lundi soir par ma secrétaire. Plusieurs signalements de problèmes d'accès aux serveurs. J'ai contacté le service informatique mais le responsable réseau était déjà en congé.",
+          "colere": "Lundi soir ! Et bien sûr, le responsable réseau était parti sans prévenir ! Sans laisser de consignes ! J'ai dû gérer ça avec une équipe réduite !",
+          "anxieux": "Lundi... ou peut-être mardi matin. Avec toutes les urgences, je ne me souviens plus exactement du timing. J'aurais peut-être dû réagir plus vite...",
+          "menteur": "Mardi après-midi, quand les problèmes sont devenus vraiment visibles. Avant ça, rien de significatif n'avait été remonté à mon niveau.",
+          "balance": "Lundi soir. J'ai immédiatement demandé au patron du service info ce qui se passait. Il m'a dit que c'était sous contrôle. Clairement, ce n'était pas le cas.",
+          "info_cle": "Le patron a été alerté lundi soir mais a reçu des assurances rassurantes du service info.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Dès lundi matin en fait. J'ai eu des difficultés à accéder à mes dossiers stratégiques sur le serveur. J'ai pensé que c'était un problème de droits d'accès initialement.",
+          "colere": "Lundi matin déjà ! Mais j'étais en réunion externe toute la journée ! Quand je suis revenu mardi, c'était le chaos complet ! Personne ne m'avait prévenu de la gravité !",
+          "anxieux": "Lundi matin, je crois. Mais j'avais tellement de réunions... j'ai peut-être sous-estimé la situation au début. J'aurais dû être plus attentif...",
+          "menteur": "Mardi matin, comme la plupart des gens. Les problèmes étaient mineurs lundi, rien qui nécessitait mon intervention directe.",
+          "balance": "Lundi matin, et j'ai demandé à mon technicien de maintenance de vérifier. Il m'a assuré que tout était normal. Plus tard, j'ai découvert qu'il avait fait des modifications non déclarées.",
+          "info_cle": "Le technicien de maintenance a fait des modifications non déclarées.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Mardi matin en arrivant. Ma secrétaire était en panique, impossible de travailler normalement. J'ai organisé une réunion de crise immédiate avec les chefs de service.",
+          "colere": "Mardi matin, face au désastre ! Tous les services bloqués ! J'ai dû annuler des réunions importantes pour gérer cette crise ! Inadmissible !",
+          "anxieux": "Mardi... quand j'ai vu l'ampleur du problème. J'ai essayé d'organiser une réponse mais je ne suis pas expert technique. J'espère avoir pris les bonnes décisions...",
+          "menteur": "Mardi en fin de matinée. Les signalements étaient encore limités le matin, pas de quoi déclencher une alerte générale.",
+          "balance": "Mardi matin. Le patron du service info minimisait le problème lors de notre réunion. Il essayait de protéger son équipe alors qu'ils avaient clairement fait une erreur grave.",
+          "info_cle": "Le patron du service info aurait minimisé la gravité lors d'une réunion.",
+          "variation_id": 3
+        }
+      ],
+      "1": [
+        {
+          "normal": "Tous les services sous ma responsabilité étaient impactés. Impossible de suivre les interventions en cours, de valider les devis, de communiquer avec les prestataires externes. Une paralysie complète.",
+          "colere": "Catastrophique ! Trois jours de productivité perdus ! Des contrats retardés, des clients mécontents ! Le coût est considérable et quelqu'un va devoir en répondre !",
+          "anxieux": "C'était... très difficile à gérer. Tous mes collaborateurs étaient en difficulté. Je ne savais plus par où commencer. La pression était énorme...",
+          "menteur": "Impact modéré finalement. Quelques désagréments, mais on a su s'adapter. Mon équipe est résiliente, on a continué à fonctionner presque normalement.",
+          "balance": "Mon service était le plus touché ! Pendant que le service communication continuait presque normalement, nous on était paralysés ! Incohérence totale dans l'infrastructure réseau !",
+          "info_cle": "Tous les services n'ont pas été impactés de la même manière.",
+          "variation_id": 1
+        },
+        {
+          "normal": "La gestion des urgences était impossible. Un dégât des eaux s'est produit mercredi et je ne pouvais pas accéder aux plans techniques ni contacter les prestataires via le système habituel.",
+          "colere": "Un dégât des eaux en pleine crise réseau ! Impossible de gérer ça correctement ! J'ai dû improviser avec des moyens archaïques ! Inacceptable !",
+          "anxieux": "Le dégât des eaux... c'était la goutte de trop. Je paniquais. Sans accès aux plans, aux contacts d'urgence... j'avais peur que ça dégénère...",
+          "menteur": "On a géré le dégât des eaux normalement. J'avais les numéros d'urgence sur mon téléphone personnel, pas besoin du réseau informatique.",
+          "balance": "Si le service informatique avait priorisé la remise en service de notre système de gestion d'urgence, on aurait pu gérer le dégât des eaux correctement. Mais non, pas de priorisation intelligente.",
+          "info_cle": "Un incident de dégât des eaux est survenu pendant la panne, compliquant la situation.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Impossible de valider les congés, les heures supplémentaires, les demandes de matériel. Tout le processus RH et administratif était bloqué. Mon équipe ne savait plus où elle en était.",
+          "colere": "Le système RH en panne ! Les gens ne savaient plus s'ils pouvaient prendre leurs congés ! Certains n'ont pas été payés correctement ! Un désastre humain !",
+          "anxieux": "Les processus RH... c'était compliqué. Les gens me posaient des questions et je ne pouvais pas accéder aux informations. Je craignais des erreurs de paye...",
+          "menteur": "Les processus RH ont tourné au ralenti mais sans blocage majeur. J'ai pu traiter l'essentiel manuellement avec la comptabilité.",
+          "balance": "Le service comptabilité n'a pas pu nous aider, leur système était aussi en panne. Résultat : retards de paye pour certains employés. Qui va assumer la responsabilité ?",
+          "info_cle": "Des retards de traitement RH et de paye ont eu lieu.",
+          "variation_id": 3
+        }
+      ],
+      "2": [
+        {
+          "normal": "Contact quotidien. J'ai participé aux réunions de crise organisées par le patron du service informatique. On essayait de coordonner les priorités de remise en service.",
+          "colere": "Réunions inutiles ! Beaucoup de paroles, peu d'actions ! J'attendais des résultats concrets, pas des excuses et des explications techniques incompréhensibles !",
+          "anxieux": "J'ai assisté aux réunions... mais j'avais du mal à suivre les aspects techniques. Je ne savais pas si on allait dans la bonne direction...",
+          "menteur": "Peu de contacts directs. Ils géraient leur crise, je gérais la mienne. On s'est tenus informés par emails quand c'était nécessaire.",
+          "balance": "J'ai exigé des réponses claires lors des réunions. Le responsable réseau absent, personne ne semblait vraiment maîtriser la situation. Le patron du service info était dépassé.",
+          "info_cle": "Le patron du service info semblait dépassé par la situation.",
+          "variation_id": 1
+        },
+        {
+          "normal": "J'ai demandé des rapports d'avancement réguliers. Le technicien de maintenance du service info était réactif, mais limité sans la présence du responsable réseau.",
+          "colere": "J'ai harcelé le service info pour avoir des informations ! Ils ne communiquaient rien spontanément ! J'ai dû arracher chaque information !",
+          "anxieux": "J'essayais de ne pas trop les presser... ils avaient l'air tellement débordés. Mais j'avais besoin d'informations pour rassurer mon équipe...",
+          "menteur": "Communication professionnelle standard. Ils m'ont tenu informé régulièrement, pas besoin de relancer. Tout était fluide.",
+          "balance": "Le technicien de maintenance m'a avoué en privé qu'il avait fait une erreur de configuration le week-end. Mais le patron du service info refuse de le reconnaître officiellement.",
+          "info_cle": "Une erreur de configuration le week-end aurait été commise mais pas reconnue officiellement.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Excellente collaboration avec le secrétaire du service info qui centralisait tout. On a essayé de prioriser les remises en service selon l'urgence et l'impact.",
+          "colere": "Le secrétaire faisait ce qu'il pouvait, mais l'absence du responsable réseau était catastrophique ! Personne d'autre n'avait les compétences nécessaires !",
+          "anxieux": "Le secrétaire du service info était très professionnel... mais je sentais qu'il était dépassé. On faisait tous de notre mieux dans une situation impossible...",
+          "menteur": "Pas de collaboration particulière nécessaire. Chaque service a géré ses problèmes de son côté. Communication minimale et efficace.",
+          "balance": "J'ai découvert que le patron du service info savait depuis dimanche qu'il y avait un problème, mais il n'a alerté personne. Il voulait régler ça discrètement. Résultat : perte de temps.",
+          "info_cle": "Le patron du service info aurait été au courant dès dimanche sans alerter les autres services.",
+          "variation_id": 3
+        }
+      ],
+      "3": [
+        {
+          "normal": "Mon ordinateur perdait régulièrement la connexion. Les systèmes de gestion des interventions, des stocks, de la comptabilité, tout était instable ou inaccessible.",
+          "colere": "Tout plantait en même temps ! Mon PC, ceux de mon équipe, les serveurs ! Impossible de savoir ce qui fonctionnait et ce qui était mort !",
+          "anxieux": "Tellement d'équipements défaillants... je ne savais plus quoi vérifier en premier. J'avais peur que ce soit un problème de sécurité, un piratage...",
+          "menteur": "Quelques dysfonctionnements mineurs sur mon poste et ceux de mes collaborateurs. Rien qui ait vraiment bloqué notre activité.",
+          "balance": "Tous les équipements connectés au réseau principal plantaient. Seuls ceux sur le réseau secondaire (utilisé par le service communication) fonctionnaient. Incohérence révélatrice.",
+          "info_cle": "Un réseau secondaire utilisé par la communication fonctionnait encore.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Les systèmes de contrôle d'accès des locaux techniques étaient erratiques. Certaines portes restaient ouvertes, d'autres bloquées. Un risque de sécurité important.",
+          "colere": "Les contrôles d'accès en vrac ! N'importe qui pouvait entrer dans les locaux sensibles ! Matériel dangereux accessible ! Irresponsable !",
+          "anxieux": "Les portes des locaux techniques... elles ne répondaient plus correctement. J'ai dû poster quelqu'un en permanence pour surveiller. C'était inquiétant...",
+          "menteur": "Les contrôles d'accès ont eu quelques bugs, mais j'avais les clés physiques de secours. Pas de problème de sécurité réel.",
+          "balance": "Les contrôles d'accès sont gérés par le système centralisé du service info. S'ils tombent en panne, c'est une faille de conception. Il faut des systèmes autonomes de backup.",
+          "info_cle": "L'absence de systèmes de backup autonomes est un problème de conception.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Les capteurs de température et d'humidité dans nos locaux techniques ne remontaient plus les données. Impossible de surveiller les conditions de stockage du matériel sensible.",
+          "colere": "Les capteurs morts ! On stocke du matériel électrique coûteux ! Sans surveillance des conditions, on risque des dégâts ! Personne n'y a pensé !",
+          "anxieux": "Les capteurs... je devais vérifier manuellement plusieurs fois par jour. J'avais peur qu'un équipement surchauffe sans qu'on le sache...",
+          "menteur": "Les capteurs ont fonctionné par intermittence, mais j'ai pu relever les données essentielles. Pas de risque réel pour le matériel.",
+          "balance": "Ces capteurs IoT dépendent du réseau. Si le service info avait segmenté correctement le réseau, les équipements critiques auraient pu continuer à fonctionner. Mauvaise architecture.",
+          "info_cle": "L'absence de segmentation réseau a affecté les équipements critiques.",
+          "variation_id": 3
+        }
+      ],
+      "4": [
+        {
+          "normal": "Oui, avec une meilleure planification des congés. Le responsable réseau ne devrait pas partir sans s'assurer qu'une personne compétente peut le remplacer. Et il faut des procédures claires.",
+          "colere": "Totalement évitable ! C'est de la gestion d'amateur ! On ne laisse pas un système critique sans supervision compétente ! Point final !",
+          "anxieux": "Je pense que oui... mais je ne veux pas rejeter toute la faute sur le responsable réseau. Peut-être qu'il y avait des contraintes qu'on ne connaît pas...",
+          "menteur": "Non, franchement. C'était une conjonction de facteurs techniques imprévisibles. Même avec une équipe au complet, ça aurait pu arriver.",
+          "balance": "Si le patron du service info avait fait son travail de management, oui. Il aurait dû interdire les interventions non supervisées le week-end. C'est de sa responsabilité.",
+          "info_cle": "L'absence de supervision des interventions du week-end relève du management.",
+          "variation_id": 1
+        },
+        {
+          "normal": "Il faut investir dans des systèmes redondants et des procédures de reprise après sinistre testées régulièrement. Et former plusieurs personnes aux compétences critiques, pas une seule.",
+          "colere": "Avec du professionnalisme ! On documente, on teste, on forme, on prévoit des backups ! Les bases de l'IT ! Mais non, on préfère économiser et après on pleure !",
+          "anxieux": "Plus de formation... et de documentation. Mais ça demande du budget et du temps. Je ne sais pas si la direction accepterait d'investir...",
+          "menteur": "Honnêtement, je ne vois pas comment. C'était un incident majeur imprévisible. On ne peut pas tout anticiper, même avec des budgets illimités.",
+          "balance": "Si le service informatique avait utilisé correctement le budget alloué pour la maintenance préventive au lieu de le dépenser en nouveaux équipements inutiles, oui.",
+          "info_cle": "L'utilisation du budget de maintenance préventive est questionnée.",
+          "variation_id": 2
+        },
+        {
+          "normal": "Avec une meilleure communication inter-services. Si chacun avait signalé immédiatement les anomalies, on aurait pu identifier la source plus vite et limiter l'impact.",
+          "colere": "Avec de la rigueur ! On fait des mises à jour en heures ouvrées, pas le week-end ! On teste avant de déployer ! On communique ! C'est pas compliqué !",
+          "anxieux": "Meilleure communication... oui, sûrement. Mais dans le feu de l'action, tout le monde gérait ses urgences. C'est facile de critiquer après...",
+          "menteur": "Non, vraiment pas. C'était une situation de crise exceptionnelle. Chacun a fait de son mieux. Personne n'est véritablement fautif.",
+          "balance": "Si une enquête interne sérieuse était menée pour identifier les responsabilités exactes, oui. Mais je doute que le service info accepte une investigation indépendante.",
+          "info_cle": "Une enquête interne indépendante est suggérée pour identifier les responsabilités.",
+          "variation_id": 3
+        }
+      ]
+    }
+  }
+}
