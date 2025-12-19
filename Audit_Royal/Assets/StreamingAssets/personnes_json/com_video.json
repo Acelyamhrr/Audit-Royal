@@ -1,8 +1,8 @@
 {
   "nom": "Gillet",
   "prenom": "Eric",
-  "service": "communications",
+  "service": "communication",
   "caractere": "",
-  "metier": "technicien son/video",
+  "metier": "technicien_son_video",
   "taux": 0
 }
