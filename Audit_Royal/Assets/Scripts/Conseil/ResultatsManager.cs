@@ -13,7 +13,17 @@ public class ResultatsManager : MonoBehaviour
 {
     #region Inspector Fields
     
-    [Header("Dialogue UI")]
+	[Tooltip("Bouton permettant de continuer vers le prochain niveau")]
+	public Button continueButton;
+
+	[Header("Button Sprites")]
+	[Tooltip("Image du bouton 'Continuer' (boutons_0)")]
+	public Sprite continuerSprite;
+
+	[Tooltip("Image du bouton 'Terminer' (bouton_3)")]
+	public Sprite terminerSprite;
+    
+	[Header("Dialogue UI")]
     [Tooltip("Texte affichant le nom du personnage qui parle")]
     public TextMeshProUGUI speakerNameText;
     
@@ -29,10 +39,7 @@ public class ResultatsManager : MonoBehaviour
     
     [Tooltip("Image du tampon 'VALIDÉ' qui s'affiche si score >= 85%")]
     public GameObject tamponValide;
-    
-    [Tooltip("Bouton permettant de continuer vers le prochain niveau")]
-    public Button continueButton;
-    
+        
     [Header("Cinematic")]
     [Tooltip("Contrôleur gérant les effets cinématiques (barres noires)")]
     public CinematicController cinematicController;
@@ -646,20 +653,27 @@ public class ResultatsManager : MonoBehaviour
         {
             continueButton.gameObject.SetActive(true);
             continueButton.onClick.RemoveAllListeners();
+
+        	Image buttonImage = continueButton.GetComponent<Image>();
             
             // Si niveau 5, bouton différent
             if (niveauActuel >= 5)
             {
-                TextMeshProUGUI buttonText = continueButton.GetComponentInChildren<TextMeshProUGUI>();
-                if (buttonText != null)
-                {
-                    buttonText.text = "Terminer";
-                }
-                continueButton.onClick.AddListener(Leaderboard);
+                if (buttonImage != null && terminerSprite != null)
+            	{
+                	buttonImage.sprite = terminerSprite;
+            	}
+            
+            	continueButton.onClick.AddListener(Leaderboard);
             }
             else
             {
-                continueButton.onClick.AddListener(PasserNiveauSuivant);
+                if (buttonImage != null && continuerSprite != null)
+            	{
+                	buttonImage.sprite = continuerSprite;
+           		}
+            
+            	continueButton.onClick.AddListener(PasserNiveauSuivant);
             }
         }
 

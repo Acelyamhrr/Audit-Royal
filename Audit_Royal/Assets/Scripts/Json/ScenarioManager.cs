@@ -293,7 +293,11 @@ public class ScenarioManager : MonoBehaviour
                 if (questionsParService.ContainsKey(serviceAudite))
                 {
                     var questionsAuditees = questionsParService[serviceAudite];
-                    int nbQuestions = Mathf.Max(1, questionsAuditees.Count / 3);
+                    int unTiers = questionsAuditees.Count / 3;
+
+                    // si une seule question dispo, on en prend 2 d'office
+                    int nbQuestions = (unTiers == 1) ? Mathf.Min(2, questionsAuditees.Count) : Mathf.Max(1, unTiers);
+                    
                     questionsSelectionnees = questionsAuditees
                         .OrderBy(x => random.Next())
                         .Take(nbQuestions)

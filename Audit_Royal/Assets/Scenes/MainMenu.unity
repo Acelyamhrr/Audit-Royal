@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musiqueSource: {fileID: 523848886}
-  musiqueDeFond: {fileID: 8300000, guid: ee8846bb685eab042ac1284f04abd8fc, type: 3}
+  musiqueDeFond: {fileID: 8300000, guid: 996151e46a405b3c8a6a141af95a60be, type: 3}
 --- !u!82 &523848886
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1196,6 +1196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
   DoTerminerNiveauApresRapport: 0
+  ScoreDernierRapport: 0
 --- !u!4 &2029393107
 Transform:
   m_ObjectHideFlags: 0
