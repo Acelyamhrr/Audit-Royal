@@ -65,6 +65,8 @@ Vous devrez suivre l'ensemble de ces procédures pour les 5 niveaux. Votre objec
 
 ### Linux
 ```bash
+git clone  https://git.unistra.fr/met25-c-t3-a/audit_royal
+chmod +x exec.x86_64
 ./exec.x86_64
 ```
 
