@@ -42,22 +42,23 @@ Menu du jeu : <br><br>
 Lorsqu'on démarre le jeu, le directeur de l'audit nous assigne une mission : <br><br>
 <img src="./Image/AssignationMission.png" height="400" alt="Assignation de la Mission"><br><br>
 
-Ensuite c'est à vous de vous déplacer dans la map pour aller questionner les personnages : <br><br>
+Ensuite, c'est à vous de vous déplacer dans la map pour aller questionner les personnages : <br><br>
 <img src="./Image/Map.png" height="200" alt="Map">
-<img src="./Image/InerractionCompta.png" height="200" alt="Interraction avec un personnage"><br><br>
+<img src="./Image/IneractionCompta.png" height="200" alt="Interaction avec un personnage"><br><br>
 
-Tout au long de la partie vous pourrez vous aider des éléments présents dans votre sac à dos : <br><br>
-<img src="./Image/AuditAnterieur.png" height="200" alt="Audit Anterieur">
+Tout au long de la partie vous pourrez vous aider des éléments présents dans votre sac à dos afin de suivre l'avancement de votre audit : <br><br>
+<img src="./Image/AuditAnterieur.png" height="200" alt="Audit antérieur">
 <img src="./Image/Carnet.png" height="200" alt="Carnet"><br><br>
 
-Une fois que vous avez récolté suffisament d'informations vous pouvez passer au niveau supérieur en rédigeant un rapport : <br><br>
+Une fois que vous avez récolté suffisamment d'informations vous pouvez passer au niveau supérieur en rédigeant un rapport : <br><br>
 <img src="./Image/Rapport.png" height="400" alt="Rapport"><br><br>
 
-Après avoir rédigé le rapport, vous devrez ensuite faire face au conseil d'administration qui valideront ou non votre rapport : <br><br>
+Après avoir rédigé le rapport, vous devrez ensuite faire face au conseil d'administration qui validera ou non votre rapport : <br><br>
 <img src="./Image/ConseilAdministration.png" height="200" alt="Conseil d'administration">
 <img src="./Image/90%réussite.png" height="200" alt="90% de réussite"><br><br>
 
-Vous devrez suivre l'enssemble de ces procédures pour les 5 niveaux. Votre Objectifs : valider le plus de rapport possible par le conseil d'administration.
+Vous devrez suivre l'ensemble de ces procédures pour les 5 niveaux. Votre objectif : valider le plus de rapport possible par le conseil d'administration.
+
 ---
 
 ## Procédures d'installation et d'exécution
