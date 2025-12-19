@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResultatsManager - Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 Documentation - Audit Royal</h1>
+            <p><a href="index.html" class="back-link">← Retour à l'index</a></p>
+            <button id="theme-toggle" class="theme-toggle" title="Changer de thème">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="🔍 Rechercher..." />
+                <div id="search-results" class="search-results"></div>
+            </div>
+            
+            <h2>Navigation</h2>
+            <ul class="class-list">
+                <li><a href="AudioManager.html">AudioManager</a></li>
+                <li><a href="AudioManager.reglerVolume(System.html">reglerVolume(System</a></li>
+                <li><a href="Audit.html">Audit</a></li>
+                <li><a href="AuditWrapper.html">AuditWrapper</a></li>
+                <li><a href="BackgroundStretchToCamera.html">BackgroundStretchToCamera</a></li>
+                <li><a href="BoutonPause.html">BoutonPause</a></li>
+                <li><a href="BtnQuitter.html">BtnQuitter</a></li>
+                <li><a href="CarnetManager.html">CarnetManager</a></li>
+                <li><a href="CarnetManager.ajoutInfo(System.String,System.String,System.String,System.html">String,System</a></li>
+                <li><a href="CarnetManager.getInfo(System.String,System.String,System.String,System.html">String,System</a></li>
+                <li><a href="CarnetManager.getInfos(System.String,System.html">String,System</a></li>
+                <li><a href="CarnetManager.getNumInfo(System.String,System.html">String,System</a></li>
+                <li><a href="CarnetManager.getQuestion(System.String,System.html">String,System</a></li>
+                <li><a href="CharacterClicker.html">CharacterClicker</a></li>
+                <li><a href="CinematicController.html">CinematicController</a></li>
+                <li><a href="Conclusion.html">Conclusion</a></li>
+                <li><a href="Constatations.html">Constatations</a></li>
+                <li><a href="ControllerSac.html">ControllerSac</a></li>
+                <li><a href="ControllerSac.AddSection(System.Text.StringBuilder,System.String,System.html">String,System</a></li>
+                <li><a href="DataPlayer.html">DataPlayer</a></li>
+                <li><a href="DialogueUIManager.html">DialogueUIManager</a></li>
+                <li><a href="DialogueUIManager.ChargerImagePersonnage(System.html">ChargerImagePersonnage(System</a></li>
+                <li><a href="DialogueUIManager.ChargerScenario(System.html">ChargerScenario(System</a></li>
+                <li><a href="DialogueUIManager.PoserQuestion(System.html">PoserQuestion(System</a></li>
+                <li><a href="DialogueVariation.html">DialogueVariation</a></li>
+                <li><a href="DoorTrigger2D.html">DoorTrigger2D</a></li>
+                <li><a href="EntryDetection.html">EntryDetection</a></li>
+                <li><a href="EntryDetection.ChargerServiceAudite(System.html">ChargerServiceAudite(System</a></li>
+                <li><a href="EntryDetection.ConvertirBatimentEnService(System.html">ConvertirBatimentEnService(System</a></li>
+                <li><a href="EntryDetection.EstServiceAccessible(System.html">EstServiceAccessible(System</a></li>
+                <li><a href="EntryDetection.OnTriggerEnter2D(UnityEngine.html">OnTriggerEnter2D(UnityEngine</a></li>
+                <li><a href="EntryDetection.OnTriggerExit2D(UnityEngine.html">OnTriggerExit2D(UnityEngine</a></li>
+                <li><a href="GameStateManager.html">GameStateManager</a></li>
+                <li><a href="GameStateManager.DefinirScenarioEtNiveau(System.Int32,System.html">Int32,System</a></li>
+                <li><a href="GameStateManager.EntrerDansBatiment(System.html">EntrerDansBatiment(System</a></li>
+                <li><a href="GameStateManager.ObtenirNomService(System.html">ObtenirNomService(System</a></li>
+                <li><a href="GameStateManager.SelectionnerPersonnage(System.html">SelectionnerPersonnage(System</a></li>
+                <li><a href="GlobalPause.html">GlobalPause</a></li>
+                <li><a href="GoOut.html">GoOut</a></li>
+                <li><a href="InteriorLoader.html">InteriorLoader</a></li>
+                <li><a href="IntroSceneManager.html">IntroSceneManager</a></li>
+                <li><a href="IntroSceneManager.ChargerScenario(System.html">ChargerScenario(System</a></li>
+                <li><a href="IntroSceneManager.EffetTypewriter(System.html">EffetTypewriter(System</a></li>
+                <li><a href="IntroSceneManager.ObtenirNomCompletService(System.html">ObtenirNomCompletService(System</a></li>
+                <li><a href="IntroSceneManager.OnChoixSelectionne(System.html">OnChoixSelectionne(System</a></li>
+                <li><a href="JsonDialogueManager.html">JsonDialogueManager</a></li>
+                <li><a href="JsonDialogueManager.ChargerDialoguesService(System.Int32,System.html">Int32,System</a></li>
+                <li><a href="JsonDialogueManager.ChargerPersonnage(System.html">ChargerPersonnage(System</a></li>
+                <li><a href="JsonDialogueManager.ChoisirVariationAleatoire(System.Collections.Generic.html">Generic</a></li>
+                <li><a href="JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic.List{DialogueVariation},System.html">List{DialogueVariation},System</a></li>
+                <li><a href="JsonDialogueManager.EstUneVerite(System.String,System.String,System.String,System.html">String,System</a></li>
+                <li><a href="JsonDialogueManager.ObtenirDialogue(System.Int32,System.String,System.html">String,System</a></li>
+                <li><a href="JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System.String,System.html">String,System</a></li>
+                <li><a href="JsonDialogueManager.ObtenirInfosPersonnage(System.html">ObtenirInfosPersonnage(System</a></li>
+                <li><a href="JsonDialogueManager.ObtenirNombreQuestions(System.Int32,System.html">Int32,System</a></li>
+                <li><a href="JsonDialogueManager.SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System.html">SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System</a></li>
+                <li><a href="JsonDialogueManager.TireAuSortVerite(System.html">TireAuSortVerite(System</a></li>
+                <li><a href="LeaderboardsManager.html">LeaderboardsManager</a></li>
+                <li><a href="LeaderboardsManager.AjouterScoresDeTest(System.html">AjouterScoresDeTest(System</a></li>
+                <li><a href="LeaderboardsManager.MettreAJourPseudo(System.html">MettreAJourPseudo(System</a></li>
+                <li><a href="MainMenuManager.html">MainMenuManager</a></li>
+                <li><a href="MainMenuManager.ChargerTitreScenario(System.html">ChargerTitreScenario(System</a></li>
+                <li><a href="MapUIManager.html">MapUIManager</a></li>
+                <li><a href="MapUIManager.ChargerScenario(System.html">ChargerScenario(System</a></li>
+                <li><a href="MapUIManager.GenererMessageMission(System.html">GenererMessageMission(System</a></li>
+                <li><a href="PersonnageManager.html">PersonnageManager</a></li>
+                <li><a href="PlayerData.html">PlayerData</a></li>
+                <li><a href="PlayerMovement2.html">PlayerMovement2</a></li>
+                <li><a href="PlayerMovement2D.html">PlayerMovement2D</a></li>
+                <li><a href="PlayerMovementData.html">PlayerMovementData</a></li>
+                <li><a href="PosteInfo.html">PosteInfo</a></li>
+                <li><a href="PosteInfo.#ctor(System.String,System.html">String,System</a></li>
+                <li><a href="QuestionBloc.html">QuestionBloc</a></li>
+                <li><a href="RapportManager.html">RapportManager</a></li>
+                <li><a href="RapportManager.OnQuestionClicked(System.html">OnQuestionClicked(System</a></li>
+                <li><a href="RapportManager.OnReponseClicked(System.String,System.html">String,System</a></li>
+                <li><a href="RapportManager.checkTrue(System.String,System.String,System.String,System.html">String,System</a></li>
+                <li><a href="RapportManager.getInfos(System.String,System.html">String,System</a></li>
+                <li><a href="Recommendation.html">Recommendation</a></li>
+                <li class="active"><a href="ResultatsManager.html">ResultatsManager</a></li>
+                <li><a href="ResultatsManager.DialogueLine.#ctor(System.String,System.html">String,System</a></li>
+                <li><a href="ResultatsManager.StartDialogueSequence(System.Collections.Generic.List{ResultatsManager.html">List{ResultatsManager</a></li>
+                <li><a href="ResultatsManager.TypeText(System.html">TypeText(System</a></li>
+                <li><a href="ScenarioManager.html">ScenarioManager</a></li>
+                <li><a href="ScenarioManager.ChargerServiceAudite(System.html">ChargerServiceAudite(System</a></li>
+                <li><a href="ScenarioManager.GenerateVeritesFile(System.Int32,System.html">Int32,System</a></li>
+                <li><a href="ScenarioManager.ObtenirServicesDisponibles(System.html">ObtenirServicesDisponibles(System</a></li>
+                <li><a href="ScenarioManager.ObtenirServicesParNiveau(System.Int32,System.html">Int32,System</a></li>
+                <li><a href="ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String,System.html">String,System</a></li>
+                <li><a href="ScenarioManager.VerifierScenarioComplet(System.html">VerifierScenarioComplet(System</a></li>
+                <li><a href="ScenarioQuestions.html">ScenarioQuestions</a></li>
+                <li><a href="ScenarioRoot.html">ScenarioRoot</a></li>
+                <li><a href="SceneFadeIn.html">SceneFadeIn</a></li>
+                <li><a href="SceneTransition.html">SceneTransition</a></li>
+                <li><a href="SceneTransition.FadeAndLoadScene(System.html">FadeAndLoadScene(System</a></li>
+                <li><a href="SceneTransition.FadeOutAndLoad(System.html">FadeOutAndLoad(System</a></li>
+                <li><a href="ServiceData.html">ServiceData</a></li>
+                <li><a href="TMPro.html">TMPro</a></li>
+                <li><a href="TMPro.Examples.SkewTextExample.html">SkewTextExample</a></li>
+                <li><a href="TMPro.Examples.TMP_TextInfoDebugTool.html">TMP_TextInfoDebugTool</a></li>
+                <li><a href="TMPro.Examples.TextConsoleSimulator.RevealCharacters(TMPro.html">RevealCharacters(TMPro</a></li>
+                <li><a href="TMPro.Examples.TextConsoleSimulator.RevealWords(TMPro.html">RevealWords(TMPro</a></li>
+                <li><a href="TMPro.Examples.VertexColorCycler.html">VertexColorCycler</a></li>
+                <li><a href="TMPro.Examples.VertexJitter.html">VertexJitter</a></li>
+                <li><a href="TMPro.Examples.VertexShakeA.html">VertexShakeA</a></li>
+                <li><a href="TMPro.Examples.VertexShakeB.html">VertexShakeB</a></li>
+                <li><a href="TMPro.Examples.VertexZoom.html">VertexZoom</a></li>
+                <li><a href="TMPro.Examples.WarpTextExample.html">WarpTextExample</a></li>
+                <li><a href="TMPro.TMP_TextEventHandler.html">TMP_TextEventHandler</a></li>
+                <li><a href="TriggerFadeDoor.html">TriggerFadeDoor</a></li>
+                <li><a href="TriggerFadeDoor.OnTriggerEnter2D(UnityEngine.html">OnTriggerEnter2D(UnityEngine</a></li>
+                <li><a href="VeritesByPoste.html">VeritesByPoste</a></li>
+                <li><a href="VeritesByService.html">VeritesByService</a></li>
+                <li><a href="VeritesScenarioRoot.html">VeritesScenarioRoot</a></li>
+                <li><a href="VideoLoader.html">VideoLoader</a></li>
+                <li><a href="VideoLoader.OnVideoEnd(UnityEngine.Video.html">Video</a></li>
+                <li><a href="VolumeSlider.html">VolumeSlider</a></li>
+                <li><a href="VolumeSlider.ChangerVolumeManuel(System.html">ChangerVolumeManuel(System</a></li>
+                <li><a href="WorldCanvasFitToCamera.html">WorldCanvasFitToCamera</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <div class="class-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    
+                    <span>→</span><span class="current">ResultatsManager</span>
+                </div>
+                <h2 class="class-title">ResultatsManager</h2>
+                
+                <p class="class-summary">Représente une ligne de dialogue avec son locuteur et son texte</p>
+                
+                
+            </div>
+            
+            <div class="member-summary">
+                <h3>Résumé des membres</h3>
+                <div class="summary-badges">
+                    <a href="#fields" class="badge badge-field">9 Champs</a>
+                    <a href="#methods" class="badge badge-method">17 Méthodes</a>
+                </div>
+            </div>
+
+            <section id="fields" class="member-section">
+                <h3>🔹 Champs</h3>
+                <div class="member-grid">
+                    <div class="member-card">
+                        <h4><code>scoreFinal</code></h4>
+                        <p>Score final obtenu par le joueur (en pourcentage)</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>niveauActuel</code></h4>
+                        <p>Niveau actuel du joueur (1-5)</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>dialogueQueue</code></h4>
+                        <p>File d&#x27;attente contenant les lignes de dialogue à afficher</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>isTyping</code></h4>
+                        <p>Indique si le texte est en train d&#x27;être affiché caractère par caractère</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>isFastTyping</code></h4>
+                        <p>Indique si le mode d&#x27;affichage rapide est activé</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>canAdvance</code></h4>
+                        <p>Indique si le joueur peut passer au dialogue suivant</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>typingCoroutine</code></h4>
+                        <p>Référence vers la coroutine d&#x27;affichage du texte en cours</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>currentFullText</code></h4>
+                        <p>Texte complet de la ligne de dialogue actuellement affichée</p>
+                    </div>
+                    <div class="member-card">
+                        <h4><code>currentPhase</code></h4>
+                        <p>Phase actuelle de la séquence</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="methods" class="member-section">
+                <h3>⚡ Méthodes</h3>
+
+                <div class="method-card" id="Start">
+                    <div class="method-header">
+                        <h4><code>Start</code></h4>
+                        <a href="#Start" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Initialisation au démarrage de la scène
+            Récupère le score et le niveau, initialise l&#x27;interface</p>
+                </div>
+
+                <div class="method-card" id="Update">
+                    <div class="method-header">
+                        <h4><code>Update</code></h4>
+                        <a href="#Update" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Gestion des inputs utilisateur chaque frame</p>
+                </div>
+
+                <div class="method-card" id="StartIntroduction">
+                    <div class="method-header">
+                        <h4><code>StartIntroduction</code></h4>
+                        <a href="#StartIntroduction" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Démarre la phase d&#x27;introduction avec les dialogues contextuels</p>
+                </div>
+
+                <div class="method-card" id="GenererDialoguesIntroduction">
+                    <div class="method-header">
+                        <h4><code>GenererDialoguesIntroduction</code></h4>
+                        <a href="#GenererDialoguesIntroduction" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Génère les dialogues d&#x27;introduction adaptés au niveau actuel</p>
+
+                    <div class="returns-section">
+                        <h5>Valeur de retour</h5>
+                        <p>Liste des lignes de dialogue d&#x27;introduction</p>
+                    </div>
+                </div>
+
+                <div class="method-card" id="DisplayNextDialogue">
+                    <div class="method-header">
+                        <h4><code>DisplayNextDialogue</code></h4>
+                        <a href="#DisplayNextDialogue" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Affiche le prochain dialogue de la file d&#x27;attente</p>
+                </div>
+
+                <div class="method-card" id="StopTypingAndShowAll">
+                    <div class="method-header">
+                        <h4><code>StopTypingAndShowAll</code></h4>
+                        <a href="#StopTypingAndShowAll" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Arrête l&#x27;animation de frappe et affiche tout le texte immédiatement</p>
+                </div>
+
+                <div class="method-card" id="OnDialoguePhaseFinished">
+                    <div class="method-header">
+                        <h4><code>OnDialoguePhaseFinished</code></h4>
+                        <a href="#OnDialoguePhaseFinished" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Appelé quand une phase de dialogue est terminée
+            Détermine quelle est la prochaine étape</p>
+                </div>
+
+                <div class="method-card" id="StartCinematicSequence">
+                    <div class="method-header">
+                        <h4><code>StartCinematicSequence</code></h4>
+                        <a href="#StartCinematicSequence" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Coroutine gérant la séquence cinématique complète du score
+            1. Masquer le dialogue
+            2. Activer les barres cinématiques
+            3. Animer le score avec nombres aléatoires puis score final
+            4. Afficher le tampon si score &gt;= 85%
+            5. Sortir de la cinématique
+            6. Passer à la conclusion</p>
+                </div>
+
+                <div class="method-card" id="AnimerNombresAleatoires">
+                    <div class="method-header">
+                        <h4><code>AnimerNombresAleatoires</code></h4>
+                        <a href="#AnimerNombresAleatoires" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Coroutine affichant des nombres aléatoires pour créer du suspense
+            avant l&#x27;affichage du score final</p>
+                </div>
+
+                <div class="method-card" id="AnimerScore">
+                    <div class="method-header">
+                        <h4><code>AnimerScore</code></h4>
+                        <a href="#AnimerScore" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Coroutine animant progressivement le score de 0 au score final</p>
+                </div>
+
+                <div class="method-card" id="AnimerTampon">
+                    <div class="method-header">
+                        <h4><code>AnimerTampon</code></h4>
+                        <a href="#AnimerTampon" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Coroutine animant l&#x27;apparition du tampon &quot;VALIDÉ&quot;
+            avec effet d&#x27;échelle et de rotation</p>
+                </div>
+
+                <div class="method-card" id="StartConclusion">
+                    <div class="method-header">
+                        <h4><code>StartConclusion</code></h4>
+                        <a href="#StartConclusion" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Démarre la phase de conclusion avec les dialogues finaux</p>
+                </div>
+
+                <div class="method-card" id="GenererDialoguesConclusion">
+                    <div class="method-header">
+                        <h4><code>GenererDialoguesConclusion</code></h4>
+                        <a href="#GenererDialoguesConclusion" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Génère les dialogues de conclusion selon le score obtenu et le niveau</p>
+
+                    <div class="returns-section">
+                        <h5>Valeur de retour</h5>
+                        <p>Liste des lignes de dialogue de conclusion</p>
+                    </div>
+                </div>
+
+                <div class="method-card" id="ShowContinueButton">
+                    <div class="method-header">
+                        <h4><code>ShowContinueButton</code></h4>
+                        <a href="#ShowContinueButton" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Affiche le bouton de continuation et configure son action
+            selon le niveau (continuer ou retour menu)</p>
+                </div>
+
+                <div class="method-card" id="PasserNiveauSuivant">
+                    <div class="method-header">
+                        <h4><code>PasserNiveauSuivant</code></h4>
+                        <a href="#PasserNiveauSuivant" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Charge la scène de la carte pour passer au niveau suivant</p>
+                </div>
+
+                <div class="method-card" id="RetourMenu">
+                    <div class="method-header">
+                        <h4><code>RetourMenu</code></h4>
+                        <a href="#RetourMenu" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Retourne au menu principal et réinitialise l&#x27;état du jeu</p>
+                </div>
+
+                <div class="method-card" id="Leaderboard">
+                    <div class="method-header">
+                        <h4><code>Leaderboard</code></h4>
+                        <a href="#Leaderboard" class="anchor-link">#</a>
+                    </div>
+                    <p class="method-summary">Continue au leaderboard</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>Généré avec DocGenerator v2.0 pour C# • © 2024</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
