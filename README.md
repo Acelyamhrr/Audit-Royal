@@ -36,7 +36,8 @@ Pour en savoir plus sur le métier et les objectifs pédagogiques, consultez not
 ---
 
 ## Captures d'écran
-> *À compléter : en cours de développement*  
+Menu du jeu : <br><br>
+<img src="./Image/menu.png">
 
 ---
 
