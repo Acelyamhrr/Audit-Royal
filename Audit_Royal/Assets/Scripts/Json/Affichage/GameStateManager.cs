@@ -75,7 +75,7 @@ public class GameStateManager : MonoBehaviour
         // Communication
         { "DirectorCom", "com_responsable_reseaux_sociaux.json" },
         { "SecretaireCom", "com_graphiste.json" },
-        { "Technicien", "com_technicien_son_video.json" },
+        { "Technicien", "com_video.json" },
         
         // Info
         { "Director", "info_patron.json" },
