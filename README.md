@@ -69,3 +69,35 @@ Vous devrez suivre l'ensemble de ces procédures pour les 5 niveaux. Votre objec
 
 ## Documentation
 - Pour comprendre les objectifs pédagogiques et les fonctionnalités : [Wiki](Wiki.md)
+
+- La documentation du code a été générée automatiquement à partir des scripts C# du projet Unity.
+
+### 🔧 Génération de la documentation
+
+Un script Python permet de générer une documentation HTML à partir du fichier XML produit par Unity (`Assembly-CSharp.xml`).
+
+Commande utilisée :
+
+```bash
+python3 doc_generator.py Library/ScriptAssemblies/Assembly-CSharp.xml
+```
+
+La documentation est générée dans le dossier :
+
+```bash
+documentation_html/
+```
+
+👀 Consultation de la documentation
+
+Ouvrir le fichier suivant dans un navigateur :
+
+```bash
+documentation_html/index.html
+```
+
+Ou via le terminal :
+
+```bash
+xdg-open documentation_html/index.html
+```
