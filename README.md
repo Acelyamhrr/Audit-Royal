@@ -44,7 +44,7 @@ Lorsqu'on démarre le jeu, le directeur de l'audit nous assigne une mission : <b
 
 Ensuite, c'est à vous de vous déplacer dans la map pour aller questionner les personnages : <br><br>
 <img src="./Image/Map.png" height="200" alt="Map">
-<img src="./Image/IneractionCompta.png" height="200" alt="Interaction avec un personnage"><br><br>
+<img src="./Image/InteractionCompta.png" height="200" alt="Interaction avec un personnage"><br><br>
 
 Tout au long de la partie vous pourrez vous aider des éléments présents dans votre sac à dos afin de suivre l'avancement de votre audit : <br><br>
 <img src="./Image/AuditAnterieur.png" height="200" alt="Audit antérieur">
