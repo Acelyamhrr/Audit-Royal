@@ -1,0 +1,2442 @@
+[
+  {
+    "name": "SceneTransition",
+    "full_name": "SceneTransition",
+    "namespace": "",
+    "summary": "Gère la transition entre scènes avec un fondu sortant (fade-out).\n            À attacher sur un GameObject et assigner une Image couvrant l'écran.",
+    "url": "SceneTransition.html",
+    "type": "class"
+  },
+  {
+    "name": "FadeAndLoadScene(System",
+    "full_name": "SceneTransition.FadeAndLoadScene(System",
+    "namespace": "SceneTransition",
+    "summary": "",
+    "url": "SceneTransition.FadeAndLoadScene(System.html",
+    "type": "class"
+  },
+  {
+    "name": "FadeAndLoadScene(System.String)",
+    "full_name": "SceneTransition.FadeAndLoadScene(System.String)",
+    "namespace": "SceneTransition",
+    "summary": "Lance le fondu sortant puis charge la scène spécifiée.",
+    "url": "SceneTransition.FadeAndLoadScene(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "FadeOutAndLoad(System",
+    "full_name": "SceneTransition.FadeOutAndLoad(System",
+    "namespace": "SceneTransition",
+    "summary": "",
+    "url": "SceneTransition.FadeOutAndLoad(System.html",
+    "type": "class"
+  },
+  {
+    "name": "FadeOutAndLoad(System.String)",
+    "full_name": "SceneTransition.FadeOutAndLoad(System.String)",
+    "namespace": "SceneTransition",
+    "summary": "Coroutine qui anime le fondu sortant et charge la scène.",
+    "url": "SceneTransition.FadeOutAndLoad(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextEventHandler",
+    "full_name": "TMPro.TMP_TextEventHandler",
+    "namespace": "TMPro",
+    "summary": "",
+    "url": "TMPro.TMP_TextEventHandler.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexShakeB",
+    "full_name": "TMPro.Examples.VertexShakeB",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.VertexShakeB.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexShakeB.AnimateVertexColors",
+    "full_name": "TMPro.Examples.VertexShakeB.AnimateVertexColors",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to animate vertex colors of a TMP Text object.",
+    "url": "TMPro.Examples.VertexShakeB.html#AnimateVertexColors",
+    "type": "method"
+  },
+  {
+    "name": "VertexJitter",
+    "full_name": "TMPro.Examples.VertexJitter",
+    "namespace": "TMPro.Examples",
+    "summary": "Structure to hold pre-computed animation data.",
+    "url": "TMPro.Examples.VertexJitter.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexJitter.AnimateVertexColors",
+    "full_name": "TMPro.Examples.VertexJitter.AnimateVertexColors",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to animate vertex colors of a TMP Text object.",
+    "url": "TMPro.Examples.VertexJitter.html#AnimateVertexColors",
+    "type": "method"
+  },
+  {
+    "name": "VertexZoom",
+    "full_name": "TMPro.Examples.VertexZoom",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.VertexZoom.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexZoom.AnimateVertexColors",
+    "full_name": "TMPro.Examples.VertexZoom.AnimateVertexColors",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to animate vertex colors of a TMP Text object.",
+    "url": "TMPro.Examples.VertexZoom.html#AnimateVertexColors",
+    "type": "method"
+  },
+  {
+    "name": "SkewTextExample",
+    "full_name": "TMPro.Examples.SkewTextExample",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.SkewTextExample.html",
+    "type": "class"
+  },
+  {
+    "name": "SkewTextExample.WarpText",
+    "full_name": "TMPro.Examples.SkewTextExample.WarpText",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to curve text along a Unity animation curve.",
+    "url": "TMPro.Examples.SkewTextExample.html#WarpText",
+    "type": "method"
+  },
+  {
+    "name": "WarpTextExample",
+    "full_name": "TMPro.Examples.WarpTextExample",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.WarpTextExample.html",
+    "type": "class"
+  },
+  {
+    "name": "WarpTextExample.WarpText",
+    "full_name": "TMPro.Examples.WarpTextExample.WarpText",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to curve text along a Unity animation curve.",
+    "url": "TMPro.Examples.WarpTextExample.html#WarpText",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html",
+    "type": "class"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool.DrawCharactersBounds",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool.DrawCharactersBounds",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to draw a rectangle around each character.",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html#DrawCharactersBounds",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool.DrawWordBounds",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool.DrawWordBounds",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to draw rectangles around each word of the text.",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html#DrawWordBounds",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool.DrawLinkBounds",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool.DrawLinkBounds",
+    "namespace": "TMPro.Examples",
+    "summary": "Draw rectangle around each of the links contained in the text.",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html#DrawLinkBounds",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool.DrawLineBounds",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool.DrawLineBounds",
+    "namespace": "TMPro.Examples",
+    "summary": "Draw Rectangles around each lines of the text.",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html#DrawLineBounds",
+    "type": "method"
+  },
+  {
+    "name": "TMP_TextInfoDebugTool.DrawBounds",
+    "full_name": "TMPro.Examples.TMP_TextInfoDebugTool.DrawBounds",
+    "namespace": "TMPro.Examples",
+    "summary": "Draw Rectangle around the bounds of the text object.",
+    "url": "TMPro.Examples.TMP_TextInfoDebugTool.html#DrawBounds",
+    "type": "method"
+  },
+  {
+    "name": "VertexShakeA",
+    "full_name": "TMPro.Examples.VertexShakeA",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.VertexShakeA.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexShakeA.AnimateVertexColors",
+    "full_name": "TMPro.Examples.VertexShakeA.AnimateVertexColors",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to animate vertex colors of a TMP Text object.",
+    "url": "TMPro.Examples.VertexShakeA.html#AnimateVertexColors",
+    "type": "method"
+  },
+  {
+    "name": "VertexColorCycler",
+    "full_name": "TMPro.Examples.VertexColorCycler",
+    "namespace": "TMPro.Examples",
+    "summary": "",
+    "url": "TMPro.Examples.VertexColorCycler.html",
+    "type": "class"
+  },
+  {
+    "name": "VertexColorCycler.AnimateVertexColors",
+    "full_name": "TMPro.Examples.VertexColorCycler.AnimateVertexColors",
+    "namespace": "TMPro.Examples",
+    "summary": "Method to animate vertex colors of a TMP Text object.",
+    "url": "TMPro.Examples.VertexColorCycler.html#AnimateVertexColors",
+    "type": "method"
+  },
+  {
+    "name": "RevealCharacters(TMPro",
+    "full_name": "TMPro.Examples.TextConsoleSimulator.RevealCharacters(TMPro",
+    "namespace": "TMPro.Examples.TextConsoleSimulator",
+    "summary": "",
+    "url": "TMPro.Examples.TextConsoleSimulator.RevealCharacters(TMPro.html",
+    "type": "class"
+  },
+  {
+    "name": "RevealCharacters(TMPro.TMP_Text)",
+    "full_name": "TMPro.Examples.TextConsoleSimulator.RevealCharacters(TMPro.TMP_Text)",
+    "namespace": "TMPro.Examples.TextConsoleSimulator",
+    "summary": "Method revealing the text one character at a time.",
+    "url": "TMPro.Examples.TextConsoleSimulator.RevealCharacters(TMPro.html#TMP_Text)",
+    "type": "method"
+  },
+  {
+    "name": "RevealWords(TMPro",
+    "full_name": "TMPro.Examples.TextConsoleSimulator.RevealWords(TMPro",
+    "namespace": "TMPro.Examples.TextConsoleSimulator",
+    "summary": "",
+    "url": "TMPro.Examples.TextConsoleSimulator.RevealWords(TMPro.html",
+    "type": "class"
+  },
+  {
+    "name": "RevealWords(TMPro.TMP_Text)",
+    "full_name": "TMPro.Examples.TextConsoleSimulator.RevealWords(TMPro.TMP_Text)",
+    "namespace": "TMPro.Examples.TextConsoleSimulator",
+    "summary": "Method revealing the text one word at a time.",
+    "url": "TMPro.Examples.TextConsoleSimulator.RevealWords(TMPro.html#TMP_Text)",
+    "type": "method"
+  },
+  {
+    "name": "TMPro",
+    "full_name": "TMPro",
+    "namespace": "",
+    "summary": "Example of a Custom Character Input Validator to only allow phone number in the (800) 555-1212 format.",
+    "url": "TMPro.html",
+    "type": "class"
+  },
+  {
+    "name": "BtnQuitter",
+    "full_name": "BtnQuitter",
+    "namespace": "",
+    "summary": "Gestion du bouton permettant de quitter le jeu.",
+    "url": "BtnQuitter.html",
+    "type": "class"
+  },
+  {
+    "name": "BtnQuitter.Quitter",
+    "full_name": "BtnQuitter.Quitter",
+    "namespace": "",
+    "summary": "Quitte l'application.\n            Affiche un message dans la console avant de quitter.",
+    "url": "BtnQuitter.html#Quitter",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager",
+    "full_name": "ResultatsManager",
+    "namespace": "",
+    "summary": "Représente une ligne de dialogue avec son locuteur et son texte",
+    "url": "ResultatsManager.html",
+    "type": "class"
+  },
+  {
+    "name": "ResultatsManager.Start",
+    "full_name": "ResultatsManager.Start",
+    "namespace": "",
+    "summary": "Initialisation au démarrage de la scène\n            Récupère le score et le niveau, initialise l'interface",
+    "url": "ResultatsManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.Update",
+    "full_name": "ResultatsManager.Update",
+    "namespace": "",
+    "summary": "Gestion des inputs utilisateur chaque frame",
+    "url": "ResultatsManager.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.StartIntroduction",
+    "full_name": "ResultatsManager.StartIntroduction",
+    "namespace": "",
+    "summary": "Démarre la phase d'introduction avec les dialogues contextuels",
+    "url": "ResultatsManager.html#StartIntroduction",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.GenererDialoguesIntroduction",
+    "full_name": "ResultatsManager.GenererDialoguesIntroduction",
+    "namespace": "",
+    "summary": "Génère les dialogues d'introduction adaptés au niveau actuel",
+    "url": "ResultatsManager.html#GenererDialoguesIntroduction",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.DisplayNextDialogue",
+    "full_name": "ResultatsManager.DisplayNextDialogue",
+    "namespace": "",
+    "summary": "Affiche le prochain dialogue de la file d'attente",
+    "url": "ResultatsManager.html#DisplayNextDialogue",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.StopTypingAndShowAll",
+    "full_name": "ResultatsManager.StopTypingAndShowAll",
+    "namespace": "",
+    "summary": "Arrête l'animation de frappe et affiche tout le texte immédiatement",
+    "url": "ResultatsManager.html#StopTypingAndShowAll",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.OnDialoguePhaseFinished",
+    "full_name": "ResultatsManager.OnDialoguePhaseFinished",
+    "namespace": "",
+    "summary": "Appelé quand une phase de dialogue est terminée\n            Détermine quelle est la prochaine étape",
+    "url": "ResultatsManager.html#OnDialoguePhaseFinished",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.StartCinematicSequence",
+    "full_name": "ResultatsManager.StartCinematicSequence",
+    "namespace": "",
+    "summary": "Coroutine gérant la séquence cinématique complète du score\n            1. Masquer le dialogue\n            2. Activer les barres cinématiques\n            3. Animer le score avec nombres aléatoires puis score final\n            4. Afficher le tampon si score >= 85%\n            5. Sortir de la cinématique\n            6. Passer à la conclusion",
+    "url": "ResultatsManager.html#StartCinematicSequence",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.AnimerNombresAleatoires",
+    "full_name": "ResultatsManager.AnimerNombresAleatoires",
+    "namespace": "",
+    "summary": "Coroutine affichant des nombres aléatoires pour créer du suspense\n            avant l'affichage du score final",
+    "url": "ResultatsManager.html#AnimerNombresAleatoires",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.AnimerScore",
+    "full_name": "ResultatsManager.AnimerScore",
+    "namespace": "",
+    "summary": "Coroutine animant progressivement le score de 0 au score final",
+    "url": "ResultatsManager.html#AnimerScore",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.AnimerTampon",
+    "full_name": "ResultatsManager.AnimerTampon",
+    "namespace": "",
+    "summary": "Coroutine animant l'apparition du tampon \"VALIDÉ\"\n            avec effet d'échelle et de rotation",
+    "url": "ResultatsManager.html#AnimerTampon",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.StartConclusion",
+    "full_name": "ResultatsManager.StartConclusion",
+    "namespace": "",
+    "summary": "Démarre la phase de conclusion avec les dialogues finaux",
+    "url": "ResultatsManager.html#StartConclusion",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.GenererDialoguesConclusion",
+    "full_name": "ResultatsManager.GenererDialoguesConclusion",
+    "namespace": "",
+    "summary": "Génère les dialogues de conclusion selon le score obtenu et le niveau",
+    "url": "ResultatsManager.html#GenererDialoguesConclusion",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.ShowContinueButton",
+    "full_name": "ResultatsManager.ShowContinueButton",
+    "namespace": "",
+    "summary": "Affiche le bouton de continuation et configure son action\n            selon le niveau (continuer ou retour menu)",
+    "url": "ResultatsManager.html#ShowContinueButton",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.PasserNiveauSuivant",
+    "full_name": "ResultatsManager.PasserNiveauSuivant",
+    "namespace": "",
+    "summary": "Charge la scène de la carte pour passer au niveau suivant",
+    "url": "ResultatsManager.html#PasserNiveauSuivant",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.RetourMenu",
+    "full_name": "ResultatsManager.RetourMenu",
+    "namespace": "",
+    "summary": "Retourne au menu principal et réinitialise l'état du jeu",
+    "url": "ResultatsManager.html#RetourMenu",
+    "type": "method"
+  },
+  {
+    "name": "ResultatsManager.Leaderboard",
+    "full_name": "ResultatsManager.Leaderboard",
+    "namespace": "",
+    "summary": "Continue au leaderboard",
+    "url": "ResultatsManager.html#Leaderboard",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "ResultatsManager.DialogueLine.#ctor(System.String,System",
+    "namespace": "ResultatsManager.DialogueLine.#ctor(System",
+    "summary": "",
+    "url": "ResultatsManager.DialogueLine.#ctor(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "ResultatsManager.DialogueLine.#ctor(System.String,System.String)",
+    "namespace": "ResultatsManager.DialogueLine.#ctor(System",
+    "summary": "Constructeur d'une ligne de dialogue",
+    "url": "ResultatsManager.DialogueLine.#ctor(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "List{ResultatsManager",
+    "full_name": "ResultatsManager.StartDialogueSequence(System.Collections.Generic.List{ResultatsManager",
+    "namespace": "ResultatsManager.StartDialogueSequence(System.Collections.Generic",
+    "summary": "",
+    "url": "ResultatsManager.StartDialogueSequence(System.Collections.Generic.List{ResultatsManager.html",
+    "type": "class"
+  },
+  {
+    "name": "List{ResultatsManager.DialogueLine})",
+    "full_name": "ResultatsManager.StartDialogueSequence(System.Collections.Generic.List{ResultatsManager.DialogueLine})",
+    "namespace": "ResultatsManager.StartDialogueSequence(System.Collections.Generic",
+    "summary": "Démarre une séquence de dialogues à partir d'une liste",
+    "url": "ResultatsManager.StartDialogueSequence(System.Collections.Generic.List{ResultatsManager.html#DialogueLine})",
+    "type": "method"
+  },
+  {
+    "name": "TypeText(System",
+    "full_name": "ResultatsManager.TypeText(System",
+    "namespace": "ResultatsManager",
+    "summary": "",
+    "url": "ResultatsManager.TypeText(System.html",
+    "type": "class"
+  },
+  {
+    "name": "TypeText(System.String)",
+    "full_name": "ResultatsManager.TypeText(System.String)",
+    "namespace": "ResultatsManager",
+    "summary": "Coroutine affichant le texte caractère par caractère (effet machine à écrire)",
+    "url": "ResultatsManager.TypeText(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "LeaderboardsManager",
+    "full_name": "LeaderboardsManager",
+    "namespace": "",
+    "summary": "Gère l'affichage, la mise à jour et la soumission des scores vers les services de Leaderboard d'Unity.",
+    "url": "LeaderboardsManager.html",
+    "type": "class"
+  },
+  {
+    "name": "LeaderboardsManager.Start",
+    "full_name": "LeaderboardsManager.Start",
+    "namespace": "",
+    "summary": "Initialise les services Unity, connecte l'utilisateur anonymement et prépare le leaderboard.",
+    "url": "LeaderboardsManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "LeaderboardsManager.Update",
+    "full_name": "LeaderboardsManager.Update",
+    "namespace": "",
+    "summary": "Surveille les entrées clavier pour afficher le menu (Echap) ou ajouter des scores de test (Espace).",
+    "url": "LeaderboardsManager.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "LeaderboardsManager.UpdateLeaderboard",
+    "full_name": "LeaderboardsManager.UpdateLeaderboard",
+    "namespace": "",
+    "summary": "Boucle de rafraîchissement du classement tant que le panneau est actif.\n            Récupère les scores et instancie les éléments visuels correspondants.",
+    "url": "LeaderboardsManager.html#UpdateLeaderboard",
+    "type": "method"
+  },
+  {
+    "name": "MettreAJourPseudo(System",
+    "full_name": "LeaderboardsManager.MettreAJourPseudo(System",
+    "namespace": "LeaderboardsManager",
+    "summary": "",
+    "url": "LeaderboardsManager.MettreAJourPseudo(System.html",
+    "type": "class"
+  },
+  {
+    "name": "MettreAJourPseudo(System.String)",
+    "full_name": "LeaderboardsManager.MettreAJourPseudo(System.String)",
+    "namespace": "LeaderboardsManager",
+    "summary": "Met à jour le nom du joueur sur les serveurs d'authentification Unity.",
+    "url": "LeaderboardsManager.MettreAJourPseudo(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "AjouterScoresDeTest(System",
+    "full_name": "LeaderboardsManager.AjouterScoresDeTest(System",
+    "namespace": "LeaderboardsManager",
+    "summary": "",
+    "url": "LeaderboardsManager.AjouterScoresDeTest(System.html",
+    "type": "class"
+  },
+  {
+    "name": "AjouterScoresDeTest(System.Int32)",
+    "full_name": "LeaderboardsManager.AjouterScoresDeTest(System.Int32)",
+    "namespace": "LeaderboardsManager",
+    "summary": "Génère et envoie plusieurs scores aléatoires pour tester le comportement du classement.",
+    "url": "LeaderboardsManager.AjouterScoresDeTest(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovement2D",
+    "full_name": "PlayerMovement2D",
+    "namespace": "",
+    "summary": "Gère le déplacement 2D d’un joueur via les axes clavier (Horizontal / Vertical).\n            Le déplacement est appliqué sur un RectTransform, typiquement pour une UI ou un canvas en World Space.",
+    "url": "PlayerMovement2D.html",
+    "type": "class"
+  },
+  {
+    "name": "PlayerMovement2D.Start",
+    "full_name": "PlayerMovement2D.Start",
+    "namespace": "",
+    "summary": "Initialise la référence au RectTransform du GameObject.",
+    "url": "PlayerMovement2D.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovement2D.Update",
+    "full_name": "PlayerMovement2D.Update",
+    "namespace": "",
+    "summary": "Gère le déplacement du joueur à chaque frame en fonction des entrées clavier.",
+    "url": "PlayerMovement2D.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "InteriorLoader",
+    "full_name": "InteriorLoader",
+    "namespace": "",
+    "summary": "Charge dynamiquement le prefab du service correspondant au joueur lorsqu'il entre dans un bâtiment.",
+    "url": "InteriorLoader.html",
+    "type": "class"
+  },
+  {
+    "name": "InteriorLoader.Start",
+    "full_name": "InteriorLoader.Start",
+    "namespace": "",
+    "summary": "Méthode appelée au démarrage. Vérifie l'existence du GameStateManager et lance le chargement du service.",
+    "url": "InteriorLoader.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "InteriorLoader.EnsureGameStateManagerExists",
+    "full_name": "InteriorLoader.EnsureGameStateManagerExists",
+    "namespace": "",
+    "summary": "Vérifie si une instance de",
+    "url": "InteriorLoader.html#EnsureGameStateManagerExists",
+    "type": "method"
+  },
+  {
+    "name": "InteriorLoader.WaitAndLoadService",
+    "full_name": "InteriorLoader.WaitAndLoadService",
+    "namespace": "",
+    "summary": "Coroutine qui attend un frame pour s'assurer que tout est initialisé, puis instancie le prefab correspondant au service actuel.",
+    "url": "InteriorLoader.html#WaitAndLoadService",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController",
+    "full_name": "CinematicController",
+    "namespace": "",
+    "summary": "Contrôleur de cinématiques gérant les transitions visuelles\n            (barres noires, zoom caméra, fade) pour les séquences narratives.",
+    "url": "CinematicController.html",
+    "type": "class"
+  },
+  {
+    "name": "CinematicController.Start",
+    "full_name": "CinematicController.Start",
+    "namespace": "",
+    "summary": "Initialisation au démarrage - Vérifie la présence de l'Animator",
+    "url": "CinematicController.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController.EnterCinematic",
+    "full_name": "CinematicController.EnterCinematic",
+    "namespace": "",
+    "summary": "Démarre une séquence cinématique avec apparition des barres noires",
+    "url": "CinematicController.html#EnterCinematic",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController.ExitCinematic",
+    "full_name": "CinematicController.ExitCinematic",
+    "namespace": "",
+    "summary": "Termine une séquence cinématique avec disparition des barres noires",
+    "url": "CinematicController.html#ExitCinematic",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController.IsInCinematic",
+    "full_name": "CinematicController.IsInCinematic",
+    "namespace": "",
+    "summary": "Vérifie si une cinématique est actuellement en cours",
+    "url": "CinematicController.html#IsInCinematic",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController.EnterRoutine",
+    "full_name": "CinematicController.EnterRoutine",
+    "namespace": "",
+    "summary": "Coroutine gérant l'entrée progressive en mode cinématique\n            - Active l'animation des barres noires\n            - Attend la fin de l'animation",
+    "url": "CinematicController.html#EnterRoutine",
+    "type": "method"
+  },
+  {
+    "name": "CinematicController.ExitRoutine",
+    "full_name": "CinematicController.ExitRoutine",
+    "namespace": "",
+    "summary": "Coroutine gérant la sortie du mode cinématique\n            - Active l'animation de disparition des barres noires\n            - Attend un court délai avant de terminer",
+    "url": "CinematicController.html#ExitRoutine",
+    "type": "method"
+  },
+  {
+    "name": "GameStateManager",
+    "full_name": "GameStateManager",
+    "namespace": "",
+    "summary": "Gère l'état actuel du jeu, les personnages et les services.",
+    "url": "GameStateManager.html",
+    "type": "class"
+  },
+  {
+    "name": "GameStateManager.Awake",
+    "full_name": "GameStateManager.Awake",
+    "namespace": "",
+    "summary": "Initialise l'instance singleton et rend le GameObject persistant.",
+    "url": "GameStateManager.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "GameStateManager.ResetEtat",
+    "full_name": "GameStateManager.ResetEtat",
+    "namespace": "",
+    "summary": "Réinitialise l’état du jeu pour revenir au menu principal.",
+    "url": "GameStateManager.html#ResetEtat",
+    "type": "method"
+  },
+  {
+    "name": "GameStateManager.PasserNiveauSuivant",
+    "full_name": "GameStateManager.PasserNiveauSuivant",
+    "namespace": "",
+    "summary": "Passe au niveau suivant (max 5).",
+    "url": "GameStateManager.html#PasserNiveauSuivant",
+    "type": "method"
+  },
+  {
+    "name": "EntrerDansBatiment(System",
+    "full_name": "GameStateManager.EntrerDansBatiment(System",
+    "namespace": "GameStateManager",
+    "summary": "",
+    "url": "GameStateManager.EntrerDansBatiment(System.html",
+    "type": "class"
+  },
+  {
+    "name": "EntrerDansBatiment(System.String)",
+    "full_name": "GameStateManager.EntrerDansBatiment(System.String)",
+    "namespace": "GameStateManager",
+    "summary": "Appelé lors de l'entrée dans un bâtiment pour définir le service associé.",
+    "url": "GameStateManager.EntrerDansBatiment(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "SelectionnerPersonnage(System",
+    "full_name": "GameStateManager.SelectionnerPersonnage(System",
+    "namespace": "GameStateManager",
+    "summary": "",
+    "url": "GameStateManager.SelectionnerPersonnage(System.html",
+    "type": "class"
+  },
+  {
+    "name": "SelectionnerPersonnage(System.String)",
+    "full_name": "GameStateManager.SelectionnerPersonnage(System.String)",
+    "namespace": "GameStateManager",
+    "summary": "Appelé lors de la sélection d’un personnage pour récupérer le fichier JSON associé.",
+    "url": "GameStateManager.SelectionnerPersonnage(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "Int32,System",
+    "full_name": "GameStateManager.DefinirScenarioEtNiveau(System.Int32,System",
+    "namespace": "GameStateManager.DefinirScenarioEtNiveau(System",
+    "summary": "",
+    "url": "GameStateManager.DefinirScenarioEtNiveau(System.Int32,System.html",
+    "type": "class"
+  },
+  {
+    "name": "Int32,System.Int32)",
+    "full_name": "GameStateManager.DefinirScenarioEtNiveau(System.Int32,System.Int32)",
+    "namespace": "GameStateManager.DefinirScenarioEtNiveau(System",
+    "summary": "Définit le scénario et le niveau actuel.",
+    "url": "GameStateManager.DefinirScenarioEtNiveau(System.Int32,System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "ObtenirNomService(System",
+    "full_name": "GameStateManager.ObtenirNomService(System",
+    "namespace": "GameStateManager",
+    "summary": "",
+    "url": "GameStateManager.ObtenirNomService(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ObtenirNomService(System.String)",
+    "full_name": "GameStateManager.ObtenirNomService(System.String)",
+    "namespace": "GameStateManager",
+    "summary": "Retourne le nom complet du service à partir de son identifiant.",
+    "url": "GameStateManager.ObtenirNomService(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager",
+    "full_name": "DialogueUIManager",
+    "namespace": "",
+    "summary": "Gère l’interface utilisateur des dialogues avec les personnages.",
+    "url": "DialogueUIManager.html",
+    "type": "class"
+  },
+  {
+    "name": "DialogueUIManager.Start",
+    "full_name": "DialogueUIManager.Start",
+    "namespace": "",
+    "summary": "Initialise l’interface et charge les données nécessaires.",
+    "url": "DialogueUIManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.Update",
+    "full_name": "DialogueUIManager.Update",
+    "namespace": "",
+    "summary": "Gère les entrées clavier à chaque frame.",
+    "url": "DialogueUIManager.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.ChargerPersonnage",
+    "full_name": "DialogueUIManager.ChargerPersonnage",
+    "namespace": "",
+    "summary": "Charge les données du personnage actuellement sélectionné.",
+    "url": "DialogueUIManager.html#ChargerPersonnage",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.PreparerQuestions",
+    "full_name": "DialogueUIManager.PreparerQuestions",
+    "namespace": "",
+    "summary": "Prépare la liste des questions disponibles pour le personnage.",
+    "url": "DialogueUIManager.html#PreparerQuestions",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.AfficherQuestionsCarnet",
+    "full_name": "DialogueUIManager.AfficherQuestionsCarnet",
+    "namespace": "",
+    "summary": "Affiche les questions disponibles dans le carnet.",
+    "url": "DialogueUIManager.html#AfficherQuestionsCarnet",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.OuvrirCarnet",
+    "full_name": "DialogueUIManager.OuvrirCarnet",
+    "namespace": "",
+    "summary": "Ouvre le carnet de questions.",
+    "url": "DialogueUIManager.html#OuvrirCarnet",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.FermerCarnet",
+    "full_name": "DialogueUIManager.FermerCarnet",
+    "namespace": "",
+    "summary": "Ferme le carnet de questions.",
+    "url": "DialogueUIManager.html#FermerCarnet",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.GererInputs",
+    "full_name": "DialogueUIManager.GererInputs",
+    "namespace": "",
+    "summary": "Gère les entrées clavier de l’utilisateur.",
+    "url": "DialogueUIManager.html#GererInputs",
+    "type": "method"
+  },
+  {
+    "name": "DialogueUIManager.RetourBatiment",
+    "full_name": "DialogueUIManager.RetourBatiment",
+    "namespace": "",
+    "summary": "Retourne à la scène du bâtiment.",
+    "url": "DialogueUIManager.html#RetourBatiment",
+    "type": "method"
+  },
+  {
+    "name": "ChargerImagePersonnage(System",
+    "full_name": "DialogueUIManager.ChargerImagePersonnage(System",
+    "namespace": "DialogueUIManager",
+    "summary": "",
+    "url": "DialogueUIManager.ChargerImagePersonnage(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerImagePersonnage(System.String)",
+    "full_name": "DialogueUIManager.ChargerImagePersonnage(System.String)",
+    "namespace": "DialogueUIManager",
+    "summary": "Charge l’image du personnage selon l’émotion donnée.",
+    "url": "DialogueUIManager.ChargerImagePersonnage(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "ChargerScenario(System",
+    "full_name": "DialogueUIManager.ChargerScenario(System",
+    "namespace": "DialogueUIManager",
+    "summary": "",
+    "url": "DialogueUIManager.ChargerScenario(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerScenario(System.Int32)",
+    "full_name": "DialogueUIManager.ChargerScenario(System.Int32)",
+    "namespace": "DialogueUIManager",
+    "summary": "Charge les données d’un scénario depuis un fichier JSON.",
+    "url": "DialogueUIManager.ChargerScenario(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "PoserQuestion(System",
+    "full_name": "DialogueUIManager.PoserQuestion(System",
+    "namespace": "DialogueUIManager",
+    "summary": "",
+    "url": "DialogueUIManager.PoserQuestion(System.html",
+    "type": "class"
+  },
+  {
+    "name": "PoserQuestion(System.Int32)",
+    "full_name": "DialogueUIManager.PoserQuestion(System.Int32)",
+    "namespace": "DialogueUIManager",
+    "summary": "Pose une question au personnage et affiche la réponse.",
+    "url": "DialogueUIManager.PoserQuestion(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager",
+    "full_name": "CarnetManager",
+    "namespace": "",
+    "summary": "Gère le carnet de l’auditeur : stockage, ajout et lecture des informations obtenues\n            depuis les différents services et métiers.",
+    "url": "CarnetManager.html",
+    "type": "class"
+  },
+  {
+    "name": "CarnetManager.Awake",
+    "full_name": "CarnetManager.Awake",
+    "namespace": "",
+    "summary": "Initialisation du carnet à partir du fichier de vérités.\n            Transforme \"verites\" en \"informations\" et initialise toutes les entrées comme vides.",
+    "url": "CarnetManager.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.Update",
+    "full_name": "CarnetManager.Update",
+    "namespace": "",
+    "summary": "Update is called once per frame",
+    "url": "CarnetManager.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.afficherCarnet",
+    "full_name": "CarnetManager.afficherCarnet",
+    "namespace": "",
+    "summary": "Affiche le contenu du carnet sous forme textuelle pour tous les services et métiers.",
+    "url": "CarnetManager.html#afficherCarnet",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.getAllInfos",
+    "full_name": "CarnetManager.getAllInfos",
+    "namespace": "",
+    "summary": "Retourne toutes les infos clefs présentes dans le carnet.",
+    "url": "CarnetManager.html#getAllInfos",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.getServiceAudite",
+    "full_name": "CarnetManager.getServiceAudite",
+    "namespace": "",
+    "summary": "Récupère le service audité pour le scénario en cours.",
+    "url": "CarnetManager.html#getServiceAudite",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.getNameAudit",
+    "full_name": "CarnetManager.getNameAudit",
+    "namespace": "",
+    "summary": "Récupère le titre du scénario en cours.",
+    "url": "CarnetManager.html#getNameAudit",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.getAllQuestions",
+    "full_name": "CarnetManager.getAllQuestions",
+    "namespace": "",
+    "summary": "Récupère toutes les questions du carnet sous forme de dictionnaire (clé : service;numQuestion, valeur : texte).",
+    "url": "CarnetManager.html#getAllQuestions",
+    "type": "method"
+  },
+  {
+    "name": "CarnetManager.getServices",
+    "full_name": "CarnetManager.getServices",
+    "namespace": "",
+    "summary": "Récupère la liste des services présents dans le carnet.",
+    "url": "CarnetManager.html#getServices",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "CarnetManager.ajoutInfo(System.String,System.String,System.String,System",
+    "namespace": "CarnetManager.ajoutInfo(System.String,System.String,System",
+    "summary": "",
+    "url": "CarnetManager.ajoutInfo(System.String,System.String,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.Int32)",
+    "full_name": "CarnetManager.ajoutInfo(System.String,System.String,System.String,System.Int32)",
+    "namespace": "CarnetManager.ajoutInfo(System.String,System.String,System",
+    "summary": "Ajoute une information au carnet pour un service, un métier et une question donnés.",
+    "url": "CarnetManager.ajoutInfo(System.String,System.String,System.String,System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "CarnetManager.getQuestion(System.String,System",
+    "namespace": "CarnetManager.getQuestion(System",
+    "summary": "",
+    "url": "CarnetManager.getQuestion(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "CarnetManager.getQuestion(System.String,System.String)",
+    "namespace": "CarnetManager.getQuestion(System",
+    "summary": "Récupère l’intitulé d’une question à partir du fichier scénario.",
+    "url": "CarnetManager.getQuestion(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "CarnetManager.getInfo(System.String,System.String,System.String,System",
+    "namespace": "CarnetManager.getInfo(System.String,System.String,System",
+    "summary": "",
+    "url": "CarnetManager.getInfo(System.String,System.String,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "CarnetManager.getInfo(System.String,System.String,System.String,System.String)",
+    "namespace": "CarnetManager.getInfo(System.String,System.String,System",
+    "summary": "Récupère une info clef pour un service, un métier, une question et un numéro d’info.",
+    "url": "CarnetManager.getInfo(System.String,System.String,System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "CarnetManager.getInfos(System.String,System",
+    "namespace": "CarnetManager.getInfos(System",
+    "summary": "",
+    "url": "CarnetManager.getInfos(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "CarnetManager.getInfos(System.String,System.String)",
+    "namespace": "CarnetManager.getInfos(System",
+    "summary": "Récupère les infos clefs d’une question dans le carnet.",
+    "url": "CarnetManager.getInfos(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "CarnetManager.getNumInfo(System.String,System",
+    "namespace": "CarnetManager.getNumInfo(System",
+    "summary": "",
+    "url": "CarnetManager.getNumInfo(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "CarnetManager.getNumInfo(System.String,System.String)",
+    "namespace": "CarnetManager.getNumInfo(System",
+    "summary": "Retourne le numéro de l'information correspondant à un texte donné dans un service.",
+    "url": "CarnetManager.getNumInfo(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "BoutonPause",
+    "full_name": "BoutonPause",
+    "namespace": "",
+    "summary": "Gère les actions des boutons à l'intérieur du menu de pause.",
+    "url": "BoutonPause.html",
+    "type": "class"
+  },
+  {
+    "name": "BoutonPause.ClicReprendre",
+    "full_name": "BoutonPause.ClicReprendre",
+    "namespace": "",
+    "summary": "Ferme le menu de pause et reprend la partie.\n            Appelé par le bouton \"Play\" ou \"Resume\".",
+    "url": "BoutonPause.html#ClicReprendre",
+    "type": "method"
+  },
+  {
+    "name": "BoutonPause.ClicQuitter",
+    "full_name": "BoutonPause.ClicQuitter",
+    "namespace": "",
+    "summary": "Ferme complètement l'application (Alt+F4).\n            Arrête également le mode lecture si exécuté dans l'éditeur Unity.",
+    "url": "BoutonPause.html#ClicQuitter",
+    "type": "method"
+  },
+  {
+    "name": "VideoLoader",
+    "full_name": "VideoLoader",
+    "namespace": "",
+    "summary": "Gère la lecture d'une vidéo avec VideoPlayer et passe à une scène suivante lorsque la vidéo se termine.\n            À attacher sur un GameObject contenant un VideoPlayer.",
+    "url": "VideoLoader.html",
+    "type": "class"
+  },
+  {
+    "name": "VideoLoader.Start",
+    "full_name": "VideoLoader.Start",
+    "namespace": "",
+    "summary": "Initialise le VideoPlayer, prépare la vidéo et configure les événements pour jouer et détecter la fin.",
+    "url": "VideoLoader.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "Video",
+    "full_name": "VideoLoader.OnVideoEnd(UnityEngine.Video",
+    "namespace": "VideoLoader.OnVideoEnd(UnityEngine",
+    "summary": "",
+    "url": "VideoLoader.OnVideoEnd(UnityEngine.Video.html",
+    "type": "class"
+  },
+  {
+    "name": "Video.VideoPlayer)",
+    "full_name": "VideoLoader.OnVideoEnd(UnityEngine.Video.VideoPlayer)",
+    "namespace": "VideoLoader.OnVideoEnd(UnityEngine",
+    "summary": "Appelé lorsque la vidéo est terminée. Charge la scène suivante.",
+    "url": "VideoLoader.OnVideoEnd(UnityEngine.Video.html#VideoPlayer)",
+    "type": "method"
+  },
+  {
+    "name": "TriggerFadeDoor",
+    "full_name": "TriggerFadeDoor",
+    "namespace": "",
+    "summary": "Déclenche une transition avec fondu vers une autre scène\n            lorsque le joueur entre dans une zone de collision.",
+    "url": "TriggerFadeDoor.html",
+    "type": "class"
+  },
+  {
+    "name": "OnTriggerEnter2D(UnityEngine",
+    "full_name": "TriggerFadeDoor.OnTriggerEnter2D(UnityEngine",
+    "namespace": "TriggerFadeDoor",
+    "summary": "",
+    "url": "TriggerFadeDoor.OnTriggerEnter2D(UnityEngine.html",
+    "type": "class"
+  },
+  {
+    "name": "OnTriggerEnter2D(UnityEngine.Collider2D)",
+    "full_name": "TriggerFadeDoor.OnTriggerEnter2D(UnityEngine.Collider2D)",
+    "namespace": "TriggerFadeDoor",
+    "summary": "Détecte l’entrée d’un objet dans la zone de collision.\n            Si l’objet est le joueur, lance la transition vers la scène cible.",
+    "url": "TriggerFadeDoor.OnTriggerEnter2D(UnityEngine.html#Collider2D)",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager",
+    "full_name": "MapUIManager",
+    "namespace": "",
+    "summary": "Gère l'interface utilisateur de la carte (Map).\n            Affiche la mission actuelle, gère le panel de fin de niveau et les boutons associés.",
+    "url": "MapUIManager.html",
+    "type": "class"
+  },
+  {
+    "name": "MapUIManager.Start",
+    "full_name": "MapUIManager.Start",
+    "namespace": "",
+    "summary": "Méthode appelée au démarrage.\n            Initialise le ScenarioManager, affiche la mission et configure les boutons.",
+    "url": "MapUIManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.ConfigurerBoutons",
+    "full_name": "MapUIManager.ConfigurerBoutons",
+    "namespace": "",
+    "summary": "Configure les actions des boutons (Terminer, Confirmer, Annuler).",
+    "url": "MapUIManager.html#ConfigurerBoutons",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.AfficherMission",
+    "full_name": "MapUIManager.AfficherMission",
+    "namespace": "",
+    "summary": "Affiche la mission actuelle en fonction du scénario et du niveau.",
+    "url": "MapUIManager.html#AfficherMission",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.AfficherConfirmationFin",
+    "full_name": "MapUIManager.AfficherConfirmationFin",
+    "namespace": "",
+    "summary": "Affiche le panel de confirmation pour terminer le niveau.",
+    "url": "MapUIManager.html#AfficherConfirmationFin",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.AnnulerFin",
+    "full_name": "MapUIManager.AnnulerFin",
+    "namespace": "",
+    "summary": "Annule la fin de niveau et ferme le panel de confirmation.",
+    "url": "MapUIManager.html#AnnulerFin",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.PasserRapport",
+    "full_name": "MapUIManager.PasserRapport",
+    "namespace": "",
+    "summary": "Charge la scène du rapport après confirmation.",
+    "url": "MapUIManager.html#PasserRapport",
+    "type": "method"
+  },
+  {
+    "name": "MapUIManager.TerminerNiveau",
+    "full_name": "MapUIManager.TerminerNiveau",
+    "namespace": "",
+    "summary": "Termine le niveau actuel, passe au niveau suivant ou revient au menu principal si tous les niveaux sont terminés.",
+    "url": "MapUIManager.html#TerminerNiveau",
+    "type": "method"
+  },
+  {
+    "name": "GenererMessageMission(System",
+    "full_name": "MapUIManager.GenererMessageMission(System",
+    "namespace": "MapUIManager",
+    "summary": "",
+    "url": "MapUIManager.GenererMessageMission(System.html",
+    "type": "class"
+  },
+  {
+    "name": "GenererMessageMission(System.Int32,ScenarioRoot)",
+    "full_name": "MapUIManager.GenererMessageMission(System.Int32,ScenarioRoot)",
+    "namespace": "MapUIManager",
+    "summary": "Génère le texte de la mission en fonction du niveau et des données du scénario.",
+    "url": "MapUIManager.GenererMessageMission(System.html#Int32,ScenarioRoot)",
+    "type": "method"
+  },
+  {
+    "name": "ChargerScenario(System",
+    "full_name": "MapUIManager.ChargerScenario(System",
+    "namespace": "MapUIManager",
+    "summary": "",
+    "url": "MapUIManager.ChargerScenario(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerScenario(System.Int32)",
+    "full_name": "MapUIManager.ChargerScenario(System.Int32)",
+    "namespace": "MapUIManager",
+    "summary": "Charge les données d'un scénario depuis le fichier JSON correspondant.",
+    "url": "MapUIManager.ChargerScenario(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "DataPlayer",
+    "full_name": "DataPlayer",
+    "namespace": "",
+    "summary": "Structure de données représentant un personnage.",
+    "url": "DataPlayer.html",
+    "type": "class"
+  },
+  {
+    "name": "PersonnageManager",
+    "full_name": "PersonnageManager",
+    "namespace": "",
+    "summary": "Gère l’attribution aléatoire des caractères aux personnages\n            et la mise à jour de leurs fichiers JSON.",
+    "url": "PersonnageManager.html",
+    "type": "class"
+  },
+  {
+    "name": "PersonnageManager.Start",
+    "full_name": "PersonnageManager.Start",
+    "namespace": "",
+    "summary": "Initialise les personnages au lancement de la scène.",
+    "url": "PersonnageManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "PersonnageManager.RandomNb",
+    "full_name": "PersonnageManager.RandomNb",
+    "namespace": "",
+    "summary": "Génère un indice de caractère aléatoire valide.",
+    "url": "PersonnageManager.html#RandomNb",
+    "type": "method"
+  },
+  {
+    "name": "MainMenuManager",
+    "full_name": "MainMenuManager",
+    "namespace": "",
+    "summary": "Gère le menu principal du jeu.\n            Tire au sort un scénario disponible, initialise le GameStateManager et lance la scène de jeu.",
+    "url": "MainMenuManager.html",
+    "type": "class"
+  },
+  {
+    "name": "MainMenuManager.Start",
+    "full_name": "MainMenuManager.Start",
+    "namespace": "",
+    "summary": "Méthode appelée au démarrage. Initialise le ScenarioManager et configure les boutons.",
+    "url": "MainMenuManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "MainMenuManager.CommencerNouvelAudit",
+    "full_name": "MainMenuManager.CommencerNouvelAudit",
+    "namespace": "",
+    "summary": "Tire au sort un scénario et commence le jeu.\n            Initialise le GameStateManager et génère le fichier de vérités pour le niveau 1.",
+    "url": "MainMenuManager.html#CommencerNouvelAudit",
+    "type": "method"
+  },
+  {
+    "name": "MainMenuManager.QuitterJeu",
+    "full_name": "MainMenuManager.QuitterJeu",
+    "namespace": "",
+    "summary": "Quitte le jeu. Fonctionne également en mode éditeur.",
+    "url": "MainMenuManager.html#QuitterJeu",
+    "type": "method"
+  },
+  {
+    "name": "ChargerTitreScenario(System",
+    "full_name": "MainMenuManager.ChargerTitreScenario(System",
+    "namespace": "MainMenuManager",
+    "summary": "",
+    "url": "MainMenuManager.ChargerTitreScenario(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerTitreScenario(System.Int32)",
+    "full_name": "MainMenuManager.ChargerTitreScenario(System.Int32)",
+    "namespace": "MainMenuManager",
+    "summary": "Charge le titre d'un scénario depuis le fichier JSON correspondant.",
+    "url": "MainMenuManager.ChargerTitreScenario(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "GlobalPause",
+    "full_name": "GlobalPause",
+    "namespace": "",
+    "summary": "Gère le système de pause global du jeu. \n            Ce script survit au changement de scènes et permet d'afficher un menu de pause par-dessus le jeu.",
+    "url": "GlobalPause.html",
+    "type": "class"
+  },
+  {
+    "name": "GlobalPause.Awake",
+    "full_name": "GlobalPause.Awake",
+    "namespace": "",
+    "summary": "Initialise le Singleton et rend l'objet immortel entre les scènes.",
+    "url": "GlobalPause.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "GlobalPause.Update",
+    "full_name": "GlobalPause.Update",
+    "namespace": "",
+    "summary": "Vérifie à chaque image si l'utilisateur appuie sur la touche Échap.",
+    "url": "GlobalPause.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "GlobalPause.TogglePause",
+    "full_name": "GlobalPause.TogglePause",
+    "namespace": "",
+    "summary": "Alterne entre l'état de pause et l'état de jeu normal.",
+    "url": "GlobalPause.html#TogglePause",
+    "type": "method"
+  },
+  {
+    "name": "GlobalPause.MettreEnPause",
+    "full_name": "GlobalPause.MettreEnPause",
+    "namespace": "",
+    "summary": "Met le jeu en pause, fige le temps et charge la scène de menu.",
+    "url": "GlobalPause.html#MettreEnPause",
+    "type": "method"
+  },
+  {
+    "name": "GlobalPause.ReprendreJeu",
+    "full_name": "GlobalPause.ReprendreJeu",
+    "namespace": "",
+    "summary": "Ferme le menu de pause, relance le temps et décharge la scène de menu.",
+    "url": "GlobalPause.html#ReprendreJeu",
+    "type": "method"
+  },
+  {
+    "name": "ScenarioManager",
+    "full_name": "ScenarioManager",
+    "namespace": "",
+    "summary": "Gère la génération automatique des fichiers de vérités d’un scénario,\n            en fonction du niveau de difficulté et des services disponibles.",
+    "url": "ScenarioManager.html",
+    "type": "class"
+  },
+  {
+    "name": "ScenarioManager.Awake",
+    "full_name": "ScenarioManager.Awake",
+    "namespace": "",
+    "summary": "Initialise le singleton du",
+    "url": "ScenarioManager.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "Int32,System",
+    "full_name": "ScenarioManager.GenerateVeritesFile(System.Int32,System",
+    "namespace": "ScenarioManager.GenerateVeritesFile(System",
+    "summary": "",
+    "url": "ScenarioManager.GenerateVeritesFile(System.Int32,System.html",
+    "type": "class"
+  },
+  {
+    "name": "Int32,System.Int32)",
+    "full_name": "ScenarioManager.GenerateVeritesFile(System.Int32,System.Int32)",
+    "namespace": "ScenarioManager.GenerateVeritesFile(System",
+    "summary": "Génère le fichier de vérités d’un scénario selon le niveau spécifié.",
+    "url": "ScenarioManager.GenerateVeritesFile(System.Int32,System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String,System",
+    "namespace": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System",
+    "summary": "",
+    "url": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.Random)",
+    "full_name": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String,System.Random)",
+    "namespace": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System",
+    "summary": "Sélectionne les questions communes à utiliser selon le niveau.",
+    "url": "ScenarioManager.SelectionnerQuestionsCommunesParNiveau(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String,System.html#Random)",
+    "type": "method"
+  },
+  {
+    "name": "ChargerServiceAudite(System",
+    "full_name": "ScenarioManager.ChargerServiceAudite(System",
+    "namespace": "ScenarioManager",
+    "summary": "",
+    "url": "ScenarioManager.ChargerServiceAudite(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerServiceAudite(System.Int32)",
+    "full_name": "ScenarioManager.ChargerServiceAudite(System.Int32)",
+    "namespace": "ScenarioManager",
+    "summary": "Charge le service audité à partir du fichier de configuration du scénario.",
+    "url": "ScenarioManager.ChargerServiceAudite(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "Int32,System",
+    "full_name": "ScenarioManager.ObtenirServicesParNiveau(System.Int32,System",
+    "namespace": "ScenarioManager.ObtenirServicesParNiveau(System",
+    "summary": "",
+    "url": "ScenarioManager.ObtenirServicesParNiveau(System.Int32,System.html",
+    "type": "class"
+  },
+  {
+    "name": "Int32,System.String)",
+    "full_name": "ScenarioManager.ObtenirServicesParNiveau(System.Int32,System.String)",
+    "namespace": "ScenarioManager.ObtenirServicesParNiveau(System",
+    "summary": "Détermine la liste des services à utiliser selon le niveau.",
+    "url": "ScenarioManager.ObtenirServicesParNiveau(System.Int32,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "VerifierScenarioComplet(System",
+    "full_name": "ScenarioManager.VerifierScenarioComplet(System",
+    "namespace": "ScenarioManager",
+    "summary": "",
+    "url": "ScenarioManager.VerifierScenarioComplet(System.html",
+    "type": "class"
+  },
+  {
+    "name": "VerifierScenarioComplet(System.Int32)",
+    "full_name": "ScenarioManager.VerifierScenarioComplet(System.Int32)",
+    "namespace": "ScenarioManager",
+    "summary": "Vérifie si au moins un service est disponible pour un scénario donné.",
+    "url": "ScenarioManager.VerifierScenarioComplet(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "ObtenirServicesDisponibles(System",
+    "full_name": "ScenarioManager.ObtenirServicesDisponibles(System",
+    "namespace": "ScenarioManager",
+    "summary": "",
+    "url": "ScenarioManager.ObtenirServicesDisponibles(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ObtenirServicesDisponibles(System.Int32)",
+    "full_name": "ScenarioManager.ObtenirServicesDisponibles(System.Int32)",
+    "namespace": "ScenarioManager",
+    "summary": "Retourne la liste des services disponibles pour un scénario.",
+    "url": "ScenarioManager.ObtenirServicesDisponibles(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "RapportManager",
+    "full_name": "RapportManager",
+    "namespace": "",
+    "summary": "Gère l’affichage et la validation du rapport d’audit.",
+    "url": "RapportManager.html",
+    "type": "class"
+  },
+  {
+    "name": "RapportManager.Start",
+    "full_name": "RapportManager.Start",
+    "namespace": "",
+    "summary": "Méthode appelée au démarrage du script.\n            Initialise les données et l’interface utilisateur.",
+    "url": "RapportManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "RapportManager.createTextQuestionsContent",
+    "full_name": "RapportManager.createTextQuestionsContent",
+    "namespace": "",
+    "summary": "Crée dynamiquement l’affichage des questions dans le ScrollView.",
+    "url": "RapportManager.html#createTextQuestionsContent",
+    "type": "method"
+  },
+  {
+    "name": "RapportManager.Update",
+    "full_name": "RapportManager.Update",
+    "namespace": "",
+    "summary": "Méthode appelée à chaque frame.",
+    "url": "RapportManager.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "RapportManager.OnValidationClicked",
+    "full_name": "RapportManager.OnValidationClicked",
+    "namespace": "",
+    "summary": "Méthode appelée lors de la validation du rapport.\n            Calcule le score final et charge la scène suivante.",
+    "url": "RapportManager.html#OnValidationClicked",
+    "type": "method"
+  },
+  {
+    "name": "OnQuestionClicked(System",
+    "full_name": "RapportManager.OnQuestionClicked(System",
+    "namespace": "RapportManager",
+    "summary": "",
+    "url": "RapportManager.OnQuestionClicked(System.html",
+    "type": "class"
+  },
+  {
+    "name": "OnQuestionClicked(System.String)",
+    "full_name": "RapportManager.OnQuestionClicked(System.String)",
+    "namespace": "RapportManager",
+    "summary": "Méthode appelée lors du clic sur une question.\n            Affiche les réponses possibles associées.",
+    "url": "RapportManager.OnQuestionClicked(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "RapportManager.OnReponseClicked(System.String,System",
+    "namespace": "RapportManager.OnReponseClicked(System",
+    "summary": "",
+    "url": "RapportManager.OnReponseClicked(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "RapportManager.OnReponseClicked(System.String,System.String)",
+    "namespace": "RapportManager.OnReponseClicked(System",
+    "summary": "Méthode appelée lors du clic sur une réponse.\n            Met à jour la réponse affichée pour la question correspondante.",
+    "url": "RapportManager.OnReponseClicked(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "RapportManager.getInfos(System.String,System",
+    "namespace": "RapportManager.getInfos(System",
+    "summary": "",
+    "url": "RapportManager.getInfos(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "RapportManager.getInfos(System.String,System.String)",
+    "namespace": "RapportManager.getInfos(System",
+    "summary": "Récupère les informations possibles pour une question donnée.",
+    "url": "RapportManager.getInfos(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "RapportManager.checkTrue(System.String,System.String,System.String,System",
+    "namespace": "RapportManager.checkTrue(System.String,System.String,System",
+    "summary": "",
+    "url": "RapportManager.checkTrue(System.String,System.String,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.Int32)",
+    "full_name": "RapportManager.checkTrue(System.String,System.String,System.String,System.Int32)",
+    "namespace": "RapportManager.checkTrue(System.String,System.String,System",
+    "summary": "Vérifie si une réponse est vraie ou fausse à partir du fichier JSON.",
+    "url": "RapportManager.checkTrue(System.String,System.String,System.String,System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "AudioManager",
+    "full_name": "AudioManager",
+    "namespace": "",
+    "summary": "Gestionnaire audio centralisé utilisant le pattern Singleton.\n            Ce script est \"Immortel\" (DontDestroyOnLoad) et gère la musique de fond du jeu.",
+    "url": "AudioManager.html",
+    "type": "class"
+  },
+  {
+    "name": "AudioManager.Awake",
+    "full_name": "AudioManager.Awake",
+    "namespace": "",
+    "summary": "Gère l'unicité de l'AudioManager et sa persistance entre les scènes.",
+    "url": "AudioManager.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "AudioManager.Start",
+    "full_name": "AudioManager.Start",
+    "namespace": "",
+    "summary": "Lance la musique configurée au démarrage du jeu.",
+    "url": "AudioManager.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "reglerVolume(System",
+    "full_name": "AudioManager.reglerVolume(System",
+    "namespace": "AudioManager",
+    "summary": "",
+    "url": "AudioManager.reglerVolume(System.html",
+    "type": "class"
+  },
+  {
+    "name": "reglerVolume(System.Single)",
+    "full_name": "AudioManager.reglerVolume(System.Single)",
+    "namespace": "AudioManager",
+    "summary": "Modifie le volume de la source audio.",
+    "url": "AudioManager.reglerVolume(System.html#Single)",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovement2",
+    "full_name": "PlayerMovement2",
+    "namespace": "",
+    "summary": "Gère le mouvement du joueur en 2D, l'orientation du sprite et l'animation.",
+    "url": "PlayerMovement2.html",
+    "type": "class"
+  },
+  {
+    "name": "PlayerMovement2.Start",
+    "full_name": "PlayerMovement2.Start",
+    "namespace": "",
+    "summary": "Initialisation du joueur au démarrage de la scène.\n            Configure le Rigidbody2D et désactive la gravité.",
+    "url": "PlayerMovement2.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovement2.Update",
+    "full_name": "PlayerMovement2.Update",
+    "namespace": "",
+    "summary": "Mise à jour à chaque frame : lecture de l'input, gestion du sprite et des animations.",
+    "url": "PlayerMovement2.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovement2.FixedUpdate",
+    "full_name": "PlayerMovement2.FixedUpdate",
+    "namespace": "",
+    "summary": "Physique à chaque frame fixe : déplace le joueur en fonction de l'input et de la vitesse.",
+    "url": "PlayerMovement2.html#FixedUpdate",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager",
+    "full_name": "IntroSceneManager",
+    "namespace": "",
+    "summary": "Gère l'introduction du jeu avec le dialogue du chef adapté au scénario.",
+    "url": "IntroSceneManager.html",
+    "type": "class"
+  },
+  {
+    "name": "IntroSceneManager.InitialiserUI",
+    "full_name": "IntroSceneManager.InitialiserUI",
+    "namespace": "",
+    "summary": "Initialise l'interface utilisateur.",
+    "url": "IntroSceneManager.html#InitialiserUI",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.GenererDialogue",
+    "full_name": "IntroSceneManager.GenererDialogue",
+    "namespace": "",
+    "summary": "Génère les lignes de dialogue en fonction du scénario chargé.",
+    "url": "IntroSceneManager.html#GenererDialogue",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.DemarrerDialogueApresDelai",
+    "full_name": "IntroSceneManager.DemarrerDialogueApresDelai",
+    "namespace": "",
+    "summary": "Démarre le dialogue après un délai.",
+    "url": "IntroSceneManager.html#DemarrerDialogueApresDelai",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.AfficherLigne",
+    "full_name": "IntroSceneManager.AfficherLigne",
+    "namespace": "",
+    "summary": "Affiche la ligne de dialogue actuelle avec effet typewriter.",
+    "url": "IntroSceneManager.html#AfficherLigne",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.FinirEcriture",
+    "full_name": "IntroSceneManager.FinirEcriture",
+    "namespace": "",
+    "summary": "Finit l'écriture immédiatement.",
+    "url": "IntroSceneManager.html#FinirEcriture",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.AfficherLigneSuivante",
+    "full_name": "IntroSceneManager.AfficherLigneSuivante",
+    "namespace": "",
+    "summary": "Passe à la ligne suivante.",
+    "url": "IntroSceneManager.html#AfficherLigneSuivante",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.AfficherChoix",
+    "full_name": "IntroSceneManager.AfficherChoix",
+    "namespace": "",
+    "summary": "Affiche les choix du joueur.",
+    "url": "IntroSceneManager.html#AfficherChoix",
+    "type": "method"
+  },
+  {
+    "name": "IntroSceneManager.AttendreEspaceEtChargerMap",
+    "full_name": "IntroSceneManager.AttendreEspaceEtChargerMap",
+    "namespace": "",
+    "summary": "Attend que le joueur appuie sur Espace puis charge la Map.",
+    "url": "IntroSceneManager.html#AttendreEspaceEtChargerMap",
+    "type": "method"
+  },
+  {
+    "name": "ChargerScenario(System",
+    "full_name": "IntroSceneManager.ChargerScenario(System",
+    "namespace": "IntroSceneManager",
+    "summary": "",
+    "url": "IntroSceneManager.ChargerScenario(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerScenario(System.Int32)",
+    "full_name": "IntroSceneManager.ChargerScenario(System.Int32)",
+    "namespace": "IntroSceneManager",
+    "summary": "Charge le fichier JSON du scénario.",
+    "url": "IntroSceneManager.ChargerScenario(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "ObtenirNomCompletService(System",
+    "full_name": "IntroSceneManager.ObtenirNomCompletService(System",
+    "namespace": "IntroSceneManager",
+    "summary": "",
+    "url": "IntroSceneManager.ObtenirNomCompletService(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ObtenirNomCompletService(System.String)",
+    "full_name": "IntroSceneManager.ObtenirNomCompletService(System.String)",
+    "namespace": "IntroSceneManager",
+    "summary": "Convertit l'identifiant du service en nom complet.",
+    "url": "IntroSceneManager.ObtenirNomCompletService(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "EffetTypewriter(System",
+    "full_name": "IntroSceneManager.EffetTypewriter(System",
+    "namespace": "IntroSceneManager",
+    "summary": "",
+    "url": "IntroSceneManager.EffetTypewriter(System.html",
+    "type": "class"
+  },
+  {
+    "name": "EffetTypewriter(System.String)",
+    "full_name": "IntroSceneManager.EffetTypewriter(System.String)",
+    "namespace": "IntroSceneManager",
+    "summary": "Effet d'écriture lettre par lettre.",
+    "url": "IntroSceneManager.EffetTypewriter(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "OnChoixSelectionne(System",
+    "full_name": "IntroSceneManager.OnChoixSelectionne(System",
+    "namespace": "IntroSceneManager",
+    "summary": "",
+    "url": "IntroSceneManager.OnChoixSelectionne(System.html",
+    "type": "class"
+  },
+  {
+    "name": "OnChoixSelectionne(System.Int32)",
+    "full_name": "IntroSceneManager.OnChoixSelectionne(System.Int32)",
+    "namespace": "IntroSceneManager",
+    "summary": "Gère la sélection d'un choix.",
+    "url": "IntroSceneManager.OnChoixSelectionne(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "ControllerSac",
+    "full_name": "ControllerSac",
+    "namespace": "",
+    "summary": "Contrôle l'ouverture et la fermeture du sac à dos du joueur via l'Animator.",
+    "url": "ControllerSac.html",
+    "type": "class"
+  },
+  {
+    "name": "ControllerSac.ToggleMenu",
+    "full_name": "ControllerSac.ToggleMenu",
+    "namespace": "",
+    "summary": "Bascule l'état du sac à dos : ouvert ou fermé.\n            Met à jour le bool \"isOpen\" dans l'Animator.",
+    "url": "ControllerSac.html#ToggleMenu",
+    "type": "method"
+  },
+  {
+    "name": "ControllerSac.displayAudit",
+    "full_name": "ControllerSac.displayAudit",
+    "namespace": "",
+    "summary": "Affiche l'audit antérieur",
+    "url": "ControllerSac.html#displayAudit",
+    "type": "method"
+  },
+  {
+    "name": "ControllerSac.closeAudit",
+    "full_name": "ControllerSac.closeAudit",
+    "namespace": "",
+    "summary": "Ferme la page de l'audit (désactive sa vue).",
+    "url": "ControllerSac.html#closeAudit",
+    "type": "method"
+  },
+  {
+    "name": "ControllerSac.BuildFormattedAudit(Audit)",
+    "full_name": "ControllerSac.BuildFormattedAudit(Audit)",
+    "namespace": "",
+    "summary": "Créé la chaîne de caractère pour afficher l'audit.",
+    "url": "ControllerSac.html#BuildFormattedAudit(Audit)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "ControllerSac.AddSection(System.Text.StringBuilder,System.String,System",
+    "namespace": "ControllerSac.AddSection(System.Text.StringBuilder,System",
+    "summary": "",
+    "url": "ControllerSac.AddSection(System.Text.StringBuilder,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String[])",
+    "full_name": "ControllerSac.AddSection(System.Text.StringBuilder,System.String,System.String[])",
+    "namespace": "ControllerSac.AddSection(System.Text.StringBuilder,System",
+    "summary": "Ajoute une section à une chaine de caractère.",
+    "url": "ControllerSac.AddSection(System.Text.StringBuilder,System.String,System.html#String[])",
+    "type": "method"
+  },
+  {
+    "name": "DoorTrigger2D",
+    "full_name": "DoorTrigger2D",
+    "namespace": "",
+    "summary": "Déclenche un changement de scène lorsque le joueur s’approche suffisamment de la porte du couloir (début du jeu).\n            Utilise une transition avec effet de fondu.",
+    "url": "DoorTrigger2D.html",
+    "type": "class"
+  },
+  {
+    "name": "DoorTrigger2D.Start",
+    "full_name": "DoorTrigger2D.Start",
+    "namespace": "",
+    "summary": "Recherche automatiquement le composant SceneTransition présent dans la scène.",
+    "url": "DoorTrigger2D.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "DoorTrigger2D.Update",
+    "full_name": "DoorTrigger2D.Update",
+    "namespace": "",
+    "summary": "Vérifie à chaque frame la distance entre le joueur et la porte\n            et déclenche la transition si la distance est inférieure au seuil défini.",
+    "url": "DoorTrigger2D.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "PlayerMovementData",
+    "full_name": "PlayerMovementData",
+    "namespace": "",
+    "summary": "Stocke et partage les données persistantes liées au joueur entre les scènes.\n            Cette classe agit comme une instance globale (Singleton)",
+    "url": "PlayerMovementData.html",
+    "type": "class"
+  },
+  {
+    "name": "PlayerMovementData.Awake",
+    "full_name": "PlayerMovementData.Awake",
+    "namespace": "",
+    "summary": "Méthode appelée lors de l'initialisation de l'objet.\n            Met en place le pattern Singleton et empêche la destruction\n            de l'objet lors du chargement d'une nouvelle scène.",
+    "url": "PlayerMovementData.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "EntryDetection",
+    "full_name": "EntryDetection",
+    "namespace": "",
+    "summary": "Détecte l'entrée du joueur dans une zone de bâtiment et charge la scène appropriée.\n            Vérifie également si le service est accessible selon le niveau actuel.",
+    "url": "EntryDetection.html",
+    "type": "class"
+  },
+  {
+    "name": "EntryDetection.Start",
+    "full_name": "EntryDetection.Start",
+    "namespace": "",
+    "summary": "Initialisation des composants.",
+    "url": "EntryDetection.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "EntryDetection.Update",
+    "full_name": "EntryDetection.Update",
+    "namespace": "",
+    "summary": "Vérifie chaque frame si le joueur est dans la zone et gère le chargement de la scène.",
+    "url": "EntryDetection.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "EstServiceAccessible(System",
+    "full_name": "EntryDetection.EstServiceAccessible(System",
+    "namespace": "EntryDetection",
+    "summary": "",
+    "url": "EntryDetection.EstServiceAccessible(System.html",
+    "type": "class"
+  },
+  {
+    "name": "EstServiceAccessible(System.String)",
+    "full_name": "EntryDetection.EstServiceAccessible(System.String)",
+    "namespace": "EntryDetection",
+    "summary": "Vérifie si le service est accessible pour le niveau actuel.",
+    "url": "EntryDetection.EstServiceAccessible(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "ConvertirBatimentEnService(System",
+    "full_name": "EntryDetection.ConvertirBatimentEnService(System",
+    "namespace": "EntryDetection",
+    "summary": "",
+    "url": "EntryDetection.ConvertirBatimentEnService(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ConvertirBatimentEnService(System.String)",
+    "full_name": "EntryDetection.ConvertirBatimentEnService(System.String)",
+    "namespace": "EntryDetection",
+    "summary": "Convertit le nom d'un bâtiment en identifiant de service.",
+    "url": "EntryDetection.ConvertirBatimentEnService(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "ChargerServiceAudite(System",
+    "full_name": "EntryDetection.ChargerServiceAudite(System",
+    "namespace": "EntryDetection",
+    "summary": "",
+    "url": "EntryDetection.ChargerServiceAudite(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerServiceAudite(System.Int32)",
+    "full_name": "EntryDetection.ChargerServiceAudite(System.Int32)",
+    "namespace": "EntryDetection",
+    "summary": "Charge le service audité depuis le fichier scenario JSON.",
+    "url": "EntryDetection.ChargerServiceAudite(System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "OnTriggerEnter2D(UnityEngine",
+    "full_name": "EntryDetection.OnTriggerEnter2D(UnityEngine",
+    "namespace": "EntryDetection",
+    "summary": "",
+    "url": "EntryDetection.OnTriggerEnter2D(UnityEngine.html",
+    "type": "class"
+  },
+  {
+    "name": "OnTriggerEnter2D(UnityEngine.Collider2D)",
+    "full_name": "EntryDetection.OnTriggerEnter2D(UnityEngine.Collider2D)",
+    "namespace": "EntryDetection",
+    "summary": "Détecte l'entrée du joueur dans la zone trigger.",
+    "url": "EntryDetection.OnTriggerEnter2D(UnityEngine.html#Collider2D)",
+    "type": "method"
+  },
+  {
+    "name": "OnTriggerExit2D(UnityEngine",
+    "full_name": "EntryDetection.OnTriggerExit2D(UnityEngine",
+    "namespace": "EntryDetection",
+    "summary": "",
+    "url": "EntryDetection.OnTriggerExit2D(UnityEngine.html",
+    "type": "class"
+  },
+  {
+    "name": "OnTriggerExit2D(UnityEngine.Collider2D)",
+    "full_name": "EntryDetection.OnTriggerExit2D(UnityEngine.Collider2D)",
+    "namespace": "EntryDetection",
+    "summary": "Détecte la sortie du joueur de la zone trigger.",
+    "url": "EntryDetection.OnTriggerExit2D(UnityEngine.html#Collider2D)",
+    "type": "method"
+  },
+  {
+    "name": "JsonDialogueManager",
+    "full_name": "JsonDialogueManager",
+    "namespace": "",
+    "summary": "Gère le chargement et la sélection des dialogues depuis des fichiers JSON\n            en fonction du scénario, du personnage interrogé et de son comportement.",
+    "url": "JsonDialogueManager.html",
+    "type": "class"
+  },
+  {
+    "name": "JsonDialogueManager.ChargerVerites",
+    "full_name": "JsonDialogueManager.ChargerVerites",
+    "namespace": "",
+    "summary": "Charge le fichier JSON contenant les vérités du scénario.",
+    "url": "JsonDialogueManager.html#ChargerVerites",
+    "type": "method"
+  },
+  {
+    "name": "JsonDialogueManager.AugmenterTauxEnervement",
+    "full_name": "JsonDialogueManager.AugmenterTauxEnervement",
+    "namespace": "",
+    "summary": "Augmente le taux d’énervement du personnage à chaque question et sauvegarde la modification.",
+    "url": "JsonDialogueManager.html#AugmenterTauxEnervement",
+    "type": "method"
+  },
+  {
+    "name": "Int32,System",
+    "full_name": "JsonDialogueManager.ChargerDialoguesService(System.Int32,System",
+    "namespace": "JsonDialogueManager.ChargerDialoguesService(System",
+    "summary": "",
+    "url": "JsonDialogueManager.ChargerDialoguesService(System.Int32,System.html",
+    "type": "class"
+  },
+  {
+    "name": "Int32,System.String)",
+    "full_name": "JsonDialogueManager.ChargerDialoguesService(System.Int32,System.String)",
+    "namespace": "JsonDialogueManager.ChargerDialoguesService(System",
+    "summary": "Charge les dialogues d’un service pour un scénario donné.",
+    "url": "JsonDialogueManager.ChargerDialoguesService(System.Int32,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "JsonDialogueManager.EstUneVerite(System.String,System.String,System.String,System",
+    "namespace": "JsonDialogueManager.EstUneVerite(System.String,System.String,System",
+    "summary": "",
+    "url": "JsonDialogueManager.EstUneVerite(System.String,System.String,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.Int32)",
+    "full_name": "JsonDialogueManager.EstUneVerite(System.String,System.String,System.String,System.Int32)",
+    "namespace": "JsonDialogueManager.EstUneVerite(System.String,System.String,System",
+    "summary": "Vérifie si une variation de dialogue correspond à une vérité.",
+    "url": "JsonDialogueManager.EstUneVerite(System.String,System.String,System.String,System.html#Int32)",
+    "type": "method"
+  },
+  {
+    "name": "ChargerPersonnage(System",
+    "full_name": "JsonDialogueManager.ChargerPersonnage(System",
+    "namespace": "JsonDialogueManager",
+    "summary": "",
+    "url": "JsonDialogueManager.ChargerPersonnage(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChargerPersonnage(System.String)",
+    "full_name": "JsonDialogueManager.ChargerPersonnage(System.String)",
+    "namespace": "JsonDialogueManager",
+    "summary": "Charge les données d’un personnage depuis son fichier JSON.",
+    "url": "JsonDialogueManager.ChargerPersonnage(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System.String,System",
+    "namespace": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System",
+    "summary": "",
+    "url": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System.String,System.String)",
+    "namespace": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System",
+    "summary": "Retourne le dialogue sélectionné ainsi que l’émotion associée.",
+    "url": "JsonDialogueManager.ObtenirDialogueAvecEmotion(System.Int32,System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "String,System",
+    "full_name": "JsonDialogueManager.ObtenirDialogue(System.Int32,System.String,System",
+    "namespace": "JsonDialogueManager.ObtenirDialogue(System.Int32,System",
+    "summary": "",
+    "url": "JsonDialogueManager.ObtenirDialogue(System.Int32,System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "JsonDialogueManager.ObtenirDialogue(System.Int32,System.String,System.String)",
+    "namespace": "JsonDialogueManager.ObtenirDialogue(System.Int32,System",
+    "summary": "Retourne uniquement le texte du dialogue (compatibilité ancienne version).",
+    "url": "JsonDialogueManager.ObtenirDialogue(System.Int32,System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "Generic",
+    "full_name": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections.Generic",
+    "namespace": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections",
+    "summary": "",
+    "url": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections.Generic.html",
+    "type": "class"
+  },
+  {
+    "name": "Generic.List{DialogueVariation})",
+    "full_name": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections.Generic.List{DialogueVariation})",
+    "namespace": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections",
+    "summary": "Choisit aléatoirement une variation de dialogue.",
+    "url": "JsonDialogueManager.ChoisirVariationAleatoire(System.Collections.Generic.html#List{DialogueVariation})",
+    "type": "method"
+  },
+  {
+    "name": "TireAuSortVerite(System",
+    "full_name": "JsonDialogueManager.TireAuSortVerite(System",
+    "namespace": "JsonDialogueManager",
+    "summary": "",
+    "url": "JsonDialogueManager.TireAuSortVerite(System.html",
+    "type": "class"
+  },
+  {
+    "name": "TireAuSortVerite(System.String)",
+    "full_name": "JsonDialogueManager.TireAuSortVerite(System.String)",
+    "namespace": "JsonDialogueManager",
+    "summary": "Détermine si le personnage dit la vérité selon son caractère.",
+    "url": "JsonDialogueManager.TireAuSortVerite(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System",
+    "full_name": "JsonDialogueManager.SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System",
+    "namespace": "JsonDialogueManager",
+    "summary": "",
+    "url": "JsonDialogueManager.SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System.html",
+    "type": "class"
+  },
+  {
+    "name": "SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System.Boolean)",
+    "full_name": "JsonDialogueManager.SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System.Boolean)",
+    "namespace": "JsonDialogueManager",
+    "summary": "Sélectionne le texte du dialogue et retourne l’émotion associée.",
+    "url": "JsonDialogueManager.SelectionnerTexteDialogueAvecEmotion(DialogueVariation,System.html#Boolean)",
+    "type": "method"
+  },
+  {
+    "name": "List{DialogueVariation},System",
+    "full_name": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic.List{DialogueVariation},System",
+    "namespace": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic",
+    "summary": "",
+    "url": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic.List{DialogueVariation},System.html",
+    "type": "class"
+  },
+  {
+    "name": "List{DialogueVariation},System.Boolean)",
+    "full_name": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic.List{DialogueVariation},System.Boolean)",
+    "namespace": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic",
+    "summary": "Choisit une variation de dialogue en fonction de la vérité ou du mensonge.",
+    "url": "JsonDialogueManager.ChoisirVariationSelonVerite(System.String,System.String,System.String,System.Collections.Generic.List{DialogueVariation},System.html#Boolean)",
+    "type": "method"
+  },
+  {
+    "name": "ObtenirInfosPersonnage(System",
+    "full_name": "JsonDialogueManager.ObtenirInfosPersonnage(System",
+    "namespace": "JsonDialogueManager",
+    "summary": "",
+    "url": "JsonDialogueManager.ObtenirInfosPersonnage(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ObtenirInfosPersonnage(System.String)",
+    "full_name": "JsonDialogueManager.ObtenirInfosPersonnage(System.String)",
+    "namespace": "JsonDialogueManager",
+    "summary": "Retourne les informations complètes d’un personnage.",
+    "url": "JsonDialogueManager.ObtenirInfosPersonnage(System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "Int32,System",
+    "full_name": "JsonDialogueManager.ObtenirNombreQuestions(System.Int32,System",
+    "namespace": "JsonDialogueManager.ObtenirNombreQuestions(System",
+    "summary": "",
+    "url": "JsonDialogueManager.ObtenirNombreQuestions(System.Int32,System.html",
+    "type": "class"
+  },
+  {
+    "name": "Int32,System.String)",
+    "full_name": "JsonDialogueManager.ObtenirNombreQuestions(System.Int32,System.String)",
+    "namespace": "JsonDialogueManager.ObtenirNombreQuestions(System",
+    "summary": "Retourne le nombre total de questions disponibles pour un personnage.",
+    "url": "JsonDialogueManager.ObtenirNombreQuestions(System.Int32,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "WorldCanvasFitToCamera",
+    "full_name": "WorldCanvasFitToCamera",
+    "namespace": "",
+    "summary": "Ajuste automatiquement un Canvas en World Space pour qu'il remplisse la vue d'une caméra.",
+    "url": "WorldCanvasFitToCamera.html",
+    "type": "class"
+  },
+  {
+    "name": "WorldCanvasFitToCamera.Awake",
+    "full_name": "WorldCanvasFitToCamera.Awake",
+    "namespace": "",
+    "summary": "Initialise le Canvas et le RectTransform.",
+    "url": "WorldCanvasFitToCamera.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "WorldCanvasFitToCamera.Update",
+    "full_name": "WorldCanvasFitToCamera.Update",
+    "namespace": "",
+    "summary": "Met à jour la taille et la position du Canvas pour correspondre à la vue de la caméra.",
+    "url": "WorldCanvasFitToCamera.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "SceneFadeIn",
+    "full_name": "SceneFadeIn",
+    "namespace": "",
+    "summary": "Gère l'effet de fondu entrant (fade-in) d'une scène.\n            À attacher sur un GameObject contenant une Image couvrant l'écran.",
+    "url": "SceneFadeIn.html",
+    "type": "class"
+  },
+  {
+    "name": "SceneFadeIn.Start",
+    "full_name": "SceneFadeIn.Start",
+    "namespace": "",
+    "summary": "Initialisation du fondu. L'image commence noire et devient transparente progressivement.",
+    "url": "SceneFadeIn.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "SceneFadeIn.FadeInCoroutine",
+    "full_name": "SceneFadeIn.FadeInCoroutine",
+    "namespace": "",
+    "summary": "Coroutine qui anime le fondu entrant.",
+    "url": "SceneFadeIn.html#FadeInCoroutine",
+    "type": "method"
+  },
+  {
+    "name": "VolumeSlider",
+    "full_name": "VolumeSlider",
+    "namespace": "",
+    "summary": "Composant à placer sur un Slider Unity pour contrôler le volume global.\n            Se synchronise automatiquement avec l'AudioManager au moment de l'activation.",
+    "url": "VolumeSlider.html",
+    "type": "class"
+  },
+  {
+    "name": "VolumeSlider.Awake",
+    "full_name": "VolumeSlider.Awake",
+    "namespace": "",
+    "summary": "Récupère le composant Slider attaché à l'objet.",
+    "url": "VolumeSlider.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "VolumeSlider.OnEnable",
+    "full_name": "VolumeSlider.OnEnable",
+    "namespace": "",
+    "summary": "Initialise le slider lors de l'activation du panneau (ex: ouverture des settings).",
+    "url": "VolumeSlider.html#OnEnable",
+    "type": "method"
+  },
+  {
+    "name": "ChangerVolumeManuel(System",
+    "full_name": "VolumeSlider.ChangerVolumeManuel(System",
+    "namespace": "VolumeSlider",
+    "summary": "",
+    "url": "VolumeSlider.ChangerVolumeManuel(System.html",
+    "type": "class"
+  },
+  {
+    "name": "ChangerVolumeManuel(System.Single)",
+    "full_name": "VolumeSlider.ChangerVolumeManuel(System.Single)",
+    "namespace": "VolumeSlider",
+    "summary": "Transmet la nouvelle valeur du slider à l'AudioManager.",
+    "url": "VolumeSlider.ChangerVolumeManuel(System.html#Single)",
+    "type": "method"
+  },
+  {
+    "name": "DialogueVariation",
+    "full_name": "DialogueVariation",
+    "namespace": "",
+    "summary": "Représente une variation de dialogue selon l’émotion ou le comportement du personnage.",
+    "url": "DialogueVariation.html",
+    "type": "class"
+  },
+  {
+    "name": "ServiceData",
+    "full_name": "ServiceData",
+    "namespace": "",
+    "summary": "Contient les données d’un service avec ses postes et dialogues associés.",
+    "url": "ServiceData.html",
+    "type": "class"
+  },
+  {
+    "name": "VeritesByPoste",
+    "full_name": "VeritesByPoste",
+    "namespace": "",
+    "summary": "Contient les vérités associées à un poste.",
+    "url": "VeritesByPoste.html",
+    "type": "class"
+  },
+  {
+    "name": "VeritesByService",
+    "full_name": "VeritesByService",
+    "namespace": "",
+    "summary": "Regroupe les vérités par service.",
+    "url": "VeritesByService.html",
+    "type": "class"
+  },
+  {
+    "name": "VeritesScenarioRoot",
+    "full_name": "VeritesScenarioRoot",
+    "namespace": "",
+    "summary": "Données de vérités pour un scénario.",
+    "url": "VeritesScenarioRoot.html",
+    "type": "class"
+  },
+  {
+    "name": "PlayerData",
+    "full_name": "PlayerData",
+    "namespace": "",
+    "summary": "Représente les données d'un personnage.",
+    "url": "PlayerData.html",
+    "type": "class"
+  },
+  {
+    "name": "QuestionBloc",
+    "full_name": "QuestionBloc",
+    "namespace": "",
+    "summary": "Bloc de questions utilisé dans un scénario.",
+    "url": "QuestionBloc.html",
+    "type": "class"
+  },
+  {
+    "name": "ScenarioQuestions",
+    "full_name": "ScenarioQuestions",
+    "namespace": "",
+    "summary": "Contient l’ensemble des questions d’un scénario.",
+    "url": "ScenarioQuestions.html",
+    "type": "class"
+  },
+  {
+    "name": "ScenarioRoot",
+    "full_name": "ScenarioRoot",
+    "namespace": "",
+    "summary": "Données d’un scénario.",
+    "url": "ScenarioRoot.html",
+    "type": "class"
+  },
+  {
+    "name": "PosteInfo",
+    "full_name": "PosteInfo",
+    "namespace": "",
+    "summary": "Informations associées à un poste et son fichier de données.",
+    "url": "PosteInfo.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System",
+    "full_name": "PosteInfo.#ctor(System.String,System",
+    "namespace": "PosteInfo.#ctor(System",
+    "summary": "",
+    "url": "PosteInfo.#ctor(System.String,System.html",
+    "type": "class"
+  },
+  {
+    "name": "String,System.String)",
+    "full_name": "PosteInfo.#ctor(System.String,System.String)",
+    "namespace": "PosteInfo.#ctor(System",
+    "summary": "Initialise une nouvelle instance de la classe",
+    "url": "PosteInfo.#ctor(System.String,System.html#String)",
+    "type": "method"
+  },
+  {
+    "name": "AuditWrapper",
+    "full_name": "AuditWrapper",
+    "namespace": "",
+    "summary": "Utilisé pour la récupération de l'audit antérieur.",
+    "url": "AuditWrapper.html",
+    "type": "class"
+  },
+  {
+    "name": "Audit",
+    "full_name": "Audit",
+    "namespace": "",
+    "summary": "Informations associées à un audit antérieur.",
+    "url": "Audit.html",
+    "type": "class"
+  },
+  {
+    "name": "Constatations",
+    "full_name": "Constatations",
+    "namespace": "",
+    "summary": "Constatations de l'audit.",
+    "url": "Constatations.html",
+    "type": "class"
+  },
+  {
+    "name": "Recommendation",
+    "full_name": "Recommendation",
+    "namespace": "",
+    "summary": "Recommandations formulées.",
+    "url": "Recommendation.html",
+    "type": "class"
+  },
+  {
+    "name": "Conclusion",
+    "full_name": "Conclusion",
+    "namespace": "",
+    "summary": "Conclusion de l'audit",
+    "url": "Conclusion.html",
+    "type": "class"
+  },
+  {
+    "name": "BackgroundStretchToCamera",
+    "full_name": "BackgroundStretchToCamera",
+    "namespace": "",
+    "summary": "Ajuste automatiquement un Sprite de fond pour qu’il remplisse\n            entièrement la caméra orthographique, en acceptant une déformation.\n            Fonctionne en mode édition et en mode jeu.",
+    "url": "BackgroundStretchToCamera.html",
+    "type": "class"
+  },
+  {
+    "name": "BackgroundStretchToCamera.Awake",
+    "full_name": "BackgroundStretchToCamera.Awake",
+    "namespace": "",
+    "summary": "Initialise les références au SpriteRenderer et à la caméra.",
+    "url": "BackgroundStretchToCamera.html#Awake",
+    "type": "method"
+  },
+  {
+    "name": "BackgroundStretchToCamera.Start",
+    "full_name": "BackgroundStretchToCamera.Start",
+    "namespace": "",
+    "summary": "Ajuste la taille du sprite au démarrage.",
+    "url": "BackgroundStretchToCamera.html#Start",
+    "type": "method"
+  },
+  {
+    "name": "BackgroundStretchToCamera.Update",
+    "full_name": "BackgroundStretchToCamera.Update",
+    "namespace": "",
+    "summary": "Vérifie si la résolution de l’écran a changé\n            et redimensionne le sprite si nécessaire.",
+    "url": "BackgroundStretchToCamera.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "BackgroundStretchToCamera.Stretch",
+    "full_name": "BackgroundStretchToCamera.Stretch",
+    "namespace": "",
+    "summary": "Redimensionne le sprite pour couvrir toute la zone visible\n            de la caméra orthographique, avec une échelle indépendante sur X et Y.",
+    "url": "BackgroundStretchToCamera.html#Stretch",
+    "type": "method"
+  },
+  {
+    "name": "GoOut",
+    "full_name": "GoOut",
+    "namespace": "",
+    "summary": "Permet au joueur de sortir d'un bâtiment et de revenir à la carte.",
+    "url": "GoOut.html",
+    "type": "class"
+  },
+  {
+    "name": "GoOut.Update",
+    "full_name": "GoOut.Update",
+    "namespace": "",
+    "summary": "Vérifie à chaque frame si le joueur appuie sur la touche pour sortir.",
+    "url": "GoOut.html#Update",
+    "type": "method"
+  },
+  {
+    "name": "GoOut.SortirDuBatiment",
+    "full_name": "GoOut.SortirDuBatiment",
+    "namespace": "",
+    "summary": "Charge la scène \"Map\" pour retourner à la carte.",
+    "url": "GoOut.html#SortirDuBatiment",
+    "type": "method"
+  },
+  {
+    "name": "CharacterClicker",
+    "full_name": "CharacterClicker",
+    "namespace": "",
+    "summary": "Gère le clic sur un personnage dans la scène.\n            Met à jour le personnage sélectionné dans le GameStateManager et charge la scène de dialogue.",
+    "url": "CharacterClicker.html",
+    "type": "class"
+  },
+  {
+    "name": "CharacterClicker.OnClick",
+    "full_name": "CharacterClicker.OnClick",
+    "namespace": "",
+    "summary": "Méthode appelée lors du clic sur le personnage.\n            Sélectionne le personnage dans le GameStateManager et charge la scène de dialogue.",
+    "url": "CharacterClicker.html#OnClick",
+    "type": "method"
+  }
+]

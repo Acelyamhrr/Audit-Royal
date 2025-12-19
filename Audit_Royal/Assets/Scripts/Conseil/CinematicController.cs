@@ -11,6 +11,9 @@ public class CinematicController : MonoBehaviour
     
     [Header("References")]
     [Tooltip("Animator contrôlant les barres cinématiques")]
+    /// <summary>
+    /// Animator contrôlant les barres cinématiques
+    /// </summary>
     public Animator animator;
 
     [Header("Camera Settings")]

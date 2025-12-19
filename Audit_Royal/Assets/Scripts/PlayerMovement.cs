@@ -17,7 +17,7 @@ public class PlayerMovement2 : MonoBehaviour
     
     /// <summary>
     /// Référence au Rigidbody2D du joueur.
-    /// </summary
+    /// </summary>
     public Rigidbody2D rb;
     
     /// <summary>
