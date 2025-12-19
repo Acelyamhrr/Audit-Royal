@@ -63,7 +63,10 @@ Vous devrez suivre l'ensemble de ces procédures pour les 5 niveaux. Votre objec
 
 ## Procédures d'installation et d'exécution
 
-> *À compléter : en cours de développement*
+### Linux
+```bash
+./exec.x86_64
+```
 
 ---
 
